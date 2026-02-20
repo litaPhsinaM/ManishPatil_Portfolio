@@ -15,7 +15,7 @@ const About: React.FC = () => {
                             className="about-image-container"
                         >
                             <div className="about-image glass small-profile">
-                                <img src="/About me.jpeg" alt="Manish Patil" />
+                                <img src={`${import.meta.env.BASE_URL}About me.jpeg`} alt="Manish Patil" />
                             </div>
                         </motion.div>
 
@@ -53,7 +53,7 @@ const About: React.FC = () => {
                             <div className="interest-item glass">
                                 <div className="interest-content interest-card-with-img">
                                     <div className="interest-img-wrapper">
-                                        <img src="/FOOTBALL.jpg" alt="Soccer" className="interest-img" />
+                                        <img src={`${import.meta.env.BASE_URL}FOOTBALL.jpg`} alt="Soccer" className="interest-img" />
                                     </div>
                                     <div className="interest-details">
                                         <div className="interest-header">
@@ -67,7 +67,7 @@ const About: React.FC = () => {
                             <div className="interest-item glass">
                                 <div className="interest-content interest-card-with-img">
                                     <div className="interest-img-wrapper">
-                                        <img src="/photography.jpg" alt="Photography" className="interest-img" />
+                                        <img src={`${import.meta.env.BASE_URL}photography.jpg`} alt="Photography" className="interest-img" />
                                     </div>
                                     <div className="interest-details">
                                         <div className="interest-header">
@@ -81,7 +81,7 @@ const About: React.FC = () => {
                             <div className="interest-item glass">
                                 <div className="interest-content interest-card-with-img">
                                     <div className="interest-img-wrapper">
-                                        <img src="/snowboarding.jpg" alt="Snowboarding" className="interest-img" />
+                                        <img src={`${import.meta.env.BASE_URL}snowboarding.jpg`} alt="Snowboarding" className="interest-img" />
                                     </div>
                                     <div className="interest-details">
                                         <div className="interest-header">

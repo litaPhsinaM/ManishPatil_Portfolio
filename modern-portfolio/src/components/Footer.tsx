@@ -29,10 +29,10 @@ const Footer: React.FC = () => {
                         </div>
 
                         <div className="resume-cta">
-                            <a href="/Manish Patil.pdf" target="_blank" className="btn">
+                            <a href={`${import.meta.env.BASE_URL}Manish Patil.pdf`} target="_blank" className="btn">
                                 <ExternalLink size={18} /> View Resume
                             </a>
-                            <a href="/Manish Patil.pdf" download className="btn-secondary">
+                            <a href={`${import.meta.env.BASE_URL}Manish Patil.pdf`} download className="btn-secondary">
                                 <Download size={18} /> Download PDF
                             </a>
                         </div>

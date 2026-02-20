@@ -36,7 +36,7 @@ const Projects: React.FC = () => {
                                         className="project-card glass"
                                     >
                                         <div className="project-image">
-                                            <img src={project.image} alt={project.title} loading="lazy" />
+                                            <img src={`${import.meta.env.BASE_URL}${project.image}`} alt={project.title} loading="lazy" />
                                         </div>
                                         <div className="project-content">
                                             <div className="project-tags">

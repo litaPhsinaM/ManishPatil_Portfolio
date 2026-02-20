@@ -12,7 +12,7 @@ export const projects: Project[] = [
   {
     title: "Azure Olympics Data Engineering",
     description: "A high-performance end-to-end data pipeline built on Azure. I orchestrated data ingestion from various sources using Azure Data Factory, performed complex transformations with Spark on Azure Databricks, and channeled the processed data into Azure Synapse Analytics for large-scale warehousing. This project demonstrates a production-grade approach to handling massive datasets with high reliability and scalability.",
-    image: "/Azure DE.png",
+    image: "Azure DE.png",
     link: "https://github.com/litaPhsinaM/Tokyo-Olympics-Azure-DE-Project",
     tags: ["Azure", "Data Factory", "Databricks", "Synapse", "Spark"],
     category: "Systems & Infrastructure"
@@ -20,7 +20,7 @@ export const projects: Project[] = [
   {
     title: "Uber Data Engineering Pipeline",
     description: "Engineered a robust data pipeline on Google Cloud Platform to process and analyze massive Uber trip datasets. I utilized Mage (a modern data orchestrator) on Google Compute Engine for automated transformations and stored the refined data in BigQuery. The project culminates in a dynamic Google Data Studio dashboard that provides real-time mobility insights.",
-    image: "/architecture.jpg",
+    image: "architecture.jpg",
     link: "https://github.com/litaPhsinaM/UBER-DATA-ENGINEERING-PIPELINE-AND-DASHBOARD-CREATION",
     tags: ["GCP", "Mage", "BigQuery", "Data Modeling"],
     category: "Systems & Infrastructure"
@@ -28,7 +28,7 @@ export const projects: Project[] = [
   {
     title: "SQL Data Cleaning (Housing)",
     description: "Transformed raw, fragmented housing data into an analytical-ready dataset using advanced SQL techniques. I implemented complex transformations to standardize temporal data, resolved missing spatial info, and utilized CTEs to eliminate redundancy. Mastery in the critical preparation phase of the data lifecycle.",
-    image: "/kirkpatrick-park-01-1600x900.jpg",
+    image: "kirkpatrick-park-01-1600x900.jpg",
     link: "https://github.com/litaPhsinaM/Data-Cleaning-with-SQL-Housing-Database-/blob/main/Data%20Cleaning%20using%20SQL.sql",
     tags: ["SQL Server", "Data Transformation", "Database Optimization"],
     category: "Systems & Infrastructure"
@@ -38,7 +38,7 @@ export const projects: Project[] = [
   {
     title: "AI Guide App (Gemini API)",
     description: "An intelligent assistant built to guide users through the complex landscape of Artificial Intelligence. Powered by the Google Gemini API, this application provides real-time explanations, code examples, and conceptual guidance. It features a sleek, responsive interface and demonstrates deep integration with cutting-edge Large Language Models (LLMs).",
-    image: "/ai_guide_app_coder.png",
+    image: "ai_guide_app_coder.png",
     link: "https://github.com/litaPhsinaM/AI_GUIDE_APP",
     tags: ["Generative AI", "Gemini API", "Python", "LLM Integration"],
     category: "AI & Deep Learning"
@@ -46,7 +46,7 @@ export const projects: Project[] = [
   {
     title: "3D Shape Classification (CNN)",
     description: "Developed a custom Convolutional Neural Network (CNN) architecture using PyTorch to solve complex 3D geometric classification challenges. By implementing advanced preprocessing techniques, including image augmentation and precise normalization, the model achieved a remarkable validation accuracy of 99.77%. This project showcases deep expertise in computer vision and deep learning frameworks.",
-    image: "/3d shapes.png",
+    image: "3d shapes.png",
     link: "https://github.com/litaPhsinaM/IMAGE-CLASSIFICATION-ON-3D-GEOMETRIC-SHAPES-USING-CNN-MODEL-WITH-PYTORCH/blob/main/cnn_3d_objects.ipynb",
     tags: ["Deep Learning", "PyTorch", "CNN", "Computer Vision"],
     category: "AI & Deep Learning"
@@ -54,7 +54,7 @@ export const projects: Project[] = [
   {
     title: "LangChain Web Scraper",
     description: "A technical implementation of automated web scraping for high-fidelity data retrieval using LangChain and BeautifulSoup. The system utilizes AI-driven parsing to extract structured information from complex web sources (like IMDB), demonstrating expertise in automated data ingestion and modern AI orchestration patterns.",
-    image: "/langchain_scraper_coder.png",
+    image: "langchain_scraper_coder.png",
     link: "https://github.com/litaPhsinaM/Using-LangChain-for-Web-Scraping",
     tags: ["LangChain", "AI Automation", "Web Scraping", "Python"],
     category: "AI & Deep Learning"
@@ -64,7 +64,7 @@ export const projects: Project[] = [
   {
     title: "CryptoLens: Automated Analysis",
     description: "Built a sophisticated real-time cryptocurrency analysis tool using Python. The system performs automated data retrieval, normalizes complex JSON structures into Pandas DataFrames, and maintains a continuous historical dataset. It features an automated reporting layer that generates visualizations using Seaborn and Matplotlib.",
-    image: "/cryptooo.jpg",
+    image: "cryptooo.jpg",
     link: "https://github.com/litaPhsinaM/CryptoLens-Automated-Crypto-Analysis/blob/main/Automated%20Crypto%20Analysis.ipynb",
     tags: ["Python", "Pandas", "Real-time Data", "Automation"],
     category: "Data Science & Analytics"
@@ -72,7 +72,7 @@ export const projects: Project[] = [
   {
     title: "World Population Analysis (EDA)",
     description: "A comprehensive Exploratory Data Analysis (EDA) of global population trends. I leveraged Pandas and Seaborn to perform deep-dive correlation studies and continent-level trend analysis. The project emphasizes data integrity through rigorous preprocessing and strategic trend forecasting.",
-    image: "/WORLD POPULATION.png",
+    image: "WORLD POPULATION.png",
     link: "https://github.com/litaPhsinaM/Exploratory-Data-Analysis-of-World-Population/blob/main/Exploratory%20Data%20Analysis%20in%20pandas.ipynb",
     tags: ["EDA", "Python", "Seaborn", "Data Analytics"],
     category: "Data Science & Analytics"
@@ -80,7 +80,7 @@ export const projects: Project[] = [
   {
     title: "Tableau Analytical Suite",
     description: "A collection of interactive Tableau dashboards created by integrating SQL-processed data with advanced visualization techniques. These dashboards provide deep-dive insights into business metrics, featuring parameter-driven views and complex LOD expressions to reveal hidden patterns.",
-    image: "/IMG_2891.jpg",
+    image: "IMG_2891.jpg",
     link: "https://public.tableau.com/app/profile/manish.patil6772/vizzes",
     tags: ["Tableau", "Dashboard Design", "Business Intelligence"],
     category: "Data Science & Analytics"
@@ -88,7 +88,7 @@ export const projects: Project[] = [
   {
     title: "Data Pro Survey Analysis",
     description: "An analytical dashboard visualising complex survey data from data professionals worldwide. Developed using Power BI and DAX, the project reveals trends in salaries, technical skills, and job satisfaction. This complements my existing Tableau suite, providing a rounded perspective on Business Intelligence and Data Visualization.",
-    image: "/power_bi_survey_coder_preview.png",
+    image: "power_bi_survey_coder_preview.png",
     link: "https://github.com/litaPhsinaM/Analysis-of-Data-Professional-Survey--PowerBI-Project",
     tags: ["Power BI", "DAX", "Data Visualization", "BI"],
     category: "Data Science & Analytics"
@@ -98,7 +98,7 @@ export const projects: Project[] = [
   {
     title: "Modern React Portfolio (v2.0)",
     description: "The very application you are browsing right now. A high-performance, responsive portfolio built with React, TypeScript, and Vite. It features a unique 'Coder' aesthetic, advanced Framer Motion parallax effects, glassmorphism UI components, and a custom tabbed navigation system. This project represents a mastery of modern frontend engineering and creative UX design.",
-    image: "/modern_portfolio_coder_preview.png",
+    image: "modern_portfolio_coder_preview.png",
     link: "https://github.com/litaPhsinaM/ManishPatil_Portfolio",
     tags: ["React", "TypeScript", "Framer Motion", "UI/UX"],
     category: "Software Engineering"
@@ -106,7 +106,7 @@ export const projects: Project[] = [
   {
     title: "React + MySQL Full-Stack",
     description: "A full-stack application demonstrating seamless database integration with a modern React frontend. It features a robust Node.js backend managing CRUD operations against a MySQL relational database. The project highlights expertise in architectural patterns, relational modeling, and full-stack data flow.",
-    image: "/react_mysql_coder_preview.png",
+    image: "react_mysql_coder_preview.png",
     link: "https://github.com/litaPhsinaM/REACTMYSQL",
     tags: ["Full Stack", "MySQL", "React", "Node.js"],
     category: "Software Engineering"
@@ -114,7 +114,7 @@ export const projects: Project[] = [
   {
     title: "Soccer Social Platform",
     description: "A specialized social media application designed for soccer enthusiasts. Built with a focus on community interaction and high-quality UI/UX, this platform allows users to explore and share content related to their passion for the sport. It demonstrates the ability to translate personal interests into functional, user-centric software.",
-    image: "/soccer_social_coder_preview.png",
+    image: "soccer_social_coder_preview.png",
     link: "https://github.com/litaPhsinaM/SOCCER_SOCIAL",
     tags: ["JavaScript", "Social Platform", "Web Development"],
     category: "Software Engineering"

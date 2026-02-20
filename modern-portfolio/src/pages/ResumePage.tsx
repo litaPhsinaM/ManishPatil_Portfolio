@@ -18,10 +18,10 @@ const ResumePage: React.FC = () => {
                 </motion.div>
 
                 <div className="resume-actions-top">
-                    <a href="/Manish Patil.pdf" target="_blank" className="btn">
+                    <a href={`${import.meta.env.BASE_URL}Manish Patil.pdf`} target="_blank" className="btn">
                         <ExternalLink size={18} /> Open in New Tab
                     </a>
-                    <a href="/Manish Patil.pdf" download className="btn-secondary">
+                    <a href={`${import.meta.env.BASE_URL}Manish Patil.pdf`} download className="btn-secondary">
                         <Download size={18} /> Download PDF
                     </a>
                 </div>
@@ -33,7 +33,7 @@ const ResumePage: React.FC = () => {
                     className="resume-viewer glass"
                 >
                     <iframe
-                        src="/Manish Patil.pdf"
+                        src={`${import.meta.env.BASE_URL}Manish Patil.pdf`}
                         width="100%"
                         height="1000px"
                         title="Manish Patil Resume"
