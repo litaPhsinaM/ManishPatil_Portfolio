@@ -160,4 +160,32 @@
     .projects-grid {
         grid-template-columns: 1fr;
     }
+
+    .section-title {
+        font-size: 1.8rem;
+    }
+
+    .project-card {
+        margin-bottom: 1.5rem;
+    }
+
+    .project-content {
+        padding: 1rem;
+    }
+
+    .project-content h3 {
+        font-size: 1.1rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .project-content p {
+        font-size: 0.8rem;
+        margin-bottom: 1rem;
+        line-height: 1.5;
+    }
+
+    .tag {
+        font-size: 0.6rem;
+        padding: 0.15rem 0.4rem;
+    }
 }
