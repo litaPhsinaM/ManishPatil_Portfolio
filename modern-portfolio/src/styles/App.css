@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;700;800&display=swap');
+
+:root {
+    --bg-dark: #0b0e14;
+    --bg-card: rgba(17, 22, 30, 0.8);
+    --accent: #2ecc71;
+    /* Success/Green accent */
+    --accent-alt: #3498db;
+    /* Data/Blue accent */
+    --syntax-purple: #9b59b6;
+    --syntax-orange: #e67e22;
+    --text-main: #d1d5db;
+    --text-dim: #6b7280;
+    --glass-border: rgba(255, 255, 255, 0.05);
+    --terminal-header: rgba(30, 41, 59, 0.9);
+    --nav-height: 80px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'JetBrains Mono', monospace;
+    background-color: var(--bg-dark);
+    color: var(--text-main);
+    line-height: 1.6;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: 'JetBrains Mono', monospace;
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    color: #ffffff;
+}
+
+.glass {
+    background: var(--bg-card);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid var(--glass-border);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+section {
+    padding: 100px 0;
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    background: var(--accent);
+    color: var(--bg-dark);
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(56, 189, 248, 0.3);
+}
+
+.parallax-wrapper {
+    perspective: 1000px;
+}
+
+@media (max-width: 768px) {
+    section {
+        padding: 60px 0;
+    }
+}

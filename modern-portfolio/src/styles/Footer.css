@@ -1,0 +1,114 @@
+.footer {
+    padding: 100px 0 50px;
+    background: #0f172a;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5rem;
+    align-items: flex-start;
+}
+
+.contact-desc {
+    color: var(--text-dim);
+    margin-bottom: 2.5rem;
+    font-size: 1.1rem;
+}
+
+.contact-details {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-bottom: 3rem;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1.1rem;
+    color: var(--text-main);
+}
+
+.resume-cta {
+    display: flex;
+    gap: 1rem;
+}
+
+.contact-form-container {
+    position: relative;
+    padding: 3rem 3rem 3rem;
+    border-radius: 12px;
+    border: 1px solid var(--glass-border);
+    overflow: hidden;
+}
+
+.contact-form-container::before {
+    content: "contact_form_v1.0.js";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 8px 20px;
+    background: var(--terminal-header);
+    font-size: 10px;
+    color: var(--accent-alt);
+    font-weight: 700;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    font-size: 0.85rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--text-dim);
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    background: rgba(15, 23, 42, 0.5);
+    border: 1px solid var(--glass-border);
+    border-radius: 10px;
+    padding: 0.8rem 1rem;
+    color: white;
+    font-family: inherit;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: var(--accent);
+    background: rgba(11, 14, 20, 0.8);
+    box-shadow: 0 0 10px rgba(46, 204, 113, 0.2);
+}
+
+.w-full {
+    width: 100%;
+}
+
+.footer-bottom {
+    margin-top: 100px;
+    padding-top: 30px;
+    border-top: 1px solid var(--glass-border);
+    text-align: center;
+    color: var(--text-dim);
+    font-size: 0.9rem;
+}
+
+@media (max-width: 992px) {
+    .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 4rem;
+    }
+}
