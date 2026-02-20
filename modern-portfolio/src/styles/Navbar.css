@@ -75,9 +75,44 @@
     color: var(--accent);
 }
 
-@media (max-width: 768px) {
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: var(--text-main);
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
 
-    .nav-links,
+.menu-toggle:hover {
+    color: var(--accent);
+}
+
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-links {
+        position: fixed;
+        top: 64px;
+        left: 0;
+        width: 100%;
+        background: rgba(11, 14, 20, 0.98);
+        backdrop-filter: blur(20px);
+        flex-direction: column;
+        padding: 2rem;
+        gap: 2rem;
+        transform: translateY(-150%);
+        transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        border-bottom: 1px solid var(--accent);
+        display: flex;
+    }
+
+    .nav-links.open {
+        transform: translateY(0);
+    }
+
     .nav-socials {
         display: none;
     }

@@ -6,6 +6,8 @@ import '../styles/Navbar.css';
 const Navbar: React.FC = () => {
     const [isScrolled, setIsScrolled] = useState(false);
 
+    const [isOpen, setIsOpen] = useState(false);
+
     useEffect(() => {
         const handleScroll = () => {
             setIsScrolled(window.scrollY > 20);
@@ -27,12 +29,13 @@ const Navbar: React.FC = () => {
                     manish<span>_</span>patil<span>.py</span>
                 </NavLink>
 
-                <div className="nav-links">
+                <div className={`nav-links ${isOpen ? 'open' : ''}`}>
                     {navLinks.map((link) => (
                         <NavLink
                             key={link.name}
                             to={link.href}
                             className={({ isActive }) => `nav-link ${isActive ? 'active' : ''}`}
+                            onClick={() => setIsOpen(false)}
                         >
                             {link.name}
                         </NavLink>
@@ -48,7 +51,11 @@ const Navbar: React.FC = () => {
                     </a>
                 </div>
 
-                <button className="md-hidden" style={{ background: 'none', border: 'none', color: 'white', cursor: 'pointer', display: 'none' }}>
+                <button
+                    className="menu-toggle"
+                    onClick={() => setIsOpen(!isOpen)}
+                    aria-label="Toggle Menu"
+                >
                     <Menu size={24} />
                 </button>
             </div>
