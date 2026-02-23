@@ -35,14 +35,7 @@ export const projects: Project[] = [
   },
 
   // --- AI & Deep Learning ---
-  {
-    title: "AI Guide App (Gemini API)",
-    description: "An intelligent assistant built to guide users through the complex landscape of Artificial Intelligence. Powered by the Google Gemini API, this application provides real-time explanations, code examples, and conceptual guidance. It features a sleek, responsive interface and demonstrates deep integration with cutting-edge Large Language Models (LLMs).",
-    image: "ai_guide_app_coder.png",
-    link: "https://github.com/litaPhsinaM/AI_GUIDE_APP",
-    tags: ["Generative AI", "Gemini API", "Python", "LLM Integration"],
-    category: "AI & Deep Learning"
-  },
+
   {
     title: "3D Shape Classification (CNN)",
     description: "Developed a custom Convolutional Neural Network (CNN) architecture using PyTorch to solve complex 3D geometric classification challenges. By implementing advanced preprocessing techniques, including image augmentation and precise normalization, the model achieved a remarkable validation accuracy of 99.77%. This project showcases deep expertise in computer vision and deep learning frameworks.",
@@ -85,20 +78,13 @@ export const projects: Project[] = [
     tags: ["Tableau", "Dashboard Design", "Business Intelligence"],
     category: "Data Science & Analytics"
   },
-  {
-    title: "Data Pro Survey Analysis",
-    description: "An analytical dashboard visualising complex survey data from data professionals worldwide. Developed using Power BI and DAX, the project reveals trends in salaries, technical skills, and job satisfaction. This complements my existing Tableau suite, providing a rounded perspective on Business Intelligence and Data Visualization.",
-    image: "power_bi_survey_coder_preview.png",
-    link: "https://github.com/litaPhsinaM/Analysis-of-Data-Professional-Survey--PowerBI-Project",
-    tags: ["Power BI", "DAX", "Data Visualization", "BI"],
-    category: "Data Science & Analytics"
-  },
+
 
   // --- Software Engineering ---
   {
     title: "Modern React Portfolio (v2.0)",
     description: "The very application you are browsing right now. A high-performance, responsive portfolio built with React, TypeScript, and Vite. It features a unique 'Coder' aesthetic, advanced Framer Motion parallax effects, glassmorphism UI components, and a custom tabbed navigation system. This project represents a mastery of modern frontend engineering and creative UX design.",
-    image: "modern_portfolio_coder_preview.png",
+    image: "portfolio_v2.png",
     link: "https://github.com/litaPhsinaM/ManishPatil_Portfolio",
     tags: ["React", "TypeScript", "Framer Motion", "UI/UX"],
     category: "Software Engineering"
