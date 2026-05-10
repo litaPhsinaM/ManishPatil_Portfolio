@@ -1,24 +1,46 @@
-import { HashRouter as Router, Routes, Route } from 'react-router-dom';
+import { useEffect } from 'react';
+import { HashRouter as Router, Routes, Route, useLocation, useNavigate } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Home from './pages/Home';
-import ProjectsPage from './pages/ProjectsPage';
-import ResumePage from './pages/ResumePage';
-import Footer from './components/Footer';
+import Win98Boot from './components/Win98Boot';
 import './styles/App.css';
+
+const ReloadHomeGuard = () => {
+  const location = useLocation();
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    const navigation = performance.getEntriesByType('navigation')[0] as PerformanceNavigationTiming | undefined;
+    if (navigation?.type === 'reload' && location.pathname !== '/') {
+      navigate('/', { replace: true });
+      window.scrollTo({ top: 0 });
+    }
+  }, [location.pathname, navigate]);
+
+  return null;
+};
 
 function App() {
   return (
     <Router>
+      <ReloadHomeGuard />
+      <Win98Boot />
       <div className="parallax-wrapper">
         <Navbar />
         <main>
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/projects" element={<ProjectsPage />} />
-            <Route path="/resume" element={<ResumePage />} />
+            <Route path="/about" element={<Home />} />
+            <Route path="/interests" element={<Home />} />
+            <Route path="/life-outside" element={<Home />} />
+            <Route path="/experience" element={<Home />} />
+            <Route path="/projects" element={<Home />} />
+            <Route path="/gallery" element={<Home />} />
+            <Route path="/footer" element={<Home />} />
+            <Route path="/resume" element={<Home />} />
+            <Route path="*" element={<Home />} />
           </Routes>
         </main>
-        <Footer />
       </div>
     </Router>
   );

@@ -1,0 +1,310 @@
+/* ─── Experience Section ─── */
+.experience-section {
+    padding: 0;
+    background: #008080;
+    background-image: repeating-linear-gradient(0deg,
+            transparent,
+            transparent 2px,
+            rgba(0, 0, 0, 0.04) 2px,
+            rgba(0, 0, 0, 0.04) 4px);
+    /* height set inline via JS = N * 90vh */
+}
+
+/* ─── Sticky wrapper fills own viewport ─── */
+.exp-sticky-wrapper {
+    position: sticky;
+    top: 32px;
+    /* below taskbar */
+    height: calc(100vh - 32px);
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0 14px;
+    gap: 22px;
+    overflow: hidden;
+}
+
+/* ─── Header / progress window ─── */
+.exp-header-win {
+    flex-shrink: 0;
+    width: var(--app-shell-width);
+    align-self: center;
+}
+
+.exp-header-body {
+    background: #c0c0c0;
+    padding: 4px 10px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.exp-header-label {
+    font-family: 'MS Sans Serif', sans-serif;
+    font-size: 12px;
+    color: #000;
+    white-space: nowrap;
+}
+
+.exp-progress-track {
+    flex: 1;
+    height: 14px;
+    background: #ffffff;
+    box-shadow: inset 2px 2px #808080, inset -1px -1px #dfdfdf;
+    overflow: hidden;
+}
+
+.exp-progress-fill {
+    height: 100%;
+    background: #000080;
+    width: 0%;
+    transition: width 0.18s ease-out;
+    background-image: repeating-linear-gradient(90deg,
+            #000080 0px,
+            #000080 10px,
+            #0011cc 10px,
+            #0011cc 12px);
+}
+
+/* ─── Panel stack area ─── */
+.exp-panels {
+    flex: 1;
+    position: relative;
+    overflow: hidden;
+    width: var(--app-shell-width);
+    align-self: center;
+    min-height: 0;
+}
+
+/* ─── Individual panels ─── */
+.exp-panel {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%) translateY(16px) scale(0.98);
+    width: 100%;
+    max-width: none;
+    height: auto;
+    max-height: calc(100% - 14px);
+    display: flex;
+    flex-direction: column;
+
+    /* Default: hidden below */
+    opacity: 0;
+    pointer-events: none;
+    transition:
+        opacity 0.65s cubic-bezier(0.22, 1, 0.36, 1),
+        transform 0.65s cubic-bezier(0.22, 1, 0.36, 1),
+        box-shadow 0.65s ease;
+    z-index: 1;
+}
+
+/* Active: fully visible and centered */
+.exp-panel.active {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0) scale(1);
+    pointer-events: all;
+    z-index: 10;
+    box-shadow: var(--win98-raised-border);
+    padding: 3px;
+    background: var(--win98-gray);
+}
+
+/* Past: slide up and shrink slightly */
+.exp-panel.past {
+    opacity: 0;
+    transform: translateX(-50%) translateY(-24px) scale(0.98);
+    pointer-events: none;
+    z-index: 5;
+}
+
+/* Upcoming: peek from below */
+.exp-panel.upcoming {
+    opacity: 0.2;
+    transform: translateX(-50%) translateY(22px) scale(0.99);
+    pointer-events: none;
+    z-index: 3;
+}
+
+/* ─── Toolbar date strip ─── */
+.exp-toolbar {
+    background: #c0c0c0;
+    padding: 3px 8px;
+    border-bottom: 1px solid #808080;
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+/* ─── Panel body ─── */
+.exp-panel-body {
+    background: #ffffff;
+    /* White background for document feel */
+    padding: 24px 40px 22px;
+    flex: 0 1 auto;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    box-shadow: var(--win98-sunken-border);
+}
+
+/* ─── Number badge ─── */
+.exp-number-badge {
+    position: absolute;
+    top: 12px;
+    right: 24px;
+    font-family: 'Courier New', monospace;
+    font-size: 34px;
+    font-weight: bold;
+    color: #e0e0e0;
+    z-index: 0;
+}
+
+/* ─── Title / company ─── */
+.exp-title {
+    font-family: 'MS Sans Serif', sans-serif;
+    font-size: 26px;
+    font-weight: bold;
+    color: #000;
+    margin: 0;
+    position: relative;
+    z-index: 1;
+}
+
+.exp-company {
+    font-family: 'MS Sans Serif', sans-serif;
+    font-size: 16px;
+    color: #000080;
+    font-weight: bold;
+    margin-bottom: 12px;
+    position: relative;
+    z-index: 1;
+}
+
+/* ─── Body text ─── */
+.exp-body-text {
+    font-family: 'MS Sans Serif', sans-serif;
+    font-size: 14px;
+    color: #000;
+    line-height: 1.55;
+    margin: 0;
+    white-space: pre-wrap;
+}
+
+/* ─── Skills / tags ─── */
+.exp-skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+    margin-top: 4px;
+}
+
+/* ─── Responsive: use readable stacked cards before sticky becomes cramped ─── */
+@media (max-width: 1024px) {
+    .experience-section {
+        height: auto !important;
+        min-height: auto;
+        padding: var(--app-section-pad) 0;
+    }
+
+    .exp-sticky-wrapper {
+        position: static;
+        height: auto;
+        width: var(--app-shell-width);
+        margin: 0 auto;
+        padding: 0;
+        overflow: visible;
+    }
+
+    .exp-panel {
+        position: static;
+        opacity: 1;
+        transform: none !important;
+        pointer-events: all;
+        width: 100%;
+        height: auto;
+        max-height: none;
+        margin-bottom: 14px;
+        padding: 3px;
+        background: var(--win98-gray);
+        box-shadow: var(--win98-raised-border);
+        z-index: auto;
+    }
+
+    .exp-panels {
+        flex: none;
+        position: static;
+        overflow: visible;
+        width: 100%;
+        min-height: 0;
+    }
+
+    .exp-header-win {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .exp-header-body {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 6px;
+    }
+
+    .exp-header-label {
+        white-space: normal;
+    }
+
+    .exp-progress-track {
+        width: 100%;
+    }
+
+    .exp-panel-body {
+        padding: 18px;
+        max-height: none;
+        overflow: visible;
+    }
+
+    .exp-panel.past,
+    .exp-panel.upcoming {
+        opacity: 1;
+        transform: none !important;
+        pointer-events: all;
+    }
+}
+
+@media (max-width: 520px) {
+    .experience-section {
+        padding: 22px 0;
+    }
+
+    .exp-sticky-wrapper {
+        width: var(--app-shell-width);
+    }
+
+    .exp-toolbar {
+        overflow-x: auto;
+    }
+
+    .exp-title {
+        font-size: 20px;
+    }
+
+    .exp-company,
+    .exp-body-text {
+        font-size: 12px;
+    }
+
+    .exp-number-badge {
+        font-size: 26px;
+        right: 16px;
+    }
+
+    .exp-skills .tag {
+        font-size: 11px;
+    }
+}
+
+.exp-skills .tag {
+    font-size: 12px;
+    padding: 3px 8px;
+}

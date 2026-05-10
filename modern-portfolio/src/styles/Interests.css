@@ -1,0 +1,226 @@
+/* ─── Interests Section ─── */
+.interests-section {
+    min-height: var(--app-page-min-height);
+    padding: var(--app-section-pad) 0;
+    background: #008080;
+    background-image: repeating-linear-gradient(0deg,
+            transparent,
+            transparent 2px,
+            rgba(0, 0, 0, 0.04) 2px,
+            rgba(0, 0, 0, 0.04) 4px);
+    display: flex;
+    align-items: center;
+}
+
+.section-header {
+    margin-bottom: 16px;
+    text-align: center;
+}
+
+.win98-title {
+    display: inline-block;
+    background: #c0c0c0;
+    padding: 4px 12px;
+    box-shadow: var(--win98-raised-border);
+    padding: 3px;
+    font-family: 'MS Sans Serif', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    color: #000;
+}
+
+.merged-layout {
+    display: grid;
+    grid-template-columns: minmax(260px, 0.28fr) minmax(0, 1fr);
+    gap: 16px;
+    align-items: stretch;
+}
+
+/* ─── Left: Interest Column ─── */
+.interests-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    height: 100%;
+}
+
+.interest-mini-card {
+    padding: 2px;
+    background: var(--win98-gray);
+    flex: 0 0 auto;
+    min-height: 0;
+}
+
+.mini-body {
+    min-height: 82px;
+    padding: 8px;
+    background: #c0c0c0;
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+.mini-img-frame {
+    width: 64px;
+    height: 64px;
+    flex-shrink: 0;
+    box-shadow: var(--win98-sunken-border);
+    background: #ececec;
+    padding: 2px;
+    overflow: hidden;
+}
+
+.mini-img-frame img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.mini-desc {
+    font-size: 11px;
+    line-height: 1.35;
+    margin: 0;
+    flex: 1;
+    color: #000;
+}
+
+/* ─── Right: Gallery Window ─── */
+.gallery-window {
+    display: flex;
+    flex-direction: column;
+    height: min(700px, calc(var(--app-page-min-height) - 110px));
+    min-height: 580px;
+    box-shadow: var(--win98-raised-border);
+    background: var(--win98-gray);
+    padding: 3px;
+}
+
+.explorer-body {
+    background: #fff;
+    box-shadow: var(--win98-sunken-border);
+    flex: 1;
+    overflow-y: auto;
+    padding: 14px;
+}
+
+.explorer-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 16px;
+    align-items: start;
+}
+
+.explorer-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+    text-align: center;
+    cursor: pointer;
+    min-width: 0;
+}
+
+.explorer-icon-frame {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    background: #eee;
+    box-shadow: var(--win98-sunken-border);
+    padding: 2px;
+    overflow: hidden;
+}
+
+.explorer-icon-frame img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.explorer-label {
+    width: 100%;
+    min-height: 18px;
+    font-size: 12px;
+    line-height: 1.2;
+    word-break: normal;
+    overflow-wrap: anywhere;
+    max-width: none;
+    padding: 1px 3px;
+}
+
+.explorer-item:hover .explorer-label {
+    background: #000080;
+    color: #fff;
+}
+
+/* ─── Responsive ─── */
+@media (max-width: 900px) {
+    .interests-section {
+        align-items: flex-start;
+        min-height: auto;
+    }
+
+    .merged-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .interests-column {
+        flex-direction: row;
+        overflow-x: auto;
+        padding-bottom: 8px;
+        height: auto;
+    }
+
+    .interest-mini-card {
+        flex-shrink: 0;
+        width: 240px;
+        flex: 0 0 240px;
+    }
+
+    .gallery-window {
+        height: 560px;
+        min-height: 0;
+    }
+
+    .explorer-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 600px) {
+    .section-header {
+        margin-bottom: 10px;
+    }
+
+    .win98-title {
+        font-size: 14px;
+    }
+
+    .interests-column {
+        gap: 8px;
+    }
+
+    .interest-mini-card {
+        width: 210px;
+        flex-basis: 210px;
+    }
+
+    .mini-img-frame {
+        width: 56px;
+        height: 56px;
+    }
+
+    .explorer-grid {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+    .gallery-window {
+        height: 520px;
+    }
+
+    .explorer-body {
+        padding: 10px;
+    }
+}
