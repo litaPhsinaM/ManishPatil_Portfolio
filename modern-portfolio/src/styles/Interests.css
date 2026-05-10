@@ -31,7 +31,7 @@
 
 .merged-layout {
     display: grid;
-    grid-template-columns: minmax(260px, 0.28fr) minmax(0, 1fr);
+    grid-template-columns: minmax(240px, 0.28fr) minmax(0, 1fr);
     gap: 16px;
     align-items: stretch;
 }
@@ -84,6 +84,7 @@
     margin: 0;
     flex: 1;
     color: #000;
+    min-width: 0;
 }
 
 /* ─── Right: Gallery Window ─── */
@@ -91,7 +92,7 @@
     display: flex;
     flex-direction: column;
     height: min(700px, calc(var(--app-page-min-height) - 110px));
-    min-height: 580px;
+    min-height: 400px;
     box-shadow: var(--win98-raised-border);
     background: var(--win98-gray);
     padding: 3px;
@@ -102,6 +103,7 @@
     box-shadow: var(--win98-sunken-border);
     flex: 1;
     overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
     padding: 14px;
 }
 
@@ -120,6 +122,7 @@
     text-align: center;
     cursor: pointer;
     min-width: 0;
+    -webkit-tap-highlight-color: transparent;
 }
 
 .explorer-icon-frame {
@@ -168,18 +171,21 @@
     .interests-column {
         flex-direction: row;
         overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
         padding-bottom: 8px;
         height: auto;
+        scroll-snap-type: x mandatory;
     }
 
     .interest-mini-card {
         flex-shrink: 0;
         width: 240px;
         flex: 0 0 240px;
+        scroll-snap-align: start;
     }
 
     .gallery-window {
-        height: 560px;
+        height: 480px;
         min-height: 0;
     }
 
@@ -202,25 +208,44 @@
     }
 
     .interest-mini-card {
-        width: 210px;
-        flex-basis: 210px;
+        width: 200px;
+        flex-basis: 200px;
     }
 
     .mini-img-frame {
-        width: 56px;
-        height: 56px;
+        width: 52px;
+        height: 52px;
+    }
+
+    .mini-desc {
+        font-size: 10px;
     }
 
     .explorer-grid {
-        grid-template-columns: 1fr;
-        gap: 12px;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 10px;
     }
 
     .gallery-window {
-        height: 520px;
+        height: 400px;
     }
 
     .explorer-body {
-        padding: 10px;
+        padding: 8px;
+    }
+
+    .explorer-label {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 360px) {
+    .interest-mini-card {
+        width: 180px;
+        flex-basis: 180px;
+    }
+
+    .gallery-window {
+        height: 360px;
     }
 }

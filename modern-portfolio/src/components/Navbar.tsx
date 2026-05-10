@@ -53,6 +53,15 @@ const Navbar: React.FC = () => {
 
     return (
         <nav className="win98-taskbar">
+            {/* Backdrop to close start menu on outside click */}
+            {isStartOpen && (
+                <div
+                    className="start-menu-backdrop"
+                    onClick={() => setIsStartOpen(false)}
+                    aria-hidden="true"
+                />
+            )}
+
             {/* Start Menu Popup */}
             {isStartOpen && (
                 <div className="start-menu">
@@ -95,13 +104,15 @@ const Navbar: React.FC = () => {
             )}
 
             {/* Start Button */}
-            <div
+            <button
                 className={`taskbar-start-btn ${isStartOpen ? 'active-task' : ''}`}
                 onClick={() => setIsStartOpen(!isStartOpen)}
+                aria-label="Start menu"
+                aria-expanded={isStartOpen}
             >
                 <span className="start-flag">🪟</span>
                 <span className="start-label">Start</span>
-            </div>
+            </button>
 
             <div className="taskbar-divider" />
 
@@ -160,7 +171,8 @@ const Navbar: React.FC = () => {
             <button
                 className="taskbar-hamburger"
                 onClick={() => setIsOpen(!isOpen)}
-                aria-label="Toggle Menu"
+                aria-label="Toggle social links menu"
+                aria-expanded={isOpen}
             >
                 ▲
             </button>

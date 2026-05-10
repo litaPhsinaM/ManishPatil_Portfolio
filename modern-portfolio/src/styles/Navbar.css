@@ -4,13 +4,14 @@
     bottom: 0;
     left: 0;
     right: 0;
-    height: 32px;
+    height: var(--taskbar-h);
     background: #c0c0c0;
     box-shadow: inset 0 2px #ffffff, inset 0 -2px #000, inset 0 1px #dfdfdf;
     display: flex;
     align-items: center;
     gap: 2px;
     padding: 0 2px;
+    padding-bottom: var(--safe-bottom);
     z-index: 9999;
     border-top: 2px solid #dfdfdf;
 }
@@ -27,18 +28,20 @@
     font-family: 'MS Sans Serif', sans-serif;
     font-size: 12px;
     font-weight: bold;
-    height: 24px;
+    height: calc(var(--taskbar-h) - 8px);
     box-shadow: inset -2px -2px #808080, inset 1px 1px #dfdfdf, inset -3px -3px #404040, inset 2px 2px #ffffff;
     white-space: nowrap;
     cursor: pointer;
     letter-spacing: 0.5px;
+    -webkit-tap-highlight-color: transparent;
 }
 
 .taskbar-start-btn:hover {
     filter: brightness(0.96);
 }
 
-.taskbar-start-btn:active {
+.taskbar-start-btn:active,
+.taskbar-start-btn.active-task {
     box-shadow: inset 2px 2px #808080, inset -1px -1px #dfdfdf, inset 3px 3px #404040, inset -2px -2px #ffffff;
     padding: 3px 7px 1px 7px;
 }
@@ -56,7 +59,7 @@
 /* ─── Taskbar Divider ─── */
 .taskbar-divider {
     width: 2px;
-    height: 22px;
+    height: calc(var(--taskbar-h) - 10px);
     background: #808080;
     box-shadow: 1px 0 #ffffff;
     margin: 0 3px;
@@ -79,7 +82,7 @@
     text-decoration: none;
     font-family: 'MS Sans Serif', sans-serif;
     font-size: 11px;
-    height: 24px;
+    height: calc(var(--taskbar-h) - 8px);
     min-width: 80px;
     box-shadow: inset -2px -2px #808080, inset 1px 1px #dfdfdf, inset -3px -3px #404040, inset 2px 2px #ffffff;
     white-space: nowrap;
@@ -87,6 +90,7 @@
     border: none;
     overflow: hidden;
     text-overflow: ellipsis;
+    -webkit-tap-highlight-color: transparent;
 }
 
 .taskbar-app-btn:hover {
@@ -111,7 +115,7 @@
     align-items: center;
     gap: 4px;
     padding: 0 6px;
-    height: 24px;
+    height: calc(var(--taskbar-h) - 8px);
     box-shadow: inset 2px 2px #808080, inset -1px -1px #dfdfdf, inset 3px 3px #404040, inset -2px -2px #ffffff;
     background: #c0c0c0;
 }
@@ -154,18 +158,40 @@
     cursor: pointer;
     padding: 2px 6px;
     color: #000;
+    -webkit-tap-highlight-color: transparent;
 }
 
 /* ─── Start Menu Popup ─── */
 .start-menu {
     position: absolute;
-    bottom: 32px;
+    bottom: var(--taskbar-h);
     left: 2px;
-    width: 170px;
+    width: 180px;
     background: #c0c0c0;
-    box-shadow: inset 1px 1px #ffffff, inset -1px -1px #000, inset 2px 2px #dfdfdf, inset -2px -2px #808080;
+    box-shadow: inset 1px 1px #ffffff, inset -1px -1px #000, inset 2px 2px #dfdfdf, inset -2px -2px #808080,
+        2px -2px 8px rgba(0, 0, 0, 0.3);
     display: flex;
     z-index: 10000;
+    animation: start-menu-open 0.15s ease-out;
+}
+
+@keyframes start-menu-open {
+    from {
+        opacity: 0;
+        transform: translateY(8px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Backdrop to close start menu on outside click */
+.start-menu-backdrop {
+    position: fixed;
+    inset: 0;
+    z-index: 9998;
+    background: transparent;
 }
 
 .start-menu-sidebar {
@@ -204,6 +230,8 @@
     cursor: pointer;
     text-decoration: none;
     color: #000;
+    min-height: 32px;
+    -webkit-tap-highlight-color: transparent;
 }
 
 .menu-item:hover {
@@ -213,6 +241,7 @@
 
 .menu-icon {
     font-size: 16px;
+    flex-shrink: 0;
 }
 
 .menu-label {
@@ -241,27 +270,46 @@
 }
 
 /* ─── Mobile: collapse nav links ─── */
-@media (max-width: 600px) {
+@media (max-width: 768px) {
     .taskbar-shortcuts {
         display: none;
     }
+}
 
+@media (max-width: 600px) {
     .start-menu {
-        width: 150px;
+        width: 180px;
+        bottom: var(--taskbar-h);
+    }
+
+    .menu-item {
+        min-height: 40px;
+        padding: 8px 10px;
+        gap: 10px;
+    }
+
+    .menu-label {
+        font-size: 12px;
+    }
+
+    .menu-icon {
+        font-size: 18px;
     }
 
     .taskbar-apps {
         display: none;
         position: fixed;
-        top: 32px;
-        left: 0;
-        right: 0;
+        bottom: var(--taskbar-h);
+        right: 2px;
+        left: auto;
         flex-direction: column;
         background: #c0c0c0;
-        box-shadow: inset -2px -2px #808080, inset 1px 1px #ffffff;
-        z-index: 1001;
+        box-shadow: inset -2px -2px #808080, inset 1px 1px #ffffff,
+            -2px -2px 8px rgba(0, 0, 0, 0.3);
+        z-index: 10001;
         padding: 4px;
         gap: 2px;
+        animation: start-menu-open 0.15s ease-out;
     }
 
     .taskbar-apps.open {
@@ -271,6 +319,7 @@
     .taskbar-apps .taskbar-app-btn {
         width: 100%;
         min-width: 0;
+        min-height: 36px;
         justify-content: flex-start;
     }
 
@@ -278,14 +327,35 @@
         display: block;
         box-shadow: var(--win98-raised-border);
         background: #c0c0c0;
-        height: 24px;
+        height: calc(var(--taskbar-h) - 8px);
+        min-width: 32px;
     }
 
     .taskbar-start-btn {
-        padding: 2px 6px;
+        padding: 2px 8px;
     }
 
     .start-label {
+        /* Keep visible on mobile too for recognizability */
+        font-size: 11px;
+    }
+
+    .taskbar-clock {
+        font-size: 10px;
+        min-width: 32px;
+    }
+}
+
+@media (max-width: 360px) {
+    .start-label {
         display: none;
+    }
+
+    .taskbar-tray {
+        padding: 0 3px;
+    }
+
+    .start-menu {
+        width: 160px;
     }
 }

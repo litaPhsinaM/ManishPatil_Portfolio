@@ -19,6 +19,27 @@ const gameTabs: Array<{ id: GameId; label: string; title: string }> = [
     { id: 'traffic', label: 'Traffic Racer', title: 'TrafficRacer.exe' },
 ];
 
+/* ─── Touch D-pad for Snake ─── */
+const TouchDpad: React.FC<{ onDirection: (dir: number[]) => void }> = ({ onDirection }) => (
+    <div className="touch-dpad">
+        <div className="touch-dpad-row">
+            <div className="touch-dpad-spacer" />
+            <button className="touch-dpad-btn" onTouchStart={(e) => { e.preventDefault(); onDirection([0, -1]); }} aria-label="Up">▲</button>
+            <div className="touch-dpad-spacer" />
+        </div>
+        <div className="touch-dpad-row">
+            <button className="touch-dpad-btn" onTouchStart={(e) => { e.preventDefault(); onDirection([-1, 0]); }} aria-label="Left">◀</button>
+            <div className="touch-dpad-spacer" />
+            <button className="touch-dpad-btn" onTouchStart={(e) => { e.preventDefault(); onDirection([1, 0]); }} aria-label="Right">▶</button>
+        </div>
+        <div className="touch-dpad-row">
+            <div className="touch-dpad-spacer" />
+            <button className="touch-dpad-btn" onTouchStart={(e) => { e.preventDefault(); onDirection([0, 1]); }} aria-label="Down">▼</button>
+            <div className="touch-dpad-spacer" />
+        </div>
+    </div>
+);
+
 const SnakeGame: React.FC = () => {
     const [snake, setSnake] = useState<number[][]>(INITIAL_SNAKE);
     const [direction, setDirection] = useState<number[]>(INITIAL_DIRECTION);
@@ -30,6 +51,9 @@ const SnakeGame: React.FC = () => {
         const saved = localStorage.getItem('snakeHighScore');
         return saved ? parseInt(saved, 10) : 0;
     });
+
+    const directionRef = useRef(direction);
+    directionRef.current = direction;
 
     const generateFood = useCallback((currentSnake: number[][]) => {
         let newFood: number[];
@@ -62,6 +86,22 @@ const SnakeGame: React.FC = () => {
         setGameOver(false);
         setIsPlaying(true);
     }, [generateFood]);
+
+    /* Touch D-pad handler — validates against reverse direction */
+    const handleTouchDirection = useCallback((dir: number[]) => {
+        if (!isPlaying && !gameOver) {
+            setIsPlaying(true);
+            return;
+        }
+        if (gameOver) {
+            resetGame();
+            return;
+        }
+        const cur = directionRef.current;
+        // Prevent reversing into yourself
+        if (dir[0] !== 0 && cur[0] !== -dir[0]) setDirection(dir);
+        else if (dir[1] !== 0 && cur[1] !== -dir[1]) setDirection(dir);
+    }, [isPlaying, gameOver, resetGame]);
 
     useEffect(() => {
         if (!isPlaying || gameOver) return;
@@ -170,6 +210,9 @@ const SnakeGame: React.FC = () => {
                     )}
                 </div>
             </div>
+
+            {/* Touch D-pad for mobile */}
+            <TouchDpad onDirection={handleTouchDirection} />
 
             <div className="games-controls">
                 <button className="btn" onClick={isPlaying ? () => setIsPlaying(false) : resetGame} disabled={gameOver}>
@@ -296,6 +339,12 @@ const TrafficGame: React.FC = () => {
         };
     }, [runId]);
 
+    /* Touch left/right handlers for mobile */
+    const handleTouchLeft = () => { keysRef.current.ArrowLeft = true; };
+    const handleTouchLeftEnd = () => { keysRef.current.ArrowLeft = false; };
+    const handleTouchRight = () => { keysRef.current.ArrowRight = true; };
+    const handleTouchRightEnd = () => { keysRef.current.ArrowRight = false; };
+
     return (
         <>
             <div className="games-header">
@@ -304,6 +353,25 @@ const TrafficGame: React.FC = () => {
             </div>
             <div className="games-screen-bezel">
                 <canvas ref={canvasRef} className="arcade-canvas" width={320} height={480} />
+            </div>
+            {/* Touch left/right for mobile */}
+            <div className="touch-lr-controls">
+                <button
+                    className="touch-lr-btn"
+                    onTouchStart={(e) => { e.preventDefault(); handleTouchLeft(); }}
+                    onTouchEnd={handleTouchLeftEnd}
+                    onMouseDown={handleTouchLeft}
+                    onMouseUp={handleTouchLeftEnd}
+                    aria-label="Steer left"
+                >◀</button>
+                <button
+                    className="touch-lr-btn"
+                    onTouchStart={(e) => { e.preventDefault(); handleTouchRight(); }}
+                    onTouchEnd={handleTouchRightEnd}
+                    onMouseDown={handleTouchRight}
+                    onMouseUp={handleTouchRightEnd}
+                    aria-label="Steer right"
+                >▶</button>
             </div>
             <div className="games-controls">
                 <button className="btn" onClick={() => setRunId(id => id + 1)}>Restart</button>
@@ -328,7 +396,7 @@ const FlappyGame: React.FC = () => {
         let over = false;
         let frame = 0;
 
-        const flap = (e?: KeyboardEvent | MouseEvent) => {
+        const flap = (e?: KeyboardEvent | MouseEvent | TouchEvent) => {
             if (e instanceof KeyboardEvent && e.key !== ' ') return;
             if (e) e.preventDefault();
             if (over) return;
@@ -395,12 +463,14 @@ const FlappyGame: React.FC = () => {
 
         window.addEventListener('keydown', flap);
         canvas.addEventListener('click', flap);
+        canvas.addEventListener('touchstart', flap, { passive: false });
         draw();
 
         return () => {
             if (rafRef.current) cancelAnimationFrame(rafRef.current);
             window.removeEventListener('keydown', flap);
             canvas.removeEventListener('click', flap);
+            canvas.removeEventListener('touchstart', flap);
         };
     }, [runId]);
 
@@ -408,7 +478,7 @@ const FlappyGame: React.FC = () => {
         <>
             <div className="games-header">
                 <div className="games-score">FLAPPY</div>
-                <div className="games-score muted">SPACE / CLICK</div>
+                <div className="games-score muted">SPACE / TAP</div>
             </div>
             <div className="games-screen-bezel">
                 <canvas ref={canvasRef} className="arcade-canvas" width={320} height={480} />

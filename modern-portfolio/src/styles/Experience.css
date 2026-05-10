@@ -13,12 +13,12 @@
 /* ─── Sticky wrapper fills own viewport ─── */
 .exp-sticky-wrapper {
     position: sticky;
-    top: 32px;
-    /* below taskbar */
-    height: calc(100vh - 32px);
+    top: 0;
+    height: 100vh;
+    height: 100dvh;
     display: flex;
     flex-direction: column;
-    padding: 10px 0 14px;
+    padding: 10px 0 calc(var(--taskbar-h) + 14px);
     gap: 22px;
     overflow: hidden;
 }
@@ -133,6 +133,14 @@
     display: flex;
     align-items: center;
     flex-shrink: 0;
+    overflow: hidden;
+}
+
+.exp-toolbar .explorer-btn {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    min-width: 0;
 }
 
 /* ─── Panel body ─── */
@@ -146,6 +154,7 @@
     flex-direction: column;
     gap: 10px;
     box-shadow: var(--win98-sunken-border);
+    -webkit-overflow-scrolling: touch;
 }
 
 /* ─── Number badge ─── */
@@ -199,7 +208,12 @@
     margin-top: 4px;
 }
 
-/* ─── Responsive: use readable stacked cards before sticky becomes cramped ─── */
+.exp-skills .tag {
+    font-size: 12px;
+    padding: 3px 8px;
+}
+
+/* ─── Responsive: standard stacked layout for mobile/tablet ─── */
 @media (max-width: 1024px) {
     .experience-section {
         height: auto !important;
@@ -218,9 +232,9 @@
 
     .exp-panel {
         position: static;
-        opacity: 1;
+        opacity: 1 !important;
         transform: none !important;
-        pointer-events: all;
+        pointer-events: all !important;
         width: 100%;
         height: auto;
         max-height: none;
@@ -228,7 +242,7 @@
         padding: 3px;
         background: var(--win98-gray);
         box-shadow: var(--win98-raised-border);
-        z-index: auto;
+        z-index: auto !important;
     }
 
     .exp-panels {
@@ -252,10 +266,12 @@
 
     .exp-header-label {
         white-space: normal;
+        font-size: 11px;
     }
 
     .exp-progress-track {
         width: 100%;
+        display: none; /* Hide progress bar on mobile since it's not sticky */
     }
 
     .exp-panel-body {
@@ -266,9 +282,9 @@
 
     .exp-panel.past,
     .exp-panel.upcoming {
-        opacity: 1;
+        opacity: 1 !important;
         transform: none !important;
-        pointer-events: all;
+        pointer-events: all !important;
     }
 }
 
@@ -283,28 +299,35 @@
 
     .exp-toolbar {
         overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
     }
 
     .exp-title {
-        font-size: 20px;
+        font-size: 18px;
     }
 
-    .exp-company,
-    .exp-body-text {
+    .exp-company {
         font-size: 12px;
     }
 
+    .exp-body-text {
+        font-size: 12px;
+        line-height: 1.6;
+    }
+
     .exp-number-badge {
-        font-size: 26px;
-        right: 16px;
+        font-size: 22px;
+        right: 12px;
+        top: 8px;
     }
 
     .exp-skills .tag {
-        font-size: 11px;
+        font-size: 10px;
+        padding: 2px 6px;
     }
-}
 
-.exp-skills .tag {
-    font-size: 12px;
-    padding: 3px 8px;
+    .exp-panel-body {
+        padding: 14px 12px;
+        gap: 8px;
+    }
 }

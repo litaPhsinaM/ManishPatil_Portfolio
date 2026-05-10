@@ -76,6 +76,7 @@
     border-top: 1px solid #808080;
     border-bottom: 1px solid #808080;
     overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
 }
 
 .project-tab {
@@ -95,6 +96,7 @@
     line-height: 1.1;
     cursor: pointer;
     white-space: nowrap;
+    -webkit-tap-highlight-color: transparent;
 }
 
 .project-tab svg {
@@ -124,12 +126,22 @@
 .category-body {
     background: #c0c0c0;
     padding: 14px;
+    overflow: hidden;
+}
+
+/* Reset 98.css .window defaults on inner cards to prevent double borders */
+.category-body .project-card-win {
+    border: none;
+    margin: 0;
+    box-sizing: border-box;
+    max-width: 100%;
+    overflow: hidden;
 }
 
 /* ─── Project cards grid ─── */
 .projects-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(280px, 100%), 1fr));
     gap: 14px;
 }
 
@@ -192,7 +204,8 @@
 .project-github-btn {
     padding: 1px 8px;
     font-size: 10px;
-    height: 20px;
+    height: 24px;
+    min-height: 24px;
 }
 
 .project-github-btn.disabled-link {
@@ -227,7 +240,7 @@
     .project-tab.active {
         width: 100%;
         min-width: 0;
-        min-height: 30px;
+        min-height: 36px;
         margin-bottom: 0;
         justify-content: flex-start;
     }
@@ -239,7 +252,7 @@
     }
 
     .category-body {
-        padding: 8px;
+        padding: 10px;
     }
 
     .project-img-frame {
@@ -248,5 +261,19 @@
 
     .project-desc {
         font-size: 11px;
+    }
+
+    .project-github-btn {
+        min-height: 32px;
+        height: auto;
+        padding: 4px 10px;
+        font-size: 11px;
+    }
+}
+
+@media (pointer: coarse) {
+    .project-github-btn {
+        min-height: 32px;
+        padding: 4px 10px;
     }
 }

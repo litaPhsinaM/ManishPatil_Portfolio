@@ -64,11 +64,13 @@ const Experience: React.FC = () => {
             const fill = fillRef.current;
             if (!section || !panels) return;
 
-            const sectionTop = section.offsetTop;
+            const rect = section.getBoundingClientRect();
+            const sectionTop = rect.top + window.scrollY;
             const sectionHeight = section.offsetHeight;
             const viewportH = window.innerHeight;
             const scrolled = window.scrollY;
 
+            // Use a slightly larger scroll range to ensure transitions finish
             const progress = (scrolled - sectionTop) / (sectionHeight - viewportH);
             const clamped = Math.max(0, Math.min(1, progress));
             const panelProgress = clamped * experiences.length;

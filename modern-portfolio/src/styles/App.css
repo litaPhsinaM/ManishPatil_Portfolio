@@ -40,11 +40,21 @@
     --win98-window-border: inset 1px 1px #dfdfdf, inset -1px -1px #000, inset 2px 2px #ffffff, inset -2px -2px #808080;
     --accent: #000080;
     --accent-alt: #1084d0;
-    --nav-height: 32px;
     --text-main: #000000;
+
+    /* ─── Responsive sizing tokens ─── */
+    --taskbar-h: 32px;
+    --icon-size: 64px;
+    --icon-font: 32px;
+    --icon-label: 11px;
+    --window-pad: 3px;
+    --touch-min: 32px;
+    --nav-height: var(--taskbar-h);
     --app-shell-width: min(94vw, 1480px);
     --app-section-pad: 48px;
-    --app-page-min-height: calc(100vh - var(--nav-height));
+    --app-page-min-height: calc(100vh - var(--taskbar-h));
+    --app-page-min-height: calc(100dvh - var(--taskbar-h));
+    --safe-bottom: env(safe-area-inset-bottom, 0px);
 }
 
 /* ─── Reset ─── */
@@ -59,6 +69,7 @@
 /* ─── Body / Desktop ─── */
 html {
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 body {
@@ -69,6 +80,7 @@ body {
     line-height: 1.6;
     overflow-x: hidden;
     cursor: default;
+    padding-bottom: calc(var(--taskbar-h) + var(--safe-bottom));
     /* Subtle CRT scanline overlay */
     background-image: repeating-linear-gradient(0deg,
             transparent,
@@ -210,11 +222,13 @@ h4 {
     box-shadow: var(--win98-sunken-border);
     padding: 2px;
     height: 22px;
+    min-width: 0;
 }
 
 .win98-address-icon {
     margin: 0 4px;
     font-size: 12px;
+    flex-shrink: 0;
 }
 
 .win98-address-input {
@@ -224,6 +238,7 @@ h4 {
     font-family: 'MS Sans Serif', sans-serif;
     font-size: 11px;
     background: transparent;
+    min-width: 0;
 }
 
 .win98-address-dropdown-btn {
@@ -237,6 +252,7 @@ h4 {
     justify-content: center;
     font-size: 8px;
     cursor: pointer;
+    flex-shrink: 0;
 }
 
 .win98-address-dropdown-btn:active {
@@ -282,6 +298,7 @@ footer {
     transition: box-shadow 0.05s;
     position: relative;
     white-space: nowrap;
+    min-height: var(--touch-min);
 }
 
 .btn:hover {
@@ -313,6 +330,7 @@ footer {
     box-shadow: var(--win98-raised-border);
     transition: box-shadow 0.05s;
     white-space: nowrap;
+    min-height: var(--touch-min);
 }
 
 .btn-secondary:hover {
@@ -412,7 +430,9 @@ footer {
     padding: 2px 6px;
     font-size: 11px;
     background: var(--win98-gray);
-    min-width: 60px;
+    min-width: 40px;
+    word-break: break-word;
+    overflow-wrap: anywhere;
 }
 
 /* ─── Keyframes ─── */
@@ -508,11 +528,36 @@ button,
     cursor: pointer;
 }
 
+/* ─── Focus visible for keyboard nav ─── */
+:focus-visible {
+    outline: 2px dotted #000;
+    outline-offset: 2px;
+}
+
 /* ─── Responsive ─── */
+
+/* Touch device: larger title bar controls */
+@media (pointer: coarse) {
+    .title-bar-controls button {
+        min-width: 24px !important;
+        min-height: 22px !important;
+        width: 24px !important;
+        height: 22px !important;
+    }
+
+    .btn,
+    .btn-secondary {
+        min-height: 36px;
+        padding: 6px 14px;
+    }
+}
+
 @media (max-width: 768px) {
     :root {
         --app-shell-width: min(94vw, 720px);
         --app-section-pad: 30px;
+        --taskbar-h: 36px;
+        --touch-min: 36px;
     }
 
     .container {
@@ -549,12 +594,18 @@ button,
         gap: 4px;
         padding: 4px 6px;
     }
+
+    .win98-panel {
+        min-width: 30px;
+    }
 }
 
 @media (max-width: 520px) {
     :root {
-        --app-shell-width: calc(100vw - 18px);
+        --app-shell-width: calc(100vw - 16px);
         --app-section-pad: 22px;
+        --taskbar-h: 40px;
+        --touch-min: 40px;
     }
 
     .section-separator {
@@ -566,6 +617,7 @@ button,
         gap: 8px;
         padding: 2px 6px;
         white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
     }
 
     .win98-toolbar {
@@ -578,6 +630,18 @@ button,
 
     .win98-statusbar {
         flex-wrap: wrap;
+        gap: 4px;
+    }
+
+    .win98-panel {
+        min-width: 0;
+        flex: 1 1 auto;
+    }
+}
+
+@media (max-width: 360px) {
+    :root {
+        --app-shell-width: calc(100vw - 10px);
     }
 }
 
@@ -588,6 +652,7 @@ button,
     align-items: center !important;
     flex-wrap: nowrap !important;
     width: 100%;
+    min-height: 20px;
 }
 
 .title-bar-text {
@@ -595,6 +660,7 @@ button,
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
+    min-width: 0;
 }
 
 .title-bar-controls {
