@@ -98,8 +98,8 @@
     overflow: hidden;
     width: var(--app-shell-width);
     align-self: center;
-    height: min(70vh, 660px);
-    height: min(70dvh, 660px);
+    height: min(72vh, 690px);
+    height: min(72dvh, 690px);
     min-height: 0;
 }
 
@@ -111,7 +111,7 @@
     transform: translateX(-50%) translateY(var(--stack-y, 54px)) scale(var(--stack-scale, 0.965));
     width: 100%;
     max-width: none;
-    height: calc(100% - 44px);
+    height: calc(100% - 34px);
     max-height: 100%;
     display: flex;
     flex-direction: column;
@@ -158,13 +158,13 @@
 .exp-panel-body {
     background: #ffffff;
     /* White background for document feel */
-    padding: 20px 40px 16px;
+    padding: 18px 34px 14px;
     flex: 1 1 auto;
     min-height: 0;
     overflow: hidden;
     display: flex;
     flex-direction: column;
-    gap: 8px;
+    gap: 6px;
     box-shadow: var(--win98-sunken-border);
     pointer-events: none;
 }
@@ -197,7 +197,7 @@
     font-size: 16px;
     color: #000080;
     font-weight: bold;
-    margin-bottom: 12px;
+    margin-bottom: 8px;
     position: relative;
     z-index: 1;
 }
@@ -207,7 +207,7 @@
     font-family: 'MS Sans Serif', sans-serif;
     font-size: 14px;
     color: #000;
-    line-height: 1.45;
+    line-height: 1.38;
     margin: 0;
     white-space: pre-wrap;
 }
@@ -216,8 +216,8 @@
 .exp-skills {
     display: flex;
     flex-wrap: wrap;
-    gap: 4px;
-    margin-top: 4px;
+    gap: 3px;
+    margin-top: 2px;
 }
 
 /* ─── Responsive: use readable stacked cards on phone screens ─── */
@@ -327,6 +327,6 @@
 }
 
 .exp-skills .tag {
-    font-size: 12px;
-    padding: 3px 8px;
+    font-size: 11px;
+    padding: 2px 7px;
 }

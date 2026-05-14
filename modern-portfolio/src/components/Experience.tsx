@@ -18,11 +18,11 @@ const experiences: ExperienceEntry[] = [
         title: 'IT Specialist',
         company: 'CISE - California State University, Dominguez Hills',
         icon: '🖥️',
-        body: `IT Infrastructure & Systems Administration: Manage end-to-end IT operations for 4,000-5,000+ primarily macOS devices, with some Windows support. Oversee provisioning, lifecycle management, onboarding/offboarding, and enterprise services including DNS, VPN, WiFi, and Google Workspace Admin. JAMF-certified, leading MDM deployment, policy enforcement, and security compliance.
-        \n● Web & Digital Systems Management: Administer and maintain large-scale departmental websites (CM1, WordPress), ensuring ADA compliance, performance optimization, and consistent branding across multi-page environments.
-        \n● Full-Stack Development (Internal Tools): Design and deploy a custom IT ticketing and asset/inventory management system using React, Node.js/Express, and PostgreSQL. Built secure REST APIs with JWT authentication, RBAC, audit logging, and automated workflows to streamline support operations and asset tracking.
-        \n● IT Operations & Process Optimization: Lead event IT setup, infrastructure readiness, and technical support. Develop scalable workflows to improve efficiency in device tracking, onboarding/offboarding, and helpdesk operations.
-        \n● Media Production & Technical Leadership: Produce photo/video content using Adobe Premiere Pro, Photoshop, and Illustrator. Lead and mentor IT student staff, driving support quality and overseeing daily technical operations.`,
+        body: `IT Infrastructure & Systems Administration: Manage end-to-end IT operations for 4,000-5,000+ macOS devices, with Windows support. Oversee provisioning, lifecycle management, onboarding/offboarding, DNS, VPN, WiFi, and Google Workspace Admin. JAMF-certified, leading MDM deployment, policy enforcement, and security compliance.
+        \n● Web & Digital Systems Management: Maintain large-scale departmental websites (CM1, WordPress), ensuring ADA compliance, performance optimization, and consistent branding.
+        \n● Full-Stack Development (Internal Tools): Build a custom IT ticketing and asset/inventory system using React, Node.js/Express, and PostgreSQL, with secure REST APIs, JWT auth, RBAC, audit logs, and automated workflows.
+        \n● IT Operations & Process Optimization: Lead event IT setup, infrastructure readiness, and support workflows for device tracking, onboarding/offboarding, and helpdesk operations.
+        \n● Media Production & Technical Leadership: Produce photo/video content using Adobe Premiere Pro, Photoshop, and Illustrator. Lead and mentor IT student staff across daily technical operations.`,
         skills: ['JAMF', 'Google Workspace Admin', 'React 19', 'Node.js', 'PostgreSQL', 'REST APIs', 'JWT/RBAC', 'CM1', 'WordPress', 'ADA Compliance', 'Asset Management', 'Helpdesk Systems', 'Adobe Photoshop', 'Adobe Premiere Pro', 'AV Support'],
     },
     {
