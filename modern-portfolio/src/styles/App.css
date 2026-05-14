@@ -500,7 +500,7 @@ footer {
 
 /* ─── parallax wrapper ─── */
 .parallax-wrapper {
-    perspective: 1000px;
+    perspective: none;
 }
 
 /* ─── Tag / badge ─── */
