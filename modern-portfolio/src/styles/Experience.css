@@ -122,10 +122,10 @@
     filter: blur(var(--stack-blur, 2px));
     pointer-events: none;
     transition:
-        opacity 0.1s linear,
-        transform 0.1s linear,
-        filter 0.1s linear,
-        box-shadow 0.1s ease;
+        opacity 0.28s ease-out,
+        transform 0.32s cubic-bezier(0.22, 1, 0.36, 1),
+        filter 0.28s ease-out,
+        box-shadow 0.28s ease;
     z-index: var(--stack-z, 1);
 }
 
@@ -221,7 +221,7 @@
 }
 
 /* ─── Responsive: use readable stacked cards on phone screens ─── */
-@media (max-width: 760px) {
+@media (max-width: 900px) {
     .experience-section {
         height: auto !important;
         min-height: auto;
@@ -240,6 +240,7 @@
     .exp-panel {
         position: static;
         opacity: 1;
+        filter: none;
         transform: none !important;
         pointer-events: all;
         width: 100%;
@@ -257,6 +258,7 @@
         position: static;
         overflow: visible;
         width: 100%;
+        height: auto;
         min-height: 0;
     }
 
@@ -289,6 +291,7 @@
     .exp-panel.past,
     .exp-panel.upcoming {
         opacity: 1;
+        filter: none;
         transform: none !important;
         pointer-events: all;
     }

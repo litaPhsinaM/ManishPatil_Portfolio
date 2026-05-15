@@ -70,10 +70,18 @@ const Experience: React.FC = () => {
             const fill = fillRef.current;
             if (!section || !wrapper || !panels) return;
 
-            if (window.innerWidth <= 760) {
+            if (window.innerWidth <= 900) {
                 wrapper.style.transform = '';
                 wrapper.classList.remove('is-fixed', 'is-ended');
                 if (fill) fill.style.width = '0%';
+                panels.querySelectorAll<HTMLElement>('.exp-panel').forEach((panel) => {
+                    panel.classList.remove('active', 'past', 'upcoming');
+                    panel.style.removeProperty('--stack-y');
+                    panel.style.removeProperty('--stack-opacity');
+                    panel.style.removeProperty('--stack-scale');
+                    panel.style.removeProperty('--stack-blur');
+                    panel.style.removeProperty('--stack-z');
+                });
                 return;
             }
 
@@ -95,6 +103,9 @@ const Experience: React.FC = () => {
             const panelProgress = cardProgress * (experiences.length - 1);
             const activeIndex = Math.min(Math.floor(panelProgress), experiences.length - 1);
             const localProgress = panelProgress - activeIndex;
+            const transitionStart = 0.4;
+            const rawTransition = Math.max(0, Math.min(1, (localProgress - transitionStart) / (1 - transitionStart)));
+            const transitionProgress = rawTransition * rawTransition * (3 - 2 * rawTransition);
 
             if (fill) fill.style.width = `${clamped * 100}%`;
 
@@ -113,17 +124,17 @@ const Experience: React.FC = () => {
                     z = 1;
                     panel.classList.add('past');
                 } else if (i === activeIndex) {
-                    y = 0;
-                    opacity = 1;
+                    y = -transitionProgress * 18;
+                    opacity = 1 - transitionProgress * 0.22;
                     scale = 1;
                     blur = 0;
                     z = 30;
                     panel.classList.add('active');
                 } else if (i === activeIndex + 1) {
-                    y = 70 - localProgress * 34;
-                    opacity = 0.12 + localProgress * 0.22;
-                    scale = 0.97 + localProgress * 0.03;
-                    blur = 2.5 - localProgress * 2.5;
+                    y = 70 - transitionProgress * 70;
+                    opacity = 0.12 + transitionProgress * 0.88;
+                    scale = 0.97 + transitionProgress * 0.03;
+                    blur = 2.5 - transitionProgress * 2.5;
                     z = 20;
                     panel.classList.add('upcoming');
                 }
