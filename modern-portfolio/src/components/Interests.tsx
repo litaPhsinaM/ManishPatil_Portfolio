@@ -108,6 +108,14 @@ const Interests: React.FC = () => {
                         <div className="win98-statusbar">
                             <div className="win98-panel">{photos.length} item(s)</div>
                             <div className="win98-panel" style={{ flex: 1 }}>Select an item to view</div>
+                            <a
+                                className="win98-panel gallery-full-link"
+                                href="https://500px.com/p/ManishPatil1?view=photos"
+                                target="_blank"
+                                rel="noreferrer"
+                            >
+                                View Full Gallery on 500px ↗
+                            </a>
                         </div>
                     </motion.div>
                 </div>

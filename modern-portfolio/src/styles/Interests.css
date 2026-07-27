@@ -17,6 +17,18 @@
     text-align: center;
 }
 
+.gallery-full-link {
+    text-decoration: none;
+    color: #000080;
+    font-weight: bold;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+.gallery-full-link:hover {
+    text-decoration: underline;
+}
+
 .win98-title {
     display: inline-block;
     background: #c0c0c0;

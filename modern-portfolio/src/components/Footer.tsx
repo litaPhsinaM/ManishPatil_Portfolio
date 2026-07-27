@@ -75,7 +75,7 @@ const Footer: React.FC = () => {
 
                         <section className="footer-contact-panel" aria-labelledby="contact-form-title">
                             <h2 className="footer-win-heading">Get in Touch<span>.</span></h2>
-                            <p className="footer-desc">For data, software, cloud, or analytics roles, this is the fastest place to reach me.</p>
+                            <p className="footer-desc">For systems administration, security, software, or data roles, this is the fastest place to reach me.</p>
 
                             <div className="contact-rows">
                                 <a className="contact-row" href="https://maps.google.com/?q=Long+Beach,+CA" target="_blank" rel="noreferrer">

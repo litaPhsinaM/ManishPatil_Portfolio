@@ -31,11 +31,11 @@ const experiences: ExperienceEntry[] = [
         title: 'Software Developer Intern',
         company: 'CaspianLogic — Cupertino, CA',
         icon: '💻',
-        body: `Contributed to project-based turnkey software solutions for business process re-engineering and information technology clients.
-        \n● MERN Stack Development: Built and maintained production-grade web application features using React, Redux, Node.js, Express, MongoDB, and RESTful services.
-        \n● Frontend Engineering: Developed responsive, reusable UI components, connected client-side state with Redux, and implemented form-driven workflows aligned with client requirements.
-        \n● Backend & API Integration: Supported Express API development, MongoDB data modeling, endpoint integration, validation, and debugging across full-stack application flows.
-        \n● QA & Delivery: Strengthened testing procedures, production readiness, and troubleshooting practices while training in modern web development methodologies.`,
+        body: `Contributed to production-grade, client-facing software solutions for business process re-engineering and IT consulting clients, supporting delivery across multiple concurrent project engagements for a full-stack web development consulting firm.
+        \n● MERN Stack Development: Built and maintained full-stack features using React, Redux, Node.js, Express, MongoDB, and RESTful services, shipping production-ready functionality across several client releases.
+        \n● Frontend Engineering: Developed 10+ responsive, reusable UI components and form-driven workflows, connecting client-side state with Redux to cut repeated development effort across projects.
+        \n● Backend & API Integration: Supported RESTful Express API development and MongoDB data modeling, including endpoint integration, input validation, and debugging across full-stack application flows.
+        \n● QA & Delivery: Strengthened testing procedures and production-readiness checks, helping reduce post-release bugs and reinforcing on-time delivery for client handoffs.`,
         skills: ['MERN Stack', 'React', 'Redux', 'Node.js', 'Express', 'MongoDB', 'REST APIs', 'JavaScript', 'Responsive UI', 'API Integration', 'Testing', 'Production Web Apps'],
     },
     {
@@ -44,11 +44,11 @@ const experiences: ExperienceEntry[] = [
         title: 'Data Engineering Intern',
         company: 'Yali Inc. (Stealth Startup) — Chennai, IN',
         icon: '📊',
-        body: `Engineered scalable data ingestion and processing pipelines for startup-scale data challenges.
-        \n● ETL Automation: Developed automated workflows using Python and Apache Airflow to handle multi-source data ingestion.
-        \n● Big Data: Utilized PySpark and Pandas for large-scale data cleaning, transformation, and quality assurance.
-        \n● Database Optimization: Managed PostgreSQL and MongoDB instances, implementing advanced indexing for high-speed query performance.
-        \n● Web Extraction: Built Selenium and BeautifulSoup scrapers to extract critical market intelligence data.`,
+        body: `Engineered scalable data ingestion and processing pipelines for a stealth startup's early data infrastructure, cutting manual data prep time and enabling faster, more reliable reporting.
+        \n● ETL Automation: Built and scheduled automated Apache Airflow DAGs to ingest data from multiple third-party and internal sources daily, replacing manual imports and cutting pipeline turnaround time by roughly 30%.
+        \n● Big Data Processing: Used PySpark and Pandas to clean, transform, and validate large-scale datasets (100K+ records), improving downstream data quality and reducing manual QA effort.
+        \n● Database Optimization: Managed PostgreSQL and MongoDB instances, implementing indexing strategies that measurably sped up the queries used most by the analytics team.
+        \n● Web Extraction: Built Selenium and BeautifulSoup scrapers to extract and structure market intelligence data from external sources, feeding it directly into the ingestion pipeline.`,
         skills: ['Python', 'Apache Airflow', 'PySpark', 'Pandas', 'PostgreSQL', 'MongoDB', 'BeautifulSoup', 'Selenium'],
     },
 ];

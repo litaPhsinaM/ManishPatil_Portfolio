@@ -46,7 +46,7 @@ const Hero: React.FC<HeroProps> = ({ onOpenGame }) => {
         },
         {
             title: 'Security & Compliance',
-            value: 'CompTIA A+ (in progress → Network+, Security+ next), RBAC/JWT, audit logging, ADA-compliant web ops',
+            value: 'CompTIA Linux+ (in progress → AutoOps+, Security+ next), RBAC/JWT, audit logging, ADA-compliant web ops',
         },
         {
             title: 'Software Dev',
@@ -201,7 +201,7 @@ const Hero: React.FC<HeroProps> = ({ onOpenGame }) => {
                                         transition={{ duration: 1.5, ease: 'linear' }}
                                         style={{ overflow: 'hidden', whiteSpace: 'nowrap' }}
                                     >
-                                        [root@portfolio ~]# whoami --track=sysadmin,security,cloud,swe --status=CompTIA_A+_in_progress
+                                        [root@portfolio ~]# whoami --track=sysadmin,security,cloud,swe --status=CompTIA_Linux+_in_progress
                                     </motion.p>
                                 </div>
                                 <p className="hero-description">
@@ -258,12 +258,12 @@ const Hero: React.FC<HeroProps> = ({ onOpenGame }) => {
                                         trails.
                                     </p>
                                     <p>
-                                        I'm currently working through my <strong>CompTIA A+</strong>, with{' '}
-                                        <strong>Network+</strong> and <strong>Security+</strong> next, because I'm
-                                        deliberately going deeper into core IT infrastructure and security rather
-                                        than around it. The goal is System Administrator and Security-focused
-                                        roles &mdash; the kind of work where you actually own the boxes, the
-                                        network, and the risk, not just the ticket queue.
+                                        I'm currently working through <strong>CompTIA Linux+</strong>, with{' '}
+                                        <strong>AutoOps+</strong> and <strong>Security+</strong> next, because I'm
+                                        deliberately going deeper into core IT infrastructure, automation, and
+                                        security rather than around it. The goal is System Administrator and
+                                        Security-focused roles &mdash; the kind of work where you actually own the
+                                        boxes, the network, and the risk, not just the ticket queue.
                                     </p>
                                     <p>
                                         None of this replaces the software and data side &mdash; it stacks on it.
