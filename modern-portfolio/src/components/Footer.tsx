@@ -100,6 +100,7 @@ const Footer: React.FC = () => {
                             <form action="https://formsubmit.co/manishcpatil9@gmail.com" method="POST">
                                 <input type="hidden" name="_subject" value="Portfolio contact form message" />
                                 <input type="hidden" name="_captcha" value="false" />
+                                <input type="hidden" name="_next" value="https://litaphsinam.github.io/ManishPatil_Portfolio/" />
 
                                 <div className="form-row">
                                     <label htmlFor="contact-name">Name</label>
