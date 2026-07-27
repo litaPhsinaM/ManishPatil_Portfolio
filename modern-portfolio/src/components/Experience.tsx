@@ -60,7 +60,7 @@ const experiences: ExperienceEntry[] = [
 // pointer-events:auto. A plain CSS transition crossfades between whichever two cards
 // change state. There is no per-frame multi-value math and no z-index competition —
 // the two failure modes from earlier attempts — so this can't reintroduce that bug.
-const DWELL_VH_PER_CARD = 70;
+const DWELL_VH_PER_CARD = 100;
 
 const Experience: React.FC = () => {
     const sectionRef = useRef<HTMLElement>(null);
