@@ -53,7 +53,9 @@ const SnakeGame: React.FC = () => {
     });
 
     const directionRef = useRef(direction);
-    directionRef.current = direction;
+    useEffect(() => {
+        directionRef.current = direction;
+    }, [direction]);
 
     const generateFood = useCallback((currentSnake: number[][]) => {
         let newFood: number[];
@@ -493,6 +495,15 @@ const FlappyGame: React.FC = () => {
 const Games: React.FC<GamesProps> = ({ onClose }) => {
     const [activeGame, setActiveGame] = useState<GameId>('snake');
     const title = gameTabs.find(game => game.id === activeGame)?.title ?? 'Games.exe';
+
+    useEffect(() => {
+        if (!onClose) return;
+        const handleKeyDown = (e: KeyboardEvent) => {
+            if (e.key === 'Escape') onClose();
+        };
+        window.addEventListener('keydown', handleKeyDown);
+        return () => window.removeEventListener('keydown', handleKeyDown);
+    }, [onClose]);
 
     return (
         <motion.div className="games-overlay" initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ duration: 0.2 }}>

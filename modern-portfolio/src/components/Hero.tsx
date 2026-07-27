@@ -1,5 +1,5 @@
-import React from 'react';
-import { motion, useScroll, useTransform } from 'framer-motion';
+import React, { useEffect, useState } from 'react';
+import { motion, useScroll, useTransform, useReducedMotion } from 'framer-motion';
 import { useNavigate } from 'react-router-dom';
 import '../styles/Hero.css';
 
@@ -19,15 +19,65 @@ interface HeroProps {
 const Hero: React.FC<HeroProps> = ({ onOpenGame }) => {
     const navigate = useNavigate();
     const { scrollY } = useScroll();
+    const shouldReduceMotion = useReducedMotion();
 
-    const windowY = useTransform(scrollY, [0, 400], [0, 60]);
+    const [isNarrow, setIsNarrow] = useState(false);
+    useEffect(() => {
+        const mq = window.matchMedia('(max-width: 900px)');
+        const update = () => setIsNarrow(mq.matches);
+        update();
+        mq.addEventListener('change', update);
+        return () => mq.removeEventListener('change', update);
+    }, []);
+
+    const parallaxEnabled = !shouldReduceMotion && !isNarrow;
+
+    // Multi-layer parallax: background pattern drifts least (farthest away),
+    // desktop icons drift a bit more, the foreground window drifts most —
+    // transform-only (GPU-cheap), no filter/top/left animation.
+    const bgY = useTransform(scrollY, [0, 400], [0, parallaxEnabled ? 15 : 0]);
+    const iconsY = useTransform(scrollY, [0, 400], [0, parallaxEnabled ? 35 : 0]);
+    const windowY = useTransform(scrollY, [0, 400], [0, parallaxEnabled ? 60 : 0]);
+
+    const skillGroups = [
+        {
+            title: 'Systems & IT Ops',
+            value: 'JAMF/MDM, Google Workspace Admin, DNS/VPN/WiFi, Linux, VMware, Windows/macOS cross-platform support',
+        },
+        {
+            title: 'Security & Compliance',
+            value: 'CompTIA A+ (in progress → Network+, Security+ next), RBAC/JWT, audit logging, ADA-compliant web ops',
+        },
+        {
+            title: 'Software Dev',
+            value: 'React, Node.js, Python, SQL, RESTful APIs, Git, CI/CD',
+        },
+        {
+            title: 'Data & Cloud',
+            value: 'AWS, Azure, GCP, Apache Airflow, PySpark, BigQuery, ETL Pipelines',
+        },
+    ];
+
+    const handleDesktopAction = (href: string) => {
+        if (href === '#games' && onOpenGame) {
+            onOpenGame();
+            return;
+        }
+        if (href.startsWith('#')) {
+            const el = document.querySelector(href);
+            el?.scrollIntoView({ behavior: 'smooth' });
+            return;
+        }
+        navigate(href);
+    };
 
     return (
         <section id="home" className="hero-desktop">
+            <motion.div className="hero-bg-layer" style={{ y: bgY }} />
             <div className="crt-overlay" />
 
             {/* Desktop Icons */}
-            <div className="desktop-icons-container">
+            <motion.div className="desktop-icons-container" style={{ y: iconsY }}>
                 {desktopIcons.map((ic) => (
                     <a
                         key={ic.label}
@@ -35,23 +85,14 @@ const Hero: React.FC<HeroProps> = ({ onOpenGame }) => {
                         className="desktop-icon"
                         onClick={(e) => {
                             e.preventDefault();
-                            if (ic.href === '#games' && onOpenGame) {
-                                onOpenGame();
-                                return;
-                            }
-                            if (ic.href.startsWith('#')) {
-                                const el = document.querySelector(ic.href);
-                                el?.scrollIntoView({ behavior: 'smooth' });
-                                return;
-                            }
-                            navigate(ic.href);
+                            handleDesktopAction(ic.href);
                         }}
                     >
                         <span className="desktop-icon-img">{ic.icon}</span>
                         <span className="desktop-icon-label">{ic.label}</span>
                     </a>
                 ))}
-            </div>
+            </motion.div>
 
             {/* Main Portfolio Window */}
             <motion.div
@@ -128,41 +169,136 @@ const Hero: React.FC<HeroProps> = ({ onOpenGame }) => {
                     <span className="win98-address-label">Address</span>
                     <div className="win98-address-input-container">
                         <span className="win98-address-icon">🖥️</span>
-                        <input type="text" className="win98-address-input" value="C:\About_Me" readOnly />
+                        <input
+                            type="text"
+                            className="win98-address-input"
+                            value={'C:\\Manish_Patil\\About_Me'}
+                            readOnly
+                        />
                         <button className="win98-address-dropdown-btn">▼</button>
                     </div>
                 </div>
 
-                <div className="window-body hero-body">
-                    <h1 className="hero-title">
-                        Manish Patil<span className="cursor-blink">_</span>
-                    </h1>
-                    <div className="hero-subtitle-container">
-                        <motion.p
-                            className="hero-subtitle"
-                            initial={{ width: 0 }}
-                            animate={{ width: "100%" }}
-                            transition={{ duration: 1.5, ease: "linear" }}
-                            style={{ overflow: "hidden", whiteSpace: "nowrap" }}
-                        >
-                            [root@portfolio ~]# sys_admin --expertise
-                        </motion.p>
-                    </div>
-                    <p className="hero-description">
-                        Master's in Computer Science • CSUDH<br />
-                        Specializing in IT Infrastructure, Systems Management, and Robust Software Solutions.
-                    </p>
-                    <div className="hero-actions">
-                        <a href="#projects" className="btn explorer-btn">▶ Explore Work</a>
-                        <a href="#about" className="btn-secondary profile-btn">ℹ️ About Me</a>
+                <div id="about" className="window-body hero-body">
+                    <div className="hero-content-grid">
+                        <div className="hero-profile-panel">
+                            <div className="hero-photo-frame">
+                                <img
+                                    src={`${import.meta.env.BASE_URL}About me.jpeg`}
+                                    alt="Manish Patil"
+                                />
+                            </div>
+
+                            <div className="hero-profile-copy">
+                                <h1 className="hero-title">
+                                    Manish Patil<span className="cursor-blink">_</span>
+                                </h1>
+                                <div className="hero-subtitle-container">
+                                    <motion.p
+                                        className="hero-subtitle"
+                                        initial={{ width: 0 }}
+                                        animate={{ width: '100%' }}
+                                        transition={{ duration: 1.5, ease: 'linear' }}
+                                        style={{ overflow: 'hidden', whiteSpace: 'nowrap' }}
+                                    >
+                                        [root@portfolio ~]# whoami --track=sysadmin,security,cloud,swe --status=CompTIA_A+_in_progress
+                                    </motion.p>
+                                </div>
+                                <p className="hero-description">
+                                    M.S. Computer Science • CSUDH
+                                    <br />
+                                    IT Specialist &amp; Software Engineer — building toward Systems Administration &amp; Security
+                                </p>
+                            </div>
+
+                            <div className="hero-action-row">
+                                <button
+                                    type="button"
+                                    className="hero-action-btn"
+                                    onClick={() => handleDesktopAction('#projects')}
+                                >
+                                    ▶ Explore Work
+                                </button>
+                                <button
+                                    type="button"
+                                    className="hero-action-btn"
+                                    onClick={() => handleDesktopAction('#experience')}
+                                >
+                                    📁 Experience
+                                </button>
+                                <button
+                                    type="button"
+                                    className="hero-action-btn"
+                                    onClick={() => handleDesktopAction('/resume')}
+                                >
+                                    📄 Resume
+                                </button>
+                            </div>
+
+                        </div>
+
+                        <div className="hero-main-panel">
+                            <div className="hero-panel-window">
+                                <div className="hero-panel-header">
+                                    <span>Professional Profile</span>
+                                    <span className="hero-panel-badge">Properties</span>
+                                </div>
+                                <div className="hero-panel-body">
+                                    <p className="hero-panel-lead">
+                                        IT Specialist &amp; Software Engineer | M.S. in Computer Science
+                                    </p>
+                                    <p>
+                                        I'm an IT Specialist at CSUDH keeping infrastructure running for
+                                        4,000&ndash;5,000+ managed devices &mdash; provisioning, MDM (
+                                        <strong>JAMF-certified</strong>), DNS/VPN/WiFi, Google Workspace Admin, and
+                                        the unglamorous stuff that has to work every single day. Alongside that I
+                                        build the internal software that makes IT operations less painful: a
+                                        full-stack ticketing and asset-management system (React, Node.js,
+                                        PostgreSQL, JWT/RBAC) that replaced manual spreadsheets with real audit
+                                        trails.
+                                    </p>
+                                    <p>
+                                        I'm currently working through my <strong>CompTIA A+</strong>, with{' '}
+                                        <strong>Network+</strong> and <strong>Security+</strong> next, because I'm
+                                        deliberately going deeper into core IT infrastructure and security rather
+                                        than around it. The goal is System Administrator and Security-focused
+                                        roles &mdash; the kind of work where you actually own the boxes, the
+                                        network, and the risk, not just the ticket queue.
+                                    </p>
+                                    <p>
+                                        None of this replaces the software and data side &mdash; it stacks on it.
+                                        I've shipped MERN-stack apps, built CNN models in PyTorch (99.77% validation
+                                        accuracy on 3D shape classification), and built cloud data pipelines on GCP
+                                        and Azure (Mage, BigQuery, Databricks, Synapse). I like sitting at the
+                                        intersection of systems, security, and data &mdash; most interesting
+                                        problems live there anyway.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div className="hero-panel-window">
+                                <div className="hero-panel-header">
+                                    <span>Core Competencies</span>
+                                    <span className="hero-panel-badge">{skillGroups.length} folders</span>
+                                </div>
+                                <div className="hero-skill-grid">
+                                    {skillGroups.map((group) => (
+                                        <div key={group.title} className="hero-skill-card">
+                                            <div className="hero-skill-title">{group.title}</div>
+                                            <p>{group.value}</p>
+                                        </div>
+                                    ))}
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
                 {/* Status Bar */}
                 <div className="win98-statusbar hero-statusbar">
-                    <div className="win98-panel">Ready</div>
-                    <div className="win98-panel">Long Beach, CA</div>
-                    <div className="win98-panel">CSUDH M.S. CS</div>
+                    <div className="win98-panel">Open to Systems Administration &amp; Security roles</div>
+                    <div className="win98-panel">Contact: manishcpatil9@gmail.com</div>
+                    <div className="win98-panel">rev 2.0</div>
                 </div>
             </motion.div>
         </section>

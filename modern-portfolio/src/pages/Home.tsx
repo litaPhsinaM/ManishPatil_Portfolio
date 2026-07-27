@@ -2,12 +2,13 @@ import React, { useEffect, useState } from 'react';
 import { AnimatePresence } from 'framer-motion';
 import { useLocation } from 'react-router-dom';
 import Hero from '../components/Hero';
-import About from '../components/About';
 import Interests from '../components/Interests';
+import Certifications from '../components/Certifications';
 import Experience from '../components/Experience';
 import Projects from '../components/Projects';
 import Games from '../components/Games';
 import Footer from '../components/Footer';
+import AchievementToast from '../components/AchievementToast';
 
 const Home: React.FC = () => {
     const [isGameOpen, setIsGameOpen] = useState(false);
@@ -39,15 +40,15 @@ const Home: React.FC = () => {
         <div className="home-page">
             <Hero onOpenGame={() => setIsGameOpen(true)} />
             <div className="section-separator" />
-            <About />
-            <div className="section-separator" />
-            <Interests />
+            <Certifications />
             <div className="section-separator" />
             <Experience />
             <div className="section-separator" />
             <Projects />
             <div className="section-separator" />
             <Footer />
+            <div className="section-separator" />
+            <Interests />
 
             {/* Floating popups outside normal document flow */}
             <AnimatePresence>
@@ -55,6 +56,7 @@ const Home: React.FC = () => {
                     <Games onClose={() => setIsGameOpen(false)} />
                 )}
             </AnimatePresence>
+            <AchievementToast />
         </div>
     );
 };

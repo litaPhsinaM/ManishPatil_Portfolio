@@ -1,64 +1,52 @@
 /* ─── Experience Section ─── */
 .experience-section {
     position: relative;
-    padding: 0;
+    padding: var(--app-section-pad) 0;
     background: #008080;
     background-image: repeating-linear-gradient(0deg,
             transparent,
             transparent 2px,
             rgba(0, 0, 0, 0.04) 2px,
             rgba(0, 0, 0, 0.04) 4px);
-    /* height set inline: one viewport per experience card */
 }
 
-/* ─── Sticky frame fills one viewport while cards swap inside it ─── */
-.exp-sticky-wrapper {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
+/* ─── Pin container ───
+   Default (no .is-pinned — mobile / reduced-motion fallback): a plain block, no
+   sticky, no fixed height. Cards render below it as a normal static list.
+   .is-pinned (desktop): sticky at top:0, fills one viewport, and never changes
+   position again — no fixed/absolute toggling, which was the root cause of the
+   original bug. The section's own inline height (set in Experience.tsx) gives the
+   scroll runway; this div just holds still while that runway scrolls past. */
+.exp-pin {
     width: 100%;
-    height: calc(90vh - var(--taskbar-h));
-    height: calc(90dvh - var(--taskbar-h));
+}
+
+.exp-pin.is-pinned {
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    height: 100dvh;
     display: flex;
     flex-direction: column;
-    padding: 18px 0 16px;
-    gap: 16px;
-    overflow: hidden;
-    background: #008080;
-    background-image: repeating-linear-gradient(0deg,
-            transparent,
-            transparent 2px,
-            rgba(0, 0, 0, 0.04) 2px,
-            rgba(0, 0, 0, 0.04) 4px);
+    /* Top-aligned on purpose: if content is ever taller than the viewport, the
+       header and the top of the card stay visible and only the tail end is
+       affected — center + overflow:hidden here previously clipped EVERYTHING
+       off-screen whenever combined content exceeded 100vh, which is what was
+       causing the cards (and even the header) to never appear. */
+    justify-content: flex-start;
+    gap: 12px;
+    padding: 16px 0 8px;
 }
 
-.exp-sticky-wrapper.is-fixed {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 20;
-}
-
-.exp-sticky-wrapper.is-ended {
-    position: absolute;
-    top: auto;
-    bottom: 0;
-    left: 0;
-    right: 0;
-}
-
-/* ─── Header / progress window ─── */
+/* ─── Header / intro window ─── */
 .exp-header-win {
+    width: 100%;
     flex-shrink: 0;
-    width: var(--app-shell-width);
-    align-self: center;
 }
 
 .exp-header-body {
     background: #c0c0c0;
-    padding: 4px 10px;
+    padding: 6px 10px;
     display: flex;
     align-items: center;
     gap: 12px;
@@ -91,57 +79,60 @@
             #0011cc 12px);
 }
 
-/* ─── Panel stack area ─── */
-.exp-panels {
-    flex: 0 1 auto;
+/* ─── Card stack ───
+   Pinned: a fixed-height frame with every card absolutely stacked exactly on top of
+   each other (inset:0). Only the `.active` card is opacity:1 + clickable; a plain CSS
+   transition crossfades between whichever two cards change state when scroll moves
+   to the next third of the section. Nothing here writes per-frame values and nothing
+   uses z-index — the two things that caused the earlier bug — so this can't repeat it.
+   Not pinned (mobile / reduced motion): plain static block list, unchanged below. */
+.exp-pin.is-pinned .exp-stack {
     position: relative;
-    overflow: hidden;
-    width: var(--app-shell-width);
-    align-self: center;
-    height: min(72vh, 690px);
-    height: min(72dvh, 690px);
+    width: 100%;
+    max-width: var(--app-shell-width);
+    /* Sized to comfortably fit inside 100vh alongside the trimmed header, with
+       .exp-panel-body's overflow-y: auto as a safety net rather than a crutch. */
+    height: min(74vh, 700px);
+    margin: 0 auto;
+    flex-shrink: 1;
     min-height: 0;
 }
 
-/* ─── Individual panels ─── */
-.exp-panel {
+.exp-pin.is-pinned .exp-panel {
     position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%) translateY(var(--stack-y, 54px)) scale(var(--stack-scale, 0.965));
-    width: 100%;
+    inset: 0;
+    margin: 0;
+    width: auto;
     max-width: none;
-    height: calc(100% - 34px);
-    max-height: 100%;
+    opacity: 0;
+    /* Hidden state: sunk down and defocused. Going active animates up + sharp;
+       losing active sinks back down + soft — same two states, both directions. */
+    transform: translateY(60px);
+    filter: blur(10px);
+    pointer-events: none;
+    transition:
+        opacity 0.6s cubic-bezier(0.22, 1, 0.36, 1),
+        transform 0.6s cubic-bezier(0.22, 1, 0.36, 1),
+        filter 0.6s ease-out;
+}
+
+.exp-pin.is-pinned .exp-panel.active {
+    opacity: 1;
+    transform: translateY(0);
+    filter: blur(0);
+    pointer-events: all;
+}
+
+/* ─── Individual panel (shared by both modes) ─── */
+.exp-panel {
+    width: 100%;
+    max-width: var(--app-shell-width);
+    margin: 0 auto 20px;
     display: flex;
     flex-direction: column;
     padding: 3px;
     background: var(--win98-gray);
     box-shadow: var(--win98-raised-border);
-    opacity: var(--stack-opacity, 0);
-    filter: blur(var(--stack-blur, 2px));
-    pointer-events: none;
-    transition:
-        opacity 0.28s ease-out,
-        transform 0.32s cubic-bezier(0.22, 1, 0.36, 1),
-        filter 0.28s ease-out,
-        box-shadow 0.28s ease;
-    z-index: var(--stack-z, 1);
-}
-
-/* Active: fully visible and centered */
-.exp-panel.active {
-    pointer-events: all;
-}
-
-/* Past: slide up and shrink slightly */
-.exp-panel.past {
-    pointer-events: none;
-}
-
-/* Upcoming: peek from below */
-.exp-panel.upcoming {
-    pointer-events: none;
 }
 
 /* ─── Toolbar date strip ─── */
@@ -157,16 +148,17 @@
 /* ─── Panel body ─── */
 .exp-panel-body {
     background: #ffffff;
-    /* White background for document feel */
     padding: 18px 34px 14px;
-    flex: 1 1 auto;
-    min-height: 0;
-    overflow: hidden;
+    position: relative;
     display: flex;
     flex-direction: column;
     gap: 6px;
     box-shadow: var(--win98-sunken-border);
-    pointer-events: none;
+    flex: 1 1 auto;
+    min-height: 0;
+    /* Safety net, not a design choice: if a card's text is ever taller than the
+       pinned frame, it scrolls internally instead of silently clipping. */
+    overflow-y: auto;
 }
 
 /* ─── Number badge ─── */
@@ -207,9 +199,11 @@
     font-family: 'MS Sans Serif', sans-serif;
     font-size: 14px;
     color: #000;
-    line-height: 1.38;
+    line-height: 1.5;
     margin: 0;
     white-space: pre-wrap;
+    position: relative;
+    z-index: 1;
 }
 
 /* ─── Skills / tags ─── */
@@ -218,92 +212,27 @@
     flex-wrap: wrap;
     gap: 3px;
     margin-top: 2px;
+    position: relative;
+    z-index: 1;
 }
 
-/* ─── Responsive: use readable stacked cards on phone screens ─── */
+.exp-skills .tag {
+    font-size: 11px;
+    padding: 2px 7px;
+}
+
+/* ─── Responsive / reduced-motion fallback ───
+   Experience.tsx doesn't add .is-pinned at all in these cases, so the plain
+   .exp-panel rules above (static, full opacity, normal flow) already apply. */
 @media (max-width: 900px) {
-    .experience-section {
-        height: auto !important;
-        min-height: auto;
-        padding: var(--app-section-pad) 0;
-    }
-
-    .exp-sticky-wrapper {
-        position: static;
-        height: auto;
-        width: var(--app-shell-width);
-        margin: 0 auto;
-        padding: 0;
-        overflow: visible;
-    }
-
-    .exp-panel {
-        position: static;
-        opacity: 1;
-        filter: none;
-        transform: none !important;
-        pointer-events: all;
-        width: 100%;
-        height: auto;
-        max-height: none;
-        margin-bottom: 14px;
-        padding: 3px;
-        background: var(--win98-gray);
-        box-shadow: var(--win98-raised-border);
-        z-index: auto;
-    }
-
-    .exp-panels {
-        flex: none;
-        position: static;
-        overflow: visible;
-        width: 100%;
-        height: auto;
-        min-height: 0;
-    }
-
-    .exp-header-win {
-        width: 100%;
-        margin-bottom: 10px;
-    }
-
-    .exp-header-body {
-        align-items: flex-start;
-        flex-direction: column;
-        gap: 6px;
-    }
-
-    .exp-header-label {
-        white-space: normal;
-    }
-
-    .exp-progress-track {
-        width: 100%;
-    }
-
-    .exp-panel-body {
-        padding: 18px;
-        max-height: none;
-        overflow: visible;
-        pointer-events: auto;
-    }
-
-    .exp-panel.past,
-    .exp-panel.upcoming {
-        opacity: 1;
-        filter: none;
-        transform: none !important;
-        pointer-events: all;
+    .exp-title {
+        font-size: 22px;
     }
 }
 
 @media (max-width: 520px) {
     .experience-section {
         padding: 22px 0;
-    }
-
-    .exp-sticky-wrapper {
-        width: var(--app-shell-width);
     }
 
     .exp-toolbar {
@@ -327,9 +256,4 @@
     .exp-skills .tag {
         font-size: 11px;
     }
-}
-
-.exp-skills .tag {
-    font-size: 11px;
-    padding: 2px 7px;
 }

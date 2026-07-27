@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import '../styles/Experience.css';
 
 interface ExperienceEntry {
@@ -53,250 +53,155 @@ const experiences: ExperienceEntry[] = [
     },
 ];
 
+// One always-sticky pin (never toggled between fixed/absolute — that toggling was the
+// root cause of the original bug) holds a fixed-size viewport in place. All cards sit
+// stacked exactly on top of each other (inset:0) inside it; a single scroll listener
+// picks one discrete "active" index out of the 3, and only that card is opacity:1 +
+// pointer-events:auto. A plain CSS transition crossfades between whichever two cards
+// change state. There is no per-frame multi-value math and no z-index competition —
+// the two failure modes from earlier attempts — so this can't reintroduce that bug.
+const DWELL_VH_PER_CARD = 70;
+
 const Experience: React.FC = () => {
     const sectionRef = useRef<HTMLElement>(null);
-    const wrapperRef = useRef<HTMLDivElement>(null);
-    const panelsRef = useRef<HTMLDivElement>(null);
     const fillRef = useRef<HTMLDivElement>(null);
     const rafRef = useRef<number | null>(null);
+    const [activeIndex, setActiveIndex] = useState(0);
+    const [isNarrow, setIsNarrow] = useState(false);
+    const [reduceMotion, setReduceMotion] = useState(false);
 
     useEffect(() => {
-        const updateExperience = () => {
+        const widthQuery = window.matchMedia('(max-width: 900px)');
+        const motionQuery = window.matchMedia('(prefers-reduced-motion: reduce)');
+        const updateWidth = () => setIsNarrow(widthQuery.matches);
+        const updateMotion = () => setReduceMotion(motionQuery.matches);
+        updateWidth();
+        updateMotion();
+        widthQuery.addEventListener('change', updateWidth);
+        motionQuery.addEventListener('change', updateMotion);
+        return () => {
+            widthQuery.removeEventListener('change', updateWidth);
+            motionQuery.removeEventListener('change', updateMotion);
+        };
+    }, []);
+
+    useEffect(() => {
+        if (isNarrow || reduceMotion) return;
+
+        const update = () => {
             rafRef.current = null;
-
             const section = sectionRef.current;
-            const wrapper = wrapperRef.current;
-            const panels = panelsRef.current;
-            const fill = fillRef.current;
-            if (!section || !wrapper || !panels) return;
-
-            if (window.innerWidth <= 900) {
-                wrapper.style.transform = '';
-                wrapper.classList.remove('is-fixed', 'is-ended');
-                if (fill) fill.style.width = '0%';
-                panels.querySelectorAll<HTMLElement>('.exp-panel').forEach((panel) => {
-                    panel.classList.remove('active', 'past', 'upcoming');
-                    panel.style.removeProperty('--stack-y');
-                    panel.style.removeProperty('--stack-opacity');
-                    panel.style.removeProperty('--stack-scale');
-                    panel.style.removeProperty('--stack-blur');
-                    panel.style.removeProperty('--stack-z');
-                });
-                return;
-            }
+            if (!section) return;
 
             const sectionTop = section.offsetTop;
             const sectionHeight = section.offsetHeight;
             const viewportH = window.innerHeight;
-            const scrolled = window.scrollY;
             const scrollRange = sectionHeight - viewportH;
-            const sectionEnd = sectionTop + scrollRange;
-
-            wrapper.style.transform = '';
-            wrapper.classList.toggle('is-fixed', scrolled >= sectionTop && scrolled < sectionEnd);
-            wrapper.classList.toggle('is-ended', scrolled >= sectionEnd);
+            const scrolled = window.scrollY;
 
             const progress = scrollRange > 0 ? (scrolled - sectionTop) / scrollRange : 0;
             const clamped = Math.max(0, Math.min(1, progress));
-            const cardReleasePoint = 0.72;
-            const cardProgress = Math.min(1, clamped / cardReleasePoint);
-            const panelProgress = cardProgress * (experiences.length - 1);
-            const activeIndex = Math.min(Math.floor(panelProgress), experiences.length - 1);
-            const localProgress = panelProgress - activeIndex;
-            const transitionStart = 0.4;
-            const rawTransition = Math.max(0, Math.min(1, (localProgress - transitionStart) / (1 - transitionStart)));
-            const transitionProgress = rawTransition * rawTransition * (3 - 2 * rawTransition);
 
-            if (fill) fill.style.width = `${clamped * 100}%`;
+            if (fillRef.current) fillRef.current.style.width = `${clamped * 100}%`;
 
-            const allPanels = panels.querySelectorAll<HTMLElement>('.exp-panel');
-            allPanels.forEach((panel, i) => {
-                panel.classList.remove('active', 'past', 'upcoming');
-                let y = 76;
-                let opacity = 0;
-                let scale = 0.965;
-                let blur = 2.5;
-                let z = 1;
-
-                if (i < activeIndex) {
-                    y = -92;
-                    opacity = 0;
-                    z = 1;
-                    panel.classList.add('past');
-                } else if (i === activeIndex) {
-                    y = -transitionProgress * 18;
-                    opacity = 1 - transitionProgress * 0.22;
-                    scale = 1;
-                    blur = 0;
-                    z = 30;
-                    panel.classList.add('active');
-                } else if (i === activeIndex + 1) {
-                    y = 70 - transitionProgress * 70;
-                    opacity = 0.12 + transitionProgress * 0.88;
-                    scale = 0.97 + transitionProgress * 0.03;
-                    blur = 2.5 - transitionProgress * 2.5;
-                    z = 20;
-                    panel.classList.add('upcoming');
-                }
-
-                panel.style.setProperty('--stack-y', `${y}px`);
-                panel.style.setProperty('--stack-opacity', `${opacity}`);
-                panel.style.setProperty('--stack-scale', `${scale}`);
-                panel.style.setProperty('--stack-blur', `${blur}px`);
-                panel.style.setProperty('--stack-z', `${z}`);
-            });
+            const index = Math.min(Math.floor(clamped * experiences.length), experiences.length - 1);
+            setActiveIndex(index);
         };
 
         const handleScroll = () => {
             if (rafRef.current !== null) return;
-            rafRef.current = window.requestAnimationFrame(updateExperience);
+            rafRef.current = window.requestAnimationFrame(update);
         };
 
         window.addEventListener('scroll', handleScroll, { passive: true });
         window.addEventListener('resize', handleScroll);
-        updateExperience();
+        update();
+
         return () => {
             if (rafRef.current !== null) window.cancelAnimationFrame(rafRef.current);
             window.removeEventListener('scroll', handleScroll);
             window.removeEventListener('resize', handleScroll);
         };
-    }, []);
+    }, [isNarrow, reduceMotion]);
+
+    const pinned = !isNarrow && !reduceMotion;
 
     return (
         <section
             id="experience"
             className="experience-section"
             ref={sectionRef}
-            style={{ height: `${experiences.length * 104}vh` }}
+            style={pinned ? { height: `${experiences.length * DWELL_VH_PER_CARD}vh` } : undefined}
         >
-            <div className="exp-sticky-wrapper" ref={wrapperRef}>
-                {/* Header Window */}
-                <div className="window exp-header-win">
-                    <div className="title-bar">
-                        <div className="title-bar-text">
-                            💼 Professional Experience — Task Manager
+            <div className={`exp-pin ${pinned ? 'is-pinned' : ''}`}>
+                <div className="container">
+                    <div className="window exp-header-win">
+                        <div className="title-bar">
+                            <div className="title-bar-text">
+                                💼 Professional Experience — Task Manager
+                            </div>
+                            <div className="title-bar-controls">
+                                <button aria-label="Help" />
+                                <button aria-label="Minimize" />
+                                <button aria-label="Maximize" />
+                                <button aria-label="Close" />
+                            </div>
                         </div>
-                        <div className="title-bar-controls">
-                            <button aria-label="Help" />
-                            <button aria-label="Minimize" />
-                            <button aria-label="Maximize" />
-                            <button aria-label="Close" />
-                        </div>
-                    </div>
 
-                    {/* Authentic Win98 Navigation */}
-                    <div className="win98-menubar">
-                        <span>File</span>
-                        <span>Edit</span>
-                        <span>View</span>
-                        <span>Go</span>
-                        <span>Favorites</span>
-                        <span>Help</span>
-                    </div>
-
-                    <div className="win98-toolbar">
-                        <button className="win98-toolbar-btn">
-                            <span className="icon">⬅️</span>
-                            <span>Back</span>
-                        </button>
-                        <button className="win98-toolbar-btn">
-                            <span className="icon">➡️</span>
-                            <span>Forward</span>
-                        </button>
-                        <button className="win98-toolbar-btn">
-                            <span className="icon">⬆️</span>
-                            <span>Up</span>
-                        </button>
-
-                        <div className="win98-toolbar-divider"></div>
-
-                        <button className="win98-toolbar-btn">
-                            <span className="icon">✂️</span>
-                            <span>Cut</span>
-                        </button>
-                        <button className="win98-toolbar-btn">
-                            <span className="icon">📋</span>
-                            <span>Copy</span>
-                        </button>
-                        <button className="win98-toolbar-btn">
-                            <span className="icon">📋</span>
-                            <span>Paste</span>
-                        </button>
-
-                        <div className="win98-toolbar-divider"></div>
-
-                        <button className="win98-toolbar-btn">
-                            <span className="icon">↩️</span>
-                            <span>Undo</span>
-                        </button>
-                        <button className="win98-toolbar-btn">
-                            <span className="icon">❌</span>
-                            <span>Delete</span>
-                        </button>
-                    </div>
-
-                    <div className="win98-address-bar">
-                        <span className="win98-address-label">Address</span>
-                        <div className="win98-address-input-container">
-                            <span className="win98-address-icon">📁</span>
-                            <input type="text" className="win98-address-input" value="C:\Experience" readOnly />
-                            <button className="win98-address-dropdown-btn">▼</button>
-                        </div>
-                    </div>
-
-                    <div className="exp-header-body">
-                        <span className="exp-header-label">Scroll to navigate experience</span>
-                        <div className="exp-progress-track">
-                            <div className="exp-progress-fill" ref={fillRef} />
-                        </div>
-                    </div>
-                </div>
-
-                {/* Stacked panels */}
-                <div className="exp-panels" ref={panelsRef}>
-                    {experiences.map((exp, i) => (
-                        <div
-                            key={exp.number}
-                            className={`exp-panel window ${i === 0 ? 'active' : ''}`}
-                            data-index={i}
-                        >
-                            <div className="title-bar">
-                                <div className="title-bar-text">
-                                    {exp.icon} {exp.title} — {exp.company}
+                        <div className="exp-header-body">
+                            <span className="exp-header-label">
+                                {pinned ? 'Scroll to cycle through each role' : 'Professional Experience'}
+                            </span>
+                            {pinned && (
+                                <div className="exp-progress-track">
+                                    <div className="exp-progress-fill" ref={fillRef} />
                                 </div>
-                                <div className="title-bar-controls">
-                                    <button aria-label="Help" />
-                                    <button aria-label="Minimize" />
-                                    <button aria-label="Maximize" />
-                                    <button aria-label="Close" />
+                            )}
+                        </div>
+                    </div>
+
+                    <div className="exp-stack">
+                        {experiences.map((exp, i) => (
+                            <div
+                                key={exp.number}
+                                className={`exp-panel window ${!pinned || i === activeIndex ? 'active' : ''}`}
+                            >
+                                <div className="title-bar">
+                                    <div className="title-bar-text">
+                                        {exp.icon} {exp.title} — {exp.company}
+                                    </div>
+                                    <div className="title-bar-controls">
+                                        <button aria-label="Help" />
+                                        <button aria-label="Minimize" />
+                                        <button aria-label="Maximize" />
+                                        <button aria-label="Close" />
+                                    </div>
+                                </div>
+
+                                <div className="exp-toolbar">
+                                    <span className="explorer-btn">📅 {exp.tag}</span>
+                                </div>
+
+                                <div className="window-body exp-panel-body">
+                                    <div className="exp-number-badge">{exp.number}</div>
+                                    <h2 className="exp-title">{exp.title}</h2>
+                                    <p className="exp-company">{exp.company}</p>
+                                    <p className="exp-body-text">{exp.body}</p>
+                                    <div className="exp-skills">
+                                        {exp.skills.map(s => (
+                                            <span key={s} className="tag">{s}</span>
+                                        ))}
+                                    </div>
+                                </div>
+
+                                <div className="win98-statusbar">
+                                    <div className="win98-panel">{exp.tag.split('·')[1]?.trim() ?? exp.tag}</div>
+                                    <div className="win98-panel" style={{ flex: 1 }}>{exp.company}</div>
+                                    <div className="win98-panel">Entry {exp.number} of 0{experiences.length}</div>
                                 </div>
                             </div>
-
-                            {/* Explorer-style toolbar */}
-                            <div className="exp-toolbar">
-                                <span className="explorer-btn">📅 {exp.tag}</span>
-                            </div>
-
-                            <div className="window-body exp-panel-body">
-                                <div className="exp-number-badge">{exp.number}</div>
-                                <h2 className="exp-title">{exp.title}</h2>
-                                <p className="exp-company">{exp.company}</p>
-                                <p className="exp-body-text">{exp.body}</p>
-                                <div className="exp-skills">
-                                    {exp.skills.map(s => (
-                                        <span key={s} className="tag">{s}</span>
-                                    ))}
-                                </div>
-                            </div>
-
-                            {/* Status bar */}
-                            <div className="win98-statusbar">
-                                <div className="win98-panel">{exp.tag.split('·')[1]?.trim() ?? exp.tag}</div>
-                                <div className="win98-panel" style={{ flex: 1 }}>{exp.company}</div>
-                                <div className="win98-panel">Entry {exp.number} of 0{experiences.length}</div>
-                            </div>
-                        </div>
-                    ))}
+                        ))}
+                    </div>
                 </div>
             </div>
         </section>

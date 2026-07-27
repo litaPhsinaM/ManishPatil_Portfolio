@@ -78,6 +78,10 @@ const Navbar: React.FC = () => {
                             <span className="menu-icon">ℹ️</span>
                             <span className="menu-label">About Me</span>
                         </div>
+                        <div className="menu-item" onClick={() => scrollToSection('certifications')}>
+                            <span className="menu-icon">📜</span>
+                            <span className="menu-label">Certifications</span>
+                        </div>
                         <div className="menu-item" onClick={() => scrollToSection('experience')}>
                             <span className="menu-icon">📁</span>
                             <span className="menu-label">Experience</span>
@@ -85,10 +89,6 @@ const Navbar: React.FC = () => {
                         <div className="menu-item" onClick={() => scrollToSection('projects')}>
                             <span className="menu-icon">💾</span>
                             <span className="menu-label">Projects</span>
-                        </div>
-                        <div className="menu-item" onClick={() => scrollToSection('life-outside')}>
-                            <span className="menu-icon">🖼️</span>
-                            <span className="menu-label">Interests</span>
                         </div>
                         <div className="menu-divider" />
                         <NavLink to="/resume" className="menu-item" onClick={() => setIsStartOpen(false)}>
@@ -98,6 +98,10 @@ const Navbar: React.FC = () => {
                         <div className="menu-item" onClick={() => scrollToSection('footer')}>
                             <span className="menu-icon">📧</span>
                             <span className="menu-label">Contact</span>
+                        </div>
+                        <div className="menu-item" onClick={() => scrollToSection('life-outside')}>
+                            <span className="menu-icon">🖼️</span>
+                            <span className="menu-label">Interests</span>
                         </div>
                     </div>
                 </div>

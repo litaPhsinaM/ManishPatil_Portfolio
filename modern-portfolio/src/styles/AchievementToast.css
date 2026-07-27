@@ -1,0 +1,44 @@
+.achievement-toast {
+    position: fixed;
+    right: 16px;
+    bottom: calc(var(--taskbar-h) + 16px);
+    width: min(300px, calc(100vw - 32px));
+    z-index: 9990;
+}
+
+.achievement-toast-body {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 14px;
+    background: var(--win98-gray);
+}
+
+.achievement-toast-icon {
+    font-size: 28px;
+    line-height: 1;
+    flex-shrink: 0;
+}
+
+.achievement-toast-title {
+    font-family: 'MS Sans Serif', sans-serif;
+    font-weight: bold;
+    font-size: 12px;
+    color: #000;
+    margin: 0 0 2px;
+}
+
+.achievement-toast-desc {
+    font-family: 'MS Sans Serif', sans-serif;
+    font-size: 11px;
+    color: var(--win98-dark-gray);
+    margin: 0;
+}
+
+@media (max-width: 520px) {
+    .achievement-toast {
+        right: 8px;
+        left: 8px;
+        width: auto;
+    }
+}

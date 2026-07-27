@@ -66,10 +66,17 @@
     box-sizing: border-box;
 }
 
-/* ─── Body / Desktop ─── */
+/* ─── Body / Desktop ───
+   overflow-x: hidden here (on html/body specifically) is a classic, easy-to-miss trap:
+   per the CSS overflow spec, setting one axis to a non-visible value forces the OTHER
+   axis to compute as `auto` too — even though we never asked for that. That silently
+   turns html/body into scroll containers, which breaks `position: sticky` for every
+   descendant on the page (the sticky element ends up pinning against the wrong
+   scrollport instead of the real viewport). `overflow: clip` prevents the same
+   horizontal bleed without creating a scroll container, so it doesn't have this effect. */
 html {
     scroll-behavior: smooth;
-    overflow-x: hidden;
+    overflow-x: clip;
 }
 
 body {
@@ -78,7 +85,7 @@ body {
     background-color: var(--win98-desktop);
     color: var(--win98-black);
     line-height: 1.6;
-    overflow-x: hidden;
+    overflow-x: clip;
     cursor: default;
     padding-bottom: calc(var(--taskbar-h) + var(--safe-bottom));
     /* Subtle CRT scanline overlay */

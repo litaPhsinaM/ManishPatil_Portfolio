@@ -57,8 +57,16 @@ export const projects: Project[] = [
     category: "Software Engineering"
   },
   {
+    title: "Football Match Prediction & Community Engagement",
+    description: "A full-stack Flask web application displaying live and upcoming football matches via REST APIs (API Football, Football Data API). Users submit match predictions, track points on a leaderboard, and chat in real time through WebSockets (Flask-SocketIO). Built with a Windows-98-style UI, a friend system, and a social 'football wall,' with data stored in SQLite and secure API key handling.",
+    image: "FOOTBALL.jpg",
+    link: "",
+    tags: ["Flask", "Python", "WebSockets", "Flask-SocketIO", "SQLite", "Windows-98 UI"],
+    category: "Software Engineering"
+  },
+  {
     title: "Modern React Portfolio (v2.0)",
-    description: "The very application you are browsing right now. A high-performance, responsive portfolio built with React, TypeScript, and Vite. It features a unique 'Coder' aesthetic, advanced Framer Motion parallax effects, glassmorphism UI components, and a custom tabbed navigation system. This project represents a mastery of modern frontend engineering and creative UX design.",
+    description: "The very application you are browsing right now. A high-performance, responsive portfolio built with React, TypeScript, and Vite. It recreates a fully interactive Windows 98 desktop — draggable-feeling windows, an authentic taskbar and Start menu, CRT scanline overlay, and scroll-driven Framer Motion parallax — down to the raised/sunken pixel borders. This project represents a mastery of modern frontend engineering wrapped in a deliberately retro UI.",
     image: "Personal Portfolio.png",
     link: "https://github.com/litaPhsinaM/ManishPatil_Portfolio",
     tags: ["React", "TypeScript", "Framer Motion", "UI/UX"],

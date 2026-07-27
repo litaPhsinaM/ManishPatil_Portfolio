@@ -1,8 +1,17 @@
 import React from 'react';
+import { motion } from 'framer-motion';
 import { Mail, Phone, MapPin, Download, ExternalLink, Linkedin } from 'lucide-react';
 import '../styles/Footer.css';
 
 const LINKEDIN_URL = 'https://www.linkedin.com/in/manish-patil-b50967182/';
+
+const winVariant = {
+    hidden: { opacity: 0, y: 40, scale: 0.97 },
+    visible: {
+        opacity: 1, y: 0, scale: 1,
+        transition: { duration: 0.5, ease: [0.22, 1, 0.36, 1] as const },
+    },
+};
 
 const Footer: React.FC = () => {
     const resumeUrl = `${import.meta.env.BASE_URL}Manish%20Patil.pdf`;
@@ -10,7 +19,13 @@ const Footer: React.FC = () => {
     return (
         <footer id="footer" className="footer-section">
             <div className="container">
-                <div className="window footer-shell-win">
+                <motion.div
+                    className="window footer-shell-win"
+                    variants={winVariant}
+                    initial="hidden"
+                    whileInView="visible"
+                    viewport={{ once: true, amount: 0.15 }}
+                >
                     <div className="title-bar">
                         <div className="title-bar-text">📬 Resume & Contact Center</div>
                         <div className="title-bar-controls">
@@ -149,7 +164,7 @@ const Footer: React.FC = () => {
                             Windows 98 Edition
                         </div>
                     </div>
-                </div>
+                </motion.div>
             </div>
         </footer>
     );

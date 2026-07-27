@@ -5,8 +5,7 @@
     width: 100vw;
     height: 100vh;
     height: 100dvh;
-    background-color: rgba(0, 0, 0, 0.6);
-    backdrop-filter: blur(4px);
+    background-color: rgba(0, 0, 0, 0.7);
     z-index: 9998; /* Below taskbar so taskbar stays usable */
     display: flex;
     justify-content: center;
@@ -21,8 +20,7 @@
     width: 100%;
     max-width: 620px;
     margin: 0 auto;
-    /* Optional: subtle shadow to pop off the backdrop */
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    box-shadow: var(--win98-raised-border);
     max-height: calc(100vh - var(--taskbar-h) - 20px);
     max-height: calc(100dvh - var(--taskbar-h) - 20px);
     display: flex;
@@ -160,11 +158,10 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: rgba(0, 0, 0, 0.7);
+    background: rgba(0, 0, 0, 0.85);
     color: #4ade80;
     font-family: 'Press Start 2P', monospace;
     text-align: center;
-    backdrop-filter: blur(2px);
     z-index: 10;
     padding: 10px;
 }
