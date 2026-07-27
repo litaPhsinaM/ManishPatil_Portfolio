@@ -62,7 +62,7 @@ const Projects: React.FC = () => {
                 >
                     <div className="title-bar">
                         <div className="title-bar-text project-window-title">
-                            <ActiveIcon size={13} /> {activeTab.title} — Windows Explorer
+                            <ActiveIcon size={13} /> {activeTab.title} - Windows Explorer
                         </div>
                         <div className="title-bar-controls">
                             <button aria-label="Help" />

@@ -76,7 +76,7 @@ const Interests: React.FC = () => {
                         viewport={{ once: true }}
                     >
                         <div className="title-bar">
-                            <div className="title-bar-text">🖼️ Photo Gallery — Explorer</div>
+                            <div className="title-bar-text">🖼️ Photo Gallery - Explorer</div>
                             <div className="title-bar-controls">
                                 <button aria-label="Help" />
                                 <button aria-label="Close" />

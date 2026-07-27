@@ -510,7 +510,7 @@ const Games: React.FC<GamesProps> = ({ onClose }) => {
             <div className="container games-shell">
                 <motion.div className="window games-window" initial={{ scale: 0.9, y: 20 }} animate={{ scale: 1, y: 0 }} exit={{ scale: 0.9, y: 20 }} transition={{ type: 'spring', damping: 25, stiffness: 300 }}>
                     <div className="title-bar">
-                        <div className="title-bar-text">🎮 Games — {title}</div>
+                        <div className="title-bar-text">🎮 Games - {title}</div>
                         <div className="title-bar-controls">
                             <button aria-label="Help" />
                             <button aria-label="Minimize" />

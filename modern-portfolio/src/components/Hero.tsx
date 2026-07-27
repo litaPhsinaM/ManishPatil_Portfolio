@@ -103,8 +103,8 @@ const Hero: React.FC<HeroProps> = ({ onOpenGame }) => {
                 transition={{ duration: 0.5, ease: "easeOut" }}
             >
                 <div className="title-bar">
-                    <div className="title-bar-text glitch-text" data-text="Manish_Patil.exe — Portfolio v2.0">
-                        Manish_Patil.exe — Portfolio v2.0
+                    <div className="title-bar-text glitch-text" data-text="Manish_Patil.exe - Portfolio v2.0">
+                        Manish_Patil.exe - Portfolio v2.0
                     </div>
                     <div className="title-bar-controls">
                         <button aria-label="Help" />
@@ -207,7 +207,7 @@ const Hero: React.FC<HeroProps> = ({ onOpenGame }) => {
                                 <p className="hero-description">
                                     M.S. Computer Science • CSUDH
                                     <br />
-                                    IT Specialist &amp; Software Engineer — building toward Systems Administration &amp; Security
+                                    IT Specialist &amp; Software Engineer, building toward Systems Administration &amp; Security
                                 </p>
                             </div>
 
@@ -249,29 +249,28 @@ const Hero: React.FC<HeroProps> = ({ onOpenGame }) => {
                                     </p>
                                     <p>
                                         I'm an IT Specialist at CSUDH keeping infrastructure running for
-                                        4,000&ndash;5,000+ managed devices &mdash; provisioning, MDM (
-                                        <strong>JAMF-certified</strong>), DNS/VPN/WiFi, Google Workspace Admin, and
-                                        the unglamorous stuff that has to work every single day. Alongside that I
-                                        build the internal software that makes IT operations less painful: a
-                                        full-stack ticketing and asset-management system (React, Node.js,
-                                        PostgreSQL, JWT/RBAC) that replaced manual spreadsheets with real audit
-                                        trails.
+                                        4,000&ndash;5,000+ managed devices. That means provisioning, MDM
+                                        (JAMF-certified), DNS/VPN/WiFi, Google Workspace Admin, and the unglamorous
+                                        stuff that has to work every single day. Alongside that I build the internal
+                                        software that makes IT operations less painful: a full-stack ticketing and
+                                        asset-management system (React, Node.js, PostgreSQL, JWT/RBAC) that replaced
+                                        manual spreadsheets with real audit trails.
                                     </p>
                                     <p>
-                                        I'm currently working through <strong>CompTIA Linux+</strong>, with{' '}
-                                        <strong>AutoOps+</strong> and <strong>Security+</strong> next, because I'm
-                                        deliberately going deeper into core IT infrastructure, automation, and
-                                        security rather than around it. The goal is System Administrator and
-                                        Security-focused roles &mdash; the kind of work where you actually own the
-                                        boxes, the network, and the risk, not just the ticket queue.
+                                        I'm currently working through CompTIA Linux+, with AutoOps+ and Security+
+                                        next, because I'm deliberately going deeper into core IT infrastructure,
+                                        automation, and security rather than around it. The goal is System
+                                        Administrator and Security-focused roles, the kind of work where you
+                                        actually own the boxes, the network, and the risk, not just the ticket
+                                        queue.
                                     </p>
                                     <p>
-                                        None of this replaces the software and data side &mdash; it stacks on it.
+                                        None of this replaces the software and data side; it stacks on top of it.
                                         I've shipped MERN-stack apps, built CNN models in PyTorch (99.77% validation
                                         accuracy on 3D shape classification), and built cloud data pipelines on GCP
                                         and Azure (Mage, BigQuery, Databricks, Synapse). I like sitting at the
-                                        intersection of systems, security, and data &mdash; most interesting
-                                        problems live there anyway.
+                                        intersection of systems, security, and data. Most interesting problems live
+                                        there anyway.
                                     </p>
                                 </div>
                             </div>

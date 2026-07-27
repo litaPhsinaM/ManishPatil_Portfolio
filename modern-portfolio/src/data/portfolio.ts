@@ -66,7 +66,7 @@ export const projects: Project[] = [
   },
   {
     title: "Modern React Portfolio (v2.0)",
-    description: "The very application you are browsing right now. A high-performance, responsive portfolio built with React, TypeScript, and Vite. It recreates a fully interactive Windows 98 desktop — draggable-feeling windows, an authentic taskbar and Start menu, CRT scanline overlay, and scroll-driven Framer Motion parallax — down to the raised/sunken pixel borders. This project represents a mastery of modern frontend engineering wrapped in a deliberately retro UI.",
+    description: "The very application you are browsing right now. A high-performance, responsive portfolio built with React, TypeScript, and Vite. It recreates a fully interactive Windows 98 desktop, down to the raised/sunken pixel borders: draggable-feeling windows, an authentic taskbar and Start menu, a CRT scanline overlay, and scroll-driven Framer Motion parallax. This project represents a mastery of modern frontend engineering wrapped in a deliberately retro UI.",
     image: "Personal Portfolio.png",
     link: "https://github.com/litaPhsinaM/ManishPatil_Portfolio",
     tags: ["React", "TypeScript", "Framer Motion", "UI/UX"],

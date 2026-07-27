@@ -29,7 +29,7 @@ const experiences: ExperienceEntry[] = [
         number: '02',
         tag: 'CaspianLogic · May 2022 – October 2022',
         title: 'Software Developer Intern',
-        company: 'CaspianLogic — Cupertino, CA',
+        company: 'CaspianLogic, Cupertino, CA',
         icon: '💻',
         body: `Contributed to production-grade, client-facing software solutions for business process re-engineering and IT consulting clients, supporting delivery across multiple concurrent project engagements for a full-stack web development consulting firm.
         \n● MERN Stack Development: Built and maintained full-stack features using React, Redux, Node.js, Express, MongoDB, and RESTful services, shipping production-ready functionality across several client releases.
@@ -42,7 +42,7 @@ const experiences: ExperienceEntry[] = [
         number: '03',
         tag: 'Yali Inc. · June 2019 – September 2019',
         title: 'Data Engineering Intern',
-        company: 'Yali Inc. (Stealth Startup) — Chennai, IN',
+        company: 'Yali Inc. (Stealth Startup), Chennai, IN',
         icon: '📊',
         body: `Engineered scalable data ingestion and processing pipelines for a stealth startup's early data infrastructure, cutting manual data prep time and enabling faster, more reliable reporting.
         \n● ETL Automation: Built and scheduled automated Apache Airflow DAGs to ingest data from multiple third-party and internal sources daily, replacing manual imports and cutting pipeline turnaround time by roughly 30%.
@@ -138,7 +138,7 @@ const Experience: React.FC = () => {
                     <div className="window exp-header-win">
                         <div className="title-bar">
                             <div className="title-bar-text">
-                                💼 Professional Experience — Task Manager
+                                💼 Professional Experience - Task Manager
                             </div>
                             <div className="title-bar-controls">
                                 <button aria-label="Help" />
@@ -168,7 +168,7 @@ const Experience: React.FC = () => {
                             >
                                 <div className="title-bar">
                                     <div className="title-bar-text">
-                                        {exp.icon} {exp.title} — {exp.company}
+                                        {exp.icon} {exp.title} - {exp.company}
                                     </div>
                                     <div className="title-bar-controls">
                                         <button aria-label="Help" />
