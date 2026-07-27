@@ -78,10 +78,6 @@ const Navbar: React.FC = () => {
                             <span className="menu-icon">ℹ️</span>
                             <span className="menu-label">About Me</span>
                         </div>
-                        <div className="menu-item" onClick={() => scrollToSection('certifications')}>
-                            <span className="menu-icon">📜</span>
-                            <span className="menu-label">Certifications</span>
-                        </div>
                         <div className="menu-item" onClick={() => scrollToSection('experience')}>
                             <span className="menu-icon">📁</span>
                             <span className="menu-label">Experience</span>

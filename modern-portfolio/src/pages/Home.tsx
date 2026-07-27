@@ -3,7 +3,6 @@ import { AnimatePresence } from 'framer-motion';
 import { useLocation } from 'react-router-dom';
 import Hero from '../components/Hero';
 import Interests from '../components/Interests';
-import Certifications from '../components/Certifications';
 import Experience from '../components/Experience';
 import Projects from '../components/Projects';
 import Games from '../components/Games';
@@ -39,8 +38,6 @@ const Home: React.FC = () => {
     return (
         <div className="home-page">
             <Hero onOpenGame={() => setIsGameOpen(true)} />
-            <div className="section-separator" />
-            <Certifications />
             <div className="section-separator" />
             <Experience />
             <div className="section-separator" />
