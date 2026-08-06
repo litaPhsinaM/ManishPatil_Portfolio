@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from 'react';
+import { readStorage, writeStorage } from '../utils/safeStorage';
 import '../styles/Win98Boot.css';
 
 const Win98Boot: React.FC = () => {
-    const [visible, setVisible] = useState(() => !sessionStorage.getItem('win98-booted'));
+    const [visible, setVisible] = useState(() => !readStorage('session', 'win98-booted'));
     const [progress, setProgress] = useState(0);
     const [fadeOut, setFadeOut] = useState(false);
 
@@ -20,7 +21,7 @@ const Win98Boot: React.FC = () => {
                     setFadeOut(true);
                     timeouts.push(window.setTimeout(() => {
                         setVisible(false);
-                        sessionStorage.setItem('win98-booted', '1');
+                        writeStorage('session', 'win98-booted', '1');
                     }, 600));
                 }, 400));
             }

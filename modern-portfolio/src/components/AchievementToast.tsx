@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
+import { readStorage, writeStorage } from '../utils/safeStorage';
 import '../styles/AchievementToast.css';
 
 const STORAGE_KEY = 'achievement-projects-seen';
@@ -10,24 +11,29 @@ const AchievementToast: React.FC = () => {
     const [visible, setVisible] = useState(false);
 
     useEffect(() => {
-        if (sessionStorage.getItem(STORAGE_KEY)) return;
+        if (readStorage('session', STORAGE_KEY)) return;
 
         const target = document.getElementById(TARGET_SECTION_ID);
         if (!target) return;
 
+        let dismissTimeout: number | undefined;
+
         const observer = new IntersectionObserver(
             ([entry]) => {
                 if (!entry.isIntersecting) return;
-                sessionStorage.setItem(STORAGE_KEY, '1');
+                writeStorage('session', STORAGE_KEY, '1');
                 setVisible(true);
                 observer.disconnect();
-                window.setTimeout(() => setVisible(false), AUTO_DISMISS_MS);
+                dismissTimeout = window.setTimeout(() => setVisible(false), AUTO_DISMISS_MS);
             },
             { threshold: 0.35 }
         );
         observer.observe(target);
 
-        return () => observer.disconnect();
+        return () => {
+            observer.disconnect();
+            window.clearTimeout(dismissTimeout);
+        };
     }, []);
 
     return (

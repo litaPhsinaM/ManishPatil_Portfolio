@@ -131,6 +131,7 @@ const Projects: React.FC = () => {
                             return (
                                 <button
                                     key={tab.id}
+                                    id={`project-tab-${tab.id}`}
                                     className={`project-tab ${isActive ? 'active' : ''}`}
                                     type="button"
                                     role="tab"
@@ -154,7 +155,12 @@ const Projects: React.FC = () => {
                         </div>
                     </div>
 
-                    <div className="window-body category-body" id="project-tab-panel" role="tabpanel">
+                    <div
+                        className="window-body category-body"
+                        id="project-tab-panel"
+                        role="tabpanel"
+                        aria-labelledby={`project-tab-${activeTab.id}`}
+                    >
                         <div className="projects-grid">
                             {activeProjects.map((project, idx) => (
                                 <motion.article
