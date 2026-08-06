@@ -352,3 +352,113 @@
         display: flex;
     }
 }
+
+/* ─── Arcade initials entry ─── */
+.score-entry {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    margin: 4px 0 2px;
+}
+
+.score-entry-label {
+    font-family: 'Press Start 2P', 'MS Sans Serif', sans-serif;
+    font-size: 8px;
+    color: #00ff66;
+    letter-spacing: 1px;
+}
+
+.score-entry-row {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.score-entry-input {
+    width: 78px;
+    padding: 4px 6px;
+    background: #000000;
+    color: #00ff66;
+    border: none;
+    box-shadow: inset 1px 1px #404040, inset -1px -1px #dfdfdf;
+    font-family: 'Press Start 2P', 'Courier New', monospace;
+    font-size: 13px;
+    letter-spacing: 4px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.score-entry-input::placeholder {
+    color: #1f6b3a;
+}
+
+.score-entry-hint {
+    font-size: 9px;
+    color: #b0b0b0;
+    text-align: center;
+    max-width: 200px;
+    line-height: 1.4;
+}
+
+/* ─── Leaderboard ─── */
+.leaderboard {
+    margin-top: 8px;
+    padding: 7px 9px;
+    background: #000000;
+    box-shadow: var(--win98-sunken-border);
+}
+
+.leaderboard-title {
+    font-family: 'Press Start 2P', 'MS Sans Serif', sans-serif;
+    font-size: 9px;
+    color: #ffcc33;
+    letter-spacing: 1.5px;
+    text-align: center;
+    margin-bottom: 7px;
+}
+
+.leaderboard-state {
+    font-size: 10px;
+    color: #808080;
+    text-align: center;
+    padding: 3px 0;
+}
+
+.leaderboard-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    gap: 3px;
+}
+
+.leaderboard-row {
+    display: flex;
+    align-items: baseline;
+    gap: 6px;
+    font-family: 'Courier New', monospace;
+    font-size: 12px;
+    color: #00ff66;
+}
+
+.leaderboard-rank {
+    color: #808080;
+}
+
+.leaderboard-initials {
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+/* Dot leader, the way a real arcade board ran the eye across to the score. */
+.leaderboard-dots {
+    flex: 1 1 auto;
+    border-bottom: 1px dotted #2f6b45;
+    transform: translateY(-3px);
+}
+
+.leaderboard-score {
+    color: #ffcc33;
+    font-weight: bold;
+}

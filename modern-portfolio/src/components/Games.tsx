@@ -1,5 +1,13 @@
 import React, { useCallback, useEffect, useRef, useState } from 'react';
 import { motion } from 'framer-motion';
+import { readStorage, writeStorage } from '../utils/safeStorage';
+import {
+    leaderboardEnabled,
+    fetchTopScores,
+    submitScore,
+    INITIALS_PATTERN,
+    type ScoreRow,
+} from '../lib/leaderboard';
 import '../styles/Games.css';
 
 const GRID_SIZE = 20;
@@ -42,20 +50,75 @@ const TouchDpad: React.FC<{ onDirection: (dir: number[]) => void }> = ({ onDirec
 
 const SnakeGame: React.FC = () => {
     const [snake, setSnake] = useState<number[][]>(INITIAL_SNAKE);
-    const [direction, setDirection] = useState<number[]>(INITIAL_DIRECTION);
     const [food, setFood] = useState<number[]>([5, 5]);
     const [isPlaying, setIsPlaying] = useState(false);
     const [gameOver, setGameOver] = useState(false);
     const [score, setScore] = useState(0);
     const [highScore, setHighScore] = useState(() => {
-        const saved = localStorage.getItem('snakeHighScore');
-        return saved ? parseInt(saved, 10) : 0;
+        const saved = Number.parseInt(readStorage('local', 'snakeHighScore') ?? '', 10);
+        return Number.isFinite(saved) ? saved : 0;
     });
 
-    const directionRef = useRef(direction);
+    // The tick reads live values off refs rather than closing over state. Previously the
+    // interval effect depended on `direction`/`food`, so it was torn down and recreated on
+    // every turn — tapping direction keys faster than SPEED_MS stopped the snake entirely.
+    const snakeRef = useRef(snake);
+    const foodRef = useRef(food);
+    const scoreRef = useRef(score);
+    const highScoreRef = useRef(highScore);
+    // `directionRef` is what the last tick actually moved; `pendingDirectionRef` is what
+    // input has requested for the next one. Validating turns against the committed
+    // direction is what stops two fast turns (right → up → left) folding into a reversal.
+    const directionRef = useRef(INITIAL_DIRECTION);
+    const pendingDirectionRef = useRef(INITIAL_DIRECTION);
+
+    /* Arcade leaderboard. Every path here is optional — if the backend is not
+       configured or is unreachable, the game plays exactly as it did before. */
+    const [scores, setScores] = useState<ScoreRow[]>([]);
+    const [boardState, setBoardState] = useState<'loading' | 'ready' | 'error' | 'disabled'>(
+        leaderboardEnabled ? 'loading' : 'disabled'
+    );
+    const [initials, setInitials] = useState('');
+    const [submitState, setSubmitState] = useState<'idle' | 'saving' | 'saved' | 'error'>('idle');
+
+    const refreshScores = useCallback(async () => {
+        if (!leaderboardEnabled) return;
+        try {
+            setScores(await fetchTopScores());
+            setBoardState('ready');
+        } catch {
+            setBoardState('error');
+        }
+    }, []);
+
     useEffect(() => {
-        directionRef.current = direction;
-    }, [direction]);
+        if (!leaderboardEnabled) return;
+
+        let cancelled = false;
+        fetchTopScores()
+            .then((rows) => {
+                if (cancelled) return;
+                setScores(rows);
+                setBoardState('ready');
+            })
+            .catch(() => {
+                if (!cancelled) setBoardState('error');
+            });
+
+        return () => { cancelled = true; };
+    }, []);
+
+    const handleSubmitScore = useCallback(async (event: React.FormEvent) => {
+        event.preventDefault();
+        setSubmitState('saving');
+        try {
+            await submitScore(initials, scoreRef.current);
+            setSubmitState('saved');
+            await refreshScores();
+        } catch {
+            setSubmitState('error');
+        }
+    }, [initials, refreshScores]);
 
     const generateFood = useCallback((currentSnake: number[][]) => {
         let newFood: number[];
@@ -70,75 +133,101 @@ const SnakeGame: React.FC = () => {
         }
     }, []);
 
-    const handleGameOver = useCallback(() => {
-        setGameOver(true);
-        setIsPlaying(false);
-        setHighScore(prev => {
-            const next = Math.max(prev, score);
-            localStorage.setItem('snakeHighScore', next.toString());
-            return next;
-        });
-    }, [score]);
-
     const resetGame = useCallback(() => {
+        const nextFood = generateFood(INITIAL_SNAKE);
+        snakeRef.current = INITIAL_SNAKE;
+        foodRef.current = nextFood;
+        scoreRef.current = 0;
+        directionRef.current = INITIAL_DIRECTION;
+        pendingDirectionRef.current = INITIAL_DIRECTION;
+
         setSnake(INITIAL_SNAKE);
-        setDirection(INITIAL_DIRECTION);
-        setFood(generateFood(INITIAL_SNAKE));
+        setFood(nextFood);
         setScore(0);
         setGameOver(false);
         setIsPlaying(true);
+        setInitials('');
+        setSubmitState('idle');
+    }, [generateFood]);
+
+    const requestDirection = useCallback((dir: number[]) => {
+        const committed = directionRef.current;
+        if (dir[0] === -committed[0] && dir[1] === -committed[1]) return;
+        pendingDirectionRef.current = dir;
+    }, []);
+
+    /* One step of the simulation. Runs from the interval callback — never inside a state
+       updater, because React may invoke updaters more than once and the side effects here
+       (scoring, spawning food, saving the high score) must happen exactly once per tick. */
+    const tick = useCallback(() => {
+        const direction = pendingDirectionRef.current;
+        directionRef.current = direction;
+
+        const prevSnake = snakeRef.current;
+        const head = prevSnake[0];
+        const newHead = [head[0] + direction[0], head[1] + direction[1]];
+
+        const hitsWall =
+            newHead[0] < 0 || newHead[0] >= GRID_SIZE ||
+            newHead[1] < 0 || newHead[1] >= GRID_SIZE;
+        const hitsSelf = prevSnake.some(
+            segment => segment[0] === newHead[0] && segment[1] === newHead[1]
+        );
+
+        if (hitsWall || hitsSelf) {
+            setGameOver(true);
+            setIsPlaying(false);
+            if (scoreRef.current > highScoreRef.current) {
+                highScoreRef.current = scoreRef.current;
+                setHighScore(scoreRef.current);
+                writeStorage('local', 'snakeHighScore', scoreRef.current.toString());
+            }
+            return;
+        }
+
+        const nextSnake = [newHead, ...prevSnake];
+        if (newHead[0] === foodRef.current[0] && newHead[1] === foodRef.current[1]) {
+            scoreRef.current += 10;
+            setScore(scoreRef.current);
+
+            const nextFood = generateFood(nextSnake);
+            foodRef.current = nextFood;
+            setFood(nextFood);
+        } else {
+            nextSnake.pop();
+        }
+
+        snakeRef.current = nextSnake;
+        setSnake(nextSnake);
     }, [generateFood]);
 
     /* Touch D-pad handler — validates against reverse direction */
     const handleTouchDirection = useCallback((dir: number[]) => {
-        if (!isPlaying && !gameOver) {
-            setIsPlaying(true);
-            return;
-        }
         if (gameOver) {
             resetGame();
             return;
         }
-        const cur = directionRef.current;
-        // Prevent reversing into yourself
-        if (dir[0] !== 0 && cur[0] !== -dir[0]) setDirection(dir);
-        else if (dir[1] !== 0 && cur[1] !== -dir[1]) setDirection(dir);
-    }, [isPlaying, gameOver, resetGame]);
+        if (!isPlaying) {
+            setIsPlaying(true);
+            return;
+        }
+        requestDirection(dir);
+    }, [isPlaying, gameOver, resetGame, requestDirection]);
 
     useEffect(() => {
         if (!isPlaying || gameOver) return;
 
-        const interval = setInterval(() => {
-            setSnake(prevSnake => {
-                const head = prevSnake[0];
-                const newHead = [head[0] + direction[0], head[1] + direction[1]];
-
-                if (
-                    newHead[0] < 0 || newHead[0] >= GRID_SIZE ||
-                    newHead[1] < 0 || newHead[1] >= GRID_SIZE ||
-                    prevSnake.some(segment => segment[0] === newHead[0] && segment[1] === newHead[1])
-                ) {
-                    handleGameOver();
-                    return prevSnake;
-                }
-
-                const newSnake = [newHead, ...prevSnake];
-                if (newHead[0] === food[0] && newHead[1] === food[1]) {
-                    setScore(s => s + 10);
-                    setFood(generateFood(newSnake));
-                } else {
-                    newSnake.pop();
-                }
-
-                return newSnake;
-            });
-        }, SPEED_MS);
-
+        const interval = setInterval(tick, SPEED_MS);
         return () => clearInterval(interval);
-    }, [isPlaying, gameOver, direction, food, generateFood, handleGameOver]);
+    }, [isPlaying, gameOver, tick]);
 
     useEffect(() => {
         const handleKeyDown = (e: KeyboardEvent) => {
+            // While the initials field has focus the game must keep its hands off the
+            // keyboard — otherwise pressing space mid-entry restarts the round.
+            const target = e.target as HTMLElement | null;
+            if (target && (target.tagName === 'INPUT' || target.tagName === 'TEXTAREA')) return;
+
             if (['ArrowUp', 'ArrowDown', 'ArrowLeft', 'ArrowRight', ' '].includes(e.key)) {
                 e.preventDefault();
             }
@@ -152,19 +241,19 @@ const SnakeGame: React.FC = () => {
             switch (e.key) {
                 case 'ArrowUp':
                 case 'w':
-                    if (direction[1] !== 1) setDirection([0, -1]);
+                    requestDirection([0, -1]);
                     break;
                 case 'ArrowDown':
                 case 's':
-                    if (direction[1] !== -1) setDirection([0, 1]);
+                    requestDirection([0, 1]);
                     break;
                 case 'ArrowLeft':
                 case 'a':
-                    if (direction[0] !== 1) setDirection([-1, 0]);
+                    requestDirection([-1, 0]);
                     break;
                 case 'ArrowRight':
                 case 'd':
-                    if (direction[0] !== -1) setDirection([1, 0]);
+                    requestDirection([1, 0]);
                     break;
                 default:
                     break;
@@ -173,7 +262,7 @@ const SnakeGame: React.FC = () => {
 
         window.addEventListener('keydown', handleKeyDown);
         return () => window.removeEventListener('keydown', handleKeyDown);
-    }, [direction, isPlaying, gameOver, resetGame]);
+    }, [isPlaying, gameOver, resetGame, requestDirection]);
 
     return (
         <>
@@ -207,6 +296,46 @@ const SnakeGame: React.FC = () => {
                         <div className="game-overlay">
                             <div className="game-over-text">GAME OVER</div>
                             <div className="game-score-final">Score: {score}</div>
+
+                            {leaderboardEnabled && score > 0 && submitState !== 'saved' && (
+                                <form className="score-entry" onSubmit={handleSubmitScore}>
+                                    <label className="score-entry-label" htmlFor="snake-initials">
+                                        Enter your initials
+                                    </label>
+                                    <div className="score-entry-row">
+                                        <input
+                                            id="snake-initials"
+                                            className="score-entry-input"
+                                            value={initials}
+                                            onChange={(e) => setInitials(
+                                                e.target.value.toUpperCase().replace(/[^A-Z]/g, '').slice(0, 3)
+                                            )}
+                                            maxLength={3}
+                                            autoComplete="off"
+                                            spellCheck={false}
+                                            aria-describedby="snake-initials-hint"
+                                            placeholder="AAA"
+                                        />
+                                        <button
+                                            type="submit"
+                                            className="btn game-btn"
+                                            disabled={!INITIALS_PATTERN.test(initials) || submitState === 'saving'}
+                                        >
+                                            {submitState === 'saving' ? 'SAVING…' : 'SUBMIT'}
+                                        </button>
+                                    </div>
+                                    <div id="snake-initials-hint" className="score-entry-hint">
+                                        {submitState === 'error'
+                                            ? 'Could not reach the leaderboard — your local high score is safe.'
+                                            : 'Three letters, arcade style.'}
+                                    </div>
+                                </form>
+                            )}
+
+                            {submitState === 'saved' && (
+                                <div className="score-entry-hint">Score posted to the board.</div>
+                            )}
+
                             <button className="btn game-btn" onClick={resetGame}>TRY AGAIN</button>
                         </div>
                     )}
@@ -221,6 +350,37 @@ const SnakeGame: React.FC = () => {
                     {isPlaying ? 'Pause' : 'Play'}
                 </button>
             </div>
+
+            {boardState !== 'disabled' && (
+                <div className="leaderboard">
+                    <div className="leaderboard-title">HIGH SCORES</div>
+
+                    {boardState === 'loading' && (
+                        <div className="leaderboard-state">Loading…</div>
+                    )}
+
+                    {boardState === 'error' && (
+                        <div className="leaderboard-state">Board unavailable</div>
+                    )}
+
+                    {boardState === 'ready' && scores.length === 0 && (
+                        <div className="leaderboard-state">No scores yet — be the first.</div>
+                    )}
+
+                    {boardState === 'ready' && scores.length > 0 && (
+                        <ol className="leaderboard-list">
+                            {scores.map((row, index) => (
+                                <li key={`${row.initials}-${row.created_at}`} className="leaderboard-row">
+                                    <span className="leaderboard-rank">{String(index + 1).padStart(2, '0')}</span>
+                                    <span className="leaderboard-initials">{row.initials}</span>
+                                    <span className="leaderboard-dots" aria-hidden="true" />
+                                    <span className="leaderboard-score">{row.score}</span>
+                                </li>
+                            ))}
+                        </ol>
+                    )}
+                </div>
+            )}
         </>
     );
 };
@@ -235,6 +395,9 @@ const TrafficGame: React.FC = () => {
         const canvas = canvasRef.current;
         const ctx = canvas?.getContext('2d');
         if (!canvas || !ctx) return;
+
+        // A key held when the previous run ended would otherwise still read as pressed.
+        keysRef.current = {};
 
         const lanes = [70, 145, 220];
         const player = { x: 140, y: 410, w: 32, h: 50 };
@@ -329,15 +492,19 @@ const TrafficGame: React.FC = () => {
         const keyUp = (e: KeyboardEvent) => {
             keysRef.current[e.key] = false;
         };
+        // Switching tabs/windows swallows the keyup, which would leave the car steering.
+        const releaseAll = () => { keysRef.current = {}; };
 
         window.addEventListener('keydown', keyDown);
         window.addEventListener('keyup', keyUp);
+        window.addEventListener('blur', releaseAll);
         loop();
 
         return () => {
-            if (rafRef.current) cancelAnimationFrame(rafRef.current);
+            if (rafRef.current !== null) cancelAnimationFrame(rafRef.current);
             window.removeEventListener('keydown', keyDown);
             window.removeEventListener('keyup', keyUp);
+            window.removeEventListener('blur', releaseAll);
         };
     }, [runId]);
 
@@ -362,16 +529,20 @@ const TrafficGame: React.FC = () => {
                     className="touch-lr-btn"
                     onTouchStart={(e) => { e.preventDefault(); handleTouchLeft(); }}
                     onTouchEnd={handleTouchLeftEnd}
+                    onTouchCancel={handleTouchLeftEnd}
                     onMouseDown={handleTouchLeft}
                     onMouseUp={handleTouchLeftEnd}
+                    onMouseLeave={handleTouchLeftEnd}
                     aria-label="Steer left"
                 >◀</button>
                 <button
                     className="touch-lr-btn"
                     onTouchStart={(e) => { e.preventDefault(); handleTouchRight(); }}
                     onTouchEnd={handleTouchRightEnd}
+                    onTouchCancel={handleTouchRightEnd}
                     onMouseDown={handleTouchRight}
                     onMouseUp={handleTouchRightEnd}
+                    onMouseLeave={handleTouchRightEnd}
                     aria-label="Steer right"
                 >▶</button>
             </div>
@@ -469,7 +640,7 @@ const FlappyGame: React.FC = () => {
         draw();
 
         return () => {
-            if (rafRef.current) cancelAnimationFrame(rafRef.current);
+            if (rafRef.current !== null) cancelAnimationFrame(rafRef.current);
             window.removeEventListener('keydown', flap);
             canvas.removeEventListener('click', flap);
             canvas.removeEventListener('touchstart', flap);
@@ -506,7 +677,16 @@ const Games: React.FC<GamesProps> = ({ onClose }) => {
     }, [onClose]);
 
     return (
-        <motion.div className="games-overlay" initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ duration: 0.2 }}>
+        <motion.div
+            className="games-overlay"
+            role="dialog"
+            aria-modal="true"
+            aria-label={`Games - ${title}`}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.2 }}
+        >
             <div className="container games-shell">
                 <motion.div className="window games-window" initial={{ scale: 0.9, y: 20 }} animate={{ scale: 1, y: 0 }} exit={{ scale: 0.9, y: 20 }} transition={{ type: 'spring', damping: 25, stiffness: 300 }}>
                     <div className="title-bar">
