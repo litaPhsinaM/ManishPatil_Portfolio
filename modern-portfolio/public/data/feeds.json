@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-06T04:06:30.547Z",
+  "generatedAt": "2026-08-06T13:03:26.288Z",
   "feeds": {
     "security": [
       {
@@ -201,31 +201,31 @@
     ],
     "ai": [
       {
-        "id": "hn-49192160",
-        "title": "Governments are making a dangerous bet on the AI boom",
-        "url": "https://www.economist.com/leaders/2026/08/05/governments-are-making-a-dangerous-bet-on-the-ai-boom",
+        "id": "hn-49192219",
+        "title": "Show HN: Wallfacer – A terminal session manager for Claude Code, and more",
+        "url": "https://github.com/pradipta/wallfacer",
         "source": "Hacker News",
         "date": "2026-08-06",
         "summary": "",
         "meta": [
-          "12 points",
-          "2 comments"
+          "28 points",
+          "17 comments"
         ],
-        "discussion": "https://news.ycombinator.com/item?id=49192160",
+        "discussion": "https://news.ycombinator.com/item?id=49192219",
         "flag": null
       },
       {
-        "id": "hn-49191365",
-        "title": "LLMs won't break symmetric crypto",
-        "url": "https://www.bfswa.blog/p/llms-wont-break-symmetric-crypto",
+        "id": "hn-49193019",
+        "title": "Meta says AI model accessed the internet and hacked another firm",
+        "url": "https://www.bbc.co.uk/news/articles/cx2kgdnyk2po",
         "source": "Hacker News",
         "date": "2026-08-06",
         "summary": "",
         "meta": [
-          "54 points",
-          "48 comments"
+          "29 points",
+          "15 comments"
         ],
-        "discussion": "https://news.ycombinator.com/item?id=49191365",
+        "discussion": "https://news.ycombinator.com/item?id=49193019",
         "flag": null
       },
       {
@@ -387,17 +387,87 @@
     ],
     "dev": [
       {
-        "id": "hn-49191624",
-        "title": "Nashville uses eminent domain to block data center near zoo",
-        "url": "https://www.costar.com/article/970809918/nashville-council-approves-eminent-domain-action-to-halt-data-center-project",
+        "id": "hn-49195231",
+        "title": "Mario Meets Pareto",
+        "url": "https://www.mayerowitz.io/blog/mario-meets-pareto",
         "source": "Hacker News",
         "date": "2026-08-06",
         "summary": "",
         "meta": [
-          "97 points",
-          "81 comments"
+          "49 points",
+          "5 comments"
         ],
-        "discussion": "https://news.ycombinator.com/item?id=49191624",
+        "discussion": "https://news.ycombinator.com/item?id=49195231",
+        "flag": null
+      },
+      {
+        "id": "hn-49168622",
+        "title": "How to Make a Nintendo 64 Game in 2026",
+        "url": "https://phoboslab.org/log/2026/08/xibalba64-making-of",
+        "source": "Hacker News",
+        "date": "2026-08-04",
+        "summary": "",
+        "meta": [
+          "217 points",
+          "69 comments"
+        ],
+        "discussion": "https://news.ycombinator.com/item?id=49168622",
+        "flag": null
+      },
+      {
+        "id": "hn-49192566",
+        "title": "Crime Pays but Botany Doesn't",
+        "url": "https://www.crimepaysbutbotanydoesnt.com/reading-list",
+        "source": "Hacker News",
+        "date": "2026-08-06",
+        "summary": "",
+        "meta": [
+          "339 points",
+          "116 comments"
+        ],
+        "discussion": "https://news.ycombinator.com/item?id=49192566",
+        "flag": null
+      },
+      {
+        "id": "hn-49195297",
+        "title": "Show HN: Skyline Co-op is like SimTower, but built around democratic socialism",
+        "url": "https://intergalacticrobots.app/skyline-coop/",
+        "source": "Hacker News",
+        "date": "2026-08-06",
+        "summary": "",
+        "meta": [
+          "19 points",
+          "15 comments"
+        ],
+        "discussion": "https://news.ycombinator.com/item?id=49195297",
+        "flag": null
+      },
+      {
+        "id": "hn-49096439",
+        "title": "Pareto Front",
+        "url": "https://en.wikipedia.org/wiki/Pareto_front",
+        "source": "Hacker News",
+        "date": "2026-07-29",
+        "summary": "",
+        "meta": [
+          "66 points",
+          "29 comments"
+        ],
+        "discussion": "https://news.ycombinator.com/item?id=49096439",
+        "flag": null
+      },
+      {
+        "id": "hn-49193173",
+        "title": "On non-rooted Android 17, ADB uninstall of system apps fails",
+        "url": "https://github.com/Universal-Debloater-Alliance/universal-android-debloater-next-generation/issues/1426",
+        "source": "Hacker News",
+        "date": "2026-08-06",
+        "summary": "",
+        "meta": [
+          "101 points",
+          "44 comments"
+        ],
+        "discussion": "https://news.ycombinator.com/item?id=49193173",
         "flag": null
       },
       {
@@ -408,8 +478,8 @@
         "date": "2026-08-05",
         "summary": "",
         "meta": [
-          "645 points",
-          "397 comments"
+          "793 points",
+          "495 comments"
         ],
         "discussion": "https://news.ycombinator.com/item?id=49184960",
         "flag": null
@@ -422,8 +492,8 @@
         "date": "2026-08-05",
         "summary": "",
         "meta": [
-          "335 points",
-          "176 comments"
+          "461 points",
+          "251 comments"
         ],
         "discussion": "https://news.ycombinator.com/item?id=49187256",
         "flag": null
@@ -436,24 +506,10 @@
         "date": "2026-08-05",
         "summary": "",
         "meta": [
-          "187 points",
-          "81 comments"
+          "316 points",
+          "153 comments"
         ],
         "discussion": "https://news.ycombinator.com/item?id=49189287",
-        "flag": null
-      },
-      {
-        "id": "hn-49187575",
-        "title": "Muse Code and Muse Spark 1.2",
-        "url": "https://research.meta.ai/blog/introducing-muse-code-and-muse-spark-1-2",
-        "source": "Hacker News",
-        "date": "2026-08-05",
-        "summary": "",
-        "meta": [
-          "207 points",
-          "121 comments"
-        ],
-        "discussion": "https://news.ycombinator.com/item?id=49187575",
         "flag": null
       },
       {
@@ -464,38 +520,24 @@
         "date": "2026-08-03",
         "summary": "",
         "meta": [
-          "52 points",
-          "11 comments"
+          "217 points",
+          "66 comments"
         ],
         "discussion": "https://news.ycombinator.com/item?id=49151991",
         "flag": null
       },
       {
-        "id": "hn-49161799",
-        "title": "Do birds enjoy flying? Analysis of affect after flight in galah (E roseicapilla)",
-        "url": "https://brill.com/view/journals/beh/aop/article-10.1163-1568539X-bja10370/article-10.1163-1568539X-bja10370.xml",
-        "source": "Hacker News",
-        "date": "2026-08-03",
-        "summary": "",
-        "meta": [
-          "9 points",
-          "1 comments"
-        ],
-        "discussion": "https://news.ycombinator.com/item?id=49161799",
-        "flag": null
-      },
-      {
-        "id": "hn-49189075",
-        "title": "Prime Agent: A self-improving RLM agent",
-        "url": "https://www.primeintellect.ai/blog/prime-agent",
+        "id": "hn-49187575",
+        "title": "Muse Code and Muse Spark 1.2",
+        "url": "https://research.meta.ai/blog/introducing-muse-code-and-muse-spark-1-2",
         "source": "Hacker News",
         "date": "2026-08-05",
         "summary": "",
         "meta": [
-          "129 points",
-          "21 comments"
+          "276 points",
+          "174 comments"
         ],
-        "discussion": "https://news.ycombinator.com/item?id=49189075",
+        "discussion": "https://news.ycombinator.com/item?id=49187575",
         "flag": null
       },
       {
@@ -506,80 +548,38 @@
         "date": "2026-08-05",
         "summary": "",
         "meta": [
-          "492 points",
-          "252 comments"
+          "585 points",
+          "280 comments"
         ],
         "discussion": "https://news.ycombinator.com/item?id=49182996",
         "flag": null
       },
       {
-        "id": "hn-49185983",
-        "title": "Atlassian Rovo Exfiltrates Data, Bypassing Controls",
-        "url": "https://www.promptarmor.com/resources/atlassian-rovo-exfiltrates-data",
+        "id": "hn-49129008",
+        "title": "Unearthing my 1996 windowed OS in machine code for Am29000 homebrew computer",
+        "url": "https://nanochess.org/the_am29000_computer.html",
+        "source": "Hacker News",
+        "date": "2026-07-31",
+        "summary": "",
+        "meta": [
+          "52 points",
+          "3 comments"
+        ],
+        "discussion": "https://news.ycombinator.com/item?id=49129008",
+        "flag": null
+      },
+      {
+        "id": "hn-49189075",
+        "title": "Prime Agent: A self-improving RLM agent",
+        "url": "https://www.primeintellect.ai/blog/prime-agent",
         "source": "Hacker News",
         "date": "2026-08-05",
         "summary": "",
         "meta": [
-          "193 points",
-          "77 comments"
+          "196 points",
+          "44 comments"
         ],
-        "discussion": "https://news.ycombinator.com/item?id=49185983",
-        "flag": null
-      },
-      {
-        "id": "hn-49189234",
-        "title": "NVIDIA’s Vera Whitepaper Has a Thread Loose",
-        "url": "https://chipsandcheese.com/p/nvidias-vera-whitepaper-has-a-thread",
-        "source": "Hacker News",
-        "date": "2026-08-05",
-        "summary": "",
-        "meta": [
-          "105 points",
-          "15 comments"
-        ],
-        "discussion": "https://news.ycombinator.com/item?id=49189234",
-        "flag": null
-      },
-      {
-        "id": "hn-49189113",
-        "title": "I'll be stepping back from leading product for X",
-        "url": "https://twitter.com/nikitabier/status/2085105586966827343/",
-        "source": "Hacker News",
-        "date": "2026-08-05",
-        "summary": "",
-        "meta": [
-          "88 points",
-          "135 comments"
-        ],
-        "discussion": "https://news.ycombinator.com/item?id=49189113",
-        "flag": null
-      },
-      {
-        "id": "hn-49146183",
-        "title": "GNU Hurd News 2026-Q2",
-        "url": "https://www.gnu.org/software/hurd/news/2026-q2.html",
-        "source": "Hacker News",
-        "date": "2026-08-02",
-        "summary": "",
-        "meta": [
-          "146 points",
-          "95 comments"
-        ],
-        "discussion": "https://news.ycombinator.com/item?id=49146183",
-        "flag": null
-      },
-      {
-        "id": "hn-49185430",
-        "title": "Celld: Self-hosted, distributed Durable Objects",
-        "url": "https://github.com/denoland/celld",
-        "source": "Hacker News",
-        "date": "2026-08-05",
-        "summary": "",
-        "meta": [
-          "166 points",
-          "30 comments"
-        ],
-        "discussion": "https://news.ycombinator.com/item?id=49185430",
+        "discussion": "https://news.ycombinator.com/item?id=49189075",
         "flag": null
       }
     ]
