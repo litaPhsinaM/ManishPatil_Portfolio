@@ -1,12 +1,14 @@
 import React, { useEffect, useState } from 'react';
 import { motion, useScroll, useTransform, useReducedMotion } from 'framer-motion';
 import { useNavigate } from 'react-router-dom';
+import { useSignalFeed } from '../hooks/useSignalFeed';
 import '../styles/Hero.css';
 
 const desktopIcons = [
     { icon: '🖥️', label: 'About Me', href: '#about' },
     { icon: '📁', label: 'Experience', href: '#experience' },
     { icon: '💾', label: 'Projects', href: '#projects' },
+    { icon: '📡', label: 'Signals', href: '#signals' },
     { icon: '🎮', label: 'Games', href: '#games' },
     { icon: '📄', label: 'Resume.pdf', href: '/resume' },
     { icon: '🗑️', label: 'Recycle Bin', href: '#footer' },
@@ -32,6 +34,18 @@ const Hero: React.FC<HeroProps> = ({ onOpenGame }) => {
 
     const parallaxEnabled = !shouldReduceMotion && !isNarrow;
 
+    const { status, totalItems, isStale, payload } = useSignalFeed();
+    const signalState = status === 'error' ? 'offline' : isStale ? 'stale' : status === 'ready' ? 'live' : 'syncing';
+    const signalLabel = {
+        live: 'LIVE',
+        stale: 'STALE',
+        offline: 'OFFLINE',
+        syncing: 'SYNC…',
+    }[signalState];
+    const lastSync = payload
+        ? new Date(payload.generatedAt).toLocaleDateString(undefined, { month: 'short', day: '2-digit' })
+        : '--';
+
     // Multi-layer parallax: background pattern drifts least (farthest away),
     // desktop icons drift a bit more, the foreground window drifts most —
     // transform-only (GPU-cheap), no filter/top/left animation.
@@ -41,20 +55,12 @@ const Hero: React.FC<HeroProps> = ({ onOpenGame }) => {
 
     const skillGroups = [
         {
-            title: 'Systems & IT Ops',
-            value: 'JAMF/MDM, Google Workspace Admin, DNS/VPN/WiFi, Linux, VMware, Windows/macOS cross-platform support',
+            title: 'Systems & IT Operations',
+            value: 'JAMF/MDM, Google Workspace Admin, DNS/VPN/WiFi, Linux, VMware, Windows/macOS cross-platform support, RBAC/JWT, audit logging, ADA-compliant web ops',
         },
         {
-            title: 'Security & Compliance',
-            value: 'CompTIA Linux+ (in progress → AutoOps+, Security+ next), RBAC/JWT, audit logging, ADA-compliant web ops',
-        },
-        {
-            title: 'Software Dev',
-            value: 'React, Node.js, Python, SQL, RESTful APIs, Git, CI/CD',
-        },
-        {
-            title: 'Data & Cloud',
-            value: 'AWS, Azure, GCP, Apache Airflow, PySpark, BigQuery, ETL Pipelines',
+            title: 'Languages, Frameworks & Cloud',
+            value: 'Python, JavaScript, SQL, React, Node.js/Express, PostgreSQL, MongoDB, RESTful APIs, Git, CI/CD, AWS, Azure, GCP, Apache Airflow, PySpark, BigQuery',
         },
     ];
 
@@ -81,7 +87,9 @@ const Hero: React.FC<HeroProps> = ({ onOpenGame }) => {
                 {desktopIcons.map((ic) => (
                     <a
                         key={ic.label}
-                        href={ic.href}
+                        // Route targets need the hash form so middle-click / open-in-new-tab
+                        // resolves through HashRouter instead of 404ing on a real path.
+                        href={ic.href.startsWith('#') ? ic.href : `#${ic.href}`}
                         className="desktop-icon"
                         onClick={(e) => {
                             e.preventDefault();
@@ -287,6 +295,47 @@ const Hero: React.FC<HeroProps> = ({ onOpenGame }) => {
                                             <p>{group.value}</p>
                                         </div>
                                     ))}
+                                </div>
+                            </div>
+
+                            <div className="hero-panel-window hero-signal-window">
+                                <div className="hero-panel-header">
+                                    <span>Signal Monitor</span>
+                                    <span className={`hero-signal-status ${signalState}`}>
+                                        <span className="hero-signal-led" aria-hidden="true" />
+                                        {signalLabel}
+                                    </span>
+                                </div>
+                                <div className="hero-signal-body">
+                                    <div className="hero-signal-lead-row">
+                                        <p className="hero-signal-lead">
+                                            This site pulls live security, AI, and software feeds on its own
+                                            schedule. Nothing here is typed in by hand.
+                                        </p>
+                                        <button
+                                            type="button"
+                                            className="hero-action-btn hero-signal-btn"
+                                            onClick={() => handleDesktopAction('#signals')}
+                                        >
+                                            📡 Open Signal Monitor
+                                        </button>
+                                    </div>
+                                    <div className="hero-signal-stats">
+                                        <div className="hero-signal-stat">
+                                            <span className="hero-signal-stat-value">
+                                                {status === 'ready' ? totalItems : '--'}
+                                            </span>
+                                            <span className="hero-signal-stat-label">tracked items</span>
+                                        </div>
+                                        <div className="hero-signal-stat">
+                                            <span className="hero-signal-stat-value">3</span>
+                                            <span className="hero-signal-stat-label">live feeds</span>
+                                        </div>
+                                        <div className="hero-signal-stat hero-signal-stat-wide">
+                                            <span className="hero-signal-stat-value">{lastSync}</span>
+                                            <span className="hero-signal-stat-label">last sync</span>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>

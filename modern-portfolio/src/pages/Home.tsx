@@ -5,6 +5,7 @@ import Hero from '../components/Hero';
 import Interests from '../components/Interests';
 import Experience from '../components/Experience';
 import Projects from '../components/Projects';
+import Signals from '../components/Signals';
 import Games from '../components/Games';
 import Footer from '../components/Footer';
 import AchievementToast from '../components/AchievementToast';
@@ -21,6 +22,7 @@ const Home: React.FC = () => {
             '/gallery': 'life-outside',
             '/experience': 'experience',
             '/projects': 'projects',
+            '/signals': 'signals',
             '/footer': 'footer',
             '/resume': 'footer',
         };
@@ -30,9 +32,11 @@ const Home: React.FC = () => {
             return;
         }
 
-        window.setTimeout(() => {
+        const timeout = window.setTimeout(() => {
             document.getElementById(sectionId)?.scrollIntoView({ behavior: 'smooth' });
         }, 80);
+
+        return () => window.clearTimeout(timeout);
     }, [location.pathname]);
 
     return (
@@ -42,6 +46,8 @@ const Home: React.FC = () => {
             <Experience />
             <div className="section-separator" />
             <Projects />
+            <div className="section-separator" />
+            <Signals />
             <div className="section-separator" />
             <Footer />
             <div className="section-separator" />

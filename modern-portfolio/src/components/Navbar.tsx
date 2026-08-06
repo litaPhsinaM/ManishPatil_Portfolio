@@ -86,6 +86,10 @@ const Navbar: React.FC = () => {
                             <span className="menu-icon">💾</span>
                             <span className="menu-label">Projects</span>
                         </div>
+                        <div className="menu-item" onClick={() => scrollToSection('signals')}>
+                            <span className="menu-icon">📡</span>
+                            <span className="menu-label">Signals</span>
+                        </div>
                         <div className="menu-divider" />
                         <NavLink to="/resume" className="menu-item" onClick={() => setIsStartOpen(false)}>
                             <span className="menu-icon">📄</span>
@@ -126,6 +130,9 @@ const Navbar: React.FC = () => {
                 </button>
                 <button className="taskbar-app-btn" onClick={() => scrollToSection('projects')}>
                     <span style={{ marginRight: '4px' }}>💾</span> Proj
+                </button>
+                <button className="taskbar-app-btn" onClick={() => scrollToSection('signals')}>
+                    <span style={{ marginRight: '4px' }}>📡</span> Signals
                 </button>
                 <NavLink to="/resume" className="taskbar-app-btn">
                     <span style={{ marginRight: '4px' }}>📄</span> Resume

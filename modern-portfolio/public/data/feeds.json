@@ -1,0 +1,587 @@
+{
+  "generatedAt": "2026-08-06T04:06:30.547Z",
+  "feeds": {
+    "security": [
+      {
+        "id": "CVE-2026-34486",
+        "title": "Apache Tomcat Missing Encryption of Sensitive Data Vulnerability",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-34486",
+        "source": "CISA KEV",
+        "date": "2026-08-04",
+        "summary": "Apache Tomcat contains a missing encryption of sensitive data vulnerability that allows the bypass of the EncryptInterceptor.",
+        "meta": [
+          "Web stack",
+          "Apache",
+          "Patch by 2026-08-07"
+        ],
+        "flag": null
+      },
+      {
+        "id": "CVE-2026-20316",
+        "title": "Cisco Secure Firewall Management Center Use of Hard-coded Password Vulnerability",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-20316",
+        "source": "CISA KEV",
+        "date": "2026-07-29",
+        "summary": "Cisco Secure Firewall Management Center (FMC) formerly known as Firepower Management Center contains a use of hard-coded password vulnerability that could allow an unauthenticated, remote attacker to log in to an affected device using a low-privileged account to access sensitive data within the impacted systems.",
+        "meta": [
+          "Network edge / VPN",
+          "Cisco",
+          "Patch by 2026-08-01"
+        ],
+        "flag": null
+      },
+      {
+        "id": "CVE-2025-68686",
+        "title": "Fortinet FortiOS Exposure of Sensitive Information to an Unauthorized Actor Vulnerability",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-68686",
+        "source": "CISA KEV",
+        "date": "2026-07-27",
+        "summary": "Fortinet FortiOS contains an exposure of sensitive information to an unauthorized actor vulnerability. This may allow a remote unauthenticated attacker to bypass the patch developed for the symbolic link persistency mechanism observed in some post-exploit cases, via crafted HTTP requests. An attacker would need first…",
+        "meta": [
+          "Network edge / VPN",
+          "Fortinet",
+          "Patch by 2026-08-10"
+        ],
+        "flag": null
+      },
+      {
+        "id": "CVE-2026-50522",
+        "title": "Microsoft SharePoint Deserialization of Untrusted Data Vulnerability",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-50522",
+        "source": "CISA KEV",
+        "date": "2026-07-22",
+        "summary": "Microsoft SharePoint contains a deserialization of untrusted data vulnerability which could allow an unauthorized attacker to execute code over a network.",
+        "meta": [
+          "Windows",
+          "Microsoft",
+          "Patch by 2026-07-25"
+        ],
+        "flag": null
+      },
+      {
+        "id": "CVE-2026-60137",
+        "title": "WordPress Core SQL Injection Vulnerability",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-60137",
+        "source": "CISA KEV",
+        "date": "2026-07-21",
+        "summary": "WordPress Core contains a SQL injection vulnerability when a plugin or theme passes untrusted input to the parameter. This vulnerability can be chained with CVE-2026-63030 to allow an unauthenticated attacker to gain remote code execution on default WordPress installations.",
+        "meta": [
+          "Web stack",
+          "WordPress",
+          "Patch by 2026-08-04"
+        ],
+        "flag": null
+      },
+      {
+        "id": "CVE-2026-63030",
+        "title": "WordPress Core Interpretation Conflict Vulnerability",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-63030",
+        "source": "CISA KEV",
+        "date": "2026-07-21",
+        "summary": "WordPress Core contains an interpretation conflict vulnerability that could allow an attacker to perform SQL Injection and achieve Remote Code Execution. This vulnerability can be chained with CVE-2026-60137.",
+        "meta": [
+          "Web stack",
+          "WordPress",
+          "Patch by 2026-07-24"
+        ],
+        "flag": null
+      },
+      {
+        "id": "CVE-2026-58644",
+        "title": "Microsoft SharePoint Deserialization of Untrusted Data Vulnerability",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-58644",
+        "source": "CISA KEV",
+        "date": "2026-07-16",
+        "summary": "Microsoft SharePoint contains a deserialization of untrusted data vulnerability that allows an unauthorized attacker to execute code over a network.",
+        "meta": [
+          "Windows",
+          "Microsoft",
+          "Patch by 2026-07-19"
+        ],
+        "flag": null
+      },
+      {
+        "id": "CVE-2026-25089",
+        "title": "Fortinet FortiSandbox OS Command Injection Vulnerability",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-25089",
+        "source": "CISA KEV",
+        "date": "2026-07-16",
+        "summary": "Fortinet FortiSandbox, FortiSandbox Cloud, and FortiSandbox PaaS contain an OS command injection vulnerability that allows an unauthenticated attacker to execute unauthorized commands via specifically crafted HTTP requests.",
+        "meta": [
+          "Network edge / VPN",
+          "Fortinet",
+          "Patch by 2026-07-19"
+        ],
+        "flag": null
+      },
+      {
+        "id": "CVE-2026-39808",
+        "title": "Fortinet FortiSandbox OS Command Injection Vulnerability",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-39808",
+        "source": "CISA KEV",
+        "date": "2026-07-16",
+        "summary": "Fortinet FortiSandbox contains an OS command injection vulnerability that could allow an unauthenticated attacker to execute unauthorized code or commands via crafted HTTP requests.",
+        "meta": [
+          "Network edge / VPN",
+          "Fortinet",
+          "Patch by 2026-07-19"
+        ],
+        "flag": null
+      },
+      {
+        "id": "CVE-2026-46817",
+        "title": "Oracle E-Business Suite Improper Privilege Management Vulnerability",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-46817",
+        "source": "CISA KEV",
+        "date": "2026-07-15",
+        "summary": "Oracle E-Business Suite contains an improper privilege management vulnerability that allows an unauthenticated attacker with network access via HTTP to compromise Oracle Payments. Successful attacks of this vulnerability can result in takeover of Oracle Payments.",
+        "meta": [
+          "Databases",
+          "Oracle",
+          "Patch by 2026-07-18"
+        ],
+        "flag": null
+      },
+      {
+        "id": "CVE-2026-56155",
+        "title": "Microsoft Active Directory Federation Services Insufficient Granularity of Access Control Vulnerability",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-56155",
+        "source": "CISA KEV",
+        "date": "2026-07-14",
+        "summary": "Microsoft Active Directory Federation Services contains an insufficient granularity of access control vulnerability that allows an authorized attacker to elevate privileges locally.",
+        "meta": [
+          "Windows",
+          "Microsoft",
+          "Patch by 2026-07-28"
+        ],
+        "flag": null
+      },
+      {
+        "id": "CVE-2026-56164",
+        "title": "Microsoft SharePoint Server Missing Authentication for Critical Function Vulnerability",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-56164",
+        "source": "CISA KEV",
+        "date": "2026-07-14",
+        "summary": "Microsoft SharePoint contains a missing authentication for critical function vulnerability that allows an unauthorized attacker to elevate privileges over a network.",
+        "meta": [
+          "Windows",
+          "Microsoft",
+          "Patch by 2026-07-17"
+        ],
+        "flag": null
+      },
+      {
+        "id": "CVE-2026-15409",
+        "title": "SonicWall SMA1000 Appliances Server-Side Request Forgery Vulnerability",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-15409",
+        "source": "CISA KEV",
+        "date": "2026-07-14",
+        "summary": "SonicWall SMA1000 Appliances contain a server-side request forgery vulnerability that could allow a remote unauthenticated attacker to potentially cause the appliance to make requests to unintended location.",
+        "meta": [
+          "Network edge / VPN",
+          "SonicWall",
+          "Patch by 2026-07-17"
+        ],
+        "flag": "RANSOMWARE"
+      },
+      {
+        "id": "CVE-2026-15410",
+        "title": "SonicWall SMA1000 Appliances Code Injection Vulnerability",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-15410",
+        "source": "CISA KEV",
+        "date": "2026-07-14",
+        "summary": "SonicWall SMA1000 Appliances contain a code injection vulnerability which in specific conditions could potentially enable a remote authenticated attacker as administrator to execute arbitrary OS commands.",
+        "meta": [
+          "Network edge / VPN",
+          "SonicWall",
+          "Patch by 2026-07-17"
+        ],
+        "flag": "RANSOMWARE"
+      }
+    ],
+    "ai": [
+      {
+        "id": "hn-49192160",
+        "title": "Governments are making a dangerous bet on the AI boom",
+        "url": "https://www.economist.com/leaders/2026/08/05/governments-are-making-a-dangerous-bet-on-the-ai-boom",
+        "source": "Hacker News",
+        "date": "2026-08-06",
+        "summary": "",
+        "meta": [
+          "12 points",
+          "2 comments"
+        ],
+        "discussion": "https://news.ycombinator.com/item?id=49192160",
+        "flag": null
+      },
+      {
+        "id": "hn-49191365",
+        "title": "LLMs won't break symmetric crypto",
+        "url": "https://www.bfswa.blog/p/llms-wont-break-symmetric-crypto",
+        "source": "Hacker News",
+        "date": "2026-08-06",
+        "summary": "",
+        "meta": [
+          "54 points",
+          "48 comments"
+        ],
+        "discussion": "https://news.ycombinator.com/item?id=49191365",
+        "flag": null
+      },
+      {
+        "id": "http://arxiv.org/abs/2608.05144v1",
+        "title": "Argus: A General-Purpose Agentic Runtime for Long-Horizon Reasoning",
+        "url": "http://arxiv.org/abs/2608.05144v1",
+        "source": "arXiv",
+        "date": "2026-08-05",
+        "summary": "Long-horizon reasoning requires an agentic runtime that can persist when evidence supports its current approach and pivot when measurements reveal failure, hidden constraints, or a misspecified objective. We present Argus, a persistent, self-evolving runtime in which Manager, Planner, Engineer, and Reviewer execute bo…",
+        "meta": [
+          "Research",
+          "Boxiu Li +25"
+        ],
+        "flag": null
+      },
+      {
+        "id": "http://arxiv.org/abs/2608.05141v1",
+        "title": "OctoLong: Mid-Training On Cross-Repository Code Contexts Enhances Long-Context Modeling",
+        "url": "http://arxiv.org/abs/2608.05141v1",
+        "source": "arXiv",
+        "date": "2026-08-05",
+        "summary": "Context lengths of language models (LMs) have dramatically increased, driven by the demands for in-context learning, self-improvement, and long-horizon agentic workflows. Existing long-context corpora, however, are dominated by books, academic articles, and code repositories, which are finite resources and often scarc…",
+        "meta": [
+          "Research",
+          "Indraneil Paul +3"
+        ],
+        "flag": null
+      },
+      {
+        "id": "http://arxiv.org/abs/2608.05139v1",
+        "title": "Toward Skill-Native LLMs: Skill Entropy for Benchmarking and Training Long-Horizon Reasoning",
+        "url": "http://arxiv.org/abs/2608.05139v1",
+        "source": "arXiv",
+        "date": "2026-08-05",
+        "summary": "Long-horizon reasoning in recent LLMs demands that the model switch between distinct skills inside a reasoning chain, such as first doing a math derivation, then using the result to plan a schedule. We call such problems cross-skill long-horizon tasks: multi-step tasks whose steps require different reasoning skills an…",
+        "meta": [
+          "Research",
+          "Yinghui He +8"
+        ],
+        "flag": null
+      },
+      {
+        "id": "http://arxiv.org/abs/2608.05138v1",
+        "title": "Teaching Nemotron Greek: Mining a Corpus, Adapting Retrieval, and Grounding Generation for Modern Greek across Specialist Domains",
+        "url": "http://arxiv.org/abs/2608.05138v1",
+        "source": "arXiv",
+        "date": "2026-08-05",
+        "summary": "Modern Greek is absent from NVIDIA's Nemotron retrieval models and from major multilingual retrieval benchmarks, despite being important for retrieval-augmented generation (RAG) in legal, energy, financial, and medical applications. We present an end-to-end adaptation of the Nemotron retrieval stack for Modern Greek,…",
+        "meta": [
+          "Research",
+          "Ayoub Kirouane +1"
+        ],
+        "flag": null
+      },
+      {
+        "id": "http://arxiv.org/abs/2608.05136v1",
+        "title": "The Loss Does Not See the Basis, but Adam Does",
+        "url": "http://arxiv.org/abs/2608.05136v1",
+        "source": "arXiv",
+        "date": "2026-08-05",
+        "summary": "Gradient descent on a factored model $W = UV^\\top$ is implicitly biased toward low-rank solutions, while Adam, starting from the same small initialization, is not. We trace the difference to the gauge symmetry of the loss, its invariance under $(U, V) \\mapsto (UQ, VQ)$. Gradient flow's low-rank mechanism is available…",
+        "meta": [
+          "Research",
+          "Devender Singh"
+        ],
+        "flag": null
+      },
+      {
+        "id": "http://arxiv.org/abs/2608.05132v1",
+        "title": "Predicting Brain Morphometry with MT-GNN: Mesh Evolution in Continuous Time with Graph-Based Metric Tensor Embeddings",
+        "url": "http://arxiv.org/abs/2608.05132v1",
+        "source": "arXiv",
+        "date": "2026-08-05",
+        "summary": "Predicting how a subcortical structure's shape will evolve from a few prior scans could support prognosis and clinical-trial enrichment. Existing longitudinal mesh predictors either extrapolate shape trajectories via high-dimensional embeddings or regress vertex deformations directly. We instead predict the surface's…",
+        "meta": [
+          "Research",
+          "Hao Ding +3"
+        ],
+        "flag": null
+      },
+      {
+        "id": "http://arxiv.org/abs/2608.05131v1",
+        "title": "OPD-V: Visual On-Policy Self-Distillation with Modality Balance",
+        "url": "http://arxiv.org/abs/2608.05131v1",
+        "source": "arXiv",
+        "date": "2026-08-05",
+        "summary": "On-Policy Self-Distillation (OPSD) has become a standard post-training approach for improving visual reasoning in multimodal large language models (MLLMs). Existing methods draw privileged information from diverse input sources to guide self-distillation. Yet these designs overlook Modality Imbalance, a challenge inhe…",
+        "meta": [
+          "Research",
+          "Aniri +7"
+        ],
+        "flag": null
+      },
+      {
+        "id": "http://arxiv.org/abs/2608.05127v1",
+        "title": "SSTQ:Privacy-Preserving Vector Quantization via Subsampled Stochastic TurboQuant",
+        "url": "http://arxiv.org/abs/2608.05127v1",
+        "source": "arXiv",
+        "date": "2026-08-05",
+        "summary": "Achieving local differential privacy in distributed optimization while maintaining low communication cost remains challenging. Existing vector quantization methods, such as vqSGD, use high-dimensional geometric constructions but incur unfavorable dimension-dependent variance. In this work, we propose Subsampled Stocha…",
+        "meta": [
+          "Research",
+          "Adel Javanmard +2"
+        ],
+        "flag": null
+      },
+      {
+        "id": "http://arxiv.org/abs/2608.05124v1",
+        "title": "Chained Recursive Language Models for Multi-Iteration Reasoning",
+        "url": "http://arxiv.org/abs/2608.05124v1",
+        "source": "arXiv",
+        "date": "2026-08-05",
+        "summary": "Long context reasoning in large language models (LLMs) is usually constrained by the fact that a single inference trajectory has to simultaneously explore the context, store intermediate state, verify evidence, and produce the final answer. This becomes particularly difficult in tasks that require extraction, counting…",
+        "meta": [
+          "Research",
+          "Purbesh Mitra +1"
+        ],
+        "flag": null
+      },
+      {
+        "id": "http://arxiv.org/abs/2608.05120v1",
+        "title": "DASyR-LLM: Domain-Aware Symbolic Regression with LLMs for Kinetic Model Discovery",
+        "url": "http://arxiv.org/abs/2608.05120v1",
+        "source": "arXiv",
+        "date": "2026-08-05",
+        "summary": "Kinetic model discovery is a central challenge in chemical engineering, as accurate rate expressions are essential for understanding and controlling chemical and biological processes. Symbolic regression (SR) has emerged as a powerful data-driven approach for identifying interpretable kinetic models, but usually opera…",
+        "meta": [
+          "Research",
+          "Roberto Aliaga Medina +2"
+        ],
+        "flag": null
+      },
+      {
+        "id": "http://arxiv.org/abs/2608.05115v1",
+        "title": "Robust and Efficient Motion Reasoning for Privacy-Aware Classroom Incident Recognition",
+        "url": "http://arxiv.org/abs/2608.05115v1",
+        "source": "arXiv",
+        "date": "2026-08-05",
+        "summary": "Can computer vision help make classrooms safer? In this pilot study, we investigate privacy-aware and computationally efficient classroom incident recognition from CCTV-style observations. This setting remains underexplored, with limited benchmarks and few methods designed for the privacy, efficiency, and generalizati…",
+        "meta": [
+          "Research",
+          "Paritosh Parmar +4"
+        ],
+        "flag": null
+      },
+      {
+        "id": "http://arxiv.org/abs/2608.05112v1",
+        "title": "Stable Density Ridges: Consistency and Convergence of Subspace Constrained Mean Shift",
+        "url": "http://arxiv.org/abs/2608.05112v1",
+        "source": "arXiv",
+        "date": "2026-08-05",
+        "summary": "The Subspace Constrained Mean Shift (SCMS) algorithm is a popular nonparametric method for extracting density ridges, which serve as a low-dimensional representation of high-dimensional data. It is a widely held belief in the literature that SCMS trajectories converge to the classical density ridge, which we call the…",
+        "meta": [
+          "Research",
+          "Wanli Qiao"
+        ],
+        "flag": null
+      }
+    ],
+    "dev": [
+      {
+        "id": "hn-49191624",
+        "title": "Nashville uses eminent domain to block data center near zoo",
+        "url": "https://www.costar.com/article/970809918/nashville-council-approves-eminent-domain-action-to-halt-data-center-project",
+        "source": "Hacker News",
+        "date": "2026-08-06",
+        "summary": "",
+        "meta": [
+          "97 points",
+          "81 comments"
+        ],
+        "discussion": "https://news.ycombinator.com/item?id=49191624",
+        "flag": null
+      },
+      {
+        "id": "hn-49184960",
+        "title": "Discovery Loop",
+        "url": "https://www.discoveryloop.com/",
+        "source": "Hacker News",
+        "date": "2026-08-05",
+        "summary": "",
+        "meta": [
+          "645 points",
+          "397 comments"
+        ],
+        "discussion": "https://news.ycombinator.com/item?id=49184960",
+        "flag": null
+      },
+      {
+        "id": "hn-49187256",
+        "title": "Zed DeltaDB",
+        "url": "https://zed.dev/deltadb",
+        "source": "Hacker News",
+        "date": "2026-08-05",
+        "summary": "",
+        "meta": [
+          "335 points",
+          "176 comments"
+        ],
+        "discussion": "https://news.ycombinator.com/item?id=49187256",
+        "flag": null
+      },
+      {
+        "id": "hn-49189287",
+        "title": "The title cards in Blade Runner are amazing",
+        "url": "https://randsinrepose.com/archives/blade-runner-title-cards/",
+        "source": "Hacker News",
+        "date": "2026-08-05",
+        "summary": "",
+        "meta": [
+          "187 points",
+          "81 comments"
+        ],
+        "discussion": "https://news.ycombinator.com/item?id=49189287",
+        "flag": null
+      },
+      {
+        "id": "hn-49187575",
+        "title": "Muse Code and Muse Spark 1.2",
+        "url": "https://research.meta.ai/blog/introducing-muse-code-and-muse-spark-1-2",
+        "source": "Hacker News",
+        "date": "2026-08-05",
+        "summary": "",
+        "meta": [
+          "207 points",
+          "121 comments"
+        ],
+        "discussion": "https://news.ycombinator.com/item?id=49187575",
+        "flag": null
+      },
+      {
+        "id": "hn-49151991",
+        "title": "Branchless Rust: Making a Filter 4x Faster by Removing an If",
+        "url": "https://www.greyblake.com/blog/branchless-rust/",
+        "source": "Hacker News",
+        "date": "2026-08-03",
+        "summary": "",
+        "meta": [
+          "52 points",
+          "11 comments"
+        ],
+        "discussion": "https://news.ycombinator.com/item?id=49151991",
+        "flag": null
+      },
+      {
+        "id": "hn-49161799",
+        "title": "Do birds enjoy flying? Analysis of affect after flight in galah (E roseicapilla)",
+        "url": "https://brill.com/view/journals/beh/aop/article-10.1163-1568539X-bja10370/article-10.1163-1568539X-bja10370.xml",
+        "source": "Hacker News",
+        "date": "2026-08-03",
+        "summary": "",
+        "meta": [
+          "9 points",
+          "1 comments"
+        ],
+        "discussion": "https://news.ycombinator.com/item?id=49161799",
+        "flag": null
+      },
+      {
+        "id": "hn-49189075",
+        "title": "Prime Agent: A self-improving RLM agent",
+        "url": "https://www.primeintellect.ai/blog/prime-agent",
+        "source": "Hacker News",
+        "date": "2026-08-05",
+        "summary": "",
+        "meta": [
+          "129 points",
+          "21 comments"
+        ],
+        "discussion": "https://news.ycombinator.com/item?id=49189075",
+        "flag": null
+      },
+      {
+        "id": "hn-49182996",
+        "title": "Cloudflare OS: an open platform for agents, apps, and work",
+        "url": "https://blog.cloudflare.com/cloudflare-os/",
+        "source": "Hacker News",
+        "date": "2026-08-05",
+        "summary": "",
+        "meta": [
+          "492 points",
+          "252 comments"
+        ],
+        "discussion": "https://news.ycombinator.com/item?id=49182996",
+        "flag": null
+      },
+      {
+        "id": "hn-49185983",
+        "title": "Atlassian Rovo Exfiltrates Data, Bypassing Controls",
+        "url": "https://www.promptarmor.com/resources/atlassian-rovo-exfiltrates-data",
+        "source": "Hacker News",
+        "date": "2026-08-05",
+        "summary": "",
+        "meta": [
+          "193 points",
+          "77 comments"
+        ],
+        "discussion": "https://news.ycombinator.com/item?id=49185983",
+        "flag": null
+      },
+      {
+        "id": "hn-49189234",
+        "title": "NVIDIA’s Vera Whitepaper Has a Thread Loose",
+        "url": "https://chipsandcheese.com/p/nvidias-vera-whitepaper-has-a-thread",
+        "source": "Hacker News",
+        "date": "2026-08-05",
+        "summary": "",
+        "meta": [
+          "105 points",
+          "15 comments"
+        ],
+        "discussion": "https://news.ycombinator.com/item?id=49189234",
+        "flag": null
+      },
+      {
+        "id": "hn-49189113",
+        "title": "I'll be stepping back from leading product for X",
+        "url": "https://twitter.com/nikitabier/status/2085105586966827343/",
+        "source": "Hacker News",
+        "date": "2026-08-05",
+        "summary": "",
+        "meta": [
+          "88 points",
+          "135 comments"
+        ],
+        "discussion": "https://news.ycombinator.com/item?id=49189113",
+        "flag": null
+      },
+      {
+        "id": "hn-49146183",
+        "title": "GNU Hurd News 2026-Q2",
+        "url": "https://www.gnu.org/software/hurd/news/2026-q2.html",
+        "source": "Hacker News",
+        "date": "2026-08-02",
+        "summary": "",
+        "meta": [
+          "146 points",
+          "95 comments"
+        ],
+        "discussion": "https://news.ycombinator.com/item?id=49146183",
+        "flag": null
+      },
+      {
+        "id": "hn-49185430",
+        "title": "Celld: Self-hosted, distributed Durable Objects",
+        "url": "https://github.com/denoland/celld",
+        "source": "Hacker News",
+        "date": "2026-08-05",
+        "summary": "",
+        "meta": [
+          "166 points",
+          "30 comments"
+        ],
+        "discussion": "https://news.ycombinator.com/item?id=49185430",
+        "flag": null
+      }
+    ]
+  }
+}

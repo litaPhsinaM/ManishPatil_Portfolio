@@ -8,7 +8,7 @@
     align-items: center;
     justify-content: center;
     gap: 14px;
-    padding: 22px 16px calc(var(--taskbar-h) + 12px);
+    padding: 14px 16px calc(var(--taskbar-h) + 8px);
     position: relative;
     overflow: hidden;
     user-select: none;
@@ -200,14 +200,14 @@
 }
 
 .hero-body {
-    padding: 12px;
+    padding: 8px;
     background: #c0c0c0;
 }
 
 .hero-content-grid {
     display: grid;
     grid-template-columns: minmax(180px, 220px) minmax(0, 1fr);
-    gap: 14px;
+    gap: 10px;
     align-items: start;
 }
 
@@ -219,7 +219,7 @@
 .hero-profile-panel {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 8px;
 }
 
 .hero-photo-frame {
@@ -319,7 +319,7 @@
 .hero-main-panel {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 8px;
 }
 
 .hero-panel-window {
@@ -335,7 +335,7 @@
     gap: 12px;
     background: linear-gradient(to right, #dfe8ff, #f5f5f5);
     border-bottom: 1px solid #808080;
-    padding: 5px 10px;
+    padding: 4px 9px;
     font-size: 12px;
     font-weight: bold;
 }
@@ -353,36 +353,42 @@
 .hero-panel-body {
     background: #ffffff;
     box-shadow: var(--win98-sunken-border);
-    padding: 10px 14px;
+    padding: 8px 10px;
     display: grid;
-    gap: 8px;
-    font-size: 13px;
-    line-height: 1.7;
+    gap: 6px;
+    font-size: 12px;
+    line-height: 1.5;
+    /* `bold` rather than 600: MS Sans Serif ships regular and bold only, so 600 was
+       being synthesised. This is the same weight the rest of the site uses. */
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+    color: #000000;
 }
 
 .hero-skill-grid {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 8px;
-    padding: 8px;
+    gap: 6px;
+    padding: 6px;
 }
 
 .hero-skill-card {
     background: #ffffff;
     box-shadow: var(--win98-sunken-border);
-    padding: 10px;
+    padding: 8px;
     min-width: 0;
 }
 
 .hero-skill-title {
     color: #000080;
     font-weight: bold;
-    margin-bottom: 8px;
+    margin-bottom: 5px;
 }
 
 .hero-skill-card p {
-    font-size: 12px;
-    line-height: 1.6;
+    font-size: 11px;
+    line-height: 1.45;
 }
 
 .hero-statusbar {
@@ -525,5 +531,150 @@
 
     .hero-body {
         padding: 12px 10px;
+    }
+}
+
+/* ─── Signal Monitor highlight (hero) ─── */
+.hero-signal-window {
+    border: 1px solid #000080;
+}
+
+.hero-signal-window .hero-panel-header {
+    background: var(--win98-title-grad);
+    color: #ffffff;
+}
+
+.hero-signal-status {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    background: #000000;
+    color: #00ff66;
+    font-family: 'MS Sans Serif', sans-serif;
+    font-size: 10px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    padding: 2px 7px;
+    box-shadow: var(--win98-sunken-border);
+}
+
+.hero-signal-status.stale {
+    color: #ffcc33;
+}
+
+.hero-signal-status.offline {
+    color: #ff6666;
+}
+
+.hero-signal-status.syncing {
+    color: #b0b0b0;
+}
+
+.hero-signal-led {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: currentColor;
+    box-shadow: 0 0 5px currentColor;
+}
+
+.hero-signal-status.live .hero-signal-led {
+    animation: hero-signal-pulse 1.6s ease-in-out infinite;
+}
+
+@keyframes hero-signal-pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.25; }
+}
+
+.hero-signal-body {
+    padding: 8px;
+}
+
+/* Lead copy and the button share a row so the button costs no extra height. */
+.hero-signal-lead-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 7px;
+}
+
+.hero-signal-lead {
+    flex: 1 1 auto;
+    min-width: 0;
+    font-size: 11px;
+    line-height: 1.45;
+    color: #202020;
+}
+
+.hero-signal-stats {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 5px;
+    margin-bottom: 7px;
+}
+
+.hero-signal-stat {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2px;
+    background: #ffffff;
+    box-shadow: var(--win98-sunken-border);
+    padding: 5px 4px;
+    text-align: center;
+}
+
+.hero-signal-stat-value {
+    font-family: 'MS Sans Serif', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    color: #000080;
+    line-height: 1.1;
+}
+
+.hero-signal-stat-wide .hero-signal-stat-value {
+    font-size: 13px;
+}
+
+.hero-signal-stat-label {
+    font-size: 9px;
+    color: #606060;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+}
+
+.hero-signal-btn {
+    flex: 0 0 auto;
+    white-space: nowrap;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .hero-signal-status.live .hero-signal-led {
+        animation: none;
+    }
+}
+
+@media (max-width: 900px) {
+    .hero-signal-stat-value {
+        font-size: 14px;
+    }
+
+    .hero-signal-stat-wide .hero-signal-stat-value {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 900px) {
+    /* Side by side gets too tight for the button's label on a narrow screen. */
+    .hero-signal-lead-row {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 7px;
+    }
+
+    .hero-signal-btn {
+        width: 100%;
     }
 }

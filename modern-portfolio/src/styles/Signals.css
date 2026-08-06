@@ -1,0 +1,244 @@
+/* ─── Signals Section ─── */
+.signals-section {
+    min-height: var(--app-page-min-height);
+    padding: var(--app-section-pad) 0;
+    background: #008080;
+    background-image: repeating-linear-gradient(0deg,
+            transparent,
+            transparent 2px,
+            rgba(0, 0, 0, 0.04) 2px,
+            rgba(0, 0, 0, 0.04) 4px);
+    display: flex;
+    align-items: center;
+}
+
+.signals-win {
+    width: 100%;
+    margin-bottom: 0;
+    box-shadow: var(--win98-raised-border);
+    padding: 3px;
+    background: var(--win98-gray);
+}
+
+.signals-window-title {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    min-width: 0;
+}
+
+.signals-window-title svg {
+    flex: 0 0 auto;
+}
+
+/* ─── Tabs (mirrors the Projects tab strip) ─── */
+.signal-tabs {
+    display: flex;
+    align-items: flex-end;
+    gap: 2px;
+    padding: 6px 8px 0;
+    background: #c0c0c0;
+    border-top: 1px solid #808080;
+    border-bottom: 1px solid #808080;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+.signal-tab {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    min-height: 28px;
+    min-width: 132px;
+    padding: 4px 10px;
+    border: none;
+    color: #000;
+    background: #b8b8b8;
+    box-shadow: inset 1px 1px #dfdfdf, inset -1px 0 #404040, inset 2px 2px #ffffff;
+    font-family: 'MS Sans Serif', sans-serif;
+    font-size: 11px;
+    line-height: 1.1;
+    cursor: pointer;
+}
+
+.signal-tab.active {
+    position: relative;
+    z-index: 1;
+    min-height: 31px;
+    margin-bottom: -1px;
+    background: #c0c0c0;
+    box-shadow: inset 1px 1px #ffffff, inset -1px 0 #000, inset 2px 2px #dfdfdf;
+    font-weight: bold;
+}
+
+.signal-tab svg {
+    flex: 0 0 auto;
+}
+
+/* ─── Body ─── */
+.signals-body {
+    background: #ffffff;
+    box-shadow: var(--win98-sunken-border);
+    margin: 3px;
+    padding: 10px 12px;
+    max-height: 62vh;
+    overflow-y: auto;
+}
+
+.signal-blurb {
+    font-size: 11px;
+    color: #404040;
+    margin-bottom: 10px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #c0c0c0;
+}
+
+.signal-state {
+    font-size: 11px;
+    color: #404040;
+    padding: 14px 2px;
+}
+
+.signal-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.signal-item {
+    padding: 9px 0;
+    border-bottom: 1px dotted #c0c0c0;
+}
+
+.signal-item:last-child {
+    border-bottom: none;
+}
+
+.signal-item-head {
+    display: flex;
+    align-items: baseline;
+    flex-wrap: wrap;
+    gap: 6px;
+}
+
+.signal-item-title {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    color: #000080;
+    font-family: 'MS Sans Serif', sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.signal-item-title:hover {
+    text-decoration: underline;
+}
+
+.signal-item-title svg {
+    flex: 0 0 auto;
+    opacity: 0.65;
+}
+
+.signal-flag {
+    background: #800000;
+    color: #ffffff;
+    font-size: 9px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    padding: 1px 5px;
+    border: 1px solid #400000;
+}
+
+.signal-meta {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2px;
+    margin: 5px 0 0;
+}
+
+.signal-meta-tag {
+    background: #808080;
+}
+
+.signal-date {
+    font-size: 10px;
+    color: #606060;
+    margin-left: 4px;
+}
+
+.signal-summary {
+    font-size: 11px;
+    line-height: 1.5;
+    color: #202020;
+    margin-top: 6px;
+}
+
+/* Your own commentary — the part that isn't automated. */
+.signal-note {
+    margin-top: 7px;
+    padding: 6px 8px;
+    background: #ffffe1;
+    border: 1px solid #808080;
+    box-shadow: 1px 1px 0 rgba(0, 0, 0, 0.25);
+}
+
+.signal-note-label {
+    display: inline-block;
+    font-size: 9px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    color: #000080;
+    margin-bottom: 3px;
+}
+
+.signal-note p {
+    font-size: 11px;
+    line-height: 1.5;
+    color: #202020;
+}
+
+.signal-discussion {
+    display: inline-block;
+    margin-top: 6px;
+    font-size: 10px;
+    color: #000080;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.signal-discussion:hover {
+    text-decoration: underline;
+}
+
+/* ─── Responsive ─── */
+@media (max-width: 900px) {
+    .signal-tabs {
+        align-items: stretch;
+        padding: 6px;
+        flex-direction: column;
+        overflow-x: visible;
+    }
+
+    .signal-tab,
+    .signal-tab.active {
+        width: 100%;
+        min-width: 0;
+        min-height: 36px;
+        margin-bottom: 0;
+        justify-content: flex-start;
+    }
+
+    .signals-body {
+        max-height: none;
+        padding: 8px 9px;
+    }
+
+    .signal-item-title {
+        font-size: 11px;
+    }
+}

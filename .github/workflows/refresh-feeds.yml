@@ -1,0 +1,68 @@
+name: Refresh Signal Feeds
+
+# Pulls the live data behind the Signals section and republishes the site.
+#
+# This workflow deploys on its own rather than letting deploy.yml pick up the data
+# commit: pushes made with GITHUB_TOKEN deliberately do NOT trigger other workflows
+# (GitHub's loop prevention), so a commit-only job would refresh the repo but never
+# the published site.
+
+on:
+  schedule:
+    # 11:17 UTC daily. Off-the-hour on purpose — scheduled jobs queue behind
+    # everyone else's on the hour and can be delayed by 20+ minutes.
+    - cron: '17 11 * * *'
+  workflow_dispatch: # lets you refresh on demand from the Actions tab
+
+permissions:
+  contents: write
+
+# Shared with deploy.yml so two runs can never push to gh-pages at once.
+concurrency:
+  group: github-pages-publish
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout 🛎️
+        uses: actions/checkout@v4
+
+      - name: Set up Node ⚙️
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Fetch feeds 📡
+        run: |
+          cd modern-portfolio
+          npm install
+          npm run feeds
+
+      - name: Commit refreshed data 💾
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add modern-portfolio/public/data/feeds.json
+          # Nothing changed since the last run is a normal outcome, not a failure.
+          if git diff --staged --quiet; then
+            echo "No feed changes."
+          else
+            git commit -m "chore: refresh signal feeds"
+            git push
+          fi
+
+      - name: Build 🔧
+        run: |
+          cd modern-portfolio
+          npm run build
+        env:
+          VITE_SUPABASE_URL: ${{ secrets.VITE_SUPABASE_URL }}
+          VITE_SUPABASE_ANON_KEY: ${{ secrets.VITE_SUPABASE_ANON_KEY }}
+
+      - name: Deploy 🚀
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          folder: modern-portfolio/dist
+          branch: gh-pages
