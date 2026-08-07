@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { motion, useScroll, useTransform, useReducedMotion } from 'framer-motion';
 import { useNavigate } from 'react-router-dom';
-import { useSignalFeed } from '../hooks/useSignalFeed';
 import '../styles/Hero.css';
 
 const desktopIcons = [
@@ -9,6 +8,7 @@ const desktopIcons = [
     { icon: '📁', label: 'Experience', href: '#experience' },
     { icon: '💾', label: 'Projects', href: '#projects' },
     { icon: '📡', label: 'Signals', href: '#signals' },
+    { icon: '🤖', label: 'Interview.exe', href: '/interview' },
     { icon: '🎮', label: 'Games', href: '#games' },
     { icon: '📄', label: 'Resume.pdf', href: '/resume' },
     { icon: '🗑️', label: 'Recycle Bin', href: '#footer' },
@@ -33,18 +33,6 @@ const Hero: React.FC<HeroProps> = ({ onOpenGame }) => {
     }, []);
 
     const parallaxEnabled = !shouldReduceMotion && !isNarrow;
-
-    const { status, totalItems, isStale, payload } = useSignalFeed();
-    const signalState = status === 'error' ? 'offline' : isStale ? 'stale' : status === 'ready' ? 'live' : 'syncing';
-    const signalLabel = {
-        live: 'LIVE',
-        stale: 'STALE',
-        offline: 'OFFLINE',
-        syncing: 'SYNC…',
-    }[signalState];
-    const lastSync = payload
-        ? new Date(payload.generatedAt).toLocaleDateString(undefined, { month: 'short', day: '2-digit' })
-        : '--';
 
     // Multi-layer parallax: background pattern drifts least (farthest away),
     // desktop icons drift a bit more, the foreground window drifts most —
@@ -209,38 +197,14 @@ const Hero: React.FC<HeroProps> = ({ onOpenGame }) => {
                                         transition={{ duration: 1.5, ease: 'linear' }}
                                         style={{ overflow: 'hidden', whiteSpace: 'nowrap' }}
                                     >
-                                        [root@portfolio ~]# whoami --track=sysadmin,security,cloud,swe --status=CompTIA_Linux+_in_progress
+                                        [root@portfolio ~]# whoami --track=sysadmin,cloudops,security --status=CompTIA_Linux+_in_progress
                                     </motion.p>
                                 </div>
                                 <p className="hero-description">
                                     M.S. Computer Science • CSUDH
                                     <br />
-                                    IT Specialist &amp; Software Engineer, building toward Systems Administration &amp; Security
+                                    IT Specialist &amp; Software Engineer, building toward Systems Administration &amp; Cloud Operations
                                 </p>
-                            </div>
-
-                            <div className="hero-action-row">
-                                <button
-                                    type="button"
-                                    className="hero-action-btn"
-                                    onClick={() => handleDesktopAction('#projects')}
-                                >
-                                    ▶ Explore Work
-                                </button>
-                                <button
-                                    type="button"
-                                    className="hero-action-btn"
-                                    onClick={() => handleDesktopAction('#experience')}
-                                >
-                                    📁 Experience
-                                </button>
-                                <button
-                                    type="button"
-                                    className="hero-action-btn"
-                                    onClick={() => handleDesktopAction('/resume')}
-                                >
-                                    📄 Resume
-                                </button>
                             </div>
 
                         </div>
@@ -256,29 +220,46 @@ const Hero: React.FC<HeroProps> = ({ onOpenGame }) => {
                                         IT Specialist &amp; Software Engineer | M.S. in Computer Science
                                     </p>
                                     <p>
-                                        I'm an IT Specialist at CSUDH keeping infrastructure running for
-                                        4,000&ndash;5,000+ managed devices. That means provisioning, MDM
-                                        (JAMF-certified), DNS/VPN/WiFi, Google Workspace Admin, and the unglamorous
-                                        stuff that has to work every single day. Alongside that I build the internal
-                                        software that makes IT operations less painful: a full-stack ticketing and
-                                        asset-management system (React, Node.js, PostgreSQL, JWT/RBAC) that replaced
-                                        manual spreadsheets with real audit trails.
+                                        I'm an IT Specialist at CISE, part of California State University,
+                                        Dominguez Hills, where I support the systems, devices, and digital
+                                        services used across multiple educational programs and partner school
+                                        sites. My work includes managing an inventory of approximately 3,500
+                                        devices, administering Apple devices through Jamf and Apple School
+                                        Manager, configuring policies, troubleshooting iOS and workstation
+                                        issues, and managing the Google Workspace account lifecycle.
                                     </p>
                                     <p>
-                                        I'm currently working through CompTIA Linux+, with AutoOps+ and Security+
-                                        next, because I'm deliberately going deeper into core IT infrastructure,
-                                        automation, and security rather than around it. The goal is System
-                                        Administrator and Security-focused roles, the kind of work where you
-                                        actually own the boxes, the network, and the risk, not just the ticket
-                                        queue.
+                                        I enjoy investigating the root cause of technical problems instead of
+                                        applying temporary fixes. That mindset led me to develop a technology
+                                        checkout system that replaced a long, generic request form with a guided
+                                        workflow that recommends equipment based on the user's needs. The system
+                                        simplifies the request process and is now used across five to six
+                                        programs and departments. I also rebuilt the CISE website to meet campus
+                                        compliance requirements, maintain Fabrication Lab content in WordPress,
+                                        collaborate with campus security and networking teams, and mentor an
+                                        undergraduate intern and student IT assistants.
                                     </p>
                                     <p>
-                                        None of this replaces the software and data side; it stacks on top of it.
-                                        I've shipped MERN-stack apps, built CNN models in PyTorch (99.77% validation
-                                        accuracy on 3D shape classification), and built cloud data pipelines on GCP
-                                        and Azure (Mage, BigQuery, Databricks, Synapse). I like sitting at the
-                                        intersection of systems, security, and data. Most interesting problems live
-                                        there anyway.
+                                        My background combines systems administration, software development, and
+                                        data engineering. At CaspianLogic, I worked on frontend and full stack
+                                        applications using React, Redux, Node.js, Express, MongoDB, and REST
+                                        APIs. At Yali, I used Python and Beautiful Soup to collect, clean,
+                                        annotate, and structure banking data for machine learning pipelines.
+                                        During my M.S. in Computer Science, I expanded this experience through
+                                        data pipeline projects on GCP and Azure and an end to end PyTorch CNN
+                                        for classifying synthetic 3D objects.
+                                    </p>
+                                    <p>
+                                        I earned my M.S. in Computer Science from CSUDH in December 2023 after
+                                        completing a bachelor's degree in Instrumentation and Control Systems
+                                        Engineering from the University of Mumbai in 2020. I'm now pursuing
+                                        opportunities in systems administration and cloud operations, where I
+                                        can work on more complex infrastructure while continuing to learn.
+                                        Outside of technology, I enjoy traveling, photography, video production,
+                                        soccer, and learning how mechanical systems work. I have worked on my
+                                        own minibike, and I hope to eventually take on a small project car so I
+                                        can learn how its systems fit together, diagnose problems, and rebuild
+                                        parts myself.
                                     </p>
                                 </div>
                             </div>
@@ -298,53 +279,13 @@ const Hero: React.FC<HeroProps> = ({ onOpenGame }) => {
                                 </div>
                             </div>
 
-                            <div className="hero-panel-window hero-signal-window">
-                                <div className="hero-panel-header">
-                                    <span>Signal Monitor</span>
-                                    <span className={`hero-signal-status ${signalState}`}>
-                                        <span className="hero-signal-led" aria-hidden="true" />
-                                        {signalLabel}
-                                    </span>
-                                </div>
-                                <div className="hero-signal-body">
-                                    <div className="hero-signal-lead-row">
-                                        <p className="hero-signal-lead">
-                                            This site pulls live security, AI, and software feeds on its own
-                                            schedule. Nothing here is typed in by hand.
-                                        </p>
-                                        <button
-                                            type="button"
-                                            className="hero-action-btn hero-signal-btn"
-                                            onClick={() => handleDesktopAction('#signals')}
-                                        >
-                                            📡 Open Signal Monitor
-                                        </button>
-                                    </div>
-                                    <div className="hero-signal-stats">
-                                        <div className="hero-signal-stat">
-                                            <span className="hero-signal-stat-value">
-                                                {status === 'ready' ? totalItems : '--'}
-                                            </span>
-                                            <span className="hero-signal-stat-label">tracked items</span>
-                                        </div>
-                                        <div className="hero-signal-stat">
-                                            <span className="hero-signal-stat-value">3</span>
-                                            <span className="hero-signal-stat-label">live feeds</span>
-                                        </div>
-                                        <div className="hero-signal-stat hero-signal-stat-wide">
-                                            <span className="hero-signal-stat-value">{lastSync}</span>
-                                            <span className="hero-signal-stat-label">last sync</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
                         </div>
                     </div>
                 </div>
 
                 {/* Status Bar */}
                 <div className="win98-statusbar hero-statusbar">
-                    <div className="win98-panel">Open to Systems Administration &amp; Security roles</div>
+                    <div className="win98-panel">Open to Systems Administration &amp; Cloud Operations roles</div>
                     <div className="win98-panel">Contact: manishcpatil9@gmail.com</div>
                     <div className="win98-panel">rev 2.0</div>
                 </div>

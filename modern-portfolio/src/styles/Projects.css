@@ -122,11 +122,21 @@
     outline-offset: -5px;
 }
 
-/* ─── Category body ─── */
+/* ─── Category body ───
+   Capped and scrollable so the window keeps its shape as the project list grows.
+   Without the cap a category with five or six entries wraps to a third row and the
+   whole box gets noticeably taller than the others, so switching tabs made the
+   section jump. Now the frame is constant and the contents scroll inside it, which
+   is what an Explorer window did anyway.
+
+   overflow-x stays hidden: only vertical growth needs handling, and the cards are
+   already constrained to the grid track width. */
 .category-body {
     background: #c0c0c0;
     padding: 14px;
-    overflow: hidden;
+    max-height: 64vh;
+    overflow-y: auto;
+    overflow-x: hidden;
 }
 
 /* Reset 98.css .window defaults on inner cards to prevent double borders */
@@ -139,9 +149,16 @@
 }
 
 /* ─── Project cards grid ─── */
+/* The track minimum is fluid so cards gain a little size on bigger screens rather
+   than staying laptop-sized, but the ceiling is deliberately low. An earlier 380px
+   maximum here was too greedy: the largest category holds five projects, so a
+   wide screen dropped from roughly five columns to three very fat ones, and the
+   section read as zoomed in rather than scaled. Capping at 320px keeps four to
+   five columns at every desktop size, which is the shape the grid was drawn for.
+   The min() guard stays for containers narrower than the floor. */
 .projects-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(min(280px, 100%), 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(clamp(280px, 19vw, 320px), 100%), 1fr));
     gap: 14px;
 }
 
@@ -215,6 +232,22 @@
 }
 
 /* ─── Responsive ─── */
+
+/* Large displays: a small step up to match the slightly wider track above, and no
+   more than that. The first version of this block ran to 14px copy and a 220px
+   image well, which on top of the oversized tracks is what made the window look
+   zoomed. The card is only about 40px wider than on a laptop, so its contents
+   should only grow by about as much. */
+@media (min-width: 1500px) {
+    .project-desc {
+        font-size: 12.5px;
+    }
+
+    .project-img-frame {
+        height: 185px;
+    }
+}
+
 @media (max-width: 768px) {
     .projects-section {
         align-items: flex-start;
@@ -223,6 +256,14 @@
 
     .projects-grid {
         grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    /* Cap lifted on small screens. One or two columns makes the list long, and a
+       short scrolling region nested inside the page scroll is awkward to use on
+       touch. Let the page take the height instead, as the section already does. */
+    .category-body {
+        max-height: none;
+        overflow-y: visible;
     }
 
     .explorer-toolbar {

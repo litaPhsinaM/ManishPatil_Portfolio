@@ -3,6 +3,7 @@ import { HashRouter as Router, Routes, Route, useLocation, useNavigate } from 'r
 import { MotionConfig } from 'framer-motion';
 import Navbar from './components/Navbar';
 import Home from './pages/Home';
+import Interview from './pages/Interview';
 import Win98Boot from './components/Win98Boot';
 import './styles/App.css';
 
@@ -43,6 +44,8 @@ function App() {
               <Route path="/experience" element={<Home />} />
               <Route path="/projects" element={<Home />} />
               <Route path="/signals" element={<Home />} />
+              {/* A real second page, not a section of Home. */}
+              <Route path="/interview" element={<Interview />} />
               <Route path="/gallery" element={<Home />} />
               <Route path="/footer" element={<Home />} />
               <Route path="/resume" element={<Home />} />

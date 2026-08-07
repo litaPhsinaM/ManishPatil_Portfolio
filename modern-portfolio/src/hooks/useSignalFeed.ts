@@ -14,8 +14,18 @@ export interface FeedItem {
     flag?: string | null;
 }
 
+export interface LogEntry {
+    t: string;
+    level: 'info' | 'warn' | 'error';
+    msg: string;
+}
+
 export interface FeedPayload {
     generatedAt: string;
+    /* Written by scripts/fetch-feeds.mjs. Optional because a feeds.json produced
+       before the log existed is still perfectly valid data, and the deployed file
+       only gains a log on the next scheduled run. */
+    log?: LogEntry[];
     feeds: Partial<Record<SignalTabId, FeedItem[]>>;
 }
 

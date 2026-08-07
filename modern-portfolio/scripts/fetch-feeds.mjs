@@ -42,6 +42,23 @@ const FLEET_SURFACES = [
 
 const AI_TOPIC = /\b(ai|a\.i\.|llm|llms|gpt|claude|gemini|openai|anthropic|deepmind|neural|transformer|diffusion|inference|embedding|fine-tun\w*|machine learning|deep learning)\b/i;
 
+/* ── Run log ───────────────────────────────────────────────────────────────
+   The site renders this, so it is a real trace of the run rather than decorative
+   filler: every count, status and duration below is measured, not invented. It is
+   also mirrored to stdout, which means a GitHub Actions run and the published page
+   show exactly the same story. */
+const runLog = [];
+
+const log = (level, msg) => {
+    runLog.push({ t: new Date().toISOString(), level, msg });
+    const line = `[${level}] ${msg}`;
+    if (level === 'error') console.error(line);
+    else if (level === 'warn') console.warn(line);
+    else console.log(line);
+};
+
+const since = (start) => `${Date.now() - start}ms`;
+
 const fetchWithTimeout = async (url, init = {}) => {
     const controller = new AbortController();
     const timer = setTimeout(() => controller.abort(), TIMEOUT_MS);
@@ -73,20 +90,33 @@ const clamp = (text, max) => {
 
 /* ── CISA KEV ───────────────────────────────────────────────────────────── */
 const fetchSecurity = async () => {
+    const started = Date.now();
+    log('info', 'GET cisa.gov/feeds/known_exploited_vulnerabilities.json');
+
     const response = await fetchWithTimeout(
         'https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json'
     );
     const catalog = await response.json();
+    log('info', `HTTP ${response.status} · catalog holds ${catalog.vulnerabilities.length} CVEs · ${since(started)}`);
 
-    return catalog.vulnerabilities
+    const matched = catalog.vulnerabilities
         .map((vuln) => {
             const haystack = `${vuln.vendorProject} ${vuln.product}`;
             const surface = FLEET_SURFACES.find((entry) => entry.re.test(haystack));
             return surface ? { vuln, surface } : null;
         })
-        .filter(Boolean)
+        .filter(Boolean);
+
+    log('info', `fleet filter: ${matched.length} of ${catalog.vulnerabilities.length} touch managed platforms`);
+
+    const selected = matched
         .sort((a, b) => b.vuln.dateAdded.localeCompare(a.vuln.dateAdded))
-        .slice(0, MAX_PER_FEED)
+        .slice(0, MAX_PER_FEED);
+
+    const ransomware = selected.filter((e) => e.vuln.knownRansomwareCampaignUse === 'Known').length;
+    if (ransomware > 0) log('warn', `${ransomware} of the newest ${selected.length} are linked to ransomware campaigns`);
+
+    return selected
         .map(({ vuln, surface }) => ({
             id: vuln.cveID,
             title: clamp(vuln.vulnerabilityName, 140),
@@ -110,6 +140,8 @@ const fetchArxiv = async () => {
         max_results: '12',
     });
     const url = `https://export.arxiv.org/api/query?${query}`;
+    const started = Date.now();
+    log('info', 'GET export.arxiv.org/api/query cat:cs.AI OR cat:cs.LG');
 
     // arXiv asks callers to stay under one request every 3 seconds and answers 429
     // when you don't. Back off and retry rather than losing the whole feed.
@@ -120,10 +152,12 @@ const fetchArxiv = async () => {
             break;
         } catch (error) {
             if (attempt === 2) throw error;
+            log('warn', `arxiv attempt ${attempt + 1} failed (${error.message}), backing off ${4 * (attempt + 1)}s`);
             await sleep(4000 * (attempt + 1));
         }
     }
     const xml = await response.text();
+    log('info', `HTTP ${response.status} · ${xml.length.toLocaleString()} bytes of Atom XML · ${since(started)}`);
 
     const pick = (block, tag) => {
         const match = block.match(new RegExp(`<${tag}>([\\s\\S]*?)</${tag}>`));
@@ -151,8 +185,12 @@ const fetchArxiv = async () => {
 
 /* ── Hacker News ────────────────────────────────────────────────────────── */
 const fetchHackerNews = async () => {
+    const started = Date.now();
+    log('info', 'GET hacker-news.firebaseio.com/v0/topstories.json');
+
     const response = await fetchWithTimeout('https://hacker-news.firebaseio.com/v0/topstories.json');
     const ids = (await response.json()).slice(0, 60);
+    log('info', `HTTP ${response.status} · resolving top ${ids.length} story ids in batches of 10`);
 
     const stories = [];
     // Small batches — polite to an unauthenticated public API, and fast enough.
@@ -169,6 +207,8 @@ const fetchHackerNews = async () => {
         );
         stories.push(...batch.filter((story) => story && story.type === 'story' && story.title));
     }
+
+    log('info', `${stories.length} of ${ids.length} resolved to usable stories · ${since(started)}`);
 
     return stories.map((story) => ({
         id: `hn-${story.id}`,
@@ -193,6 +233,9 @@ const readPrevious = async () => {
 };
 
 const run = async () => {
+    const runStarted = Date.now();
+    log('info', 'signal refresh started');
+
     const previous = await readPrevious();
     const feeds = {};
     const failures = [];
@@ -205,7 +248,9 @@ const run = async () => {
             return;
         }
         failures.push(`${key} returned nothing`);
-        feeds[key] = previous.feeds?.[key] ?? [];
+        const carried = previous.feeds?.[key] ?? [];
+        log('warn', `${key} returned nothing, serving ${carried.length} cached items instead`);
+        feeds[key] = carried;
     };
 
     let hackerNews = [];
@@ -213,12 +258,14 @@ const run = async () => {
         hackerNews = await fetchHackerNews();
     } catch (error) {
         failures.push(`hacker news: ${error.message}`);
+        log('error', `hacker news unreachable: ${error.message}`);
     }
 
     try {
         keep('security', await fetchSecurity());
     } catch (error) {
         failures.push(`security: ${error.message}`);
+        log('error', `cisa unreachable: ${error.message}`);
         feeds.security = previous.feeds?.security ?? [];
     }
 
@@ -227,10 +274,12 @@ const run = async () => {
         arxiv = await fetchArxiv();
     } catch (error) {
         failures.push(`arxiv: ${error.message}`);
+        log('error', `arxiv unreachable: ${error.message}`);
     }
 
     const aiStories = hackerNews.filter((story) => AI_TOPIC.test(story.title));
     const aiStoryIds = new Set(aiStories.map((story) => story.id));
+    log('info', `topic split: ${aiStories.length} AI stories, ${hackerNews.length - aiStories.length} general dev`);
 
     keep(
         'ai',
@@ -240,8 +289,28 @@ const run = async () => {
     );
     keep('dev', hackerNews.filter((story) => !aiStoryIds.has(story.id)).slice(0, MAX_PER_FEED));
 
+    // Per-article trace. The counts above say how many; this says which, so the
+    // panel on the site shows the actual headlines that made the cut rather than
+    // just a summary. Ransomware-linked entries are raised to warn so they stand
+    // out in the terminal the same way they do in the feed.
+    for (const [key, items] of Object.entries(feeds)) {
+        log('info', `--- ${key} feed: ${items.length} items ---`);
+        for (const item of items) {
+            log(
+                item.flag === 'RANSOMWARE' ? 'warn' : 'info',
+                `ingest ${item.source} · ${clamp(item.title, 58)} · ${item.date}`
+            );
+        }
+    }
+
+    const total = Object.values(feeds).reduce((sum, items) => sum + items.length, 0);
+    log('info', `publishing ${total} items across ${Object.keys(feeds).length} feeds · ${since(runStarted)}`);
+
     const payload = {
         generatedAt: new Date().toISOString(),
+        // Capped so a pathological run cannot bloat the file the browser downloads.
+        // Comfortably above a normal run (roughly 60 lines at 14 items per feed).
+        log: runLog.slice(-120),
         feeds,
     };
 

@@ -105,6 +105,9 @@
     background: #0f1712;
     /* Dark green/black CRT off state */
     flex-shrink: 0;
+    /* Anchor for .game-overlay, which the canvas games render over their board.
+       Without it the absolutely positioned overlay escapes to the window instead. */
+    position: relative;
 }
 
 .arcade-canvas {

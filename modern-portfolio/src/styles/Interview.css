@@ -1,0 +1,208 @@
+/* ─── Interview.exe page ─── */
+.interview-page {
+    min-height: var(--app-page-min-height);
+    padding: var(--app-section-pad) 0;
+    background: #008080;
+    background-image: repeating-linear-gradient(0deg,
+            transparent,
+            transparent 2px,
+            rgba(0, 0, 0, 0.04) 2px,
+            rgba(0, 0, 0, 0.04) 4px);
+    display: flex;
+    align-items: center;
+}
+
+.interview-win {
+    width: 100%;
+    max-width: 780px;
+    margin: 0 auto;
+    box-shadow: var(--win98-raised-border);
+    padding: 3px;
+    background: var(--win98-gray);
+}
+
+.interview-body {
+    padding: 8px;
+}
+
+/* ─── Transcript ─── */
+.interview-transcript {
+    background: #ffffff;
+    box-shadow: var(--win98-sunken-border);
+    padding: 10px;
+    height: 46vh;
+    min-height: 260px;
+    overflow-y: auto;
+}
+
+.interview-turn {
+    margin-bottom: 11px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: 6px;
+}
+
+.interview-turn:last-child {
+    margin-bottom: 0;
+}
+
+.interview-speaker {
+    flex: 0 0 auto;
+    font-family: 'MS Sans Serif', sans-serif;
+    font-size: 9px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    padding: 1px 5px;
+    color: #ffffff;
+    background: #808080;
+}
+
+.interview-turn.bot .interview-speaker {
+    background: var(--win98-navy);
+}
+
+.interview-text {
+    flex: 1 1 220px;
+    min-width: 0;
+    font-size: 12px;
+    line-height: 1.55;
+    color: #000000;
+}
+
+.interview-turn.user .interview-text {
+    font-weight: bold;
+}
+
+/* Marks answers that came from the model rather than a written entry, so a
+   reader can tell curated text from generated text at a glance. */
+.interview-badge {
+    flex: 0 0 auto;
+    font-size: 8px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    color: #606060;
+    border: 1px solid #c0c0c0;
+    padding: 0 4px;
+}
+
+.interview-thinking {
+    color: #606060;
+    font-style: italic;
+}
+
+.interview-dots {
+    animation: interview-blink 1.2s steps(1) infinite;
+}
+
+@keyframes interview-blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.2; }
+}
+
+/* ─── Suggested questions ─── */
+.interview-suggestions-label {
+    width: 100%;
+    font-family: 'MS Sans Serif', sans-serif;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: #404040;
+    margin-bottom: 2px;
+}
+
+.interview-suggestions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    margin-top: 8px;
+}
+
+.interview-suggestion {
+    background: var(--win98-gray);
+    box-shadow: var(--win98-raised-border);
+    border: none;
+    font-family: 'MS Sans Serif', sans-serif;
+    font-size: 11px;
+    padding: 4px 8px;
+    cursor: pointer;
+    color: #000000;
+}
+
+.interview-suggestion:active {
+    box-shadow: var(--win98-sunken-border);
+    padding: 5px 7px 3px 9px;
+}
+
+/* ─── Composer ─── */
+.interview-composer {
+    display: flex;
+    gap: 6px;
+    margin-top: 8px;
+}
+
+.interview-input {
+    flex: 1 1 auto;
+    min-width: 0;
+    padding: 5px 7px;
+    background: #ffffff;
+    border: none;
+    box-shadow: var(--win98-sunken-border);
+    font-family: 'MS Sans Serif', sans-serif;
+    font-size: 12px;
+    color: #000000;
+}
+
+.interview-input:disabled {
+    background: #d4d0c8;
+    color: #808080;
+}
+
+.interview-send {
+    flex: 0 0 auto;
+    min-width: 64px;
+}
+
+.interview-send:disabled {
+    color: #808080;
+    cursor: default;
+}
+
+.interview-statusbar .win98-panel:first-child {
+    font-weight: bold;
+}
+
+/* ─── Disclaimer ─── */
+.interview-disclaimer {
+    max-width: 780px;
+    margin: 10px auto 0;
+    font-size: 11px;
+    line-height: 1.5;
+    color: #d8f0f0;
+    text-align: center;
+}
+
+.interview-link {
+    background: none;
+    border: none;
+    padding: 0;
+    font-family: inherit;
+    font-size: inherit;
+    color: #ffffff;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+@media (max-width: 900px) {
+    .interview-transcript {
+        height: 52vh;
+    }
+
+    .interview-composer {
+        flex-direction: column;
+    }
+
+    .interview-send {
+        width: 100%;
+    }
+}

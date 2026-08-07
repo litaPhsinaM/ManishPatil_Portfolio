@@ -28,12 +28,19 @@
     height: 100dvh;
     display: flex;
     flex-direction: column;
-    /* Top-aligned on purpose: if content is ever taller than the viewport, the
-       header and the top of the card stay visible and only the tail end is
-       affected — center + overflow:hidden here previously clipped EVERYTHING
-       off-screen whenever combined content exceeded 100vh, which is what was
-       causing the cards (and even the header) to never appear. */
-    justify-content: flex-start;
+    /* Vertically centred in the pinned viewport. This was top-aligned after an
+       earlier bug where center + overflow:hidden clipped every card off-screen
+       once the combined content exceeded 100vh. That can no longer happen: the
+       stack is capped at min(74vh, 700px) and the header is a fixed ~34px, so
+       the children total 74vh + ~70px and always fit inside 100vh. There is
+       also no overflow:hidden on this element any more, so nothing is clipped
+       even if that ever stopped being true.
+
+       `safe center` is the belt-and-braces version: browsers that support it
+       fall back to flex-start automatically if the content ever would overflow,
+       and browsers that don't simply use the plain `center` above it. */
+    justify-content: center;
+    justify-content: safe center;
     gap: 12px;
     padding: 16px 0 8px;
 }
@@ -110,10 +117,19 @@
     transform: translateY(60px);
     filter: blur(10px);
     pointer-events: none;
+    /* Slow, soft crossfade. The old 0.85s easeOutQuint (0.22, 1, 0.36, 1) snapped
+       hard out of the gate and was over almost before the eye caught it. This is
+       1.25s on a gentle decelerating curve instead: no sharp start, and the
+       incoming card still resolves ahead of the outgoing one so the two never sit
+       at half opacity long enough to look muddy.
+
+       Filter trails slightly shorter than opacity and transform on purpose — the
+       blur clearing just before the movement settles is what makes the card read
+       as arriving rather than still being in flight. */
     transition:
-        opacity 0.85s cubic-bezier(0.22, 1, 0.36, 1),
-        transform 0.85s cubic-bezier(0.22, 1, 0.36, 1),
-        filter 0.85s ease-out;
+        opacity 1.25s cubic-bezier(0.25, 0.8, 0.25, 1),
+        transform 1.25s cubic-bezier(0.25, 0.8, 0.25, 1),
+        filter 1.05s ease-out;
 }
 
 .exp-pin.is-pinned .exp-panel.active {
@@ -199,7 +215,11 @@
     font-family: 'MS Sans Serif', sans-serif;
     font-size: 14px;
     color: #000;
-    line-height: 1.5;
+    /* Nudged down from 1.5. The bullets are separated by a blank line in the source
+       string and rendered with pre-wrap, so line-height sets both the wrap spacing
+       inside a bullet and the gap between bullets; a small change here tightens the
+       whole card noticeably without making the text feel cramped. */
+    line-height: 1.38;
     margin: 0;
     white-space: pre-wrap;
     position: relative;
@@ -224,6 +244,54 @@
 /* ─── Responsive / reduced-motion fallback ───
    Experience.tsx doesn't add .is-pinned at all in these cases, so the plain
    .exp-panel rules above (static, full opacity, normal flow) already apply. */
+/* Large displays: the panel is a fixed share of a much wider shell, so the type
+   steps up with it. Bumping the body size is also what keeps the line length
+   sane, since a wider card at the same 14px is where "too wide to read" comes
+   from in the first place. */
+@media (min-width: 1500px) {
+    .exp-title {
+        font-size: 30px;
+    }
+
+    .exp-company {
+        font-size: 18px;
+    }
+
+    .exp-body-text {
+        font-size: 15px;
+    }
+
+    .exp-panel-body {
+        padding: 22px 42px 18px;
+    }
+
+    .exp-number-badge {
+        font-size: 40px;
+    }
+}
+
+@media (min-width: 2000px) {
+    .exp-title {
+        font-size: 34px;
+    }
+
+    .exp-company {
+        font-size: 20px;
+    }
+
+    .exp-body-text {
+        font-size: 17px;
+    }
+
+    .exp-panel-body {
+        padding: 26px 52px 22px;
+    }
+
+    .exp-number-badge {
+        font-size: 46px;
+    }
+}
+
 @media (max-width: 900px) {
     .exp-title {
         font-size: 22px;

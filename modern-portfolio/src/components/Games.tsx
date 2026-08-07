@@ -7,13 +7,201 @@ import {
     submitScore,
     INITIALS_PATTERN,
     type ScoreRow,
+    type LeaderboardGame,
 } from '../lib/leaderboard';
 import '../styles/Games.css';
 
 const GRID_SIZE = 20;
 const INITIAL_SNAKE = [[10, 10]];
 const INITIAL_DIRECTION = [0, -1];
-const SPEED_MS = 120;
+
+/* Snake pacing. Classic Snake gets faster as it grows — a constant tick meant a
+   good player could keep going indefinitely at the same difficulty, which is the
+   one thing the original never did. Every STEP_EVERY points shaves STEP_MS off the
+   tick, down to a floor that is fast but still humanly playable. */
+const SPEED_MS = 140;
+const SPEED_FLOOR_MS = 55;
+const SPEED_STEP_EVERY = 30;
+const SPEED_STEP_MS = 5;
+
+const snakeTickMs = (score: number) =>
+    Math.max(SPEED_FLOOR_MS, SPEED_MS - Math.floor(score / SPEED_STEP_EVERY) * SPEED_STEP_MS);
+
+/* ─── Fixed-timestep loop ───
+   requestAnimationFrame fires at the display's refresh rate, so a loop that moves
+   things by a constant amount per callback runs twice as fast on a 120Hz screen as
+   on a 60Hz one. Both canvas games did exactly that.
+
+   The fix is an accumulator: real elapsed time goes in, and update() is called a
+   whole number of times at a fixed 60Hz step. Physics and collision then behave
+   identically on every display. A delta-time multiplier would fix the speed but not
+   the collision behaviour, since tunnelling depends on how far an object moves in a
+   single step. maxFrames stops a backgrounded tab from returning to a huge
+   accumulated delta and simulating hundreds of steps at once. */
+const STEP_MS = 1000 / 60;
+const MAX_CATCHUP_STEPS = 5;
+
+const runFixedStep = (
+    update: () => boolean,
+    render: () => void,
+    rafRef: React.MutableRefObject<number | null>
+) => {
+    let previous = performance.now();
+    let accumulator = 0;
+
+    const frame = (now: number) => {
+        accumulator += now - previous;
+        previous = now;
+
+        let steps = 0;
+        let alive = true;
+        while (accumulator >= STEP_MS && steps < MAX_CATCHUP_STEPS) {
+            alive = update();
+            accumulator -= STEP_MS;
+            steps += 1;
+            if (!alive) break;
+        }
+        // Whatever is left over is more than one frame behind; drop it rather than
+        // carrying a debt that makes the next frame lurch.
+        if (steps >= MAX_CATCHUP_STEPS) accumulator = 0;
+
+        render();
+        if (alive) rafRef.current = requestAnimationFrame(frame);
+    };
+
+    rafRef.current = requestAnimationFrame(frame);
+};
+
+/* ─── Shared leaderboard plumbing ───
+   All three games post to the same table, discriminated by game id, so the fetch,
+   the entry form and the board itself are written once here. */
+const useLeaderboard = (game: LeaderboardGame) => {
+    const [scores, setScores] = useState<ScoreRow[]>([]);
+    const [boardState, setBoardState] = useState<'loading' | 'ready' | 'error' | 'disabled'>(
+        leaderboardEnabled ? 'loading' : 'disabled'
+    );
+
+    const refresh = useCallback(async () => {
+        if (!leaderboardEnabled) return;
+        try {
+            setScores(await fetchTopScores(game));
+            setBoardState('ready');
+        } catch {
+            setBoardState('error');
+        }
+    }, [game]);
+
+    useEffect(() => {
+        if (!leaderboardEnabled) return;
+
+        let cancelled = false;
+        fetchTopScores(game)
+            .then((rows) => {
+                if (cancelled) return;
+                setScores(rows);
+                setBoardState('ready');
+            })
+            .catch(() => {
+                if (!cancelled) setBoardState('error');
+            });
+
+        return () => { cancelled = true; };
+    }, [game]);
+
+    return { scores, boardState, refresh };
+};
+
+const ScoreEntry: React.FC<{
+    game: LeaderboardGame;
+    score: number;
+    onSaved: () => void;
+}> = ({ game, score, onSaved }) => {
+    const [initials, setInitials] = useState('');
+    const [state, setState] = useState<'idle' | 'saving' | 'saved' | 'error'>('idle');
+
+    const submit = async (event: React.FormEvent) => {
+        event.preventDefault();
+        setState('saving');
+        try {
+            await submitScore(game, initials, score);
+            setState('saved');
+            onSaved();
+        } catch {
+            setState('error');
+        }
+    };
+
+    // Nothing to post: no backend configured, or the run never scored.
+    if (!leaderboardEnabled || score <= 0) return null;
+    if (state === 'saved') return <div className="score-entry-hint">Score posted to the board.</div>;
+
+    return (
+        <form className="score-entry" onSubmit={submit}>
+            <label className="score-entry-label" htmlFor={`${game}-initials`}>
+                Enter your initials
+            </label>
+            <div className="score-entry-row">
+                <input
+                    id={`${game}-initials`}
+                    className="score-entry-input"
+                    value={initials}
+                    onChange={(e) => setInitials(
+                        e.target.value.toUpperCase().replace(/[^A-Z]/g, '').slice(0, 3)
+                    )}
+                    maxLength={3}
+                    autoComplete="off"
+                    spellCheck={false}
+                    aria-describedby={`${game}-initials-hint`}
+                    placeholder="AAA"
+                />
+                <button
+                    type="submit"
+                    className="btn game-btn"
+                    disabled={!INITIALS_PATTERN.test(initials) || state === 'saving'}
+                >
+                    {state === 'saving' ? 'SAVING…' : 'SUBMIT'}
+                </button>
+            </div>
+            <div id={`${game}-initials-hint`} className="score-entry-hint">
+                {state === 'error'
+                    ? 'Could not reach the leaderboard — your local high score is safe.'
+                    : 'Three letters, arcade style.'}
+            </div>
+        </form>
+    );
+};
+
+const Leaderboard: React.FC<{
+    boardState: 'loading' | 'ready' | 'error' | 'disabled';
+    scores: ScoreRow[];
+}> = ({ boardState, scores }) => {
+    if (boardState === 'disabled') return null;
+
+    return (
+        <div className="leaderboard">
+            <div className="leaderboard-title">HIGH SCORES</div>
+
+            {boardState === 'loading' && <div className="leaderboard-state">Loading…</div>}
+            {boardState === 'error' && <div className="leaderboard-state">Board unavailable</div>}
+            {boardState === 'ready' && scores.length === 0 && (
+                <div className="leaderboard-state">No scores yet — be the first.</div>
+            )}
+
+            {boardState === 'ready' && scores.length > 0 && (
+                <ol className="leaderboard-list">
+                    {scores.map((row, index) => (
+                        <li key={`${row.initials}-${row.created_at}`} className="leaderboard-row">
+                            <span className="leaderboard-rank">{String(index + 1).padStart(2, '0')}</span>
+                            <span className="leaderboard-initials">{row.initials}</span>
+                            <span className="leaderboard-dots" aria-hidden="true" />
+                            <span className="leaderboard-score">{row.score}</span>
+                        </li>
+                    ))}
+                </ol>
+            )}
+        </div>
+    );
+};
 
 type GameId = 'snake' | 'flappy' | 'traffic';
 
@@ -74,51 +262,7 @@ const SnakeGame: React.FC = () => {
 
     /* Arcade leaderboard. Every path here is optional — if the backend is not
        configured or is unreachable, the game plays exactly as it did before. */
-    const [scores, setScores] = useState<ScoreRow[]>([]);
-    const [boardState, setBoardState] = useState<'loading' | 'ready' | 'error' | 'disabled'>(
-        leaderboardEnabled ? 'loading' : 'disabled'
-    );
-    const [initials, setInitials] = useState('');
-    const [submitState, setSubmitState] = useState<'idle' | 'saving' | 'saved' | 'error'>('idle');
-
-    const refreshScores = useCallback(async () => {
-        if (!leaderboardEnabled) return;
-        try {
-            setScores(await fetchTopScores());
-            setBoardState('ready');
-        } catch {
-            setBoardState('error');
-        }
-    }, []);
-
-    useEffect(() => {
-        if (!leaderboardEnabled) return;
-
-        let cancelled = false;
-        fetchTopScores()
-            .then((rows) => {
-                if (cancelled) return;
-                setScores(rows);
-                setBoardState('ready');
-            })
-            .catch(() => {
-                if (!cancelled) setBoardState('error');
-            });
-
-        return () => { cancelled = true; };
-    }, []);
-
-    const handleSubmitScore = useCallback(async (event: React.FormEvent) => {
-        event.preventDefault();
-        setSubmitState('saving');
-        try {
-            await submitScore(initials, scoreRef.current);
-            setSubmitState('saved');
-            await refreshScores();
-        } catch {
-            setSubmitState('error');
-        }
-    }, [initials, refreshScores]);
+    const { scores, boardState, refresh: refreshScores } = useLeaderboard('snake');
 
     const generateFood = useCallback((currentSnake: number[][]) => {
         let newFood: number[];
@@ -146,8 +290,8 @@ const SnakeGame: React.FC = () => {
         setScore(0);
         setGameOver(false);
         setIsPlaying(true);
-        setInitials('');
-        setSubmitState('idle');
+        // Initials and submit state live in <ScoreEntry>, which is mounted only while
+        // the game-over overlay is up, so restarting unmounts it and clears both.
     }, [generateFood]);
 
     const requestDirection = useCallback((dir: number[]) => {
@@ -214,12 +358,14 @@ const SnakeGame: React.FC = () => {
         requestDirection(dir);
     }, [isPlaying, gameOver, resetGame, requestDirection]);
 
+    /* score is in the dependency list on purpose: crossing a speed threshold tears
+       down the old interval and starts a faster one. */
     useEffect(() => {
         if (!isPlaying || gameOver) return;
 
-        const interval = setInterval(tick, SPEED_MS);
+        const interval = setInterval(tick, snakeTickMs(score));
         return () => clearInterval(interval);
-    }, [isPlaying, gameOver, tick]);
+    }, [isPlaying, gameOver, tick, score]);
 
     useEffect(() => {
         const handleKeyDown = (e: KeyboardEvent) => {
@@ -297,44 +443,7 @@ const SnakeGame: React.FC = () => {
                             <div className="game-over-text">GAME OVER</div>
                             <div className="game-score-final">Score: {score}</div>
 
-                            {leaderboardEnabled && score > 0 && submitState !== 'saved' && (
-                                <form className="score-entry" onSubmit={handleSubmitScore}>
-                                    <label className="score-entry-label" htmlFor="snake-initials">
-                                        Enter your initials
-                                    </label>
-                                    <div className="score-entry-row">
-                                        <input
-                                            id="snake-initials"
-                                            className="score-entry-input"
-                                            value={initials}
-                                            onChange={(e) => setInitials(
-                                                e.target.value.toUpperCase().replace(/[^A-Z]/g, '').slice(0, 3)
-                                            )}
-                                            maxLength={3}
-                                            autoComplete="off"
-                                            spellCheck={false}
-                                            aria-describedby="snake-initials-hint"
-                                            placeholder="AAA"
-                                        />
-                                        <button
-                                            type="submit"
-                                            className="btn game-btn"
-                                            disabled={!INITIALS_PATTERN.test(initials) || submitState === 'saving'}
-                                        >
-                                            {submitState === 'saving' ? 'SAVING…' : 'SUBMIT'}
-                                        </button>
-                                    </div>
-                                    <div id="snake-initials-hint" className="score-entry-hint">
-                                        {submitState === 'error'
-                                            ? 'Could not reach the leaderboard — your local high score is safe.'
-                                            : 'Three letters, arcade style.'}
-                                    </div>
-                                </form>
-                            )}
-
-                            {submitState === 'saved' && (
-                                <div className="score-entry-hint">Score posted to the board.</div>
-                            )}
+                            <ScoreEntry game="snake" score={score} onSaved={refreshScores} />
 
                             <button className="btn game-btn" onClick={resetGame}>TRY AGAIN</button>
                         </div>
@@ -351,45 +460,54 @@ const SnakeGame: React.FC = () => {
                 </button>
             </div>
 
-            {boardState !== 'disabled' && (
-                <div className="leaderboard">
-                    <div className="leaderboard-title">HIGH SCORES</div>
-
-                    {boardState === 'loading' && (
-                        <div className="leaderboard-state">Loading…</div>
-                    )}
-
-                    {boardState === 'error' && (
-                        <div className="leaderboard-state">Board unavailable</div>
-                    )}
-
-                    {boardState === 'ready' && scores.length === 0 && (
-                        <div className="leaderboard-state">No scores yet — be the first.</div>
-                    )}
-
-                    {boardState === 'ready' && scores.length > 0 && (
-                        <ol className="leaderboard-list">
-                            {scores.map((row, index) => (
-                                <li key={`${row.initials}-${row.created_at}`} className="leaderboard-row">
-                                    <span className="leaderboard-rank">{String(index + 1).padStart(2, '0')}</span>
-                                    <span className="leaderboard-initials">{row.initials}</span>
-                                    <span className="leaderboard-dots" aria-hidden="true" />
-                                    <span className="leaderboard-score">{row.score}</span>
-                                </li>
-                            ))}
-                        </ol>
-                    )}
-                </div>
-            )}
+            <Leaderboard boardState={boardState} scores={scores} />
         </>
     );
 };
+
+interface Rect { x: number; y: number; w: number; h: number }
+
+const overlaps = (a: Rect, b: Rect) =>
+    a.x < b.x + b.w && a.x + a.w > b.x && a.y < b.y + b.h && a.y + a.h > b.y;
+
+/* ─── Traffic Racer ───
+   Endless lane dodger. The previous version stopped getting harder at score 24
+   (spawn rate) and score 46 (car speed), so anyone reasonably good could drive
+   forever at a fixed, easy difficulty — there was nothing left to play for. Both
+   curves now key off a level that keeps climbing. */
+const TRAFFIC_LANES = [70, 145, 220];
+const TRAFFIC_CAR_W = 32;
+const TRAFFIC_CAR_H = 50;
+
+const trafficLevel = (score: number) => 1 + Math.floor(score / 15);
+
+/* Car speed climbs with level and then holds. This ceiling is deliberate, not the
+   oversight the old one was: the board is 480px tall and the player needs roughly
+   33 steps to cross two lanes, so past about 11px per step a car arrives sooner
+   than anyone could physically dodge it and the game stops being winnable rather
+   than becoming hard. Difficulty past that point comes from spawn density, which
+   stays fair because a clear lane is always guaranteed. */
+const trafficCarSpeed = (level: number) => Math.min(11, 3.0 + level * 0.35);
+const trafficSpawnGap = (level: number) => Math.max(20, 80 - level * 4);
+/* The player accelerates too, so steering keeps pace with the traffic. */
+const trafficPlayerSpeed = (level: number) => Math.min(7.5, 4.5 + level * 0.12);
 
 const TrafficGame: React.FC = () => {
     const canvasRef = useRef<HTMLCanvasElement>(null);
     const keysRef = useRef<Record<string, boolean>>({});
     const rafRef = useRef<number | null>(null);
     const [runId, setRunId] = useState(0);
+    const [score, setScore] = useState(0);
+    const [level, setLevel] = useState(1);
+    const [gameOver, setGameOver] = useState(false);
+    /* Matches Snake: opening the tab shows a start screen rather than dropping the
+       player into a run that is already moving. */
+    const [started, setStarted] = useState(false);
+    const [highScore, setHighScore] = useState(() => {
+        const saved = Number.parseInt(readStorage('local', 'trafficHighScore') ?? '', 10);
+        return Number.isFinite(saved) ? saved : 0;
+    });
+    const { scores, boardState, refresh } = useLeaderboard('traffic');
 
     useEffect(() => {
         const canvas = canvasRef.current;
@@ -399,106 +517,124 @@ const TrafficGame: React.FC = () => {
         // A key held when the previous run ended would otherwise still read as pressed.
         keysRef.current = {};
 
-        const lanes = [70, 145, 220];
-        const player = { x: 140, y: 410, w: 32, h: 50 };
-        const cars: Array<{ x: number; y: number; w: number; h: number }> = [];
-        let score = 0;
+        const player: Rect = { x: 140, y: 410, w: TRAFFIC_CAR_W, h: TRAFFIC_CAR_H };
+        const cars: Rect[] = [];
+        let points = 0;
+        let currentLevel = 1;
         let over = false;
-        let frame = 0;
+        let stripe = 0;
         let spawnCooldown = 0;
-
-        const hit = (a: typeof player, b: typeof player) =>
-            a.x < b.x + b.w && a.x + a.w > b.x && a.y < b.y + b.h && a.y + a.h > b.y;
 
         const drawCar = (x: number, y: number, color: string) => {
             ctx.fillStyle = color;
-            ctx.fillRect(x, y + 6, 32, 38);
+            ctx.fillRect(x, y + 6, TRAFFIC_CAR_W, 38);
             ctx.fillStyle = '#111';
             ctx.fillRect(x + 5, y, 22, 10);
             ctx.fillStyle = '#d7f2ff';
             ctx.fillRect(x + 8, y + 4, 16, 7);
         };
 
-        const loop = () => {
-            if (over) {
-                ctx.fillStyle = '#050505';
-                ctx.fillRect(0, 0, canvas.width, canvas.height);
-                ctx.fillStyle = '#fff';
-                ctx.font = '24px sans-serif';
-                ctx.fillText('Game Over', 95, 220);
-                ctx.fillText(`Score: ${score}`, 105, 255);
-                ctx.font = '13px sans-serif';
-                ctx.fillText('Click Restart to play again', 82, 290);
-                return;
-            }
+        const update = () => {
+            currentLevel = trafficLevel(points);
+            const playerSpeed = trafficPlayerSpeed(currentLevel);
+            const carSpeed = trafficCarSpeed(currentLevel);
 
-            if (keysRef.current.ArrowLeft && player.x > 55) player.x -= 4.5;
-            if (keysRef.current.ArrowRight && player.x < 233) player.x += 4.5;
+            if (keysRef.current.ArrowLeft && player.x > 55) player.x -= playerSpeed;
+            if (keysRef.current.ArrowRight && player.x < 233) player.x += playerSpeed;
 
-            spawnCooldown--;
+            spawnCooldown -= 1;
             if (spawnCooldown <= 0) {
-                const clearLane = Math.random() * lanes.length | 0;
-                const waveSize = score < 6 ? 1 : 2;
-                const blockedLanes = lanes
+                const clearLane = Math.floor(Math.random() * TRAFFIC_LANES.length);
+                // Never block every lane. One is always left open, which is what keeps
+                // an escalating spawn rate fair instead of arbitrary.
+                const waveSize = currentLevel < 3 ? 1 : 2;
+                TRAFFIC_LANES
                     .map((_, laneIndex) => laneIndex)
-                    .filter(laneIndex => laneIndex !== clearLane)
+                    .filter((laneIndex) => laneIndex !== clearLane)
                     .sort(() => Math.random() - 0.5)
-                    .slice(0, waveSize);
-
-                blockedLanes.forEach((laneIndex, index) => {
-                    cars.push({
-                        x: lanes[laneIndex],
-                        y: -70 - index * 16,
-                        w: 32,
-                        h: 50
+                    .slice(0, waveSize)
+                    .forEach((laneIndex, index) => {
+                        cars.push({
+                            x: TRAFFIC_LANES[laneIndex],
+                            y: -70 - index * 16,
+                            w: TRAFFIC_CAR_W,
+                            h: TRAFFIC_CAR_H,
+                        });
                     });
-                });
-
-                spawnCooldown = Math.max(42, 74 - Math.min(score, 24));
+                spawnCooldown = trafficSpawnGap(currentLevel);
             }
 
+            for (let i = cars.length - 1; i >= 0; i -= 1) {
+                const car = cars[i];
+                car.y += carSpeed;
+                if (overlaps(player, car)) over = true;
+                if (car.y > 500) {
+                    cars.splice(i, 1);
+                    points += 1;
+                }
+            }
+
+            stripe = (stripe + carSpeed) % 60;
+
+            if (over) {
+                setScore(points);
+                setLevel(currentLevel);
+                setGameOver(true);
+                if (points > (Number.parseInt(readStorage('local', 'trafficHighScore') ?? '0', 10) || 0)) {
+                    writeStorage('local', 'trafficHighScore', String(points));
+                    setHighScore(points);
+                }
+                return false;
+            }
+            return true;
+        };
+
+        const render = () => {
             ctx.fillStyle = '#333';
             ctx.fillRect(0, 0, 320, 480);
             ctx.fillStyle = '#fff';
-            for (let y = (frame % 60) - 60; y < 520; y += 60) {
+            for (let y = stripe - 60; y < 520; y += 60) {
                 ctx.fillRect(105, y, 3, 32);
                 ctx.fillRect(180, y, 3, 32);
             }
 
             drawCar(player.x, player.y, '#0af');
-
-            for (let i = cars.length - 1; i >= 0; i--) {
-                const car = cars[i];
-                car.y += Math.min(5.4, 3.8 + score * 0.035);
-                drawCar(car.x, car.y, '#f33');
-                if (hit(player, car)) over = true;
-                if (car.y > 500) {
-                    cars.splice(i, 1);
-                    score++;
-                }
-            }
+            for (const car of cars) drawCar(car.x, car.y, '#f33');
 
             ctx.fillStyle = '#fff';
             ctx.font = '16px sans-serif';
-            ctx.fillText(`Score: ${score}`, 10, 25);
-            frame += 4;
-            rafRef.current = requestAnimationFrame(loop);
+            ctx.fillText(`Score: ${points}`, 10, 25);
+            ctx.font = '13px sans-serif';
+            ctx.fillText(`Level ${currentLevel}`, 240, 25);
+            // No game-over text drawn here: the .game-overlay element covers the
+            // whole bezel with the score entry form, so anything painted underneath
+            // it would never be seen.
         };
 
         const keyDown = (e: KeyboardEvent) => {
-            if (['ArrowLeft', 'ArrowRight'].includes(e.key)) e.preventDefault();
+            const target = e.target as HTMLElement | null;
+            if (target && (target.tagName === 'INPUT' || target.tagName === 'TEXTAREA')) return;
+            if (!['ArrowLeft', 'ArrowRight'].includes(e.key)) return;
+            e.preventDefault();
+            // Reaching for the controls is itself a "start", same as Snake.
+            if (!started) {
+                setStarted(true);
+                return;
+            }
             keysRef.current[e.key] = true;
         };
-        const keyUp = (e: KeyboardEvent) => {
-            keysRef.current[e.key] = false;
-        };
+        const keyUp = (e: KeyboardEvent) => { keysRef.current[e.key] = false; };
         // Switching tabs/windows swallows the keyup, which would leave the car steering.
         const releaseAll = () => { keysRef.current = {}; };
 
         window.addEventListener('keydown', keyDown);
         window.addEventListener('keyup', keyUp);
         window.addEventListener('blur', releaseAll);
-        loop();
+
+        // Paint the road and the parked car once so the start screen sits over a real
+        // board instead of an empty bezel, then only run the loop once started.
+        render();
+        if (started) runFixedStep(update, render, rafRef);
 
         return () => {
             if (rafRef.current !== null) cancelAnimationFrame(rafRef.current);
@@ -506,57 +642,115 @@ const TrafficGame: React.FC = () => {
             window.removeEventListener('keyup', keyUp);
             window.removeEventListener('blur', releaseAll);
         };
-    }, [runId]);
+    }, [runId, started]);
 
-    /* Touch left/right handlers for mobile */
-    const handleTouchLeft = () => { keysRef.current.ArrowLeft = true; };
-    const handleTouchLeftEnd = () => { keysRef.current.ArrowLeft = false; };
-    const handleTouchRight = () => { keysRef.current.ArrowRight = true; };
-    const handleTouchRightEnd = () => { keysRef.current.ArrowRight = false; };
+    /* Reset lives here rather than in the effect: clearing state inside the effect
+       body triggers a second render every run and React lints against it. */
+    const restart = () => {
+        setScore(0);
+        setLevel(1);
+        setGameOver(false);
+        setStarted(true);
+        setRunId((id) => id + 1);
+    };
+
+    const press = (key: string, down: boolean) => () => { keysRef.current[key] = down; };
 
     return (
         <>
             <div className="games-header">
-                <div className="games-score">TRAFFIC</div>
-                <div className="games-score muted">ARROWS</div>
+                <div className="games-score">SCORE: {score}</div>
+                <div className="games-score muted">HI: {highScore}</div>
             </div>
             <div className="games-screen-bezel">
                 <canvas ref={canvasRef} className="arcade-canvas" width={320} height={480} />
+
+                {!started && !gameOver && (
+                    <div className="game-overlay">
+                        <div className="game-title">TRAFFICRACER.EXE</div>
+                        <button className="btn game-btn" onClick={() => setStarted(true)}>START GAME</button>
+                        <div className="game-instructions">
+                            Left and right arrows<br />Dodge the traffic
+                        </div>
+                    </div>
+                )}
+
+                {gameOver && (
+                    <div className="game-overlay">
+                        <div className="game-over-text">GAME OVER</div>
+                        <div className="game-score-final">Score: {score} · Level {level}</div>
+                        <ScoreEntry game="traffic" score={score} onSaved={refresh} />
+                        <button className="btn game-btn" onClick={restart}>TRY AGAIN</button>
+                    </div>
+                )}
             </div>
             {/* Touch left/right for mobile */}
             <div className="touch-lr-controls">
                 <button
                     className="touch-lr-btn"
-                    onTouchStart={(e) => { e.preventDefault(); handleTouchLeft(); }}
-                    onTouchEnd={handleTouchLeftEnd}
-                    onTouchCancel={handleTouchLeftEnd}
-                    onMouseDown={handleTouchLeft}
-                    onMouseUp={handleTouchLeftEnd}
-                    onMouseLeave={handleTouchLeftEnd}
+                    onTouchStart={(e) => { e.preventDefault(); press('ArrowLeft', true)(); }}
+                    onTouchEnd={press('ArrowLeft', false)}
+                    onTouchCancel={press('ArrowLeft', false)}
+                    onMouseDown={press('ArrowLeft', true)}
+                    onMouseUp={press('ArrowLeft', false)}
+                    onMouseLeave={press('ArrowLeft', false)}
                     aria-label="Steer left"
                 >◀</button>
                 <button
                     className="touch-lr-btn"
-                    onTouchStart={(e) => { e.preventDefault(); handleTouchRight(); }}
-                    onTouchEnd={handleTouchRightEnd}
-                    onTouchCancel={handleTouchRightEnd}
-                    onMouseDown={handleTouchRight}
-                    onMouseUp={handleTouchRightEnd}
-                    onMouseLeave={handleTouchRightEnd}
+                    onTouchStart={(e) => { e.preventDefault(); press('ArrowRight', true)(); }}
+                    onTouchEnd={press('ArrowRight', false)}
+                    onTouchCancel={press('ArrowRight', false)}
+                    onMouseDown={press('ArrowRight', true)}
+                    onMouseUp={press('ArrowRight', false)}
+                    onMouseLeave={press('ArrowRight', false)}
                     aria-label="Steer right"
                 >▶</button>
             </div>
             <div className="games-controls">
-                <button className="btn" onClick={() => setRunId(id => id + 1)}>Restart</button>
+                <button className="btn" onClick={restart}>Restart</button>
             </div>
+
+            <Leaderboard boardState={boardState} scores={scores} />
         </>
     );
 };
+
+/* ─── Flappy ───
+   Deliberately does NOT escalate. The original Flappy Bird holds gravity, pipe
+   speed, spacing and gap constant for the entire run; the difficulty is endurance,
+   not acceleration, and adding a ramp here would make it a different game. It is
+   already endless, so a good player simply keeps going.
+
+   The constants below are the ones that were already here, and they check out
+   against documented reconstructions of the original once converted to per-second:
+   gravity 0.32px/step² at 60Hz is ~1150px/s², the flap impulse is ~-408px/s, pipes
+   travel ~120px/s and spawn every 104 steps for ~208px of spacing, gap 142px. All
+   sit inside the usual reported ranges. What was wrong was never the numbers, it
+   was that "per step" meant "per animation frame" and so ran at double speed on a
+   120Hz display. */
+const FLAP_IMPULSE = -6.8;
+const FLAP_GRAVITY = 0.32;
+const PIPE_SPEED = 2;
+const PIPE_EVERY_STEPS = 104;
+const PIPE_GAP = 142;
+const PIPE_W = 42;
+const GROUND_Y = 438;
 
 const FlappyGame: React.FC = () => {
     const canvasRef = useRef<HTMLCanvasElement>(null);
     const rafRef = useRef<number | null>(null);
     const [runId, setRunId] = useState(0);
+    const [score, setScore] = useState(0);
+    const [gameOver, setGameOver] = useState(false);
+    /* Matters more here than anywhere else: without it the bird is already falling
+       before the player has looked at the screen. */
+    const [started, setStarted] = useState(false);
+    const [highScore, setHighScore] = useState(() => {
+        const saved = Number.parseInt(readStorage('local', 'flappyHighScore') ?? '', 10);
+        return Number.isFinite(saved) ? saved : 0;
+    });
+    const { scores, boardState, refresh } = useLeaderboard('flappy');
 
     useEffect(() => {
         const canvas = canvasRef.current;
@@ -565,49 +759,71 @@ const FlappyGame: React.FC = () => {
 
         const bird = { x: 72, y: 220, r: 12, v: 0 };
         const pipes: Array<{ x: number; gapY: number; scored: boolean }> = [];
-        let score = 0;
+        let points = 0;
         let over = false;
-        let frame = 0;
+        let steps = 0;
 
-        const flap = (e?: KeyboardEvent | MouseEvent | TouchEvent) => {
-            if (e instanceof KeyboardEvent && e.key !== ' ') return;
-            if (e) e.preventDefault();
+        const flap = () => {
             if (over) return;
-            bird.v = -6.8;
+            bird.v = FLAP_IMPULSE;
         };
 
-        const draw = () => {
-            ctx.fillStyle = '#8fd3ff';
-            ctx.fillRect(0, 0, 320, 480);
-            ctx.fillStyle = '#0b6b45';
-            ctx.fillRect(0, 438, 320, 42);
-
-            bird.v += 0.32;
+        const update = () => {
+            bird.v += FLAP_GRAVITY;
             bird.y += bird.v;
 
-            if (frame % 104 === 0) {
+            if (steps % PIPE_EVERY_STEPS === 0) {
                 pipes.push({ x: 340, gapY: 120 + Math.random() * 180, scored: false });
             }
+            steps += 1;
 
-            ctx.fillStyle = '#1fb85a';
-            for (let i = pipes.length - 1; i >= 0; i--) {
+            for (let i = pipes.length - 1; i >= 0; i -= 1) {
                 const pipe = pipes[i];
-                pipe.x -= 2;
-                const gap = 142;
-                ctx.fillRect(pipe.x, 0, 42, pipe.gapY - gap / 2);
-                ctx.fillRect(pipe.x, pipe.gapY + gap / 2, 42, 438 - (pipe.gapY + gap / 2));
+                pipe.x -= PIPE_SPEED;
 
-                const inX = bird.x + bird.r > pipe.x && bird.x - bird.r < pipe.x + 42;
-                const inPipe = bird.y - bird.r < pipe.gapY - gap / 2 || bird.y + bird.r > pipe.gapY + gap / 2;
+                const inX = bird.x + bird.r > pipe.x && bird.x - bird.r < pipe.x + PIPE_W;
+                const inPipe =
+                    bird.y - bird.r < pipe.gapY - PIPE_GAP / 2 ||
+                    bird.y + bird.r > pipe.gapY + PIPE_GAP / 2;
                 if (inX && inPipe) over = true;
-                if (!pipe.scored && pipe.x + 42 < bird.x) {
+
+                if (!pipe.scored && pipe.x + PIPE_W < bird.x) {
                     pipe.scored = true;
-                    score++;
+                    points += 1;
                 }
                 if (pipe.x < -50) pipes.splice(i, 1);
             }
 
-            if (bird.y + bird.r > 438 || bird.y - bird.r < 0) over = true;
+            if (bird.y + bird.r > GROUND_Y || bird.y - bird.r < 0) over = true;
+
+            if (over) {
+                setScore(points);
+                setGameOver(true);
+                if (points > (Number.parseInt(readStorage('local', 'flappyHighScore') ?? '0', 10) || 0)) {
+                    writeStorage('local', 'flappyHighScore', String(points));
+                    setHighScore(points);
+                }
+                return false;
+            }
+            return true;
+        };
+
+        const render = () => {
+            ctx.fillStyle = '#8fd3ff';
+            ctx.fillRect(0, 0, 320, 480);
+            ctx.fillStyle = '#0b6b45';
+            ctx.fillRect(0, GROUND_Y, 320, 480 - GROUND_Y);
+
+            ctx.fillStyle = '#1fb85a';
+            for (const pipe of pipes) {
+                ctx.fillRect(pipe.x, 0, PIPE_W, pipe.gapY - PIPE_GAP / 2);
+                ctx.fillRect(
+                    pipe.x,
+                    pipe.gapY + PIPE_GAP / 2,
+                    PIPE_W,
+                    GROUND_Y - (pipe.gapY + PIPE_GAP / 2)
+                );
+            }
 
             ctx.fillStyle = '#ffd54a';
             ctx.beginPath();
@@ -618,47 +834,83 @@ const FlappyGame: React.FC = () => {
 
             ctx.fillStyle = '#fff';
             ctx.font = '18px sans-serif';
-            ctx.fillText(`Score: ${score}`, 12, 28);
-
-            if (over) {
-                ctx.fillStyle = 'rgba(0,0,0,.7)';
-                ctx.fillRect(0, 0, 320, 480);
-                ctx.fillStyle = '#fff';
-                ctx.font = '24px sans-serif';
-                ctx.fillText('Game Over', 95, 220);
-                ctx.fillText(`Score: ${score}`, 105, 255);
-                return;
-            }
-
-            frame++;
-            rafRef.current = requestAnimationFrame(draw);
+            ctx.fillText(`Score: ${points}`, 12, 28);
+            // See TrafficGame: the HTML overlay covers this, so no game-over paint.
         };
 
-        window.addEventListener('keydown', flap);
-        canvas.addEventListener('click', flap);
-        canvas.addEventListener('touchstart', flap, { passive: false });
-        draw();
+        const onKey = (e: KeyboardEvent) => {
+            if (e.key !== ' ') return;
+            const target = e.target as HTMLElement | null;
+            if (target && (target.tagName === 'INPUT' || target.tagName === 'TEXTAREA')) return;
+            e.preventDefault();
+            // First press starts the run; it deliberately does not also flap, so the
+            // bird begins from a known hover rather than already climbing.
+            if (!started) {
+                setStarted(true);
+                return;
+            }
+            flap();
+        };
+        const onPointer = (e: Event) => { e.preventDefault(); flap(); };
+
+        window.addEventListener('keydown', onKey);
+        canvas.addEventListener('mousedown', onPointer);
+        canvas.addEventListener('touchstart', onPointer, { passive: false });
+
+        // Draw the sky, ground and a hovering bird once so the start screen has a
+        // board behind it, then hold until the player actually starts.
+        render();
+        if (started) runFixedStep(update, render, rafRef);
 
         return () => {
             if (rafRef.current !== null) cancelAnimationFrame(rafRef.current);
-            window.removeEventListener('keydown', flap);
-            canvas.removeEventListener('click', flap);
-            canvas.removeEventListener('touchstart', flap);
+            window.removeEventListener('keydown', onKey);
+            canvas.removeEventListener('mousedown', onPointer);
+            canvas.removeEventListener('touchstart', onPointer);
         };
-    }, [runId]);
+    }, [runId, started]);
+
+    /* See TrafficGame: resetting in the effect body would double-render each run. */
+    const restart = () => {
+        setScore(0);
+        setGameOver(false);
+        setStarted(true);
+        setRunId((id) => id + 1);
+    };
 
     return (
         <>
             <div className="games-header">
-                <div className="games-score">FLAPPY</div>
-                <div className="games-score muted">SPACE / TAP</div>
+                <div className="games-score">SCORE: {score}</div>
+                <div className="games-score muted">HI: {highScore}</div>
             </div>
             <div className="games-screen-bezel">
                 <canvas ref={canvasRef} className="arcade-canvas" width={320} height={480} />
+
+                {!started && !gameOver && (
+                    <div className="game-overlay">
+                        <div className="game-title">FLAPPY.EXE</div>
+                        <button className="btn game-btn" onClick={() => setStarted(true)}>START GAME</button>
+                        <div className="game-instructions">
+                            Space or click to flap<br />Mind the pipes
+                        </div>
+                    </div>
+                )}
+
+                {gameOver && (
+                    <div className="game-overlay">
+                        <div className="game-over-text">GAME OVER</div>
+                        <div className="game-score-final">Score: {score}</div>
+                        <ScoreEntry game="flappy" score={score} onSaved={refresh} />
+                        <button className="btn game-btn" onClick={restart}>TRY AGAIN</button>
+                    </div>
+                )}
             </div>
             <div className="games-controls">
-                <button className="btn" onClick={() => setRunId(id => id + 1)}>Restart</button>
+                <button className="btn" onClick={restart}>Restart</button>
             </div>
+
+            <Leaderboard boardState={boardState} scores={scores} />
         </>
     );
 };

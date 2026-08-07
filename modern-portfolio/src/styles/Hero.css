@@ -4,7 +4,9 @@
     min-height: 100dvh;
     background-color: #008080;
     display: grid;
-    grid-template-columns: 88px minmax(0, 1fr);
+    /* Derived from the tile width so the column can never be narrower than the
+       icons sitting in it, at any of the --icon-size breakpoints. */
+    grid-template-columns: calc(var(--icon-size) + 8px) minmax(0, 1fr);
     align-items: center;
     justify-content: center;
     gap: 14px;
@@ -93,8 +95,17 @@
     color: #ffffff;
     text-shadow: 1px 1px 2px #000;
     line-height: 1.2;
-    max-width: 72px;
-    word-break: break-word;
+    /* Fill the tile rather than carry a fixed 72px cap. The cap was dead anyway:
+       the tile is --icon-size wide minus 8px of padding, so the label never had
+       72px to work with in the first place.
+
+       word-break is normal so a single-word label can no longer be split down the
+       middle. "Interview.exe" has no space in it, and break-word was happily
+       cutting it into "Interview.e" + "xe". Labels with a real space, like
+       "Recycle Bin", still wrap at the space, which is what Win98 did too. */
+    max-width: 100%;
+    word-break: normal;
+    overflow-wrap: normal;
 }
 
 .hero-win {
@@ -206,7 +217,10 @@
 
 .hero-content-grid {
     display: grid;
-    grid-template-columns: minmax(180px, 220px) minmax(0, 1fr);
+    /* Trimmed from 180-220px. The profile column only holds a square photo, a name
+       and three buttons, so the width it was reserving went mostly to whitespace;
+       the text panel next to it makes better use of it. */
+    grid-template-columns: minmax(150px, 186px) minmax(0, 1fr);
     gap: 10px;
     align-items: start;
 }
@@ -224,7 +238,7 @@
 
 .hero-photo-frame {
     width: 100%;
-    max-width: 150px;
+    max-width: 132px;
     aspect-ratio: 1 / 1;
     background: #ffffff;
     padding: 4px;
@@ -279,28 +293,6 @@
     font-size: 12px;
     color: #000;
     line-height: 1.5;
-}
-
-.hero-action-row {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 8px;
-}
-
-.hero-action-btn {
-    min-height: 30px;
-    padding: 5px 10px;
-    background: var(--win98-gray);
-    box-shadow: var(--win98-raised-border);
-    border: none;
-    font-family: 'MS Sans Serif', sans-serif;
-    font-size: 11px;
-    cursor: pointer;
-}
-
-.hero-action-btn:active {
-    box-shadow: var(--win98-sunken-border);
-    padding: 7px 11px 5px 13px;
 }
 
 .hero-quick-facts {
@@ -358,9 +350,14 @@
     gap: 6px;
     font-size: 12px;
     line-height: 1.5;
-    /* `bold` rather than 600: MS Sans Serif ships regular and bold only, so 600 was
-       being synthesised. This is the same weight the rest of the site uses. */
-    font-weight: bold;
+    /* Between regular and bold, which the font itself cannot do. MS Sans Serif and
+       the Tahoma fallback both ship 400 and 700 only, so `font-weight: 600` gets
+       resolved straight back up to 700 and looks identical to bold. A hairline
+       stroke over the regular weight is the one way to actually land in between.
+       If a browser ignores -webkit-text-stroke it simply renders regular, which is
+       a soft failure rather than a broken one. */
+    font-weight: normal;
+    -webkit-text-stroke: 0.3px currentColor;
     text-transform: uppercase;
     letter-spacing: 0.3px;
     color: #000000;
@@ -431,7 +428,11 @@
     }
 
     .desktop-icon {
-        width: 72px;
+        /* Also has to clear the longest label. Now that labels no longer break
+           mid-word, a tile too narrow for its text overflows instead of wrapping,
+           and these sit in a wrapping row where that would collide with the
+           neighbouring tile. */
+        width: 88px;
         background: rgba(255, 255, 255, 0.08);
     }
 
@@ -475,13 +476,15 @@
     }
 
     .desktop-icon {
-        width: 60px;
+        width: 76px;
         padding: 4px 2px;
     }
 
     .desktop-icon-label {
+        /* max-width dropped: the base rule's 100% already fills the tile, and a
+           fixed 60px cap here would squeeze the label back below its own text
+           width and undo the wrap fix at this breakpoint. */
         font-size: 9px;
-        max-width: 60px;
     }
 
     .win98-menubar {
@@ -512,16 +515,6 @@
         flex-direction: column;
         align-items: flex-start;
     }
-
-    .hero-action-row {
-        display: grid;
-        grid-template-columns: 1fr;
-    }
-
-    .hero-action-btn {
-        width: 100%;
-        text-align: left;
-    }
 }
 
 @media (max-width: 360px) {
@@ -531,150 +524,5 @@
 
     .hero-body {
         padding: 12px 10px;
-    }
-}
-
-/* ─── Signal Monitor highlight (hero) ─── */
-.hero-signal-window {
-    border: 1px solid #000080;
-}
-
-.hero-signal-window .hero-panel-header {
-    background: var(--win98-title-grad);
-    color: #ffffff;
-}
-
-.hero-signal-status {
-    display: inline-flex;
-    align-items: center;
-    gap: 5px;
-    background: #000000;
-    color: #00ff66;
-    font-family: 'MS Sans Serif', sans-serif;
-    font-size: 10px;
-    font-weight: bold;
-    letter-spacing: 1px;
-    padding: 2px 7px;
-    box-shadow: var(--win98-sunken-border);
-}
-
-.hero-signal-status.stale {
-    color: #ffcc33;
-}
-
-.hero-signal-status.offline {
-    color: #ff6666;
-}
-
-.hero-signal-status.syncing {
-    color: #b0b0b0;
-}
-
-.hero-signal-led {
-    width: 7px;
-    height: 7px;
-    border-radius: 50%;
-    background: currentColor;
-    box-shadow: 0 0 5px currentColor;
-}
-
-.hero-signal-status.live .hero-signal-led {
-    animation: hero-signal-pulse 1.6s ease-in-out infinite;
-}
-
-@keyframes hero-signal-pulse {
-    0%, 100% { opacity: 1; }
-    50% { opacity: 0.25; }
-}
-
-.hero-signal-body {
-    padding: 8px;
-}
-
-/* Lead copy and the button share a row so the button costs no extra height. */
-.hero-signal-lead-row {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    margin-bottom: 7px;
-}
-
-.hero-signal-lead {
-    flex: 1 1 auto;
-    min-width: 0;
-    font-size: 11px;
-    line-height: 1.45;
-    color: #202020;
-}
-
-.hero-signal-stats {
-    display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 5px;
-    margin-bottom: 7px;
-}
-
-.hero-signal-stat {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 2px;
-    background: #ffffff;
-    box-shadow: var(--win98-sunken-border);
-    padding: 5px 4px;
-    text-align: center;
-}
-
-.hero-signal-stat-value {
-    font-family: 'MS Sans Serif', sans-serif;
-    font-size: 16px;
-    font-weight: bold;
-    color: #000080;
-    line-height: 1.1;
-}
-
-.hero-signal-stat-wide .hero-signal-stat-value {
-    font-size: 13px;
-}
-
-.hero-signal-stat-label {
-    font-size: 9px;
-    color: #606060;
-    text-transform: uppercase;
-    letter-spacing: 0.3px;
-}
-
-.hero-signal-btn {
-    flex: 0 0 auto;
-    white-space: nowrap;
-}
-
-@media (prefers-reduced-motion: reduce) {
-    .hero-signal-status.live .hero-signal-led {
-        animation: none;
-    }
-}
-
-@media (max-width: 900px) {
-    .hero-signal-stat-value {
-        font-size: 14px;
-    }
-
-    .hero-signal-stat-wide .hero-signal-stat-value {
-        font-size: 12px;
-    }
-}
-
-@media (max-width: 900px) {
-    /* Side by side gets too tight for the button's label on a narrow screen. */
-    .hero-signal-lead-row {
-        flex-direction: column;
-        align-items: stretch;
-        gap: 7px;
-    }
-
-    .hero-signal-btn {
-        width: 100%;
     }
 }

@@ -29,7 +29,7 @@ export const projects: Project[] = [
 
   {
     title: "3D Shape Classification (CNN)",
-    description: "Developed a custom Convolutional Neural Network (CNN) architecture using PyTorch to solve complex 3D geometric classification challenges. By implementing advanced preprocessing techniques, including image augmentation and precise normalization, the model achieved a remarkable validation accuracy of 99.77%. This project showcases deep expertise in computer vision and deep learning frameworks.",
+    description: "A CNN built from scratch in PyTorch that classifies six to eight geometric shapes seen from a lot of different angles. I wrote the whole pipeline myself rather than calling a library end to end: preprocessing, augmentation, normalisation, the train/validation split, GPU training, evaluation, and saving weights with state_dict so runs were reproducible. Accuracy came out very high, which says more about the dataset being clean and well separated than about the model being clever. The point was understanding every step.",
     image: "3d_cnn_retro.png",
     link: "https://github.com/litaPhsinaM/IMAGE-CLASSIFICATION-ON-3D-GEOMETRIC-SHAPES-USING-CNN-MODEL-WITH-PYTORCH/blob/main/cnn_3d_objects.ipynb",
     tags: ["Deep Learning", "PyTorch", "CNN", "Computer Vision"],

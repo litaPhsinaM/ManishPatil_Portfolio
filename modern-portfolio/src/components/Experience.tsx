@@ -18,12 +18,14 @@ const experiences: ExperienceEntry[] = [
         title: 'IT Specialist',
         company: 'CISE - California State University, Dominguez Hills',
         icon: '🖥️',
-        body: `IT Infrastructure & Systems Administration: Manage end-to-end IT operations for 4,000-5,000+ macOS devices, with Windows support. Oversee provisioning, lifecycle management, onboarding/offboarding, DNS, VPN, WiFi, and Google Workspace Admin. JAMF-certified, leading MDM deployment, policy enforcement, and security compliance.
-        \n● Web & Digital Systems Management: Maintain large-scale departmental websites (CM1, WordPress), ensuring ADA compliance, performance optimization, and consistent branding.
-        \n● Full-Stack Development (Internal Tools): Build a custom IT ticketing and asset/inventory system using React, Node.js/Express, and PostgreSQL, with secure REST APIs, JWT auth, RBAC, audit logs, and automated workflows.
-        \n● IT Operations & Process Optimization: Lead event IT setup, infrastructure readiness, and support workflows for device tracking, onboarding/offboarding, and helpdesk operations.
-        \n● Media Production & Technical Leadership: Produce photo/video content using Adobe Premiere Pro, Photoshop, and Illustrator. Lead and mentor IT student staff across daily technical operations.`,
-        skills: ['JAMF', 'Google Workspace Admin', 'React 19', 'Node.js', 'PostgreSQL', 'REST APIs', 'JWT/RBAC', 'CM1', 'WordPress', 'ADA Compliance', 'Asset Management', 'Helpdesk Systems', 'Adobe Photoshop', 'Adobe Premiere Pro', 'AV Support'],
+        body: `● Manage the lifecycle and inventory of approximately 3,500 devices, including asset tracking, workstation deployment, equipment recovery, and preparation for reuse across CISE programs and partner school sites.
+        \n● Administer macOS and iOS endpoints through Jamf and Apple School Manager by troubleshooting devices, creating policies and configuration profiles, provisioning accounts, and preparing deployments for different educational programs.
+        \n● Support Windows, macOS, WiFi, DNS, and VPN issues while coordinating with the campus security team on network access and wireless scheduling requirements.
+        \n● Manage Google Workspace onboarding and offboarding, including account creation, access removal, file ownership transfers, workstation setup, and returning assigned equipment to inventory.
+        \n● Developed a React and Node.js technology checkout platform with REST APIs, JWT authentication, and role based access control. The guided workflow recommends equipment and simplifies requests across five to six programs and departments.
+        \n● Rebuilt the CISE website in CM1 to meet campus accessibility and compliance requirements, created pages for individual programs, and maintain five to six Fabrication Lab pages in WordPress.
+        \n● Produce and edit photography and video content for CISE and partner school districts using Adobe creative tools. Mentored an undergraduate intern and supported three IT student assistants with technical projects and daily troubleshooting.`,
+        skills: ['Jamf', 'Mobile Device Management', 'Apple School Manager', 'Google Workspace Admin', 'macOS', 'Windows', 'DNS', 'VPN', 'WiFi', 'React', 'Node.js', 'REST APIs', 'JWT', 'RBAC', 'WordPress', 'CM1', 'ADA Compliance', 'Asset Management', 'Adobe Premiere Pro', 'Adobe Illustrator'],
     },
     {
         number: '02',
@@ -31,12 +33,12 @@ const experiences: ExperienceEntry[] = [
         title: 'Software Developer Intern',
         company: 'CaspianLogic, Cupertino, CA',
         icon: '💻',
-        body: `Contributed to production-grade, client-facing software solutions for business process re-engineering and IT consulting clients, supporting delivery across multiple concurrent project engagements for a full-stack web development consulting firm.
-        \n● MERN Stack Development: Built and maintained full-stack features using React, Redux, Node.js, Express, MongoDB, and RESTful services, shipping production-ready functionality across several client releases.
-        \n● Frontend Engineering: Developed 10+ responsive, reusable UI components and form-driven workflows, connecting client-side state with Redux to cut repeated development effort across projects.
-        \n● Backend & API Integration: Supported RESTful Express API development and MongoDB data modeling, including endpoint integration, input validation, and debugging across full-stack application flows.
-        \n● QA & Delivery: Strengthened testing procedures and production-readiness checks, helping reduce post-release bugs and reinforcing on-time delivery for client handoffs.`,
-        skills: ['MERN Stack', 'React', 'Redux', 'Node.js', 'Express', 'MongoDB', 'REST APIs', 'JavaScript', 'Responsive UI', 'API Integration', 'Testing', 'Production Web Apps'],
+        body: `● Contributed primarily to frontend development for project based client applications using React and JavaScript. Translated business and interface requirements into responsive pages, reusable components, and interactive application workflows.
+        \n● Built React components for forms, navigation, data presentation, and user interactions. Used Redux to manage shared application state and maintain predictable data flow between components.
+        \n● Integrated frontend interfaces with REST APIs, handling asynchronous requests, JSON responses, form submissions, loading states, validation messages, and application errors.
+        \n● Supported full stack development using Node.js, Express, and MongoDB. Assisted with API routes, request handling, database operations, and connecting backend services to React interfaces.
+        \n● Tested and debugged application functionality across the frontend and backend, resolving layout problems, state management issues, API integration failures, and unexpected user input before client delivery.`,
+        skills: ['React', 'Redux', 'JavaScript', 'Node.js', 'Express', 'MongoDB', 'REST APIs', 'HTML', 'CSS', 'Git', 'Responsive Web Development', 'Application Testing'],
     },
     {
         number: '03',
@@ -44,12 +46,12 @@ const experiences: ExperienceEntry[] = [
         title: 'Data Engineering Intern',
         company: 'Yali Inc. (Stealth Startup), Chennai, IN',
         icon: '📊',
-        body: `Engineered scalable data ingestion and processing pipelines for a stealth startup's early data infrastructure, cutting manual data prep time and enabling faster, more reliable reporting.
-        \n● ETL Automation: Built and scheduled automated Apache Airflow DAGs to ingest data from multiple third-party and internal sources daily, replacing manual imports and cutting pipeline turnaround time by roughly 30%.
-        \n● Big Data Processing: Used PySpark and Pandas to clean, transform, and validate large-scale datasets (100K+ records), improving downstream data quality and reducing manual QA effort.
-        \n● Database Optimization: Managed PostgreSQL and MongoDB instances, implementing indexing strategies that measurably sped up the queries used most by the analytics team.
-        \n● Web Extraction: Built Selenium and BeautifulSoup scrapers to extract and structure market intelligence data from external sources, feeding it directly into the ingestion pipeline.`,
-        skills: ['Python', 'Apache Airflow', 'PySpark', 'Pandas', 'PostgreSQL', 'MongoDB', 'BeautifulSoup', 'Selenium'],
+        body: `● Developed Python web scraping workflows with Beautiful Soup to collect banking and financial information from online sources. Parsed HTML content, extracted relevant fields, and converted unstructured web data into consistent formats for further processing.
+        \n● Used Python and Pandas to clean, transform, and standardize collected data. Addressed missing values, duplicate records, inconsistent field names, formatting differences, and incorrect data types before the information entered downstream pipelines.
+        \n● Prepared and annotated banking datasets used to support machine learning model training. Applied consistent labels, categories, and formatting rules to improve the quality and usability of the training data.
+        \n● Created reusable Python scripts for data ingestion and preprocessing, establishing a repeatable workflow for moving data from raw source files into structured and validated datasets.
+        \n● Performed data quality checks throughout the pipeline, investigated unexpected outputs, and corrected extraction or transformation issues before delivering processed data for analysis and model development.`,
+        skills: ['Python', 'Pandas', 'Beautiful Soup', 'Web Scraping', 'Data Annotation', 'Data Cleaning', 'Data Transformation', 'ETL Pipelines', 'ML Data Preparation'],
     },
 ];
 
@@ -60,7 +62,13 @@ const experiences: ExperienceEntry[] = [
 // pointer-events:auto. A plain CSS transition crossfades between whichever two cards
 // change state. There is no per-frame multi-value math and no z-index competition —
 // the two failure modes from earlier attempts — so this can't reintroduce that bug.
-const DWELL_VH_PER_CARD = 100;
+// Scroll distance each card holds the pin for, so it also sets how often the
+// crossfade fires. Raised from 100 to 140 to match the slower 1.25s transition in
+// Experience.css: at 100vh a normal trackpad flick could cross a boundary before
+// the previous fade had finished, stacking one transition on top of the next and
+// reading as a stutter rather than a glide. More runway per card also means fewer
+// switches over the same gesture, which is most of the "slow motion" feel.
+const DWELL_VH_PER_CARD = 140;
 
 const Experience: React.FC = () => {
     const sectionRef = useRef<HTMLElement>(null);

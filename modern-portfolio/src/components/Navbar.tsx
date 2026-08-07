@@ -91,6 +91,10 @@ const Navbar: React.FC = () => {
                             <span className="menu-label">Signals</span>
                         </div>
                         <div className="menu-divider" />
+                        <NavLink to="/interview" className="menu-item" onClick={() => setIsStartOpen(false)}>
+                            <span className="menu-icon">🤖</span>
+                            <span className="menu-label">Interview.exe</span>
+                        </NavLink>
                         <NavLink to="/resume" className="menu-item" onClick={() => setIsStartOpen(false)}>
                             <span className="menu-icon">📄</span>
                             <span className="menu-label">Resume.pdf</span>
@@ -126,14 +130,17 @@ const Navbar: React.FC = () => {
                     <span style={{ marginRight: '4px' }}>ℹ️</span> About
                 </button>
                 <button className="taskbar-app-btn" onClick={() => scrollToSection('experience')}>
-                    <span style={{ marginRight: '4px' }}>📁</span> Exp
+                    <span style={{ marginRight: '4px' }}>📁</span> Experience
                 </button>
                 <button className="taskbar-app-btn" onClick={() => scrollToSection('projects')}>
-                    <span style={{ marginRight: '4px' }}>💾</span> Proj
+                    <span style={{ marginRight: '4px' }}>💾</span> Projects
                 </button>
                 <button className="taskbar-app-btn" onClick={() => scrollToSection('signals')}>
                     <span style={{ marginRight: '4px' }}>📡</span> Signals
                 </button>
+                <NavLink to="/interview" className="taskbar-app-btn">
+                    <span style={{ marginRight: '4px' }}>🤖</span> Interview.exe
+                </NavLink>
                 <NavLink to="/resume" className="taskbar-app-btn">
                     <span style={{ marginRight: '4px' }}>📄</span> Resume
                 </NavLink>

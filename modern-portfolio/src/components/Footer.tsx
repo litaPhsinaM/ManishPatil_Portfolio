@@ -14,7 +14,10 @@ const winVariant = {
 };
 
 const Footer: React.FC = () => {
-    const resumeUrl = `${import.meta.env.BASE_URL}Manish%20Patil.pdf`;
+    // Must match the filename in public/ exactly. The previous value pointed at
+    // "Manish Patil.pdf", which was replaced by this file and no longer ships, so the
+    // preview and both download buttons would have 404'd on the next deploy.
+    const resumeUrl = `${import.meta.env.BASE_URL}Manish%20Patil%20Resume.pdf`;
 
     return (
         <footer id="footer" className="footer-section">

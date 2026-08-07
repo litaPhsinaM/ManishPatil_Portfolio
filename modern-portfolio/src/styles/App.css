@@ -44,7 +44,10 @@
 
     /* ─── Responsive sizing tokens ─── */
     --taskbar-h: 32px;
-    --icon-size: 64px;
+    /* Wide enough for the longest desktop label ("Interview.exe", roughly 75px at
+       11px) plus the tile's 8px of horizontal padding. At the old 64px the label
+       had 56px to live in and wrapped mid-word. */
+    --icon-size: 96px;
     --icon-font: 32px;
     --icon-label: 11px;
     --window-pad: 3px;
@@ -556,6 +559,44 @@ button,
     .btn-secondary {
         min-height: 36px;
         padding: 6px 14px;
+    }
+}
+
+/* ─── Large displays (iMac, 1440p and up) ───
+   The shell used to grow to 1480px and stop there. On a 27" panel that is a
+   physically ~14 inch line of 11-12px text: too long to track across, and the
+   type looks undersized against the screen it is sitting on. Past 1500px the
+   shell stops chasing the viewport and the interface steps up instead, so the
+   windows keep roughly the proportions they have on a laptop rather than
+   stretching into a wide, thin strip.
+
+   Only the shell and the desktop-icon tokens move here. Per-component type is
+   scaled in each component's own stylesheet, next to the sizes it overrides. */
+@media (min-width: 1500px) {
+    :root {
+        --app-shell-width: min(82vw, 1320px);
+        --app-section-pad: 60px;
+        --icon-size: 104px;
+        --icon-font: 36px;
+        --icon-label: 12px;
+    }
+
+    body {
+        font-size: 12px;
+    }
+}
+
+@media (min-width: 2000px) {
+    :root {
+        --app-shell-width: min(70vw, 1440px);
+        --app-section-pad: 76px;
+        --icon-size: 112px;
+        --icon-font: 42px;
+        --icon-label: 13px;
+    }
+
+    body {
+        font-size: 13px;
     }
 }
 
