@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-06T13:03:26.288Z",
+  "generatedAt": "2026-08-07T11:57:53.191Z",
   "feeds": {
     "security": [
       {
@@ -8,7 +8,7 @@
         "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-34486",
         "source": "CISA KEV",
         "date": "2026-08-04",
-        "summary": "Apache Tomcat contains a missing encryption of sensitive data vulnerability that allows the bypass of the EncryptInterceptor.",
+        "summary": "Apache Tomcat contains a missing encryption of sensitive data vulnerability that allows the bypass of the EncryptInterceptor. This vulnerability can be chained with CVE‑2025‑24813.",
         "meta": [
           "Web stack",
           "Apache",
@@ -201,385 +201,385 @@
     ],
     "ai": [
       {
-        "id": "hn-49192219",
-        "title": "Show HN: Wallfacer – A terminal session manager for Claude Code, and more",
-        "url": "https://github.com/pradipta/wallfacer",
+        "id": "hn-49204546",
+        "title": "New Orleans is testing Carbyne’s AI-powered Emergency Call Triage software",
+        "url": "https://www.shreveporttimes.com/story/news/local/louisiana/2026/07/28/is-new-orleans-using-ai-to-answer-911-calls-instead-of-human-dispatchers-impacts-emergencies-crime/91065014007/",
+        "source": "Hacker News",
+        "date": "2026-08-07",
+        "summary": "",
+        "meta": [
+          "62 points",
+          "94 comments"
+        ],
+        "discussion": "https://news.ycombinator.com/item?id=49204546",
+        "flag": null
+      },
+      {
+        "id": "http://arxiv.org/abs/2608.06377v1",
+        "title": "Learning When to Trust via Selective Context Preference Optimization",
+        "url": "http://arxiv.org/abs/2608.06377v1",
+        "source": "arXiv",
+        "date": "2026-08-06",
+        "summary": "Language models increasingly condition their answers on external signals, and a single misleading one can turn a correct answer wrong. The obvious remedy, training models to resist such signals, hides a failure mode: a model that ignores all context looks robust yet is useless when the context is worth trusting. We re…",
+        "meta": [
+          "Research",
+          "Xian Sun +6"
+        ],
+        "flag": null
+      },
+      {
+        "id": "http://arxiv.org/abs/2608.06366v1",
+        "title": "Tracing the Heart: An Evidence-Linked Pipeline for Heart-Failure Feature Engineering",
+        "url": "http://arxiv.org/abs/2608.06366v1",
+        "source": "arXiv",
+        "date": "2026-08-06",
+        "summary": "Electronic health record (EHR) feature engineering is a major bottleneck in clinical research and AI, accounting for 39-45% of data scientists' workload. This is especially pronounced in heart failure, which affects an estimated 6.7 million U.S. adults and requires integrating fragmented EHR data with disease-specific…",
+        "meta": [
+          "Research",
+          "Soorya Ram Shimgekar +12"
+        ],
+        "flag": null
+      },
+      {
+        "id": "http://arxiv.org/abs/2608.06364v1",
+        "title": "Investigating Artificial Intelligence Digital Sovereignty in Mobile Shopping Apps: A Case Study of Nigeria",
+        "url": "http://arxiv.org/abs/2608.06364v1",
+        "source": "arXiv",
+        "date": "2026-08-06",
+        "summary": "The use of e-commerce mobile applications is expanding in Nigeria, creating both opportunities and risks, including fraud and reduced user control over digital technologies, raising concerns about digital sovereignty. This research examines how Artificial Intelligence (AI) in Nigerian mobile applications affects digit…",
+        "meta": [
+          "Research",
+          "George Grispos +1"
+        ],
+        "flag": null
+      },
+      {
+        "id": "http://arxiv.org/abs/2608.06363v1",
+        "title": "An Optimal Agnostic PAC Algorithm",
+        "url": "http://arxiv.org/abs/2608.06363v1",
+        "source": "arXiv",
+        "date": "2026-08-06",
+        "summary": "Let $H\\subseteq\\{-1,+1\\}^X$ be a class of finite VC dimension $d\\ge1$. Writing $L$ for the binary risk and $L^*=\\min_{h\\in H}L(h)$, we construct a learner achieving the statistically optimal risk bound: from an i.i.d.\\ sample of size $n$, for every $0<δ\\le 1/2$, with probability at least $1-δ$, \\[ L(\\widehat h) \\le L^…",
+        "meta": [
+          "Research",
+          "Markus Engelund Mathiasen +2"
+        ],
+        "flag": null
+      },
+      {
+        "id": "http://arxiv.org/abs/2608.06362v1",
+        "title": "AV-AIVAT: 74x Cheaper Agent Evaluation with Certified Anytime-Valid Stopping in Imperfect-Information Games",
+        "url": "http://arxiv.org/abs/2608.06362v1",
+        "source": "arXiv",
+        "date": "2026-08-06",
+        "summary": "Deciding which of two agents is stronger means playing games until skill outweighs luck, and every game costs money, model inference, or expert time. Since the number of games needed is unknown, fixed-budget evaluations either keep paying after the result is settled or stop before the agents can be told apart, while n…",
+        "meta": [
+          "Research",
+          "Boning Li +2"
+        ],
+        "flag": null
+      },
+      {
+        "id": "http://arxiv.org/abs/2608.06361v1",
+        "title": "The Low Frequency Trap: Video Language Models Fail at Simple Event Bookkeeping",
+        "url": "http://arxiv.org/abs/2608.06361v1",
+        "source": "arXiv",
+        "date": "2026-08-06",
+        "summary": "Real-world video benchmarks provide broad coverage, but their fixed clips entangle event count, rate, duration, and visual complexity, making failure modes hard to isolate. While existing programmatic benchmarks offer better control, they score only the final answer rather than auditing reported events against executa…",
+        "meta": [
+          "Research",
+          "Sarvesh Baskar +7"
+        ],
+        "flag": null
+      },
+      {
+        "id": "http://arxiv.org/abs/2608.06353v1",
+        "title": "Resourced Authority A Mechanism-Design Model for Participatory Governance of Deployed AI Agents",
+        "url": "http://arxiv.org/abs/2608.06353v1",
+        "source": "arXiv",
+        "date": "2026-08-06",
+        "summary": "We give a formal mechanism design model for the continuous participatory governance of a deployed AI agent. The mechanism is built on the principle that governance should control an AI agent through resource allocation so as to make authorization self enforcing via compute budgets. The mechanism seeks to establish the…",
+        "meta": [
+          "Research",
+          "Praphul Chandra +2"
+        ],
+        "flag": null
+      },
+      {
+        "id": "http://arxiv.org/abs/2608.06352v1",
+        "title": "CalibForge: Adversarial Solver Calibration for Scaling Learnable Terminal Tasks",
+        "url": "http://arxiv.org/abs/2608.06352v1",
+        "source": "arXiv",
+        "date": "2026-08-06",
+        "summary": "Training terminal agents requires executable and verifiable tasks that are not merely solvable, but appropriately challenging for learning. Executable validation establishes feasibility, yet does not reveal how a task behaves relative to a given solver setting. In this paper, we present CalibForge, an autonomous termi…",
+        "meta": [
+          "Research",
+          "Fanzhe Meng +8"
+        ],
+        "flag": null
+      },
+      {
+        "id": "http://arxiv.org/abs/2608.06351v1",
+        "title": "Challenges in Evaluating Explanation Methods for Static and Evolving Data",
+        "url": "http://arxiv.org/abs/2608.06351v1",
+        "source": "arXiv",
+        "date": "2026-08-06",
+        "summary": "This paper addresses the limitations of Explainable Artificial Intelligence (XAI) with respect to insufficient evaluation. They are illustrated through the DetoxAI image recognition system for bias detection and concept unlearning. Then, an example of a human-grounded evaluation of methods for explaining image classif…",
+        "meta": [
+          "Research",
+          "Jerzy Stefanowski"
+        ],
+        "flag": null
+      },
+      {
+        "id": "http://arxiv.org/abs/2608.06346v1",
+        "title": "TRAJDEBUG: Tracing Error Lifecycle to Identify Critical Failures in Long-Horizon Agent Trajectories",
+        "url": "http://arxiv.org/abs/2608.06346v1",
+        "source": "arXiv",
+        "date": "2026-08-06",
+        "summary": "LLM-based agentic systems have shown remarkable capabilities in complex domains, while suffering from cascading errors and difficulty in debugging. Critical error detection aims to locate the earliest error step in a failed trajectory that is responsible for the final failure. However, progress faces two main challeng…",
+        "meta": [
+          "Research",
+          "Yunjia Qi +12"
+        ],
+        "flag": null
+      },
+      {
+        "id": "http://arxiv.org/abs/2608.06340v1",
+        "title": "Scalable estimation of VARMA models",
+        "url": "http://arxiv.org/abs/2608.06340v1",
+        "source": "arXiv",
+        "date": "2026-08-06",
+        "summary": "Vector autoregressive moving-average (VARMA) models have long been considered impractical beyond moderate dimensions: the likelihood is non-convex, the parametrization is identified only up to equivalence, and every evaluation costs a pass over the entire series. Yet their moving-average term captures with a few param…",
+        "meta": [
+          "Research",
+          "Daniel Paulin +1"
+        ],
+        "flag": null
+      },
+      {
+        "id": "http://arxiv.org/abs/2608.06337v1",
+        "title": "Optimal Rates for Learning with Monotone Adversaries",
+        "url": "http://arxiv.org/abs/2608.06337v1",
+        "source": "arXiv",
+        "date": "2026-08-06",
+        "summary": "A monotone adversary observes an i.i.d. labeled sample and appends a finite number of further examples of its choice, every one of them labeled correctly by the target hypothesis. The learner sees a uniform shuffle of the combined sample and is scored on the original distribution. Every example is correctly labeled, b…",
+        "meta": [
+          "Research",
+          "Anay Mehrotra"
+        ],
+        "flag": null
+      },
+      {
+        "id": "hn-49201970",
+        "title": "AMD acquires Taalas to boost inference performance by etching models in silicon",
+        "url": "https://www.theregister.com/systems/2026/08/06/amd-acquires-ai-chip-startup-taalas-to-boost-inference-performance-by-etching-models-into-silicon/5284344",
         "source": "Hacker News",
         "date": "2026-08-06",
         "summary": "",
         "meta": [
-          "28 points",
-          "17 comments"
+          "716 points",
+          "540 comments"
         ],
-        "discussion": "https://news.ycombinator.com/item?id=49192219",
-        "flag": null
-      },
-      {
-        "id": "hn-49193019",
-        "title": "Meta says AI model accessed the internet and hacked another firm",
-        "url": "https://www.bbc.co.uk/news/articles/cx2kgdnyk2po",
-        "source": "Hacker News",
-        "date": "2026-08-06",
-        "summary": "",
-        "meta": [
-          "29 points",
-          "15 comments"
-        ],
-        "discussion": "https://news.ycombinator.com/item?id=49193019",
-        "flag": null
-      },
-      {
-        "id": "http://arxiv.org/abs/2608.05144v1",
-        "title": "Argus: A General-Purpose Agentic Runtime for Long-Horizon Reasoning",
-        "url": "http://arxiv.org/abs/2608.05144v1",
-        "source": "arXiv",
-        "date": "2026-08-05",
-        "summary": "Long-horizon reasoning requires an agentic runtime that can persist when evidence supports its current approach and pivot when measurements reveal failure, hidden constraints, or a misspecified objective. We present Argus, a persistent, self-evolving runtime in which Manager, Planner, Engineer, and Reviewer execute bo…",
-        "meta": [
-          "Research",
-          "Boxiu Li +25"
-        ],
-        "flag": null
-      },
-      {
-        "id": "http://arxiv.org/abs/2608.05141v1",
-        "title": "OctoLong: Mid-Training On Cross-Repository Code Contexts Enhances Long-Context Modeling",
-        "url": "http://arxiv.org/abs/2608.05141v1",
-        "source": "arXiv",
-        "date": "2026-08-05",
-        "summary": "Context lengths of language models (LMs) have dramatically increased, driven by the demands for in-context learning, self-improvement, and long-horizon agentic workflows. Existing long-context corpora, however, are dominated by books, academic articles, and code repositories, which are finite resources and often scarc…",
-        "meta": [
-          "Research",
-          "Indraneil Paul +3"
-        ],
-        "flag": null
-      },
-      {
-        "id": "http://arxiv.org/abs/2608.05139v1",
-        "title": "Toward Skill-Native LLMs: Skill Entropy for Benchmarking and Training Long-Horizon Reasoning",
-        "url": "http://arxiv.org/abs/2608.05139v1",
-        "source": "arXiv",
-        "date": "2026-08-05",
-        "summary": "Long-horizon reasoning in recent LLMs demands that the model switch between distinct skills inside a reasoning chain, such as first doing a math derivation, then using the result to plan a schedule. We call such problems cross-skill long-horizon tasks: multi-step tasks whose steps require different reasoning skills an…",
-        "meta": [
-          "Research",
-          "Yinghui He +8"
-        ],
-        "flag": null
-      },
-      {
-        "id": "http://arxiv.org/abs/2608.05138v1",
-        "title": "Teaching Nemotron Greek: Mining a Corpus, Adapting Retrieval, and Grounding Generation for Modern Greek across Specialist Domains",
-        "url": "http://arxiv.org/abs/2608.05138v1",
-        "source": "arXiv",
-        "date": "2026-08-05",
-        "summary": "Modern Greek is absent from NVIDIA's Nemotron retrieval models and from major multilingual retrieval benchmarks, despite being important for retrieval-augmented generation (RAG) in legal, energy, financial, and medical applications. We present an end-to-end adaptation of the Nemotron retrieval stack for Modern Greek,…",
-        "meta": [
-          "Research",
-          "Ayoub Kirouane +1"
-        ],
-        "flag": null
-      },
-      {
-        "id": "http://arxiv.org/abs/2608.05136v1",
-        "title": "The Loss Does Not See the Basis, but Adam Does",
-        "url": "http://arxiv.org/abs/2608.05136v1",
-        "source": "arXiv",
-        "date": "2026-08-05",
-        "summary": "Gradient descent on a factored model $W = UV^\\top$ is implicitly biased toward low-rank solutions, while Adam, starting from the same small initialization, is not. We trace the difference to the gauge symmetry of the loss, its invariance under $(U, V) \\mapsto (UQ, VQ)$. Gradient flow's low-rank mechanism is available…",
-        "meta": [
-          "Research",
-          "Devender Singh"
-        ],
-        "flag": null
-      },
-      {
-        "id": "http://arxiv.org/abs/2608.05132v1",
-        "title": "Predicting Brain Morphometry with MT-GNN: Mesh Evolution in Continuous Time with Graph-Based Metric Tensor Embeddings",
-        "url": "http://arxiv.org/abs/2608.05132v1",
-        "source": "arXiv",
-        "date": "2026-08-05",
-        "summary": "Predicting how a subcortical structure's shape will evolve from a few prior scans could support prognosis and clinical-trial enrichment. Existing longitudinal mesh predictors either extrapolate shape trajectories via high-dimensional embeddings or regress vertex deformations directly. We instead predict the surface's…",
-        "meta": [
-          "Research",
-          "Hao Ding +3"
-        ],
-        "flag": null
-      },
-      {
-        "id": "http://arxiv.org/abs/2608.05131v1",
-        "title": "OPD-V: Visual On-Policy Self-Distillation with Modality Balance",
-        "url": "http://arxiv.org/abs/2608.05131v1",
-        "source": "arXiv",
-        "date": "2026-08-05",
-        "summary": "On-Policy Self-Distillation (OPSD) has become a standard post-training approach for improving visual reasoning in multimodal large language models (MLLMs). Existing methods draw privileged information from diverse input sources to guide self-distillation. Yet these designs overlook Modality Imbalance, a challenge inhe…",
-        "meta": [
-          "Research",
-          "Aniri +7"
-        ],
-        "flag": null
-      },
-      {
-        "id": "http://arxiv.org/abs/2608.05127v1",
-        "title": "SSTQ:Privacy-Preserving Vector Quantization via Subsampled Stochastic TurboQuant",
-        "url": "http://arxiv.org/abs/2608.05127v1",
-        "source": "arXiv",
-        "date": "2026-08-05",
-        "summary": "Achieving local differential privacy in distributed optimization while maintaining low communication cost remains challenging. Existing vector quantization methods, such as vqSGD, use high-dimensional geometric constructions but incur unfavorable dimension-dependent variance. In this work, we propose Subsampled Stocha…",
-        "meta": [
-          "Research",
-          "Adel Javanmard +2"
-        ],
-        "flag": null
-      },
-      {
-        "id": "http://arxiv.org/abs/2608.05124v1",
-        "title": "Chained Recursive Language Models for Multi-Iteration Reasoning",
-        "url": "http://arxiv.org/abs/2608.05124v1",
-        "source": "arXiv",
-        "date": "2026-08-05",
-        "summary": "Long context reasoning in large language models (LLMs) is usually constrained by the fact that a single inference trajectory has to simultaneously explore the context, store intermediate state, verify evidence, and produce the final answer. This becomes particularly difficult in tasks that require extraction, counting…",
-        "meta": [
-          "Research",
-          "Purbesh Mitra +1"
-        ],
-        "flag": null
-      },
-      {
-        "id": "http://arxiv.org/abs/2608.05120v1",
-        "title": "DASyR-LLM: Domain-Aware Symbolic Regression with LLMs for Kinetic Model Discovery",
-        "url": "http://arxiv.org/abs/2608.05120v1",
-        "source": "arXiv",
-        "date": "2026-08-05",
-        "summary": "Kinetic model discovery is a central challenge in chemical engineering, as accurate rate expressions are essential for understanding and controlling chemical and biological processes. Symbolic regression (SR) has emerged as a powerful data-driven approach for identifying interpretable kinetic models, but usually opera…",
-        "meta": [
-          "Research",
-          "Roberto Aliaga Medina +2"
-        ],
-        "flag": null
-      },
-      {
-        "id": "http://arxiv.org/abs/2608.05115v1",
-        "title": "Robust and Efficient Motion Reasoning for Privacy-Aware Classroom Incident Recognition",
-        "url": "http://arxiv.org/abs/2608.05115v1",
-        "source": "arXiv",
-        "date": "2026-08-05",
-        "summary": "Can computer vision help make classrooms safer? In this pilot study, we investigate privacy-aware and computationally efficient classroom incident recognition from CCTV-style observations. This setting remains underexplored, with limited benchmarks and few methods designed for the privacy, efficiency, and generalizati…",
-        "meta": [
-          "Research",
-          "Paritosh Parmar +4"
-        ],
-        "flag": null
-      },
-      {
-        "id": "http://arxiv.org/abs/2608.05112v1",
-        "title": "Stable Density Ridges: Consistency and Convergence of Subspace Constrained Mean Shift",
-        "url": "http://arxiv.org/abs/2608.05112v1",
-        "source": "arXiv",
-        "date": "2026-08-05",
-        "summary": "The Subspace Constrained Mean Shift (SCMS) algorithm is a popular nonparametric method for extracting density ridges, which serve as a low-dimensional representation of high-dimensional data. It is a widely held belief in the literature that SCMS trajectories converge to the classical density ridge, which we call the…",
-        "meta": [
-          "Research",
-          "Wanli Qiao"
-        ],
+        "discussion": "https://news.ycombinator.com/item?id=49201970",
         "flag": null
       }
     ],
     "dev": [
       {
-        "id": "hn-49195231",
-        "title": "Mario Meets Pareto",
-        "url": "https://www.mayerowitz.io/blog/mario-meets-pareto",
+        "id": "hn-49208314",
+        "title": "US strikes $1.2B deal to pay German firm to halt offshore wind projects",
+        "url": "https://www.bbc.com/news/articles/c1e1vg0gjl5o",
+        "source": "Hacker News",
+        "date": "2026-08-07",
+        "summary": "",
+        "meta": [
+          "220 points",
+          "180 comments"
+        ],
+        "discussion": "https://news.ycombinator.com/item?id=49208314",
+        "flag": null
+      },
+      {
+        "id": "hn-49204352",
+        "title": "New Mexico court orders Meta to pay $567m over harms to children’s mental health",
+        "url": "https://www.theguardian.com/technology/2026/aug/06/new-mexico-court-meta",
+        "source": "Hacker News",
+        "date": "2026-08-07",
+        "summary": "",
+        "meta": [
+          "361 points",
+          "230 comments"
+        ],
+        "discussion": "https://news.ycombinator.com/item?id=49204352",
+        "flag": null
+      },
+      {
+        "id": "hn-49208686",
+        "title": "The Gargantuan Lie That Is Collapsing the Climate",
+        "url": "https://www.currentaffairs.org/news/the-massive-climate-lie-that-will-destroy-human-civilization",
+        "source": "Hacker News",
+        "date": "2026-08-07",
+        "summary": "",
+        "meta": [
+          "39 points",
+          "12 comments"
+        ],
+        "discussion": "https://news.ycombinator.com/item?id=49208686",
+        "flag": null
+      },
+      {
+        "id": "hn-49199346",
+        "title": "Taste Is All That's Left",
+        "url": "https://notashelf.dev/posts/taste-is-all-thats-left",
         "source": "Hacker News",
         "date": "2026-08-06",
         "summary": "",
         "meta": [
-          "49 points",
-          "5 comments"
+          "476 points",
+          "342 comments"
         ],
-        "discussion": "https://news.ycombinator.com/item?id=49195231",
+        "discussion": "https://news.ycombinator.com/item?id=49199346",
         "flag": null
       },
       {
-        "id": "hn-49168622",
-        "title": "How to Make a Nintendo 64 Game in 2026",
-        "url": "https://phoboslab.org/log/2026/08/xibalba64-making-of",
-        "source": "Hacker News",
-        "date": "2026-08-04",
-        "summary": "",
-        "meta": [
-          "217 points",
-          "69 comments"
-        ],
-        "discussion": "https://news.ycombinator.com/item?id=49168622",
-        "flag": null
-      },
-      {
-        "id": "hn-49192566",
-        "title": "Crime Pays but Botany Doesn't",
-        "url": "https://www.crimepaysbutbotanydoesnt.com/reading-list",
-        "source": "Hacker News",
-        "date": "2026-08-06",
-        "summary": "",
-        "meta": [
-          "339 points",
-          "116 comments"
-        ],
-        "discussion": "https://news.ycombinator.com/item?id=49192566",
-        "flag": null
-      },
-      {
-        "id": "hn-49195297",
-        "title": "Show HN: Skyline Co-op is like SimTower, but built around democratic socialism",
-        "url": "https://intergalacticrobots.app/skyline-coop/",
-        "source": "Hacker News",
-        "date": "2026-08-06",
-        "summary": "",
-        "meta": [
-          "19 points",
-          "15 comments"
-        ],
-        "discussion": "https://news.ycombinator.com/item?id=49195297",
-        "flag": null
-      },
-      {
-        "id": "hn-49096439",
-        "title": "Pareto Front",
-        "url": "https://en.wikipedia.org/wiki/Pareto_front",
-        "source": "Hacker News",
-        "date": "2026-07-29",
-        "summary": "",
-        "meta": [
-          "66 points",
-          "29 comments"
-        ],
-        "discussion": "https://news.ycombinator.com/item?id=49096439",
-        "flag": null
-      },
-      {
-        "id": "hn-49193173",
-        "title": "On non-rooted Android 17, ADB uninstall of system apps fails",
-        "url": "https://github.com/Universal-Debloater-Alliance/universal-android-debloater-next-generation/issues/1426",
-        "source": "Hacker News",
-        "date": "2026-08-06",
-        "summary": "",
-        "meta": [
-          "101 points",
-          "44 comments"
-        ],
-        "discussion": "https://news.ycombinator.com/item?id=49193173",
-        "flag": null
-      },
-      {
-        "id": "hn-49184960",
-        "title": "Discovery Loop",
-        "url": "https://www.discoveryloop.com/",
+        "id": "hn-49184355",
+        "title": "Scientists discover Kelvin-Helmholtz Instability on the surface of the Sun",
+        "url": "https://nso.edu/press-release/nsf-inouye-solar-telescope-enables-major-discovery-of-a-hidden-solar-process/",
         "source": "Hacker News",
         "date": "2026-08-05",
         "summary": "",
         "meta": [
-          "793 points",
-          "495 comments"
+          "243 points",
+          "53 comments"
         ],
-        "discussion": "https://news.ycombinator.com/item?id=49184960",
+        "discussion": "https://news.ycombinator.com/item?id=49184355",
         "flag": null
       },
       {
-        "id": "hn-49187256",
-        "title": "Zed DeltaDB",
-        "url": "https://zed.dev/deltadb",
+        "id": "hn-49202716",
+        "title": "Bioengineered chewing gum may offer a way to fight HPV and other microbes",
+        "url": "https://www.sciencedaily.com/releases/2026/08/260803080917.htm",
         "source": "Hacker News",
-        "date": "2026-08-05",
+        "date": "2026-08-06",
         "summary": "",
         "meta": [
-          "461 points",
-          "251 comments"
+          "144 points",
+          "42 comments"
         ],
-        "discussion": "https://news.ycombinator.com/item?id=49187256",
+        "discussion": "https://news.ycombinator.com/item?id=49202716",
         "flag": null
       },
       {
-        "id": "hn-49189287",
-        "title": "The title cards in Blade Runner are amazing",
-        "url": "https://randsinrepose.com/archives/blade-runner-title-cards/",
-        "source": "Hacker News",
-        "date": "2026-08-05",
-        "summary": "",
-        "meta": [
-          "316 points",
-          "153 comments"
-        ],
-        "discussion": "https://news.ycombinator.com/item?id=49189287",
-        "flag": null
-      },
-      {
-        "id": "hn-49151991",
-        "title": "Branchless Rust: Making a Filter 4x Faster by Removing an If",
-        "url": "https://www.greyblake.com/blog/branchless-rust/",
+        "id": "hn-49156157",
+        "title": "A quine in Piet – a GIF image that prints itself [video]",
+        "url": "https://www.youtube.com/watch?v=GwMtzhjCzyc",
         "source": "Hacker News",
         "date": "2026-08-03",
         "summary": "",
         "meta": [
-          "217 points",
-          "66 comments"
+          "19 points",
+          "1 comments"
         ],
-        "discussion": "https://news.ycombinator.com/item?id=49151991",
+        "discussion": "https://news.ycombinator.com/item?id=49156157",
         "flag": null
       },
       {
-        "id": "hn-49187575",
-        "title": "Muse Code and Muse Spark 1.2",
-        "url": "https://research.meta.ai/blog/introducing-muse-code-and-muse-spark-1-2",
-        "source": "Hacker News",
-        "date": "2026-08-05",
-        "summary": "",
-        "meta": [
-          "276 points",
-          "174 comments"
-        ],
-        "discussion": "https://news.ycombinator.com/item?id=49187575",
-        "flag": null
-      },
-      {
-        "id": "hn-49182996",
-        "title": "Cloudflare OS: an open platform for agents, apps, and work",
-        "url": "https://blog.cloudflare.com/cloudflare-os/",
-        "source": "Hacker News",
-        "date": "2026-08-05",
-        "summary": "",
-        "meta": [
-          "585 points",
-          "280 comments"
-        ],
-        "discussion": "https://news.ycombinator.com/item?id=49182996",
-        "flag": null
-      },
-      {
-        "id": "hn-49129008",
-        "title": "Unearthing my 1996 windowed OS in machine code for Am29000 homebrew computer",
-        "url": "https://nanochess.org/the_am29000_computer.html",
+        "id": "hn-49129015",
+        "title": "Atomic Clocks",
+        "url": "https://www.nist.gov/atomic-clocks/how-do-atomic-clocks-work",
         "source": "Hacker News",
         "date": "2026-07-31",
         "summary": "",
         "meta": [
-          "52 points",
-          "3 comments"
+          "92 points",
+          "50 comments"
         ],
-        "discussion": "https://news.ycombinator.com/item?id=49129008",
+        "discussion": "https://news.ycombinator.com/item?id=49129015",
         "flag": null
       },
       {
-        "id": "hn-49189075",
-        "title": "Prime Agent: A self-improving RLM agent",
-        "url": "https://www.primeintellect.ai/blog/prime-agent",
+        "id": "hn-49138446",
+        "title": "São Paulo resident transforms degraded area into urban forest",
+        "url": "https://saopaulosecreto.com/en/tiquatira-linear-park-en/",
         "source": "Hacker News",
-        "date": "2026-08-05",
+        "date": "2026-08-01",
         "summary": "",
         "meta": [
-          "196 points",
-          "44 comments"
+          "166 points",
+          "67 comments"
         ],
-        "discussion": "https://news.ycombinator.com/item?id=49189075",
+        "discussion": "https://news.ycombinator.com/item?id=49138446",
+        "flag": null
+      },
+      {
+        "id": "hn-49198302",
+        "title": "GitHub Actions and Pages are experiencing degraded availability",
+        "url": "https://www.githubstatus.com/incidents/qcvjkzcs7j74",
+        "source": "Hacker News",
+        "date": "2026-08-06",
+        "summary": "",
+        "meta": [
+          "421 points",
+          "344 comments"
+        ],
+        "discussion": "https://news.ycombinator.com/item?id=49198302",
+        "flag": null
+      },
+      {
+        "id": "hn-49198464",
+        "title": "Launch HN: ProvenMetal (YC S26) delivers circuit boards in days instead of weeks",
+        "url": "https://provenmetal.com",
+        "source": "Hacker News",
+        "date": "2026-08-06",
+        "summary": "",
+        "meta": [
+          "208 points",
+          "147 comments"
+        ],
+        "discussion": "https://news.ycombinator.com/item?id=49198464",
+        "flag": null
+      },
+      {
+        "id": "hn-49202690",
+        "title": "What is a product?",
+        "url": "https://roge.onwrite.app/what-is-a-product",
+        "source": "Hacker News",
+        "date": "2026-08-06",
+        "summary": "",
+        "meta": [
+          "71 points",
+          "43 comments"
+        ],
+        "discussion": "https://news.ycombinator.com/item?id=49202690",
+        "flag": null
+      },
+      {
+        "id": "hn-49152255",
+        "title": "I stopped trusting USB-C cable labels and started testing them",
+        "url": "https://www.makeuseof.com/i-stopped-trusting-usb-c-cable-labels-started-testing-with-meter-instead/",
+        "source": "Hacker News",
+        "date": "2026-08-03",
+        "summary": "",
+        "meta": [
+          "209 points",
+          "171 comments"
+        ],
+        "discussion": "https://news.ycombinator.com/item?id=49152255",
+        "flag": null
+      },
+      {
+        "id": "hn-49203105",
+        "title": "Welcoming the Nepalese Government to Have I Been Pwned",
+        "url": "https://www.troyhunt.com/welcoming-the-nepalese-government-to-have-i-been-pwned/",
+        "source": "Hacker News",
+        "date": "2026-08-06",
+        "summary": "",
+        "meta": [
+          "167 points",
+          "27 comments"
+        ],
+        "discussion": "https://news.ycombinator.com/item?id=49203105",
         "flag": null
       }
     ]
