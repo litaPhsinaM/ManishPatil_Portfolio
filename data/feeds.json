@@ -1,5 +1,292 @@
 {
-  "generatedAt": "2026-08-07T11:57:53.191Z",
+  "generatedAt": "2026-08-07T18:02:04.193Z",
+  "log": [
+    {
+      "t": "2026-08-07T18:02:02.543Z",
+      "level": "info",
+      "msg": "signal refresh started"
+    },
+    {
+      "t": "2026-08-07T18:02:02.545Z",
+      "level": "info",
+      "msg": "GET hacker-news.firebaseio.com/v0/topstories.json"
+    },
+    {
+      "t": "2026-08-07T18:02:02.799Z",
+      "level": "info",
+      "msg": "HTTP 200 · resolving top 60 story ids in batches of 10"
+    },
+    {
+      "t": "2026-08-07T18:02:03.527Z",
+      "level": "info",
+      "msg": "60 of 60 resolved to usable stories · 982ms"
+    },
+    {
+      "t": "2026-08-07T18:02:03.528Z",
+      "level": "info",
+      "msg": "GET cisa.gov/feeds/known_exploited_vulnerabilities.json"
+    },
+    {
+      "t": "2026-08-07T18:02:03.711Z",
+      "level": "info",
+      "msg": "HTTP 200 · catalog holds 1662 CVEs · 183ms"
+    },
+    {
+      "t": "2026-08-07T18:02:03.716Z",
+      "level": "info",
+      "msg": "fleet filter: 986 of 1662 touch managed platforms"
+    },
+    {
+      "t": "2026-08-07T18:02:03.728Z",
+      "level": "warn",
+      "msg": "2 of the newest 14 are linked to ransomware campaigns"
+    },
+    {
+      "t": "2026-08-07T18:02:03.729Z",
+      "level": "info",
+      "msg": "GET export.arxiv.org/api/query cat:cs.AI OR cat:cs.LG"
+    },
+    {
+      "t": "2026-08-07T18:02:04.190Z",
+      "level": "info",
+      "msg": "HTTP 200 · 30,553 bytes of Atom XML · 461ms"
+    },
+    {
+      "t": "2026-08-07T18:02:04.193Z",
+      "level": "info",
+      "msg": "topic split: 8 AI stories, 52 general dev"
+    },
+    {
+      "t": "2026-08-07T18:02:04.193Z",
+      "level": "info",
+      "msg": "--- security feed: 14 items ---"
+    },
+    {
+      "t": "2026-08-07T18:02:04.193Z",
+      "level": "info",
+      "msg": "ingest CISA KEV · Apache Tomcat Missing Encryption of Sensitive Data Vulner… · 2026-08-04"
+    },
+    {
+      "t": "2026-08-07T18:02:04.193Z",
+      "level": "info",
+      "msg": "ingest CISA KEV · Cisco Secure Firewall Management Center Use of Hard-coded… · 2026-07-29"
+    },
+    {
+      "t": "2026-08-07T18:02:04.193Z",
+      "level": "info",
+      "msg": "ingest CISA KEV · Fortinet FortiOS Exposure of Sensitive Information to an… · 2026-07-27"
+    },
+    {
+      "t": "2026-08-07T18:02:04.193Z",
+      "level": "info",
+      "msg": "ingest CISA KEV · Microsoft SharePoint Deserialization of Untrusted Data Vu… · 2026-07-22"
+    },
+    {
+      "t": "2026-08-07T18:02:04.193Z",
+      "level": "info",
+      "msg": "ingest CISA KEV · WordPress Core SQL Injection Vulnerability · 2026-07-21"
+    },
+    {
+      "t": "2026-08-07T18:02:04.193Z",
+      "level": "info",
+      "msg": "ingest CISA KEV · WordPress Core Interpretation Conflict Vulnerability · 2026-07-21"
+    },
+    {
+      "t": "2026-08-07T18:02:04.193Z",
+      "level": "info",
+      "msg": "ingest CISA KEV · Microsoft SharePoint Deserialization of Untrusted Data Vu… · 2026-07-16"
+    },
+    {
+      "t": "2026-08-07T18:02:04.193Z",
+      "level": "info",
+      "msg": "ingest CISA KEV · Fortinet FortiSandbox OS Command Injection Vulnerability · 2026-07-16"
+    },
+    {
+      "t": "2026-08-07T18:02:04.193Z",
+      "level": "info",
+      "msg": "ingest CISA KEV · Fortinet FortiSandbox OS Command Injection Vulnerability · 2026-07-16"
+    },
+    {
+      "t": "2026-08-07T18:02:04.193Z",
+      "level": "info",
+      "msg": "ingest CISA KEV · Oracle E-Business Suite Improper Privilege Management Vul… · 2026-07-15"
+    },
+    {
+      "t": "2026-08-07T18:02:04.193Z",
+      "level": "info",
+      "msg": "ingest CISA KEV · Microsoft Active Directory Federation Services Insufficie… · 2026-07-14"
+    },
+    {
+      "t": "2026-08-07T18:02:04.193Z",
+      "level": "info",
+      "msg": "ingest CISA KEV · Microsoft SharePoint Server Missing Authentication for Cr… · 2026-07-14"
+    },
+    {
+      "t": "2026-08-07T18:02:04.193Z",
+      "level": "warn",
+      "msg": "ingest CISA KEV · SonicWall SMA1000 Appliances Server-Side Request Forgery… · 2026-07-14"
+    },
+    {
+      "t": "2026-08-07T18:02:04.193Z",
+      "level": "warn",
+      "msg": "ingest CISA KEV · SonicWall SMA1000 Appliances Code Injection Vulnerability · 2026-07-14"
+    },
+    {
+      "t": "2026-08-07T18:02:04.193Z",
+      "level": "info",
+      "msg": "--- ai feed: 14 items ---"
+    },
+    {
+      "t": "2026-08-07T18:02:04.193Z",
+      "level": "info",
+      "msg": "ingest Hacker News · Oracle bans AI-generated code from OpenJDK · 2026-08-07"
+    },
+    {
+      "t": "2026-08-07T18:02:04.193Z",
+      "level": "info",
+      "msg": "ingest Hacker News · The Tokenpocalypse Is Here: Companies Are Scrambling to S… · 2026-08-07"
+    },
+    {
+      "t": "2026-08-07T18:02:04.193Z",
+      "level": "info",
+      "msg": "ingest Hacker News · AI agents fake identities, target real people in new secu… · 2026-08-07"
+    },
+    {
+      "t": "2026-08-07T18:02:04.193Z",
+      "level": "info",
+      "msg": "ingest Hacker News · Estrogen masculinizes neural pathways and sex-specific be… · 2026-08-07"
+    },
+    {
+      "t": "2026-08-07T18:02:04.193Z",
+      "level": "info",
+      "msg": "ingest Hacker News · New Orleans is testing Carbyne’s AI-powered Emergency Cal… · 2026-08-07"
+    },
+    {
+      "t": "2026-08-07T18:02:04.193Z",
+      "level": "info",
+      "msg": "ingest arXiv · Learning When to Trust via Selective Context Preference O… · 2026-08-06"
+    },
+    {
+      "t": "2026-08-07T18:02:04.193Z",
+      "level": "info",
+      "msg": "ingest arXiv · Tracing the Heart: An Evidence-Linked Pipeline for Heart-… · 2026-08-06"
+    },
+    {
+      "t": "2026-08-07T18:02:04.193Z",
+      "level": "info",
+      "msg": "ingest arXiv · Investigating Artificial Intelligence Digital Sovereignty… · 2026-08-06"
+    },
+    {
+      "t": "2026-08-07T18:02:04.193Z",
+      "level": "info",
+      "msg": "ingest arXiv · An Optimal Agnostic PAC Algorithm · 2026-08-06"
+    },
+    {
+      "t": "2026-08-07T18:02:04.193Z",
+      "level": "info",
+      "msg": "ingest arXiv · AV-AIVAT: 74x Cheaper Agent Evaluation with Certified Any… · 2026-08-06"
+    },
+    {
+      "t": "2026-08-07T18:02:04.193Z",
+      "level": "info",
+      "msg": "ingest arXiv · The Low Frequency Trap: Video Language Models Fail at Sim… · 2026-08-06"
+    },
+    {
+      "t": "2026-08-07T18:02:04.193Z",
+      "level": "info",
+      "msg": "ingest arXiv · Resourced Authority A Mechanism-Design Model for Particip… · 2026-08-06"
+    },
+    {
+      "t": "2026-08-07T18:02:04.193Z",
+      "level": "info",
+      "msg": "ingest arXiv · CalibForge: Adversarial Solver Calibration for Scaling Le… · 2026-08-06"
+    },
+    {
+      "t": "2026-08-07T18:02:04.193Z",
+      "level": "info",
+      "msg": "ingest arXiv · Challenges in Evaluating Explanation Methods for Static a… · 2026-08-06"
+    },
+    {
+      "t": "2026-08-07T18:02:04.193Z",
+      "level": "info",
+      "msg": "--- dev feed: 14 items ---"
+    },
+    {
+      "t": "2026-08-07T18:02:04.193Z",
+      "level": "info",
+      "msg": "ingest Hacker News · An all-sky map of half a million supermassive black holes · 2026-08-07"
+    },
+    {
+      "t": "2026-08-07T18:02:04.193Z",
+      "level": "info",
+      "msg": "ingest Hacker News · Responding to the next frontier of critical cyber capabil… · 2026-08-07"
+    },
+    {
+      "t": "2026-08-07T18:02:04.193Z",
+      "level": "info",
+      "msg": "ingest Hacker News · New Mexico court orders Meta to pay $567m over harms to c… · 2026-08-07"
+    },
+    {
+      "t": "2026-08-07T18:02:04.193Z",
+      "level": "info",
+      "msg": "ingest Hacker News · Möbius-Strip Crosswords · 2026-08-07"
+    },
+    {
+      "t": "2026-08-07T18:02:04.193Z",
+      "level": "info",
+      "msg": "ingest Hacker News · Show HN: Wyzer Programming Language · 2026-08-07"
+    },
+    {
+      "t": "2026-08-07T18:02:04.193Z",
+      "level": "info",
+      "msg": "ingest Hacker News · Making Postgres 300x faster for analytics: batching, oper… · 2026-08-07"
+    },
+    {
+      "t": "2026-08-07T18:02:04.193Z",
+      "level": "info",
+      "msg": "ingest Hacker News · Kitesurf: Agent-first browser that runs in V8 isolates · 2026-08-07"
+    },
+    {
+      "t": "2026-08-07T18:02:04.193Z",
+      "level": "info",
+      "msg": "ingest Hacker News · Show HN: textlog – A quiet, text-only microblogging platf… · 2026-08-07"
+    },
+    {
+      "t": "2026-08-07T18:02:04.193Z",
+      "level": "info",
+      "msg": "ingest Hacker News · Adults over 65 will outnumber children by 2029 · 2026-08-07"
+    },
+    {
+      "t": "2026-08-07T18:02:04.193Z",
+      "level": "info",
+      "msg": "ingest Hacker News · Why Are There Statues of Beavers on Top of This Oxford St… · 2026-08-03"
+    },
+    {
+      "t": "2026-08-07T18:02:04.193Z",
+      "level": "info",
+      "msg": "ingest Hacker News · Petri Nets as a Music Sequencer · 2026-08-03"
+    },
+    {
+      "t": "2026-08-07T18:02:04.193Z",
+      "level": "info",
+      "msg": "ingest Hacker News · Taste Is All That's Left · 2026-08-06"
+    },
+    {
+      "t": "2026-08-07T18:02:04.193Z",
+      "level": "info",
+      "msg": "ingest Hacker News · Building Community Out of Strangers · 2026-08-04"
+    },
+    {
+      "t": "2026-08-07T18:02:04.193Z",
+      "level": "info",
+      "msg": "ingest Hacker News · São Paulo resident transforms degraded area into urban fo… · 2026-08-01"
+    },
+    {
+      "t": "2026-08-07T18:02:04.193Z",
+      "level": "info",
+      "msg": "publishing 42 items across 3 feeds · 1650ms"
+    }
+  ],
   "feeds": {
     "security": [
       {
@@ -201,6 +488,62 @@
     ],
     "ai": [
       {
+        "id": "hn-49213754",
+        "title": "Oracle bans AI-generated code from OpenJDK",
+        "url": "https://app.dealroom.co/news/feed/oracle-bans-ai-generated-code-from-openjdk-despite-ellison-s-claim-oracle-isn-t-writing-its-own-code",
+        "source": "Hacker News",
+        "date": "2026-08-07",
+        "summary": "",
+        "meta": [
+          "36 points",
+          "16 comments"
+        ],
+        "discussion": "https://news.ycombinator.com/item?id=49213754",
+        "flag": null
+      },
+      {
+        "id": "hn-49213016",
+        "title": "The Tokenpocalypse Is Here: Companies Are Scrambling to Stop Spending on AI",
+        "url": "https://www.404media.co/the-tokenpocalypse-is-here-companies-are-scrambling-to-stop-spending-so-much-on-ai/",
+        "source": "Hacker News",
+        "date": "2026-08-07",
+        "summary": "",
+        "meta": [
+          "8 points",
+          "3 comments"
+        ],
+        "discussion": "https://news.ycombinator.com/item?id=49213016",
+        "flag": null
+      },
+      {
+        "id": "hn-49212531",
+        "title": "AI agents fake identities, target real people in new security incident",
+        "url": "https://www.cnn.com/2026/08/04/tech/ai-anthropic-openai-security-breach-intl-hnk",
+        "source": "Hacker News",
+        "date": "2026-08-07",
+        "summary": "",
+        "meta": [
+          "10 points",
+          "3 comments"
+        ],
+        "discussion": "https://news.ycombinator.com/item?id=49212531",
+        "flag": null
+      },
+      {
+        "id": "hn-49213385",
+        "title": "Estrogen masculinizes neural pathways and sex-specific behaviors",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2851224/",
+        "source": "Hacker News",
+        "date": "2026-08-07",
+        "summary": "",
+        "meta": [
+          "5 points",
+          "1 comments"
+        ],
+        "discussion": "https://news.ycombinator.com/item?id=49213385",
+        "flag": null
+      },
+      {
         "id": "hn-49204546",
         "title": "New Orleans is testing Carbyne’s AI-powered Emergency Call Triage software",
         "url": "https://www.shreveporttimes.com/story/news/local/louisiana/2026/07/28/is-new-orleans-using-ai-to-answer-911-calls-instead-of-human-dispatchers-impacts-emergencies-crime/91065014007/",
@@ -208,8 +551,8 @@
         "date": "2026-08-07",
         "summary": "",
         "meta": [
-          "62 points",
-          "94 comments"
+          "71 points",
+          "114 comments"
         ],
         "discussion": "https://news.ycombinator.com/item?id=49204546",
         "flag": null
@@ -330,74 +673,35 @@
           "Jerzy Stefanowski"
         ],
         "flag": null
-      },
-      {
-        "id": "http://arxiv.org/abs/2608.06346v1",
-        "title": "TRAJDEBUG: Tracing Error Lifecycle to Identify Critical Failures in Long-Horizon Agent Trajectories",
-        "url": "http://arxiv.org/abs/2608.06346v1",
-        "source": "arXiv",
-        "date": "2026-08-06",
-        "summary": "LLM-based agentic systems have shown remarkable capabilities in complex domains, while suffering from cascading errors and difficulty in debugging. Critical error detection aims to locate the earliest error step in a failed trajectory that is responsible for the final failure. However, progress faces two main challeng…",
-        "meta": [
-          "Research",
-          "Yunjia Qi +12"
-        ],
-        "flag": null
-      },
-      {
-        "id": "http://arxiv.org/abs/2608.06340v1",
-        "title": "Scalable estimation of VARMA models",
-        "url": "http://arxiv.org/abs/2608.06340v1",
-        "source": "arXiv",
-        "date": "2026-08-06",
-        "summary": "Vector autoregressive moving-average (VARMA) models have long been considered impractical beyond moderate dimensions: the likelihood is non-convex, the parametrization is identified only up to equivalence, and every evaluation costs a pass over the entire series. Yet their moving-average term captures with a few param…",
-        "meta": [
-          "Research",
-          "Daniel Paulin +1"
-        ],
-        "flag": null
-      },
-      {
-        "id": "http://arxiv.org/abs/2608.06337v1",
-        "title": "Optimal Rates for Learning with Monotone Adversaries",
-        "url": "http://arxiv.org/abs/2608.06337v1",
-        "source": "arXiv",
-        "date": "2026-08-06",
-        "summary": "A monotone adversary observes an i.i.d. labeled sample and appends a finite number of further examples of its choice, every one of them labeled correctly by the target hypothesis. The learner sees a uniform shuffle of the combined sample and is scored on the original distribution. Every example is correctly labeled, b…",
-        "meta": [
-          "Research",
-          "Anay Mehrotra"
-        ],
-        "flag": null
-      },
-      {
-        "id": "hn-49201970",
-        "title": "AMD acquires Taalas to boost inference performance by etching models in silicon",
-        "url": "https://www.theregister.com/systems/2026/08/06/amd-acquires-ai-chip-startup-taalas-to-boost-inference-performance-by-etching-models-into-silicon/5284344",
-        "source": "Hacker News",
-        "date": "2026-08-06",
-        "summary": "",
-        "meta": [
-          "716 points",
-          "540 comments"
-        ],
-        "discussion": "https://news.ycombinator.com/item?id=49201970",
-        "flag": null
       }
     ],
     "dev": [
       {
-        "id": "hn-49208314",
-        "title": "US strikes $1.2B deal to pay German firm to halt offshore wind projects",
-        "url": "https://www.bbc.com/news/articles/c1e1vg0gjl5o",
+        "id": "hn-49211921",
+        "title": "An all-sky map of half a million supermassive black holes",
+        "url": "https://www.sdss.org/black-hole-mapper-release-20/",
         "source": "Hacker News",
         "date": "2026-08-07",
         "summary": "",
         "meta": [
-          "220 points",
-          "180 comments"
+          "67 points",
+          "19 comments"
         ],
-        "discussion": "https://news.ycombinator.com/item?id=49208314",
+        "discussion": "https://news.ycombinator.com/item?id=49211921",
+        "flag": null
+      },
+      {
+        "id": "hn-49213029",
+        "title": "Responding to the next frontier of critical cyber capabilities",
+        "url": "https://openai.com/index/responding-next-frontier-critical-cyber-capabilities/",
+        "source": "Hacker News",
+        "date": "2026-08-07",
+        "summary": "",
+        "meta": [
+          "62 points",
+          "54 comments"
+        ],
+        "discussion": "https://news.ycombinator.com/item?id=49213029",
         "flag": null
       },
       {
@@ -408,24 +712,122 @@
         "date": "2026-08-07",
         "summary": "",
         "meta": [
-          "361 points",
-          "230 comments"
+          "611 points",
+          "336 comments"
         ],
         "discussion": "https://news.ycombinator.com/item?id=49204352",
         "flag": null
       },
       {
-        "id": "hn-49208686",
-        "title": "The Gargantuan Lie That Is Collapsing the Climate",
-        "url": "https://www.currentaffairs.org/news/the-massive-climate-lie-that-will-destroy-human-civilization",
+        "id": "hn-49211660",
+        "title": "Möbius-Strip Crosswords",
+        "url": "https://quuxplusone.github.io/blog/2026/08/04/mobius-crossword/",
         "source": "Hacker News",
         "date": "2026-08-07",
         "summary": "",
         "meta": [
-          "39 points",
+          "20 points",
+          "1 comments"
+        ],
+        "discussion": "https://news.ycombinator.com/item?id=49211660",
+        "flag": null
+      },
+      {
+        "id": "hn-49209385",
+        "title": "Show HN: Wyzer Programming Language",
+        "url": "https://github.com/Wyzer-Lang/wyzer",
+        "source": "Hacker News",
+        "date": "2026-08-07",
+        "summary": "",
+        "meta": [
+          "128 points",
+          "68 comments"
+        ],
+        "discussion": "https://news.ycombinator.com/item?id=49209385",
+        "flag": null
+      },
+      {
+        "id": "hn-49208535",
+        "title": "Making Postgres 300x faster for analytics: batching, operator fusion, and SIMD",
+        "url": "https://malisper.me/how-we-made-postgres-hundreds-of-times-faster-the-query-engine/",
+        "source": "Hacker News",
+        "date": "2026-08-07",
+        "summary": "",
+        "meta": [
+          "134 points",
+          "62 comments"
+        ],
+        "discussion": "https://news.ycombinator.com/item?id=49208535",
+        "flag": null
+      },
+      {
+        "id": "hn-49208393",
+        "title": "Kitesurf: Agent-first browser that runs in V8 isolates",
+        "url": "https://blog.cloudflare.com/kitesurf/",
+        "source": "Hacker News",
+        "date": "2026-08-07",
+        "summary": "",
+        "meta": [
+          "87 points",
+          "21 comments"
+        ],
+        "discussion": "https://news.ycombinator.com/item?id=49208393",
+        "flag": null
+      },
+      {
+        "id": "hn-49208458",
+        "title": "Show HN: textlog – A quiet, text-only microblogging platform, open-source, no JS",
+        "url": "https://textlog.cc/about",
+        "source": "Hacker News",
+        "date": "2026-08-07",
+        "summary": "",
+        "meta": [
+          "83 points",
+          "34 comments"
+        ],
+        "discussion": "https://news.ycombinator.com/item?id=49208458",
+        "flag": null
+      },
+      {
+        "id": "hn-49212424",
+        "title": "Adults over 65 will outnumber children by 2029",
+        "url": "https://eco3min.fr/en/us-children-vs-adults-65-and-older/",
+        "source": "Hacker News",
+        "date": "2026-08-07",
+        "summary": "",
+        "meta": [
+          "46 points",
+          "35 comments"
+        ],
+        "discussion": "https://news.ycombinator.com/item?id=49212424",
+        "flag": null
+      },
+      {
+        "id": "hn-49158302",
+        "title": "Why Are There Statues of Beavers on Top of This Oxford Street Shop?",
+        "url": "https://londonist.com/london/history/oxford-street-beavers",
+        "source": "Hacker News",
+        "date": "2026-08-03",
+        "summary": "",
+        "meta": [
+          "27 points",
+          "7 comments"
+        ],
+        "discussion": "https://news.ycombinator.com/item?id=49158302",
+        "flag": null
+      },
+      {
+        "id": "hn-49158934",
+        "title": "Petri Nets as a Music Sequencer",
+        "url": "https://blog.stackdump.com/posts/petri-net-sequencer",
+        "source": "Hacker News",
+        "date": "2026-08-03",
+        "summary": "",
+        "meta": [
+          "36 points",
           "12 comments"
         ],
-        "discussion": "https://news.ycombinator.com/item?id=49208686",
+        "discussion": "https://news.ycombinator.com/item?id=49158934",
         "flag": null
       },
       {
@@ -436,66 +838,24 @@
         "date": "2026-08-06",
         "summary": "",
         "meta": [
-          "476 points",
-          "342 comments"
+          "616 points",
+          "487 comments"
         ],
         "discussion": "https://news.ycombinator.com/item?id=49199346",
         "flag": null
       },
       {
-        "id": "hn-49184355",
-        "title": "Scientists discover Kelvin-Helmholtz Instability on the surface of the Sun",
-        "url": "https://nso.edu/press-release/nsf-inouye-solar-telescope-enables-major-discovery-of-a-hidden-solar-process/",
+        "id": "hn-49170241",
+        "title": "Building Community Out of Strangers",
+        "url": "https://tracydurnell.com/2023/11/30/building-community-out-of-strangers/",
         "source": "Hacker News",
-        "date": "2026-08-05",
+        "date": "2026-08-04",
         "summary": "",
         "meta": [
-          "243 points",
-          "53 comments"
+          "10 points",
+          "0 comments"
         ],
-        "discussion": "https://news.ycombinator.com/item?id=49184355",
-        "flag": null
-      },
-      {
-        "id": "hn-49202716",
-        "title": "Bioengineered chewing gum may offer a way to fight HPV and other microbes",
-        "url": "https://www.sciencedaily.com/releases/2026/08/260803080917.htm",
-        "source": "Hacker News",
-        "date": "2026-08-06",
-        "summary": "",
-        "meta": [
-          "144 points",
-          "42 comments"
-        ],
-        "discussion": "https://news.ycombinator.com/item?id=49202716",
-        "flag": null
-      },
-      {
-        "id": "hn-49156157",
-        "title": "A quine in Piet – a GIF image that prints itself [video]",
-        "url": "https://www.youtube.com/watch?v=GwMtzhjCzyc",
-        "source": "Hacker News",
-        "date": "2026-08-03",
-        "summary": "",
-        "meta": [
-          "19 points",
-          "1 comments"
-        ],
-        "discussion": "https://news.ycombinator.com/item?id=49156157",
-        "flag": null
-      },
-      {
-        "id": "hn-49129015",
-        "title": "Atomic Clocks",
-        "url": "https://www.nist.gov/atomic-clocks/how-do-atomic-clocks-work",
-        "source": "Hacker News",
-        "date": "2026-07-31",
-        "summary": "",
-        "meta": [
-          "92 points",
-          "50 comments"
-        ],
-        "discussion": "https://news.ycombinator.com/item?id=49129015",
+        "discussion": "https://news.ycombinator.com/item?id=49170241",
         "flag": null
       },
       {
@@ -506,80 +866,10 @@
         "date": "2026-08-01",
         "summary": "",
         "meta": [
-          "166 points",
-          "67 comments"
+          "281 points",
+          "108 comments"
         ],
         "discussion": "https://news.ycombinator.com/item?id=49138446",
-        "flag": null
-      },
-      {
-        "id": "hn-49198302",
-        "title": "GitHub Actions and Pages are experiencing degraded availability",
-        "url": "https://www.githubstatus.com/incidents/qcvjkzcs7j74",
-        "source": "Hacker News",
-        "date": "2026-08-06",
-        "summary": "",
-        "meta": [
-          "421 points",
-          "344 comments"
-        ],
-        "discussion": "https://news.ycombinator.com/item?id=49198302",
-        "flag": null
-      },
-      {
-        "id": "hn-49198464",
-        "title": "Launch HN: ProvenMetal (YC S26) delivers circuit boards in days instead of weeks",
-        "url": "https://provenmetal.com",
-        "source": "Hacker News",
-        "date": "2026-08-06",
-        "summary": "",
-        "meta": [
-          "208 points",
-          "147 comments"
-        ],
-        "discussion": "https://news.ycombinator.com/item?id=49198464",
-        "flag": null
-      },
-      {
-        "id": "hn-49202690",
-        "title": "What is a product?",
-        "url": "https://roge.onwrite.app/what-is-a-product",
-        "source": "Hacker News",
-        "date": "2026-08-06",
-        "summary": "",
-        "meta": [
-          "71 points",
-          "43 comments"
-        ],
-        "discussion": "https://news.ycombinator.com/item?id=49202690",
-        "flag": null
-      },
-      {
-        "id": "hn-49152255",
-        "title": "I stopped trusting USB-C cable labels and started testing them",
-        "url": "https://www.makeuseof.com/i-stopped-trusting-usb-c-cable-labels-started-testing-with-meter-instead/",
-        "source": "Hacker News",
-        "date": "2026-08-03",
-        "summary": "",
-        "meta": [
-          "209 points",
-          "171 comments"
-        ],
-        "discussion": "https://news.ycombinator.com/item?id=49152255",
-        "flag": null
-      },
-      {
-        "id": "hn-49203105",
-        "title": "Welcoming the Nepalese Government to Have I Been Pwned",
-        "url": "https://www.troyhunt.com/welcoming-the-nepalese-government-to-have-i-been-pwned/",
-        "source": "Hacker News",
-        "date": "2026-08-06",
-        "summary": "",
-        "meta": [
-          "167 points",
-          "27 comments"
-        ],
-        "discussion": "https://news.ycombinator.com/item?id=49203105",
         "flag": null
       }
     ]
