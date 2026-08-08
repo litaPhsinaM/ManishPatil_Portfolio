@@ -1,290 +1,290 @@
 {
-  "generatedAt": "2026-08-07T18:02:04.193Z",
+  "generatedAt": "2026-08-08T11:43:30.668Z",
   "log": [
     {
-      "t": "2026-08-07T18:02:02.543Z",
+      "t": "2026-08-08T11:43:29.544Z",
       "level": "info",
       "msg": "signal refresh started"
     },
     {
-      "t": "2026-08-07T18:02:02.545Z",
+      "t": "2026-08-08T11:43:29.548Z",
       "level": "info",
       "msg": "GET hacker-news.firebaseio.com/v0/topstories.json"
     },
     {
-      "t": "2026-08-07T18:02:02.799Z",
+      "t": "2026-08-08T11:43:29.806Z",
       "level": "info",
       "msg": "HTTP 200 · resolving top 60 story ids in batches of 10"
     },
     {
-      "t": "2026-08-07T18:02:03.527Z",
+      "t": "2026-08-08T11:43:30.145Z",
       "level": "info",
-      "msg": "60 of 60 resolved to usable stories · 982ms"
+      "msg": "60 of 60 resolved to usable stories · 597ms"
     },
     {
-      "t": "2026-08-07T18:02:03.528Z",
+      "t": "2026-08-08T11:43:30.145Z",
       "level": "info",
       "msg": "GET cisa.gov/feeds/known_exploited_vulnerabilities.json"
     },
     {
-      "t": "2026-08-07T18:02:03.711Z",
+      "t": "2026-08-08T11:43:30.315Z",
       "level": "info",
-      "msg": "HTTP 200 · catalog holds 1662 CVEs · 183ms"
+      "msg": "HTTP 200 · catalog holds 1662 CVEs · 170ms"
     },
     {
-      "t": "2026-08-07T18:02:03.716Z",
+      "t": "2026-08-08T11:43:30.319Z",
       "level": "info",
       "msg": "fleet filter: 986 of 1662 touch managed platforms"
     },
     {
-      "t": "2026-08-07T18:02:03.728Z",
+      "t": "2026-08-08T11:43:30.325Z",
       "level": "warn",
       "msg": "2 of the newest 14 are linked to ransomware campaigns"
     },
     {
-      "t": "2026-08-07T18:02:03.729Z",
+      "t": "2026-08-08T11:43:30.325Z",
       "level": "info",
       "msg": "GET export.arxiv.org/api/query cat:cs.AI OR cat:cs.LG"
     },
     {
-      "t": "2026-08-07T18:02:04.190Z",
+      "t": "2026-08-08T11:43:30.666Z",
       "level": "info",
-      "msg": "HTTP 200 · 30,553 bytes of Atom XML · 461ms"
+      "msg": "HTTP 200 · 30,553 bytes of Atom XML · 341ms"
     },
     {
-      "t": "2026-08-07T18:02:04.193Z",
+      "t": "2026-08-08T11:43:30.667Z",
       "level": "info",
-      "msg": "topic split: 8 AI stories, 52 general dev"
+      "msg": "topic split: 4 AI stories, 56 general dev"
     },
     {
-      "t": "2026-08-07T18:02:04.193Z",
+      "t": "2026-08-08T11:43:30.668Z",
       "level": "info",
       "msg": "--- security feed: 14 items ---"
     },
     {
-      "t": "2026-08-07T18:02:04.193Z",
+      "t": "2026-08-08T11:43:30.668Z",
       "level": "info",
       "msg": "ingest CISA KEV · Apache Tomcat Missing Encryption of Sensitive Data Vulner… · 2026-08-04"
     },
     {
-      "t": "2026-08-07T18:02:04.193Z",
+      "t": "2026-08-08T11:43:30.668Z",
       "level": "info",
       "msg": "ingest CISA KEV · Cisco Secure Firewall Management Center Use of Hard-coded… · 2026-07-29"
     },
     {
-      "t": "2026-08-07T18:02:04.193Z",
+      "t": "2026-08-08T11:43:30.668Z",
       "level": "info",
       "msg": "ingest CISA KEV · Fortinet FortiOS Exposure of Sensitive Information to an… · 2026-07-27"
     },
     {
-      "t": "2026-08-07T18:02:04.193Z",
+      "t": "2026-08-08T11:43:30.668Z",
       "level": "info",
       "msg": "ingest CISA KEV · Microsoft SharePoint Deserialization of Untrusted Data Vu… · 2026-07-22"
     },
     {
-      "t": "2026-08-07T18:02:04.193Z",
+      "t": "2026-08-08T11:43:30.668Z",
       "level": "info",
       "msg": "ingest CISA KEV · WordPress Core SQL Injection Vulnerability · 2026-07-21"
     },
     {
-      "t": "2026-08-07T18:02:04.193Z",
+      "t": "2026-08-08T11:43:30.668Z",
       "level": "info",
       "msg": "ingest CISA KEV · WordPress Core Interpretation Conflict Vulnerability · 2026-07-21"
     },
     {
-      "t": "2026-08-07T18:02:04.193Z",
+      "t": "2026-08-08T11:43:30.668Z",
       "level": "info",
       "msg": "ingest CISA KEV · Microsoft SharePoint Deserialization of Untrusted Data Vu… · 2026-07-16"
     },
     {
-      "t": "2026-08-07T18:02:04.193Z",
+      "t": "2026-08-08T11:43:30.668Z",
       "level": "info",
       "msg": "ingest CISA KEV · Fortinet FortiSandbox OS Command Injection Vulnerability · 2026-07-16"
     },
     {
-      "t": "2026-08-07T18:02:04.193Z",
+      "t": "2026-08-08T11:43:30.668Z",
       "level": "info",
       "msg": "ingest CISA KEV · Fortinet FortiSandbox OS Command Injection Vulnerability · 2026-07-16"
     },
     {
-      "t": "2026-08-07T18:02:04.193Z",
+      "t": "2026-08-08T11:43:30.668Z",
       "level": "info",
       "msg": "ingest CISA KEV · Oracle E-Business Suite Improper Privilege Management Vul… · 2026-07-15"
     },
     {
-      "t": "2026-08-07T18:02:04.193Z",
+      "t": "2026-08-08T11:43:30.668Z",
       "level": "info",
       "msg": "ingest CISA KEV · Microsoft Active Directory Federation Services Insufficie… · 2026-07-14"
     },
     {
-      "t": "2026-08-07T18:02:04.193Z",
+      "t": "2026-08-08T11:43:30.668Z",
       "level": "info",
       "msg": "ingest CISA KEV · Microsoft SharePoint Server Missing Authentication for Cr… · 2026-07-14"
     },
     {
-      "t": "2026-08-07T18:02:04.193Z",
+      "t": "2026-08-08T11:43:30.668Z",
       "level": "warn",
       "msg": "ingest CISA KEV · SonicWall SMA1000 Appliances Server-Side Request Forgery… · 2026-07-14"
     },
     {
-      "t": "2026-08-07T18:02:04.193Z",
+      "t": "2026-08-08T11:43:30.668Z",
       "level": "warn",
       "msg": "ingest CISA KEV · SonicWall SMA1000 Appliances Code Injection Vulnerability · 2026-07-14"
     },
     {
-      "t": "2026-08-07T18:02:04.193Z",
+      "t": "2026-08-08T11:43:30.668Z",
       "level": "info",
       "msg": "--- ai feed: 14 items ---"
     },
     {
-      "t": "2026-08-07T18:02:04.193Z",
+      "t": "2026-08-08T11:43:30.668Z",
+      "level": "info",
+      "msg": "ingest Hacker News · DeepMind's WeatherNext model achieves breakthrough foreca… · 2026-08-08"
+    },
+    {
+      "t": "2026-08-08T11:43:30.668Z",
+      "level": "info",
+      "msg": "ingest Hacker News · Managing AI Coding Costs at Scale · 2026-08-07"
+    },
+    {
+      "t": "2026-08-08T11:43:30.668Z",
       "level": "info",
       "msg": "ingest Hacker News · Oracle bans AI-generated code from OpenJDK · 2026-08-07"
     },
     {
-      "t": "2026-08-07T18:02:04.193Z",
-      "level": "info",
-      "msg": "ingest Hacker News · The Tokenpocalypse Is Here: Companies Are Scrambling to S… · 2026-08-07"
-    },
-    {
-      "t": "2026-08-07T18:02:04.193Z",
-      "level": "info",
-      "msg": "ingest Hacker News · AI agents fake identities, target real people in new secu… · 2026-08-07"
-    },
-    {
-      "t": "2026-08-07T18:02:04.193Z",
-      "level": "info",
-      "msg": "ingest Hacker News · Estrogen masculinizes neural pathways and sex-specific be… · 2026-08-07"
-    },
-    {
-      "t": "2026-08-07T18:02:04.193Z",
-      "level": "info",
-      "msg": "ingest Hacker News · New Orleans is testing Carbyne’s AI-powered Emergency Cal… · 2026-08-07"
-    },
-    {
-      "t": "2026-08-07T18:02:04.193Z",
+      "t": "2026-08-08T11:43:30.668Z",
       "level": "info",
       "msg": "ingest arXiv · Learning When to Trust via Selective Context Preference O… · 2026-08-06"
     },
     {
-      "t": "2026-08-07T18:02:04.193Z",
+      "t": "2026-08-08T11:43:30.668Z",
       "level": "info",
       "msg": "ingest arXiv · Tracing the Heart: An Evidence-Linked Pipeline for Heart-… · 2026-08-06"
     },
     {
-      "t": "2026-08-07T18:02:04.193Z",
+      "t": "2026-08-08T11:43:30.668Z",
       "level": "info",
       "msg": "ingest arXiv · Investigating Artificial Intelligence Digital Sovereignty… · 2026-08-06"
     },
     {
-      "t": "2026-08-07T18:02:04.193Z",
+      "t": "2026-08-08T11:43:30.668Z",
       "level": "info",
       "msg": "ingest arXiv · An Optimal Agnostic PAC Algorithm · 2026-08-06"
     },
     {
-      "t": "2026-08-07T18:02:04.193Z",
+      "t": "2026-08-08T11:43:30.668Z",
       "level": "info",
       "msg": "ingest arXiv · AV-AIVAT: 74x Cheaper Agent Evaluation with Certified Any… · 2026-08-06"
     },
     {
-      "t": "2026-08-07T18:02:04.193Z",
+      "t": "2026-08-08T11:43:30.668Z",
       "level": "info",
       "msg": "ingest arXiv · The Low Frequency Trap: Video Language Models Fail at Sim… · 2026-08-06"
     },
     {
-      "t": "2026-08-07T18:02:04.193Z",
+      "t": "2026-08-08T11:43:30.668Z",
       "level": "info",
       "msg": "ingest arXiv · Resourced Authority A Mechanism-Design Model for Particip… · 2026-08-06"
     },
     {
-      "t": "2026-08-07T18:02:04.193Z",
+      "t": "2026-08-08T11:43:30.668Z",
       "level": "info",
       "msg": "ingest arXiv · CalibForge: Adversarial Solver Calibration for Scaling Le… · 2026-08-06"
     },
     {
-      "t": "2026-08-07T18:02:04.193Z",
+      "t": "2026-08-08T11:43:30.668Z",
       "level": "info",
       "msg": "ingest arXiv · Challenges in Evaluating Explanation Methods for Static a… · 2026-08-06"
     },
     {
-      "t": "2026-08-07T18:02:04.193Z",
+      "t": "2026-08-08T11:43:30.668Z",
+      "level": "info",
+      "msg": "ingest arXiv · TRAJDEBUG: Tracing Error Lifecycle to Identify Critical F… · 2026-08-06"
+    },
+    {
+      "t": "2026-08-08T11:43:30.668Z",
+      "level": "info",
+      "msg": "ingest arXiv · Scalable estimation of VARMA models · 2026-08-06"
+    },
+    {
+      "t": "2026-08-08T11:43:30.668Z",
       "level": "info",
       "msg": "--- dev feed: 14 items ---"
     },
     {
-      "t": "2026-08-07T18:02:04.193Z",
+      "t": "2026-08-08T11:43:30.668Z",
       "level": "info",
-      "msg": "ingest Hacker News · An all-sky map of half a million supermassive black holes · 2026-08-07"
+      "msg": "ingest Hacker News · Hardware backdoors in some x86 CPUs · 2026-08-08"
     },
     {
-      "t": "2026-08-07T18:02:04.193Z",
+      "t": "2026-08-08T11:43:30.668Z",
       "level": "info",
-      "msg": "ingest Hacker News · Responding to the next frontier of critical cyber capabil… · 2026-08-07"
+      "msg": "ingest Hacker News · A Physicist Rigged His Pet Hamster’s Wheel to Upload to S… · 2026-08-05"
     },
     {
-      "t": "2026-08-07T18:02:04.193Z",
+      "t": "2026-08-08T11:43:30.668Z",
       "level": "info",
-      "msg": "ingest Hacker News · New Mexico court orders Meta to pay $567m over harms to c… · 2026-08-07"
+      "msg": "ingest Hacker News · New Amazon Data Center Is Set to Have the Most Polluting… · 2026-08-08"
     },
     {
-      "t": "2026-08-07T18:02:04.193Z",
+      "t": "2026-08-08T11:43:30.668Z",
       "level": "info",
-      "msg": "ingest Hacker News · Möbius-Strip Crosswords · 2026-08-07"
+      "msg": "ingest Hacker News · DeepSeek V4 Flash 0731 · 2026-08-07"
     },
     {
-      "t": "2026-08-07T18:02:04.193Z",
+      "t": "2026-08-08T11:43:30.668Z",
       "level": "info",
-      "msg": "ingest Hacker News · Show HN: Wyzer Programming Language · 2026-08-07"
+      "msg": "ingest Hacker News · U.S. Department of Energy Launches the Genesis Open Model… · 2026-08-07"
     },
     {
-      "t": "2026-08-07T18:02:04.193Z",
+      "t": "2026-08-08T11:43:30.668Z",
       "level": "info",
-      "msg": "ingest Hacker News · Making Postgres 300x faster for analytics: batching, oper… · 2026-08-07"
+      "msg": "ingest Hacker News · What happens if an entire class of workers loses faith in… · 2026-08-07"
     },
     {
-      "t": "2026-08-07T18:02:04.193Z",
+      "t": "2026-08-08T11:43:30.668Z",
       "level": "info",
-      "msg": "ingest Hacker News · Kitesurf: Agent-first browser that runs in V8 isolates · 2026-08-07"
+      "msg": "ingest Hacker News · Europe's free satellite service just made it easier to tr… · 2026-08-08"
     },
     {
-      "t": "2026-08-07T18:02:04.193Z",
+      "t": "2026-08-08T11:43:30.668Z",
       "level": "info",
-      "msg": "ingest Hacker News · Show HN: textlog – A quiet, text-only microblogging platf… · 2026-08-07"
+      "msg": "ingest Hacker News · Assembly Hall of Shame · 2026-08-07"
     },
     {
-      "t": "2026-08-07T18:02:04.193Z",
+      "t": "2026-08-08T11:43:30.668Z",
       "level": "info",
-      "msg": "ingest Hacker News · Adults over 65 will outnumber children by 2029 · 2026-08-07"
+      "msg": "ingest Hacker News · ao486: x86-compatible Verilog core implementing all featu… · 2026-08-02"
     },
     {
-      "t": "2026-08-07T18:02:04.193Z",
+      "t": "2026-08-08T11:43:30.668Z",
       "level": "info",
-      "msg": "ingest Hacker News · Why Are There Statues of Beavers on Top of This Oxford St… · 2026-08-03"
+      "msg": "ingest Hacker News · NASA figured out how to keep its Voyager 2 probe running… · 2026-08-08"
     },
     {
-      "t": "2026-08-07T18:02:04.193Z",
+      "t": "2026-08-08T11:43:30.668Z",
       "level": "info",
-      "msg": "ingest Hacker News · Petri Nets as a Music Sequencer · 2026-08-03"
+      "msg": "ingest Hacker News · Ancient Library – 1,060 Greek/Latin texts, click any word… · 2026-08-07"
     },
     {
-      "t": "2026-08-07T18:02:04.193Z",
+      "t": "2026-08-08T11:43:30.668Z",
       "level": "info",
-      "msg": "ingest Hacker News · Taste Is All That's Left · 2026-08-06"
+      "msg": "ingest Hacker News · SupererDuperer · 2026-08-01"
     },
     {
-      "t": "2026-08-07T18:02:04.193Z",
+      "t": "2026-08-08T11:43:30.668Z",
       "level": "info",
-      "msg": "ingest Hacker News · Building Community Out of Strangers · 2026-08-04"
+      "msg": "ingest Hacker News · 2027 memory capacity is reportedly sold out · 2026-08-07"
     },
     {
-      "t": "2026-08-07T18:02:04.193Z",
+      "t": "2026-08-08T11:43:30.668Z",
       "level": "info",
-      "msg": "ingest Hacker News · São Paulo resident transforms degraded area into urban fo… · 2026-08-01"
+      "msg": "ingest Hacker News · Show HN: Sign language translation with smart glasses · 2026-08-04"
     },
     {
-      "t": "2026-08-07T18:02:04.193Z",
+      "t": "2026-08-08T11:43:30.668Z",
       "level": "info",
-      "msg": "publishing 42 items across 3 feeds · 1650ms"
+      "msg": "publishing 42 items across 3 feeds · 1124ms"
     }
   ],
   "feeds": {
@@ -488,6 +488,34 @@
     ],
     "ai": [
       {
+        "id": "hn-49220126",
+        "title": "DeepMind's WeatherNext model achieves breakthrough forecasting cyclones",
+        "url": "https://deepmind.google/blog/weathernext-ai-model-achieves-breakthrough-in-forecasting-cyclones/",
+        "source": "Hacker News",
+        "date": "2026-08-08",
+        "summary": "",
+        "meta": [
+          "7 points",
+          "1 comments"
+        ],
+        "discussion": "https://news.ycombinator.com/item?id=49220126",
+        "flag": null
+      },
+      {
+        "id": "hn-49214468",
+        "title": "Managing AI Coding Costs at Scale",
+        "url": "https://www.databricks.com/blog/managing-ai-coding-costs-scale",
+        "source": "Hacker News",
+        "date": "2026-08-07",
+        "summary": "",
+        "meta": [
+          "252 points",
+          "212 comments"
+        ],
+        "discussion": "https://news.ycombinator.com/item?id=49214468",
+        "flag": null
+      },
+      {
         "id": "hn-49213754",
         "title": "Oracle bans AI-generated code from OpenJDK",
         "url": "https://app.dealroom.co/news/feed/oracle-bans-ai-generated-code-from-openjdk-despite-ellison-s-claim-oracle-isn-t-writing-its-own-code",
@@ -495,66 +523,10 @@
         "date": "2026-08-07",
         "summary": "",
         "meta": [
-          "36 points",
-          "16 comments"
+          "481 points",
+          "343 comments"
         ],
         "discussion": "https://news.ycombinator.com/item?id=49213754",
-        "flag": null
-      },
-      {
-        "id": "hn-49213016",
-        "title": "The Tokenpocalypse Is Here: Companies Are Scrambling to Stop Spending on AI",
-        "url": "https://www.404media.co/the-tokenpocalypse-is-here-companies-are-scrambling-to-stop-spending-so-much-on-ai/",
-        "source": "Hacker News",
-        "date": "2026-08-07",
-        "summary": "",
-        "meta": [
-          "8 points",
-          "3 comments"
-        ],
-        "discussion": "https://news.ycombinator.com/item?id=49213016",
-        "flag": null
-      },
-      {
-        "id": "hn-49212531",
-        "title": "AI agents fake identities, target real people in new security incident",
-        "url": "https://www.cnn.com/2026/08/04/tech/ai-anthropic-openai-security-breach-intl-hnk",
-        "source": "Hacker News",
-        "date": "2026-08-07",
-        "summary": "",
-        "meta": [
-          "10 points",
-          "3 comments"
-        ],
-        "discussion": "https://news.ycombinator.com/item?id=49212531",
-        "flag": null
-      },
-      {
-        "id": "hn-49213385",
-        "title": "Estrogen masculinizes neural pathways and sex-specific behaviors",
-        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2851224/",
-        "source": "Hacker News",
-        "date": "2026-08-07",
-        "summary": "",
-        "meta": [
-          "5 points",
-          "1 comments"
-        ],
-        "discussion": "https://news.ycombinator.com/item?id=49213385",
-        "flag": null
-      },
-      {
-        "id": "hn-49204546",
-        "title": "New Orleans is testing Carbyne’s AI-powered Emergency Call Triage software",
-        "url": "https://www.shreveporttimes.com/story/news/local/louisiana/2026/07/28/is-new-orleans-using-ai-to-answer-911-calls-instead-of-human-dispatchers-impacts-emergencies-crime/91065014007/",
-        "source": "Hacker News",
-        "date": "2026-08-07",
-        "summary": "",
-        "meta": [
-          "71 points",
-          "114 comments"
-        ],
-        "discussion": "https://news.ycombinator.com/item?id=49204546",
         "flag": null
       },
       {
@@ -673,203 +645,229 @@
           "Jerzy Stefanowski"
         ],
         "flag": null
+      },
+      {
+        "id": "http://arxiv.org/abs/2608.06346v1",
+        "title": "TRAJDEBUG: Tracing Error Lifecycle to Identify Critical Failures in Long-Horizon Agent Trajectories",
+        "url": "http://arxiv.org/abs/2608.06346v1",
+        "source": "arXiv",
+        "date": "2026-08-06",
+        "summary": "LLM-based agentic systems have shown remarkable capabilities in complex domains, while suffering from cascading errors and difficulty in debugging. Critical error detection aims to locate the earliest error step in a failed trajectory that is responsible for the final failure. However, progress faces two main challeng…",
+        "meta": [
+          "Research",
+          "Yunjia Qi +12"
+        ],
+        "flag": null
+      },
+      {
+        "id": "http://arxiv.org/abs/2608.06340v1",
+        "title": "Scalable estimation of VARMA models",
+        "url": "http://arxiv.org/abs/2608.06340v1",
+        "source": "arXiv",
+        "date": "2026-08-06",
+        "summary": "Vector autoregressive moving-average (VARMA) models have long been considered impractical beyond moderate dimensions: the likelihood is non-convex, the parametrization is identified only up to equivalence, and every evaluation costs a pass over the entire series. Yet their moving-average term captures with a few param…",
+        "meta": [
+          "Research",
+          "Daniel Paulin +1"
+        ],
+        "flag": null
       }
     ],
     "dev": [
       {
-        "id": "hn-49211921",
-        "title": "An all-sky map of half a million supermassive black holes",
-        "url": "https://www.sdss.org/black-hole-mapper-release-20/",
+        "id": "hn-49219508",
+        "title": "Hardware backdoors in some x86 CPUs",
+        "url": "https://github.com/xoreaxeaxeax/rosenbridge",
+        "source": "Hacker News",
+        "date": "2026-08-08",
+        "summary": "",
+        "meta": [
+          "147 points",
+          "46 comments"
+        ],
+        "discussion": "https://news.ycombinator.com/item?id=49219508",
+        "flag": null
+      },
+      {
+        "id": "hn-49189457",
+        "title": "A Physicist Rigged His Pet Hamster’s Wheel to Upload to Strava",
+        "url": "https://www.runnersworld.com/news/a73355106/hamster-wheel-strava-running/",
+        "source": "Hacker News",
+        "date": "2026-08-05",
+        "summary": "",
+        "meta": [
+          "248 points",
+          "48 comments"
+        ],
+        "discussion": "https://news.ycombinator.com/item?id=49189457",
+        "flag": null
+      },
+      {
+        "id": "hn-49220350",
+        "title": "New Amazon Data Center Is Set to Have the Most Polluting Power Plant in the U.S.",
+        "url": "https://www.nytimes.com/2026/08/08/climate/amazon-data-center-texas-pollution.html",
+        "source": "Hacker News",
+        "date": "2026-08-08",
+        "summary": "",
+        "meta": [
+          "78 points",
+          "41 comments"
+        ],
+        "discussion": "https://news.ycombinator.com/item?id=49220350",
+        "flag": null
+      },
+      {
+        "id": "hn-49214008",
+        "title": "DeepSeek V4 Flash 0731",
+        "url": "https://arcprize.org/results/deepseek-v4-flash-0731",
         "source": "Hacker News",
         "date": "2026-08-07",
         "summary": "",
         "meta": [
-          "67 points",
-          "19 comments"
+          "656 points",
+          "396 comments"
         ],
-        "discussion": "https://news.ycombinator.com/item?id=49211921",
+        "discussion": "https://news.ycombinator.com/item?id=49214008",
         "flag": null
       },
       {
-        "id": "hn-49213029",
-        "title": "Responding to the next frontier of critical cyber capabilities",
-        "url": "https://openai.com/index/responding-next-frontier-critical-cyber-capabilities/",
+        "id": "hn-49216946",
+        "title": "U.S. Department of Energy Launches the Genesis Open Models Initiative",
+        "url": "https://genesisopenmodels.anl.gov/",
         "source": "Hacker News",
         "date": "2026-08-07",
         "summary": "",
         "meta": [
-          "62 points",
-          "54 comments"
+          "253 points",
+          "90 comments"
         ],
-        "discussion": "https://news.ycombinator.com/item?id=49213029",
+        "discussion": "https://news.ycombinator.com/item?id=49216946",
         "flag": null
       },
       {
-        "id": "hn-49204352",
-        "title": "New Mexico court orders Meta to pay $567m over harms to children’s mental health",
-        "url": "https://www.theguardian.com/technology/2026/aug/06/new-mexico-court-meta",
+        "id": "hn-49209539",
+        "title": "What happens if an entire class of workers loses faith in their careers",
+        "url": "https://www.noemamag.com/why-is-everyone-in-tech-so-sad/",
         "source": "Hacker News",
         "date": "2026-08-07",
         "summary": "",
         "meta": [
-          "611 points",
-          "336 comments"
+          "723 points",
+          "807 comments"
         ],
-        "discussion": "https://news.ycombinator.com/item?id=49204352",
+        "discussion": "https://news.ycombinator.com/item?id=49209539",
         "flag": null
       },
       {
-        "id": "hn-49211660",
-        "title": "Möbius-Strip Crosswords",
-        "url": "https://quuxplusone.github.io/blog/2026/08/04/mobius-crossword/",
+        "id": "hn-49220313",
+        "title": "Europe's free satellite service just made it easier to track wildfires",
+        "url": "https://arstechnica.com/gadgets/2026/08/europes-free-satellite-service-just-made-it-easier-to-track-wildfires/",
+        "source": "Hacker News",
+        "date": "2026-08-08",
+        "summary": "",
+        "meta": [
+          "34 points",
+          "4 comments"
+        ],
+        "discussion": "https://news.ycombinator.com/item?id=49220313",
+        "flag": null
+      },
+      {
+        "id": "hn-49214098",
+        "title": "Assembly Hall of Shame",
+        "url": "https://github.com/xoreaxeaxeax/asm-hall-of-shame",
         "source": "Hacker News",
         "date": "2026-08-07",
         "summary": "",
         "meta": [
-          "20 points",
-          "1 comments"
+          "357 points",
+          "91 comments"
         ],
-        "discussion": "https://news.ycombinator.com/item?id=49211660",
+        "discussion": "https://news.ycombinator.com/item?id=49214098",
         "flag": null
       },
       {
-        "id": "hn-49209385",
-        "title": "Show HN: Wyzer Programming Language",
-        "url": "https://github.com/Wyzer-Lang/wyzer",
+        "id": "hn-49141236",
+        "title": "ao486: x86-compatible Verilog core implementing all features of a 486 SX (2014)",
+        "url": "https://github.com/alfikpl/ao486",
+        "source": "Hacker News",
+        "date": "2026-08-02",
+        "summary": "",
+        "meta": [
+          "26 points",
+          "3 comments"
+        ],
+        "discussion": "https://news.ycombinator.com/item?id=49141236",
+        "flag": null
+      },
+      {
+        "id": "hn-49218179",
+        "title": "NASA figured out how to keep its Voyager 2 probe running for another year",
+        "url": "https://www.space.com/space-exploration/voyager/nasa-figured-out-how-to-keep-its-48-year-old-voyager-2-probe-running-for-yet-another-year",
+        "source": "Hacker News",
+        "date": "2026-08-08",
+        "summary": "",
+        "meta": [
+          "260 points",
+          "47 comments"
+        ],
+        "discussion": "https://news.ycombinator.com/item?id=49218179",
+        "flag": null
+      },
+      {
+        "id": "hn-49214770",
+        "title": "Ancient Library – 1,060 Greek/Latin texts, click any word to parse it",
+        "url": "https://ancientlibrary.net/",
         "source": "Hacker News",
         "date": "2026-08-07",
         "summary": "",
         "meta": [
-          "128 points",
-          "68 comments"
+          "213 points",
+          "69 comments"
         ],
-        "discussion": "https://news.ycombinator.com/item?id=49209385",
+        "discussion": "https://news.ycombinator.com/item?id=49214770",
         "flag": null
       },
       {
-        "id": "hn-49208535",
-        "title": "Making Postgres 300x faster for analytics: batching, operator fusion, and SIMD",
-        "url": "https://malisper.me/how-we-made-postgres-hundreds-of-times-faster-the-query-engine/",
-        "source": "Hacker News",
-        "date": "2026-08-07",
-        "summary": "",
-        "meta": [
-          "134 points",
-          "62 comments"
-        ],
-        "discussion": "https://news.ycombinator.com/item?id=49208535",
-        "flag": null
-      },
-      {
-        "id": "hn-49208393",
-        "title": "Kitesurf: Agent-first browser that runs in V8 isolates",
-        "url": "https://blog.cloudflare.com/kitesurf/",
-        "source": "Hacker News",
-        "date": "2026-08-07",
-        "summary": "",
-        "meta": [
-          "87 points",
-          "21 comments"
-        ],
-        "discussion": "https://news.ycombinator.com/item?id=49208393",
-        "flag": null
-      },
-      {
-        "id": "hn-49208458",
-        "title": "Show HN: textlog – A quiet, text-only microblogging platform, open-source, no JS",
-        "url": "https://textlog.cc/about",
-        "source": "Hacker News",
-        "date": "2026-08-07",
-        "summary": "",
-        "meta": [
-          "83 points",
-          "34 comments"
-        ],
-        "discussion": "https://news.ycombinator.com/item?id=49208458",
-        "flag": null
-      },
-      {
-        "id": "hn-49212424",
-        "title": "Adults over 65 will outnumber children by 2029",
-        "url": "https://eco3min.fr/en/us-children-vs-adults-65-and-older/",
-        "source": "Hacker News",
-        "date": "2026-08-07",
-        "summary": "",
-        "meta": [
-          "46 points",
-          "35 comments"
-        ],
-        "discussion": "https://news.ycombinator.com/item?id=49212424",
-        "flag": null
-      },
-      {
-        "id": "hn-49158302",
-        "title": "Why Are There Statues of Beavers on Top of This Oxford Street Shop?",
-        "url": "https://londonist.com/london/history/oxford-street-beavers",
-        "source": "Hacker News",
-        "date": "2026-08-03",
-        "summary": "",
-        "meta": [
-          "27 points",
-          "7 comments"
-        ],
-        "discussion": "https://news.ycombinator.com/item?id=49158302",
-        "flag": null
-      },
-      {
-        "id": "hn-49158934",
-        "title": "Petri Nets as a Music Sequencer",
-        "url": "https://blog.stackdump.com/posts/petri-net-sequencer",
-        "source": "Hacker News",
-        "date": "2026-08-03",
-        "summary": "",
-        "meta": [
-          "36 points",
-          "12 comments"
-        ],
-        "discussion": "https://news.ycombinator.com/item?id=49158934",
-        "flag": null
-      },
-      {
-        "id": "hn-49199346",
-        "title": "Taste Is All That's Left",
-        "url": "https://notashelf.dev/posts/taste-is-all-thats-left",
-        "source": "Hacker News",
-        "date": "2026-08-06",
-        "summary": "",
-        "meta": [
-          "616 points",
-          "487 comments"
-        ],
-        "discussion": "https://news.ycombinator.com/item?id=49199346",
-        "flag": null
-      },
-      {
-        "id": "hn-49170241",
-        "title": "Building Community Out of Strangers",
-        "url": "https://tracydurnell.com/2023/11/30/building-community-out-of-strangers/",
-        "source": "Hacker News",
-        "date": "2026-08-04",
-        "summary": "",
-        "meta": [
-          "10 points",
-          "0 comments"
-        ],
-        "discussion": "https://news.ycombinator.com/item?id=49170241",
-        "flag": null
-      },
-      {
-        "id": "hn-49138446",
-        "title": "São Paulo resident transforms degraded area into urban forest",
-        "url": "https://saopaulosecreto.com/en/tiquatira-linear-park-en/",
+        "id": "hn-49135261",
+        "title": "SupererDuperer",
+        "url": "https://www.shirtpocket.com/blog/supererduperer",
         "source": "Hacker News",
         "date": "2026-08-01",
         "summary": "",
         "meta": [
-          "281 points",
-          "108 comments"
+          "120 points",
+          "25 comments"
         ],
-        "discussion": "https://news.ycombinator.com/item?id=49138446",
+        "discussion": "https://news.ycombinator.com/item?id=49135261",
+        "flag": null
+      },
+      {
+        "id": "hn-49207236",
+        "title": "2027 memory capacity is reportedly sold out",
+        "url": "https://www.ign.com/articles/ramageddon-continues-another-year-as-2027-memory-capacity-is-reportedly-sold-out",
+        "source": "Hacker News",
+        "date": "2026-08-07",
+        "summary": "",
+        "meta": [
+          "392 points",
+          "360 comments"
+        ],
+        "discussion": "https://news.ycombinator.com/item?id=49207236",
+        "flag": null
+      },
+      {
+        "id": "hn-49175774",
+        "title": "Show HN: Sign language translation with smart glasses",
+        "url": "https://github.com/aadisang/hand-wave",
+        "source": "Hacker News",
+        "date": "2026-08-04",
+        "summary": "",
+        "meta": [
+          "5 points",
+          "3 comments"
+        ],
+        "discussion": "https://news.ycombinator.com/item?id=49175774",
         "flag": null
       }
     ]
