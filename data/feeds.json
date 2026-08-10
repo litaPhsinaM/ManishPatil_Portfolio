@@ -1,290 +1,290 @@
 {
-  "generatedAt": "2026-08-09T11:45:07.648Z",
+  "generatedAt": "2026-08-10T11:59:11.071Z",
   "log": [
     {
-      "t": "2026-08-09T11:45:06.432Z",
+      "t": "2026-08-10T11:59:10.153Z",
       "level": "info",
       "msg": "signal refresh started"
     },
     {
-      "t": "2026-08-09T11:45:06.437Z",
+      "t": "2026-08-10T11:59:10.158Z",
       "level": "info",
       "msg": "GET hacker-news.firebaseio.com/v0/topstories.json"
     },
     {
-      "t": "2026-08-09T11:45:06.661Z",
+      "t": "2026-08-10T11:59:10.329Z",
       "level": "info",
       "msg": "HTTP 200 · resolving top 60 story ids in batches of 10"
     },
     {
-      "t": "2026-08-09T11:45:07.182Z",
+      "t": "2026-08-10T11:59:10.666Z",
       "level": "info",
-      "msg": "60 of 60 resolved to usable stories · 745ms"
+      "msg": "60 of 60 resolved to usable stories · 508ms"
     },
     {
-      "t": "2026-08-09T11:45:07.183Z",
+      "t": "2026-08-10T11:59:10.667Z",
       "level": "info",
       "msg": "GET cisa.gov/feeds/known_exploited_vulnerabilities.json"
     },
     {
-      "t": "2026-08-09T11:45:07.288Z",
+      "t": "2026-08-10T11:59:10.770Z",
       "level": "info",
-      "msg": "HTTP 200 · catalog holds 1662 CVEs · 105ms"
+      "msg": "HTTP 200 · catalog holds 1662 CVEs · 103ms"
     },
     {
-      "t": "2026-08-09T11:45:07.292Z",
+      "t": "2026-08-10T11:59:10.774Z",
       "level": "info",
       "msg": "fleet filter: 986 of 1662 touch managed platforms"
     },
     {
-      "t": "2026-08-09T11:45:07.299Z",
+      "t": "2026-08-10T11:59:10.782Z",
       "level": "warn",
       "msg": "2 of the newest 14 are linked to ransomware campaigns"
     },
     {
-      "t": "2026-08-09T11:45:07.300Z",
+      "t": "2026-08-10T11:59:10.783Z",
       "level": "info",
       "msg": "GET export.arxiv.org/api/query cat:cs.AI OR cat:cs.LG"
     },
     {
-      "t": "2026-08-09T11:45:07.645Z",
+      "t": "2026-08-10T11:59:11.068Z",
       "level": "info",
-      "msg": "HTTP 200 · 30,553 bytes of Atom XML · 345ms"
+      "msg": "HTTP 200 · 31,250 bytes of Atom XML · 285ms"
     },
     {
-      "t": "2026-08-09T11:45:07.647Z",
+      "t": "2026-08-10T11:59:11.070Z",
       "level": "info",
-      "msg": "topic split: 6 AI stories, 54 general dev"
+      "msg": "topic split: 9 AI stories, 51 general dev"
     },
     {
-      "t": "2026-08-09T11:45:07.647Z",
+      "t": "2026-08-10T11:59:11.070Z",
       "level": "info",
       "msg": "--- security feed: 14 items ---"
     },
     {
-      "t": "2026-08-09T11:45:07.647Z",
+      "t": "2026-08-10T11:59:11.070Z",
       "level": "info",
       "msg": "ingest CISA KEV · Apache Tomcat Missing Encryption of Sensitive Data Vulner… · 2026-08-04"
     },
     {
-      "t": "2026-08-09T11:45:07.648Z",
+      "t": "2026-08-10T11:59:11.070Z",
       "level": "info",
       "msg": "ingest CISA KEV · Cisco Secure Firewall Management Center Use of Hard-coded… · 2026-07-29"
     },
     {
-      "t": "2026-08-09T11:45:07.648Z",
+      "t": "2026-08-10T11:59:11.070Z",
       "level": "info",
       "msg": "ingest CISA KEV · Fortinet FortiOS Exposure of Sensitive Information to an… · 2026-07-27"
     },
     {
-      "t": "2026-08-09T11:45:07.648Z",
+      "t": "2026-08-10T11:59:11.070Z",
       "level": "info",
       "msg": "ingest CISA KEV · Microsoft SharePoint Deserialization of Untrusted Data Vu… · 2026-07-22"
     },
     {
-      "t": "2026-08-09T11:45:07.648Z",
+      "t": "2026-08-10T11:59:11.070Z",
       "level": "info",
       "msg": "ingest CISA KEV · WordPress Core SQL Injection Vulnerability · 2026-07-21"
     },
     {
-      "t": "2026-08-09T11:45:07.648Z",
+      "t": "2026-08-10T11:59:11.070Z",
       "level": "info",
       "msg": "ingest CISA KEV · WordPress Core Interpretation Conflict Vulnerability · 2026-07-21"
     },
     {
-      "t": "2026-08-09T11:45:07.648Z",
+      "t": "2026-08-10T11:59:11.070Z",
       "level": "info",
       "msg": "ingest CISA KEV · Microsoft SharePoint Deserialization of Untrusted Data Vu… · 2026-07-16"
     },
     {
-      "t": "2026-08-09T11:45:07.648Z",
+      "t": "2026-08-10T11:59:11.070Z",
       "level": "info",
       "msg": "ingest CISA KEV · Fortinet FortiSandbox OS Command Injection Vulnerability · 2026-07-16"
     },
     {
-      "t": "2026-08-09T11:45:07.648Z",
+      "t": "2026-08-10T11:59:11.070Z",
       "level": "info",
       "msg": "ingest CISA KEV · Fortinet FortiSandbox OS Command Injection Vulnerability · 2026-07-16"
     },
     {
-      "t": "2026-08-09T11:45:07.648Z",
+      "t": "2026-08-10T11:59:11.070Z",
       "level": "info",
       "msg": "ingest CISA KEV · Oracle E-Business Suite Improper Privilege Management Vul… · 2026-07-15"
     },
     {
-      "t": "2026-08-09T11:45:07.648Z",
+      "t": "2026-08-10T11:59:11.070Z",
       "level": "info",
       "msg": "ingest CISA KEV · Microsoft Active Directory Federation Services Insufficie… · 2026-07-14"
     },
     {
-      "t": "2026-08-09T11:45:07.648Z",
+      "t": "2026-08-10T11:59:11.070Z",
       "level": "info",
       "msg": "ingest CISA KEV · Microsoft SharePoint Server Missing Authentication for Cr… · 2026-07-14"
     },
     {
-      "t": "2026-08-09T11:45:07.648Z",
+      "t": "2026-08-10T11:59:11.070Z",
       "level": "warn",
       "msg": "ingest CISA KEV · SonicWall SMA1000 Appliances Server-Side Request Forgery… · 2026-07-14"
     },
     {
-      "t": "2026-08-09T11:45:07.648Z",
+      "t": "2026-08-10T11:59:11.070Z",
       "level": "warn",
       "msg": "ingest CISA KEV · SonicWall SMA1000 Appliances Code Injection Vulnerability · 2026-07-14"
     },
     {
-      "t": "2026-08-09T11:45:07.648Z",
+      "t": "2026-08-10T11:59:11.070Z",
       "level": "info",
       "msg": "--- ai feed: 14 items ---"
     },
     {
-      "t": "2026-08-09T11:45:07.648Z",
+      "t": "2026-08-10T11:59:11.070Z",
       "level": "info",
-      "msg": "ingest Hacker News · Software Giant SAP Stops Most Travel and Hiring Because o… · 2026-08-09"
+      "msg": "ingest Hacker News · Docker Sandboxes – Disposable, isolated sandboxes for AI… · 2026-08-10"
     },
     {
-      "t": "2026-08-09T11:45:07.648Z",
+      "t": "2026-08-10T11:59:11.070Z",
       "level": "info",
-      "msg": "ingest Hacker News · I asked 4 AI companions what they were. They lied, then t… · 2026-08-09"
+      "msg": "ingest Hacker News · Show HN: Voice driven murder mystery, Interview AI suspec… · 2026-08-10"
     },
     {
-      "t": "2026-08-09T11:45:07.648Z",
+      "t": "2026-08-10T11:59:11.070Z",
       "level": "info",
-      "msg": "ingest Hacker News · Message your other Claude Code sessions · 2026-08-08"
+      "msg": "ingest Hacker News · Auto mode is now the default in Claude Code · 2026-08-10"
     },
     {
-      "t": "2026-08-09T11:45:07.648Z",
+      "t": "2026-08-10T11:59:11.071Z",
       "level": "info",
-      "msg": "ingest Hacker News · DeepMind's WeatherNext model achieves breakthrough foreca… · 2026-08-08"
+      "msg": "ingest Hacker News · Meta's new open-weight model targets local agentic AI · 2026-08-10"
     },
     {
-      "t": "2026-08-09T11:45:07.648Z",
+      "t": "2026-08-10T11:59:11.071Z",
       "level": "info",
-      "msg": "ingest Hacker News · Timeline of the OpenAI accidental attack against Hugging… · 2026-08-08"
+      "msg": "ingest Hacker News · The Philippines' big offshoring industry is growing despi… · 2026-08-10"
     },
     {
-      "t": "2026-08-09T11:45:07.648Z",
+      "t": "2026-08-10T11:59:11.071Z",
       "level": "info",
-      "msg": "ingest Hacker News · Lost my phone at the office. Claude suggested tracking Bl… · 2026-08-07"
+      "msg": "ingest Hacker News · Hetzner Experiments Platform: Inference API · 2026-08-10"
     },
     {
-      "t": "2026-08-09T11:45:07.648Z",
+      "t": "2026-08-10T11:59:11.071Z",
       "level": "info",
-      "msg": "ingest arXiv · Learning When to Trust via Selective Context Preference O… · 2026-08-06"
+      "msg": "ingest Hacker News · How I use LLMs to learn complex topics · 2026-08-09"
     },
     {
-      "t": "2026-08-09T11:45:07.648Z",
+      "t": "2026-08-10T11:59:11.071Z",
       "level": "info",
-      "msg": "ingest arXiv · Tracing the Heart: An Evidence-Linked Pipeline for Heart-… · 2026-08-06"
+      "msg": "ingest Hacker News · The tragedy of the commons, AI edition · 2026-08-09"
     },
     {
-      "t": "2026-08-09T11:45:07.648Z",
+      "t": "2026-08-10T11:59:11.071Z",
       "level": "info",
-      "msg": "ingest arXiv · Investigating Artificial Intelligence Digital Sovereignty… · 2026-08-06"
+      "msg": "ingest Hacker News · Human vs. AI – Diff-based line-level provenance for text… · 2026-08-09"
     },
     {
-      "t": "2026-08-09T11:45:07.648Z",
+      "t": "2026-08-10T11:59:11.071Z",
       "level": "info",
-      "msg": "ingest arXiv · An Optimal Agnostic PAC Algorithm · 2026-08-06"
+      "msg": "ingest arXiv · MirrorWorld: Taming Video Diffusion Models for Mirror Ref… · 2026-08-07"
     },
     {
-      "t": "2026-08-09T11:45:07.648Z",
+      "t": "2026-08-10T11:59:11.071Z",
       "level": "info",
-      "msg": "ingest arXiv · AV-AIVAT: 74x Cheaper Agent Evaluation with Certified Any… · 2026-08-06"
+      "msg": "ingest arXiv · CreativeInstruct: Scalably Teaching LLMs to Balance Quali… · 2026-08-07"
     },
     {
-      "t": "2026-08-09T11:45:07.648Z",
+      "t": "2026-08-10T11:59:11.071Z",
       "level": "info",
-      "msg": "ingest arXiv · The Low Frequency Trap: Video Language Models Fail at Sim… · 2026-08-06"
+      "msg": "ingest arXiv · CoinRAG: Contextualized Information Nugget KV Cache Reuse… · 2026-08-07"
     },
     {
-      "t": "2026-08-09T11:45:07.648Z",
+      "t": "2026-08-10T11:59:11.071Z",
       "level": "info",
-      "msg": "ingest arXiv · Resourced Authority A Mechanism-Design Model for Particip… · 2026-08-06"
+      "msg": "ingest arXiv · Interaction Creates Dynamical AI Behavior Absent in Isola… · 2026-08-07"
     },
     {
-      "t": "2026-08-09T11:45:07.648Z",
+      "t": "2026-08-10T11:59:11.071Z",
       "level": "info",
-      "msg": "ingest arXiv · CalibForge: Adversarial Solver Calibration for Scaling Le… · 2026-08-06"
+      "msg": "ingest arXiv · Strategy-first synthesis planning for complex natural pro… · 2026-08-07"
     },
     {
-      "t": "2026-08-09T11:45:07.648Z",
+      "t": "2026-08-10T11:59:11.071Z",
       "level": "info",
       "msg": "--- dev feed: 14 items ---"
     },
     {
-      "t": "2026-08-09T11:45:07.648Z",
+      "t": "2026-08-10T11:59:11.071Z",
       "level": "info",
-      "msg": "ingest Hacker News · There Are Magic Hexagons of Every Order · 2026-08-09"
+      "msg": "ingest Hacker News · Meta Muse Glimmer – open weights 30B local coding model · 2026-08-10"
     },
     {
-      "t": "2026-08-09T11:45:07.648Z",
+      "t": "2026-08-10T11:59:11.071Z",
       "level": "info",
-      "msg": "ingest Hacker News · My server is a phone now · 2026-08-08"
+      "msg": "ingest Hacker News · Tail-call optimization in C is relatively recent · 2026-08-10"
     },
     {
-      "t": "2026-08-09T11:45:07.648Z",
+      "t": "2026-08-10T11:59:11.071Z",
       "level": "info",
-      "msg": "ingest Hacker News · Microsoft Word for Windows 1.1a, Native X64 Port · 2026-08-09"
+      "msg": "ingest Hacker News · What Happened to HackerOne? · 2026-08-10"
     },
     {
-      "t": "2026-08-09T11:45:07.648Z",
+      "t": "2026-08-10T11:59:11.071Z",
       "level": "info",
-      "msg": "ingest Hacker News · Os8088: A powerful Mac-like OS for the IBM XT, 286, 386 · 2026-08-08"
+      "msg": "ingest Hacker News · Because It's Not Fun Enough: why languages fail · 2026-08-10"
     },
     {
-      "t": "2026-08-09T11:45:07.648Z",
+      "t": "2026-08-10T11:59:11.071Z",
       "level": "info",
-      "msg": "ingest Hacker News · The Alpha 21264 CPU: NT's Greatest RISC (1998) · 2026-08-09"
+      "msg": "ingest Hacker News · Run Android ARM64 VR APKs on Apple Vision Pro · 2026-08-10"
     },
     {
-      "t": "2026-08-09T11:45:07.648Z",
+      "t": "2026-08-10T11:59:11.071Z",
       "level": "info",
-      "msg": "ingest Hacker News · Fastmail offers EU data region · 2026-08-08"
+      "msg": "ingest Hacker News · Tail-Call Interpreters in Rust – Jimmy Ostler · 2026-08-07"
     },
     {
-      "t": "2026-08-09T11:45:07.648Z",
+      "t": "2026-08-10T11:59:11.071Z",
       "level": "info",
-      "msg": "ingest Hacker News · The Grid That Doubles the Strength of the Ground · 2026-08-05"
+      "msg": "ingest Hacker News · An Interesting Fourier Transform – 1/F Noise · 2026-08-07"
     },
     {
-      "t": "2026-08-09T11:45:07.648Z",
+      "t": "2026-08-10T11:59:11.071Z",
       "level": "info",
-      "msg": "ingest Hacker News · Improving Heuristics for A* Pathfinding · 2026-07-28"
+      "msg": "ingest Hacker News · COLDCARD's Random Numbers Weren't · 2026-08-05"
     },
     {
-      "t": "2026-08-09T11:45:07.648Z",
+      "t": "2026-08-10T11:59:11.071Z",
       "level": "info",
-      "msg": "ingest Hacker News · Shopify replaced Redis with MySQL for inventory reservati… · 2026-08-08"
+      "msg": "ingest Hacker News · Taxi drivers rarely die of Alzheimer's · 2026-08-09"
     },
     {
-      "t": "2026-08-09T11:45:07.648Z",
+      "t": "2026-08-10T11:59:11.071Z",
       "level": "info",
-      "msg": "ingest Hacker News · Dithered QR Codes · 2026-08-08"
+      "msg": "ingest Hacker News · How We Pushed CDC into Postgres · 2026-08-10"
     },
     {
-      "t": "2026-08-09T11:45:07.648Z",
+      "t": "2026-08-10T11:59:11.071Z",
       "level": "info",
-      "msg": "ingest Hacker News · The original URL for this prediction will no longer be av… · 2026-08-09"
+      "msg": "ingest Hacker News · Ask HN: What are you working on? (August 2026) · 2026-08-09"
     },
     {
-      "t": "2026-08-09T11:45:07.648Z",
+      "t": "2026-08-10T11:59:11.071Z",
       "level": "info",
-      "msg": "ingest Hacker News · Protopia · 2026-08-04"
+      "msg": "ingest Hacker News · How Blackwing Pencils are Made [video] · 2026-08-05"
     },
     {
-      "t": "2026-08-09T11:45:07.648Z",
+      "t": "2026-08-10T11:59:11.071Z",
       "level": "info",
-      "msg": "ingest Hacker News · _for-sale DNS records · 2026-08-08"
+      "msg": "ingest Hacker News · Turn satellite imagery into a paper globe you fold yourse… · 2026-08-10"
     },
     {
-      "t": "2026-08-09T11:45:07.648Z",
+      "t": "2026-08-10T11:59:11.071Z",
       "level": "info",
-      "msg": "ingest Hacker News · Melatonin impairs morning cognition in healthy young adul… · 2026-08-09"
+      "msg": "ingest Hacker News · Cool URIs Don't Change (1998) · 2026-08-09"
     },
     {
-      "t": "2026-08-09T11:45:07.648Z",
+      "t": "2026-08-10T11:59:11.071Z",
       "level": "info",
-      "msg": "publishing 42 items across 3 feeds · 1216ms"
+      "msg": "publishing 42 items across 3 feeds · 918ms"
     }
   ],
   "feeds": {
@@ -488,389 +488,392 @@
     ],
     "ai": [
       {
-        "id": "hn-49229412",
-        "title": "Software Giant SAP Stops Most Travel and Hiring Because of AI's Soaring Cost",
-        "url": "https://www.404media.co/software-giant-sap-stops-most-travel-and-hiring-because-of-ais-soaring-cost/",
+        "id": "hn-49239751",
+        "title": "Docker Sandboxes – Disposable, isolated sandboxes for AI agents",
+        "url": "https://www.docker.com/products/docker-sandboxes/",
+        "source": "Hacker News",
+        "date": "2026-08-10",
+        "summary": "",
+        "meta": [
+          "286 points",
+          "168 comments"
+        ],
+        "discussion": "https://news.ycombinator.com/item?id=49239751",
+        "flag": null
+      },
+      {
+        "id": "hn-49238851",
+        "title": "Show HN: Voice driven murder mystery, Interview AI suspects with your voice",
+        "url": "https://www.whodunnitai.com/",
+        "source": "Hacker News",
+        "date": "2026-08-10",
+        "summary": "",
+        "meta": [
+          "114 points",
+          "49 comments"
+        ],
+        "discussion": "https://news.ycombinator.com/item?id=49238851",
+        "flag": null
+      },
+      {
+        "id": "hn-49239021",
+        "title": "Auto mode is now the default in Claude Code",
+        "url": "https://claude.com/blog/auto-mode-default-in-claude-code",
+        "source": "Hacker News",
+        "date": "2026-08-10",
+        "summary": "",
+        "meta": [
+          "234 points",
+          "242 comments"
+        ],
+        "discussion": "https://news.ycombinator.com/item?id=49239021",
+        "flag": null
+      },
+      {
+        "id": "hn-49242038",
+        "title": "Meta's new open-weight model targets local agentic AI",
+        "url": "https://twitter.com/finkd/status/2086754845218726027",
+        "source": "Hacker News",
+        "date": "2026-08-10",
+        "summary": "",
+        "meta": [
+          "12 points",
+          "1 comments"
+        ],
+        "discussion": "https://news.ycombinator.com/item?id=49242038",
+        "flag": null
+      },
+      {
+        "id": "hn-49239226",
+        "title": "The Philippines' big offshoring industry is growing despite AI",
+        "url": "https://www.economist.com/asia/2026/08/06/the-philippines-big-offshoring-industry-is-growing-despite-ai",
+        "source": "Hacker News",
+        "date": "2026-08-10",
+        "summary": "",
+        "meta": [
+          "58 points",
+          "70 comments"
+        ],
+        "discussion": "https://news.ycombinator.com/item?id=49239226",
+        "flag": null
+      },
+      {
+        "id": "hn-49240718",
+        "title": "Hetzner Experiments Platform: Inference API",
+        "url": "https://experiments.hetzner.com/docs/inference",
+        "source": "Hacker News",
+        "date": "2026-08-10",
+        "summary": "",
+        "meta": [
+          "11 points",
+          "5 comments"
+        ],
+        "discussion": "https://news.ycombinator.com/item?id=49240718",
+        "flag": null
+      },
+      {
+        "id": "hn-49234675",
+        "title": "How I use LLMs to learn complex topics",
+        "url": "https://laurentiugabriel.github.io/blog/articles/how-i-use-llms-to-learn/",
         "source": "Hacker News",
         "date": "2026-08-09",
         "summary": "",
         "meta": [
-          "40 points",
-          "16 comments"
+          "679 points",
+          "433 comments"
         ],
-        "discussion": "https://news.ycombinator.com/item?id=49229412",
+        "discussion": "https://news.ycombinator.com/item?id=49234675",
         "flag": null
       },
       {
-        "id": "hn-49228137",
-        "title": "I asked 4 AI companions what they were. They lied, then texted me the next day",
-        "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7244220",
+        "id": "hn-49235011",
+        "title": "The tragedy of the commons, AI edition",
+        "url": "https://www.economist.com/britain/2026/08/06/the-tragedy-of-the-commons-ai-edition",
         "source": "Hacker News",
         "date": "2026-08-09",
         "summary": "",
         "meta": [
-          "7 points",
-          "0 comments"
+          "131 points",
+          "85 comments"
         ],
-        "discussion": "https://news.ycombinator.com/item?id=49228137",
+        "discussion": "https://news.ycombinator.com/item?id=49235011",
         "flag": null
       },
       {
-        "id": "hn-49222824",
-        "title": "Message your other Claude Code sessions",
-        "url": "https://code.claude.com/docs/en/cross-session-messaging",
+        "id": "hn-49232300",
+        "title": "Human vs. AI – Diff-based line-level provenance for text under agentic editing",
+        "url": "https://github.com/eighttrigrams/us-vs-them",
         "source": "Hacker News",
-        "date": "2026-08-08",
+        "date": "2026-08-09",
         "summary": "",
         "meta": [
-          "137 points",
-          "59 comments"
+          "51 points",
+          "15 comments"
         ],
-        "discussion": "https://news.ycombinator.com/item?id=49222824",
+        "discussion": "https://news.ycombinator.com/item?id=49232300",
         "flag": null
       },
       {
-        "id": "hn-49220126",
-        "title": "DeepMind's WeatherNext model achieves breakthrough forecasting cyclones",
-        "url": "https://deepmind.google/blog/weathernext-ai-model-achieves-breakthrough-in-forecasting-cyclones/",
-        "source": "Hacker News",
-        "date": "2026-08-08",
-        "summary": "",
-        "meta": [
-          "424 points",
-          "124 comments"
-        ],
-        "discussion": "https://news.ycombinator.com/item?id=49220126",
-        "flag": null
-      },
-      {
-        "id": "hn-49220609",
-        "title": "Timeline of the OpenAI accidental attack against Hugging Face",
-        "url": "https://simonwillison.net/2026/Aug/7/openai-timeline/",
-        "source": "Hacker News",
-        "date": "2026-08-08",
-        "summary": "",
-        "meta": [
-          "400 points",
-          "388 comments"
-        ],
-        "discussion": "https://news.ycombinator.com/item?id=49220609",
-        "flag": null
-      },
-      {
-        "id": "hn-49215786",
-        "title": "Lost my phone at the office. Claude suggested tracking Bluetooth signal strength",
-        "url": "https://twitter.com/un1c0rnioz/status/2084686552299634805",
-        "source": "Hacker News",
+        "id": "http://arxiv.org/abs/2608.07463v1",
+        "title": "MirrorWorld: Taming Video Diffusion Models for Mirror Reflection Generation",
+        "url": "http://arxiv.org/abs/2608.07463v1",
+        "source": "arXiv",
         "date": "2026-08-07",
-        "summary": "",
-        "meta": [
-          "275 points",
-          "203 comments"
-        ],
-        "discussion": "https://news.ycombinator.com/item?id=49215786",
-        "flag": null
-      },
-      {
-        "id": "http://arxiv.org/abs/2608.06377v1",
-        "title": "Learning When to Trust via Selective Context Preference Optimization",
-        "url": "http://arxiv.org/abs/2608.06377v1",
-        "source": "arXiv",
-        "date": "2026-08-06",
-        "summary": "Language models increasingly condition their answers on external signals, and a single misleading one can turn a correct answer wrong. The obvious remedy, training models to resist such signals, hides a failure mode: a model that ignores all context looks robust yet is useless when the context is worth trusting. We re…",
+        "summary": "Recent advances in video diffusion models (VDMs) have enabled high-fidelity video synthesis. However, generating mirror reflections remains challenging because the content within a mirror must remain consistent with the surrounding scene. Existing VDMs are not specifically designed to model scene-to-mirror relationshi…",
         "meta": [
           "Research",
-          "Xian Sun +6"
+          "Youjun Zhao +3"
         ],
         "flag": null
       },
       {
-        "id": "http://arxiv.org/abs/2608.06366v1",
-        "title": "Tracing the Heart: An Evidence-Linked Pipeline for Heart-Failure Feature Engineering",
-        "url": "http://arxiv.org/abs/2608.06366v1",
+        "id": "http://arxiv.org/abs/2608.07460v1",
+        "title": "CreativeInstruct: Scalably Teaching LLMs to Balance Quality, Creativity, and Diversity",
+        "url": "http://arxiv.org/abs/2608.07460v1",
         "source": "arXiv",
-        "date": "2026-08-06",
-        "summary": "Electronic health record (EHR) feature engineering is a major bottleneck in clinical research and AI, accounting for 39-45% of data scientists' workload. This is especially pronounced in heart failure, which affects an estimated 6.7 million U.S. adults and requires integrating fragmented EHR data with disease-specific…",
+        "date": "2026-08-07",
+        "summary": "While post-training improves the capabilities of large language models (LLMs), it generally lowers their output diversity and creativity, negatively impacting tasks that explicitly require creativity (e.g., story generation) as well as those that require it implicitly, e.g., reinforcement learning (RL). We instead pro…",
         "meta": [
           "Research",
-          "Soorya Ram Shimgekar +12"
+          "Ananya Sahu +2"
         ],
         "flag": null
       },
       {
-        "id": "http://arxiv.org/abs/2608.06364v1",
-        "title": "Investigating Artificial Intelligence Digital Sovereignty in Mobile Shopping Apps: A Case Study of Nigeria",
-        "url": "http://arxiv.org/abs/2608.06364v1",
+        "id": "http://arxiv.org/abs/2608.07458v1",
+        "title": "CoinRAG: Contextualized Information Nugget KV Cache Reuse for Long-Context RAG",
+        "url": "http://arxiv.org/abs/2608.07458v1",
         "source": "arXiv",
-        "date": "2026-08-06",
-        "summary": "The use of e-commerce mobile applications is expanding in Nigeria, creating both opportunities and risks, including fraud and reduced user control over digital technologies, raising concerns about digital sovereignty. This research examines how Artificial Intelligence (AI) in Nigerian mobile applications affects digit…",
+        "date": "2026-08-07",
+        "summary": "Recent optimization studies on Retrieval-Augmented Generation (RAG) have exploited chunk-level KV cache reuse to avoid processing long retrieved contexts for higher efficiency, while significant information redundancy and noise still remain in the coarse-grained chunks. This paper optimizes the Pareto frontier under l…",
         "meta": [
           "Research",
-          "George Grispos +1"
+          "Gyuwan Kim +2"
         ],
         "flag": null
       },
       {
-        "id": "http://arxiv.org/abs/2608.06363v1",
-        "title": "An Optimal Agnostic PAC Algorithm",
-        "url": "http://arxiv.org/abs/2608.06363v1",
+        "id": "http://arxiv.org/abs/2608.07457v1",
+        "title": "Interaction Creates Dynamical AI Behavior Absent in Isolation",
+        "url": "http://arxiv.org/abs/2608.07457v1",
         "source": "arXiv",
-        "date": "2026-08-06",
-        "summary": "Let $H\\subseteq\\{-1,+1\\}^X$ be a class of finite VC dimension $d\\ge1$. Writing $L$ for the binary risk and $L^*=\\min_{h\\in H}L(h)$, we construct a learner achieving the statistically optimal risk bound: from an i.i.d.\\ sample of size $n$, for every $0<δ\\le 1/2$, with probability at least $1-δ$, \\[ L(\\widehat h) \\le L^…",
+        "date": "2026-08-07",
+        "summary": "What will happen when AI agents interact in daily life, e.g. when one AI starts bossing another around? We find a counterintuitive answer that opens new avenues for out-of-equilibrium Physics. When a boss AI directs a stream of messages at the subordinate AI while ignoring its replies, it drives the subordinate into a…",
         "meta": [
           "Research",
-          "Markus Engelund Mathiasen +2"
+          "Bella Xinrui Li +2"
         ],
         "flag": null
       },
       {
-        "id": "http://arxiv.org/abs/2608.06362v1",
-        "title": "AV-AIVAT: 74x Cheaper Agent Evaluation with Certified Anytime-Valid Stopping in Imperfect-Information Games",
-        "url": "http://arxiv.org/abs/2608.06362v1",
+        "id": "http://arxiv.org/abs/2608.07454v1",
+        "title": "Strategy-first synthesis planning for complex natural products",
+        "url": "http://arxiv.org/abs/2608.07454v1",
         "source": "arXiv",
-        "date": "2026-08-06",
-        "summary": "Deciding which of two agents is stronger means playing games until skill outweighs luck, and every game costs money, model inference, or expert time. Since the number of games needed is unknown, fixed-budget evaluations either keep paying after the result is settled or stop before the agents can be told apart, while n…",
+        "date": "2026-08-07",
+        "summary": "The total synthesis of a complex molecule is among the most demanding intellectual and experimental feats in chemistry: a chemist must plan many steps ahead for how to assemble simple building blocks into an intricate target, devise backup strategies, and anticipate procedural challenges. It is also a profoundly creat…",
         "meta": [
           "Research",
-          "Boning Li +2"
-        ],
-        "flag": null
-      },
-      {
-        "id": "http://arxiv.org/abs/2608.06361v1",
-        "title": "The Low Frequency Trap: Video Language Models Fail at Simple Event Bookkeeping",
-        "url": "http://arxiv.org/abs/2608.06361v1",
-        "source": "arXiv",
-        "date": "2026-08-06",
-        "summary": "Real-world video benchmarks provide broad coverage, but their fixed clips entangle event count, rate, duration, and visual complexity, making failure modes hard to isolate. While existing programmatic benchmarks offer better control, they score only the final answer rather than auditing reported events against executa…",
-        "meta": [
-          "Research",
-          "Sarvesh Baskar +7"
-        ],
-        "flag": null
-      },
-      {
-        "id": "http://arxiv.org/abs/2608.06353v1",
-        "title": "Resourced Authority A Mechanism-Design Model for Participatory Governance of Deployed AI Agents",
-        "url": "http://arxiv.org/abs/2608.06353v1",
-        "source": "arXiv",
-        "date": "2026-08-06",
-        "summary": "We give a formal mechanism design model for the continuous participatory governance of a deployed AI agent. The mechanism is built on the principle that governance should control an AI agent through resource allocation so as to make authorization self enforcing via compute budgets. The mechanism seeks to establish the…",
-        "meta": [
-          "Research",
-          "Praphul Chandra +2"
-        ],
-        "flag": null
-      },
-      {
-        "id": "http://arxiv.org/abs/2608.06352v1",
-        "title": "CalibForge: Adversarial Solver Calibration for Scaling Learnable Terminal Tasks",
-        "url": "http://arxiv.org/abs/2608.06352v1",
-        "source": "arXiv",
-        "date": "2026-08-06",
-        "summary": "Training terminal agents requires executable and verifiable tasks that are not merely solvable, but appropriately challenging for learning. Executable validation establishes feasibility, yet does not reveal how a task behaves relative to a given solver setting. In this paper, we present CalibForge, an autonomous termi…",
-        "meta": [
-          "Research",
-          "Fanzhe Meng +8"
+          "Daniel Armstrong +17"
         ],
         "flag": null
       }
     ],
     "dev": [
       {
-        "id": "hn-49229174",
-        "title": "There Are Magic Hexagons of Every Order",
-        "url": "https://gukov.dev/math/2026/08/02/new-magic-hexagons.html",
+        "id": "hn-49241679",
+        "title": "Meta Muse Glimmer – open weights 30B local coding model",
+        "url": "https://research.meta.ai/blog/introducing-muse-glimmer-open-agentic-model",
         "source": "Hacker News",
-        "date": "2026-08-09",
+        "date": "2026-08-10",
         "summary": "",
         "meta": [
-          "53 points",
-          "10 comments"
+          "188 points",
+          "67 comments"
         ],
-        "discussion": "https://news.ycombinator.com/item?id=49229174",
+        "discussion": "https://news.ycombinator.com/item?id=49241679",
         "flag": null
       },
       {
-        "id": "hn-49226636",
-        "title": "My server is a phone now",
-        "url": "https://seg6.space/posts/phone-server/",
+        "id": "hn-49242297",
+        "title": "Tail-call optimization in C is relatively recent",
+        "url": "https://lwn.net/Articles/1034703/",
         "source": "Hacker News",
-        "date": "2026-08-08",
+        "date": "2026-08-10",
         "summary": "",
         "meta": [
-          "358 points",
-          "140 comments"
+          "5 points",
+          "0 comments"
         ],
-        "discussion": "https://news.ycombinator.com/item?id=49226636",
+        "discussion": "https://news.ycombinator.com/item?id=49242297",
         "flag": null
       },
       {
-        "id": "hn-49228663",
-        "title": "Microsoft Word for Windows 1.1a, Native X64 Port",
-        "url": "https://github.com/jmarshall23/msword",
+        "id": "hn-49238561",
+        "title": "What Happened to HackerOne?",
+        "url": "https://blog.teknogeek.io/posts/what-happened-to-hackerone/",
         "source": "Hacker News",
-        "date": "2026-08-09",
+        "date": "2026-08-10",
         "summary": "",
         "meta": [
-          "90 points",
-          "40 comments"
+          "267 points",
+          "132 comments"
         ],
-        "discussion": "https://news.ycombinator.com/item?id=49228663",
+        "discussion": "https://news.ycombinator.com/item?id=49238561",
         "flag": null
       },
       {
-        "id": "hn-49226923",
-        "title": "Os8088: A powerful Mac-like OS for the IBM XT, 286, 386",
-        "url": "https://os8088.com/",
+        "id": "hn-49242245",
+        "title": "Because It's Not Fun Enough: why languages fail",
+        "url": "https://bytecode.news/posts/2026/08/because-it-s-not-fun-enough",
         "source": "Hacker News",
-        "date": "2026-08-08",
+        "date": "2026-08-10",
         "summary": "",
         "meta": [
-          "185 points",
-          "105 comments"
+          "4 points",
+          "0 comments"
         ],
-        "discussion": "https://news.ycombinator.com/item?id=49226923",
+        "discussion": "https://news.ycombinator.com/item?id=49242245",
         "flag": null
       },
       {
-        "id": "hn-49230022",
-        "title": "The Alpha 21264 CPU: NT's Greatest RISC (1998)",
-        "url": "https://halfhill.com/byte/1998-12_alpha.html",
+        "id": "hn-49238818",
+        "title": "Run Android ARM64 VR APKs on Apple Vision Pro",
+        "url": "https://github.com/shinyquagsire23/Klepton",
         "source": "Hacker News",
-        "date": "2026-08-09",
+        "date": "2026-08-10",
         "summary": "",
         "meta": [
-          "12 points",
-          "3 comments"
+          "106 points",
+          "15 comments"
         ],
-        "discussion": "https://news.ycombinator.com/item?id=49230022",
+        "discussion": "https://news.ycombinator.com/item?id=49238818",
         "flag": null
       },
       {
-        "id": "hn-49223082",
-        "title": "Fastmail offers EU data region",
-        "url": "https://www.fastmail.com/blog/fastmail-offers-eu-data-region/",
+        "id": "hn-49209132",
+        "title": "Tail-Call Interpreters in Rust – Jimmy Ostler",
+        "url": "https://lordgoati.us/blog/tail-call/",
         "source": "Hacker News",
-        "date": "2026-08-08",
+        "date": "2026-08-07",
         "summary": "",
         "meta": [
-          "440 points",
-          "228 comments"
+          "38 points",
+          "11 comments"
         ],
-        "discussion": "https://news.ycombinator.com/item?id=49223082",
+        "discussion": "https://news.ycombinator.com/item?id=49209132",
         "flag": null
       },
       {
-        "id": "hn-49178476",
-        "title": "The Grid That Doubles the Strength of the Ground",
-        "url": "https://practical.engineering/blog/2026/8/4/the-grid-that-doubles-the-strength-of-the-ground",
+        "id": "hn-49205082",
+        "title": "An Interesting Fourier Transform – 1/F Noise",
+        "url": "https://www.dsprelated.com/showarticle/40.php",
+        "source": "Hacker News",
+        "date": "2026-08-07",
+        "summary": "",
+        "meta": [
+          "58 points",
+          "13 comments"
+        ],
+        "discussion": "https://news.ycombinator.com/item?id=49205082",
+        "flag": null
+      },
+      {
+        "id": "hn-49186715",
+        "title": "COLDCARD's Random Numbers Weren't",
+        "url": "https://coldcard.rip/",
         "source": "Hacker News",
         "date": "2026-08-05",
         "summary": "",
         "meta": [
-          "28 points",
-          "3 comments"
+          "5 points",
+          "0 comments"
         ],
-        "discussion": "https://news.ycombinator.com/item?id=49178476",
+        "discussion": "https://news.ycombinator.com/item?id=49186715",
         "flag": null
       },
       {
-        "id": "hn-49079995",
-        "title": "Improving Heuristics for A* Pathfinding",
-        "url": "https://www.redblobgames.com/pathfinding/heuristics/differential.html",
-        "source": "Hacker News",
-        "date": "2026-07-28",
-        "summary": "",
-        "meta": [
-          "263 points",
-          "26 comments"
-        ],
-        "discussion": "https://news.ycombinator.com/item?id=49079995",
-        "flag": null
-      },
-      {
-        "id": "hn-49226536",
-        "title": "Shopify replaced Redis with MySQL for inventory reservations–and it scaled",
-        "url": "https://shopify.engineering/scaling-inventory-reservations",
-        "source": "Hacker News",
-        "date": "2026-08-08",
-        "summary": "",
-        "meta": [
-          "227 points",
-          "139 comments"
-        ],
-        "discussion": "https://news.ycombinator.com/item?id=49226536",
-        "flag": null
-      },
-      {
-        "id": "hn-49226742",
-        "title": "Dithered QR Codes",
-        "url": "https://www.andrewt.net/dithered-qr-codes/wtf/",
-        "source": "Hacker News",
-        "date": "2026-08-08",
-        "summary": "",
-        "meta": [
-          "233 points",
-          "17 comments"
-        ],
-        "discussion": "https://news.ycombinator.com/item?id=49226742",
-        "flag": null
-      },
-      {
-        "id": "hn-49228458",
-        "title": "The original URL for this prediction will no longer be available in 11 years (2011)",
-        "url": "http://longbets.org/601/",
+        "id": "hn-49232253",
+        "title": "Taxi drivers rarely die of Alzheimer's",
+        "url": "https://theconversation.com/taxi-drivers-rarely-die-of-alzheimers-how-complex-mental-maps-and-spatial-reasoning-protect-your-brain-286650",
         "source": "Hacker News",
         "date": "2026-08-09",
         "summary": "",
         "meta": [
-          "157 points",
-          "71 comments"
+          "313 points",
+          "218 comments"
         ],
-        "discussion": "https://news.ycombinator.com/item?id=49228458",
+        "discussion": "https://news.ycombinator.com/item?id=49232253",
         "flag": null
       },
       {
-        "id": "hn-49168282",
-        "title": "Protopia",
-        "url": "https://kevinkelly.substack.com/p/protopia",
+        "id": "hn-49238050",
+        "title": "How We Pushed CDC into Postgres",
+        "url": "https://www.snowflake.com/en/blog/engineering/postgres-to-snowflake-replication-mirroring/",
         "source": "Hacker News",
-        "date": "2026-08-04",
+        "date": "2026-08-10",
         "summary": "",
         "meta": [
-          "20 points",
-          "12 comments"
+          "102 points",
+          "14 comments"
         ],
-        "discussion": "https://news.ycombinator.com/item?id=49168282",
+        "discussion": "https://news.ycombinator.com/item?id=49238050",
         "flag": null
       },
       {
-        "id": "hn-49221668",
-        "title": "_for-sale DNS records",
-        "url": "https://specification.website/spec/foundations/for-sale-dns/",
-        "source": "Hacker News",
-        "date": "2026-08-08",
-        "summary": "",
-        "meta": [
-          "405 points",
-          "157 comments"
-        ],
-        "discussion": "https://news.ycombinator.com/item?id=49221668",
-        "flag": null
-      },
-      {
-        "id": "hn-49227365",
-        "title": "Melatonin impairs morning cognition in healthy young adults (2023)",
-        "url": "https://academic.oup.com/sleep/article/46/Supplement_1/A34/7181621",
+        "id": "hn-49233423",
+        "title": "Ask HN: What are you working on? (August 2026)",
+        "url": "https://news.ycombinator.com/item?id=49233423",
         "source": "Hacker News",
         "date": "2026-08-09",
         "summary": "",
         "meta": [
-          "140 points",
-          "127 comments"
+          "264 points",
+          "912 comments"
         ],
-        "discussion": "https://news.ycombinator.com/item?id=49227365",
+        "discussion": "https://news.ycombinator.com/item?id=49233423",
+        "flag": null
+      },
+      {
+        "id": "hn-49183917",
+        "title": "How Blackwing Pencils are Made [video]",
+        "url": "https://www.youtube.com/watch?v=fow-LsdaH2E",
+        "source": "Hacker News",
+        "date": "2026-08-05",
+        "summary": "",
+        "meta": [
+          "21 points",
+          "4 comments"
+        ],
+        "discussion": "https://news.ycombinator.com/item?id=49183917",
+        "flag": null
+      },
+      {
+        "id": "hn-49238735",
+        "title": "Turn satellite imagery into a paper globe you fold yourself",
+        "url": "https://foldingglobes.com/",
+        "source": "Hacker News",
+        "date": "2026-08-10",
+        "summary": "",
+        "meta": [
+          "69 points",
+          "22 comments"
+        ],
+        "discussion": "https://news.ycombinator.com/item?id=49238735",
+        "flag": null
+      },
+      {
+        "id": "hn-49231809",
+        "title": "Cool URIs Don't Change (1998)",
+        "url": "https://www.w3.org/Provider/Style/URI",
+        "source": "Hacker News",
+        "date": "2026-08-09",
+        "summary": "",
+        "meta": [
+          "249 points",
+          "61 comments"
+        ],
+        "discussion": "https://news.ycombinator.com/item?id=49231809",
         "flag": null
       }
     ]
