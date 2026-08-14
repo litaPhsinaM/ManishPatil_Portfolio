@@ -90,13 +90,61 @@ export const projects: Project[] = [
   }
 ];
 
-export const photos = [
-  { url: "https://drscdn.500px.org/photo/1079218170/q%3D90_m%3D2048/v2?sig=0fa1454c682f409e845873b04b6145558a93d3ebe9d7f17929659376636025b0", caption: "Sunset" },
-  { url: "https://drscdn.500px.org/photo/1079218140/q%3D90_m%3D2048/v2?sig=fa0f1c463b116e99ea7d9f0d0d42f7bf578ea96ab2970c865abbd751bbd9bbf7", caption: "Lake Tahoe" },
-  { url: "https://drscdn.500px.org/photo/1079218111/q%3D90_m%3D2048/v2?sig=6bcda423a6e9c1e11f2abac86e201771891cbab61916648d462bc0301b450346", caption: "California" },
-  { url: "https://drscdn.500px.org/photo/1079218000/q%3D90_m%3D2048/v2?sig=2c7450081329c0d0a2539d842a29888dbdc97f32ff66fd9749fdf95103fa21d5", caption: "Stargazing" },
-  { url: "https://drscdn.500px.org/photo/1079217981/q%3D90_m%3D2048/v2?sig=d65bf6cdd0207d4476c0e16312840dbce0f9e6ab7ed11d1802e38cddd4044500", caption: "Meteor Showers" },
-  { url: "https://drscdn.500px.org/photo/1048459191/q%3D90_m%3D2048/v2?sig=b529234e5dbedf352c6923b0a74f0fe77b864d9aeff659d9ab0f57c3f130b4f0", caption: "Yosemite" },
-  { url: "https://drscdn.500px.org/photo/1026789853/q%3D90_m%3D2048/v2?sig=9c90c7db4b2b4d8bee8c3e454b09060a2d5bdc2ca51844ae0af1ce7461137ce2", caption: "Long Exposure Light Trails" },
-  { url: "https://drscdn.500px.org/photo/1025299167/q%3D90_m%3D2048/v2?sig=608f519771ad17389393762130abfc42d026526daf72b392215324c878793733", caption: "Swaminarayan Temple" }
+export interface Photo {
+  /** Filename inside public/photos/ */
+  file: string;
+  /** Empty for shots that were never titled on 500px. */
+  caption: string;
+}
+
+export const photos: Photo[] = [
+  { file: "sunset.webp", caption: "Sunset" },
+  { file: "lake_tahoe.webp", caption: "Lake Tahoe" },
+  { file: "california.webp", caption: "California" },
+  { file: "stargazing.webp", caption: "Stargazing" },
+  { file: "meteor_showers.webp", caption: "Meteor Showers" },
+  { file: "yosemite.webp", caption: "Yosemite" },
+  { file: "light_trails.webp", caption: "Long Exposure Light Trails" },
+  { file: "swaminarayan_temple.webp", caption: "Swaminarayan Temple" },
+  { file: "dsc_0001.webp", caption: "" },
+  { file: "dsc2111.webp", caption: "" },
+  { file: "dy_patil_stadium.webp", caption: "View from D.Y. Patil Stadium" },
+  { file: "dsc_0002.webp", caption: "" },
+  { file: "dsc_0003.webp", caption: "" },
+  { file: "dsc_0004.webp", caption: "" },
+  { file: "symmetry.webp", caption: "Symmetry" },
+  { file: "dsc_0005.webp", caption: "" },
+  { file: "cst.webp", caption: "Chhatrapati Shivaji Terminus" },
+  { file: "dsc_0006.webp", caption: "" },
+  { file: "aqua_landscape.webp", caption: "Aqua Landscape" },
+  { file: "temple.webp", caption: "Temple" },
+  { file: "dsc_0007.webp", caption: "" },
+  { file: "dsc_0008.webp", caption: "" },
+  { file: "dsc_0009.webp", caption: "" },
+  { file: "dsc_0010.webp", caption: "" },
+  { file: "dsc_0011.webp", caption: "" },
+  { file: "dsc_0012.webp", caption: "" },
+  { file: "dsc_0013.webp", caption: "" },
+  { file: "dsc_0014.webp", caption: "" },
+  { file: "dsc_0015.webp", caption: "" },
+  { file: "dsc_0016.webp", caption: "" },
+  { file: "football.webp", caption: "Football" },
+  { file: "sunrise_dec17.webp", caption: "Sunrise, 20 Dec 17" },
+  { file: "birds.webp", caption: "Birds" },
+  { file: "sky_panorama.webp", caption: "Different Shades of Sky" },
+  { file: "monsoon.webp", caption: "Effects of Monsoon Season" },
+  { file: "dsc_0017.webp", caption: "" },
+  { file: "dsc_0018.webp", caption: "" },
+  { file: "water_park.webp", caption: "Water Park" },
+  { file: "dsc_0019.webp", caption: "" },
+  { file: "dsc_0020.webp", caption: "" },
+  { file: "dsc_0021.webp", caption: "" },
+  { file: "dsc_0022.webp", caption: "" },
+  { file: "dsc_0023.webp", caption: "" },
+  { file: "dsc_0024.webp", caption: "" },
+  { file: "dsc_0025.webp", caption: "" },
+  { file: "dsc_0026.webp", caption: "" },
+  { file: "z1_click.webp", caption: "" },
+  { file: "dsc_0027.webp", caption: "" },
+  { file: "dsc_0028.webp", caption: "" },
 ];
