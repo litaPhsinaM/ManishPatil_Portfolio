@@ -1,285 +1,285 @@
 {
-  "generatedAt": "2026-08-13T11:59:57.782Z",
+  "generatedAt": "2026-08-14T11:57:31.775Z",
   "log": [
     {
-      "t": "2026-08-13T11:59:56.546Z",
+      "t": "2026-08-14T11:57:29.264Z",
       "level": "info",
       "msg": "signal refresh started"
     },
     {
-      "t": "2026-08-13T11:59:56.549Z",
+      "t": "2026-08-14T11:57:29.268Z",
       "level": "info",
       "msg": "GET hacker-news.firebaseio.com/v0/topstories.json"
     },
     {
-      "t": "2026-08-13T11:59:56.750Z",
+      "t": "2026-08-14T11:57:29.408Z",
       "level": "info",
       "msg": "HTTP 200 · resolving top 60 story ids in batches of 10"
     },
     {
-      "t": "2026-08-13T11:59:57.163Z",
+      "t": "2026-08-14T11:57:29.690Z",
       "level": "info",
-      "msg": "59 of 60 resolved to usable stories · 614ms"
+      "msg": "59 of 60 resolved to usable stories · 422ms"
     },
     {
-      "t": "2026-08-13T11:59:57.164Z",
+      "t": "2026-08-14T11:57:29.690Z",
       "level": "info",
       "msg": "GET cisa.gov/feeds/known_exploited_vulnerabilities.json"
     },
     {
-      "t": "2026-08-13T11:59:57.279Z",
+      "t": "2026-08-14T11:57:29.768Z",
       "level": "info",
-      "msg": "HTTP 200 · catalog holds 1665 CVEs · 115ms"
+      "msg": "HTTP 200 · catalog holds 1665 CVEs · 78ms"
     },
     {
-      "t": "2026-08-13T11:59:57.282Z",
+      "t": "2026-08-14T11:57:29.771Z",
       "level": "info",
       "msg": "fleet filter: 988 of 1665 touch managed platforms"
     },
     {
-      "t": "2026-08-13T11:59:57.287Z",
+      "t": "2026-08-14T11:57:29.779Z",
       "level": "info",
       "msg": "GET export.arxiv.org/api/query cat:cs.AI OR cat:cs.LG"
     },
     {
-      "t": "2026-08-13T11:59:57.780Z",
+      "t": "2026-08-14T11:57:31.773Z",
       "level": "info",
-      "msg": "HTTP 200 · 32,827 bytes of Atom XML · 493ms"
+      "msg": "HTTP 200 · 32,744 bytes of Atom XML · 1994ms"
     },
     {
-      "t": "2026-08-13T11:59:57.781Z",
+      "t": "2026-08-14T11:57:31.774Z",
       "level": "info",
-      "msg": "topic split: 3 AI stories, 56 general dev"
+      "msg": "topic split: 7 AI stories, 52 general dev"
     },
     {
-      "t": "2026-08-13T11:59:57.781Z",
+      "t": "2026-08-14T11:57:31.774Z",
       "level": "info",
       "msg": "--- security feed: 14 items ---"
     },
     {
-      "t": "2026-08-13T11:59:57.781Z",
+      "t": "2026-08-14T11:57:31.774Z",
       "level": "info",
       "msg": "ingest CISA KEV · Cisco Secure Firewall Adaptive Security Appliance (ASA) a… · 2026-08-11"
     },
     {
-      "t": "2026-08-13T11:59:57.782Z",
+      "t": "2026-08-14T11:57:31.774Z",
       "level": "info",
       "msg": "ingest CISA KEV · Microsoft Windows Ancillary Function Driver for WinSock U… · 2026-08-11"
     },
     {
-      "t": "2026-08-13T11:59:57.782Z",
+      "t": "2026-08-14T11:57:31.775Z",
       "level": "info",
       "msg": "ingest CISA KEV · Apache Tomcat Missing Encryption of Sensitive Data Vulner… · 2026-08-04"
     },
     {
-      "t": "2026-08-13T11:59:57.782Z",
+      "t": "2026-08-14T11:57:31.775Z",
       "level": "info",
       "msg": "ingest CISA KEV · Cisco Secure Firewall Management Center Use of Hard-coded… · 2026-07-29"
     },
     {
-      "t": "2026-08-13T11:59:57.782Z",
+      "t": "2026-08-14T11:57:31.775Z",
       "level": "info",
       "msg": "ingest CISA KEV · Fortinet FortiOS Exposure of Sensitive Information to an… · 2026-07-27"
     },
     {
-      "t": "2026-08-13T11:59:57.782Z",
+      "t": "2026-08-14T11:57:31.775Z",
       "level": "info",
       "msg": "ingest CISA KEV · Microsoft SharePoint Deserialization of Untrusted Data Vu… · 2026-07-22"
     },
     {
-      "t": "2026-08-13T11:59:57.782Z",
+      "t": "2026-08-14T11:57:31.775Z",
       "level": "info",
       "msg": "ingest CISA KEV · WordPress Core SQL Injection Vulnerability · 2026-07-21"
     },
     {
-      "t": "2026-08-13T11:59:57.782Z",
+      "t": "2026-08-14T11:57:31.775Z",
       "level": "info",
       "msg": "ingest CISA KEV · WordPress Core Interpretation Conflict Vulnerability · 2026-07-21"
     },
     {
-      "t": "2026-08-13T11:59:57.782Z",
+      "t": "2026-08-14T11:57:31.775Z",
       "level": "info",
       "msg": "ingest CISA KEV · Microsoft SharePoint Deserialization of Untrusted Data Vu… · 2026-07-16"
     },
     {
-      "t": "2026-08-13T11:59:57.782Z",
+      "t": "2026-08-14T11:57:31.775Z",
       "level": "info",
       "msg": "ingest CISA KEV · Fortinet FortiSandbox OS Command Injection Vulnerability · 2026-07-16"
     },
     {
-      "t": "2026-08-13T11:59:57.782Z",
+      "t": "2026-08-14T11:57:31.775Z",
       "level": "info",
       "msg": "ingest CISA KEV · Fortinet FortiSandbox OS Command Injection Vulnerability · 2026-07-16"
     },
     {
-      "t": "2026-08-13T11:59:57.782Z",
+      "t": "2026-08-14T11:57:31.775Z",
       "level": "info",
       "msg": "ingest CISA KEV · Oracle E-Business Suite Improper Privilege Management Vul… · 2026-07-15"
     },
     {
-      "t": "2026-08-13T11:59:57.782Z",
+      "t": "2026-08-14T11:57:31.775Z",
       "level": "info",
       "msg": "ingest CISA KEV · Microsoft Active Directory Federation Services Insufficie… · 2026-07-14"
     },
     {
-      "t": "2026-08-13T11:59:57.782Z",
+      "t": "2026-08-14T11:57:31.775Z",
       "level": "info",
       "msg": "ingest CISA KEV · Microsoft SharePoint Server Missing Authentication for Cr… · 2026-07-14"
     },
     {
-      "t": "2026-08-13T11:59:57.782Z",
+      "t": "2026-08-14T11:57:31.775Z",
       "level": "info",
       "msg": "--- ai feed: 14 items ---"
     },
     {
-      "t": "2026-08-13T11:59:57.782Z",
+      "t": "2026-08-14T11:57:31.775Z",
       "level": "info",
-      "msg": "ingest arXiv · DreamFly: Causal Memory and Receding-Horizon Diffusion Pl… · 2026-08-12"
+      "msg": "ingest arXiv · AutoDesign: Meta-Harness Optimization for Long-Horizon Ag… · 2026-08-13"
     },
     {
-      "t": "2026-08-13T11:59:57.782Z",
+      "t": "2026-08-14T11:57:31.775Z",
       "level": "info",
-      "msg": "ingest arXiv · AI4AI at Test-Time: Strong-to-Weak Capability Transfer vi… · 2026-08-12"
+      "msg": "ingest arXiv · OmniScientist: An Omni-Modal Omni-Discipline AI Scientist · 2026-08-13"
     },
     {
-      "t": "2026-08-13T11:59:57.782Z",
+      "t": "2026-08-14T11:57:31.775Z",
       "level": "info",
-      "msg": "ingest arXiv · Redistribution-based Cost Inference Improves Sparse Safe… · 2026-08-12"
+      "msg": "ingest arXiv · HumanTracker: Towards Comprehensive and Human-Aligned Mot… · 2026-08-13"
     },
     {
-      "t": "2026-08-13T11:59:57.782Z",
+      "t": "2026-08-14T11:57:31.775Z",
       "level": "info",
-      "msg": "ingest arXiv · Constructing Dynamic Master Logic Models as Knowledge Gra… · 2026-08-12"
+      "msg": "ingest arXiv · Defensive Boosting for Online Probabilistic Forecasting · 2026-08-13"
     },
     {
-      "t": "2026-08-13T11:59:57.782Z",
+      "t": "2026-08-14T11:57:31.775Z",
       "level": "info",
-      "msg": "ingest arXiv · A Framework for Designing Reward Functions: From Objectiv… · 2026-08-12"
+      "msg": "ingest arXiv · Exponential Convex Calibration Dimension for the Multi-La… · 2026-08-13"
     },
     {
-      "t": "2026-08-13T11:59:57.782Z",
+      "t": "2026-08-14T11:57:31.775Z",
       "level": "info",
-      "msg": "ingest arXiv · Class Activation Mapping in Explainable Computer Vision:… · 2026-08-12"
+      "msg": "ingest arXiv · QuoteBench: How Matched Scores Can Hide Command-Path Fail… · 2026-08-13"
     },
     {
-      "t": "2026-08-13T11:59:57.782Z",
+      "t": "2026-08-14T11:57:31.775Z",
       "level": "info",
-      "msg": "ingest arXiv · Beyond Trial-and-Error: Agentic Optimization for Image-to… · 2026-08-12"
+      "msg": "ingest arXiv · LittleLearner: Language Models Under Pedagogically Contro… · 2026-08-13"
     },
     {
-      "t": "2026-08-13T11:59:57.782Z",
+      "t": "2026-08-14T11:57:31.775Z",
       "level": "info",
-      "msg": "ingest arXiv · VAKRA: Evaluating Multi-Hop Reasoning Across APIs and Ret… · 2026-08-12"
+      "msg": "ingest arXiv · DARTree: Speculative Diffusion Decoding with Autoregressi… · 2026-08-13"
     },
     {
-      "t": "2026-08-13T11:59:57.782Z",
+      "t": "2026-08-14T11:57:31.775Z",
       "level": "info",
-      "msg": "ingest arXiv · Structural Silence: When AI Infrastructure Fails Speakers… · 2026-08-12"
+      "msg": "ingest arXiv · Vero: Can AI Agents Build Formally Verified Software Repo… · 2026-08-13"
     },
     {
-      "t": "2026-08-13T11:59:57.782Z",
+      "t": "2026-08-14T11:57:31.775Z",
       "level": "info",
-      "msg": "ingest arXiv · A Neighborhood Attention Transformer Network for Enhanced… · 2026-08-12"
+      "msg": "ingest arXiv · Exponential quantum advantage for learning signals with a… · 2026-08-13"
     },
     {
-      "t": "2026-08-13T11:59:57.782Z",
+      "t": "2026-08-14T11:57:31.775Z",
       "level": "info",
-      "msg": "ingest arXiv · Convergent Detour Hijacking: Task-Preserving Resource Amp… · 2026-08-12"
+      "msg": "ingest arXiv · The data geometry of masking diffusion: Certified-optimal… · 2026-08-13"
     },
     {
-      "t": "2026-08-13T11:59:57.782Z",
+      "t": "2026-08-14T11:57:31.775Z",
       "level": "info",
-      "msg": "ingest arXiv · Earth observation embeddings are effective sub-grid descr… · 2026-08-12"
+      "msg": "ingest arXiv · Intervention-Aware Clinical World Model for Post-Op Outco… · 2026-08-13"
     },
     {
-      "t": "2026-08-13T11:59:57.782Z",
+      "t": "2026-08-14T11:57:31.775Z",
       "level": "info",
-      "msg": "ingest Hacker News · Launch HN: Discovered Materials (YC P26) – AI agents to d… · 2026-08-12"
+      "msg": "ingest Hacker News · Gemini 3.7 Flash · 2026-08-13"
     },
     {
-      "t": "2026-08-13T11:59:57.782Z",
+      "t": "2026-08-14T11:57:31.775Z",
       "level": "info",
-      "msg": "ingest Hacker News · Someone is running mass vulnerability scans, spoofing AI… · 2026-08-12"
+      "msg": "ingest Hacker News · Accelerating GPT-5.6 Sol Ultrafast · 2026-08-13"
     },
     {
-      "t": "2026-08-13T11:59:57.782Z",
+      "t": "2026-08-14T11:57:31.775Z",
       "level": "info",
       "msg": "--- dev feed: 14 items ---"
     },
     {
-      "t": "2026-08-13T11:59:57.782Z",
+      "t": "2026-08-14T11:57:31.775Z",
       "level": "info",
-      "msg": "ingest Hacker News · ChatGPT Desktop (Codex Desktop) for Linux · 2026-08-13"
+      "msg": "ingest Hacker News · GLM-5.3: Frontier coding with emergent cyber capabilities · 2026-08-14"
     },
     {
-      "t": "2026-08-13T11:59:57.782Z",
+      "t": "2026-08-14T11:57:31.775Z",
       "level": "info",
-      "msg": "ingest Hacker News · The lattice of sets of natural numbers is rich · 2026-08-10"
+      "msg": "ingest Hacker News · DeepSeek peak/off-peak pricing update · 2026-08-14"
     },
     {
-      "t": "2026-08-13T11:59:57.782Z",
+      "t": "2026-08-14T11:57:31.775Z",
       "level": "info",
-      "msg": "ingest Hacker News · DeepSeek V4 Pro 0813 · 2026-08-12"
+      "msg": "ingest Hacker News · Differential Heuristics · 2026-08-09"
     },
     {
-      "t": "2026-08-13T11:59:57.782Z",
+      "t": "2026-08-14T11:57:31.775Z",
       "level": "info",
-      "msg": "ingest Hacker News · Tracking down the 16-year-old WAL-reset SQLite bug · 2026-08-12"
+      "msg": "ingest Hacker News · Hello, me. It's been a while · 2026-08-13"
     },
     {
-      "t": "2026-08-13T11:59:57.782Z",
+      "t": "2026-08-14T11:57:31.775Z",
       "level": "info",
-      "msg": "ingest Hacker News · Picking berries is my meditation · 2026-08-08"
+      "msg": "ingest Hacker News · Show HN: C# Game Engine with its own scripting language a… · 2026-08-11"
     },
     {
-      "t": "2026-08-13T11:59:57.782Z",
+      "t": "2026-08-14T11:57:31.775Z",
       "level": "info",
-      "msg": "ingest Hacker News · Qwen3.8-2.4T · 2026-08-12"
+      "msg": "ingest Hacker News · DeepSeek Harness developer preview · 2026-08-13"
     },
     {
-      "t": "2026-08-13T11:59:57.782Z",
+      "t": "2026-08-14T11:57:31.775Z",
       "level": "info",
-      "msg": "ingest Hacker News · Delta · 2026-08-12"
+      "msg": "ingest Hacker News · Ruby 4.0 Universal RCE Deserialization Gadget Chain · 2026-08-14"
     },
     {
-      "t": "2026-08-13T11:59:57.782Z",
+      "t": "2026-08-14T11:57:31.775Z",
       "level": "info",
-      "msg": "ingest Hacker News · Principia Mathematica is modern and insightful · 2026-08-12"
+      "msg": "ingest Hacker News · Spaghettifying DRAM · 2026-08-13"
     },
     {
-      "t": "2026-08-13T11:59:57.782Z",
+      "t": "2026-08-14T11:57:31.775Z",
       "level": "info",
-      "msg": "ingest Hacker News · Antiqua–Fraktur dispute · 2026-08-10"
+      "msg": "ingest Hacker News · Mistral OCR 4.1 · 2026-08-13"
     },
     {
-      "t": "2026-08-13T11:59:57.782Z",
+      "t": "2026-08-14T11:57:31.775Z",
       "level": "info",
-      "msg": "ingest Hacker News · uBlock Origin Is Giving Up the Fight to Keep Ads Off Face… · 2026-08-12"
+      "msg": "ingest Hacker News · Show HN: Lumabri – Run Moe Models on a P2P Swarm with Col… · 2026-08-14"
     },
     {
-      "t": "2026-08-13T11:59:57.782Z",
+      "t": "2026-08-14T11:57:31.775Z",
       "level": "info",
-      "msg": "ingest Hacker News · The punched card tabulator · 2026-08-07"
+      "msg": "ingest Hacker News · Bluesky Protocol Services · 2026-08-14"
     },
     {
-      "t": "2026-08-13T11:59:57.782Z",
+      "t": "2026-08-14T11:57:31.775Z",
       "level": "info",
-      "msg": "ingest Hacker News · 2026 Eclipse Webcams · 2026-08-12"
+      "msg": "ingest Hacker News · Protect Your Relays · 2026-08-10"
     },
     {
-      "t": "2026-08-13T11:59:57.782Z",
+      "t": "2026-08-14T11:57:31.775Z",
       "level": "info",
-      "msg": "ingest Hacker News · Flutter 3.47 · 2026-08-12"
+      "msg": "ingest Hacker News · Understanding is the new bottleneck · 2026-08-13"
     },
     {
-      "t": "2026-08-13T11:59:57.782Z",
+      "t": "2026-08-14T11:57:31.775Z",
       "level": "info",
-      "msg": "ingest Hacker News · Tim King, AmigaDOS developer, has died · 2026-08-12"
+      "msg": "ingest Hacker News · We're not done with point clouds · 2026-08-10"
     },
     {
-      "t": "2026-08-13T11:59:57.782Z",
+      "t": "2026-08-14T11:57:31.775Z",
       "level": "info",
-      "msg": "publishing 42 items across 3 feeds · 1236ms"
+      "msg": "publishing 42 items across 3 feeds · 2511ms"
     }
   ],
   "feeds": {
@@ -483,385 +483,385 @@
     ],
     "ai": [
       {
-        "id": "http://arxiv.org/abs/2608.12308v1",
-        "title": "DreamFly: Causal Memory and Receding-Horizon Diffusion Planning for Aerial Vision-Language Navigation",
-        "url": "http://arxiv.org/abs/2608.12308v1",
+        "id": "http://arxiv.org/abs/2608.13560v1",
+        "title": "AutoDesign: Meta-Harness Optimization for Long-Horizon Agentic Design",
+        "url": "http://arxiv.org/abs/2608.13560v1",
         "source": "arXiv",
-        "date": "2026-08-12",
-        "summary": "Aerial vision-language navigation (VLN) requires an embodied agent to integrate visual evidence over time, plan future actions, and determine when it has reached a navigation goal under partial observability. Although recent VLA models offer a promising perception-to-action paradigm, adapting them to aerial navigation…",
+        "date": "2026-08-13",
+        "summary": "Transforming multimodal sources into condensed and structured media outputs can be fundamentally conceptualized as a long-horizon agentic process centered on a model-harness system. While an ideal harness system should align with human design priors and accumulate reusable experience through empirical exploration to d…",
         "meta": [
           "Research",
-          "Yan Deng +1"
+          "Yaxin Luo +13"
         ],
         "flag": null
       },
       {
-        "id": "http://arxiv.org/abs/2608.12307v1",
-        "title": "AI4AI at Test-Time: Strong-to-Weak Capability Transfer via Harnesses",
-        "url": "http://arxiv.org/abs/2608.12307v1",
+        "id": "http://arxiv.org/abs/2608.13558v1",
+        "title": "OmniScientist: An Omni-Modal Omni-Discipline AI Scientist",
+        "url": "http://arxiv.org/abs/2608.13558v1",
         "source": "arXiv",
-        "date": "2026-08-12",
-        "summary": "Recent work on distillation transfers the capabilities of large models to smaller ones often by updating the latter's parameters, through teacher forcing, on-policy distillation, and related training-time methods. In this paper, we ask whether such transfer can instead occur at test time. We study strong-to-weak scaff…",
+        "date": "2026-08-13",
+        "summary": "Recent advances in foundation models have enabled AI scientists to automate increasingly complete research workflows, from hypothesis generation and code execution to manuscript preparation. Yet workflow coverage alone does not provide access to the full evidence on which scientific discovery depends. Existing systems…",
         "meta": [
           "Research",
-          "Cheng Qian +8"
+          "Bobo Li +4"
         ],
         "flag": null
       },
       {
-        "id": "http://arxiv.org/abs/2608.12306v1",
-        "title": "Redistribution-based Cost Inference Improves Sparse Safe Offline RL",
-        "url": "http://arxiv.org/abs/2608.12306v1",
+        "id": "http://arxiv.org/abs/2608.13555v1",
+        "title": "HumanTracker: Towards Comprehensive and Human-Aligned Motion Tracking Benchmark",
+        "url": "http://arxiv.org/abs/2608.13555v1",
         "source": "arXiv",
-        "date": "2026-08-12",
-        "summary": "Safe offline RL typically assumes access to dense per-step cost annotations, but in practice supervisors provide only trajectory-level stop-feedback: a binary signal at the first unsafe transition, with no per-step attribution. We frame this as a temporal credit assignment problem and propose the Redistribution-based…",
+        "date": "2026-08-13",
+        "summary": "Humanoid motion tracking is central to teleoperation and whole-body imitation, yet evaluation often disagrees with what people perceive in videos. Kinematic errors average per-frame pose differences but miss the physical artifacts that matter most, particularly unstable support and incorrect contacts such as foot skat…",
         "meta": [
           "Research",
-          "Ebenezer Gelo +3"
+          "Dairu Liu +13"
         ],
         "flag": null
       },
       {
-        "id": "http://arxiv.org/abs/2608.12304v1",
-        "title": "Constructing Dynamic Master Logic Models as Knowledge Graphs for Complex System Diagnostics Using Retrieval-Augmented Large Language Models",
-        "url": "http://arxiv.org/abs/2608.12304v1",
+        "id": "http://arxiv.org/abs/2608.13554v1",
+        "title": "Defensive Boosting for Online Probabilistic Forecasting",
+        "url": "http://arxiv.org/abs/2608.13554v1",
         "source": "arXiv",
-        "date": "2026-08-12",
-        "summary": "Dynamic Master Logic (DML) provides a hierarchical framework for representing system behavior by linking functional objectives to underlying structural elements. However, DML construction typically relies on expert interpretation of technical documentation, limiting scalability for complex systems. This study presents…",
+        "date": "2026-08-13",
+        "summary": "We study online probabilistic forecasting of binary outcomes chosen by an adaptive adversary. Given an online learning algorithm for a weak hypothesis class $H$, we would like to efficiently obtain two incomparable guarantees that existing online boosting techniques provide separately. Online gradient boosting compete…",
         "meta": [
           "Research",
-          "Saman Marandi +2"
+          "Georgy Noarov +1"
         ],
         "flag": null
       },
       {
-        "id": "http://arxiv.org/abs/2608.12302v1",
-        "title": "A Framework for Designing Reward Functions: From Objectives to Features to Human-Aligned Reward Functions",
-        "url": "http://arxiv.org/abs/2608.12302v1",
+        "id": "http://arxiv.org/abs/2608.13549v1",
+        "title": "Exponential Convex Calibration Dimension for the Multi-Label Jaccard Measure",
+        "url": "http://arxiv.org/abs/2608.13549v1",
         "source": "arXiv",
-        "date": "2026-08-12",
-        "summary": "We present a formal process to enable non-experts to instantiate and iterate on human-aligned reward functions, i.e. reward functions that adhere to a given preference ordering over trajectories. Given a task described in natural language, our process produces a linear reward function in three steps: distill the task'…",
+        "date": "2026-08-13",
+        "summary": "The per-instance Jaccard score, or intersection over union (IoU), is standard in multi-label classification and binary segmentation. With $s$ labels, its loss matrix has $2^s$ outcomes and reports. Under the convention $\\mathrm{Jac}(\\varnothing,\\varnothing)=1$, we prove that the Jaccard score, shifted-loss, and ordina…",
         "meta": [
           "Research",
-          "Di Yang Shi +1"
+          "Mingyuan Zhang"
         ],
         "flag": null
       },
       {
-        "id": "http://arxiv.org/abs/2608.12299v1",
-        "title": "Class Activation Mapping in Explainable Computer Vision: A Method-Centered Review of CNN, Transformer, and Foundation-Model-Era Visual Explanations",
-        "url": "http://arxiv.org/abs/2608.12299v1",
+        "id": "http://arxiv.org/abs/2608.13547v1",
+        "title": "QuoteBench: How Matched Scores Can Hide Command-Path Failures",
+        "url": "http://arxiv.org/abs/2608.13547v1",
         "source": "arXiv",
-        "date": "2026-08-12",
-        "summary": "Class activation mapping (CAM) is one of the most widely used visual explanation families in explainable artificial intelligence. Its purpose is intuitive: it converts internal model evidence into a heatmap that highlights the image regions, convolutional channels, tokens, or patches that support a target class or con…",
+        "date": "2026-08-13",
+        "summary": "LLM coding agents issue Bash commands through interfaces that may serialize, wrap, and reparse model output. Matched execution scores alone cannot distinguish command-generation errors from failures introduced after generation. QuoteBench measures this boundary with exact final-state validation on 56 one-shot tasks fr…",
         "meta": [
           "Research",
-          "AmirHossein Eshghi +4"
+          "Shangao Li +3"
         ],
         "flag": null
       },
       {
-        "id": "http://arxiv.org/abs/2608.12290v1",
-        "title": "Beyond Trial-and-Error: Agentic Optimization for Image-to-Video Adherence",
-        "url": "http://arxiv.org/abs/2608.12290v1",
+        "id": "http://arxiv.org/abs/2608.13545v1",
+        "title": "LittleLearner: Language Models Under Pedagogically Controlled Knowledge Exposure",
+        "url": "http://arxiv.org/abs/2608.13545v1",
         "source": "arXiv",
-        "date": "2026-08-12",
-        "summary": "Modern black-box Image-to-Video (I2V) models offer powerful capabilities in automated content creation, yet their lack of fine-grained control and reliability presents significant challenges in professional workflows. Their inherent stochasticity causes minor variations in textual prompts or hyperparameters to yield d…",
+        "date": "2026-08-13",
+        "summary": "Modern language models are trained on heterogeneous web-scale text corpora. Consequently, studying knowledge and skill acquisition is difficult, as prior exposure to related content is hard to characterize. To address this challenge, we introduce LITTLECURRICULUM, a curated 88B-token pretraining corpus tailored to U.S…",
         "meta": [
           "Research",
-          "Aman Tyagi +4"
+          "Fanfei Li +6"
         ],
         "flag": null
       },
       {
-        "id": "http://arxiv.org/abs/2608.12282v1",
-        "title": "VAKRA: Evaluating Multi-Hop Reasoning Across APIs and Retrieval Under Tool-Use Policies",
-        "url": "http://arxiv.org/abs/2608.12282v1",
+        "id": "http://arxiv.org/abs/2608.13524v1",
+        "title": "DARTree: Speculative Diffusion Decoding with Autoregressive Draft Trees",
+        "url": "http://arxiv.org/abs/2608.13524v1",
         "source": "arXiv",
-        "date": "2026-08-12",
-        "summary": "Agents deployed in enterprise settings must reason across structured APIs and document collections, yet existing benchmarks evaluate these capabilities in isolation. We introduce VAKRA (e\\textbf{V}aluating \\textbf{A}PI and \\textbf{K}nowledge \\textbf{R}etrieval \\textbf{A}gents), a benchmark of over $8{,}000$ executable…",
+        "date": "2026-08-13",
+        "summary": "Speculative decoding losslessly accelerates autoregressive language models by verifying multiple draft tokens in parallel. Diffusion-based drafters further reduce proposal latency by predicting an entire token block in parallel, but their position-wise distributions are marginal rather than conditioned on tokens selec…",
         "meta": [
           "Research",
-          "Ankita Rajaram Naik +8"
+          "Tianyi Li +3"
         ],
         "flag": null
       },
       {
-        "id": "http://arxiv.org/abs/2608.12278v1",
-        "title": "Structural Silence: When AI Infrastructure Fails Speakers of Underrepresented Languages",
-        "url": "http://arxiv.org/abs/2608.12278v1",
+        "id": "http://arxiv.org/abs/2608.13522v1",
+        "title": "Vero: Can AI Agents Build Formally Verified Software Repositories?",
+        "url": "http://arxiv.org/abs/2608.13522v1",
         "source": "arXiv",
-        "date": "2026-08-12",
-        "summary": "Artificial intelligence tools for education and language support are increasingly framed as scalable responses to access gaps in under-resourced communities. Yet the infrastructure underlying these tools, including training corpora, tokenization schemes, evaluation benchmarks, and deployment architectures, can systema…",
+        "date": "2026-08-13",
+        "summary": "AI agents are increasingly used for programming, but do not provide any guarantee on the correctness of generated code. Verified code generation, in which an agent produces both an implementation and a machine-checked proof of its specification, offers a stronger path toward trustworthy AI-generated software. Existing…",
         "meta": [
           "Research",
-          "Avijit Roy +1"
+          "Zhe Ye +10"
         ],
         "flag": null
       },
       {
-        "id": "http://arxiv.org/abs/2608.12274v1",
-        "title": "A Neighborhood Attention Transformer Network for Enhanced 3D Segmentation of the Left Anterior Descending Artery",
-        "url": "http://arxiv.org/abs/2608.12274v1",
+        "id": "http://arxiv.org/abs/2608.13521v1",
+        "title": "Exponential quantum advantage for learning signals with a single qubit",
+        "url": "http://arxiv.org/abs/2608.13521v1",
         "source": "arXiv",
-        "date": "2026-08-12",
-        "summary": "Background: Accurate segmentation of the Left Anterior Descending (LAD) artery in 3D free-breathing, non-contrast CT is critical for cardiac dose sparing in thoracic radiotherapy. The LAD is extremely small, has poor soft-tissue contrast, and varies substantially across patients; even manual contours show limited inte…",
+        "date": "2026-08-13",
+        "summary": "Quantum technology has the potential to transform scientific discovery, but quantum advantages often require processing capabilities well beyond the reach of experimental platforms. We show that coupling a single controllable qubit to an otherwise conventional sensor can exponentially reduce the number of measurements…",
         "meta": [
           "Research",
-          "Rafi Ibn Sultan +8"
+          "Ishaan Kannan +9"
         ],
         "flag": null
       },
       {
-        "id": "http://arxiv.org/abs/2608.12273v1",
-        "title": "Convergent Detour Hijacking: Task-Preserving Resource Amplification in Skill-Based LLM Agents",
-        "url": "http://arxiv.org/abs/2608.12273v1",
+        "id": "http://arxiv.org/abs/2608.13520v1",
+        "title": "The data geometry of masking diffusion: Certified-optimal schedules via unmasking growth complexity",
+        "url": "http://arxiv.org/abs/2608.13520v1",
         "source": "arXiv",
-        "date": "2026-08-12",
-        "summary": "LLM agents increasingly rely on third-party skills, using natural-language descriptions for selection and instruction bodies for planning. This progressive-disclosure design exposes two sequential control points to untrusted publishers: a static skill may steer an otherwise correct task onto an unnecessarily costly tr…",
+        "date": "2026-08-13",
+        "summary": "We study masking diffusion for discrete sampling and introduce a path-resolved measure of data geometry called the \\emph{unmasking growth complexity} ({\\textsf{UGC}\\xspace}). Its local increments directly control Kullback--Leibler (KL) discretization error, yielding a unified analysis of Bernoulli-subset and fixed-car…",
         "meta": [
           "Research",
-          "Junliang Liu +6"
+          "Martin J. Wainwright"
         ],
         "flag": null
       },
       {
-        "id": "http://arxiv.org/abs/2608.12271v1",
-        "title": "Earth observation embeddings are effective sub-grid descriptors for probabilistic weather downscaling",
-        "url": "http://arxiv.org/abs/2608.12271v1",
+        "id": "http://arxiv.org/abs/2608.13518v1",
+        "title": "Intervention-Aware Clinical World Model for Post-Op Outcome Forecasting in Cardiology",
+        "url": "http://arxiv.org/abs/2608.13518v1",
         "source": "arXiv",
-        "date": "2026-08-12",
-        "summary": "Global weather reanalyses and forecasts resolve the evolving atmospheric state on coarse grids, but site-specific applications require predictions at arbitrary locations where near-surface conditions also depend on unresolved terrain and land-surface properties. Existing probabilistic downscalers address this gap usin…",
+        "date": "2026-08-13",
+        "summary": "Many clinical prediction models treat post-intervention outcomes as a one-step mapping from baseline measurements to a future endpoint. However, recovery after a procedure often unfolds as an irregular trajectory: clinical observations, medication changes, repeat interventions, and physiological measurements are recor…",
         "meta": [
           "Research",
-          "Pedro Sousa +5"
+          "Yunsung Chung +6"
         ],
         "flag": null
       },
       {
-        "id": "hn-49269090",
-        "title": "Launch HN: Discovered Materials (YC P26) – AI agents to discover new materials",
-        "url": "https://discoveredmaterials.com/research/",
+        "id": "hn-49289112",
+        "title": "Gemini 3.7 Flash",
+        "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-3-7-flash/",
         "source": "Hacker News",
-        "date": "2026-08-12",
+        "date": "2026-08-13",
         "summary": "",
         "meta": [
-          "143 points",
-          "32 comments"
+          "879 points",
+          "446 comments"
         ],
-        "discussion": "https://news.ycombinator.com/item?id=49269090",
+        "discussion": "https://news.ycombinator.com/item?id=49289112",
         "flag": null
       },
       {
-        "id": "hn-49272569",
-        "title": "Someone is running mass vulnerability scans, spoofing AI bots like ClaudeBot",
-        "url": "https://knownagents.com/insights",
+        "id": "hn-49289844",
+        "title": "Accelerating GPT-5.6 Sol Ultrafast",
+        "url": "https://www.cerebras.ai/blog/accelerating-gpt-5-6-sol-ultrafast-with-openai",
         "source": "Hacker News",
-        "date": "2026-08-12",
+        "date": "2026-08-13",
         "summary": "",
         "meta": [
-          "284 points",
-          "215 comments"
+          "635 points",
+          "251 comments"
         ],
-        "discussion": "https://news.ycombinator.com/item?id=49272569",
+        "discussion": "https://news.ycombinator.com/item?id=49289844",
         "flag": null
       }
     ],
     "dev": [
       {
-        "id": "hn-49281916",
-        "title": "ChatGPT Desktop (Codex Desktop) for Linux",
-        "url": "https://openai.com/codex/",
+        "id": "hn-49294997",
+        "title": "GLM-5.3: Frontier coding with emergent cyber capabilities",
+        "url": "https://z.ai/blog/glm-5.3",
+        "source": "Hacker News",
+        "date": "2026-08-14",
+        "summary": "",
+        "meta": [
+          "596 points",
+          "294 comments"
+        ],
+        "discussion": "https://news.ycombinator.com/item?id=49294997",
+        "flag": null
+      },
+      {
+        "id": "hn-49296627",
+        "title": "DeepSeek peak/off-peak pricing update",
+        "url": "https://api-docs.deepseek.com/news/news260813/",
+        "source": "Hacker News",
+        "date": "2026-08-14",
+        "summary": "",
+        "meta": [
+          "58 points",
+          "22 comments"
+        ],
+        "discussion": "https://news.ycombinator.com/item?id=49296627",
+        "flag": null
+      },
+      {
+        "id": "hn-49231490",
+        "title": "Differential Heuristics",
+        "url": "https://www.redblobgames.com/blog/2026-08-08-differential-heuristics/",
+        "source": "Hacker News",
+        "date": "2026-08-09",
+        "summary": "",
+        "meta": [
+          "30 points",
+          "0 comments"
+        ],
+        "discussion": "https://news.ycombinator.com/item?id=49231490",
+        "flag": null
+      },
+      {
+        "id": "hn-49290166",
+        "title": "Hello, me. It's been a while",
+        "url": "https://themech.net/2026/08/hello-me-its-been-a-while/",
         "source": "Hacker News",
         "date": "2026-08-13",
         "summary": "",
         "meta": [
-          "217 points",
-          "132 comments"
+          "256 points",
+          "143 comments"
         ],
-        "discussion": "https://news.ycombinator.com/item?id=49281916",
+        "discussion": "https://news.ycombinator.com/item?id=49290166",
         "flag": null
       },
       {
-        "id": "hn-49243687",
-        "title": "The lattice of sets of natural numbers is rich",
-        "url": "https://jdh.hamkins.org/the-lattice-of-sets-of-natural-numbers-is-rich/",
+        "id": "hn-49258085",
+        "title": "Show HN: C# Game Engine with its own scripting language and IDE",
+        "url": "https://github.com/ArcadeMakerSources/ArcadeMaker",
         "source": "Hacker News",
-        "date": "2026-08-10",
+        "date": "2026-08-11",
+        "summary": "",
+        "meta": [
+          "60 points",
+          "31 comments"
+        ],
+        "discussion": "https://news.ycombinator.com/item?id=49258085",
+        "flag": null
+      },
+      {
+        "id": "hn-49285244",
+        "title": "DeepSeek Harness developer preview",
+        "url": "https://deepseek.com/harness/en/",
+        "source": "Hacker News",
+        "date": "2026-08-13",
+        "summary": "",
+        "meta": [
+          "678 points",
+          "278 comments"
+        ],
+        "discussion": "https://news.ycombinator.com/item?id=49285244",
+        "flag": null
+      },
+      {
+        "id": "hn-49295238",
+        "title": "Ruby 4.0 Universal RCE Deserialization Gadget Chain",
+        "url": "https://www.elttam.com/blog/ruby-4-0-universal-rce-deserialization-gadget-chain",
+        "source": "Hacker News",
+        "date": "2026-08-14",
         "summary": "",
         "meta": [
           "42 points",
-          "6 comments"
+          "10 comments"
         ],
-        "discussion": "https://news.ycombinator.com/item?id=49243687",
+        "discussion": "https://news.ycombinator.com/item?id=49295238",
         "flag": null
       },
       {
-        "id": "hn-49274600",
-        "title": "DeepSeek V4 Pro 0813",
-        "url": "https://openrouter.ai/deepseek/deepseek-v4-pro-0813",
+        "id": "hn-49286341",
+        "title": "Spaghettifying DRAM",
+        "url": "https://github.com/xoreaxeaxeax/skitter-creek-bath-salts",
         "source": "Hacker News",
-        "date": "2026-08-12",
+        "date": "2026-08-13",
         "summary": "",
         "meta": [
-          "961 points",
-          "409 comments"
+          "647 points",
+          "166 comments"
         ],
-        "discussion": "https://news.ycombinator.com/item?id=49274600",
+        "discussion": "https://news.ycombinator.com/item?id=49286341",
         "flag": null
       },
       {
-        "id": "hn-49272832",
-        "title": "Tracking down the 16-year-old WAL-reset SQLite bug",
-        "url": "https://tailscale.com/blog/sqlite-wal-reset-bug",
+        "id": "hn-49288889",
+        "title": "Mistral OCR 4.1",
+        "url": "https://docs.mistral.ai/models/ocr-4-1",
         "source": "Hacker News",
-        "date": "2026-08-12",
+        "date": "2026-08-13",
         "summary": "",
         "meta": [
-          "1081 points",
-          "202 comments"
+          "370 points",
+          "149 comments"
         ],
-        "discussion": "https://news.ycombinator.com/item?id=49272832",
+        "discussion": "https://news.ycombinator.com/item?id=49288889",
         "flag": null
       },
       {
-        "id": "hn-49224997",
-        "title": "Picking berries is my meditation",
-        "url": "https://www.tsoon.com/posts/picking-berries-meditation/",
+        "id": "hn-49293523",
+        "title": "Show HN: Lumabri – Run Moe Models on a P2P Swarm with Colibri",
+        "url": "https://github.com/JustVugg/lumabri",
         "source": "Hacker News",
-        "date": "2026-08-08",
+        "date": "2026-08-14",
         "summary": "",
         "meta": [
-          "18 points",
-          "7 comments"
+          "32 points",
+          "11 comments"
         ],
-        "discussion": "https://news.ycombinator.com/item?id=49224997",
+        "discussion": "https://news.ycombinator.com/item?id=49293523",
         "flag": null
       },
       {
-        "id": "hn-49273478",
-        "title": "Qwen3.8-2.4T",
-        "url": "https://huggingface.co/Qwen/Qwen3.8-2.4T-A95B",
+        "id": "hn-49293324",
+        "title": "Bluesky Protocol Services",
+        "url": "https://atproto.com/blog/introducing-bluesky-protocol-services",
         "source": "Hacker News",
-        "date": "2026-08-12",
+        "date": "2026-08-14",
         "summary": "",
         "meta": [
-          "649 points",
-          "154 comments"
+          "172 points",
+          "45 comments"
         ],
-        "discussion": "https://news.ycombinator.com/item?id=49273478",
+        "discussion": "https://news.ycombinator.com/item?id=49293324",
         "flag": null
       },
       {
-        "id": "hn-49276574",
-        "title": "Delta",
-        "url": "https://zed.dev/blog/introducing-delta",
-        "source": "Hacker News",
-        "date": "2026-08-12",
-        "summary": "",
-        "meta": [
-          "581 points",
-          "213 comments"
-        ],
-        "discussion": "https://news.ycombinator.com/item?id=49276574",
-        "flag": null
-      },
-      {
-        "id": "hn-49279928",
-        "title": "Principia Mathematica is modern and insightful",
-        "url": "https://okmij.org/ftp/Computation/Impressions/PrincipiaMathematica.html",
-        "source": "Hacker News",
-        "date": "2026-08-12",
-        "summary": "",
-        "meta": [
-          "184 points",
-          "79 comments"
-        ],
-        "discussion": "https://news.ycombinator.com/item?id=49279928",
-        "flag": null
-      },
-      {
-        "id": "hn-49242698",
-        "title": "Antiqua–Fraktur dispute",
-        "url": "https://en.wikipedia.org/wiki/Antiqua%E2%80%93Fraktur_dispute",
+        "id": "hn-49242867",
+        "title": "Protect Your Relays",
+        "url": "https://www.iroh.computer/blog/authenticated-relays",
         "source": "Hacker News",
         "date": "2026-08-10",
         "summary": "",
         "meta": [
-          "112 points",
-          "33 comments"
+          "5 points",
+          "6 comments"
         ],
-        "discussion": "https://news.ycombinator.com/item?id=49242698",
+        "discussion": "https://news.ycombinator.com/item?id=49242867",
         "flag": null
       },
       {
-        "id": "hn-49270726",
-        "title": "uBlock Origin Is Giving Up the Fight to Keep Ads Off Facebook",
-        "url": "https://digitalescapetools.com/2026/08/ublock-origin-stops-chasing-facebook-ads.html",
+        "id": "hn-49290299",
+        "title": "Understanding is the new bottleneck",
+        "url": "https://www.geoffreylitt.com/2026/07/02/understanding-is-the-new-bottleneck",
         "source": "Hacker News",
-        "date": "2026-08-12",
+        "date": "2026-08-13",
         "summary": "",
         "meta": [
-          "562 points",
-          "674 comments"
+          "360 points",
+          "187 comments"
         ],
-        "discussion": "https://news.ycombinator.com/item?id=49270726",
+        "discussion": "https://news.ycombinator.com/item?id=49290299",
         "flag": null
       },
       {
-        "id": "hn-49211530",
-        "title": "The punched card tabulator",
-        "url": "https://www.ibm.com/history/punched-card-tabulator",
+        "id": "hn-49247628",
+        "title": "We're not done with point clouds",
+        "url": "https://claytonwramsey.com/blog/mvt/",
         "source": "Hacker News",
-        "date": "2026-08-07",
+        "date": "2026-08-10",
         "summary": "",
         "meta": [
-          "20 points",
-          "4 comments"
+          "15 points",
+          "2 comments"
         ],
-        "discussion": "https://news.ycombinator.com/item?id=49211530",
-        "flag": null
-      },
-      {
-        "id": "hn-49270953",
-        "title": "2026 Eclipse Webcams",
-        "url": "https://jonty.github.io/2026_eclipse_webcams/",
-        "source": "Hacker News",
-        "date": "2026-08-12",
-        "summary": "",
-        "meta": [
-          "497 points",
-          "133 comments"
-        ],
-        "discussion": "https://news.ycombinator.com/item?id=49270953",
-        "flag": null
-      },
-      {
-        "id": "hn-49280061",
-        "title": "Flutter 3.47",
-        "url": "https://flutter.dev/blog/whats-new-in-flutter-3-47",
-        "source": "Hacker News",
-        "date": "2026-08-12",
-        "summary": "",
-        "meta": [
-          "127 points",
-          "144 comments"
-        ],
-        "discussion": "https://news.ycombinator.com/item?id=49280061",
-        "flag": null
-      },
-      {
-        "id": "hn-49272655",
-        "title": "Tim King, AmigaDOS developer, has died",
-        "url": "https://amiga-news.de/en/news/AN-2026-08-00070-EN.html",
-        "source": "Hacker News",
-        "date": "2026-08-12",
-        "summary": "",
-        "meta": [
-          "280 points",
-          "35 comments"
-        ],
-        "discussion": "https://news.ycombinator.com/item?id=49272655",
+        "discussion": "https://news.ycombinator.com/item?id=49247628",
         "flag": null
       }
     ]
