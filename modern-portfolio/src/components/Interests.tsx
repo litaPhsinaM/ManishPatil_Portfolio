@@ -22,8 +22,8 @@ const interests = [
     {
         title: 'Photography.exe',
         icon: '📸',
-        img: 'photography.jpg',
-        desc: 'Capturing moments through a vintage lens.',
+        img: 'photography.webp',
+        desc: 'All shot on a phone. The keepers live on 500px.',
     },
     {
         title: 'Snowboarding.exe',
