@@ -1,0 +1,316 @@
+/* ─── insights.exe ───────────────────────────────────────────────────────────
+   Charts live on white sunken panels rather than the gray window chrome. That
+   is where Win98 puts data anyway, and it is also the only surface where the
+   single data hue clears 3:1 — #1084d0 measures 4.0:1 on white and 2.21:1 on
+   #c0c0c0. Marks are square-ended: this design system has no rounded corners.
+   ------------------------------------------------------------------------- */
+
+.insights-overlay {
+    position: fixed;
+    inset: 0;
+    z-index: 3000;
+    background: rgba(0, 0, 0, 0.45);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+}
+
+.insights-window {
+    width: min(1000px, 100%);
+    max-height: min(86vh, 900px);
+    display: flex;
+    flex-direction: column;
+    background: var(--win98-gray);
+    box-shadow: var(--win98-raised-border);
+    padding: 3px;
+}
+
+/* ─── Login ─── */
+.insights-login {
+    padding: 18px;
+    background: var(--win98-gray);
+}
+
+.insights-login-text {
+    margin: 0 0 14px;
+    font-size: 12px;
+}
+
+.insights-login-row {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.insights-login-row label {
+    font-size: 12px;
+}
+
+.insights-login-row input {
+    flex: 1;
+    min-width: 160px;
+    padding: 3px 4px;
+    font-family: 'MS Sans Serif', sans-serif;
+    font-size: 12px;
+    box-shadow: var(--win98-sunken-border);
+    background: #fff;
+    border: none;
+}
+
+.insights-error {
+    margin: 12px 0 0;
+    font-size: 12px;
+    color: #a00;
+}
+
+/* ─── Chrome ─── */
+.insights-menubar {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.insights-ranges {
+    margin-left: auto;
+    display: flex;
+    gap: 3px;
+}
+
+.insights-range-btn {
+    font-family: 'MS Sans Serif', sans-serif;
+    font-size: 11px;
+    padding: 2px 8px;
+    background: var(--win98-gray);
+    box-shadow: var(--win98-raised-border);
+    border: none;
+    cursor: pointer;
+    color: #000;
+}
+
+.insights-range-btn.is-active {
+    box-shadow: var(--win98-sunken-border);
+    font-weight: bold;
+}
+
+.insights-body {
+    position: relative;
+    flex: 1;
+    overflow-y: auto;
+    padding: 12px;
+    background: var(--win98-gray);
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.insights-loading {
+    font-size: 12px;
+    padding: 4px 0;
+}
+
+/* ─── Stat tiles ─── */
+.insights-stats {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 8px;
+}
+
+.insights-stat {
+    background: #fff;
+    box-shadow: var(--win98-sunken-border);
+    padding: 8px 10px;
+    min-width: 0;
+}
+
+.insights-stat-label {
+    font-size: 11px;
+    color: #444;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+}
+
+.insights-stat-value {
+    font-size: 22px;
+    font-weight: bold;
+    line-height: 1.2;
+    color: #000;
+}
+
+.insights-stat-sub {
+    font-size: 10px;
+    color: #555;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+/* ─── Panels ─── */
+.insights-panel {
+    background: #fff;
+    box-shadow: var(--win98-sunken-border);
+    padding: 10px;
+    min-width: 0;
+}
+
+.insights-panel-title {
+    margin: 0 0 8px;
+    font-size: 11px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    color: #333;
+}
+
+.insights-panel-title-gap {
+    margin-top: 14px;
+}
+
+.insights-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+}
+
+.insights-empty {
+    margin: 0;
+    font-size: 11px;
+    color: #666;
+}
+
+/* ─── Column chart ─── */
+.insights-chart-plot {
+    display: flex;
+    align-items: flex-end;
+    /* 2px between adjacent bars so fills never touch. */
+    gap: 2px;
+    height: 132px;
+    /* Recessive baseline, not a full grid. */
+    border-bottom: 1px solid #b0b0b0;
+    padding-bottom: 1px;
+}
+
+.insights-col {
+    flex: 1;
+    min-width: 2px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: stretch;
+    position: relative;
+    cursor: default;
+}
+
+.insights-col-fill {
+    background: #1084d0;
+    width: 100%;
+}
+
+.insights-col:hover .insights-col-fill {
+    background: #000080;
+}
+
+.insights-col-label {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 10px;
+    line-height: 12px;
+    color: #333;
+    white-space: nowrap;
+}
+
+.insights-chart-axis {
+    display: flex;
+    justify-content: space-between;
+    font-size: 10px;
+    color: #555;
+    margin-top: 4px;
+}
+
+/* ─── Ranked bars ─── */
+.insights-bars {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.insights-bar-row {
+    display: grid;
+    grid-template-columns: minmax(0, 96px) minmax(0, 1fr) auto;
+    align-items: center;
+    gap: 8px;
+    font-size: 11px;
+    cursor: default;
+}
+
+.insights-bar-label {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: #000;
+}
+
+.insights-bar-track {
+    height: 12px;
+    background: #eee;
+    display: block;
+}
+
+.insights-bar-fill {
+    display: block;
+    height: 100%;
+    background: #1084d0;
+}
+
+.insights-bar-row:hover .insights-bar-fill {
+    background: #000080;
+}
+
+.insights-bar-value {
+    font-variant-numeric: tabular-nums;
+    color: #333;
+}
+
+/* ─── Tooltip: a real Win98 one, pale yellow with a hairline border ─── */
+.insights-tooltip {
+    position: absolute;
+    z-index: 10;
+    pointer-events: none;
+    background: #ffffe1;
+    border: 1px solid #000;
+    padding: 2px 5px;
+    font-size: 11px;
+    color: #000;
+    white-space: nowrap;
+    box-shadow: 1px 1px 0 rgba(0, 0, 0, 0.25);
+}
+
+.insights-statusbar {
+    margin-top: 2px;
+}
+
+/* ─── Responsive ─── */
+@media (max-width: 760px) {
+    .insights-stats {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .insights-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .insights-window {
+        max-height: 92vh;
+    }
+
+    .insights-bar-row {
+        grid-template-columns: minmax(0, 74px) minmax(0, 1fr) auto;
+    }
+}

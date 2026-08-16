@@ -1,6 +1,7 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Mail, Phone, MapPin, Download, ExternalLink, Linkedin } from 'lucide-react';
+import Insights from './Insights';
 import '../styles/Footer.css';
 
 const LINKEDIN_URL = 'https://www.linkedin.com/in/manish-patil-b50967182/';
@@ -19,6 +20,10 @@ const Footer: React.FC = () => {
     // preview and both download buttons would have 404'd on the next deploy.
     const resumeUrl = `${import.meta.env.BASE_URL}Manish%20Patil%20Resume.pdf`;
 
+    // Every other Help button on the site is decorative, which is exactly what
+    // makes this one a good door: it looks identical to the eight that do nothing.
+    const [insightsOpen, setInsightsOpen] = useState(false);
+
     return (
         <footer id="footer" className="footer-section">
             <div className="container">
@@ -32,7 +37,7 @@ const Footer: React.FC = () => {
                     <div className="title-bar">
                         <div className="title-bar-text">📬 Resume & Contact Center</div>
                         <div className="title-bar-controls">
-                            <button aria-label="Help" />
+                            <button aria-label="Help" onClick={() => setInsightsOpen(true)} />
                             <button aria-label="Minimize" />
                             <button aria-label="Maximize" />
                             <button aria-label="Close" />
@@ -67,10 +72,10 @@ const Footer: React.FC = () => {
                             </div>
 
                             <div className="resume-btns">
-                                <a href={resumeUrl} target="_blank" rel="noreferrer" className="btn">
+                                <a href={resumeUrl} target="_blank" rel="noreferrer" className="btn" data-track="resume:view">
                                     <ExternalLink size={14} /> View Full Resume
                                 </a>
-                                <a href={resumeUrl} download="Manish Patil Resume.pdf" className="btn-secondary">
+                                <a href={resumeUrl} download="Manish Patil Resume.pdf" className="btn-secondary" data-track="resume:download">
                                     <Download size={14} /> Download PDF
                                 </a>
                             </div>
@@ -149,7 +154,7 @@ const Footer: React.FC = () => {
                                 </div>
 
                                 <div className="form-actions">
-                                    <button type="submit" className="btn form-submit-btn">
+                                    <button type="submit" className="btn form-submit-btn" data-track="contact:send">
                                         📤 Send Message
                                     </button>
                                 </div>
@@ -170,6 +175,8 @@ const Footer: React.FC = () => {
                     </div>
                 </motion.div>
             </div>
+
+            <Insights open={insightsOpen} onClose={() => setInsightsOpen(false)} />
         </footer>
     );
 };
