@@ -172,9 +172,13 @@ export const track = (kind: EventKind, label: string, value?: number) => {
 /** Fired once per section per session by the observer below. */
 const seenSections = new Set<string>();
 
+/**
+ * The Win98 boot splash means the page's sections do not exist yet when this
+ * runs — a one-shot querySelectorAll finds nothing and section tracking is dead
+ * for the whole session. So attach to whatever is present now, and keep watching
+ * the DOM for sections that mount later.
+ */
 const watchSections = () => {
-    const sections = document.querySelectorAll<HTMLElement>('section[id]');
-    if (!sections.length) return;
     const observer = new IntersectionObserver(
         entries => {
             for (const entry of entries) {
@@ -188,7 +192,23 @@ const watchSections = () => {
         // footer does not count as "they read this".
         { threshold: 0.5 }
     );
-    sections.forEach(s => observer.observe(s));
+
+    const attached = new WeakSet<Element>();
+    const attach = () => {
+        document.querySelectorAll<HTMLElement>('section[id]').forEach(section => {
+            if (attached.has(section)) return;
+            attached.add(section);
+            observer.observe(section);
+        });
+    };
+
+    attach();
+
+    // Boot takes a few seconds; watch a little past it, then stop so a long
+    // session is not paying for DOM mutation callbacks forever.
+    const mutations = new MutationObserver(attach);
+    mutations.observe(document.body, { childList: true, subtree: true });
+    setTimeout(() => mutations.disconnect(), 30_000);
 };
 
 /**
