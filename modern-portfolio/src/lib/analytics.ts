@@ -78,13 +78,35 @@ const headers = () => ({
     Prefer: 'return=minimal',
 });
 
-const post = (table: string, body: unknown, keepalive = false) =>
+const send = (table: string, body: unknown, keepalive: boolean) =>
     fetch(`${SUPABASE_URL}/rest/v1/${table}`, {
         method: 'POST',
         headers: headers(),
         body: JSON.stringify(body),
         keepalive,
-    }).catch(() => undefined);
+    });
+
+/**
+ * A napping free-tier project answers the first request after an idle period with
+ * a 503 while it wakes. Observed in production on the very first visit insert.
+ *
+ * That matters more than it looks: the visit row is written once per session, so
+ * a swallowed 503 does not lose an event, it loses the entire session from the
+ * stats. One retry after a short pause covers the wake-up window.
+ *
+ * Skipped for keepalive sends — those happen as the tab is closing, where there
+ * is no "later" to retry in.
+ */
+const post = async (table: string, body: unknown, keepalive = false) => {
+    try {
+        const response = await send(table, body, keepalive);
+        if (response.ok || keepalive || response.status < 500) return;
+    } catch {
+        if (keepalive) return;
+    }
+    await new Promise(resolve => setTimeout(resolve, 1500));
+    await send(table, body, keepalive).catch(() => undefined);
+};
 
 const deviceClass = (): 'mobile' | 'tablet' | 'desktop' => {
     const w = window.innerWidth;
