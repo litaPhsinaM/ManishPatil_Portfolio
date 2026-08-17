@@ -433,7 +433,7 @@ const SnakeGame: React.FC = () => {
                     {!isPlaying && !gameOver && (
                         <div className="game-overlay">
                             <div className="game-title">SNAKE.EXE</div>
-                            <button className="btn game-btn" onClick={() => setIsPlaying(true)}>START GAME</button>
+                            <button className="btn game-btn" data-track="game:snake" onClick={() => setIsPlaying(true)}>START GAME</button>
                             <div className="game-instructions">Arrow keys or WASD<br />Space to start</div>
                         </div>
                     )}
@@ -668,7 +668,7 @@ const TrafficGame: React.FC = () => {
                 {!started && !gameOver && (
                     <div className="game-overlay">
                         <div className="game-title">TRAFFICRACER.EXE</div>
-                        <button className="btn game-btn" onClick={() => setStarted(true)}>START GAME</button>
+                        <button className="btn game-btn" data-track="game:traffic" onClick={() => setStarted(true)}>START GAME</button>
                         <div className="game-instructions">
                             Left and right arrows<br />Dodge the traffic
                         </div>
@@ -890,7 +890,7 @@ const FlappyGame: React.FC = () => {
                 {!started && !gameOver && (
                     <div className="game-overlay">
                         <div className="game-title">FLAPPY.EXE</div>
-                        <button className="btn game-btn" onClick={() => setStarted(true)}>START GAME</button>
+                        <button className="btn game-btn" data-track="game:flappy" onClick={() => setStarted(true)}>START GAME</button>
                         <div className="game-instructions">
                             Space or click to flap<br />Mind the pipes
                         </div>

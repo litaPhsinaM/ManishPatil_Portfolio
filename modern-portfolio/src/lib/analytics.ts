@@ -184,13 +184,24 @@ const watchSections = () => {
             for (const entry of entries) {
                 const id = entry.target.id;
                 if (!entry.isIntersecting || seenSections.has(id)) continue;
+
+                // "Did they actually look at this" has to hold for a section of any
+                // height. Half the SECTION on screen is unreachable on a phone, where
+                // a section is several screens tall — that ratio can never reach 0.5,
+                // so mobile visits recorded zero sections. Half the VIEWPORT filled by
+                // the section is the same intent and stays reachable at any size.
+                const viewport = entry.rootBounds?.height ?? window.innerHeight;
+                const covered = entry.intersectionRect.height;
+                const enough = entry.intersectionRatio >= 0.5 || covered >= viewport * 0.5;
+                if (!enough) continue;
+
                 seenSections.add(id);
                 track('section', id);
             }
         },
-        // Half of it on screen, so a section flying past during a fast scroll to the
-        // footer does not count as "they read this".
-        { threshold: 0.5 }
+        // Several thresholds so the callback keeps firing as a tall section scrolls
+        // through, rather than only at the single moment it crosses one ratio.
+        { threshold: [0, 0.1, 0.25, 0.5, 0.75, 1] }
     );
 
     const attached = new WeakSet<Element>();

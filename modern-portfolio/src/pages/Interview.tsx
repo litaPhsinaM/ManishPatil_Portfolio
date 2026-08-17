@@ -216,6 +216,7 @@ const Interview: React.FC = () => {
                                 type="submit"
                                 className="btn interview-send"
                                 disabled={busy || exhausted || draft.trim().length < 3}
+                                data-track="interview:ask"
                             >
                                 Ask
                             </button>
