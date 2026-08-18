@@ -1,285 +1,285 @@
 {
-  "generatedAt": "2026-08-17T11:41:03.696Z",
+  "generatedAt": "2026-08-18T11:41:36.776Z",
   "log": [
     {
-      "t": "2026-08-17T11:41:02.543Z",
+      "t": "2026-08-18T11:41:35.599Z",
       "level": "info",
       "msg": "signal refresh started"
     },
     {
-      "t": "2026-08-17T11:41:02.548Z",
+      "t": "2026-08-18T11:41:35.602Z",
       "level": "info",
       "msg": "GET hacker-news.firebaseio.com/v0/topstories.json"
     },
     {
-      "t": "2026-08-17T11:41:02.816Z",
+      "t": "2026-08-18T11:41:35.758Z",
       "level": "info",
       "msg": "HTTP 200 · resolving top 60 story ids in batches of 10"
     },
     {
-      "t": "2026-08-17T11:41:03.119Z",
+      "t": "2026-08-18T11:41:36.162Z",
       "level": "info",
-      "msg": "59 of 60 resolved to usable stories · 571ms"
+      "msg": "60 of 60 resolved to usable stories · 560ms"
     },
     {
-      "t": "2026-08-17T11:41:03.120Z",
+      "t": "2026-08-18T11:41:36.162Z",
       "level": "info",
       "msg": "GET cisa.gov/feeds/known_exploited_vulnerabilities.json"
     },
     {
-      "t": "2026-08-17T11:41:03.279Z",
+      "t": "2026-08-18T11:41:36.274Z",
       "level": "info",
-      "msg": "HTTP 200 · catalog holds 1665 CVEs · 159ms"
+      "msg": "HTTP 200 · catalog holds 1666 CVEs · 112ms"
     },
     {
-      "t": "2026-08-17T11:41:03.282Z",
+      "t": "2026-08-18T11:41:36.276Z",
       "level": "info",
-      "msg": "fleet filter: 988 of 1665 touch managed platforms"
+      "msg": "fleet filter: 988 of 1666 touch managed platforms"
     },
     {
-      "t": "2026-08-17T11:41:03.290Z",
+      "t": "2026-08-18T11:41:36.280Z",
       "level": "info",
       "msg": "GET export.arxiv.org/api/query cat:cs.AI OR cat:cs.LG"
     },
     {
-      "t": "2026-08-17T11:41:03.693Z",
+      "t": "2026-08-18T11:41:36.775Z",
       "level": "info",
-      "msg": "HTTP 200 · 29,962 bytes of Atom XML · 403ms"
+      "msg": "HTTP 200 · 31,003 bytes of Atom XML · 495ms"
     },
     {
-      "t": "2026-08-17T11:41:03.695Z",
+      "t": "2026-08-18T11:41:36.776Z",
       "level": "info",
-      "msg": "topic split: 9 AI stories, 50 general dev"
+      "msg": "topic split: 13 AI stories, 47 general dev"
     },
     {
-      "t": "2026-08-17T11:41:03.695Z",
+      "t": "2026-08-18T11:41:36.776Z",
       "level": "info",
       "msg": "--- security feed: 14 items ---"
     },
     {
-      "t": "2026-08-17T11:41:03.695Z",
+      "t": "2026-08-18T11:41:36.776Z",
       "level": "info",
       "msg": "ingest CISA KEV · Cisco Secure Firewall Adaptive Security Appliance (ASA) a… · 2026-08-11"
     },
     {
-      "t": "2026-08-17T11:41:03.695Z",
+      "t": "2026-08-18T11:41:36.776Z",
       "level": "info",
       "msg": "ingest CISA KEV · Microsoft Windows Ancillary Function Driver for WinSock U… · 2026-08-11"
     },
     {
-      "t": "2026-08-17T11:41:03.695Z",
+      "t": "2026-08-18T11:41:36.776Z",
       "level": "info",
       "msg": "ingest CISA KEV · Apache Tomcat Missing Encryption of Sensitive Data Vulner… · 2026-08-04"
     },
     {
-      "t": "2026-08-17T11:41:03.695Z",
+      "t": "2026-08-18T11:41:36.776Z",
       "level": "info",
       "msg": "ingest CISA KEV · Cisco Secure Firewall Management Center Use of Hard-coded… · 2026-07-29"
     },
     {
-      "t": "2026-08-17T11:41:03.695Z",
+      "t": "2026-08-18T11:41:36.776Z",
       "level": "info",
       "msg": "ingest CISA KEV · Fortinet FortiOS Exposure of Sensitive Information to an… · 2026-07-27"
     },
     {
-      "t": "2026-08-17T11:41:03.695Z",
+      "t": "2026-08-18T11:41:36.776Z",
       "level": "info",
       "msg": "ingest CISA KEV · Microsoft SharePoint Deserialization of Untrusted Data Vu… · 2026-07-22"
     },
     {
-      "t": "2026-08-17T11:41:03.695Z",
+      "t": "2026-08-18T11:41:36.776Z",
       "level": "info",
       "msg": "ingest CISA KEV · WordPress Core SQL Injection Vulnerability · 2026-07-21"
     },
     {
-      "t": "2026-08-17T11:41:03.695Z",
+      "t": "2026-08-18T11:41:36.776Z",
       "level": "info",
       "msg": "ingest CISA KEV · WordPress Core Interpretation Conflict Vulnerability · 2026-07-21"
     },
     {
-      "t": "2026-08-17T11:41:03.695Z",
+      "t": "2026-08-18T11:41:36.776Z",
       "level": "info",
       "msg": "ingest CISA KEV · Microsoft SharePoint Deserialization of Untrusted Data Vu… · 2026-07-16"
     },
     {
-      "t": "2026-08-17T11:41:03.695Z",
+      "t": "2026-08-18T11:41:36.776Z",
       "level": "info",
       "msg": "ingest CISA KEV · Fortinet FortiSandbox OS Command Injection Vulnerability · 2026-07-16"
     },
     {
-      "t": "2026-08-17T11:41:03.695Z",
+      "t": "2026-08-18T11:41:36.776Z",
       "level": "info",
       "msg": "ingest CISA KEV · Fortinet FortiSandbox OS Command Injection Vulnerability · 2026-07-16"
     },
     {
-      "t": "2026-08-17T11:41:03.695Z",
+      "t": "2026-08-18T11:41:36.776Z",
       "level": "info",
       "msg": "ingest CISA KEV · Oracle E-Business Suite Improper Privilege Management Vul… · 2026-07-15"
     },
     {
-      "t": "2026-08-17T11:41:03.695Z",
+      "t": "2026-08-18T11:41:36.776Z",
       "level": "info",
       "msg": "ingest CISA KEV · Microsoft Active Directory Federation Services Insufficie… · 2026-07-14"
     },
     {
-      "t": "2026-08-17T11:41:03.695Z",
+      "t": "2026-08-18T11:41:36.776Z",
       "level": "info",
       "msg": "ingest CISA KEV · Microsoft SharePoint Server Missing Authentication for Cr… · 2026-07-14"
     },
     {
-      "t": "2026-08-17T11:41:03.695Z",
+      "t": "2026-08-18T11:41:36.776Z",
       "level": "info",
       "msg": "--- ai feed: 14 items ---"
     },
     {
-      "t": "2026-08-17T11:41:03.695Z",
+      "t": "2026-08-18T11:41:36.776Z",
       "level": "info",
-      "msg": "ingest Hacker News · Anthropic becomes the 'Apple of AI': Most revenue despite… · 2026-08-17"
+      "msg": "ingest Hacker News · Google buys crashed airline Spirit's data at auction, bec… · 2026-08-18"
     },
     {
-      "t": "2026-08-17T11:41:03.695Z",
+      "t": "2026-08-18T11:41:36.776Z",
       "level": "info",
-      "msg": "ingest Hacker News · Anthropic's 'watermark' text adulteration in Claude is a… · 2026-08-16"
+      "msg": "ingest Hacker News · OpenAI disbanded the team that assessed catastrophic mode… · 2026-08-18"
     },
     {
-      "t": "2026-08-17T11:41:03.695Z",
+      "t": "2026-08-18T11:41:36.776Z",
       "level": "info",
-      "msg": "ingest Hacker News · Claude: System Prompts · 2026-08-16"
+      "msg": "ingest arXiv · Don't Drop the BATON: Long-Horizon Robot Manipulation via… · 2026-08-17"
     },
     {
-      "t": "2026-08-17T11:41:03.695Z",
+      "t": "2026-08-18T11:41:36.776Z",
       "level": "info",
-      "msg": "ingest Hacker News · The AI Credit Resale Economy · 2026-08-16"
+      "msg": "ingest arXiv · Q-based Variational Inverse Reinforcement Learning · 2026-08-17"
     },
     {
-      "t": "2026-08-17T11:41:03.695Z",
+      "t": "2026-08-18T11:41:36.776Z",
       "level": "info",
-      "msg": "ingest Hacker News · Red queen hypothesis – A new way forward for self-improvi… · 2026-08-16"
+      "msg": "ingest arXiv · Improving the matrix multiplication exponent with modern… · 2026-08-17"
     },
     {
-      "t": "2026-08-17T11:41:03.695Z",
+      "t": "2026-08-18T11:41:36.776Z",
       "level": "info",
-      "msg": "ingest Hacker News · Nvidia dramatically reduces amount of OpenAI infra financ… · 2026-08-16"
+      "msg": "ingest arXiv · Spectral Gaps of Hit-and-Run and Coordinate Hit-and-Run · 2026-08-17"
     },
     {
-      "t": "2026-08-17T11:41:03.695Z",
+      "t": "2026-08-18T11:41:36.776Z",
       "level": "info",
-      "msg": "ingest Hacker News · Show HN: A public AI whose memory is shared across all us… · 2026-08-16"
+      "msg": "ingest arXiv · AutoSR: Automatic Symbolic Regression by Searching Resear… · 2026-08-17"
     },
     {
-      "t": "2026-08-17T11:41:03.695Z",
+      "t": "2026-08-18T11:41:36.776Z",
       "level": "info",
-      "msg": "ingest Hacker News · AI Coding Without the Vibes · 2026-08-16"
+      "msg": "ingest arXiv · An Analytical-Prior Framework for Data-Efficient Predicti… · 2026-08-17"
     },
     {
-      "t": "2026-08-17T11:41:03.695Z",
+      "t": "2026-08-18T11:41:36.776Z",
       "level": "info",
-      "msg": "ingest Hacker News · AI-Assisted GPU Porting of a 250k Line Legacy Weather Sim… · 2026-08-15"
+      "msg": "ingest arXiv · Data-Efficient and Interpretable Classification of Circul… · 2026-08-17"
     },
     {
-      "t": "2026-08-17T11:41:03.695Z",
+      "t": "2026-08-18T11:41:36.776Z",
       "level": "info",
-      "msg": "ingest arXiv · Decoding the Past: An Uncertainty-Aware Deep Learning Fra… · 2026-08-14"
+      "msg": "ingest arXiv · Towards Computational Provenance: Carrying Causal-State E… · 2026-08-17"
     },
     {
-      "t": "2026-08-17T11:41:03.695Z",
+      "t": "2026-08-18T11:41:36.776Z",
       "level": "info",
-      "msg": "ingest arXiv · Marionette: Predicting World States, Rendering Geometry,… · 2026-08-14"
+      "msg": "ingest arXiv · Non-Crossing Deep Quantile Regression for Distributional… · 2026-08-17"
     },
     {
-      "t": "2026-08-17T11:41:03.695Z",
+      "t": "2026-08-18T11:41:36.776Z",
       "level": "info",
-      "msg": "ingest arXiv · Handover of In-Context Learning State Across Session Boun… · 2026-08-14"
+      "msg": "ingest arXiv · The canonical facets of multi-separator polytopes · 2026-08-17"
     },
     {
-      "t": "2026-08-17T11:41:03.695Z",
+      "t": "2026-08-18T11:41:36.776Z",
       "level": "info",
-      "msg": "ingest arXiv · Participatory Moral AI Is Not Neutral: The Invisible Hand… · 2026-08-14"
+      "msg": "ingest arXiv · zLend: A Dual-Scope Cash-Flow Reconstruction Framework fo… · 2026-08-17"
     },
     {
-      "t": "2026-08-17T11:41:03.695Z",
+      "t": "2026-08-18T11:41:36.776Z",
       "level": "info",
-      "msg": "ingest arXiv · Learning-to-Transition for Large-scale and High-Order MIM… · 2026-08-14"
+      "msg": "ingest arXiv · What Do Compliance Detectors Read? An Audit of Activation… · 2026-08-17"
     },
     {
-      "t": "2026-08-17T11:41:03.695Z",
+      "t": "2026-08-18T11:41:36.776Z",
       "level": "info",
       "msg": "--- dev feed: 14 items ---"
     },
     {
-      "t": "2026-08-17T11:41:03.695Z",
+      "t": "2026-08-18T11:41:36.776Z",
       "level": "info",
-      "msg": "ingest Hacker News · Qwen 3.8 27B is excellent, but it defaults to overthinkin… · 2026-08-16"
+      "msg": "ingest Hacker News · Linux 7.3 improves performance when running out of vRAM · 2026-08-18"
     },
     {
-      "t": "2026-08-17T11:41:03.695Z",
+      "t": "2026-08-18T11:41:36.776Z",
       "level": "info",
-      "msg": "ingest Hacker News · On A.I. regulation and messaging · 2026-08-17"
+      "msg": "ingest Hacker News · How Bluesky draws its logo on screenshots · 2026-08-17"
     },
     {
-      "t": "2026-08-17T11:41:03.695Z",
+      "t": "2026-08-18T11:41:36.776Z",
       "level": "info",
-      "msg": "ingest Hacker News · A third world engineer responds to “RISC-V: They should h… · 2026-08-16"
+      "msg": "ingest Hacker News · Rethinking Database Programming · 2026-08-18"
     },
     {
-      "t": "2026-08-17T11:41:03.695Z",
+      "t": "2026-08-18T11:41:36.776Z",
       "level": "info",
-      "msg": "ingest Hacker News · Reticulum – Decentralized Mesh Network · 2026-08-16"
+      "msg": "ingest Hacker News · Quake Shareware, a CD-ROM just a little too full · 2026-08-17"
     },
     {
-      "t": "2026-08-17T11:41:03.696Z",
+      "t": "2026-08-18T11:41:36.776Z",
       "level": "info",
-      "msg": "ingest Hacker News · AGI-64 Brings Sierra Adventures to the Commodore 64 · 2026-08-17"
+      "msg": "ingest Hacker News · Fairphone 6 and PostmarketOS working main camera · 2026-08-17"
     },
     {
-      "t": "2026-08-17T11:41:03.696Z",
+      "t": "2026-08-18T11:41:36.776Z",
       "level": "info",
-      "msg": "ingest Hacker News · Gakutensoku · 2026-08-13"
+      "msg": "ingest Hacker News · I built a golf career management SIM (like Basketball GM,… · 2026-08-12"
     },
     {
-      "t": "2026-08-17T11:41:03.696Z",
+      "t": "2026-08-18T11:41:36.776Z",
       "level": "info",
-      "msg": "ingest Hacker News · The Mysterious Syndrome Destroying Endurance Athletes · 2026-08-14"
+      "msg": "ingest Hacker News · IBM Simon (1994): the original smartphone, explained in i… · 2026-08-15"
     },
     {
-      "t": "2026-08-17T11:41:03.696Z",
+      "t": "2026-08-18T11:41:36.776Z",
       "level": "info",
-      "msg": "ingest Hacker News · Rhombus 1.1 is now available · 2026-08-17"
+      "msg": "ingest Hacker News · Ranking the Most Brilliantly Colored Birds with Data · 2026-08-15"
     },
     {
-      "t": "2026-08-17T11:41:03.696Z",
+      "t": "2026-08-18T11:41:36.776Z",
       "level": "info",
-      "msg": "ingest Hacker News · Show HN: Desktopcolors.com – A museum for solid backgroun… · 2026-08-17"
+      "msg": "ingest Hacker News · A Preview of DuckDB v2.0 · 2026-08-17"
     },
     {
-      "t": "2026-08-17T11:41:03.696Z",
+      "t": "2026-08-18T11:41:36.776Z",
       "level": "info",
-      "msg": "ingest Hacker News · Production-ready detection and response queries for osque… · 2026-08-13"
+      "msg": "ingest Hacker News · The key that never exists: a threshold signing ceremony i… · 2026-08-15"
     },
     {
-      "t": "2026-08-17T11:41:03.696Z",
+      "t": "2026-08-18T11:41:36.776Z",
       "level": "info",
-      "msg": "ingest Hacker News · The continuing \"Q collar\" scandal · 2026-08-14"
+      "msg": "ingest Hacker News · Exercise intensity modulates interorgan communication and… · 2026-08-18"
     },
     {
-      "t": "2026-08-17T11:41:03.696Z",
+      "t": "2026-08-18T11:41:36.776Z",
       "level": "info",
-      "msg": "ingest Hacker News · How do I permanently disable random Google Photos popup t… · 2026-08-13"
+      "msg": "ingest Hacker News · The Benchmarkpocalypse · 2026-08-18"
     },
     {
-      "t": "2026-08-17T11:41:03.696Z",
+      "t": "2026-08-18T11:41:36.776Z",
       "level": "info",
-      "msg": "ingest Hacker News · Linear algebra done right · 2026-08-17"
+      "msg": "ingest Hacker News · Olo (Color) · 2026-08-12"
     },
     {
-      "t": "2026-08-17T11:41:03.696Z",
+      "t": "2026-08-18T11:41:36.776Z",
       "level": "info",
-      "msg": "ingest Hacker News · SIMD in the 90s: Programming Intel's Pentium MMX · 2026-08-13"
+      "msg": "ingest Hacker News · As Wisconsin cities flee Flock, its shared camera network… · 2026-08-18"
     },
     {
-      "t": "2026-08-17T11:41:03.696Z",
+      "t": "2026-08-18T11:41:36.776Z",
       "level": "info",
-      "msg": "publishing 42 items across 3 feeds · 1153ms"
+      "msg": "publishing 42 items across 3 feeds · 1177ms"
     }
   ],
   "feeds": {
@@ -483,392 +483,385 @@
     ],
     "ai": [
       {
-        "id": "hn-49329003",
-        "title": "Anthropic becomes the 'Apple of AI': Most revenue despite being most expensive",
-        "url": "https://www.techradar.com/pro/anthropic-becomes-the-apple-of-ai-as-it-grabs-most-revenue-despite-being-the-most-expensive",
+        "id": "hn-49343559",
+        "title": "Google buys crashed airline Spirit's data at auction, because AI",
+        "url": "https://www.theregister.com/ai-and-ml/2026/08/18/google-buys-crashed-airline-spirits-data-at-auction-because-ai/5288962",
         "source": "Hacker News",
+        "date": "2026-08-18",
+        "summary": "",
+        "meta": [
+          "84 points",
+          "41 comments"
+        ],
+        "discussion": "https://news.ycombinator.com/item?id=49343559",
+        "flag": null
+      },
+      {
+        "id": "hn-49342823",
+        "title": "OpenAI disbanded the team that assessed catastrophic model risks",
+        "url": "https://thenextweb.com/news/openai-preparedness-team-disbanded-ipo-streamlining",
+        "source": "Hacker News",
+        "date": "2026-08-18",
+        "summary": "",
+        "meta": [
+          "17 points",
+          "4 comments"
+        ],
+        "discussion": "https://news.ycombinator.com/item?id=49342823",
+        "flag": null
+      },
+      {
+        "id": "http://arxiv.org/abs/2608.16889v1",
+        "title": "Don't Drop the BATON: Long-Horizon Robot Manipulation via Agentic Subtask Exploration and Transition-aware Memory",
+        "url": "http://arxiv.org/abs/2608.16889v1",
+        "source": "arXiv",
         "date": "2026-08-17",
-        "summary": "",
-        "meta": [
-          "3 points",
-          "1 comments"
-        ],
-        "discussion": "https://news.ycombinator.com/item?id=49329003",
-        "flag": null
-      },
-      {
-        "id": "hn-49324087",
-        "title": "Anthropic's 'watermark' text adulteration in Claude is a perversion of writing",
-        "url": "https://daringfireball.net/2026/08/anthropics_watermark_text_adulteration_in_claude_is_a_perversion_of_writing",
-        "source": "Hacker News",
-        "date": "2026-08-16",
-        "summary": "",
-        "meta": [
-          "346 points",
-          "332 comments"
-        ],
-        "discussion": "https://news.ycombinator.com/item?id=49324087",
-        "flag": null
-      },
-      {
-        "id": "hn-49319556",
-        "title": "Claude: System Prompts",
-        "url": "https://platform.claude.com/docs/en/release-notes/system-prompts",
-        "source": "Hacker News",
-        "date": "2026-08-16",
-        "summary": "",
-        "meta": [
-          "681 points",
-          "263 comments"
-        ],
-        "discussion": "https://news.ycombinator.com/item?id=49319556",
-        "flag": null
-      },
-      {
-        "id": "hn-49320611",
-        "title": "The AI Credit Resale Economy",
-        "url": "https://vectoral.com/blog/who-are-the-token-brokers",
-        "source": "Hacker News",
-        "date": "2026-08-16",
-        "summary": "",
-        "meta": [
-          "300 points",
-          "120 comments"
-        ],
-        "discussion": "https://news.ycombinator.com/item?id=49320611",
-        "flag": null
-      },
-      {
-        "id": "hn-49323136",
-        "title": "Red queen hypothesis – A new way forward for self-improving AI",
-        "url": "https://www.cst.cam.ac.uk/news/red-queen-hypothesis-new-way-forward-self-improving-ai",
-        "source": "Hacker News",
-        "date": "2026-08-16",
-        "summary": "",
-        "meta": [
-          "77 points",
-          "20 comments"
-        ],
-        "discussion": "https://news.ycombinator.com/item?id=49323136",
-        "flag": null
-      },
-      {
-        "id": "hn-49323686",
-        "title": "Nvidia dramatically reduces amount of OpenAI infra financing it may guarantee",
-        "url": "https://www.reuters.com/business/nvidia-scales-back-250-billion-openai-data-center-guarantee-wsj-reports-2026-08-14/",
-        "source": "Hacker News",
-        "date": "2026-08-16",
-        "summary": "",
-        "meta": [
-          "213 points",
-          "108 comments"
-        ],
-        "discussion": "https://news.ycombinator.com/item?id=49323686",
-        "flag": null
-      },
-      {
-        "id": "hn-49319814",
-        "title": "Show HN: A public AI whose memory is shared across all users",
-        "url": "https://wildstatic.com/",
-        "source": "Hacker News",
-        "date": "2026-08-16",
-        "summary": "",
-        "meta": [
-          "74 points",
-          "66 comments"
-        ],
-        "discussion": "https://news.ycombinator.com/item?id=49319814",
-        "flag": null
-      },
-      {
-        "id": "hn-49318735",
-        "title": "AI Coding Without the Vibes",
-        "url": "https://peterbloem.nl/blog/craft-coding",
-        "source": "Hacker News",
-        "date": "2026-08-16",
-        "summary": "",
-        "meta": [
-          "88 points",
-          "53 comments"
-        ],
-        "discussion": "https://news.ycombinator.com/item?id=49318735",
-        "flag": null
-      },
-      {
-        "id": "hn-49314967",
-        "title": "AI-Assisted GPU Porting of a 250k Line Legacy Weather Simulation Code",
-        "url": "https://arxiv.org/abs/2608.13122",
-        "source": "Hacker News",
-        "date": "2026-08-15",
-        "summary": "",
-        "meta": [
-          "55 points",
-          "7 comments"
-        ],
-        "discussion": "https://news.ycombinator.com/item?id=49314967",
-        "flag": null
-      },
-      {
-        "id": "http://arxiv.org/abs/2608.14539v1",
-        "title": "Decoding the Past: An Uncertainty-Aware Deep Learning Framework for Sex Attribution in Prehistoric Hand Stencils",
-        "url": "http://arxiv.org/abs/2608.14539v1",
-        "source": "arXiv",
-        "date": "2026-08-14",
-        "summary": "Determining the biological sex of the individuals who created Upper Paleolithic hand stencils remains a challenging problem due to the absence of ground truth, population differences between contemporary and prehistoric groups, and the uncertainty introduced by image degradation. Traditional morphometric methods suffe…",
+        "summary": "Long-horizon robot manipulation chains many contact-rich skills into one multi-stage task. Vision-language-action (VLA) models increasingly master the individual skills, yet the chain still fails: errors compound beyond the policy's ability to correct, and one subtask silently constrains the next. A promising recipe f…",
         "meta": [
           "Research",
-          "Karel Becerra +3"
+          "Bingxin Xu +2"
         ],
         "flag": null
       },
       {
-        "id": "http://arxiv.org/abs/2608.14530v1",
-        "title": "Marionette: Predicting World States, Rendering Geometry, Painting Appearance",
-        "url": "http://arxiv.org/abs/2608.14530v1",
+        "id": "http://arxiv.org/abs/2608.16888v1",
+        "title": "Q-based Variational Inverse Reinforcement Learning",
+        "url": "http://arxiv.org/abs/2608.16888v1",
         "source": "arXiv",
-        "date": "2026-08-14",
-        "summary": "Interactive game world models typically autoregress visual observations directly in pixel or latent space, forcing structured properties such as pose, geometry, and occlusion to be implicitly maintained by the same generative sequence. Over long horizons, errors in these latent world properties accumulate, making cons…",
+        "date": "2026-08-17",
+        "summary": "The development of safe and beneficial AI requires that systems can learn and act in accordance with human preferences. However, explicitly specifying these preferences by hand is often infeasible. Inverse reinforcement learning (IRL) addresses this challenge by inferring preferences, represented as reward functions,…",
         "meta": [
           "Research",
-          "Zian Meng +4"
+          "Ondrej Bajgar +4"
         ],
         "flag": null
       },
       {
-        "id": "http://arxiv.org/abs/2608.14528v1",
-        "title": "Handover of In-Context Learning State Across Session Boundaries",
-        "url": "http://arxiv.org/abs/2608.14528v1",
+        "id": "http://arxiv.org/abs/2608.16884v1",
+        "title": "Improving the matrix multiplication exponent with modern optimization and AlphaEvolve",
+        "url": "http://arxiv.org/abs/2608.16884v1",
         "source": "arXiv",
-        "date": "2026-08-14",
-        "summary": "This study investigates the methodological and theoretical properties of session handover in applications that use large language models. A task may continue in a new session when the context reaches the model's input limit, when the application restarts, or when another agent is asked to finish the task. The applicat…",
+        "date": "2026-08-17",
+        "summary": "The current best bounds on the matrix multiplication exponent $ω$ are obtained through a refinement of the laser method called combination loss analysis (Duan et al., 2022; Williams et al., 2024; Alman et al., 2025). In this note, we address the optimization problem at the core of this approach and propose several imp…",
         "meta": [
           "Research",
-          "Masahiro Kato +1"
+          "Emilien Dupont +9"
         ],
         "flag": null
       },
       {
-        "id": "http://arxiv.org/abs/2608.14522v1",
-        "title": "Participatory Moral AI Is Not Neutral: The Invisible Hand of Developers",
-        "url": "http://arxiv.org/abs/2608.14522v1",
+        "id": "http://arxiv.org/abs/2608.16878v1",
+        "title": "Spectral Gaps of Hit-and-Run and Coordinate Hit-and-Run",
+        "url": "http://arxiv.org/abs/2608.16878v1",
         "source": "arXiv",
-        "date": "2026-08-14",
-        "summary": "As AI systems make more morally loaded decisions across society, one response has been moral preference elicitation. In this approach, researchers poll participants on hypothetical dilemmas and use the aggregated votes to train a policy that an AI model then applies at scale. Before any vote is cast, developers make t…",
+        "date": "2026-08-17",
+        "summary": "For any convex body $\\mathcal{K}\\subset\\mathbb{R}^{n}$ containing a unit ball, the spectral gap of Hit-and-Run is $Ω(1/(n^2 C_{\\mathsf{PI}}))$, where $C_{\\mathsf{PI}}$ is the Poincaré constant of the uniform distribution $π$ over $\\mathcal{K}$. This implies that Hit-and-Run converges to a distribution within $χ^2$-div…",
         "meta": [
           "Research",
-          "Taenyun Kim +2"
+          "Yunbum Kook +1"
         ],
         "flag": null
       },
       {
-        "id": "http://arxiv.org/abs/2608.14511v1",
-        "title": "Learning-to-Transition for Large-scale and High-Order MIMO Detection",
-        "url": "http://arxiv.org/abs/2608.14511v1",
+        "id": "http://arxiv.org/abs/2608.16876v1",
+        "title": "AutoSR: Automatic Symbolic Regression by Searching Research States",
+        "url": "http://arxiv.org/abs/2608.16876v1",
         "source": "arXiv",
-        "date": "2026-08-14",
-        "summary": "High-order multiple-input multiple-output (MIMO) detection requires efficient search over a large discrete symbol space while producing reliable soft information for channel decoding. This paper develops a learning-to-transition (L2T) framework that formulates MIMO detection as a stochastic sequence of complete-vector…",
+        "date": "2026-08-17",
+        "summary": "We introduce Automatic Symbolic Regression (AutoSR), a fully automated system that instantiates Research-Space Symbolic Regression by searching persistent scientific investigations rather than isolated equations. Finite, noisy data often yield numerically competitive expressions that imply very different behavior outs…",
         "meta": [
           "Research",
-          "Yubo Zhang +2"
+          "Kejia Zhang +4"
+        ],
+        "flag": null
+      },
+      {
+        "id": "http://arxiv.org/abs/2608.16873v1",
+        "title": "An Analytical-Prior Framework for Data-Efficient Prediction of Sound-Reduction Frequencies in Rectangular Side-Branch Helmholtz Resonators",
+        "url": "http://arxiv.org/abs/2608.16873v1",
+        "source": "arXiv",
+        "date": "2026-08-17",
+        "summary": "High-fidelity finite-element simulations can provide accurate numerical predictions for side-branch resonators, but large simulation datasets are expensive to generate and purely data-driven surrogates may become unreliable when simulation-labelled data are scarce. This study develops an analytical-prior learning fram…",
+        "meta": [
+          "Research",
+          "Jiaming Li"
+        ],
+        "flag": null
+      },
+      {
+        "id": "http://arxiv.org/abs/2608.16870v1",
+        "title": "Data-Efficient and Interpretable Classification of Circulating Tumor Cell Phenotypes in Microfluidic Devices via Deep Learning",
+        "url": "http://arxiv.org/abs/2608.16870v1",
+        "source": "arXiv",
+        "date": "2026-08-17",
+        "summary": "Accurate classification of circulating tumor cell (CTC) phenotypes can provide valuable information for assessing metastatic potential. Label free microfluidic devices provide a hydrodynamic obstacle course that transforms subtle biophysical characteristics of CTCs, including size and deformability, into distinct kine…",
+        "meta": [
+          "Research",
+          "Serena Su +2"
+        ],
+        "flag": null
+      },
+      {
+        "id": "http://arxiv.org/abs/2608.16868v1",
+        "title": "Towards Computational Provenance: Carrying Causal-State Evidence in Generated Text",
+        "url": "http://arxiv.org/abs/2608.16868v1",
+        "source": "arXiv",
+        "date": "2026-08-17",
+        "summary": "A language model's output does not by itself provide verifiable evidence about the internal computation that produced it. We study computational provenance: whether generated text can carry detectable evidence of which causally relevant internal state occurred. We test a bounded form of this idea in two controlled arc…",
+        "meta": [
+          "Research",
+          "Benjamin Belay"
+        ],
+        "flag": null
+      },
+      {
+        "id": "http://arxiv.org/abs/2608.16864v1",
+        "title": "Non-Crossing Deep Quantile Regression for Distributional Survival Prediction",
+        "url": "http://arxiv.org/abs/2608.16864v1",
+        "source": "arXiv",
+        "date": "2026-08-17",
+        "summary": "In survival analysis the way covariates act on the risk of an event often differs between early and late failure times, yet hazard- and mean-based summaries collapse this variation into a single number. Quantile-based modeling instead describes the full conditional distribution on the original time scale, but existing…",
+        "meta": [
+          "Research",
+          "Shuai Huang +5"
+        ],
+        "flag": null
+      },
+      {
+        "id": "http://arxiv.org/abs/2608.16861v1",
+        "title": "The canonical facets of multi-separator polytopes",
+        "url": "http://arxiv.org/abs/2608.16861v1",
+        "source": "arXiv",
+        "date": "2026-08-17",
+        "summary": "We initiate a polyhedral study of the graph multi-separator problem proposed by Irmai et al. (2024) as an alternative to the lifted multicut problem for application to the task of image segmentation. Starting with an integer linear program (ILP) formulation and the multi-separator polytope spanned by its feasible solu…",
+        "meta": [
+          "Research",
+          "Bjoern Andres +4"
+        ],
+        "flag": null
+      },
+      {
+        "id": "http://arxiv.org/abs/2608.16856v1",
+        "title": "zLend: A Dual-Scope Cash-Flow Reconstruction Framework for On-Chain Credit Underwriting",
+        "url": "http://arxiv.org/abs/2608.16856v1",
+        "source": "arXiv",
+        "date": "2026-08-17",
+        "summary": "Decentralized lending lacks a credit bureau: a borrower's capacity to repay must be inferred entirely from public on-chain activity, without income verification or a liability record. This paper presents zLend, a deployed cash-flow underwriting framework that reconstructs a wallet's daily balance history from raw toke…",
+        "meta": [
+          "Research",
+          "Girish G N +4"
+        ],
+        "flag": null
+      },
+      {
+        "id": "http://arxiv.org/abs/2608.16852v1",
+        "title": "What Do Compliance Detectors Read? An Audit of Activation Probes and Guard Models",
+        "url": "http://arxiv.org/abs/2608.16852v1",
+        "source": "arXiv",
+        "date": "2026-08-17",
+        "summary": "Regulatory compliance monitoring in deployed language models is increasingly implemented as a legal and audit control, checking model outputs against written rules spanning data protection, healthcare, financial regulation, and platform policy. Such monitoring is meaningful only if a detector's verdict depends on the…",
+        "meta": [
+          "Research",
+          "Saisab Sadhu +3"
         ],
         "flag": null
       }
     ],
     "dev": [
       {
-        "id": "hn-49324985",
-        "title": "Qwen 3.8 27B is excellent, but it defaults to overthinking things",
-        "url": "https://simonwillison.net/2026/Aug/16/qwen-38-27b/",
+        "id": "hn-49342719",
+        "title": "Linux 7.3 improves performance when running out of vRAM",
+        "url": "https://pixelcluster.dev/VRAM-Overcommit/",
         "source": "Hacker News",
-        "date": "2026-08-16",
+        "date": "2026-08-18",
         "summary": "",
         "meta": [
-          "549 points",
-          "261 comments"
+          "211 points",
+          "54 comments"
         ],
-        "discussion": "https://news.ycombinator.com/item?id=49324985",
+        "discussion": "https://news.ycombinator.com/item?id=49342719",
         "flag": null
       },
       {
-        "id": "hn-49325789",
-        "title": "On A.I. regulation and messaging",
-        "url": "https://twitter.com/DarioAmodei/status/2088758816376807762",
+        "id": "hn-49338459",
+        "title": "How Bluesky draws its logo on screenshots",
+        "url": "https://timmarinin.net/2026/bluesky-screenshots/",
         "source": "Hacker News",
         "date": "2026-08-17",
         "summary": "",
         "meta": [
-          "97 points",
-          "171 comments"
+          "559 points",
+          "365 comments"
         ],
-        "discussion": "https://news.ycombinator.com/item?id=49325789",
+        "discussion": "https://news.ycombinator.com/item?id=49338459",
         "flag": null
       },
       {
-        "id": "hn-49321717",
-        "title": "A third world engineer responds to “RISC-V: They should have known better”",
-        "url": "https://rvembedded.com/blog_post/12/",
+        "id": "hn-49342530",
+        "title": "Rethinking Database Programming",
+        "url": "https://acadia.engineering/blog/rethinking-database-programming",
         "source": "Hacker News",
-        "date": "2026-08-16",
+        "date": "2026-08-18",
         "summary": "",
         "meta": [
-          "536 points",
-          "277 comments"
+          "83 points",
+          "34 comments"
         ],
-        "discussion": "https://news.ycombinator.com/item?id=49321717",
+        "discussion": "https://news.ycombinator.com/item?id=49342530",
         "flag": null
       },
       {
-        "id": "hn-49325061",
-        "title": "Reticulum – Decentralized Mesh Network",
-        "url": "https://reticulum.network/",
-        "source": "Hacker News",
-        "date": "2026-08-16",
-        "summary": "",
-        "meta": [
-          "142 points",
-          "44 comments"
-        ],
-        "discussion": "https://news.ycombinator.com/item?id=49325061",
-        "flag": null
-      },
-      {
-        "id": "hn-49325714",
-        "title": "AGI-64 Brings Sierra Adventures to the Commodore 64",
-        "url": "https://meanhamster.com/news/agi-64-brings-sierra-adventures-to-the-commodore-64",
+        "id": "hn-49338328",
+        "title": "Quake Shareware, a CD-ROM just a little too full",
+        "url": "https://fabiensanglard.net/quake_shareware_cd/index.html",
         "source": "Hacker News",
         "date": "2026-08-17",
         "summary": "",
         "meta": [
-          "95 points",
-          "12 comments"
+          "372 points",
+          "159 comments"
         ],
-        "discussion": "https://news.ycombinator.com/item?id=49325714",
+        "discussion": "https://news.ycombinator.com/item?id=49338328",
         "flag": null
       },
       {
-        "id": "hn-49288449",
-        "title": "Gakutensoku",
-        "url": "https://en.wikipedia.org/wiki/Gakutensoku",
-        "source": "Hacker News",
-        "date": "2026-08-13",
-        "summary": "",
-        "meta": [
-          "37 points",
-          "3 comments"
-        ],
-        "discussion": "https://news.ycombinator.com/item?id=49288449",
-        "flag": null
-      },
-      {
-        "id": "hn-49303380",
-        "title": "The Mysterious Syndrome Destroying Endurance Athletes",
-        "url": "https://www.outsideonline.com/health/training-performance/running-empty/",
-        "source": "Hacker News",
-        "date": "2026-08-14",
-        "summary": "",
-        "meta": [
-          "18 points",
-          "8 comments"
-        ],
-        "discussion": "https://news.ycombinator.com/item?id=49303380",
-        "flag": null
-      },
-      {
-        "id": "hn-49325384",
-        "title": "Rhombus 1.1 is now available",
-        "url": "https://blog.racket-lang.org/2026/08/rhombus-v1.1.html",
+        "id": "hn-49338285",
+        "title": "Fairphone 6 and PostmarketOS working main camera",
+        "url": "https://catcrafts.net/posts/fairphone-6-postmarketos-working-main-camera",
         "source": "Hacker News",
         "date": "2026-08-17",
         "summary": "",
         "meta": [
-          "94 points",
-          "28 comments"
+          "226 points",
+          "49 comments"
         ],
-        "discussion": "https://news.ycombinator.com/item?id=49325384",
+        "discussion": "https://news.ycombinator.com/item?id=49338285",
         "flag": null
       },
       {
-        "id": "hn-49327643",
-        "title": "Show HN: Desktopcolors.com – A museum for solid background colors of classic OS",
-        "url": "https://desktopcolors.com",
+        "id": "hn-49279208",
+        "title": "I built a golf career management SIM (like Basketball GM, but golf)",
+        "url": "https://www.rainydaygc.com/",
         "source": "Hacker News",
-        "date": "2026-08-17",
+        "date": "2026-08-12",
         "summary": "",
         "meta": [
-          "17 points",
+          "14 points",
           "4 comments"
         ],
-        "discussion": "https://news.ycombinator.com/item?id=49327643",
+        "discussion": "https://news.ycombinator.com/item?id=49279208",
         "flag": null
       },
       {
-        "id": "hn-49281175",
-        "title": "Production-ready detection and response queries for osquery",
-        "url": "https://github.com/chainguard-dev/osquery-defense-kit",
+        "id": "hn-49313360",
+        "title": "IBM Simon (1994): the original smartphone, explained in its own ad [video]",
+        "url": "https://www.youtube.com/watch?v=xoTFywZpPcc",
         "source": "Hacker News",
-        "date": "2026-08-13",
+        "date": "2026-08-15",
         "summary": "",
         "meta": [
-          "8 points",
-          "0 comments"
+          "44 points",
+          "11 comments"
         ],
-        "discussion": "https://news.ycombinator.com/item?id=49281175",
+        "discussion": "https://news.ycombinator.com/item?id=49313360",
         "flag": null
       },
       {
-        "id": "hn-49296495",
-        "title": "The continuing \"Q collar\" scandal",
-        "url": "https://statmodeling.stat.columbia.edu/2026/08/13/we-should-probably-be-doing-more-coverage-of-science-adjacent-medical-scams-like-the-q-collar-and-less-on-repulsively-self-promoting-but-ultimately-less-harmful-academic-grifters/",
+        "id": "hn-49311115",
+        "title": "Ranking the Most Brilliantly Colored Birds with Data",
+        "url": "https://moultano.wordpress.com/2026/08/14/fairly-ranking-the-most-brilliant-birds/",
         "source": "Hacker News",
-        "date": "2026-08-14",
+        "date": "2026-08-15",
         "summary": "",
         "meta": [
-          "33 points",
-          "13 comments"
+          "36 points",
+          "3 comments"
         ],
-        "discussion": "https://news.ycombinator.com/item?id=49296495",
+        "discussion": "https://news.ycombinator.com/item?id=49311115",
         "flag": null
       },
       {
-        "id": "hn-49290545",
-        "title": "How do I permanently disable random Google Photos popup to backup photos? (2024)",
-        "url": "https://support.google.com/photos/thread/256212140/how-do-i-permanently-disable-google-photos-pop-up-prompt-to-backup-my-photos-i?hl=en",
-        "source": "Hacker News",
-        "date": "2026-08-13",
-        "summary": "",
-        "meta": [
-          "143 points",
-          "89 comments"
-        ],
-        "discussion": "https://news.ycombinator.com/item?id=49290545",
-        "flag": null
-      },
-      {
-        "id": "hn-49326816",
-        "title": "Linear algebra done right",
-        "url": "https://linear.axler.net/",
+        "id": "hn-49330781",
+        "title": "A Preview of DuckDB v2.0",
+        "url": "https://duckdb.org/2026/08/17/duckdb-20-highlights",
         "source": "Hacker News",
         "date": "2026-08-17",
         "summary": "",
         "meta": [
-          "101 points",
-          "42 comments"
+          "653 points",
+          "116 comments"
         ],
-        "discussion": "https://news.ycombinator.com/item?id=49326816",
+        "discussion": "https://news.ycombinator.com/item?id=49330781",
         "flag": null
       },
       {
-        "id": "hn-49285096",
-        "title": "SIMD in the 90s: Programming Intel's Pentium MMX",
-        "url": "https://pikuma.com/blog/programming-intel-pentium-mmx-simd",
+        "id": "hn-49315217",
+        "title": "The key that never exists: a threshold signing ceremony in the browser",
+        "url": "https://808bits.com/articles/threshold-signing-ceremony-in-your-browser/",
         "source": "Hacker News",
-        "date": "2026-08-13",
+        "date": "2026-08-15",
+        "summary": "",
+        "meta": [
+          "5 points",
+          "0 comments"
+        ],
+        "discussion": "https://news.ycombinator.com/item?id=49315217",
+        "flag": null
+      },
+      {
+        "id": "hn-49341411",
+        "title": "Exercise intensity modulates interorgan communication and is associated with",
+        "url": "https://www.cell.com/cell-reports-medicine/fulltext/S2666-3791%2826%2900405-2?_returnURL=https%3A%2F%2Flinkinghub.elsevier.com%2Fretrieve%2Fpii%2FS2666379126004052%3Fshowall%3Dtrue",
+        "source": "Hacker News",
+        "date": "2026-08-18",
+        "summary": "",
+        "meta": [
+          "47 points",
+          "14 comments"
+        ],
+        "discussion": "https://news.ycombinator.com/item?id=49341411",
+        "flag": null
+      },
+      {
+        "id": "hn-49340299",
+        "title": "The Benchmarkpocalypse",
+        "url": "https://danluu.com/benchpocalypse/",
+        "source": "Hacker News",
+        "date": "2026-08-18",
         "summary": "",
         "meta": [
           "125 points",
-          "53 comments"
+          "35 comments"
         ],
-        "discussion": "https://news.ycombinator.com/item?id=49285096",
+        "discussion": "https://news.ycombinator.com/item?id=49340299",
+        "flag": null
+      },
+      {
+        "id": "hn-49270194",
+        "title": "Olo (Color)",
+        "url": "https://en.wikipedia.org/wiki/Olo_(color)",
+        "source": "Hacker News",
+        "date": "2026-08-12",
+        "summary": "",
+        "meta": [
+          "466 points",
+          "84 comments"
+        ],
+        "discussion": "https://news.ycombinator.com/item?id=49270194",
+        "flag": null
+      },
+      {
+        "id": "hn-49344114",
+        "title": "As Wisconsin cities flee Flock, its shared camera network loses value",
+        "url": "https://arstechnica.com/tech-policy/2026/08/as-wisconsin-cities-flee-flock-its-shared-camera-network-loses-value/",
+        "source": "Hacker News",
+        "date": "2026-08-18",
+        "summary": "",
+        "meta": [
+          "7 points",
+          "1 comments"
+        ],
+        "discussion": "https://news.ycombinator.com/item?id=49344114",
         "flag": null
       }
     ]
