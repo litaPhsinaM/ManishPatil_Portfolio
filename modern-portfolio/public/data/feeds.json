@@ -1,285 +1,285 @@
 {
-  "generatedAt": "2026-08-21T11:42:22.532Z",
+  "generatedAt": "2026-08-22T11:35:23.436Z",
   "log": [
     {
-      "t": "2026-08-21T11:42:21.184Z",
+      "t": "2026-08-22T11:35:22.227Z",
       "level": "info",
       "msg": "signal refresh started"
     },
     {
-      "t": "2026-08-21T11:42:21.189Z",
+      "t": "2026-08-22T11:35:22.232Z",
       "level": "info",
       "msg": "GET hacker-news.firebaseio.com/v0/topstories.json"
     },
     {
-      "t": "2026-08-21T11:42:21.478Z",
+      "t": "2026-08-22T11:35:22.369Z",
       "level": "info",
       "msg": "HTTP 200 · resolving top 60 story ids in batches of 10"
     },
     {
-      "t": "2026-08-21T11:42:22.045Z",
+      "t": "2026-08-22T11:35:22.700Z",
       "level": "info",
-      "msg": "59 of 60 resolved to usable stories · 856ms"
+      "msg": "59 of 60 resolved to usable stories · 468ms"
     },
     {
-      "t": "2026-08-21T11:42:22.046Z",
+      "t": "2026-08-22T11:35:22.701Z",
       "level": "info",
       "msg": "GET cisa.gov/feeds/known_exploited_vulnerabilities.json"
     },
     {
-      "t": "2026-08-21T11:42:22.149Z",
+      "t": "2026-08-22T11:35:23.048Z",
       "level": "info",
-      "msg": "HTTP 200 · catalog holds 1673 CVEs · 103ms"
+      "msg": "HTTP 200 · catalog holds 1674 CVEs · 347ms"
     },
     {
-      "t": "2026-08-21T11:42:22.152Z",
+      "t": "2026-08-22T11:35:23.052Z",
       "level": "info",
-      "msg": "fleet filter: 992 of 1673 touch managed platforms"
+      "msg": "fleet filter: 992 of 1674 touch managed platforms"
     },
     {
-      "t": "2026-08-21T11:42:22.160Z",
+      "t": "2026-08-22T11:35:23.062Z",
       "level": "info",
       "msg": "GET export.arxiv.org/api/query cat:cs.AI OR cat:cs.LG"
     },
     {
-      "t": "2026-08-21T11:42:22.530Z",
+      "t": "2026-08-22T11:35:23.434Z",
       "level": "info",
-      "msg": "HTTP 200 · 32,537 bytes of Atom XML · 370ms"
+      "msg": "HTTP 200 · 32,222 bytes of Atom XML · 372ms"
     },
     {
-      "t": "2026-08-21T11:42:22.531Z",
+      "t": "2026-08-22T11:35:23.435Z",
       "level": "info",
-      "msg": "topic split: 6 AI stories, 53 general dev"
+      "msg": "topic split: 4 AI stories, 55 general dev"
     },
     {
-      "t": "2026-08-21T11:42:22.531Z",
+      "t": "2026-08-22T11:35:23.436Z",
       "level": "info",
       "msg": "--- security feed: 14 items ---"
     },
     {
-      "t": "2026-08-21T11:42:22.531Z",
+      "t": "2026-08-22T11:35:23.436Z",
       "level": "info",
       "msg": "ingest CISA KEV · Microsoft Internet Key Exchange (IKE) Service Extensions… · 2026-08-18"
     },
     {
-      "t": "2026-08-21T11:42:22.531Z",
+      "t": "2026-08-22T11:35:23.436Z",
       "level": "info",
       "msg": "ingest CISA KEV · Broadcom VMware vCenter Path Traversal Vulnerability · 2026-08-18"
     },
     {
-      "t": "2026-08-21T11:42:22.532Z",
+      "t": "2026-08-22T11:35:23.436Z",
       "level": "info",
       "msg": "ingest CISA KEV · Microsoft SharePoint Weak Authentication Vulnerability · 2026-08-18"
     },
     {
-      "t": "2026-08-21T11:42:22.532Z",
+      "t": "2026-08-22T11:35:23.436Z",
       "level": "info",
       "msg": "ingest CISA KEV · Apple macOS Improper Authentication Vulnerability · 2026-08-18"
     },
     {
-      "t": "2026-08-21T11:42:22.532Z",
+      "t": "2026-08-22T11:35:23.436Z",
       "level": "info",
       "msg": "ingest CISA KEV · Cisco Secure Firewall Adaptive Security Appliance (ASA) a… · 2026-08-11"
     },
     {
-      "t": "2026-08-21T11:42:22.532Z",
+      "t": "2026-08-22T11:35:23.436Z",
       "level": "info",
       "msg": "ingest CISA KEV · Microsoft Windows Ancillary Function Driver for WinSock U… · 2026-08-11"
     },
     {
-      "t": "2026-08-21T11:42:22.532Z",
+      "t": "2026-08-22T11:35:23.436Z",
       "level": "info",
       "msg": "ingest CISA KEV · Apache Tomcat Missing Encryption of Sensitive Data Vulner… · 2026-08-04"
     },
     {
-      "t": "2026-08-21T11:42:22.532Z",
+      "t": "2026-08-22T11:35:23.436Z",
       "level": "info",
       "msg": "ingest CISA KEV · Cisco Secure Firewall Management Center Use of Hard-coded… · 2026-07-29"
     },
     {
-      "t": "2026-08-21T11:42:22.532Z",
+      "t": "2026-08-22T11:35:23.436Z",
       "level": "info",
       "msg": "ingest CISA KEV · Fortinet FortiOS Exposure of Sensitive Information to an… · 2026-07-27"
     },
     {
-      "t": "2026-08-21T11:42:22.532Z",
+      "t": "2026-08-22T11:35:23.436Z",
       "level": "info",
       "msg": "ingest CISA KEV · Microsoft SharePoint Deserialization of Untrusted Data Vu… · 2026-07-22"
     },
     {
-      "t": "2026-08-21T11:42:22.532Z",
+      "t": "2026-08-22T11:35:23.436Z",
       "level": "info",
       "msg": "ingest CISA KEV · WordPress Core SQL Injection Vulnerability · 2026-07-21"
     },
     {
-      "t": "2026-08-21T11:42:22.532Z",
+      "t": "2026-08-22T11:35:23.436Z",
       "level": "info",
       "msg": "ingest CISA KEV · WordPress Core Interpretation Conflict Vulnerability · 2026-07-21"
     },
     {
-      "t": "2026-08-21T11:42:22.532Z",
+      "t": "2026-08-22T11:35:23.436Z",
       "level": "info",
       "msg": "ingest CISA KEV · Microsoft SharePoint Deserialization of Untrusted Data Vu… · 2026-07-16"
     },
     {
-      "t": "2026-08-21T11:42:22.532Z",
+      "t": "2026-08-22T11:35:23.436Z",
       "level": "info",
       "msg": "ingest CISA KEV · Fortinet FortiSandbox OS Command Injection Vulnerability · 2026-07-16"
     },
     {
-      "t": "2026-08-21T11:42:22.532Z",
+      "t": "2026-08-22T11:35:23.436Z",
       "level": "info",
       "msg": "--- ai feed: 14 items ---"
     },
     {
-      "t": "2026-08-21T11:42:22.532Z",
+      "t": "2026-08-22T11:35:23.436Z",
+      "level": "info",
+      "msg": "ingest Hacker News · Claudette: Make Claude stop talking like a BuzzFeed artic… · 2026-08-21"
+    },
+    {
+      "t": "2026-08-22T11:35:23.436Z",
+      "level": "info",
+      "msg": "ingest Hacker News · I'm becoming AI-blind · 2026-08-21"
+    },
+    {
+      "t": "2026-08-22T11:35:23.436Z",
       "level": "info",
       "msg": "ingest Hacker News · AI companies destroy physical books – let's scan rare boo… · 2026-08-21"
     },
     {
-      "t": "2026-08-21T11:42:22.532Z",
-      "level": "info",
-      "msg": "ingest Hacker News · Show HN: Argentic – An L402 Lightning toll booth for AI s… · 2026-08-21"
-    },
-    {
-      "t": "2026-08-21T11:42:22.532Z",
+      "t": "2026-08-22T11:35:23.436Z",
       "level": "info",
       "msg": "ingest arXiv · Information on trajectories: martingales and random times · 2026-08-20"
     },
     {
-      "t": "2026-08-21T11:42:22.532Z",
+      "t": "2026-08-22T11:35:23.436Z",
       "level": "info",
       "msg": "ingest arXiv · G-CARL: Grounded Checklist-Aligned Reward Learning for Pa… · 2026-08-20"
     },
     {
-      "t": "2026-08-21T11:42:22.532Z",
+      "t": "2026-08-22T11:35:23.436Z",
       "level": "info",
       "msg": "ingest arXiv · $TCP_α$: Margin-Controlled Confidence estimation for reli… · 2026-08-20"
     },
     {
-      "t": "2026-08-21T11:42:22.532Z",
+      "t": "2026-08-22T11:35:23.436Z",
       "level": "info",
       "msg": "ingest arXiv · A comparison between ceiling-mounted FMCW, IR-UWB and Wi-… · 2026-08-20"
     },
     {
-      "t": "2026-08-21T11:42:22.532Z",
+      "t": "2026-08-22T11:35:23.436Z",
       "level": "info",
       "msg": "ingest arXiv · An Agentic Approach for Active Data Collection, Travel Be… · 2026-08-20"
     },
     {
-      "t": "2026-08-21T11:42:22.532Z",
+      "t": "2026-08-22T11:35:23.436Z",
       "level": "info",
       "msg": "ingest arXiv · Inducing Task Models from Computer-Use Traces · 2026-08-20"
     },
     {
-      "t": "2026-08-21T11:42:22.532Z",
+      "t": "2026-08-22T11:35:23.436Z",
       "level": "info",
       "msg": "ingest arXiv · AI4AI-Bench: Benchmarking LLM Agents in Algorithmic Desig… · 2026-08-20"
     },
     {
-      "t": "2026-08-21T11:42:22.532Z",
+      "t": "2026-08-22T11:35:23.436Z",
       "level": "info",
       "msg": "ingest arXiv · Pandora's AI Model Routing Box: Efficient Allocation with… · 2026-08-20"
     },
     {
-      "t": "2026-08-21T11:42:22.532Z",
+      "t": "2026-08-22T11:35:23.436Z",
       "level": "info",
       "msg": "ingest arXiv · Explainable Transformer Models for Clinical Prediction Ta… · 2026-08-20"
     },
     {
-      "t": "2026-08-21T11:42:22.532Z",
+      "t": "2026-08-22T11:35:23.436Z",
       "level": "info",
       "msg": "ingest arXiv · MidTool: Mid-training Data Synthesis for Agentic Tool Use · 2026-08-20"
     },
     {
-      "t": "2026-08-21T11:42:22.532Z",
+      "t": "2026-08-22T11:35:23.436Z",
       "level": "info",
       "msg": "ingest arXiv · Physical-Support Confidence Sets for Highly Coherent Dict… · 2026-08-20"
     },
     {
-      "t": "2026-08-21T11:42:22.532Z",
-      "level": "info",
-      "msg": "ingest arXiv · Phantom Gains: Auditing Self-Improvement Against a Measur… · 2026-08-20"
-    },
-    {
-      "t": "2026-08-21T11:42:22.532Z",
+      "t": "2026-08-22T11:35:23.436Z",
       "level": "info",
       "msg": "--- dev feed: 14 items ---"
     },
     {
-      "t": "2026-08-21T11:42:22.532Z",
+      "t": "2026-08-22T11:35:23.436Z",
       "level": "info",
-      "msg": "ingest Hacker News · DeepSeek-v4-flash-vision-exp · 2026-08-21"
+      "msg": "ingest Hacker News · Canada suspends trade negotiations with USA and match tar… · 2026-08-22"
     },
     {
-      "t": "2026-08-21T11:42:22.532Z",
+      "t": "2026-08-22T11:35:23.436Z",
       "level": "info",
-      "msg": "ingest Hacker News · The Lost Treasure of Sid Meier's Pirates · 2026-08-21"
+      "msg": "ingest Hacker News · Z80–The 1970s Microprocessor Still Alive · 2026-08-22"
     },
     {
-      "t": "2026-08-21T11:42:22.532Z",
+      "t": "2026-08-22T11:35:23.436Z",
       "level": "info",
-      "msg": "ingest Hacker News · Small, native web tricks worth remembering · 2026-08-21"
+      "msg": "ingest Hacker News · Munder Difflin – Agent harness to run an office of your c… · 2026-08-22"
     },
     {
-      "t": "2026-08-21T11:42:22.532Z",
+      "t": "2026-08-22T11:35:23.436Z",
       "level": "info",
-      "msg": "ingest Hacker News · We Rebuilt the Linux MicroVM Stack on Apple Silicon · 2026-08-21"
+      "msg": "ingest Hacker News · Rust Glancer: Rust LSP using 100x less RAM · 2026-08-21"
     },
     {
-      "t": "2026-08-21T11:42:22.532Z",
+      "t": "2026-08-22T11:35:23.436Z",
       "level": "info",
-      "msg": "ingest Hacker News · Flat Chair by Sara Paculdo · 2026-08-17"
+      "msg": "ingest Hacker News · Felony Bench · 2026-08-21"
     },
     {
-      "t": "2026-08-21T11:42:22.532Z",
+      "t": "2026-08-22T11:35:23.436Z",
       "level": "info",
-      "msg": "ingest Hacker News · The August 17 outage · 2026-08-20"
+      "msg": "ingest Hacker News · Kobo can run apps now · 2026-08-21"
     },
     {
-      "t": "2026-08-21T11:42:22.532Z",
+      "t": "2026-08-22T11:35:23.436Z",
       "level": "info",
-      "msg": "ingest Hacker News · I like 'em thick: an apology to my English teachers · 2026-08-18"
+      "msg": "ingest Hacker News · Felony charges for citizen deleting phone data at US Bord… · 2026-08-21"
     },
     {
-      "t": "2026-08-21T11:42:22.532Z",
+      "t": "2026-08-22T11:35:23.436Z",
       "level": "info",
-      "msg": "ingest Hacker News · HTML Can Do That · 2026-08-19"
+      "msg": "ingest Hacker News · There's no reason for software to be slow anymore · 2026-08-22"
     },
     {
-      "t": "2026-08-21T11:42:22.532Z",
+      "t": "2026-08-22T11:35:23.436Z",
       "level": "info",
-      "msg": "ingest Hacker News · The case against a C alternative (2022) · 2026-08-16"
+      "msg": "ingest Hacker News · I accidentally logged hundreds of thousands of phone call… · 2026-08-21"
     },
     {
-      "t": "2026-08-21T11:42:22.532Z",
+      "t": "2026-08-22T11:35:23.436Z",
       "level": "info",
-      "msg": "ingest Hacker News · Malicious Rust crate Arrayref runs a build-time payload · 2026-08-20"
+      "msg": "ingest Hacker News · Kagi added a setting for removing paywalled links from se… · 2026-08-21"
     },
     {
-      "t": "2026-08-21T11:42:22.532Z",
+      "t": "2026-08-22T11:35:23.436Z",
       "level": "info",
-      "msg": "ingest Hacker News · The Religious Experience of Philip K. Dick by R. Crumb (1… · 2026-08-21"
+      "msg": "ingest Hacker News · Zig’s io.threaded is neat · 2026-08-21"
     },
     {
-      "t": "2026-08-21T11:42:22.532Z",
+      "t": "2026-08-22T11:35:23.436Z",
       "level": "info",
-      "msg": "ingest Hacker News · Ox Alpha · 2026-08-20"
+      "msg": "ingest Hacker News · Three important steps in my maturation process · 2026-08-21"
     },
     {
-      "t": "2026-08-21T11:42:22.532Z",
+      "t": "2026-08-22T11:35:23.436Z",
       "level": "info",
-      "msg": "ingest Hacker News · I should have loved biology (2020) · 2026-08-20"
+      "msg": "ingest Hacker News · OTel isn’t going well · 2026-08-21"
     },
     {
-      "t": "2026-08-21T11:42:22.532Z",
+      "t": "2026-08-22T11:35:23.436Z",
       "level": "info",
-      "msg": "ingest Hacker News · Micron announces $10B research hub in Boise · 2026-08-21"
+      "msg": "ingest Hacker News · Scientists release biggest 2D map of the universe · 2026-08-21"
     },
     {
-      "t": "2026-08-21T11:42:22.532Z",
+      "t": "2026-08-22T11:35:23.436Z",
       "level": "info",
-      "msg": "publishing 42 items across 3 feeds · 1348ms"
+      "msg": "publishing 42 items across 3 feeds · 1209ms"
     }
   ],
   "feeds": {
@@ -483,6 +483,34 @@
     ],
     "ai": [
       {
+        "id": "hn-49388752",
+        "title": "Claudette: Make Claude stop talking like a BuzzFeed article",
+        "url": "https://github.com/adnanakil/nobuzz/blob/main/README.md",
+        "source": "Hacker News",
+        "date": "2026-08-21",
+        "summary": "",
+        "meta": [
+          "289 points",
+          "188 comments"
+        ],
+        "discussion": "https://news.ycombinator.com/item?id=49388752",
+        "flag": null
+      },
+      {
+        "id": "hn-49386699",
+        "title": "I'm becoming AI-blind",
+        "url": "https://cymerys.com/w/im-becoming-ai-blind",
+        "source": "Hacker News",
+        "date": "2026-08-21",
+        "summary": "",
+        "meta": [
+          "387 points",
+          "384 comments"
+        ],
+        "discussion": "https://news.ycombinator.com/item?id=49386699",
+        "flag": null
+      },
+      {
         "id": "hn-49383026",
         "title": "AI companies destroy physical books – let's scan rare books before it's too late",
         "url": "https://annas-archive.gl/blog/physical-destruction.html",
@@ -490,24 +518,10 @@
         "date": "2026-08-21",
         "summary": "",
         "meta": [
-          "352 points",
-          "262 comments"
+          "572 points",
+          "855 comments"
         ],
         "discussion": "https://news.ycombinator.com/item?id=49383026",
-        "flag": null
-      },
-      {
-        "id": "hn-49384477",
-        "title": "Show HN: Argentic – An L402 Lightning toll booth for AI scraping agents",
-        "url": "https://Argentic.network",
-        "source": "Hacker News",
-        "date": "2026-08-21",
-        "summary": "",
-        "meta": [
-          "7 points",
-          "5 comments"
-        ],
-        "discussion": "https://news.ycombinator.com/item?id=49384477",
         "flag": null
       },
       {
@@ -652,216 +666,203 @@
           "Guan-Ju Peng"
         ],
         "flag": null
-      },
-      {
-        "id": "http://arxiv.org/abs/2608.20290v1",
-        "title": "Phantom Gains: Auditing Self-Improvement Against a Measured Null",
-        "url": "http://arxiv.org/abs/2608.20290v1",
-        "source": "arXiv",
-        "date": "2026-08-20",
-        "summary": "Whether a language model has improved itself is increasingly judged not by mean accuracy but by which individual problems it gains and loses. Tracking these transitions means differencing two noisy estimates, leaving them vulnerable to measurement artifacts. Auditing three rounds of rank-$32$ LoRA self-training on Qwe…",
-        "meta": [
-          "Research",
-          "Cheng Xu +3"
-        ],
-        "flag": null
       }
     ],
     "dev": [
       {
-        "id": "hn-49386163",
-        "title": "DeepSeek-v4-flash-vision-exp",
-        "url": "https://api-docs.deepseek.com/guides/vision/",
+        "id": "hn-49398304",
+        "title": "Canada suspends trade negotiations with USA and match tariffs dollar for dollar",
+        "url": "https://www.pm.gc.ca/en/news/statements/2026/08/21/statement-prime-minister-carney-canada-us-trade-negotiations",
         "source": "Hacker News",
-        "date": "2026-08-21",
+        "date": "2026-08-22",
         "summary": "",
         "meta": [
-          "107 points",
-          "18 comments"
+          "148 points",
+          "67 comments"
         ],
-        "discussion": "https://news.ycombinator.com/item?id=49386163",
+        "discussion": "https://news.ycombinator.com/item?id=49398304",
         "flag": null
       },
       {
-        "id": "hn-49384896",
-        "title": "The Lost Treasure of Sid Meier's Pirates",
-        "url": "https://remapradio.com/articles/the-lost-treasure-of-sid-meiers-pirates/",
+        "id": "hn-49398158",
+        "title": "Z80–The 1970s Microprocessor Still Alive",
+        "url": "https://www.computer.org/csdl/magazine/mi/2021/06/09623402/1yJTvlRLmhi",
+        "source": "Hacker News",
+        "date": "2026-08-22",
+        "summary": "",
+        "meta": [
+          "15 points",
+          "8 comments"
+        ],
+        "discussion": "https://news.ycombinator.com/item?id=49398158",
+        "flag": null
+      },
+      {
+        "id": "hn-49398152",
+        "title": "Munder Difflin – Agent harness to run an office of your clones",
+        "url": "https://munderdiffl.in/",
+        "source": "Hacker News",
+        "date": "2026-08-22",
+        "summary": "",
+        "meta": [
+          "20 points",
+          "2 comments"
+        ],
+        "discussion": "https://news.ycombinator.com/item?id=49398152",
+        "flag": null
+      },
+      {
+        "id": "hn-49393052",
+        "title": "Rust Glancer: Rust LSP using 100x less RAM",
+        "url": "https://rust-glancer.github.io/blog/hello-world/",
         "source": "Hacker News",
         "date": "2026-08-21",
         "summary": "",
         "meta": [
-          "118 points",
+          "274 points",
           "55 comments"
         ],
-        "discussion": "https://news.ycombinator.com/item?id=49384896",
+        "discussion": "https://news.ycombinator.com/item?id=49393052",
         "flag": null
       },
       {
-        "id": "hn-49385860",
-        "title": "Small, native web tricks worth remembering",
-        "url": "https://htmlcat.net/",
+        "id": "hn-49389430",
+        "title": "Felony Bench",
+        "url": "https://www.felonybench.com/",
         "source": "Hacker News",
         "date": "2026-08-21",
         "summary": "",
         "meta": [
-          "53 points",
-          "14 comments"
+          "734 points",
+          "280 comments"
         ],
-        "discussion": "https://news.ycombinator.com/item?id=49385860",
+        "discussion": "https://news.ycombinator.com/item?id=49389430",
         "flag": null
       },
       {
-        "id": "hn-49384716",
-        "title": "We Rebuilt the Linux MicroVM Stack on Apple Silicon",
-        "url": "https://encore.dev/blog/firecracker-apple-silicon",
+        "id": "hn-49390427",
+        "title": "Kobo can run apps now",
+        "url": "https://bandarlabs.github.io/Cobalt/",
         "source": "Hacker News",
         "date": "2026-08-21",
         "summary": "",
         "meta": [
-          "91 points",
-          "45 comments"
-        ],
-        "discussion": "https://news.ycombinator.com/item?id=49384716",
-        "flag": null
-      },
-      {
-        "id": "hn-49331084",
-        "title": "Flat Chair by Sara Paculdo",
-        "url": "https://www.toxel.com/tech/2026/08/07/flat-chair-by-sara-paculdo/",
-        "source": "Hacker News",
-        "date": "2026-08-17",
-        "summary": "",
-        "meta": [
-          "29 points",
-          "10 comments"
-        ],
-        "discussion": "https://news.ycombinator.com/item?id=49331084",
-        "flag": null
-      },
-      {
-        "id": "hn-49378957",
-        "title": "The August 17 outage",
-        "url": "https://github.blog/news-insights/company-news/the-august-17-outage-and-the-work-ahead/",
-        "source": "Hacker News",
-        "date": "2026-08-20",
-        "summary": "",
-        "meta": [
-          "559 points",
-          "613 comments"
-        ],
-        "discussion": "https://news.ycombinator.com/item?id=49378957",
-        "flag": null
-      },
-      {
-        "id": "hn-49347543",
-        "title": "I like 'em thick: an apology to my English teachers",
-        "url": "https://www.experimental-history.com/p/i-like-em-thick",
-        "source": "Hacker News",
-        "date": "2026-08-18",
-        "summary": "",
-        "meta": [
-          "759 points",
-          "307 comments"
-        ],
-        "discussion": "https://news.ycombinator.com/item?id=49347543",
-        "flag": null
-      },
-      {
-        "id": "hn-49362689",
-        "title": "HTML Can Do That",
-        "url": "https://chrisburnell.com/html-can-do-that/",
-        "source": "Hacker News",
-        "date": "2026-08-19",
-        "summary": "",
-        "meta": [
-          "855 points",
+          "571 points",
           "190 comments"
         ],
-        "discussion": "https://news.ycombinator.com/item?id=49362689",
+        "discussion": "https://news.ycombinator.com/item?id=49390427",
         "flag": null
       },
       {
-        "id": "hn-49320866",
-        "title": "The case against a C alternative (2022)",
-        "url": "https://c3.handmade.network/blog/p/8486-the_case_against_a_c_alternative",
-        "source": "Hacker News",
-        "date": "2026-08-16",
-        "summary": "",
-        "meta": [
-          "47 points",
-          "37 comments"
-        ],
-        "discussion": "https://news.ycombinator.com/item?id=49320866",
-        "flag": null
-      },
-      {
-        "id": "hn-49374269",
-        "title": "Malicious Rust crate Arrayref runs a build-time payload",
-        "url": "https://safedep.io/arrayref-proc-macro1-rust-build-time-malware/",
-        "source": "Hacker News",
-        "date": "2026-08-20",
-        "summary": "",
-        "meta": [
-          "511 points",
-          "438 comments"
-        ],
-        "discussion": "https://news.ycombinator.com/item?id=49374269",
-        "flag": null
-      },
-      {
-        "id": "hn-49384224",
-        "title": "The Religious Experience of Philip K. Dick by R. Crumb (1986)",
-        "url": "https://philipdick.com/resources/miscellaneous/the-religious-experience-of-philip-k-dick-by-r-crumb-from-weirdo-17/",
+        "id": "hn-49386895",
+        "title": "Felony charges for citizen deleting phone data at US Border",
+        "url": "https://www.nytimes.com/2026/08/21/us/politics/samuel-tunick-deleted-phone-felony.html",
         "source": "Hacker News",
         "date": "2026-08-21",
         "summary": "",
         "meta": [
-          "52 points",
-          "29 comments"
+          "827 points",
+          "960 comments"
         ],
-        "discussion": "https://news.ycombinator.com/item?id=49384224",
+        "discussion": "https://news.ycombinator.com/item?id=49386895",
         "flag": null
       },
       {
-        "id": "hn-49381896",
-        "title": "Ox Alpha",
-        "url": "https://openrouter.ai/stealth/ox-alpha",
+        "id": "hn-49395628",
+        "title": "There's no reason for software to be slow anymore",
+        "url": "https://danluu.com/perf-opt/",
         "source": "Hacker News",
-        "date": "2026-08-20",
+        "date": "2026-08-22",
         "summary": "",
         "meta": [
-          "178 points",
-          "136 comments"
+          "450 points",
+          "318 comments"
         ],
-        "discussion": "https://news.ycombinator.com/item?id=49381896",
+        "discussion": "https://news.ycombinator.com/item?id=49395628",
         "flag": null
       },
       {
-        "id": "hn-49377853",
-        "title": "I should have loved biology (2020)",
-        "url": "https://jsomers.net/i-should-have-loved-biology/",
-        "source": "Hacker News",
-        "date": "2026-08-20",
-        "summary": "",
-        "meta": [
-          "293 points",
-          "109 comments"
-        ],
-        "discussion": "https://news.ycombinator.com/item?id=49377853",
-        "flag": null
-      },
-      {
-        "id": "hn-49383582",
-        "title": "Micron announces $10B research hub in Boise",
-        "url": "https://investors.micron.com/news/press-release/2026/Micron-Unveils-Micron-Research-Labs-a-U-S--Based-Long-Horizon-Innovation-Hub-to-Shape-the-Future-of-Memory-and-AI/default.aspx",
+        "id": "hn-49387570",
+        "title": "I accidentally logged hundreds of thousands of phone calls to military bases",
+        "url": "https://lina.sh/blog/hijacking-e164-arpa",
         "source": "Hacker News",
         "date": "2026-08-21",
         "summary": "",
         "meta": [
-          "39 points",
-          "3 comments"
+          "568 points",
+          "69 comments"
         ],
-        "discussion": "https://news.ycombinator.com/item?id=49383582",
+        "discussion": "https://news.ycombinator.com/item?id=49387570",
+        "flag": null
+      },
+      {
+        "id": "hn-49388154",
+        "title": "Kagi added a setting for removing paywalled links from search results",
+        "url": "https://kagi.com/changelog#11296",
+        "source": "Hacker News",
+        "date": "2026-08-21",
+        "summary": "",
+        "meta": [
+          "1149 points",
+          "370 comments"
+        ],
+        "discussion": "https://news.ycombinator.com/item?id=49388154",
+        "flag": null
+      },
+      {
+        "id": "hn-49388694",
+        "title": "Zig’s io.threaded is neat",
+        "url": "https://matklad.github.io/2026/08/06/neat-io-threaded.html",
+        "source": "Hacker News",
+        "date": "2026-08-21",
+        "summary": "",
+        "meta": [
+          "85 points",
+          "46 comments"
+        ],
+        "discussion": "https://news.ycombinator.com/item?id=49388694",
+        "flag": null
+      },
+      {
+        "id": "hn-49394496",
+        "title": "Three important steps in my maturation process",
+        "url": "https://thomasdullien.github.io/posts/2026-08-21-three-important-steps-in-my-maturation-process/",
+        "source": "Hacker News",
+        "date": "2026-08-21",
+        "summary": "",
+        "meta": [
+          "153 points",
+          "74 comments"
+        ],
+        "discussion": "https://news.ycombinator.com/item?id=49394496",
+        "flag": null
+      },
+      {
+        "id": "hn-49391553",
+        "title": "OTel isn’t going well",
+        "url": "https://matduggan.com/otel-isnt-going-well-and-i-made-a-spreadsheet-about-it/",
+        "source": "Hacker News",
+        "date": "2026-08-21",
+        "summary": "",
+        "meta": [
+          "139 points",
+          "55 comments"
+        ],
+        "discussion": "https://news.ycombinator.com/item?id=49391553",
+        "flag": null
+      },
+      {
+        "id": "hn-49392200",
+        "title": "Scientists release biggest 2D map of the universe",
+        "url": "https://newscenter.lbl.gov/2026/08/10/scientists-release-biggest-2d-map-of-the-universe/",
+        "source": "Hacker News",
+        "date": "2026-08-21",
+        "summary": "",
+        "meta": [
+          "215 points",
+          "57 comments"
+        ],
+        "discussion": "https://news.ycombinator.com/item?id=49392200",
         "flag": null
       }
     ]
