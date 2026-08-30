@@ -1,285 +1,285 @@
 {
-  "generatedAt": "2026-08-29T15:38:20.124Z",
+  "generatedAt": "2026-08-30T15:20:32.583Z",
   "log": [
     {
-      "t": "2026-08-29T15:38:18.804Z",
+      "t": "2026-08-30T15:20:31.821Z",
       "level": "info",
       "msg": "signal refresh started"
     },
     {
-      "t": "2026-08-29T15:38:18.809Z",
+      "t": "2026-08-30T15:20:31.826Z",
       "level": "info",
       "msg": "GET hacker-news.firebaseio.com/v0/topstories.json"
     },
     {
-      "t": "2026-08-29T15:38:19.148Z",
+      "t": "2026-08-30T15:20:31.956Z",
       "level": "info",
       "msg": "HTTP 200 · resolving top 60 story ids in batches of 10"
     },
     {
-      "t": "2026-08-29T15:38:19.624Z",
+      "t": "2026-08-30T15:20:32.248Z",
       "level": "info",
-      "msg": "59 of 60 resolved to usable stories · 815ms"
+      "msg": "60 of 60 resolved to usable stories · 422ms"
     },
     {
-      "t": "2026-08-29T15:38:19.625Z",
+      "t": "2026-08-30T15:20:32.249Z",
       "level": "info",
       "msg": "GET cisa.gov/feeds/known_exploited_vulnerabilities.json"
     },
     {
-      "t": "2026-08-29T15:38:19.720Z",
+      "t": "2026-08-30T15:20:32.315Z",
       "level": "info",
-      "msg": "HTTP 200 · catalog holds 1685 CVEs · 95ms"
+      "msg": "HTTP 200 · catalog holds 1685 CVEs · 66ms"
     },
     {
-      "t": "2026-08-29T15:38:19.724Z",
+      "t": "2026-08-30T15:20:32.318Z",
       "level": "info",
       "msg": "fleet filter: 999 of 1685 touch managed platforms"
     },
     {
-      "t": "2026-08-29T15:38:19.732Z",
+      "t": "2026-08-30T15:20:32.326Z",
       "level": "info",
       "msg": "GET export.arxiv.org/api/query cat:cs.AI OR cat:cs.LG"
     },
     {
-      "t": "2026-08-29T15:38:20.121Z",
+      "t": "2026-08-30T15:20:32.580Z",
       "level": "info",
-      "msg": "HTTP 200 · 32,339 bytes of Atom XML · 389ms"
+      "msg": "HTTP 200 · 32,339 bytes of Atom XML · 254ms"
     },
     {
-      "t": "2026-08-29T15:38:20.123Z",
+      "t": "2026-08-30T15:20:32.581Z",
       "level": "info",
-      "msg": "topic split: 6 AI stories, 53 general dev"
+      "msg": "topic split: 8 AI stories, 52 general dev"
     },
     {
-      "t": "2026-08-29T15:38:20.123Z",
+      "t": "2026-08-30T15:20:32.582Z",
       "level": "info",
       "msg": "--- security feed: 14 items ---"
     },
     {
-      "t": "2026-08-29T15:38:20.123Z",
+      "t": "2026-08-30T15:20:32.582Z",
       "level": "info",
       "msg": "ingest CISA KEV · Linux Kernel Unspecified Vulnerability · 2026-08-27"
     },
     {
-      "t": "2026-08-29T15:38:20.123Z",
+      "t": "2026-08-30T15:20:32.582Z",
       "level": "info",
       "msg": "ingest CISA KEV · Red Hat Libuser Race Condition Vulnerability · 2026-08-26"
     },
     {
-      "t": "2026-08-29T15:38:20.123Z",
+      "t": "2026-08-30T15:20:32.582Z",
       "level": "info",
       "msg": "ingest CISA KEV · Red Hat Automatic Bug Reporting Tool Privilege Escalation… · 2026-08-26"
     },
     {
-      "t": "2026-08-29T15:38:20.123Z",
+      "t": "2026-08-30T15:20:32.582Z",
       "level": "info",
       "msg": "ingest CISA KEV · Linux Kernel Out-of-Bounds Write Vulnerability · 2026-08-26"
     },
     {
-      "t": "2026-08-29T15:38:20.123Z",
+      "t": "2026-08-30T15:20:32.582Z",
       "level": "info",
       "msg": "ingest CISA KEV · Citrix NetScaler ADC and NetScaler Gateway Improper Restr… · 2026-08-26"
     },
     {
-      "t": "2026-08-29T15:38:20.123Z",
+      "t": "2026-08-30T15:20:32.582Z",
       "level": "info",
       "msg": "ingest CISA KEV · Microsoft SQL Server Remote Code Execution Vulnerability · 2026-08-26"
     },
     {
-      "t": "2026-08-29T15:38:20.123Z",
+      "t": "2026-08-30T15:20:32.582Z",
       "level": "info",
       "msg": "ingest CISA KEV · Oracle HTTP Server and Oracle Weblogic Server Proxy Plug-… · 2026-08-24"
     },
     {
-      "t": "2026-08-29T15:38:20.123Z",
+      "t": "2026-08-30T15:20:32.582Z",
       "level": "info",
       "msg": "ingest CISA KEV · Microsoft Internet Key Exchange (IKE) Service Extensions… · 2026-08-18"
     },
     {
-      "t": "2026-08-29T15:38:20.123Z",
+      "t": "2026-08-30T15:20:32.582Z",
       "level": "info",
       "msg": "ingest CISA KEV · Broadcom VMware vCenter Path Traversal Vulnerability · 2026-08-18"
     },
     {
-      "t": "2026-08-29T15:38:20.123Z",
+      "t": "2026-08-30T15:20:32.582Z",
       "level": "info",
       "msg": "ingest CISA KEV · Microsoft SharePoint Weak Authentication Vulnerability · 2026-08-18"
     },
     {
-      "t": "2026-08-29T15:38:20.123Z",
+      "t": "2026-08-30T15:20:32.582Z",
       "level": "info",
       "msg": "ingest CISA KEV · Apple macOS Improper Authentication Vulnerability · 2026-08-18"
     },
     {
-      "t": "2026-08-29T15:38:20.123Z",
+      "t": "2026-08-30T15:20:32.582Z",
       "level": "info",
       "msg": "ingest CISA KEV · Cisco Secure Firewall Adaptive Security Appliance (ASA) a… · 2026-08-11"
     },
     {
-      "t": "2026-08-29T15:38:20.123Z",
+      "t": "2026-08-30T15:20:32.582Z",
       "level": "info",
       "msg": "ingest CISA KEV · Microsoft Windows Ancillary Function Driver for WinSock U… · 2026-08-11"
     },
     {
-      "t": "2026-08-29T15:38:20.123Z",
+      "t": "2026-08-30T15:20:32.582Z",
       "level": "info",
       "msg": "ingest CISA KEV · Apache Tomcat Missing Encryption of Sensitive Data Vulner… · 2026-08-04"
     },
     {
-      "t": "2026-08-29T15:38:20.123Z",
+      "t": "2026-08-30T15:20:32.582Z",
       "level": "info",
       "msg": "--- ai feed: 14 items ---"
     },
     {
-      "t": "2026-08-29T15:38:20.123Z",
+      "t": "2026-08-30T15:20:32.582Z",
       "level": "info",
-      "msg": "ingest Hacker News · Debian votes to allow \"responsible use of generative AI\" · 2026-08-29"
+      "msg": "ingest Hacker News · No AI Fridays · 2026-08-30"
     },
     {
-      "t": "2026-08-29T15:38:20.123Z",
+      "t": "2026-08-30T15:20:32.582Z",
+      "level": "info",
+      "msg": "ingest Hacker News · Claude Session URL appended to commit messages and PR des… · 2026-08-30"
+    },
+    {
+      "t": "2026-08-30T15:20:32.582Z",
+      "level": "info",
+      "msg": "ingest Hacker News · Fair Work Commission condemns 'plain wrong' AI legal advi… · 2026-08-30"
+    },
+    {
+      "t": "2026-08-30T15:20:32.582Z",
+      "level": "info",
+      "msg": "ingest Hacker News · The shrinking landscape of linguistic diversity in the ag… · 2026-08-30"
+    },
+    {
+      "t": "2026-08-30T15:20:32.582Z",
+      "level": "info",
+      "msg": "ingest Hacker News · Good Culture Is the Biggest Productivity Hack, Not AI · 2026-08-29"
+    },
+    {
+      "t": "2026-08-30T15:20:32.582Z",
       "level": "info",
       "msg": "ingest Hacker News · StemDeck, a free, open-source and local AI stem separator · 2026-08-29"
     },
     {
-      "t": "2026-08-29T15:38:20.123Z",
-      "level": "info",
-      "msg": "ingest Hacker News · I accidentally turned LLM memory into program analysis · 2026-08-28"
-    },
-    {
-      "t": "2026-08-29T15:38:20.123Z",
-      "level": "info",
-      "msg": "ingest Hacker News · Judge rules Trump administration’s blacklisting of Anthro… · 2026-08-28"
-    },
-    {
-      "t": "2026-08-29T15:38:20.123Z",
-      "level": "info",
-      "msg": "ingest Hacker News · Identifying fake cosmetics using AI · 2026-08-28"
-    },
-    {
-      "t": "2026-08-29T15:38:20.123Z",
-      "level": "info",
-      "msg": "ingest Hacker News · Luanti removed from Google Play due to baseless AI copyri… · 2026-08-28"
-    },
-    {
-      "t": "2026-08-29T15:38:20.123Z",
+      "t": "2026-08-30T15:20:32.582Z",
       "level": "info",
       "msg": "ingest arXiv · WikiSkill: Compiling Agent Experience into Persistent Kno… · 2026-08-27"
     },
     {
-      "t": "2026-08-29T15:38:20.123Z",
+      "t": "2026-08-30T15:20:32.582Z",
       "level": "info",
       "msg": "ingest arXiv · SWE-Prime: Fewer Trajectories, Better Performance · 2026-08-27"
     },
     {
-      "t": "2026-08-29T15:38:20.123Z",
+      "t": "2026-08-30T15:20:32.582Z",
       "level": "info",
       "msg": "ingest arXiv · From Static to Dynamic: Benchmarking Real-World Code Revi… · 2026-08-27"
     },
     {
-      "t": "2026-08-29T15:38:20.123Z",
+      "t": "2026-08-30T15:20:32.582Z",
       "level": "info",
       "msg": "ingest arXiv · RedEvoAgent: Automatic Red-Teaming Agent with Experience-… · 2026-08-27"
     },
     {
-      "t": "2026-08-29T15:38:20.123Z",
+      "t": "2026-08-30T15:20:32.582Z",
       "level": "info",
       "msg": "ingest arXiv · Mechanistic Reaction Prediction via Discrete Flow Matchin… · 2026-08-27"
     },
     {
-      "t": "2026-08-29T15:38:20.123Z",
+      "t": "2026-08-30T15:20:32.582Z",
       "level": "info",
       "msg": "ingest arXiv · Persona-Execution Separation: An Architecture Pattern for… · 2026-08-27"
     },
     {
-      "t": "2026-08-29T15:38:20.124Z",
+      "t": "2026-08-30T15:20:32.582Z",
       "level": "info",
       "msg": "ingest arXiv · Beyond F1: Evaluating Coverage and Failure Recovery in AI… · 2026-08-27"
     },
     {
-      "t": "2026-08-29T15:38:20.124Z",
+      "t": "2026-08-30T15:20:32.582Z",
       "level": "info",
       "msg": "ingest arXiv · Learning a Continuous Sepsis Severity Score Without Hour-… · 2026-08-27"
     },
     {
-      "t": "2026-08-29T15:38:20.124Z",
+      "t": "2026-08-30T15:20:32.582Z",
       "level": "info",
       "msg": "--- dev feed: 14 items ---"
     },
     {
-      "t": "2026-08-29T15:38:20.124Z",
+      "t": "2026-08-30T15:20:32.582Z",
       "level": "info",
-      "msg": "ingest Hacker News · Indirect Calling of Nested Functions on GCC Without Execu… · 2026-08-29"
+      "msg": "ingest Hacker News · Creepy Crawlies · 2026-08-29"
     },
     {
-      "t": "2026-08-29T15:38:20.124Z",
+      "t": "2026-08-30T15:20:32.582Z",
       "level": "info",
-      "msg": "ingest Hacker News · Show HN: Typebase – A single-folder back end you write in… · 2026-08-26"
+      "msg": "ingest Hacker News · Hacking IKEA Furniture · 2026-08-30"
     },
     {
-      "t": "2026-08-29T15:38:20.124Z",
+      "t": "2026-08-30T15:20:32.582Z",
       "level": "info",
-      "msg": "ingest Hacker News · Creating the Aetheryte Radio · 2026-08-28"
+      "msg": "ingest Hacker News · Casey Muratori – The Root of the Root of All Evil – BSC 2… · 2026-08-27"
     },
     {
-      "t": "2026-08-29T15:38:20.124Z",
+      "t": "2026-08-30T15:20:32.583Z",
       "level": "info",
-      "msg": "ingest Hacker News · Samsung's Processing-in-Memory (PIM) · 2026-08-29"
+      "msg": "ingest Hacker News · Arbitrary code execution in QubesOS via copy-to-VM error… · 2026-08-30"
     },
     {
-      "t": "2026-08-29T15:38:20.124Z",
+      "t": "2026-08-30T15:20:32.583Z",
       "level": "info",
-      "msg": "ingest Hacker News · GUIs should be fully keyboard-driven · 2026-08-28"
+      "msg": "ingest Hacker News · Longest Straight Line Paths on Water or Land on the Earth… · 2026-08-30"
     },
     {
-      "t": "2026-08-29T15:38:20.124Z",
+      "t": "2026-08-30T15:20:32.583Z",
       "level": "info",
-      "msg": "ingest Hacker News · Glacier Mice · 2026-08-24"
+      "msg": "ingest Hacker News · When Fruit Is Scarce, These Monkeys Hunt Animals · 2026-08-29"
     },
     {
-      "t": "2026-08-29T15:38:20.124Z",
+      "t": "2026-08-30T15:20:32.583Z",
       "level": "info",
-      "msg": "ingest Hacker News · Boot a Virtual iPhone via Apple's Virtualization.framework · 2026-08-28"
+      "msg": "ingest Hacker News · An implementation of Conway's Game of Life for Windows 3.… · 2026-08-30"
     },
     {
-      "t": "2026-08-29T15:38:20.124Z",
+      "t": "2026-08-30T15:20:32.583Z",
       "level": "info",
-      "msg": "ingest Hacker News · Show HN: Galaxium, an experimental WebGPU space explorer · 2026-08-24"
+      "msg": "ingest Hacker News · Brits would quite like their private messages to stay pri… · 2026-08-30"
     },
     {
-      "t": "2026-08-29T15:38:20.124Z",
+      "t": "2026-08-30T15:20:32.583Z",
       "level": "info",
-      "msg": "ingest Hacker News · EVE Online moves to Python 3 · 2026-08-25"
+      "msg": "ingest Hacker News · RISC-V is now officially supported by CPython · 2026-08-24"
     },
     {
-      "t": "2026-08-29T15:38:20.124Z",
+      "t": "2026-08-30T15:20:32.583Z",
       "level": "info",
-      "msg": "ingest Hacker News · Htmx 4.0 · 2026-08-28"
+      "msg": "ingest Hacker News · Europe's summer drought is so extreme that desertificatio… · 2026-08-30"
     },
     {
-      "t": "2026-08-29T15:38:20.124Z",
+      "t": "2026-08-30T15:20:32.583Z",
       "level": "info",
-      "msg": "ingest Hacker News · Hunting Down a Go Runtime Bug on 32-Bit Embedded Systems · 2026-08-26"
+      "msg": "ingest Hacker News · Automating Immersive Reading · 2026-08-30"
     },
     {
-      "t": "2026-08-29T15:38:20.124Z",
+      "t": "2026-08-30T15:20:32.583Z",
       "level": "info",
-      "msg": "ingest Hacker News · SQLite as a Document Database (2020) · 2026-08-24"
+      "msg": "ingest Hacker News · monty-go: Pure-Go wrapper for Pydantic's Monty Python Int… · 2026-08-30"
     },
     {
-      "t": "2026-08-29T15:38:20.124Z",
+      "t": "2026-08-30T15:20:32.583Z",
       "level": "info",
-      "msg": "ingest Hacker News · U.S. sanctions against the A/I Collective · 2026-08-28"
+      "msg": "ingest Hacker News · JupyterGIS 0.16: a grammar of graphics for maps, and coll… · 2026-08-25"
     },
     {
-      "t": "2026-08-29T15:38:20.124Z",
+      "t": "2026-08-30T15:20:32.583Z",
       "level": "info",
-      "msg": "ingest Hacker News · Europe's last regular standard-gauge steam passenger serv… · 2026-08-26"
+      "msg": "ingest Hacker News · Hy4 preview · 2026-08-29"
     },
     {
-      "t": "2026-08-29T15:38:20.124Z",
+      "t": "2026-08-30T15:20:32.583Z",
       "level": "info",
-      "msg": "publishing 42 items across 3 feeds · 1320ms"
+      "msg": "publishing 42 items across 3 feeds · 762ms"
     }
   ],
   "feeds": {
@@ -483,17 +483,73 @@
     ],
     "ai": [
       {
-        "id": "hn-49489982",
-        "title": "Debian votes to allow \"responsible use of generative AI\"",
-        "url": "https://lwn.net/Articles/1091231/",
+        "id": "hn-49498095",
+        "title": "No AI Fridays",
+        "url": "https://noaifridays.com/",
+        "source": "Hacker News",
+        "date": "2026-08-30",
+        "summary": "",
+        "meta": [
+          "115 points",
+          "40 comments"
+        ],
+        "discussion": "https://news.ycombinator.com/item?id=49498095",
+        "flag": null
+      },
+      {
+        "id": "hn-49498201",
+        "title": "Claude Session URL appended to commit messages and PR descriptions by default",
+        "url": "https://github.com/anthropics/claude-code/issues/66504",
+        "source": "Hacker News",
+        "date": "2026-08-30",
+        "summary": "",
+        "meta": [
+          "93 points",
+          "115 comments"
+        ],
+        "discussion": "https://news.ycombinator.com/item?id=49498201",
+        "flag": null
+      },
+      {
+        "id": "hn-49497357",
+        "title": "Fair Work Commission condemns 'plain wrong' AI legal advice",
+        "url": "https://www.abc.net.au/news/2026-08-29/fair-work-commission-condemns-ai-legal-advice/107089766",
+        "source": "Hacker News",
+        "date": "2026-08-30",
+        "summary": "",
+        "meta": [
+          "49 points",
+          "21 comments"
+        ],
+        "discussion": "https://news.ycombinator.com/item?id=49497357",
+        "flag": null
+      },
+      {
+        "id": "hn-49497996",
+        "title": "The shrinking landscape of linguistic diversity in the age of LLMs",
+        "url": "https://www.nature.com/articles/s41562-026-02550-0",
+        "source": "Hacker News",
+        "date": "2026-08-30",
+        "summary": "",
+        "meta": [
+          "9 points",
+          "1 comments"
+        ],
+        "discussion": "https://news.ycombinator.com/item?id=49497996",
+        "flag": null
+      },
+      {
+        "id": "hn-49491568",
+        "title": "Good Culture Is the Biggest Productivity Hack, Not AI",
+        "url": "https://newsletter.eng-leadership.com/p/good-culture-is-the-biggest-productivity",
         "source": "Hacker News",
         "date": "2026-08-29",
         "summary": "",
         "meta": [
-          "178 points",
-          "116 comments"
+          "421 points",
+          "105 comments"
         ],
-        "discussion": "https://news.ycombinator.com/item?id=49489982",
+        "discussion": "https://news.ycombinator.com/item?id=49491568",
         "flag": null
       },
       {
@@ -504,66 +560,10 @@
         "date": "2026-08-29",
         "summary": "",
         "meta": [
-          "162 points",
-          "45 comments"
+          "232 points",
+          "61 comments"
         ],
         "discussion": "https://news.ycombinator.com/item?id=49486081",
-        "flag": null
-      },
-      {
-        "id": "hn-49485416",
-        "title": "I accidentally turned LLM memory into program analysis",
-        "url": "https://pwning.systems/posts/llm-memory-program-analysis/",
-        "source": "Hacker News",
-        "date": "2026-08-28",
-        "summary": "",
-        "meta": [
-          "212 points",
-          "64 comments"
-        ],
-        "discussion": "https://news.ycombinator.com/item?id=49485416",
-        "flag": null
-      },
-      {
-        "id": "hn-49473522",
-        "title": "Judge rules Trump administration’s blacklisting of Anthropic was illegal",
-        "url": "https://www.nytimes.com/2026/08/27/technology/anthropic-government-blacklisting-ruling.html",
-        "source": "Hacker News",
-        "date": "2026-08-28",
-        "summary": "",
-        "meta": [
-          "590 points",
-          "419 comments"
-        ],
-        "discussion": "https://news.ycombinator.com/item?id=49473522",
-        "flag": null
-      },
-      {
-        "id": "hn-49484925",
-        "title": "Identifying fake cosmetics using AI",
-        "url": "https://groverlab.org/hnbfpr/2026-08-26-ai-counterfeit-cosmetics.html",
-        "source": "Hacker News",
-        "date": "2026-08-28",
-        "summary": "",
-        "meta": [
-          "58 points",
-          "23 comments"
-        ],
-        "discussion": "https://news.ycombinator.com/item?id=49484925",
-        "flag": null
-      },
-      {
-        "id": "hn-49475079",
-        "title": "Luanti removed from Google Play due to baseless AI copyright notice",
-        "url": "https://blog.luanti.org/2026/08/27/luanti-dmca-tracer-ai/",
-        "source": "Hacker News",
-        "date": "2026-08-28",
-        "summary": "",
-        "meta": [
-          "496 points",
-          "150 comments"
-        ],
-        "discussion": "https://news.ycombinator.com/item?id=49475079",
         "flag": null
       },
       {
@@ -673,199 +673,199 @@
     ],
     "dev": [
       {
-        "id": "hn-49490138",
-        "title": "Indirect Calling of Nested Functions on GCC Without Executable Stack",
-        "url": "https://uecker.codeberg.page/2026-08-29.html",
+        "id": "hn-49491791",
+        "title": "Creepy Crawlies",
+        "url": "https://people.kernel.org/monsieuricon/creepy-crawlies",
         "source": "Hacker News",
         "date": "2026-08-29",
         "summary": "",
         "meta": [
-          "16 points",
-          "1 comments"
+          "99 points",
+          "29 comments"
         ],
-        "discussion": "https://news.ycombinator.com/item?id=49490138",
+        "discussion": "https://news.ycombinator.com/item?id=49491791",
         "flag": null
       },
       {
-        "id": "hn-49447178",
-        "title": "Show HN: Typebase – A single-folder back end you write in TypeScript",
-        "url": "https://typebase.io",
+        "id": "hn-49497810",
+        "title": "Hacking IKEA Furniture",
+        "url": "https://greenlightning.eu/diy/hacking-ikea-furniture/",
         "source": "Hacker News",
-        "date": "2026-08-26",
+        "date": "2026-08-30",
+        "summary": "",
+        "meta": [
+          "114 points",
+          "49 comments"
+        ],
+        "discussion": "https://news.ycombinator.com/item?id=49497810",
+        "flag": null
+      },
+      {
+        "id": "hn-49463888",
+        "title": "Casey Muratori – The Root of the Root of All Evil – BSC 2026 [video]",
+        "url": "https://www.youtube.com/watch?v=hpj6r6CjJf8",
+        "source": "Hacker News",
+        "date": "2026-08-27",
+        "summary": "",
+        "meta": [
+          "151 points",
+          "45 comments"
+        ],
+        "discussion": "https://news.ycombinator.com/item?id=49463888",
+        "flag": null
+      },
+      {
+        "id": "hn-49496918",
+        "title": "Arbitrary code execution in QubesOS via copy-to-VM error reporting backchannel",
+        "url": "https://www.qubes-os.org/news/2026/08/29/qsb-118/",
+        "source": "Hacker News",
+        "date": "2026-08-30",
+        "summary": "",
+        "meta": [
+          "127 points",
+          "53 comments"
+        ],
+        "discussion": "https://news.ycombinator.com/item?id=49496918",
+        "flag": null
+      },
+      {
+        "id": "hn-49496782",
+        "title": "Longest Straight Line Paths on Water or Land on the Earth (2018)",
+        "url": "https://arxiv.org/abs/1804.07389",
+        "source": "Hacker News",
+        "date": "2026-08-30",
+        "summary": "",
+        "meta": [
+          "145 points",
+          "41 comments"
+        ],
+        "discussion": "https://news.ycombinator.com/item?id=49496782",
+        "flag": null
+      },
+      {
+        "id": "hn-49489274",
+        "title": "When Fruit Is Scarce, These Monkeys Hunt Animals",
+        "url": "https://www.smithsonianmag.com/smart-news/when-fruit-is-scarce-these-monkeys-hunt-animals-the-behavior-may-offer-clues-about-the-origins-of-humans-meat-eating-habits-180989412/",
+        "source": "Hacker News",
+        "date": "2026-08-29",
+        "summary": "",
+        "meta": [
+          "17 points",
+          "0 comments"
+        ],
+        "discussion": "https://news.ycombinator.com/item?id=49489274",
+        "flag": null
+      },
+      {
+        "id": "hn-49497819",
+        "title": "An implementation of Conway's Game of Life for Windows 3.1x and later",
+        "url": "https://www.muppetlabs.com/~breadbox/software/windows.html",
+        "source": "Hacker News",
+        "date": "2026-08-30",
+        "summary": "",
+        "meta": [
+          "31 points",
+          "4 comments"
+        ],
+        "discussion": "https://news.ycombinator.com/item?id=49497819",
+        "flag": null
+      },
+      {
+        "id": "hn-49497063",
+        "title": "Brits would quite like their private messages to stay private",
+        "url": "https://www.theregister.com/security/2026/08/30/turns-out-brits-would-quite-like-their-private-messages-to-stay-private/5292994",
+        "source": "Hacker News",
+        "date": "2026-08-30",
+        "summary": "",
+        "meta": [
+          "263 points",
+          "195 comments"
+        ],
+        "discussion": "https://news.ycombinator.com/item?id=49497063",
+        "flag": null
+      },
+      {
+        "id": "hn-49425252",
+        "title": "RISC-V is now officially supported by CPython",
+        "url": "https://blog.python.org/2026/08/riscv-now-officially-supported/",
+        "source": "Hacker News",
+        "date": "2026-08-24",
+        "summary": "",
+        "meta": [
+          "245 points",
+          "43 comments"
+        ],
+        "discussion": "https://news.ycombinator.com/item?id=49425252",
+        "flag": null
+      },
+      {
+        "id": "hn-49498978",
+        "title": "Europe's summer drought is so extreme that desertification is a growing threat",
+        "url": "https://fortune.com/2026/08/29/europe-summer-drought-desertification-threat-rivers-fish/",
+        "source": "Hacker News",
+        "date": "2026-08-30",
         "summary": "",
         "meta": [
           "27 points",
-          "1 comments"
+          "16 comments"
         ],
-        "discussion": "https://news.ycombinator.com/item?id=49447178",
+        "discussion": "https://news.ycombinator.com/item?id=49498978",
         "flag": null
       },
       {
-        "id": "hn-49479546",
-        "title": "Creating the Aetheryte Radio",
-        "url": "https://haz.ee/posts/aetheryte-radio.html",
+        "id": "hn-49497854",
+        "title": "Automating Immersive Reading",
+        "url": "https://smoores.dev/post/automating_immersive_reading/",
         "source": "Hacker News",
-        "date": "2026-08-28",
+        "date": "2026-08-30",
         "summary": "",
         "meta": [
-          "25 points",
-          "4 comments"
+          "36 points",
+          "13 comments"
         ],
-        "discussion": "https://news.ycombinator.com/item?id=49479546",
+        "discussion": "https://news.ycombinator.com/item?id=49497854",
         "flag": null
       },
       {
-        "id": "hn-49487341",
-        "title": "Samsung's Processing-in-Memory (PIM)",
-        "url": "https://chipsandcheese.com/p/hot-chips-2026-samsungs-processing",
+        "id": "hn-49497928",
+        "title": "monty-go: Pure-Go wrapper for Pydantic's Monty Python Interpreter",
+        "url": "https://github.com/fugue-labs/monty-go",
         "source": "Hacker News",
-        "date": "2026-08-29",
+        "date": "2026-08-30",
         "summary": "",
         "meta": [
-          "178 points",
-          "60 comments"
+          "26 points",
+          "2 comments"
         ],
-        "discussion": "https://news.ycombinator.com/item?id=49487341",
+        "discussion": "https://news.ycombinator.com/item?id=49497928",
         "flag": null
       },
       {
-        "id": "hn-49479837",
-        "title": "GUIs should be fully keyboard-driven",
-        "url": "https://ckardaris.com/blog/2026/08/28/keyboard-driven-guis.html",
-        "source": "Hacker News",
-        "date": "2026-08-28",
-        "summary": "",
-        "meta": [
-          "937 points",
-          "458 comments"
-        ],
-        "discussion": "https://news.ycombinator.com/item?id=49479837",
-        "flag": null
-      },
-      {
-        "id": "hn-49424320",
-        "title": "Glacier Mice",
-        "url": "https://en.wikipedia.org/wiki/Glacier_mice",
-        "source": "Hacker News",
-        "date": "2026-08-24",
-        "summary": "",
-        "meta": [
-          "113 points",
-          "22 comments"
-        ],
-        "discussion": "https://news.ycombinator.com/item?id=49424320",
-        "flag": null
-      },
-      {
-        "id": "hn-49485267",
-        "title": "Boot a Virtual iPhone via Apple's Virtualization.framework",
-        "url": "https://github.com/Lakr233/vphone-cli",
-        "source": "Hacker News",
-        "date": "2026-08-28",
-        "summary": "",
-        "meta": [
-          "339 points",
-          "87 comments"
-        ],
-        "discussion": "https://news.ycombinator.com/item?id=49485267",
-        "flag": null
-      },
-      {
-        "id": "hn-49420524",
-        "title": "Show HN: Galaxium, an experimental WebGPU space explorer",
-        "url": "https://galaxium.app",
-        "source": "Hacker News",
-        "date": "2026-08-24",
-        "summary": "",
-        "meta": [
-          "50 points",
-          "18 comments"
-        ],
-        "discussion": "https://news.ycombinator.com/item?id=49420524",
-        "flag": null
-      },
-      {
-        "id": "hn-49433328",
-        "title": "EVE Online moves to Python 3",
-        "url": "https://www.eveonline.com/news/view/the-move-to-python-3-begins",
+        "id": "hn-49430745",
+        "title": "JupyterGIS 0.16: a grammar of graphics for maps, and collaborative story maps",
+        "url": "https://blog.jupyter.org/jupytergis-0-16-new-visualization-capabilities-collaborative-story-maps-and-more-03e6b78bacc0",
         "source": "Hacker News",
         "date": "2026-08-25",
         "summary": "",
         "meta": [
-          "120 points",
-          "62 comments"
-        ],
-        "discussion": "https://news.ycombinator.com/item?id=49433328",
-        "flag": null
-      },
-      {
-        "id": "hn-49478178",
-        "title": "Htmx 4.0",
-        "url": "https://four.htmx.org/announcements/2026-08-28-htmx-4.0.0-is-released",
-        "source": "Hacker News",
-        "date": "2026-08-28",
-        "summary": "",
-        "meta": [
-          "740 points",
-          "184 comments"
-        ],
-        "discussion": "https://news.ycombinator.com/item?id=49478178",
-        "flag": null
-      },
-      {
-        "id": "hn-49450782",
-        "title": "Hunting Down a Go Runtime Bug on 32-Bit Embedded Systems",
-        "url": "https://sigma-star.at/blog/2026/08/go-runtime-netpoll-bug/",
-        "source": "Hacker News",
-        "date": "2026-08-26",
-        "summary": "",
-        "meta": [
           "69 points",
-          "6 comments"
+          "8 comments"
         ],
-        "discussion": "https://news.ycombinator.com/item?id=49450782",
+        "discussion": "https://news.ycombinator.com/item?id=49430745",
         "flag": null
       },
       {
-        "id": "hn-49426995",
-        "title": "SQLite as a Document Database (2020)",
-        "url": "https://dgl.cx/2020/06/sqlite-json-support",
+        "id": "hn-49492632",
+        "title": "Hy4 preview",
+        "url": "https://www.tencent.com/tencent-releases-and-open-sources-tencent-hy4-preview/",
         "source": "Hacker News",
-        "date": "2026-08-24",
+        "date": "2026-08-29",
         "summary": "",
         "meta": [
-          "7 points",
-          "0 comments"
+          "356 points",
+          "213 comments"
         ],
-        "discussion": "https://news.ycombinator.com/item?id=49426995",
-        "flag": null
-      },
-      {
-        "id": "hn-49477854",
-        "title": "U.S. sanctions against the A/I Collective",
-        "url": "https://www.inventati.org/",
-        "source": "Hacker News",
-        "date": "2026-08-28",
-        "summary": "",
-        "meta": [
-          "661 points",
-          "653 comments"
-        ],
-        "discussion": "https://news.ycombinator.com/item?id=49477854",
-        "flag": null
-      },
-      {
-        "id": "hn-49456819",
-        "title": "Europe's last regular standard-gauge steam passenger service",
-        "url": "https://parowozowniawolsztyn.pl/?page_id=2141",
-        "source": "Hacker News",
-        "date": "2026-08-26",
-        "summary": "",
-        "meta": [
-          "80 points",
-          "20 comments"
-        ],
-        "discussion": "https://news.ycombinator.com/item?id=49456819",
+        "discussion": "https://news.ycombinator.com/item?id=49492632",
         "flag": null
       }
     ]
