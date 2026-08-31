@@ -1,285 +1,285 @@
 {
-  "generatedAt": "2026-08-30T15:20:32.583Z",
+  "generatedAt": "2026-08-31T18:00:17.390Z",
   "log": [
     {
-      "t": "2026-08-30T15:20:31.821Z",
+      "t": "2026-08-31T18:00:16.209Z",
       "level": "info",
       "msg": "signal refresh started"
     },
     {
-      "t": "2026-08-30T15:20:31.826Z",
+      "t": "2026-08-31T18:00:16.213Z",
       "level": "info",
       "msg": "GET hacker-news.firebaseio.com/v0/topstories.json"
     },
     {
-      "t": "2026-08-30T15:20:31.956Z",
+      "t": "2026-08-31T18:00:16.614Z",
       "level": "info",
       "msg": "HTTP 200 · resolving top 60 story ids in batches of 10"
     },
     {
-      "t": "2026-08-30T15:20:32.248Z",
+      "t": "2026-08-31T18:00:16.961Z",
       "level": "info",
-      "msg": "60 of 60 resolved to usable stories · 422ms"
+      "msg": "59 of 60 resolved to usable stories · 748ms"
     },
     {
-      "t": "2026-08-30T15:20:32.249Z",
+      "t": "2026-08-31T18:00:16.962Z",
       "level": "info",
       "msg": "GET cisa.gov/feeds/known_exploited_vulnerabilities.json"
     },
     {
-      "t": "2026-08-30T15:20:32.315Z",
+      "t": "2026-08-31T18:00:17.141Z",
       "level": "info",
-      "msg": "HTTP 200 · catalog holds 1685 CVEs · 66ms"
+      "msg": "HTTP 200 · catalog holds 1687 CVEs · 179ms"
     },
     {
-      "t": "2026-08-30T15:20:32.318Z",
+      "t": "2026-08-31T18:00:17.143Z",
       "level": "info",
-      "msg": "fleet filter: 999 of 1685 touch managed platforms"
+      "msg": "fleet filter: 999 of 1687 touch managed platforms"
     },
     {
-      "t": "2026-08-30T15:20:32.326Z",
+      "t": "2026-08-31T18:00:17.150Z",
       "level": "info",
       "msg": "GET export.arxiv.org/api/query cat:cs.AI OR cat:cs.LG"
     },
     {
-      "t": "2026-08-30T15:20:32.580Z",
+      "t": "2026-08-31T18:00:17.388Z",
       "level": "info",
-      "msg": "HTTP 200 · 32,339 bytes of Atom XML · 254ms"
+      "msg": "HTTP 200 · 29,718 bytes of Atom XML · 238ms"
     },
     {
-      "t": "2026-08-30T15:20:32.581Z",
+      "t": "2026-08-31T18:00:17.389Z",
       "level": "info",
-      "msg": "topic split: 8 AI stories, 52 general dev"
+      "msg": "topic split: 9 AI stories, 50 general dev"
     },
     {
-      "t": "2026-08-30T15:20:32.582Z",
+      "t": "2026-08-31T18:00:17.390Z",
       "level": "info",
       "msg": "--- security feed: 14 items ---"
     },
     {
-      "t": "2026-08-30T15:20:32.582Z",
+      "t": "2026-08-31T18:00:17.390Z",
       "level": "info",
       "msg": "ingest CISA KEV · Linux Kernel Unspecified Vulnerability · 2026-08-27"
     },
     {
-      "t": "2026-08-30T15:20:32.582Z",
+      "t": "2026-08-31T18:00:17.390Z",
       "level": "info",
       "msg": "ingest CISA KEV · Red Hat Libuser Race Condition Vulnerability · 2026-08-26"
     },
     {
-      "t": "2026-08-30T15:20:32.582Z",
+      "t": "2026-08-31T18:00:17.390Z",
       "level": "info",
       "msg": "ingest CISA KEV · Red Hat Automatic Bug Reporting Tool Privilege Escalation… · 2026-08-26"
     },
     {
-      "t": "2026-08-30T15:20:32.582Z",
+      "t": "2026-08-31T18:00:17.390Z",
       "level": "info",
       "msg": "ingest CISA KEV · Linux Kernel Out-of-Bounds Write Vulnerability · 2026-08-26"
     },
     {
-      "t": "2026-08-30T15:20:32.582Z",
+      "t": "2026-08-31T18:00:17.390Z",
       "level": "info",
       "msg": "ingest CISA KEV · Citrix NetScaler ADC and NetScaler Gateway Improper Restr… · 2026-08-26"
     },
     {
-      "t": "2026-08-30T15:20:32.582Z",
+      "t": "2026-08-31T18:00:17.390Z",
       "level": "info",
       "msg": "ingest CISA KEV · Microsoft SQL Server Remote Code Execution Vulnerability · 2026-08-26"
     },
     {
-      "t": "2026-08-30T15:20:32.582Z",
+      "t": "2026-08-31T18:00:17.390Z",
       "level": "info",
       "msg": "ingest CISA KEV · Oracle HTTP Server and Oracle Weblogic Server Proxy Plug-… · 2026-08-24"
     },
     {
-      "t": "2026-08-30T15:20:32.582Z",
+      "t": "2026-08-31T18:00:17.390Z",
       "level": "info",
       "msg": "ingest CISA KEV · Microsoft Internet Key Exchange (IKE) Service Extensions… · 2026-08-18"
     },
     {
-      "t": "2026-08-30T15:20:32.582Z",
+      "t": "2026-08-31T18:00:17.390Z",
       "level": "info",
       "msg": "ingest CISA KEV · Broadcom VMware vCenter Path Traversal Vulnerability · 2026-08-18"
     },
     {
-      "t": "2026-08-30T15:20:32.582Z",
+      "t": "2026-08-31T18:00:17.390Z",
       "level": "info",
       "msg": "ingest CISA KEV · Microsoft SharePoint Weak Authentication Vulnerability · 2026-08-18"
     },
     {
-      "t": "2026-08-30T15:20:32.582Z",
+      "t": "2026-08-31T18:00:17.390Z",
       "level": "info",
       "msg": "ingest CISA KEV · Apple macOS Improper Authentication Vulnerability · 2026-08-18"
     },
     {
-      "t": "2026-08-30T15:20:32.582Z",
+      "t": "2026-08-31T18:00:17.390Z",
       "level": "info",
       "msg": "ingest CISA KEV · Cisco Secure Firewall Adaptive Security Appliance (ASA) a… · 2026-08-11"
     },
     {
-      "t": "2026-08-30T15:20:32.582Z",
+      "t": "2026-08-31T18:00:17.390Z",
       "level": "info",
       "msg": "ingest CISA KEV · Microsoft Windows Ancillary Function Driver for WinSock U… · 2026-08-11"
     },
     {
-      "t": "2026-08-30T15:20:32.582Z",
+      "t": "2026-08-31T18:00:17.390Z",
       "level": "info",
       "msg": "ingest CISA KEV · Apache Tomcat Missing Encryption of Sensitive Data Vulner… · 2026-08-04"
     },
     {
-      "t": "2026-08-30T15:20:32.582Z",
+      "t": "2026-08-31T18:00:17.390Z",
       "level": "info",
       "msg": "--- ai feed: 14 items ---"
     },
     {
-      "t": "2026-08-30T15:20:32.582Z",
+      "t": "2026-08-31T18:00:17.390Z",
       "level": "info",
-      "msg": "ingest Hacker News · No AI Fridays · 2026-08-30"
+      "msg": "ingest Hacker News · Launch HN: Almanac (YC S26) – AI that knows your company · 2026-08-31"
     },
     {
-      "t": "2026-08-30T15:20:32.582Z",
+      "t": "2026-08-31T18:00:17.390Z",
       "level": "info",
-      "msg": "ingest Hacker News · Claude Session URL appended to commit messages and PR des… · 2026-08-30"
+      "msg": "ingest Hacker News · Apple caught off guard by AI demand for Mac Mini and Mac… · 2026-08-31"
     },
     {
-      "t": "2026-08-30T15:20:32.582Z",
+      "t": "2026-08-31T18:00:17.390Z",
       "level": "info",
-      "msg": "ingest Hacker News · Fair Work Commission condemns 'plain wrong' AI legal advi… · 2026-08-30"
+      "msg": "ingest Hacker News · Breaking Claude Code Opus 5 Auto Mode · 2026-08-31"
     },
     {
-      "t": "2026-08-30T15:20:32.582Z",
+      "t": "2026-08-31T18:00:17.390Z",
       "level": "info",
-      "msg": "ingest Hacker News · The shrinking landscape of linguistic diversity in the ag… · 2026-08-30"
+      "msg": "ingest Hacker News · Ask HN: What would happen if your company stopped using a… · 2026-08-31"
     },
     {
-      "t": "2026-08-30T15:20:32.582Z",
+      "t": "2026-08-31T18:00:17.390Z",
       "level": "info",
-      "msg": "ingest Hacker News · Good Culture Is the Biggest Productivity Hack, Not AI · 2026-08-29"
+      "msg": "ingest Hacker News · How much of a problem is AI's water use? · 2026-08-31"
     },
     {
-      "t": "2026-08-30T15:20:32.582Z",
+      "t": "2026-08-31T18:00:17.390Z",
       "level": "info",
-      "msg": "ingest Hacker News · StemDeck, a free, open-source and local AI stem separator · 2026-08-29"
+      "msg": "ingest Hacker News · Anthropic legal fight with Pentagon shows shifting politi… · 2026-08-31"
     },
     {
-      "t": "2026-08-30T15:20:32.582Z",
+      "t": "2026-08-31T18:00:17.390Z",
       "level": "info",
-      "msg": "ingest arXiv · WikiSkill: Compiling Agent Experience into Persistent Kno… · 2026-08-27"
+      "msg": "ingest Hacker News · A milestone in expanding access to AI · 2026-08-31"
     },
     {
-      "t": "2026-08-30T15:20:32.582Z",
+      "t": "2026-08-31T18:00:17.390Z",
       "level": "info",
-      "msg": "ingest arXiv · SWE-Prime: Fewer Trajectories, Better Performance · 2026-08-27"
+      "msg": "ingest Hacker News · Apple Is Suddenly an AI Infra Stock as OpenAI Buys 10k+ M… · 2026-08-31"
     },
     {
-      "t": "2026-08-30T15:20:32.582Z",
+      "t": "2026-08-31T18:00:17.390Z",
       "level": "info",
-      "msg": "ingest arXiv · From Static to Dynamic: Benchmarking Real-World Code Revi… · 2026-08-27"
+      "msg": "ingest Hacker News · How to build a diffusion language model · 2026-08-30"
     },
     {
-      "t": "2026-08-30T15:20:32.582Z",
+      "t": "2026-08-31T18:00:17.390Z",
       "level": "info",
-      "msg": "ingest arXiv · RedEvoAgent: Automatic Red-Teaming Agent with Experience-… · 2026-08-27"
+      "msg": "ingest arXiv · QGPINNs: A Physics-Informed Neural Network Framework for… · 2026-08-28"
     },
     {
-      "t": "2026-08-30T15:20:32.582Z",
+      "t": "2026-08-31T18:00:17.390Z",
       "level": "info",
-      "msg": "ingest arXiv · Mechanistic Reaction Prediction via Discrete Flow Matchin… · 2026-08-27"
+      "msg": "ingest arXiv · Aero Hand Open: A Simulation-Ready Tendon-Driven Hand for… · 2026-08-28"
     },
     {
-      "t": "2026-08-30T15:20:32.582Z",
+      "t": "2026-08-31T18:00:17.390Z",
       "level": "info",
-      "msg": "ingest arXiv · Persona-Execution Separation: An Architecture Pattern for… · 2026-08-27"
+      "msg": "ingest arXiv · Learning a Size-Weight Frontier for Synthetic-Augmented I… · 2026-08-28"
     },
     {
-      "t": "2026-08-30T15:20:32.582Z",
+      "t": "2026-08-31T18:00:17.390Z",
       "level": "info",
-      "msg": "ingest arXiv · Beyond F1: Evaluating Coverage and Failure Recovery in AI… · 2026-08-27"
+      "msg": "ingest arXiv · On two proofs of $d^2$ mixing of weighted Dikin walks · 2026-08-28"
     },
     {
-      "t": "2026-08-30T15:20:32.582Z",
+      "t": "2026-08-31T18:00:17.390Z",
       "level": "info",
-      "msg": "ingest arXiv · Learning a Continuous Sepsis Severity Score Without Hour-… · 2026-08-27"
+      "msg": "ingest arXiv · Learning between the peaks: sharp asymptotics for kernel… · 2026-08-28"
     },
     {
-      "t": "2026-08-30T15:20:32.582Z",
+      "t": "2026-08-31T18:00:17.390Z",
       "level": "info",
       "msg": "--- dev feed: 14 items ---"
     },
     {
-      "t": "2026-08-30T15:20:32.582Z",
+      "t": "2026-08-31T18:00:17.390Z",
       "level": "info",
-      "msg": "ingest Hacker News · Creepy Crawlies · 2026-08-29"
+      "msg": "ingest Hacker News · I turned my security cameras into an automatic bird ident… · 2026-08-31"
     },
     {
-      "t": "2026-08-30T15:20:32.582Z",
+      "t": "2026-08-31T18:00:17.390Z",
       "level": "info",
-      "msg": "ingest Hacker News · Hacking IKEA Furniture · 2026-08-30"
+      "msg": "ingest Hacker News · Playa Phone · 2026-08-31"
     },
     {
-      "t": "2026-08-30T15:20:32.582Z",
+      "t": "2026-08-31T18:00:17.390Z",
       "level": "info",
-      "msg": "ingest Hacker News · Casey Muratori – The Root of the Root of All Evil – BSC 2… · 2026-08-27"
+      "msg": "ingest Hacker News · ravynOS: Pre-alpha open-source OS based on Darwin, FreeBS… · 2026-08-31"
     },
     {
-      "t": "2026-08-30T15:20:32.583Z",
+      "t": "2026-08-31T18:00:17.390Z",
       "level": "info",
-      "msg": "ingest Hacker News · Arbitrary code execution in QubesOS via copy-to-VM error… · 2026-08-30"
+      "msg": "ingest Hacker News · ChatGPT Work Tool and Skill Reference · 2026-08-31"
     },
     {
-      "t": "2026-08-30T15:20:32.583Z",
+      "t": "2026-08-31T18:00:17.390Z",
       "level": "info",
-      "msg": "ingest Hacker News · Longest Straight Line Paths on Water or Land on the Earth… · 2026-08-30"
+      "msg": "ingest Hacker News · C++26: Standard Library Hardening Experiments · 2026-08-31"
     },
     {
-      "t": "2026-08-30T15:20:32.583Z",
+      "t": "2026-08-31T18:00:17.390Z",
       "level": "info",
-      "msg": "ingest Hacker News · When Fruit Is Scarce, These Monkeys Hunt Animals · 2026-08-29"
+      "msg": "ingest Hacker News · You probably own this 7-Eleven (and that's why it looks s… · 2026-08-31"
     },
     {
-      "t": "2026-08-30T15:20:32.583Z",
+      "t": "2026-08-31T18:00:17.390Z",
       "level": "info",
-      "msg": "ingest Hacker News · An implementation of Conway's Game of Life for Windows 3.… · 2026-08-30"
+      "msg": "ingest Hacker News · The Snow/Leavis ‘two cultures’ clash · 2026-08-31"
     },
     {
-      "t": "2026-08-30T15:20:32.583Z",
+      "t": "2026-08-31T18:00:17.390Z",
       "level": "info",
-      "msg": "ingest Hacker News · Brits would quite like their private messages to stay pri… · 2026-08-30"
+      "msg": "ingest Hacker News · Launch HN: Hebbian Robotics (YC S26) – Build scalable rob… · 2026-08-31"
     },
     {
-      "t": "2026-08-30T15:20:32.583Z",
+      "t": "2026-08-31T18:00:17.390Z",
       "level": "info",
-      "msg": "ingest Hacker News · RISC-V is now officially supported by CPython · 2026-08-24"
+      "msg": "ingest Hacker News · Konrad Zuse Museum shutting down due to lack of funding · 2026-08-31"
     },
     {
-      "t": "2026-08-30T15:20:32.583Z",
+      "t": "2026-08-31T18:00:17.390Z",
       "level": "info",
-      "msg": "ingest Hacker News · Europe's summer drought is so extreme that desertificatio… · 2026-08-30"
+      "msg": "ingest Hacker News · Show HN: We built the smallest dual-band aircraft tracker · 2026-08-26"
     },
     {
-      "t": "2026-08-30T15:20:32.583Z",
+      "t": "2026-08-31T18:00:17.390Z",
       "level": "info",
-      "msg": "ingest Hacker News · Automating Immersive Reading · 2026-08-30"
+      "msg": "ingest Hacker News · No country for mediocre mathematicians · 2026-08-30"
     },
     {
-      "t": "2026-08-30T15:20:32.583Z",
+      "t": "2026-08-31T18:00:17.390Z",
       "level": "info",
-      "msg": "ingest Hacker News · monty-go: Pure-Go wrapper for Pydantic's Monty Python Int… · 2026-08-30"
+      "msg": "ingest Hacker News · OpenShot 4.0 – Open-source video editor · 2026-08-31"
     },
     {
-      "t": "2026-08-30T15:20:32.583Z",
+      "t": "2026-08-31T18:00:17.390Z",
       "level": "info",
-      "msg": "ingest Hacker News · JupyterGIS 0.16: a grammar of graphics for maps, and coll… · 2026-08-25"
+      "msg": "ingest Hacker News · DNS abuse and criminal infrastructure · 2026-08-30"
     },
     {
-      "t": "2026-08-30T15:20:32.583Z",
+      "t": "2026-08-31T18:00:17.390Z",
       "level": "info",
-      "msg": "ingest Hacker News · Hy4 preview · 2026-08-29"
+      "msg": "ingest Hacker News · Agent memory as a file format · 2026-08-31"
     },
     {
-      "t": "2026-08-30T15:20:32.583Z",
+      "t": "2026-08-31T18:00:17.390Z",
       "level": "info",
-      "msg": "publishing 42 items across 3 feeds · 762ms"
+      "msg": "publishing 42 items across 3 feeds · 1181ms"
     }
   ],
   "feeds": {
@@ -483,389 +483,392 @@
     ],
     "ai": [
       {
-        "id": "hn-49498095",
-        "title": "No AI Fridays",
-        "url": "https://noaifridays.com/",
+        "id": "hn-49511007",
+        "title": "Launch HN: Almanac (YC S26) – AI that knows your company",
+        "url": "https://usealmanac.com/",
         "source": "Hacker News",
-        "date": "2026-08-30",
+        "date": "2026-08-31",
         "summary": "",
         "meta": [
-          "115 points",
-          "40 comments"
+          "21 points",
+          "22 comments"
         ],
-        "discussion": "https://news.ycombinator.com/item?id=49498095",
+        "discussion": "https://news.ycombinator.com/item?id=49511007",
         "flag": null
       },
       {
-        "id": "hn-49498201",
-        "title": "Claude Session URL appended to commit messages and PR descriptions by default",
-        "url": "https://github.com/anthropics/claude-code/issues/66504",
+        "id": "hn-49508982",
+        "title": "Apple caught off guard by AI demand for Mac Mini and Mac Studio",
+        "url": "https://www.macrumors.com/2026/08/30/apple-unexpected-mac-mini-and-studio-demand/",
         "source": "Hacker News",
-        "date": "2026-08-30",
+        "date": "2026-08-31",
         "summary": "",
         "meta": [
-          "93 points",
-          "115 comments"
+          "68 points",
+          "89 comments"
         ],
-        "discussion": "https://news.ycombinator.com/item?id=49498201",
+        "discussion": "https://news.ycombinator.com/item?id=49508982",
         "flag": null
       },
       {
-        "id": "hn-49497357",
-        "title": "Fair Work Commission condemns 'plain wrong' AI legal advice",
-        "url": "https://www.abc.net.au/news/2026-08-29/fair-work-commission-condemns-ai-legal-advice/107089766",
+        "id": "hn-49506819",
+        "title": "Breaking Claude Code Opus 5 Auto Mode",
+        "url": "https://embracethered.com/blog/posts/2026/breaking-claude-code-opus-5-and-automode/",
         "source": "Hacker News",
-        "date": "2026-08-30",
+        "date": "2026-08-31",
         "summary": "",
         "meta": [
-          "49 points",
-          "21 comments"
+          "296 points",
+          "97 comments"
         ],
-        "discussion": "https://news.ycombinator.com/item?id=49497357",
+        "discussion": "https://news.ycombinator.com/item?id=49506819",
         "flag": null
       },
       {
-        "id": "hn-49497996",
-        "title": "The shrinking landscape of linguistic diversity in the age of LLMs",
-        "url": "https://www.nature.com/articles/s41562-026-02550-0",
+        "id": "hn-49510066",
+        "title": "Ask HN: What would happen if your company stopped using all AI tomorrow?",
+        "url": "https://news.ycombinator.com/item?id=49510066",
         "source": "Hacker News",
-        "date": "2026-08-30",
+        "date": "2026-08-31",
         "summary": "",
         "meta": [
-          "9 points",
+          "27 points",
+          "35 comments"
+        ],
+        "discussion": "https://news.ycombinator.com/item?id=49510066",
+        "flag": null
+      },
+      {
+        "id": "hn-49512228",
+        "title": "How much of a problem is AI's water use?",
+        "url": "https://knowablemagazine.org/content/article/technology/2026/how-much-water-do-ai-data-centers-use",
+        "source": "Hacker News",
+        "date": "2026-08-31",
+        "summary": "",
+        "meta": [
+          "6 points",
+          "0 comments"
+        ],
+        "discussion": "https://news.ycombinator.com/item?id=49512228",
+        "flag": null
+      },
+      {
+        "id": "hn-49511912",
+        "title": "Anthropic legal fight with Pentagon shows shifting politics of AI",
+        "url": "https://www.bloomberg.com/news/newsletters/2026-08-31/anthropic-legal-fight-with-pentagon-shows-shifting-politics-of-ai",
+        "source": "Hacker News",
+        "date": "2026-08-31",
+        "summary": "",
+        "meta": [
+          "8 points",
           "1 comments"
         ],
-        "discussion": "https://news.ycombinator.com/item?id=49497996",
+        "discussion": "https://news.ycombinator.com/item?id=49511912",
         "flag": null
       },
       {
-        "id": "hn-49491568",
-        "title": "Good Culture Is the Biggest Productivity Hack, Not AI",
-        "url": "https://newsletter.eng-leadership.com/p/good-culture-is-the-biggest-productivity",
+        "id": "hn-49509312",
+        "title": "A milestone in expanding access to AI",
+        "url": "https://openai.com/index/expanding-access-to-ai-with-chatgpt-ads/",
         "source": "Hacker News",
-        "date": "2026-08-29",
+        "date": "2026-08-31",
         "summary": "",
         "meta": [
-          "421 points",
-          "105 comments"
+          "6 points",
+          "3 comments"
         ],
-        "discussion": "https://news.ycombinator.com/item?id=49491568",
+        "discussion": "https://news.ycombinator.com/item?id=49509312",
         "flag": null
       },
       {
-        "id": "hn-49486081",
-        "title": "StemDeck, a free, open-source and local AI stem separator",
-        "url": "https://github.com/stemdeckapp/stemdeck",
+        "id": "hn-49511824",
+        "title": "Apple Is Suddenly an AI Infra Stock as OpenAI Buys 10k+ Macs",
+        "url": "https://247wallst.com/investing/2026/08/31/apple-is-suddenly-an-ai-infrastructure-stock-as-openai-buys-macs-by-the-tens-of-thousands/",
         "source": "Hacker News",
-        "date": "2026-08-29",
+        "date": "2026-08-31",
         "summary": "",
         "meta": [
-          "232 points",
-          "61 comments"
+          "13 points",
+          "7 comments"
         ],
-        "discussion": "https://news.ycombinator.com/item?id=49486081",
+        "discussion": "https://news.ycombinator.com/item?id=49511824",
         "flag": null
       },
       {
-        "id": "http://arxiv.org/abs/2608.27454v1",
-        "title": "WikiSkill: Compiling Agent Experience into Persistent Knowledge for Skill Evolution",
-        "url": "http://arxiv.org/abs/2608.27454v1",
-        "source": "arXiv",
-        "date": "2026-08-27",
-        "summary": "Agent skills package specialized knowledge and workflows into reusable resources that extend AI agent capabilities. Recent work automatically discovers such skills from agent experience, which enables agents to progressively adapt through interaction. However, the insights that guide skill development typically remain…",
+        "id": "hn-49503956",
+        "title": "How to build a diffusion language model",
+        "url": "https://kuleshov-group.github.io/blog/blog/2026/how-to-build-a-diffusion-language-model/",
+        "source": "Hacker News",
+        "date": "2026-08-30",
+        "summary": "",
         "meta": [
-          "Research",
-          "Liyan Tang +5"
+          "163 points",
+          "19 comments"
         ],
+        "discussion": "https://news.ycombinator.com/item?id=49503956",
         "flag": null
       },
       {
-        "id": "http://arxiv.org/abs/2608.27449v1",
-        "title": "SWE-Prime: Fewer Trajectories, Better Performance",
-        "url": "http://arxiv.org/abs/2608.27449v1",
+        "id": "http://arxiv.org/abs/2608.28589v1",
+        "title": "QGPINNs: A Physics-Informed Neural Network Framework for Nonlocal Differential Equations on Quantum Graphs",
+        "url": "http://arxiv.org/abs/2608.28589v1",
         "source": "arXiv",
-        "date": "2026-08-27",
-        "summary": "To improve large language models' ability to resolve real-world software issues, prior work has focused on constructing large-scale agent trajectory datasets and performing supervised fine-tuning (SFT) on successful trajectories. However, task success does not guarantee high-quality supervision: successful trajectorie…",
+        "date": "2026-08-28",
+        "summary": "We propose QGPINNs, a physics-informed neural network framework developed in PyTorch for the numerical solution of nonlocal differential equations on quantum graphs. The framework is designed as a general computational implementation in which the solution on each edge of the graph is approximated by a neural network,…",
         "meta": [
           "Research",
-          "Dewu Zheng +9"
-        ],
-        "flag": null
-      },
-      {
-        "id": "http://arxiv.org/abs/2608.27442v1",
-        "title": "From Static to Dynamic: Benchmarking Real-World Code Review with MCR-Bench",
-        "url": "http://arxiv.org/abs/2608.27442v1",
-        "source": "arXiv",
-        "date": "2026-08-27",
-        "summary": "In real-world software development, code review typically involves iterative interactions between developers and reviewers to improve software quality, making the process costly and time-consuming. Although recent work explores large language models (LLMs) for automated code review, most approaches oversimplify code r…",
-        "meta": [
-          "Research",
-          "Dewu Zheng +7"
+          "Vaibhav Mehandiratta +1"
         ],
         "flag": null
       },
       {
-        "id": "http://arxiv.org/abs/2608.27439v1",
-        "title": "RedEvoAgent: Automatic Red-Teaming Agent with Experience-Driven Skill Evolution",
-        "url": "http://arxiv.org/abs/2608.27439v1",
+        "id": "http://arxiv.org/abs/2608.28578v1",
+        "title": "Aero Hand Open: A Simulation-Ready Tendon-Driven Hand for Dexterous Manipulation Learning",
+        "url": "http://arxiv.org/abs/2608.28578v1",
         "source": "arXiv",
-        "date": "2026-08-27",
-        "summary": "LLM-based agents are increasingly deployed in product-level execution harnesses, where jailbreaks can trigger harmful tool use and persistent state changes, creating greater risks than unsafe text generation alone. Existing automatic red-teaming methods often rely on fixed attacks, while recent agentic attackers coord…",
+        "date": "2026-08-28",
+        "summary": "Tendon-driven hands are anthropomorphic, and moving the actuators off the joints is what makes a hand of this capability affordable to build. Two effects produce that saving. Routing force through a cable removes the requirement that a motor fit inside the joint it drives, so smaller and cheaper motors suffice, and on…",
         "meta": [
           "Research",
-          "Junjie Zhang +5"
+          "Nan Wang +7"
         ],
         "flag": null
       },
       {
-        "id": "http://arxiv.org/abs/2608.27429v1",
-        "title": "Mechanistic Reaction Prediction via Discrete Flow Matching on Graph-Structured Electron Occupation",
-        "url": "http://arxiv.org/abs/2608.27429v1",
+        "id": "http://arxiv.org/abs/2608.28576v1",
+        "title": "Learning a Size-Weight Frontier for Synthetic-Augmented Inference",
+        "url": "http://arxiv.org/abs/2608.28576v1",
         "source": "arXiv",
-        "date": "2026-08-27",
-        "summary": "Chemical reactions are fundamentally transformations in electron space, yet most machine learning approaches model them either through \\textit{de novo} generation of product molecules or through heuristic graph edits that operate directly on molecular topology. We introduce MAELLE (\\textbf{M}ech\\textbf{A}nistic \\textb…",
+        "date": "2026-08-28",
+        "summary": "Synthetic data can improve statistical inference when real data are scarce, but naively treating synthetic samples as real data can introduce bias and lead to unreliable inference. We develop a general framework for synthetic-augmented inference across a population of related tasks. It characterizes synthetic augmenta…",
         "meta": [
           "Research",
-          "Nguyen Xuan-Vu +3"
+          "Chengpiao Huang +1"
         ],
         "flag": null
       },
       {
-        "id": "http://arxiv.org/abs/2608.27427v1",
-        "title": "Persona-Execution Separation: An Architecture Pattern for Evolving LLM Agents under Execution Audit",
-        "url": "http://arxiv.org/abs/2608.27427v1",
+        "id": "http://arxiv.org/abs/2608.28566v1",
+        "title": "On two proofs of $d^2$ mixing of weighted Dikin walks",
+        "url": "http://arxiv.org/abs/2608.28566v1",
         "source": "arXiv",
-        "date": "2026-08-27",
-        "summary": "Large language model (LLM) agents in governed organizations must let the persona (instructions, tone, self-presentation) evolve freely, while keeping execution (stateful, audited work) traceable. A single trust domain does not satisfy both cheaply. We present Persona-Execution Separation (PES): persona and execution r…",
+        "date": "2026-08-28",
+        "summary": "We study the mixing time of weighted Dikin walks for sampling from exponential distributions on polytopes and truncated positive-semidefinite (PSD) cones. Our first result gives a general total-variation mixing bound under strong self-concordance, $\\barν$-symmetry, and mixed-trace regularity on the local metric. The k…",
         "meta": [
           "Research",
-          "Yisen Xi"
+          "Yuansi Chen +1"
         ],
         "flag": null
       },
       {
-        "id": "http://arxiv.org/abs/2608.27424v1",
-        "title": "Beyond F1: Evaluating Coverage and Failure Recovery in AI Model Security Scanners",
-        "url": "http://arxiv.org/abs/2608.27424v1",
+        "id": "http://arxiv.org/abs/2608.28564v1",
+        "title": "Learning between the peaks: sharp asymptotics for kernel ridge regression under power-law anisotropy",
+        "url": "http://arxiv.org/abs/2608.28564v1",
         "source": "arXiv",
-        "date": "2026-08-27",
-        "summary": "Static scanners are increasingly used to identify executable or otherwise unsafe content in machine- learning artifacts, yet conventional evaluation metrics characterize only cases where a scanner yields a usable security judgment. We evaluate ModelScan, ModelAudit, and Fickling using a controlled, artifact-backed ben…",
+        "date": "2026-08-28",
+        "summary": "We study kernel ridge regression under anisotropic Gaussian data, where the input covariance decays as a power law with exponent $α\\geq 0$ for polynomial inner-product kernels. We derive asymptotically sharp expressions for the kernel spectrum and the generalization error in the polynomial high-dimensional regime $n=Θ…",
         "meta": [
           "Research",
-          "Qianlong Lan +3"
-        ],
-        "flag": null
-      },
-      {
-        "id": "http://arxiv.org/abs/2608.27421v1",
-        "title": "Learning a Continuous Sepsis Severity Score Without Hour-by-Hour Supervision: A Two-Site Retrospective Study",
-        "url": "http://arxiv.org/abs/2608.27421v1",
-        "source": "arXiv",
-        "date": "2026-08-27",
-        "summary": "Currently used sepsis severity indices rely on fixed variables and weights established decades ago, which are coarsely discretized and calibrated to a cohort that no longer reflects contemporary critical care. No alternative learned directly from patient trajectories is in routine use. We conducted a retrospective two…",
-        "meta": [
-          "Research",
-          "Kevin Zhu +20"
+          "Lorenzo Rizzi +2"
         ],
         "flag": null
       }
     ],
     "dev": [
       {
-        "id": "hn-49491791",
-        "title": "Creepy Crawlies",
-        "url": "https://people.kernel.org/monsieuricon/creepy-crawlies",
+        "id": "hn-49511856",
+        "title": "I turned my security cameras into an automatic bird identification system",
+        "url": "https://jasontucker.blog/how-i-turned-my-security-cameras-into-an-automatic-bird-identification-system-with-birdnet-go/",
         "source": "Hacker News",
-        "date": "2026-08-29",
+        "date": "2026-08-31",
         "summary": "",
         "meta": [
-          "99 points",
-          "29 comments"
+          "66 points",
+          "27 comments"
         ],
-        "discussion": "https://news.ycombinator.com/item?id=49491791",
+        "discussion": "https://news.ycombinator.com/item?id=49511856",
         "flag": null
       },
       {
-        "id": "hn-49497810",
-        "title": "Hacking IKEA Furniture",
-        "url": "https://greenlightning.eu/diy/hacking-ikea-furniture/",
+        "id": "hn-49510514",
+        "title": "Playa Phone",
+        "url": "https://playaphone.com/",
         "source": "Hacker News",
-        "date": "2026-08-30",
+        "date": "2026-08-31",
         "summary": "",
         "meta": [
-          "114 points",
-          "49 comments"
+          "250 points",
+          "108 comments"
         ],
-        "discussion": "https://news.ycombinator.com/item?id=49497810",
+        "discussion": "https://news.ycombinator.com/item?id=49510514",
         "flag": null
       },
       {
-        "id": "hn-49463888",
-        "title": "Casey Muratori – The Root of the Root of All Evil – BSC 2026 [video]",
-        "url": "https://www.youtube.com/watch?v=hpj6r6CjJf8",
+        "id": "hn-49511534",
+        "title": "ravynOS: Pre-alpha open-source OS based on Darwin, FreeBSD, Apple open-source",
+        "url": "https://ravynos.com/",
         "source": "Hacker News",
-        "date": "2026-08-27",
+        "date": "2026-08-31",
         "summary": "",
         "meta": [
-          "151 points",
-          "45 comments"
+          "58 points",
+          "31 comments"
         ],
-        "discussion": "https://news.ycombinator.com/item?id=49463888",
+        "discussion": "https://news.ycombinator.com/item?id=49511534",
         "flag": null
       },
       {
-        "id": "hn-49496918",
-        "title": "Arbitrary code execution in QubesOS via copy-to-VM error reporting backchannel",
-        "url": "https://www.qubes-os.org/news/2026/08/29/qsb-118/",
+        "id": "hn-49510000",
+        "title": "ChatGPT Work Tool and Skill Reference",
+        "url": "https://codex-tool-reference.simonw.chatgpt.site/",
         "source": "Hacker News",
-        "date": "2026-08-30",
+        "date": "2026-08-31",
         "summary": "",
         "meta": [
-          "127 points",
-          "53 comments"
-        ],
-        "discussion": "https://news.ycombinator.com/item?id=49496918",
-        "flag": null
-      },
-      {
-        "id": "hn-49496782",
-        "title": "Longest Straight Line Paths on Water or Land on the Earth (2018)",
-        "url": "https://arxiv.org/abs/1804.07389",
-        "source": "Hacker News",
-        "date": "2026-08-30",
-        "summary": "",
-        "meta": [
-          "145 points",
-          "41 comments"
-        ],
-        "discussion": "https://news.ycombinator.com/item?id=49496782",
-        "flag": null
-      },
-      {
-        "id": "hn-49489274",
-        "title": "When Fruit Is Scarce, These Monkeys Hunt Animals",
-        "url": "https://www.smithsonianmag.com/smart-news/when-fruit-is-scarce-these-monkeys-hunt-animals-the-behavior-may-offer-clues-about-the-origins-of-humans-meat-eating-habits-180989412/",
-        "source": "Hacker News",
-        "date": "2026-08-29",
-        "summary": "",
-        "meta": [
-          "17 points",
-          "0 comments"
-        ],
-        "discussion": "https://news.ycombinator.com/item?id=49489274",
-        "flag": null
-      },
-      {
-        "id": "hn-49497819",
-        "title": "An implementation of Conway's Game of Life for Windows 3.1x and later",
-        "url": "https://www.muppetlabs.com/~breadbox/software/windows.html",
-        "source": "Hacker News",
-        "date": "2026-08-30",
-        "summary": "",
-        "meta": [
-          "31 points",
-          "4 comments"
-        ],
-        "discussion": "https://news.ycombinator.com/item?id=49497819",
-        "flag": null
-      },
-      {
-        "id": "hn-49497063",
-        "title": "Brits would quite like their private messages to stay private",
-        "url": "https://www.theregister.com/security/2026/08/30/turns-out-brits-would-quite-like-their-private-messages-to-stay-private/5292994",
-        "source": "Hacker News",
-        "date": "2026-08-30",
-        "summary": "",
-        "meta": [
-          "263 points",
-          "195 comments"
-        ],
-        "discussion": "https://news.ycombinator.com/item?id=49497063",
-        "flag": null
-      },
-      {
-        "id": "hn-49425252",
-        "title": "RISC-V is now officially supported by CPython",
-        "url": "https://blog.python.org/2026/08/riscv-now-officially-supported/",
-        "source": "Hacker News",
-        "date": "2026-08-24",
-        "summary": "",
-        "meta": [
-          "245 points",
+          "110 points",
           "43 comments"
         ],
-        "discussion": "https://news.ycombinator.com/item?id=49425252",
+        "discussion": "https://news.ycombinator.com/item?id=49510000",
         "flag": null
       },
       {
-        "id": "hn-49498978",
-        "title": "Europe's summer drought is so extreme that desertification is a growing threat",
-        "url": "https://fortune.com/2026/08/29/europe-summer-drought-desertification-threat-rivers-fish/",
+        "id": "hn-49510511",
+        "title": "C++26: Standard Library Hardening Experiments",
+        "url": "https://www.cppstories.com/2026/hardening-experiments/",
+        "source": "Hacker News",
+        "date": "2026-08-31",
+        "summary": "",
+        "meta": [
+          "52 points",
+          "28 comments"
+        ],
+        "discussion": "https://news.ycombinator.com/item?id=49510511",
+        "flag": null
+      },
+      {
+        "id": "hn-49511720",
+        "title": "You probably own this 7-Eleven (and that's why it looks so sad)",
+        "url": "https://www.thenewatlantis.com/publications/you-probably-own-this-7-eleven",
+        "source": "Hacker News",
+        "date": "2026-08-31",
+        "summary": "",
+        "meta": [
+          "22 points",
+          "10 comments"
+        ],
+        "discussion": "https://news.ycombinator.com/item?id=49511720",
+        "flag": null
+      },
+      {
+        "id": "hn-49510489",
+        "title": "The Snow/Leavis ‘two cultures’ clash",
+        "url": "https://aeon.co/essays/at-the-heart-of-the-snow-leavis-two-cultures-clash",
+        "source": "Hacker News",
+        "date": "2026-08-31",
+        "summary": "",
+        "meta": [
+          "44 points",
+          "23 comments"
+        ],
+        "discussion": "https://news.ycombinator.com/item?id=49510489",
+        "flag": null
+      },
+      {
+        "id": "hn-49510632",
+        "title": "Launch HN: Hebbian Robotics (YC S26) – Build scalable robotics data pipelines",
+        "url": "https://github.com/Hebbian-Robotics/hflow",
+        "source": "Hacker News",
+        "date": "2026-08-31",
+        "summary": "",
+        "meta": [
+          "24 points",
+          "7 comments"
+        ],
+        "discussion": "https://news.ycombinator.com/item?id=49510632",
+        "flag": null
+      },
+      {
+        "id": "hn-49511917",
+        "title": "Konrad Zuse Museum shutting down due to lack of funding",
+        "url": "https://www.heise.de/en/news/Zuse-Computer-Museum-ZCOM-in-Hoyerswerda-faces-closure-11344513.html",
+        "source": "Hacker News",
+        "date": "2026-08-31",
+        "summary": "",
+        "meta": [
+          "61 points",
+          "17 comments"
+        ],
+        "discussion": "https://news.ycombinator.com/item?id=49511917",
+        "flag": null
+      },
+      {
+        "id": "hn-49455557",
+        "title": "Show HN: We built the smallest dual-band aircraft tracker",
+        "url": "https://pantsforbirds.com/the-worlds-smallest-dual-band-ads-b-receiver-module/",
+        "source": "Hacker News",
+        "date": "2026-08-26",
+        "summary": "",
+        "meta": [
+          "38 points",
+          "9 comments"
+        ],
+        "discussion": "https://news.ycombinator.com/item?id=49455557",
+        "flag": null
+      },
+      {
+        "id": "hn-49495171",
+        "title": "No country for mediocre mathematicians",
+        "url": "https://garvvee.substack.com/p/no-country-for-mediocre-mathematicians",
         "source": "Hacker News",
         "date": "2026-08-30",
         "summary": "",
         "meta": [
-          "27 points",
-          "16 comments"
+          "35 points",
+          "10 comments"
         ],
-        "discussion": "https://news.ycombinator.com/item?id=49498978",
+        "discussion": "https://news.ycombinator.com/item?id=49495171",
         "flag": null
       },
       {
-        "id": "hn-49497854",
-        "title": "Automating Immersive Reading",
-        "url": "https://smoores.dev/post/automating_immersive_reading/",
+        "id": "hn-49507822",
+        "title": "OpenShot 4.0 – Open-source video editor",
+        "url": "https://www.openshot.org/blog/2026/08/30/openshot-40-record-edit-color-like-never-before/",
+        "source": "Hacker News",
+        "date": "2026-08-31",
+        "summary": "",
+        "meta": [
+          "436 points",
+          "99 comments"
+        ],
+        "discussion": "https://news.ycombinator.com/item?id=49507822",
+        "flag": null
+      },
+      {
+        "id": "hn-49498993",
+        "title": "DNS abuse and criminal infrastructure",
+        "url": "https://labs.ripe.net/author/andrew_campling/dns-abuse-and-criminal-infrastructure-beyond-definitions-and-blocklists/",
         "source": "Hacker News",
         "date": "2026-08-30",
         "summary": "",
         "meta": [
-          "36 points",
-          "13 comments"
+          "50 points",
+          "29 comments"
         ],
-        "discussion": "https://news.ycombinator.com/item?id=49497854",
+        "discussion": "https://news.ycombinator.com/item?id=49498993",
         "flag": null
       },
       {
-        "id": "hn-49497928",
-        "title": "monty-go: Pure-Go wrapper for Pydantic's Monty Python Interpreter",
-        "url": "https://github.com/fugue-labs/monty-go",
+        "id": "hn-49508317",
+        "title": "Agent memory as a file format",
+        "url": "https://calpaterson.com/memoryfields.html",
         "source": "Hacker News",
-        "date": "2026-08-30",
+        "date": "2026-08-31",
         "summary": "",
         "meta": [
-          "26 points",
-          "2 comments"
+          "126 points",
+          "60 comments"
         ],
-        "discussion": "https://news.ycombinator.com/item?id=49497928",
-        "flag": null
-      },
-      {
-        "id": "hn-49430745",
-        "title": "JupyterGIS 0.16: a grammar of graphics for maps, and collaborative story maps",
-        "url": "https://blog.jupyter.org/jupytergis-0-16-new-visualization-capabilities-collaborative-story-maps-and-more-03e6b78bacc0",
-        "source": "Hacker News",
-        "date": "2026-08-25",
-        "summary": "",
-        "meta": [
-          "69 points",
-          "8 comments"
-        ],
-        "discussion": "https://news.ycombinator.com/item?id=49430745",
-        "flag": null
-      },
-      {
-        "id": "hn-49492632",
-        "title": "Hy4 preview",
-        "url": "https://www.tencent.com/tencent-releases-and-open-sources-tencent-hy4-preview/",
-        "source": "Hacker News",
-        "date": "2026-08-29",
-        "summary": "",
-        "meta": [
-          "356 points",
-          "213 comments"
-        ],
-        "discussion": "https://news.ycombinator.com/item?id=49492632",
+        "discussion": "https://news.ycombinator.com/item?id=49508317",
         "flag": null
       }
     ]
