@@ -1,285 +1,285 @@
 {
-  "generatedAt": "2026-09-01T15:28:09.332Z",
+  "generatedAt": "2026-09-02T15:06:45.778Z",
   "log": [
     {
-      "t": "2026-09-01T15:28:08.040Z",
+      "t": "2026-09-02T15:06:44.963Z",
       "level": "info",
       "msg": "signal refresh started"
     },
     {
-      "t": "2026-09-01T15:28:08.046Z",
+      "t": "2026-09-02T15:06:44.967Z",
       "level": "info",
       "msg": "GET hacker-news.firebaseio.com/v0/topstories.json"
     },
     {
-      "t": "2026-09-01T15:28:08.251Z",
+      "t": "2026-09-02T15:06:45.121Z",
       "level": "info",
       "msg": "HTTP 200 · resolving top 60 story ids in batches of 10"
     },
     {
-      "t": "2026-09-01T15:28:08.653Z",
+      "t": "2026-09-02T15:06:45.381Z",
       "level": "info",
-      "msg": "59 of 60 resolved to usable stories · 607ms"
+      "msg": "59 of 60 resolved to usable stories · 414ms"
     },
     {
-      "t": "2026-09-01T15:28:08.653Z",
+      "t": "2026-09-02T15:06:45.382Z",
       "level": "info",
       "msg": "GET cisa.gov/feeds/known_exploited_vulnerabilities.json"
     },
     {
-      "t": "2026-09-01T15:28:08.838Z",
+      "t": "2026-09-02T15:06:45.466Z",
       "level": "info",
-      "msg": "HTTP 200 · catalog holds 1687 CVEs · 185ms"
+      "msg": "HTTP 200 · catalog holds 1687 CVEs · 84ms"
     },
     {
-      "t": "2026-09-01T15:28:08.841Z",
+      "t": "2026-09-02T15:06:45.469Z",
       "level": "info",
       "msg": "fleet filter: 999 of 1687 touch managed platforms"
     },
     {
-      "t": "2026-09-01T15:28:08.849Z",
+      "t": "2026-09-02T15:06:45.477Z",
       "level": "info",
       "msg": "GET export.arxiv.org/api/query cat:cs.AI OR cat:cs.LG"
     },
     {
-      "t": "2026-09-01T15:28:09.330Z",
+      "t": "2026-09-02T15:06:45.776Z",
       "level": "info",
-      "msg": "HTTP 200 · 29,315 bytes of Atom XML · 481ms"
+      "msg": "HTTP 200 · 29,766 bytes of Atom XML · 299ms"
     },
     {
-      "t": "2026-09-01T15:28:09.332Z",
+      "t": "2026-09-02T15:06:45.778Z",
       "level": "info",
-      "msg": "topic split: 5 AI stories, 54 general dev"
+      "msg": "topic split: 15 AI stories, 44 general dev"
     },
     {
-      "t": "2026-09-01T15:28:09.332Z",
+      "t": "2026-09-02T15:06:45.778Z",
       "level": "info",
       "msg": "--- security feed: 14 items ---"
     },
     {
-      "t": "2026-09-01T15:28:09.332Z",
+      "t": "2026-09-02T15:06:45.778Z",
       "level": "info",
       "msg": "ingest CISA KEV · Linux Kernel Unspecified Vulnerability · 2026-08-27"
     },
     {
-      "t": "2026-09-01T15:28:09.332Z",
+      "t": "2026-09-02T15:06:45.778Z",
       "level": "info",
       "msg": "ingest CISA KEV · Red Hat Libuser Race Condition Vulnerability · 2026-08-26"
     },
     {
-      "t": "2026-09-01T15:28:09.332Z",
+      "t": "2026-09-02T15:06:45.778Z",
       "level": "info",
       "msg": "ingest CISA KEV · Red Hat Automatic Bug Reporting Tool Privilege Escalation… · 2026-08-26"
     },
     {
-      "t": "2026-09-01T15:28:09.332Z",
+      "t": "2026-09-02T15:06:45.778Z",
       "level": "info",
       "msg": "ingest CISA KEV · Linux Kernel Out-of-Bounds Write Vulnerability · 2026-08-26"
     },
     {
-      "t": "2026-09-01T15:28:09.332Z",
+      "t": "2026-09-02T15:06:45.778Z",
       "level": "info",
       "msg": "ingest CISA KEV · Citrix NetScaler ADC and NetScaler Gateway Improper Restr… · 2026-08-26"
     },
     {
-      "t": "2026-09-01T15:28:09.332Z",
+      "t": "2026-09-02T15:06:45.778Z",
       "level": "info",
       "msg": "ingest CISA KEV · Microsoft SQL Server Remote Code Execution Vulnerability · 2026-08-26"
     },
     {
-      "t": "2026-09-01T15:28:09.332Z",
+      "t": "2026-09-02T15:06:45.778Z",
       "level": "info",
       "msg": "ingest CISA KEV · Oracle HTTP Server and Oracle Weblogic Server Proxy Plug-… · 2026-08-24"
     },
     {
-      "t": "2026-09-01T15:28:09.332Z",
+      "t": "2026-09-02T15:06:45.778Z",
       "level": "info",
       "msg": "ingest CISA KEV · Microsoft Internet Key Exchange (IKE) Service Extensions… · 2026-08-18"
     },
     {
-      "t": "2026-09-01T15:28:09.332Z",
+      "t": "2026-09-02T15:06:45.778Z",
       "level": "info",
       "msg": "ingest CISA KEV · Broadcom VMware vCenter Path Traversal Vulnerability · 2026-08-18"
     },
     {
-      "t": "2026-09-01T15:28:09.332Z",
+      "t": "2026-09-02T15:06:45.778Z",
       "level": "info",
       "msg": "ingest CISA KEV · Microsoft SharePoint Weak Authentication Vulnerability · 2026-08-18"
     },
     {
-      "t": "2026-09-01T15:28:09.332Z",
+      "t": "2026-09-02T15:06:45.778Z",
       "level": "info",
       "msg": "ingest CISA KEV · Apple macOS Improper Authentication Vulnerability · 2026-08-18"
     },
     {
-      "t": "2026-09-01T15:28:09.332Z",
+      "t": "2026-09-02T15:06:45.778Z",
       "level": "info",
       "msg": "ingest CISA KEV · Cisco Secure Firewall Adaptive Security Appliance (ASA) a… · 2026-08-11"
     },
     {
-      "t": "2026-09-01T15:28:09.332Z",
+      "t": "2026-09-02T15:06:45.778Z",
       "level": "info",
       "msg": "ingest CISA KEV · Microsoft Windows Ancillary Function Driver for WinSock U… · 2026-08-11"
     },
     {
-      "t": "2026-09-01T15:28:09.332Z",
+      "t": "2026-09-02T15:06:45.778Z",
       "level": "info",
       "msg": "ingest CISA KEV · Apache Tomcat Missing Encryption of Sensitive Data Vulner… · 2026-08-04"
     },
     {
-      "t": "2026-09-01T15:28:09.332Z",
+      "t": "2026-09-02T15:06:45.778Z",
       "level": "info",
       "msg": "--- ai feed: 14 items ---"
     },
     {
-      "t": "2026-09-01T15:28:09.332Z",
+      "t": "2026-09-02T15:06:45.778Z",
       "level": "info",
-      "msg": "ingest Hacker News · EFF to Courts: Don't Rewrite Copyright over AI Hype · 2026-09-01"
+      "msg": "ingest Hacker News · Three sites made 215,128 “best software” pages for AI. Pe… · 2026-09-02"
     },
     {
-      "t": "2026-09-01T15:28:09.332Z",
+      "t": "2026-09-02T15:06:45.778Z",
       "level": "info",
-      "msg": "ingest arXiv · Constant Individual Regret in General Games · 2026-08-31"
+      "msg": "ingest Hacker News · WebLLM: high-performance in-browser LLM inference engine · 2026-09-02"
     },
     {
-      "t": "2026-09-01T15:28:09.332Z",
+      "t": "2026-09-02T15:06:45.778Z",
       "level": "info",
-      "msg": "ingest arXiv · SUN: Persistent Programs For Language-Grounded Control-to… · 2026-08-31"
+      "msg": "ingest Hacker News · Six curl CVEs after OpenAI and Anthropic came back with z… · 2026-09-02"
     },
     {
-      "t": "2026-09-01T15:28:09.332Z",
+      "t": "2026-09-02T15:06:45.778Z",
       "level": "info",
-      "msg": "ingest arXiv · Sharp Approximation Rates for Neural Networks with Affine… · 2026-08-31"
+      "msg": "ingest Hacker News · Check if a file was made with Claude · 2026-09-02"
     },
     {
-      "t": "2026-09-01T15:28:09.332Z",
+      "t": "2026-09-02T15:06:45.778Z",
       "level": "info",
-      "msg": "ingest arXiv · Auditing Anonymous AI Models: A Four-Stage Protocol for B… · 2026-08-31"
+      "msg": "ingest Hacker News · The Emergent Symbolic Structure of Artificial Neural Netw… · 2026-09-02"
     },
     {
-      "t": "2026-09-01T15:28:09.332Z",
+      "t": "2026-09-02T15:06:45.778Z",
       "level": "info",
-      "msg": "ingest arXiv · OntoAligner-Ensemble: Voting-Based Fusion across Heteroge… · 2026-08-31"
+      "msg": "ingest Hacker News · LLMs: Intelligence vs. Cost · 2026-09-02"
     },
     {
-      "t": "2026-09-01T15:28:09.332Z",
+      "t": "2026-09-02T15:06:45.778Z",
       "level": "info",
-      "msg": "ingest arXiv · Implementing neural network mixed-effects models in Templ… · 2026-08-31"
+      "msg": "ingest Hacker News · Quasar 438B: Europe's Leading AI Model · 2026-09-02"
     },
     {
-      "t": "2026-09-01T15:28:09.332Z",
+      "t": "2026-09-02T15:06:45.778Z",
       "level": "info",
-      "msg": "ingest arXiv · On the Complexity of the Compatibility Problem for Succin… · 2026-08-31"
+      "msg": "ingest Hacker News · Show HN: Windrunner – AI-powered project collaboration wo… · 2026-09-02"
     },
     {
-      "t": "2026-09-01T15:28:09.332Z",
+      "t": "2026-09-02T15:06:45.778Z",
       "level": "info",
-      "msg": "ingest arXiv · When Does Bigger Help? A Controlled Study of LLM Scale fo… · 2026-08-31"
+      "msg": "ingest Hacker News · Bassfinity for iOS – AI guide built on solunar data, weat… · 2026-09-02"
     },
     {
-      "t": "2026-09-01T15:28:09.332Z",
+      "t": "2026-09-02T15:06:45.778Z",
       "level": "info",
-      "msg": "ingest arXiv · \"Train classical, deploy quantum\" requires rethinking gen… · 2026-08-31"
+      "msg": "ingest Hacker News · VibeGuard – security linter for AI-generated code · 2026-09-02"
     },
     {
-      "t": "2026-09-01T15:28:09.332Z",
+      "t": "2026-09-02T15:06:45.778Z",
       "level": "info",
-      "msg": "ingest arXiv · Stress-Testing Efficient Responsible-AI Evaluation: When… · 2026-08-31"
+      "msg": "ingest arXiv · Beyond Scores: Understanding LLM-as-a-Judge Mechanisms in… · 2026-09-01"
     },
     {
-      "t": "2026-09-01T15:28:09.332Z",
+      "t": "2026-09-02T15:06:45.778Z",
       "level": "info",
-      "msg": "ingest arXiv · BLOOM-WILT: Logit Tilting for Behaviour Elicitation in Au… · 2026-08-31"
+      "msg": "ingest arXiv · Efficient SWE Agent Benchmarking via Trajectory-Aware Eva… · 2026-09-01"
     },
     {
-      "t": "2026-09-01T15:28:09.332Z",
+      "t": "2026-09-02T15:06:45.778Z",
       "level": "info",
-      "msg": "ingest arXiv · LLM Post-Training as Brownfield Maintenance: An Industria… · 2026-08-31"
+      "msg": "ingest arXiv · Adaptive Critical Token-Aware Retrieval for Repository-Le… · 2026-09-01"
     },
     {
-      "t": "2026-09-01T15:28:09.332Z",
+      "t": "2026-09-02T15:06:45.778Z",
       "level": "info",
-      "msg": "ingest Hacker News · Apple caught off guard by AI demand for Mac Mini and Mac… · 2026-08-31"
+      "msg": "ingest arXiv · CordisBench: Can Language Models Reason About Component L… · 2026-09-01"
     },
     {
-      "t": "2026-09-01T15:28:09.332Z",
+      "t": "2026-09-02T15:06:45.778Z",
       "level": "info",
       "msg": "--- dev feed: 14 items ---"
     },
     {
-      "t": "2026-09-01T15:28:09.332Z",
+      "t": "2026-09-02T15:06:45.778Z",
       "level": "info",
-      "msg": "ingest Hacker News · AnkiDroid: Google Play no longer allowing Open Collective… · 2026-09-01"
+      "msg": "ingest Hacker News · A Note from LWN · 2026-09-02"
     },
     {
-      "t": "2026-09-01T15:28:09.332Z",
+      "t": "2026-09-02T15:06:45.778Z",
       "level": "info",
-      "msg": "ingest Hacker News · Ask HN: Who is hiring? (September 2026) · 2026-09-01"
+      "msg": "ingest Hacker News · GrapheneOS says Pixel 11 has MTE support after all · 2026-09-02"
     },
     {
-      "t": "2026-09-01T15:28:09.332Z",
+      "t": "2026-09-02T15:06:45.778Z",
       "level": "info",
-      "msg": "ingest Hacker News · Urban Congestion Pricing and the Response Times of Emerge… · 2026-09-01"
+      "msg": "ingest Hacker News · Biggest dark matter detector spots a single weird particle · 2026-09-02"
     },
     {
-      "t": "2026-09-01T15:28:09.332Z",
+      "t": "2026-09-02T15:06:45.778Z",
       "level": "info",
-      "msg": "ingest Hacker News · Io_uring Without Readahead · 2026-09-01"
+      "msg": "ingest Hacker News · Poisson Disk Sampling · 2026-09-02"
     },
     {
-      "t": "2026-09-01T15:28:09.332Z",
+      "t": "2026-09-02T15:06:45.778Z",
       "level": "info",
-      "msg": "ingest Hacker News · 44% on ARC-AGI-1 in 67 cents · 2026-09-01"
+      "msg": "ingest Hacker News · Mistral now trains on user input by default, except on en… · 2026-09-02"
     },
     {
-      "t": "2026-09-01T15:28:09.332Z",
+      "t": "2026-09-02T15:06:45.778Z",
       "level": "info",
-      "msg": "ingest Hacker News · American Airlines' Legendary Mechanic Passes Away at 100… · 2026-08-29"
+      "msg": "ingest Hacker News · Commodore 64 released September 1, 1982 · 2026-09-02"
     },
     {
-      "t": "2026-09-01T15:28:09.332Z",
+      "t": "2026-09-02T15:06:45.778Z",
       "level": "info",
-      "msg": "ingest Hacker News · Ask HN: Who wants to be hired? (September 2026) · 2026-09-01"
+      "msg": "ingest Hacker News · Aging Brains Blend Memories Together Instead of Just Forg… · 2026-09-02"
     },
     {
-      "t": "2026-09-01T15:28:09.332Z",
+      "t": "2026-09-02T15:06:45.778Z",
       "level": "info",
-      "msg": "ingest Hacker News · Fastpotify · 2026-09-01"
+      "msg": "ingest Hacker News · Exit the Cave · 2026-09-02"
     },
     {
-      "t": "2026-09-01T15:28:09.332Z",
+      "t": "2026-09-02T15:06:45.778Z",
       "level": "info",
-      "msg": "ingest Hacker News · EFF to Governor Newsom: Veto California's AB 1709 · 2026-09-01"
+      "msg": "ingest Hacker News · Dutch central bank moves share of gold from U.S., Canada… · 2026-09-02"
     },
     {
-      "t": "2026-09-01T15:28:09.332Z",
+      "t": "2026-09-02T15:06:45.778Z",
       "level": "info",
-      "msg": "ingest Hacker News · Saab Enters Collaborative Combat Aircraft Race with High-… · 2026-09-01"
+      "msg": "ingest Hacker News · Ending my elixir exploratory writing · 2026-09-02"
     },
     {
-      "t": "2026-09-01T15:28:09.332Z",
+      "t": "2026-09-02T15:06:45.778Z",
       "level": "info",
-      "msg": "ingest Hacker News · Fractal Jittered Voronoi Partitions · 2026-08-29"
+      "msg": "ingest Hacker News · A Beginner's Deep Dive Guide to Entra Passkeys · 2026-09-02"
     },
     {
-      "t": "2026-09-01T15:28:09.332Z",
+      "t": "2026-09-02T15:06:45.778Z",
       "level": "info",
-      "msg": "ingest Hacker News · Introducing Ad Blocker for Firefox on iOS · 2026-09-01"
+      "msg": "ingest Hacker News · A Selection of Los Alamos Rolodex Business Cards · 2026-08-31"
     },
     {
-      "t": "2026-09-01T15:28:09.332Z",
+      "t": "2026-09-02T15:06:45.778Z",
       "level": "info",
-      "msg": "ingest Hacker News · Tmp.0ut Volume 5 · 2026-08-31"
+      "msg": "ingest Hacker News · Move in C++ without a std:move · 2026-09-01"
     },
     {
-      "t": "2026-09-01T15:28:09.332Z",
+      "t": "2026-09-02T15:06:45.778Z",
       "level": "info",
-      "msg": "ingest Hacker News · Restroom Archive · 2026-09-01"
+      "msg": "ingest Hacker News · Banca Etica Suspends A/I's Account While Condemning the S… · 2026-09-02"
     },
     {
-      "t": "2026-09-01T15:28:09.332Z",
+      "t": "2026-09-02T15:06:45.778Z",
       "level": "info",
-      "msg": "publishing 42 items across 3 feeds · 1292ms"
+      "msg": "publishing 42 items across 3 feeds · 815ms"
     }
   ],
   "feeds": {
@@ -483,385 +483,393 @@
     ],
     "ai": [
       {
-        "id": "hn-49521315",
-        "title": "EFF to Courts: Don't Rewrite Copyright over AI Hype",
-        "url": "https://www.eff.org/deeplinks/2026/08/eff-courts-dont-rewrite-copyright-over-ai-hype",
+        "id": "hn-49536375",
+        "title": "Three sites made 215,128 “best software” pages for AI. Perplexity cites them",
+        "url": "https://trellner.com/reports/manufactured-sources-behind-ai-recommendations/",
         "source": "Hacker News",
+        "date": "2026-09-02",
+        "summary": "",
+        "meta": [
+          "80 points",
+          "45 comments"
+        ],
+        "discussion": "https://news.ycombinator.com/item?id=49536375",
+        "flag": null
+      },
+      {
+        "id": "hn-49536411",
+        "title": "WebLLM: high-performance in-browser LLM inference engine",
+        "url": "https://github.com/mlc-ai/web-llm",
+        "source": "Hacker News",
+        "date": "2026-09-02",
+        "summary": "",
+        "meta": [
+          "13 points",
+          "2 comments"
+        ],
+        "discussion": "https://news.ycombinator.com/item?id=49536411",
+        "flag": null
+      },
+      {
+        "id": "hn-49536114",
+        "title": "Six curl CVEs after OpenAI and Anthropic came back with zero",
+        "url": "https://aisle.com/blog/aisle-discovered-six-curl-cves-after-openai-and-anthropic-found-zero",
+        "source": "Hacker News",
+        "date": "2026-09-02",
+        "summary": "",
+        "meta": [
+          "48 points",
+          "18 comments"
+        ],
+        "discussion": "https://news.ycombinator.com/item?id=49536114",
+        "flag": null
+      },
+      {
+        "id": "hn-49535201",
+        "title": "Check if a file was made with Claude",
+        "url": "https://claude.com/check-content",
+        "source": "Hacker News",
+        "date": "2026-09-02",
+        "summary": "",
+        "meta": [
+          "37 points",
+          "24 comments"
+        ],
+        "discussion": "https://news.ycombinator.com/item?id=49535201",
+        "flag": null
+      },
+      {
+        "id": "hn-49531651",
+        "title": "The Emergent Symbolic Structure of Artificial Neural Networks",
+        "url": "https://arxiv.org/abs/2608.29530",
+        "source": "Hacker News",
+        "date": "2026-09-02",
+        "summary": "",
+        "meta": [
+          "229 points",
+          "77 comments"
+        ],
+        "discussion": "https://news.ycombinator.com/item?id=49531651",
+        "flag": null
+      },
+      {
+        "id": "hn-49535586",
+        "title": "LLMs: Intelligence vs. Cost",
+        "url": "https://openteams.com/intelligence-vs-cost/",
+        "source": "Hacker News",
+        "date": "2026-09-02",
+        "summary": "",
+        "meta": [
+          "20 points",
+          "7 comments"
+        ],
+        "discussion": "https://news.ycombinator.com/item?id=49535586",
+        "flag": null
+      },
+      {
+        "id": "hn-49534132",
+        "title": "Quasar 438B: Europe's Leading AI Model",
+        "url": "https://multiversecomputing.com/resources/introducing-quasar-438b-europe-s-leading-ai-model",
+        "source": "Hacker News",
+        "date": "2026-09-02",
+        "summary": "",
+        "meta": [
+          "97 points",
+          "79 comments"
+        ],
+        "discussion": "https://news.ycombinator.com/item?id=49534132",
+        "flag": null
+      },
+      {
+        "id": "hn-49535163",
+        "title": "Show HN: Windrunner – AI-powered project collaboration workspace",
+        "url": "https://shzlw.github.io/windrunner/",
+        "source": "Hacker News",
+        "date": "2026-09-02",
+        "summary": "",
+        "meta": [
+          "7 points",
+          "3 comments"
+        ],
+        "discussion": "https://news.ycombinator.com/item?id=49535163",
+        "flag": null
+      },
+      {
+        "id": "hn-49535029",
+        "title": "Bassfinity for iOS – AI guide built on solunar data, weather, and bathymetry",
+        "url": "https://www.bassfinity.com/blog/bassfinity-for-ios-the-whole-lake-in-your-pocket",
+        "source": "Hacker News",
+        "date": "2026-09-02",
+        "summary": "",
+        "meta": [
+          "3 points",
+          "0 comments"
+        ],
+        "discussion": "https://news.ycombinator.com/item?id=49535029",
+        "flag": null
+      },
+      {
+        "id": "hn-49534487",
+        "title": "VibeGuard – security linter for AI-generated code",
+        "url": "https://github.com/zeroFhacker/vibeguard",
+        "source": "Hacker News",
+        "date": "2026-09-02",
+        "summary": "",
+        "meta": [
+          "5 points",
+          "0 comments"
+        ],
+        "discussion": "https://news.ycombinator.com/item?id=49534487",
+        "flag": null
+      },
+      {
+        "id": "http://arxiv.org/abs/2609.01604v1",
+        "title": "Beyond Scores: Understanding LLM-as-a-Judge Mechanisms in Summarization Evaluation",
+        "url": "http://arxiv.org/abs/2609.01604v1",
+        "source": "arXiv",
         "date": "2026-09-01",
-        "summary": "",
-        "meta": [
-          "140 points",
-          "136 comments"
-        ],
-        "discussion": "https://news.ycombinator.com/item?id=49521315",
-        "flag": null
-      },
-      {
-        "id": "http://arxiv.org/abs/2608.31166v1",
-        "title": "Constant Individual Regret in General Games",
-        "url": "http://arxiv.org/abs/2608.31166v1",
-        "source": "arXiv",
-        "date": "2026-08-31",
-        "summary": "Uncoupled no-regret dynamics provide a decentralized route to equilibrium, but prior guarantees for individual regret retain a polylogarithmic dependence on the horizon. We remove this dependence for every finite $N$-player normal-form game under full-information feedback. We introduce \\emph{ECHO-OFTRL}: optimistic fo…",
+        "summary": "LLM-based evaluators of natural language generation (NLG) quality are widely deployed as scoring tools and as automated training signals, yet the internal procedure by which they assign a rating remains poorly understood. We investigate this procedure mechanistically through an eight-attack perturbation taxonomy acros…",
         "meta": [
           "Research",
-          "Mingyang Liu +2"
+          "Himil Vasava +1"
         ],
         "flag": null
       },
       {
-        "id": "http://arxiv.org/abs/2608.31167v1",
-        "title": "SUN: Persistent Programs For Language-Grounded Control-to-Learning-to-Real Policies",
-        "url": "http://arxiv.org/abs/2608.31167v1",
+        "id": "http://arxiv.org/abs/2609.01603v1",
+        "title": "Efficient SWE Agent Benchmarking via Trajectory-Aware Evaluation",
+        "url": "http://arxiv.org/abs/2609.01603v1",
         "source": "arXiv",
-        "date": "2026-08-31",
-        "summary": "Bridging model-based control and learned policies in long-horizon manipulation has harbored a silent disagreement: control executes specified objectives, learning amortizes that behavior into a reactive policy, yet existing protocols discard task semantics, leaving rewards hand-crafted and behavior drifting from what…",
+        "date": "2026-09-01",
+        "summary": "Evaluating software engineering agents on realistic benchmarks is costly, since each task may require multi-step code exploration, modification, and test execution. Existing efficient evaluation methods select representative subsets to estimate full-benchmark performance, but are largely result-only: they fit historic…",
         "meta": [
           "Research",
-          "Weiqi Wang +9"
+          "Kefeng Duan +9"
         ],
         "flag": null
       },
       {
-        "id": "http://arxiv.org/abs/2608.31157v1",
-        "title": "Sharp Approximation Rates for Neural Networks with Affine Latent Parameterizations",
-        "url": "http://arxiv.org/abs/2608.31157v1",
+        "id": "http://arxiv.org/abs/2609.01601v1",
+        "title": "Adaptive Critical Token-Aware Retrieval for Repository-Level Code Generation",
+        "url": "http://arxiv.org/abs/2609.01601v1",
         "source": "arXiv",
-        "date": "2026-08-31",
-        "summary": "Many parameter-efficient methods generate the parameters of a large neural network from a low-dimensional latent representation. Given an architecture $Φ$ with $P_Φ$ parameter slots, we write $\\boldsymbolθ_f=\\mathcal{G}(\\boldsymbolξ_f)$, where $\\mathcal{G}\\colon\\mathbb{R}^M\\to\\mathbb{R}^{P_Φ}$ is a parameter generator…",
+        "date": "2026-09-01",
+        "summary": "The repository-level code generation task requires synthesizing code that satisfies task requirements while remaining consistent with the target repository context. Since real-world repositories often exceed the input length limits of LLMs, existing approaches commonly adopt retrieval-augmented generation (RAG) to pro…",
         "meta": [
           "Research",
-          "Shijun Zhang"
+          "Kefeng Duan +10"
         ],
         "flag": null
       },
       {
-        "id": "http://arxiv.org/abs/2608.31142v1",
-        "title": "Auditing Anonymous AI Models: A Four-Stage Protocol for Black-Box Identity Verification",
-        "url": "http://arxiv.org/abs/2608.31142v1",
+        "id": "http://arxiv.org/abs/2609.01600v1",
+        "title": "CordisBench: Can Language Models Reason About Component Lifecycles in Dynamic Agent Harnesses?",
+        "url": "http://arxiv.org/abs/2609.01600v1",
         "source": "arXiv",
-        "date": "2026-08-31",
-        "summary": "The 2025--2026 AI market has seen a wave of stealth releases: frontier models launched anonymously on developer platforms under codenames. For their users, identity determines data-handling terms, supply-chain risk, and capability expectations. No validated methodology exists for black-box identity verification of ano…",
+        "date": "2026-09-01",
+        "summary": "Dynamic agent harnesses let language models change the software that shapes their own execution. This flexibility brings a new reasoning burden: a local plugin change can propagate through dependencies and cleanup. We introduce CordisBench, a 1,200-question benchmark of this lifecycle reasoning. It combines a controll…",
         "meta": [
           "Research",
-          "Yisen Xi"
+          "Damien Sileo +1"
         ],
-        "flag": null
-      },
-      {
-        "id": "http://arxiv.org/abs/2608.31137v1",
-        "title": "OntoAligner-Ensemble: Voting-Based Fusion across Heterogeneous Ontology Alignment Techniques",
-        "url": "http://arxiv.org/abs/2608.31137v1",
-        "source": "arXiv",
-        "date": "2026-08-31",
-        "summary": "Ontology alignment (OA) has evolved through several methodological paradigms, ranging from lexical and structural aligners to knowledge graph embedding (KGE) models and, more recently, Large Language Model (LLM)-based approaches. Although modern OA frameworks provide unified ecosystems for deploying these heterogeneou…",
-        "meta": [
-          "Research",
-          "Hamed Babaei Giglou +4"
-        ],
-        "flag": null
-      },
-      {
-        "id": "http://arxiv.org/abs/2608.31133v1",
-        "title": "Implementing neural network mixed-effects models in Template Model Builder (TMB)",
-        "url": "http://arxiv.org/abs/2608.31133v1",
-        "source": "arXiv",
-        "date": "2026-08-31",
-        "summary": "Neural network mixed-effects models (NMMs) have gained traction by combining the strong representation and predictive power of artificial neural networks with the capacity of mixed-effects modeling to capture complex correlation structures. However, existing estimation approaches rely heavily on manual derivations of…",
-        "meta": [
-          "Research",
-          "Nan Zheng +4"
-        ],
-        "flag": null
-      },
-      {
-        "id": "http://arxiv.org/abs/2608.31120v1",
-        "title": "On the Complexity of the Compatibility Problem for Succinctly Encoded Conditional Distributions",
-        "url": "http://arxiv.org/abs/2608.31120v1",
-        "source": "arXiv",
-        "date": "2026-08-31",
-        "summary": "The motivation for this paper is the investigation of the trade-offs implicit in probabilistic models used in machine learning. Models are often used to make predictions in the form of conditional probabilities. However, a pair of conditional distributions p(x|y) and p(y|x) may not be compatible with any joint distrib…",
-        "meta": [
-          "Research",
-          "Guy Emerson"
-        ],
-        "flag": null
-      },
-      {
-        "id": "http://arxiv.org/abs/2608.31118v1",
-        "title": "When Does Bigger Help? A Controlled Study of LLM Scale for Ontology Learning",
-        "url": "http://arxiv.org/abs/2608.31118v1",
-        "source": "arXiv",
-        "date": "2026-08-31",
-        "summary": "The effect of Large Language Model (LLM) scale on ontology learning (OL) performance remains insufficiently characterized. We present a controlled evaluation of 13 models spanning dense and Mixture-of-Experts variants from the Qwen3.5 and Qwen3.6 lineages, together with proprietary GPT release variants, using the Onto…",
-        "meta": [
-          "Research",
-          "Hamed Babaei Giglou +2"
-        ],
-        "flag": null
-      },
-      {
-        "id": "http://arxiv.org/abs/2608.31117v1",
-        "title": "\"Train classical, deploy quantum\" requires rethinking generalization",
-        "url": "http://arxiv.org/abs/2608.31117v1",
-        "source": "arXiv",
-        "date": "2026-08-31",
-        "summary": "Generative models have become central across science and industry, from image and text synthesis to the design of molecules and materials. Quantum generative models are considered one of the most promising applications for quantum computers, since a quantum circuit naturally produces samples from the distribution it e…",
-        "meta": [
-          "Research",
-          "Snehal Raj +2"
-        ],
-        "flag": null
-      },
-      {
-        "id": "http://arxiv.org/abs/2608.31108v1",
-        "title": "Stress-Testing Efficient Responsible-AI Evaluation: When Compute Savings Change Benchmark Conclusions",
-        "url": "http://arxiv.org/abs/2608.31108v1",
-        "source": "arXiv",
-        "date": "2026-08-31",
-        "summary": "Efficient evaluation changes the protocol used to support claims about model behavior, yet it is rarely tested whether those claims remain stable after the evaluation itself is made cheaper. We stress-test conclusion robustness in responsible-AI benchmarking by evaluating three dense and mixture-of-experts models on B…",
-        "meta": [
-          "Research",
-          "Ahmed El Kady +4"
-        ],
-        "flag": null
-      },
-      {
-        "id": "http://arxiv.org/abs/2608.31105v1",
-        "title": "BLOOM-WILT: Logit Tilting for Behaviour Elicitation in Automated LLM Auditing",
-        "url": "http://arxiv.org/abs/2608.31105v1",
-        "source": "arXiv",
-        "date": "2026-08-31",
-        "summary": "Users of a deployed language model routinely encounter behaviours that testing almost never surfaces, since deployment puts the model through orders of magnitude more interactions than any evaluation can simulate. Automated auditors make testing cheap to scale and flexible enough to cover almost any specified behaviou…",
-        "meta": [
-          "Research",
-          "Adrians Skapars +1"
-        ],
-        "flag": null
-      },
-      {
-        "id": "http://arxiv.org/abs/2608.31102v1",
-        "title": "LLM Post-Training as Brownfield Maintenance: An Industrial Perspective on Dataware Engineering",
-        "url": "http://arxiv.org/abs/2608.31102v1",
-        "source": "arXiv",
-        "date": "2026-08-31",
-        "summary": "Industrial post-training is a brownfield regime. Teams inherit a deployed checkpoint and must land targeted improvements under fixed compute and mixture budgets without regressing the rest. The maintained artifact is increasingly dataware: behavior governed by a curated post-training mixture, updated via bounded mixtu…",
-        "meta": [
-          "Research",
-          "Gopi Krishnan Rajbahadur +3"
-        ],
-        "flag": null
-      },
-      {
-        "id": "hn-49508982",
-        "title": "Apple caught off guard by AI demand for Mac Mini and Mac Studio",
-        "url": "https://www.macrumors.com/2026/08/30/apple-unexpected-mac-mini-and-studio-demand/",
-        "source": "Hacker News",
-        "date": "2026-08-31",
-        "summary": "",
-        "meta": [
-          "469 points",
-          "535 comments"
-        ],
-        "discussion": "https://news.ycombinator.com/item?id=49508982",
         "flag": null
       }
     ],
     "dev": [
       {
-        "id": "hn-49520022",
-        "title": "AnkiDroid: Google Play no longer allowing Open Collective donation link",
-        "url": "https://github.com/ankidroid/Anki-Android/issues/21656",
+        "id": "hn-49535752",
+        "title": "A Note from LWN",
+        "url": "https://lwn.net/Articles/1090585/",
         "source": "Hacker News",
-        "date": "2026-09-01",
+        "date": "2026-09-02",
         "summary": "",
         "meta": [
-          "501 points",
-          "130 comments"
+          "316 points",
+          "48 comments"
         ],
-        "discussion": "https://news.ycombinator.com/item?id=49520022",
+        "discussion": "https://news.ycombinator.com/item?id=49535752",
         "flag": null
       },
       {
-        "id": "hn-49522897",
-        "title": "Ask HN: Who is hiring? (September 2026)",
-        "url": "https://news.ycombinator.com/item?id=49522897",
+        "id": "hn-49536384",
+        "title": "GrapheneOS says Pixel 11 has MTE support after all",
+        "url": "https://grapheneos.social/@GrapheneOS/117194007157499435",
         "source": "Hacker News",
-        "date": "2026-09-01",
+        "date": "2026-09-02",
         "summary": "",
         "meta": [
-          "26 points",
-          "16 comments"
+          "48 points",
+          "30 comments"
         ],
-        "discussion": "https://news.ycombinator.com/item?id=49522897",
+        "discussion": "https://news.ycombinator.com/item?id=49536384",
         "flag": null
       },
       {
-        "id": "hn-49522503",
-        "title": "Urban Congestion Pricing and the Response Times of Emergency Medical Services",
-        "url": "https://www.nber.org/digest/202609/urban-congestion-pricing-and-response-times-emergency-medical-services",
+        "id": "hn-49536079",
+        "title": "Biggest dark matter detector spots a single weird particle",
+        "url": "https://www.science.org/content/article/world-s-biggest-dark-matter-detector-spots-single-weird-particle",
         "source": "Hacker News",
-        "date": "2026-09-01",
+        "date": "2026-09-02",
         "summary": "",
         "meta": [
-          "26 points",
-          "11 comments"
+          "49 points",
+          "1 comments"
         ],
-        "discussion": "https://news.ycombinator.com/item?id=49522503",
+        "discussion": "https://news.ycombinator.com/item?id=49536079",
         "flag": null
       },
       {
-        "id": "hn-49521623",
-        "title": "Io_uring Without Readahead",
-        "url": "https://frn.sh/io-uring/",
+        "id": "hn-49536177",
+        "title": "Poisson Disk Sampling",
+        "url": "https://stripeacross.com/posts/poisson-disk-sampling/",
         "source": "Hacker News",
-        "date": "2026-09-01",
+        "date": "2026-09-02",
         "summary": "",
         "meta": [
-          "45 points",
-          "2 comments"
+          "33 points",
+          "4 comments"
         ],
-        "discussion": "https://news.ycombinator.com/item?id=49521623",
+        "discussion": "https://news.ycombinator.com/item?id=49536177",
         "flag": null
       },
       {
-        "id": "hn-49519939",
-        "title": "44% on ARC-AGI-1 in 67 cents",
-        "url": "https://mvakde.github.io/blog/44-on-arc-1/",
+        "id": "hn-49535284",
+        "title": "Mistral now trains on user input by default, except on enterprise tier",
+        "url": "https://help.mistral.ai/en/articles/455207-can-i-opt-out-of-my-input-or-output-data-being-used-for-training",
         "source": "Hacker News",
-        "date": "2026-09-01",
+        "date": "2026-09-02",
         "summary": "",
         "meta": [
-          "232 points",
-          "66 comments"
+          "96 points",
+          "59 comments"
         ],
-        "discussion": "https://news.ycombinator.com/item?id=49519939",
+        "discussion": "https://news.ycombinator.com/item?id=49535284",
         "flag": null
       },
       {
-        "id": "hn-49493468",
-        "title": "American Airlines' Legendary Mechanic Passes Away at 100 After 80-Year Career",
-        "url": "https://simpleflying.com/american-airlines-mechanic-passes-away-100-record-80-years/",
+        "id": "hn-49533497",
+        "title": "Commodore 64 released September 1, 1982",
+        "url": "https://dfarq.homeip.net/commodore-64-released-september-1-1982/",
         "source": "Hacker News",
-        "date": "2026-08-29",
+        "date": "2026-09-02",
         "summary": "",
         "meta": [
-          "226 points",
-          "93 comments"
+          "216 points",
+          "112 comments"
         ],
-        "discussion": "https://news.ycombinator.com/item?id=49493468",
+        "discussion": "https://news.ycombinator.com/item?id=49533497",
         "flag": null
       },
       {
-        "id": "hn-49522896",
-        "title": "Ask HN: Who wants to be hired? (September 2026)",
-        "url": "https://news.ycombinator.com/item?id=49522896",
+        "id": "hn-49535548",
+        "title": "Aging Brains Blend Memories Together Instead of Just Forgetting Them",
+        "url": "https://studyfinds.com/aging-brains-blend-memories-together-instead-of-forgetting-them-study-finds/",
         "source": "Hacker News",
-        "date": "2026-09-01",
+        "date": "2026-09-02",
         "summary": "",
         "meta": [
-          "10 points",
-          "29 comments"
-        ],
-        "discussion": "https://news.ycombinator.com/item?id=49522896",
-        "flag": null
-      },
-      {
-        "id": "hn-49517448",
-        "title": "Fastpotify",
-        "url": "https://fastpotify.rocks/",
-        "source": "Hacker News",
-        "date": "2026-09-01",
-        "summary": "",
-        "meta": [
-          "654 points",
-          "412 comments"
-        ],
-        "discussion": "https://news.ycombinator.com/item?id=49517448",
-        "flag": null
-      },
-      {
-        "id": "hn-49522954",
-        "title": "EFF to Governor Newsom: Veto California's AB 1709",
-        "url": "https://www.eff.org/deeplinks/2026/08/eff-gov-newsom-veto-californias-ab-1709",
-        "source": "Hacker News",
-        "date": "2026-09-01",
-        "summary": "",
-        "meta": [
-          "22 points",
-          "3 comments"
-        ],
-        "discussion": "https://news.ycombinator.com/item?id=49522954",
-        "flag": null
-      },
-      {
-        "id": "hn-49522374",
-        "title": "Saab Enters Collaborative Combat Aircraft Race with High-End Concept",
-        "url": "https://aviationweek.com/defense/aircraft-propulsion/saab-enters-collaborative-combat-aircraft-race-high-end-concept",
-        "source": "Hacker News",
-        "date": "2026-09-01",
-        "summary": "",
-        "meta": [
-          "37 points",
-          "13 comments"
-        ],
-        "discussion": "https://news.ycombinator.com/item?id=49522374",
-        "flag": null
-      },
-      {
-        "id": "hn-49492094",
-        "title": "Fractal Jittered Voronoi Partitions",
-        "url": "https://www.boristhebrave.com/2026/08/29/fractal-jittered-voronoi-partitions/",
-        "source": "Hacker News",
-        "date": "2026-08-29",
-        "summary": "",
-        "meta": [
-          "36 points",
-          "3 comments"
-        ],
-        "discussion": "https://news.ycombinator.com/item?id=49492094",
-        "flag": null
-      },
-      {
-        "id": "hn-49521973",
-        "title": "Introducing Ad Blocker for Firefox on iOS",
-        "url": "https://blog.mozilla.org/en/firefox/ad-blocker-on-ios/",
-        "source": "Hacker News",
-        "date": "2026-09-01",
-        "summary": "",
-        "meta": [
-          "41 points",
+          "44 points",
           "14 comments"
         ],
-        "discussion": "https://news.ycombinator.com/item?id=49521973",
+        "discussion": "https://news.ycombinator.com/item?id=49535548",
         "flag": null
       },
       {
-        "id": "hn-49516059",
-        "title": "Tmp.0ut Volume 5",
-        "url": "https://tmpout.sh/5/",
+        "id": "hn-49536606",
+        "title": "Exit the Cave",
+        "url": "https://turtlespace.blog/p/exit-the-cave",
+        "source": "Hacker News",
+        "date": "2026-09-02",
+        "summary": "",
+        "meta": [
+          "16 points",
+          "2 comments"
+        ],
+        "discussion": "https://news.ycombinator.com/item?id=49536606",
+        "flag": null
+      },
+      {
+        "id": "hn-49535526",
+        "title": "Dutch central bank moves share of gold from U.S., Canada to London",
+        "url": "https://nltimes.nl/2026/09/02/dutch-central-bank-moves-share-gold-us-canada-london-cites-instability",
+        "source": "Hacker News",
+        "date": "2026-09-02",
+        "summary": "",
+        "meta": [
+          "109 points",
+          "87 comments"
+        ],
+        "discussion": "https://news.ycombinator.com/item?id=49535526",
+        "flag": null
+      },
+      {
+        "id": "hn-49534921",
+        "title": "Ending my elixir exploratory writing",
+        "url": "https://lucassifoni.info/blog/the-end-of-this-elixir-log/",
+        "source": "Hacker News",
+        "date": "2026-09-02",
+        "summary": "",
+        "meta": [
+          "39 points",
+          "23 comments"
+        ],
+        "discussion": "https://news.ycombinator.com/item?id=49534921",
+        "flag": null
+      },
+      {
+        "id": "hn-49535721",
+        "title": "A Beginner's Deep Dive Guide to Entra Passkeys",
+        "url": "https://emsroute.com/2026/03/19/passkeys-beginners-101/",
+        "source": "Hacker News",
+        "date": "2026-09-02",
+        "summary": "",
+        "meta": [
+          "12 points",
+          "8 comments"
+        ],
+        "discussion": "https://news.ycombinator.com/item?id=49535721",
+        "flag": null
+      },
+      {
+        "id": "hn-49513856",
+        "title": "A Selection of Los Alamos Rolodex Business Cards",
+        "url": "https://clui.org/collections/los-alamos-business-cards/selection-cards",
         "source": "Hacker News",
         "date": "2026-08-31",
         "summary": "",
         "meta": [
-          "150 points",
-          "31 comments"
+          "7 points",
+          "0 comments"
         ],
-        "discussion": "https://news.ycombinator.com/item?id=49516059",
+        "discussion": "https://news.ycombinator.com/item?id=49513856",
         "flag": null
       },
       {
-        "id": "hn-49517624",
-        "title": "Restroom Archive",
-        "url": "https://restroomarchive.com",
+        "id": "hn-49521590",
+        "title": "Move in C++ without a std:move",
+        "url": "https://andreasfertig.com/blog/2026/09/move-in-cpp-without-a-stdmove/",
         "source": "Hacker News",
         "date": "2026-09-01",
         "summary": "",
         "meta": [
-          "254 points",
-          "57 comments"
+          "27 points",
+          "29 comments"
         ],
-        "discussion": "https://news.ycombinator.com/item?id=49517624",
+        "discussion": "https://news.ycombinator.com/item?id=49521590",
+        "flag": null
+      },
+      {
+        "id": "hn-49534041",
+        "title": "Banca Etica Suspends A/I's Account While Condemning the Sanctions Behind It",
+        "url": "https://sabot.media/post/banca-etica-statement-english",
+        "source": "Hacker News",
+        "date": "2026-09-02",
+        "summary": "",
+        "meta": [
+          "39 points",
+          "21 comments"
+        ],
+        "discussion": "https://news.ycombinator.com/item?id=49534041",
         "flag": null
       }
     ]
