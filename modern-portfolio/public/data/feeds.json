@@ -1,289 +1,317 @@
 {
-  "generatedAt": "2026-09-02T15:06:45.778Z",
+  "generatedAt": "2026-09-03T15:00:15.982Z",
   "log": [
     {
-      "t": "2026-09-02T15:06:44.963Z",
+      "t": "2026-09-03T15:00:14.362Z",
       "level": "info",
       "msg": "signal refresh started"
     },
     {
-      "t": "2026-09-02T15:06:44.967Z",
+      "t": "2026-09-03T15:00:14.366Z",
       "level": "info",
       "msg": "GET hacker-news.firebaseio.com/v0/topstories.json"
     },
     {
-      "t": "2026-09-02T15:06:45.121Z",
+      "t": "2026-09-03T15:00:14.707Z",
       "level": "info",
       "msg": "HTTP 200 · resolving top 60 story ids in batches of 10"
     },
     {
-      "t": "2026-09-02T15:06:45.381Z",
+      "t": "2026-09-03T15:00:15.243Z",
       "level": "info",
-      "msg": "59 of 60 resolved to usable stories · 414ms"
+      "msg": "59 of 60 resolved to usable stories · 877ms"
     },
     {
-      "t": "2026-09-02T15:06:45.382Z",
+      "t": "2026-09-03T15:00:15.244Z",
       "level": "info",
       "msg": "GET cisa.gov/feeds/known_exploited_vulnerabilities.json"
     },
     {
-      "t": "2026-09-02T15:06:45.466Z",
+      "t": "2026-09-03T15:00:15.346Z",
       "level": "info",
-      "msg": "HTTP 200 · catalog holds 1687 CVEs · 84ms"
+      "msg": "HTTP 200 · catalog holds 1694 CVEs · 102ms"
     },
     {
-      "t": "2026-09-02T15:06:45.469Z",
+      "t": "2026-09-03T15:00:15.349Z",
       "level": "info",
-      "msg": "fleet filter: 999 of 1687 touch managed platforms"
+      "msg": "fleet filter: 1001 of 1694 touch managed platforms"
     },
     {
-      "t": "2026-09-02T15:06:45.477Z",
+      "t": "2026-09-03T15:00:15.355Z",
       "level": "info",
       "msg": "GET export.arxiv.org/api/query cat:cs.AI OR cat:cs.LG"
     },
     {
-      "t": "2026-09-02T15:06:45.776Z",
+      "t": "2026-09-03T15:00:15.981Z",
       "level": "info",
-      "msg": "HTTP 200 · 29,766 bytes of Atom XML · 299ms"
+      "msg": "HTTP 200 · 28,970 bytes of Atom XML · 626ms"
     },
     {
-      "t": "2026-09-02T15:06:45.778Z",
+      "t": "2026-09-03T15:00:15.982Z",
       "level": "info",
-      "msg": "topic split: 15 AI stories, 44 general dev"
+      "msg": "topic split: 8 AI stories, 51 general dev"
     },
     {
-      "t": "2026-09-02T15:06:45.778Z",
+      "t": "2026-09-03T15:00:15.982Z",
       "level": "info",
       "msg": "--- security feed: 14 items ---"
     },
     {
-      "t": "2026-09-02T15:06:45.778Z",
+      "t": "2026-09-03T15:00:15.982Z",
+      "level": "info",
+      "msg": "ingest CISA KEV · SonicWall SMA1000 Appliances Server-Side Request Forgery… · 2026-09-02"
+    },
+    {
+      "t": "2026-09-03T15:00:15.982Z",
+      "level": "info",
+      "msg": "ingest CISA KEV · SonicWall SMA1000 Appliances OS Command Injection Vulnera… · 2026-09-02"
+    },
+    {
+      "t": "2026-09-03T15:00:15.982Z",
       "level": "info",
       "msg": "ingest CISA KEV · Linux Kernel Unspecified Vulnerability · 2026-08-27"
     },
     {
-      "t": "2026-09-02T15:06:45.778Z",
+      "t": "2026-09-03T15:00:15.982Z",
       "level": "info",
       "msg": "ingest CISA KEV · Red Hat Libuser Race Condition Vulnerability · 2026-08-26"
     },
     {
-      "t": "2026-09-02T15:06:45.778Z",
+      "t": "2026-09-03T15:00:15.982Z",
       "level": "info",
       "msg": "ingest CISA KEV · Red Hat Automatic Bug Reporting Tool Privilege Escalation… · 2026-08-26"
     },
     {
-      "t": "2026-09-02T15:06:45.778Z",
+      "t": "2026-09-03T15:00:15.982Z",
       "level": "info",
       "msg": "ingest CISA KEV · Linux Kernel Out-of-Bounds Write Vulnerability · 2026-08-26"
     },
     {
-      "t": "2026-09-02T15:06:45.778Z",
+      "t": "2026-09-03T15:00:15.982Z",
       "level": "info",
       "msg": "ingest CISA KEV · Citrix NetScaler ADC and NetScaler Gateway Improper Restr… · 2026-08-26"
     },
     {
-      "t": "2026-09-02T15:06:45.778Z",
+      "t": "2026-09-03T15:00:15.982Z",
       "level": "info",
       "msg": "ingest CISA KEV · Microsoft SQL Server Remote Code Execution Vulnerability · 2026-08-26"
     },
     {
-      "t": "2026-09-02T15:06:45.778Z",
+      "t": "2026-09-03T15:00:15.982Z",
       "level": "info",
       "msg": "ingest CISA KEV · Oracle HTTP Server and Oracle Weblogic Server Proxy Plug-… · 2026-08-24"
     },
     {
-      "t": "2026-09-02T15:06:45.778Z",
+      "t": "2026-09-03T15:00:15.982Z",
       "level": "info",
       "msg": "ingest CISA KEV · Microsoft Internet Key Exchange (IKE) Service Extensions… · 2026-08-18"
     },
     {
-      "t": "2026-09-02T15:06:45.778Z",
+      "t": "2026-09-03T15:00:15.982Z",
       "level": "info",
       "msg": "ingest CISA KEV · Broadcom VMware vCenter Path Traversal Vulnerability · 2026-08-18"
     },
     {
-      "t": "2026-09-02T15:06:45.778Z",
+      "t": "2026-09-03T15:00:15.982Z",
       "level": "info",
       "msg": "ingest CISA KEV · Microsoft SharePoint Weak Authentication Vulnerability · 2026-08-18"
     },
     {
-      "t": "2026-09-02T15:06:45.778Z",
+      "t": "2026-09-03T15:00:15.982Z",
       "level": "info",
       "msg": "ingest CISA KEV · Apple macOS Improper Authentication Vulnerability · 2026-08-18"
     },
     {
-      "t": "2026-09-02T15:06:45.778Z",
+      "t": "2026-09-03T15:00:15.982Z",
       "level": "info",
       "msg": "ingest CISA KEV · Cisco Secure Firewall Adaptive Security Appliance (ASA) a… · 2026-08-11"
     },
     {
-      "t": "2026-09-02T15:06:45.778Z",
-      "level": "info",
-      "msg": "ingest CISA KEV · Microsoft Windows Ancillary Function Driver for WinSock U… · 2026-08-11"
-    },
-    {
-      "t": "2026-09-02T15:06:45.778Z",
-      "level": "info",
-      "msg": "ingest CISA KEV · Apache Tomcat Missing Encryption of Sensitive Data Vulner… · 2026-08-04"
-    },
-    {
-      "t": "2026-09-02T15:06:45.778Z",
+      "t": "2026-09-03T15:00:15.982Z",
       "level": "info",
       "msg": "--- ai feed: 14 items ---"
     },
     {
-      "t": "2026-09-02T15:06:45.778Z",
+      "t": "2026-09-03T15:00:15.982Z",
       "level": "info",
-      "msg": "ingest Hacker News · Three sites made 215,128 “best software” pages for AI. Pe… · 2026-09-02"
+      "msg": "ingest Hacker News · A dark horse enters China's AI race: StartLux · 2026-09-03"
     },
     {
-      "t": "2026-09-02T15:06:45.778Z",
+      "t": "2026-09-03T15:00:15.982Z",
       "level": "info",
-      "msg": "ingest Hacker News · WebLLM: high-performance in-browser LLM inference engine · 2026-09-02"
+      "msg": "ingest arXiv · A Common Measure of Communication for Speech Brain-Comput… · 2026-09-02"
     },
     {
-      "t": "2026-09-02T15:06:45.778Z",
+      "t": "2026-09-03T15:00:15.982Z",
       "level": "info",
-      "msg": "ingest Hacker News · Six curl CVEs after OpenAI and Anthropic came back with z… · 2026-09-02"
+      "msg": "ingest arXiv · Discriminative World Models for Web Agents · 2026-09-02"
     },
     {
-      "t": "2026-09-02T15:06:45.778Z",
+      "t": "2026-09-03T15:00:15.982Z",
       "level": "info",
-      "msg": "ingest Hacker News · Check if a file was made with Claude · 2026-09-02"
+      "msg": "ingest arXiv · Graph Machine: Towards Better Pretraining via Edges · 2026-09-02"
     },
     {
-      "t": "2026-09-02T15:06:45.778Z",
+      "t": "2026-09-03T15:00:15.982Z",
       "level": "info",
-      "msg": "ingest Hacker News · The Emergent Symbolic Structure of Artificial Neural Netw… · 2026-09-02"
+      "msg": "ingest arXiv · GRADSOLVE: fast exact gradients for ODE ensembles on GPUs · 2026-09-02"
     },
     {
-      "t": "2026-09-02T15:06:45.778Z",
+      "t": "2026-09-03T15:00:15.982Z",
       "level": "info",
-      "msg": "ingest Hacker News · LLMs: Intelligence vs. Cost · 2026-09-02"
+      "msg": "ingest arXiv · Towards Trustworthy Autonomous Robots: An Explainable AI-… · 2026-09-02"
     },
     {
-      "t": "2026-09-02T15:06:45.778Z",
+      "t": "2026-09-03T15:00:15.982Z",
       "level": "info",
-      "msg": "ingest Hacker News · Quasar 438B: Europe's Leading AI Model · 2026-09-02"
+      "msg": "ingest arXiv · Improved Gradient Descent Lower Bounds Beyond Nesterov · 2026-09-02"
     },
     {
-      "t": "2026-09-02T15:06:45.778Z",
+      "t": "2026-09-03T15:00:15.982Z",
       "level": "info",
-      "msg": "ingest Hacker News · Show HN: Windrunner – AI-powered project collaboration wo… · 2026-09-02"
+      "msg": "ingest arXiv · The Implications of Linguistic Illegibility for LLM Secur… · 2026-09-02"
     },
     {
-      "t": "2026-09-02T15:06:45.778Z",
+      "t": "2026-09-03T15:00:15.982Z",
       "level": "info",
-      "msg": "ingest Hacker News · Bassfinity for iOS – AI guide built on solunar data, weat… · 2026-09-02"
+      "msg": "ingest arXiv · Post-Training Language Models for Gold-Medal Performance… · 2026-09-02"
     },
     {
-      "t": "2026-09-02T15:06:45.778Z",
+      "t": "2026-09-03T15:00:15.982Z",
       "level": "info",
-      "msg": "ingest Hacker News · VibeGuard – security linter for AI-generated code · 2026-09-02"
+      "msg": "ingest arXiv · UE5M3 FP4 Block Scaling for Stable Language Model Pretrai… · 2026-09-02"
     },
     {
-      "t": "2026-09-02T15:06:45.778Z",
+      "t": "2026-09-03T15:00:15.982Z",
       "level": "info",
-      "msg": "ingest arXiv · Beyond Scores: Understanding LLM-as-a-Judge Mechanisms in… · 2026-09-01"
+      "msg": "ingest arXiv · Learning Spectral-Like Mesh-Free Discretisations · 2026-09-02"
     },
     {
-      "t": "2026-09-02T15:06:45.778Z",
+      "t": "2026-09-03T15:00:15.982Z",
       "level": "info",
-      "msg": "ingest arXiv · Efficient SWE Agent Benchmarking via Trajectory-Aware Eva… · 2026-09-01"
+      "msg": "ingest arXiv · AI Contextual Measurement for Recovering Individual and G… · 2026-09-02"
     },
     {
-      "t": "2026-09-02T15:06:45.778Z",
+      "t": "2026-09-03T15:00:15.982Z",
       "level": "info",
-      "msg": "ingest arXiv · Adaptive Critical Token-Aware Retrieval for Repository-Le… · 2026-09-01"
+      "msg": "ingest arXiv · Cliff: Learning Process Rewards from the First Mistake · 2026-09-02"
     },
     {
-      "t": "2026-09-02T15:06:45.778Z",
+      "t": "2026-09-03T15:00:15.982Z",
       "level": "info",
-      "msg": "ingest arXiv · CordisBench: Can Language Models Reason About Component L… · 2026-09-01"
+      "msg": "ingest Hacker News · Gemini 3.8 Flash and 3.8 Flash Cyber · 2026-09-02"
     },
     {
-      "t": "2026-09-02T15:06:45.778Z",
+      "t": "2026-09-03T15:00:15.982Z",
       "level": "info",
       "msg": "--- dev feed: 14 items ---"
     },
     {
-      "t": "2026-09-02T15:06:45.778Z",
+      "t": "2026-09-03T15:00:15.982Z",
       "level": "info",
-      "msg": "ingest Hacker News · A Note from LWN · 2026-09-02"
+      "msg": "ingest Hacker News · Audacity 4.0 · 2026-09-03"
     },
     {
-      "t": "2026-09-02T15:06:45.778Z",
+      "t": "2026-09-03T15:00:15.982Z",
       "level": "info",
-      "msg": "ingest Hacker News · GrapheneOS says Pixel 11 has MTE support after all · 2026-09-02"
+      "msg": "ingest Hacker News · ChatGPT Is Throwing 404 · 2026-09-03"
     },
     {
-      "t": "2026-09-02T15:06:45.778Z",
+      "t": "2026-09-03T15:00:15.982Z",
       "level": "info",
-      "msg": "ingest Hacker News · Biggest dark matter detector spots a single weird particle · 2026-09-02"
+      "msg": "ingest Hacker News · Elevated Errors for Multiple Models · 2026-09-03"
     },
     {
-      "t": "2026-09-02T15:06:45.778Z",
+      "t": "2026-09-03T15:00:15.982Z",
       "level": "info",
-      "msg": "ingest Hacker News · Poisson Disk Sampling · 2026-09-02"
+      "msg": "ingest Hacker News · Pre-Release of Polars 2.0 · 2026-09-03"
     },
     {
-      "t": "2026-09-02T15:06:45.778Z",
+      "t": "2026-09-03T15:00:15.982Z",
       "level": "info",
-      "msg": "ingest Hacker News · Mistral now trains on user input by default, except on en… · 2026-09-02"
+      "msg": "ingest Hacker News · The Browser's Main Thread Is Expensive · 2026-09-01"
     },
     {
-      "t": "2026-09-02T15:06:45.778Z",
+      "t": "2026-09-03T15:00:15.982Z",
       "level": "info",
-      "msg": "ingest Hacker News · Commodore 64 released September 1, 1982 · 2026-09-02"
+      "msg": "ingest Hacker News · Invisible Companies · 2026-09-01"
     },
     {
-      "t": "2026-09-02T15:06:45.778Z",
+      "t": "2026-09-03T15:00:15.982Z",
       "level": "info",
-      "msg": "ingest Hacker News · Aging Brains Blend Memories Together Instead of Just Forg… · 2026-09-02"
+      "msg": "ingest Hacker News · What I Learned from My Mom (1941-2026) · 2026-08-29"
     },
     {
-      "t": "2026-09-02T15:06:45.778Z",
+      "t": "2026-09-03T15:00:15.982Z",
       "level": "info",
-      "msg": "ingest Hacker News · Exit the Cave · 2026-09-02"
+      "msg": "ingest Hacker News · Intrusive Linked Lists · 2026-08-31"
     },
     {
-      "t": "2026-09-02T15:06:45.778Z",
+      "t": "2026-09-03T15:00:15.982Z",
       "level": "info",
-      "msg": "ingest Hacker News · Dutch central bank moves share of gold from U.S., Canada… · 2026-09-02"
+      "msg": "ingest Hacker News · Codex Is Down · 2026-09-03"
     },
     {
-      "t": "2026-09-02T15:06:45.778Z",
+      "t": "2026-09-03T15:00:15.982Z",
       "level": "info",
-      "msg": "ingest Hacker News · Ending my elixir exploratory writing · 2026-09-02"
+      "msg": "ingest Hacker News · Muse Spark 1.3 · 2026-09-02"
     },
     {
-      "t": "2026-09-02T15:06:45.778Z",
+      "t": "2026-09-03T15:00:15.982Z",
       "level": "info",
-      "msg": "ingest Hacker News · A Beginner's Deep Dive Guide to Entra Passkeys · 2026-09-02"
+      "msg": "ingest Hacker News · Nvidia to Acquire Hugging Face · 2026-09-03"
     },
     {
-      "t": "2026-09-02T15:06:45.778Z",
+      "t": "2026-09-03T15:00:15.982Z",
       "level": "info",
-      "msg": "ingest Hacker News · A Selection of Los Alamos Rolodex Business Cards · 2026-08-31"
+      "msg": "ingest Hacker News · Amazon Stonehenge: Parque Arqueológico do Solstício · 2026-08-31"
     },
     {
-      "t": "2026-09-02T15:06:45.778Z",
+      "t": "2026-09-03T15:00:15.982Z",
       "level": "info",
-      "msg": "ingest Hacker News · Move in C++ without a std:move · 2026-09-01"
+      "msg": "ingest Hacker News · Fish Bad, Sugar Good and Other Medieval Ideas About Food · 2026-08-31"
     },
     {
-      "t": "2026-09-02T15:06:45.778Z",
+      "t": "2026-09-03T15:00:15.982Z",
       "level": "info",
-      "msg": "ingest Hacker News · Banca Etica Suspends A/I's Account While Condemning the S… · 2026-09-02"
+      "msg": "ingest Hacker News · Google avoids a breakup of its ad tech business · 2026-09-02"
     },
     {
-      "t": "2026-09-02T15:06:45.778Z",
+      "t": "2026-09-03T15:00:15.982Z",
       "level": "info",
-      "msg": "publishing 42 items across 3 feeds · 815ms"
+      "msg": "publishing 42 items across 3 feeds · 1620ms"
     }
   ],
   "feeds": {
     "security": [
+      {
+        "id": "CVE-2026-83548",
+        "title": "SonicWall SMA1000 Appliances Server-Side Request Forgery Vulnerability",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-83548",
+        "source": "CISA KEV",
+        "date": "2026-09-02",
+        "summary": "SonicWall SMA1000 Appliances contains a server-side request forgery vulnerability that could allow a remote unauthenticated attacker to gain unauthorized access to sensitive functionality and perform unauthorized operations.",
+        "meta": [
+          "Network edge / VPN",
+          "SonicWall",
+          "Patch by 2026-09-05"
+        ],
+        "flag": null
+      },
+      {
+        "id": "CVE-2026-83549",
+        "title": "SonicWall SMA1000 Appliances OS Command Injection Vulnerability",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-83549",
+        "source": "CISA KEV",
+        "date": "2026-09-02",
+        "summary": "SonicWall SMA1000 Appliances contains an OS command injection vulnerability that could enable a remote authenticated attacker as administrator to execute arbitrary OS commands, resulting in remote code execution.",
+        "meta": [
+          "Network edge / VPN",
+          "SonicWall",
+          "Patch by 2026-09-05"
+        ],
+        "flag": null
+      },
       {
         "id": "CVE-2026-53362",
         "title": "Linux Kernel Unspecified Vulnerability",
@@ -451,425 +479,389 @@
           "Patch by 2026-08-14"
         ],
         "flag": null
-      },
-      {
-        "id": "CVE-2026-68820",
-        "title": "Microsoft Windows Ancillary Function Driver for WinSock Use-After-Free Vulnerability",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-68820",
-        "source": "CISA KEV",
-        "date": "2026-08-11",
-        "summary": "Microsoft Windows Ancillary Function Driver for WinSock contains a use-after-free vulnerability that allows an authorized attacker to elevate privileges locally.",
-        "meta": [
-          "Windows",
-          "Microsoft",
-          "Patch by 2026-08-25"
-        ],
-        "flag": null
-      },
-      {
-        "id": "CVE-2026-34486",
-        "title": "Apache Tomcat Missing Encryption of Sensitive Data Vulnerability",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-34486",
-        "source": "CISA KEV",
-        "date": "2026-08-04",
-        "summary": "Apache Tomcat contains a missing encryption of sensitive data vulnerability that allows the bypass of the EncryptInterceptor. This vulnerability can be chained with CVE‑2025‑24813.",
-        "meta": [
-          "Web stack",
-          "Apache",
-          "Patch by 2026-08-07"
-        ],
-        "flag": null
       }
     ],
     "ai": [
       {
-        "id": "hn-49536375",
-        "title": "Three sites made 215,128 “best software” pages for AI. Perplexity cites them",
-        "url": "https://trellner.com/reports/manufactured-sources-behind-ai-recommendations/",
+        "id": "hn-49548530",
+        "title": "A dark horse enters China's AI race: StartLux",
+        "url": "https://chinaonchina.com/article/chen-dawei-returns-enters-the-large-model-sector",
         "source": "Hacker News",
-        "date": "2026-09-02",
+        "date": "2026-09-03",
         "summary": "",
         "meta": [
-          "80 points",
-          "45 comments"
-        ],
-        "discussion": "https://news.ycombinator.com/item?id=49536375",
-        "flag": null
-      },
-      {
-        "id": "hn-49536411",
-        "title": "WebLLM: high-performance in-browser LLM inference engine",
-        "url": "https://github.com/mlc-ai/web-llm",
-        "source": "Hacker News",
-        "date": "2026-09-02",
-        "summary": "",
-        "meta": [
-          "13 points",
-          "2 comments"
-        ],
-        "discussion": "https://news.ycombinator.com/item?id=49536411",
-        "flag": null
-      },
-      {
-        "id": "hn-49536114",
-        "title": "Six curl CVEs after OpenAI and Anthropic came back with zero",
-        "url": "https://aisle.com/blog/aisle-discovered-six-curl-cves-after-openai-and-anthropic-found-zero",
-        "source": "Hacker News",
-        "date": "2026-09-02",
-        "summary": "",
-        "meta": [
-          "48 points",
-          "18 comments"
-        ],
-        "discussion": "https://news.ycombinator.com/item?id=49536114",
-        "flag": null
-      },
-      {
-        "id": "hn-49535201",
-        "title": "Check if a file was made with Claude",
-        "url": "https://claude.com/check-content",
-        "source": "Hacker News",
-        "date": "2026-09-02",
-        "summary": "",
-        "meta": [
-          "37 points",
+          "45 points",
           "24 comments"
         ],
-        "discussion": "https://news.ycombinator.com/item?id=49535201",
+        "discussion": "https://news.ycombinator.com/item?id=49548530",
         "flag": null
       },
       {
-        "id": "hn-49531651",
-        "title": "The Emergent Symbolic Structure of Artificial Neural Networks",
-        "url": "https://arxiv.org/abs/2608.29530",
-        "source": "Hacker News",
-        "date": "2026-09-02",
-        "summary": "",
-        "meta": [
-          "229 points",
-          "77 comments"
-        ],
-        "discussion": "https://news.ycombinator.com/item?id=49531651",
-        "flag": null
-      },
-      {
-        "id": "hn-49535586",
-        "title": "LLMs: Intelligence vs. Cost",
-        "url": "https://openteams.com/intelligence-vs-cost/",
-        "source": "Hacker News",
-        "date": "2026-09-02",
-        "summary": "",
-        "meta": [
-          "20 points",
-          "7 comments"
-        ],
-        "discussion": "https://news.ycombinator.com/item?id=49535586",
-        "flag": null
-      },
-      {
-        "id": "hn-49534132",
-        "title": "Quasar 438B: Europe's Leading AI Model",
-        "url": "https://multiversecomputing.com/resources/introducing-quasar-438b-europe-s-leading-ai-model",
-        "source": "Hacker News",
-        "date": "2026-09-02",
-        "summary": "",
-        "meta": [
-          "97 points",
-          "79 comments"
-        ],
-        "discussion": "https://news.ycombinator.com/item?id=49534132",
-        "flag": null
-      },
-      {
-        "id": "hn-49535163",
-        "title": "Show HN: Windrunner – AI-powered project collaboration workspace",
-        "url": "https://shzlw.github.io/windrunner/",
-        "source": "Hacker News",
-        "date": "2026-09-02",
-        "summary": "",
-        "meta": [
-          "7 points",
-          "3 comments"
-        ],
-        "discussion": "https://news.ycombinator.com/item?id=49535163",
-        "flag": null
-      },
-      {
-        "id": "hn-49535029",
-        "title": "Bassfinity for iOS – AI guide built on solunar data, weather, and bathymetry",
-        "url": "https://www.bassfinity.com/blog/bassfinity-for-ios-the-whole-lake-in-your-pocket",
-        "source": "Hacker News",
-        "date": "2026-09-02",
-        "summary": "",
-        "meta": [
-          "3 points",
-          "0 comments"
-        ],
-        "discussion": "https://news.ycombinator.com/item?id=49535029",
-        "flag": null
-      },
-      {
-        "id": "hn-49534487",
-        "title": "VibeGuard – security linter for AI-generated code",
-        "url": "https://github.com/zeroFhacker/vibeguard",
-        "source": "Hacker News",
-        "date": "2026-09-02",
-        "summary": "",
-        "meta": [
-          "5 points",
-          "0 comments"
-        ],
-        "discussion": "https://news.ycombinator.com/item?id=49534487",
-        "flag": null
-      },
-      {
-        "id": "http://arxiv.org/abs/2609.01604v1",
-        "title": "Beyond Scores: Understanding LLM-as-a-Judge Mechanisms in Summarization Evaluation",
-        "url": "http://arxiv.org/abs/2609.01604v1",
+        "id": "http://arxiv.org/abs/2609.02887v1",
+        "title": "A Common Measure of Communication for Speech Brain-Computer Interfaces",
+        "url": "http://arxiv.org/abs/2609.02887v1",
         "source": "arXiv",
-        "date": "2026-09-01",
-        "summary": "LLM-based evaluators of natural language generation (NLG) quality are widely deployed as scoring tools and as automated training signals, yet the internal procedure by which they assign a rating remains poorly understood. We investigate this procedure mechanistically through an eight-attack perturbation taxonomy acros…",
+        "date": "2026-09-02",
+        "summary": "Speech brain-computer interfaces (speech BCIs) translate neural activity into language, offering a path towards restoring speech for people with paralysis and, more broadly, enabling new forms of natural human-computer interaction. Despite this promise, the field lacks a common measure of progress because systems use…",
         "meta": [
           "Research",
-          "Himil Vasava +1"
+          "Dulhan Jayalath +2"
         ],
         "flag": null
       },
       {
-        "id": "http://arxiv.org/abs/2609.01603v1",
-        "title": "Efficient SWE Agent Benchmarking via Trajectory-Aware Evaluation",
-        "url": "http://arxiv.org/abs/2609.01603v1",
+        "id": "http://arxiv.org/abs/2609.02885v1",
+        "title": "Discriminative World Models for Web Agents",
+        "url": "http://arxiv.org/abs/2609.02885v1",
         "source": "arXiv",
-        "date": "2026-09-01",
-        "summary": "Evaluating software engineering agents on realistic benchmarks is costly, since each task may require multi-step code exploration, modification, and test execution. Existing efficient evaluation methods select representative subsets to estimate full-benchmark performance, but are largely result-only: they fit historic…",
+        "date": "2026-09-02",
+        "summary": "Recent web agents use world models for test-time action selection by sampling candidate actions, predicting the resulting web states, and ranking them with a ranker model or a Process Reward Model (PRM). These world models are typically trained via supervised next-state prediction to generate fixed representations lik…",
         "meta": [
           "Research",
-          "Kefeng Duan +9"
+          "Kelvin Li +8"
         ],
         "flag": null
       },
       {
-        "id": "http://arxiv.org/abs/2609.01601v1",
-        "title": "Adaptive Critical Token-Aware Retrieval for Repository-Level Code Generation",
-        "url": "http://arxiv.org/abs/2609.01601v1",
+        "id": "http://arxiv.org/abs/2609.02881v1",
+        "title": "Graph Machine: Towards Better Pretraining via Edges",
+        "url": "http://arxiv.org/abs/2609.02881v1",
         "source": "arXiv",
-        "date": "2026-09-01",
-        "summary": "The repository-level code generation task requires synthesizing code that satisfies task requirements while remaining consistent with the target repository context. Since real-world repositories often exceed the input length limits of LLMs, existing approaches commonly adopt retrieval-augmented generation (RAG) to pro…",
+        "date": "2026-09-02",
+        "summary": "We introduce the Graph Machine (GM), an architecture that maintains an $O(n)$-sized state and accesses it through sparse, dynamic routing. Unlike methods with fixed-size states or sparse but static routing, GM preserves $O(n)$ complexity in its sparse layers without restricting the potentially accessible state size to…",
         "meta": [
           "Research",
-          "Kefeng Duan +10"
+          "Lintai Hou"
         ],
         "flag": null
       },
       {
-        "id": "http://arxiv.org/abs/2609.01600v1",
-        "title": "CordisBench: Can Language Models Reason About Component Lifecycles in Dynamic Agent Harnesses?",
-        "url": "http://arxiv.org/abs/2609.01600v1",
+        "id": "http://arxiv.org/abs/2609.02876v1",
+        "title": "GRADSOLVE: fast exact gradients for ODE ensembles on GPUs",
+        "url": "http://arxiv.org/abs/2609.02876v1",
         "source": "arXiv",
-        "date": "2026-09-01",
-        "summary": "Dynamic agent harnesses let language models change the software that shapes their own execution. This flexibility brings a new reasoning burden: a local plugin change can propagate through dependencies and cleanup. We introduce CordisBench, a 1,200-question benchmark of this lifecycle reasoning. It combines a controll…",
+        "date": "2026-09-02",
+        "summary": "Ordinary differential equations (ODEs) underlie models in science and engineering, and many applications need derivatives of their solutions with respect to parameters. Ensembles of independent trajectories suit graphics processing units (GPUs), but current GPU software forces a trade-off: the fastest ensemble solvers…",
         "meta": [
           "Research",
-          "Damien Sileo +1"
+          "Alessio Spurio Mancini"
         ],
+        "flag": null
+      },
+      {
+        "id": "http://arxiv.org/abs/2609.02861v1",
+        "title": "Towards Trustworthy Autonomous Robots: An Explainable AI-Based Decision Framework",
+        "url": "http://arxiv.org/abs/2609.02861v1",
+        "source": "arXiv",
+        "date": "2026-09-02",
+        "summary": "Autonomous robots powered by deep learning face a fundamental auditability challenge: when incidents occur, investigators cannot reconstruct why the system made specific decisions. This paper presents TRACE (Transparent Reasoning Architecture for Credible Execution), a decision framework that ensures every autonomous…",
+        "meta": [
+          "Research",
+          "Cagri Temel"
+        ],
+        "flag": null
+      },
+      {
+        "id": "http://arxiv.org/abs/2609.02855v1",
+        "title": "Improved Gradient Descent Lower Bounds Beyond Nesterov",
+        "url": "http://arxiv.org/abs/2609.02855v1",
+        "source": "arXiv",
+        "date": "2026-09-02",
+        "summary": "We study how far gradient descent (GD) can be accelerated by predetermined stepsizes in smooth convex optimization. Going beyond the classical $Ω(n^{-2})$ first-order oracle lower bound of Nemirovsky and Yudin, we prove an $Ω(n^{-1.6342})$ non-anytime lower bound and an $Ω(n^{-1.2408})$ anytime lower bound. These impr…",
+        "meta": [
+          "Research",
+          "Yuhan Ye +1"
+        ],
+        "flag": null
+      },
+      {
+        "id": "http://arxiv.org/abs/2609.02852v1",
+        "title": "The Implications of Linguistic Illegibility for LLM Security",
+        "url": "http://arxiv.org/abs/2609.02852v1",
+        "source": "arXiv",
+        "date": "2026-09-02",
+        "summary": "LLMs are trained to generate natural language. However, various strands of evidence indicate that an LLM's externalized linguistic outputs and mechanistically-extracted linguistic features can be an unreliable lens for understanding internal model computation. We introduce the term ``linguistic illegibility'' to broad…",
+        "meta": [
+          "Research",
+          "James Mickens"
+        ],
+        "flag": null
+      },
+      {
+        "id": "http://arxiv.org/abs/2609.02849v1",
+        "title": "Post-Training Language Models for Gold-Medal Performance in Coding Competitions",
+        "url": "http://arxiv.org/abs/2609.02849v1",
+        "source": "arXiv",
+        "date": "2026-09-02",
+        "summary": "Competitive programming has become a key test of large language model reasoning, with international competitions such as IOI and ICPC representing its most challenging settings. We present an end-to-end specialization pipeline combining large-scale problem curation, synthetic reasoning traces, supervised fine-tuning (…",
+        "meta": [
+          "Research",
+          "Aleksander Ficek +4"
+        ],
+        "flag": null
+      },
+      {
+        "id": "http://arxiv.org/abs/2609.02846v1",
+        "title": "UE5M3 FP4 Block Scaling for Stable Language Model Pretraining",
+        "url": "http://arxiv.org/abs/2609.02846v1",
+        "source": "arXiv",
+        "date": "2026-09-02",
+        "summary": "Stable 4-bit floating-point (FP4) pretraining is difficult because the E2M1 payload represents only a narrow range of magnitudes. NVIDIA's Transformer Engine \\nv{} recipe addresses this with current-tensor scaling, a randomized Hadamard transform (RHT), and bfloat16 (BF16) final layers, adding work outside the FP4 mat…",
+        "meta": [
+          "Research",
+          "Robert Hu +2"
+        ],
+        "flag": null
+      },
+      {
+        "id": "http://arxiv.org/abs/2609.02833v1",
+        "title": "Learning Spectral-Like Mesh-Free Discretisations",
+        "url": "http://arxiv.org/abs/2609.02833v1",
+        "source": "arXiv",
+        "date": "2026-09-02",
+        "summary": "Meshfree methods such as smoothed particle hydrodynamics (SPH) with kernel corrections, radial basis function-generated finite differences (RBF-FD), and the local anisotropic basis function method (LABFM) construct discrete differential operators by imposing polynomial consistency on a local stencil. For stencils cont…",
+        "meta": [
+          "Research",
+          "Lucas Gerken Starepravo +3"
+        ],
+        "flag": null
+      },
+      {
+        "id": "http://arxiv.org/abs/2609.02821v1",
+        "title": "AI Contextual Measurement for Recovering Individual and Group-Level Effects: Validation Against Survey Measures and an Occupational Application",
+        "url": "http://arxiv.org/abs/2609.02821v1",
+        "source": "arXiv",
+        "date": "2026-09-02",
+        "summary": "Researchers increasingly use artificial intelligence to construct measures of social, organizational, and occupational characteristics that are absent from conventional surveys. We propose AICOME, AI COntextual MEasurement, a framework for evaluating whether AI-derived respondent-level measures can recover individual…",
+        "meta": [
+          "Research",
+          "Wenxin Jiang +2"
+        ],
+        "flag": null
+      },
+      {
+        "id": "http://arxiv.org/abs/2609.02817v1",
+        "title": "Cliff: Learning Process Rewards from the First Mistake",
+        "url": "http://arxiv.org/abs/2609.02817v1",
+        "source": "arXiv",
+        "date": "2026-09-02",
+        "summary": "Reinforcement learning with verifiable rewards (RLVR) has emerged as a powerful paradigm for large language model (LLM) post-training, but its reliance on coarse outcome rewards leads to limited guidance on intermediate reasoning processes. Existing approaches such as process reward modeling and on-policy distillation…",
+        "meta": [
+          "Research",
+          "Peixuan Han +5"
+        ],
+        "flag": null
+      },
+      {
+        "id": "hn-49537553",
+        "title": "Gemini 3.8 Flash and 3.8 Flash Cyber",
+        "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/3-8-flash-and-3-8-flash-cyber/",
+        "source": "Hacker News",
+        "date": "2026-09-02",
+        "summary": "",
+        "meta": [
+          "1109 points",
+          "627 comments"
+        ],
+        "discussion": "https://news.ycombinator.com/item?id=49537553",
         "flag": null
       }
     ],
     "dev": [
       {
-        "id": "hn-49535752",
-        "title": "A Note from LWN",
-        "url": "https://lwn.net/Articles/1090585/",
+        "id": "hn-49548395",
+        "title": "Audacity 4.0",
+        "url": "https://github.com/audacity/audacity/releases/tag/Audacity-4.0.0",
         "source": "Hacker News",
-        "date": "2026-09-02",
+        "date": "2026-09-03",
         "summary": "",
         "meta": [
-          "316 points",
-          "48 comments"
+          "542 points",
+          "137 comments"
         ],
-        "discussion": "https://news.ycombinator.com/item?id=49535752",
+        "discussion": "https://news.ycombinator.com/item?id=49548395",
         "flag": null
       },
       {
-        "id": "hn-49536384",
-        "title": "GrapheneOS says Pixel 11 has MTE support after all",
-        "url": "https://grapheneos.social/@GrapheneOS/117194007157499435",
+        "id": "hn-49550614",
+        "title": "ChatGPT Is Throwing 404",
+        "url": "https://chatgpt.com/",
         "source": "Hacker News",
-        "date": "2026-09-02",
+        "date": "2026-09-03",
         "summary": "",
         "meta": [
-          "48 points",
-          "30 comments"
+          "41 points",
+          "18 comments"
         ],
-        "discussion": "https://news.ycombinator.com/item?id=49536384",
+        "discussion": "https://news.ycombinator.com/item?id=49550614",
         "flag": null
       },
       {
-        "id": "hn-49536079",
-        "title": "Biggest dark matter detector spots a single weird particle",
-        "url": "https://www.science.org/content/article/world-s-biggest-dark-matter-detector-spots-single-weird-particle",
+        "id": "hn-49549676",
+        "title": "Elevated Errors for Multiple Models",
+        "url": "https://status.claude.com/incidents/461yvfrzpwtt",
         "source": "Hacker News",
-        "date": "2026-09-02",
+        "date": "2026-09-03",
         "summary": "",
         "meta": [
-          "49 points",
-          "1 comments"
+          "121 points",
+          "103 comments"
         ],
-        "discussion": "https://news.ycombinator.com/item?id=49536079",
+        "discussion": "https://news.ycombinator.com/item?id=49549676",
         "flag": null
       },
       {
-        "id": "hn-49536177",
-        "title": "Poisson Disk Sampling",
-        "url": "https://stripeacross.com/posts/poisson-disk-sampling/",
+        "id": "hn-49546753",
+        "title": "Pre-Release of Polars 2.0",
+        "url": "https://pola.rs/posts/announcing-polars-2/",
         "source": "Hacker News",
-        "date": "2026-09-02",
+        "date": "2026-09-03",
         "summary": "",
         "meta": [
-          "33 points",
-          "4 comments"
+          "294 points",
+          "94 comments"
         ],
-        "discussion": "https://news.ycombinator.com/item?id=49536177",
+        "discussion": "https://news.ycombinator.com/item?id=49546753",
         "flag": null
       },
       {
-        "id": "hn-49535284",
-        "title": "Mistral now trains on user input by default, except on enterprise tier",
-        "url": "https://help.mistral.ai/en/articles/455207-can-i-opt-out-of-my-input-or-output-data-being-used-for-training",
-        "source": "Hacker News",
-        "date": "2026-09-02",
-        "summary": "",
-        "meta": [
-          "96 points",
-          "59 comments"
-        ],
-        "discussion": "https://news.ycombinator.com/item?id=49535284",
-        "flag": null
-      },
-      {
-        "id": "hn-49533497",
-        "title": "Commodore 64 released September 1, 1982",
-        "url": "https://dfarq.homeip.net/commodore-64-released-september-1-1982/",
-        "source": "Hacker News",
-        "date": "2026-09-02",
-        "summary": "",
-        "meta": [
-          "216 points",
-          "112 comments"
-        ],
-        "discussion": "https://news.ycombinator.com/item?id=49533497",
-        "flag": null
-      },
-      {
-        "id": "hn-49535548",
-        "title": "Aging Brains Blend Memories Together Instead of Just Forgetting Them",
-        "url": "https://studyfinds.com/aging-brains-blend-memories-together-instead-of-forgetting-them-study-finds/",
-        "source": "Hacker News",
-        "date": "2026-09-02",
-        "summary": "",
-        "meta": [
-          "44 points",
-          "14 comments"
-        ],
-        "discussion": "https://news.ycombinator.com/item?id=49535548",
-        "flag": null
-      },
-      {
-        "id": "hn-49536606",
-        "title": "Exit the Cave",
-        "url": "https://turtlespace.blog/p/exit-the-cave",
-        "source": "Hacker News",
-        "date": "2026-09-02",
-        "summary": "",
-        "meta": [
-          "16 points",
-          "2 comments"
-        ],
-        "discussion": "https://news.ycombinator.com/item?id=49536606",
-        "flag": null
-      },
-      {
-        "id": "hn-49535526",
-        "title": "Dutch central bank moves share of gold from U.S., Canada to London",
-        "url": "https://nltimes.nl/2026/09/02/dutch-central-bank-moves-share-gold-us-canada-london-cites-instability",
-        "source": "Hacker News",
-        "date": "2026-09-02",
-        "summary": "",
-        "meta": [
-          "109 points",
-          "87 comments"
-        ],
-        "discussion": "https://news.ycombinator.com/item?id=49535526",
-        "flag": null
-      },
-      {
-        "id": "hn-49534921",
-        "title": "Ending my elixir exploratory writing",
-        "url": "https://lucassifoni.info/blog/the-end-of-this-elixir-log/",
-        "source": "Hacker News",
-        "date": "2026-09-02",
-        "summary": "",
-        "meta": [
-          "39 points",
-          "23 comments"
-        ],
-        "discussion": "https://news.ycombinator.com/item?id=49534921",
-        "flag": null
-      },
-      {
-        "id": "hn-49535721",
-        "title": "A Beginner's Deep Dive Guide to Entra Passkeys",
-        "url": "https://emsroute.com/2026/03/19/passkeys-beginners-101/",
-        "source": "Hacker News",
-        "date": "2026-09-02",
-        "summary": "",
-        "meta": [
-          "12 points",
-          "8 comments"
-        ],
-        "discussion": "https://news.ycombinator.com/item?id=49535721",
-        "flag": null
-      },
-      {
-        "id": "hn-49513856",
-        "title": "A Selection of Los Alamos Rolodex Business Cards",
-        "url": "https://clui.org/collections/los-alamos-business-cards/selection-cards",
-        "source": "Hacker News",
-        "date": "2026-08-31",
-        "summary": "",
-        "meta": [
-          "7 points",
-          "0 comments"
-        ],
-        "discussion": "https://news.ycombinator.com/item?id=49513856",
-        "flag": null
-      },
-      {
-        "id": "hn-49521590",
-        "title": "Move in C++ without a std:move",
-        "url": "https://andreasfertig.com/blog/2026/09/move-in-cpp-without-a-stdmove/",
+        "id": "hn-49522137",
+        "title": "The Browser's Main Thread Is Expensive",
+        "url": "https://kciter.so/posts/the-expensive-main-thread/en/",
         "source": "Hacker News",
         "date": "2026-09-01",
         "summary": "",
         "meta": [
-          "27 points",
-          "29 comments"
+          "256 points",
+          "86 comments"
         ],
-        "discussion": "https://news.ycombinator.com/item?id=49521590",
+        "discussion": "https://news.ycombinator.com/item?id=49522137",
         "flag": null
       },
       {
-        "id": "hn-49534041",
-        "title": "Banca Etica Suspends A/I's Account While Condemning the Sanctions Behind It",
-        "url": "https://sabot.media/post/banca-etica-statement-english",
+        "id": "hn-49521264",
+        "title": "Invisible Companies",
+        "url": "https://colossus.com/article/invisible-companies/",
+        "source": "Hacker News",
+        "date": "2026-09-01",
+        "summary": "",
+        "meta": [
+          "78 points",
+          "22 comments"
+        ],
+        "discussion": "https://news.ycombinator.com/item?id=49521264",
+        "flag": null
+      },
+      {
+        "id": "hn-49492796",
+        "title": "What I Learned from My Mom (1941-2026)",
+        "url": "https://experimentalliving.substack.com/p/what-i-learned-from-my-mom-1941-2026",
+        "source": "Hacker News",
+        "date": "2026-08-29",
+        "summary": "",
+        "meta": [
+          "152 points",
+          "8 comments"
+        ],
+        "discussion": "https://news.ycombinator.com/item?id=49492796",
+        "flag": null
+      },
+      {
+        "id": "hn-49505257",
+        "title": "Intrusive Linked Lists",
+        "url": "https://www.data-structures-in-practice.com/intrusive-linked-lists/",
+        "source": "Hacker News",
+        "date": "2026-08-31",
+        "summary": "",
+        "meta": [
+          "38 points",
+          "21 comments"
+        ],
+        "discussion": "https://news.ycombinator.com/item?id=49505257",
+        "flag": null
+      },
+      {
+        "id": "hn-49550769",
+        "title": "Codex Is Down",
+        "url": "https://github.com/openai/codex/issues/28756",
+        "source": "Hacker News",
+        "date": "2026-09-03",
+        "summary": "",
+        "meta": [
+          "11 points",
+          "2 comments"
+        ],
+        "discussion": "https://news.ycombinator.com/item?id=49550769",
+        "flag": null
+      },
+      {
+        "id": "hn-49541256",
+        "title": "Muse Spark 1.3",
+        "url": "https://developer.meta.com/ai/models/muse-spark/",
         "source": "Hacker News",
         "date": "2026-09-02",
         "summary": "",
         "meta": [
-          "39 points",
-          "21 comments"
+          "644 points",
+          "424 comments"
         ],
-        "discussion": "https://news.ycombinator.com/item?id=49534041",
+        "discussion": "https://news.ycombinator.com/item?id=49541256",
+        "flag": null
+      },
+      {
+        "id": "hn-49548952",
+        "title": "Nvidia to Acquire Hugging Face",
+        "url": "https://blogs.nvidia.com/blog/nvidia-to-acquire-hugging-face/",
+        "source": "Hacker News",
+        "date": "2026-09-03",
+        "summary": "",
+        "meta": [
+          "118 points",
+          "38 comments"
+        ],
+        "discussion": "https://news.ycombinator.com/item?id=49548952",
+        "flag": null
+      },
+      {
+        "id": "hn-49505306",
+        "title": "Amazon Stonehenge: Parque Arqueológico do Solstício",
+        "url": "https://en.wikipedia.org/wiki/Parque_Arqueol%C3%B3gico_do_Solst%C3%ADcio",
+        "source": "Hacker News",
+        "date": "2026-08-31",
+        "summary": "",
+        "meta": [
+          "17 points",
+          "6 comments"
+        ],
+        "discussion": "https://news.ycombinator.com/item?id=49505306",
+        "flag": null
+      },
+      {
+        "id": "hn-49513721",
+        "title": "Fish Bad, Sugar Good and Other Medieval Ideas About Food",
+        "url": "https://lithub.com/fish-bad-sugar-good-and-other-medieval-ideas-about-food/",
+        "source": "Hacker News",
+        "date": "2026-08-31",
+        "summary": "",
+        "meta": [
+          "62 points",
+          "44 comments"
+        ],
+        "discussion": "https://news.ycombinator.com/item?id=49513721",
+        "flag": null
+      },
+      {
+        "id": "hn-49537131",
+        "title": "Google avoids a breakup of its ad tech business",
+        "url": "https://www.nytimes.com/2026/09/02/technology/google-ad-tech-remedies.html",
+        "source": "Hacker News",
+        "date": "2026-09-02",
+        "summary": "",
+        "meta": [
+          "438 points",
+          "308 comments"
+        ],
+        "discussion": "https://news.ycombinator.com/item?id=49537131",
         "flag": null
       }
     ]
