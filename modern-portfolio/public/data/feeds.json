@@ -1,299 +1,283 @@
 {
-  "generatedAt": "2026-09-14T16:58:38.164Z",
+  "generatedAt": "2026-09-15T15:35:43.113Z",
   "log": [
     {
-      "t": "2026-09-14T16:57:43.211Z",
+      "t": "2026-09-15T15:34:10.280Z",
       "level": "info",
       "msg": "signal refresh started"
     },
     {
-      "t": "2026-09-14T16:57:43.215Z",
+      "t": "2026-09-15T15:34:10.285Z",
       "level": "info",
       "msg": "GET hacker-news.firebaseio.com/v0/topstories.json"
     },
     {
-      "t": "2026-09-14T16:57:43.369Z",
+      "t": "2026-09-15T15:34:10.526Z",
       "level": "info",
       "msg": "HTTP 200 · resolving top 60 story ids in batches of 10"
     },
     {
-      "t": "2026-09-14T16:57:43.758Z",
+      "t": "2026-09-15T15:34:10.838Z",
       "level": "info",
-      "msg": "60 of 60 resolved to usable stories · 543ms"
+      "msg": "59 of 60 resolved to usable stories · 553ms"
     },
     {
-      "t": "2026-09-14T16:57:43.759Z",
+      "t": "2026-09-15T15:34:10.839Z",
       "level": "info",
       "msg": "GET cisa.gov/feeds/known_exploited_vulnerabilities.json"
     },
     {
-      "t": "2026-09-14T16:57:43.854Z",
+      "t": "2026-09-15T15:34:11.028Z",
       "level": "info",
-      "msg": "HTTP 200 · catalog holds 1709 CVEs · 95ms"
+      "msg": "HTTP 200 · catalog holds 1710 CVEs · 189ms"
     },
     {
-      "t": "2026-09-14T16:57:43.857Z",
+      "t": "2026-09-15T15:34:11.032Z",
       "level": "info",
-      "msg": "fleet filter: 1008 of 1709 touch managed platforms"
+      "msg": "fleet filter: 1009 of 1710 touch managed platforms"
     },
     {
-      "t": "2026-09-14T16:57:43.866Z",
+      "t": "2026-09-15T15:34:11.040Z",
       "level": "info",
       "msg": "GET export.arxiv.org/api/query cat:cs.AI OR cat:cs.LG"
     },
     {
-      "t": "2026-09-14T16:58:13.866Z",
+      "t": "2026-09-15T15:34:41.042Z",
       "level": "warn",
       "msg": "arxiv attempt 1 failed (This operation was aborted), backing off 4s"
     },
     {
-      "t": "2026-09-14T16:58:30.008Z",
+      "t": "2026-09-15T15:35:15.047Z",
       "level": "warn",
-      "msg": "arxiv attempt 2 failed (https://export.arxiv.org/api/query?search_query=cat%3Acs.AI+OR+cat%3Acs.LG&sortBy=submittedDate&sortOrder=descending&max_results=12 responded 429), backing off 8s"
+      "msg": "arxiv attempt 2 failed (This operation was aborted), backing off 8s"
     },
     {
-      "t": "2026-09-14T16:58:38.162Z",
+      "t": "2026-09-15T15:35:43.111Z",
       "level": "error",
       "msg": "arxiv unreachable: https://export.arxiv.org/api/query?search_query=cat%3Acs.AI+OR+cat%3Acs.LG&sortBy=submittedDate&sortOrder=descending&max_results=12 responded 429"
     },
     {
-      "t": "2026-09-14T16:58:38.163Z",
+      "t": "2026-09-15T15:35:43.112Z",
       "level": "info",
-      "msg": "topic split: 17 AI stories, 43 general dev"
+      "msg": "topic split: 8 AI stories, 51 general dev"
     },
     {
-      "t": "2026-09-14T16:58:38.163Z",
+      "t": "2026-09-15T15:35:43.112Z",
       "level": "info",
       "msg": "--- security feed: 14 items ---"
     },
     {
-      "t": "2026-09-14T16:58:38.163Z",
+      "t": "2026-09-15T15:35:43.112Z",
+      "level": "info",
+      "msg": "ingest CISA KEV · Cisco Secure Email Gateway SQL Injection Vulnerability · 2026-09-14"
+    },
+    {
+      "t": "2026-09-15T15:35:43.112Z",
       "level": "info",
       "msg": "ingest CISA KEV · Citrix NetScaler Authentication Bypass Using an Alternate… · 2026-09-09"
     },
     {
-      "t": "2026-09-14T16:58:38.163Z",
+      "t": "2026-09-15T15:35:43.112Z",
       "level": "info",
       "msg": "ingest CISA KEV · Fortinet Multiple Products Heap-based Buffer Overflow Vul… · 2026-09-09"
     },
     {
-      "t": "2026-09-14T16:58:38.163Z",
+      "t": "2026-09-15T15:35:43.112Z",
       "level": "info",
       "msg": "ingest CISA KEV · Google Chromium V8 Out of Bounds Write Vulnerability · 2026-09-09"
     },
     {
-      "t": "2026-09-14T16:58:38.163Z",
+      "t": "2026-09-15T15:35:43.112Z",
       "level": "info",
       "msg": "ingest CISA KEV · Cisco Firewall Management Center Authentication Bypass Us… · 2026-09-09"
     },
     {
-      "t": "2026-09-14T16:58:38.163Z",
+      "t": "2026-09-15T15:35:43.112Z",
       "level": "info",
       "msg": "ingest CISA KEV · Microsoft Windows Link Following Vulnerability · 2026-09-08"
     },
     {
-      "t": "2026-09-14T16:58:38.163Z",
+      "t": "2026-09-15T15:35:43.112Z",
       "level": "info",
       "msg": "ingest CISA KEV · Microsoft Windows Heap-Based Buffer Overflow Vulnerability · 2026-09-08"
     },
     {
-      "t": "2026-09-14T16:58:38.163Z",
+      "t": "2026-09-15T15:35:43.112Z",
       "level": "info",
       "msg": "ingest CISA KEV · Google Chromium V8 Type Confusion Vulnerability · 2026-09-04"
     },
     {
-      "t": "2026-09-14T16:58:38.163Z",
+      "t": "2026-09-15T15:35:43.112Z",
       "level": "info",
       "msg": "ingest CISA KEV · SonicWall SMA1000 Appliances Server-Side Request Forgery… · 2026-09-02"
     },
     {
-      "t": "2026-09-14T16:58:38.163Z",
+      "t": "2026-09-15T15:35:43.112Z",
       "level": "info",
       "msg": "ingest CISA KEV · SonicWall SMA1000 Appliances OS Command Injection Vulnera… · 2026-09-02"
     },
     {
-      "t": "2026-09-14T16:58:38.163Z",
+      "t": "2026-09-15T15:35:43.112Z",
       "level": "info",
       "msg": "ingest CISA KEV · Linux Kernel Unspecified Vulnerability · 2026-08-27"
     },
     {
-      "t": "2026-09-14T16:58:38.163Z",
+      "t": "2026-09-15T15:35:43.112Z",
       "level": "info",
       "msg": "ingest CISA KEV · Red Hat Libuser Race Condition Vulnerability · 2026-08-26"
     },
     {
-      "t": "2026-09-14T16:58:38.163Z",
+      "t": "2026-09-15T15:35:43.112Z",
       "level": "info",
       "msg": "ingest CISA KEV · Red Hat Automatic Bug Reporting Tool Privilege Escalation… · 2026-08-26"
     },
     {
-      "t": "2026-09-14T16:58:38.163Z",
+      "t": "2026-09-15T15:35:43.113Z",
       "level": "info",
       "msg": "ingest CISA KEV · Linux Kernel Out-of-Bounds Write Vulnerability · 2026-08-26"
     },
     {
-      "t": "2026-09-14T16:58:38.163Z",
+      "t": "2026-09-15T15:35:43.113Z",
       "level": "info",
-      "msg": "ingest CISA KEV · Citrix NetScaler ADC and NetScaler Gateway Improper Restr… · 2026-08-26"
+      "msg": "--- ai feed: 8 items ---"
     },
     {
-      "t": "2026-09-14T16:58:38.163Z",
+      "t": "2026-09-15T15:35:43.113Z",
       "level": "info",
-      "msg": "--- ai feed: 14 items ---"
+      "msg": "ingest Hacker News · Sovereign: A Unified GPU Inference Substrate (Fractal Mem… · 2026-09-15"
     },
     {
-      "t": "2026-09-14T16:58:38.163Z",
+      "t": "2026-09-15T15:35:43.113Z",
       "level": "info",
-      "msg": "ingest Hacker News · Claude is a Contrarian · 2026-09-14"
+      "msg": "ingest Hacker News · AI is breaking our proxies for expertise · 2026-09-15"
     },
     {
-      "t": "2026-09-14T16:58:38.163Z",
+      "t": "2026-09-15T15:35:43.113Z",
       "level": "info",
-      "msg": "ingest Hacker News · Hacking AI customer service agents · 2026-09-14"
+      "msg": "ingest Hacker News · OpenAI buys smartphone camera maker Glass Imaging for $30… · 2026-09-15"
     },
     {
-      "t": "2026-09-14T16:58:38.163Z",
+      "t": "2026-09-15T15:35:43.113Z",
       "level": "info",
-      "msg": "ingest Hacker News · Why don't machine learning research agents overfit? · 2026-09-14"
+      "msg": "ingest Hacker News · Building your first LLM API call in Python (step by step) · 2026-09-15"
     },
     {
-      "t": "2026-09-14T16:58:38.163Z",
+      "t": "2026-09-15T15:35:43.113Z",
       "level": "info",
-      "msg": "ingest Hacker News · Adversarial Fashion Makes a Statement on AI Panopticon · 2026-09-14"
+      "msg": "ingest Hacker News · German companies rely almost exclusively on AI models and… · 2026-09-15"
     },
     {
-      "t": "2026-09-14T16:58:38.163Z",
+      "t": "2026-09-15T15:35:43.113Z",
       "level": "info",
-      "msg": "ingest Hacker News · When LLM judges agree, should we believe them? · 2026-09-14"
+      "msg": "ingest Hacker News · OpenAI Wants to Know If an AI Industry Slowdown Would Eve… · 2026-09-15"
     },
     {
-      "t": "2026-09-14T16:58:38.163Z",
+      "t": "2026-09-15T15:35:43.113Z",
       "level": "info",
-      "msg": "ingest Hacker News · Fitting Neural Textures and PBR Material Maps with ES (No… · 2026-09-14"
+      "msg": "ingest Hacker News · AI Regulation as Anthropic's Business Model · 2026-09-15"
     },
     {
-      "t": "2026-09-14T16:58:38.163Z",
+      "t": "2026-09-15T15:35:43.113Z",
       "level": "info",
-      "msg": "ingest Hacker News · For AI leaders Doom is a form of hype · 2026-09-14"
+      "msg": "ingest Hacker News · Dropping eBPF CPU Cost by About 90% with Memoization (Not… · 2026-09-14"
     },
     {
-      "t": "2026-09-14T16:58:38.163Z",
-      "level": "info",
-      "msg": "ingest Hacker News · Apple's Siri AI Can Be Swapped Out for Claude, ChatGPT, C… · 2026-09-14"
-    },
-    {
-      "t": "2026-09-14T16:58:38.163Z",
-      "level": "info",
-      "msg": "ingest Hacker News · China's Regulators Take Aim at \"AI Boyfriends\" · 2026-09-14"
-    },
-    {
-      "t": "2026-09-14T16:58:38.163Z",
-      "level": "info",
-      "msg": "ingest Hacker News · Show HN: Kinesis – Control your Mac with the Meta Neural… · 2026-09-14"
-    },
-    {
-      "t": "2026-09-14T16:58:38.163Z",
-      "level": "info",
-      "msg": "ingest Hacker News · Transitions.dev: UI transitions for AI agents · 2026-09-14"
-    },
-    {
-      "t": "2026-09-14T16:58:38.163Z",
-      "level": "info",
-      "msg": "ingest Hacker News · ProGantt: Gantt charts your AI agent can read and write v… · 2026-09-14"
-    },
-    {
-      "t": "2026-09-14T16:58:38.163Z",
-      "level": "info",
-      "msg": "ingest Hacker News · OpenArch – PyTorch implementations of modern LLM architec… · 2026-09-14"
-    },
-    {
-      "t": "2026-09-14T16:58:38.164Z",
-      "level": "info",
-      "msg": "ingest Hacker News · Anthropic tells investors it will be profitable for secon… · 2026-09-14"
-    },
-    {
-      "t": "2026-09-14T16:58:38.164Z",
+      "t": "2026-09-15T15:35:43.113Z",
       "level": "info",
       "msg": "--- dev feed: 14 items ---"
     },
     {
-      "t": "2026-09-14T16:58:38.164Z",
+      "t": "2026-09-15T15:35:43.113Z",
       "level": "info",
-      "msg": "ingest Hacker News · Blizzard Revives 'StarCraft' Franchise with Open-World Sc… · 2026-09-14"
+      "msg": "ingest Hacker News · Show HN: An e-ink frame that hears birds and draws them a… · 2026-09-15"
     },
     {
-      "t": "2026-09-14T16:58:38.164Z",
+      "t": "2026-09-15T15:35:43.113Z",
       "level": "info",
-      "msg": "ingest Hacker News · Distributed Systems Classics · 2026-09-14"
+      "msg": "ingest Hacker News · Show HN: Hacking a $20 4G wireless hotspot into a texting… · 2026-09-15"
     },
     {
-      "t": "2026-09-14T16:58:38.164Z",
+      "t": "2026-09-15T15:35:43.113Z",
       "level": "info",
-      "msg": "ingest Hacker News · Notes on gotchas while migrating 35kb preprompts from Opu… · 2026-09-14"
+      "msg": "ingest Hacker News · Java 27 Released · 2026-09-15"
     },
     {
-      "t": "2026-09-14T16:58:38.164Z",
+      "t": "2026-09-15T15:35:43.113Z",
       "level": "info",
-      "msg": "ingest Hacker News · Foundation Model Engineering: From Theory to Production · 2026-09-14"
+      "msg": "ingest Hacker News · Show HN: Capsule – Single-file web apps that save their d… · 2026-09-15"
     },
     {
-      "t": "2026-09-14T16:58:38.164Z",
+      "t": "2026-09-15T15:35:43.113Z",
       "level": "info",
-      "msg": "ingest Hacker News · What a time to be alive · 2026-09-14"
+      "msg": "ingest Hacker News · I can't stop thinking about Papua New Guinea · 2026-09-15"
     },
     {
-      "t": "2026-09-14T16:58:38.164Z",
+      "t": "2026-09-15T15:35:43.113Z",
       "level": "info",
-      "msg": "ingest Hacker News · Principles for Fast Tokio Applications · 2026-09-14"
+      "msg": "ingest Hacker News · Global bond yields hit 2008 highs, raising stakes for big… · 2026-09-15"
     },
     {
-      "t": "2026-09-14T16:58:38.164Z",
+      "t": "2026-09-15T15:35:43.113Z",
       "level": "info",
-      "msg": "ingest Hacker News · Show HN: Fly.exe – An EON systems like virtual fruit fly… · 2026-09-14"
+      "msg": "ingest Hacker News · Show HN: Panel – A research workspace where the agent can… · 2026-09-15"
     },
     {
-      "t": "2026-09-14T16:58:38.164Z",
+      "t": "2026-09-15T15:35:43.113Z",
       "level": "info",
-      "msg": "ingest Hacker News · Show HN: Neobrutalism.dev – just added Base UI support an… · 2026-09-14"
+      "msg": "ingest Hacker News · 25 Years of Mass Surveillance Is Enough · 2026-09-15"
     },
     {
-      "t": "2026-09-14T16:58:38.164Z",
+      "t": "2026-09-15T15:35:43.113Z",
       "level": "info",
-      "msg": "ingest Hacker News · An atlas of periodic solutions to the three-body problem · 2026-09-12"
+      "msg": "ingest Hacker News · Alternatives to MinIO for single-node local S3 · 2026-09-15"
     },
     {
-      "t": "2026-09-14T16:58:38.164Z",
+      "t": "2026-09-15T15:35:43.113Z",
       "level": "info",
-      "msg": "ingest Hacker News · EuroBirdPortal – Live bird movements across Europe · 2026-09-14"
+      "msg": "ingest Hacker News · Sony's First Computer – The SMC-70 from 1982 [video] · 2026-09-13"
     },
     {
-      "t": "2026-09-14T16:58:38.164Z",
+      "t": "2026-09-15T15:35:43.113Z",
       "level": "info",
-      "msg": "ingest Hacker News · Show HN: Pelican-bicycle alternatives (updated for 2026) · 2026-09-14"
+      "msg": "ingest Hacker News · CSS-Tricks in Limbo · 2026-09-15"
     },
     {
-      "t": "2026-09-14T16:58:38.164Z",
+      "t": "2026-09-15T15:35:43.113Z",
       "level": "info",
-      "msg": "ingest Hacker News · A 386 PC for Your RP2350 · 2026-09-14"
+      "msg": "ingest Hacker News · A Man Archiving Pirate Radio Station Kool FM · 2026-09-14"
     },
     {
-      "t": "2026-09-14T16:58:38.164Z",
+      "t": "2026-09-15T15:35:43.113Z",
       "level": "info",
-      "msg": "ingest Hacker News · Devil's Arrows: Ancient builders hauled 55k-lb stones 11… · 2026-09-11"
+      "msg": "ingest Hacker News · Suspected sabotage causes major Netherlands rail disrupti… · 2026-09-15"
     },
     {
-      "t": "2026-09-14T16:58:38.164Z",
+      "t": "2026-09-15T15:35:43.113Z",
       "level": "info",
-      "msg": "ingest Hacker News · XCancel service is suspended until further notice · 2026-09-14"
+      "msg": "ingest Hacker News · OpenArm: An open-source 7DOF humanoid arm · 2026-09-13"
     },
     {
-      "t": "2026-09-14T16:58:38.164Z",
+      "t": "2026-09-15T15:35:43.113Z",
       "level": "info",
-      "msg": "publishing 42 items across 3 feeds · 54953ms"
+      "msg": "publishing 36 items across 3 feeds · 92833ms"
     }
   ],
   "feeds": {
     "security": [
+      {
+        "id": "CVE-2026-76461",
+        "title": "Cisco Secure Email Gateway SQL Injection Vulnerability",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-76461",
+        "source": "CISA KEV",
+        "date": "2026-09-14",
+        "summary": "Cisco AsyncOS software for Cisco Secure Email Gateway (SEG) contains a SQL injection vulnerability that could allow an unauthenticated, remote attacker to execute arbitrary commands with root privileges on the underlying operating system.",
+        "meta": [
+          "Network edge / VPN",
+          "Cisco",
+          "Patch by 2026-09-17"
+        ],
+        "flag": null
+      },
       {
         "id": "CVE-2026-19490",
         "title": "Citrix NetScaler Authentication Bypass Using an Alternate Path or Channel Vulnerability",
@@ -475,415 +459,317 @@
           "Patch by 2026-09-09"
         ],
         "flag": null
-      },
-      {
-        "id": "CVE-2026-8452",
-        "title": "Citrix NetScaler ADC and NetScaler Gateway Improper Restriction of Operations within the Bounds of a Memory Buffer Vulnerability",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-8452",
-        "source": "CISA KEV",
-        "date": "2026-08-26",
-        "summary": "Citrix NetScaler ADC and NetScaler Gateway contain an improper restriction of operations within the bounds of a memory buffer vulnerability which could lead to denial of service.",
-        "meta": [
-          "Network edge / VPN",
-          "Citrix",
-          "Patch by 2026-08-29"
-        ],
-        "flag": null
       }
     ],
     "ai": [
       {
-        "id": "hn-49699373",
-        "title": "Claude is a Contrarian",
-        "url": "https://medium.com/@rdsubhas/claude-is-a-contrarian-dbce4de5cada",
+        "id": "hn-49712596",
+        "title": "Sovereign: A Unified GPU Inference Substrate (Fractal Memory, Manifold Routing)",
+        "url": "https://github.com/CuppaTea1983/Sovereign/tree/V1",
         "source": "Hacker News",
-        "date": "2026-09-14",
+        "date": "2026-09-15",
         "summary": "",
         "meta": [
-          "26 points",
-          "11 comments"
-        ],
-        "discussion": "https://news.ycombinator.com/item?id=49699373",
-        "flag": null
-      },
-      {
-        "id": "hn-49699526",
-        "title": "Hacking AI customer service agents",
-        "url": "https://www.intigriti.com/researchers/blog/hacking-tools/hacking-ai-customer-service-agents",
-        "source": "Hacker News",
-        "date": "2026-09-14",
-        "summary": "",
-        "meta": [
-          "21 points",
-          "1 comments"
-        ],
-        "discussion": "https://news.ycombinator.com/item?id=49699526",
-        "flag": null
-      },
-      {
-        "id": "hn-49699648",
-        "title": "Why don't machine learning research agents overfit?",
-        "url": "https://www.amazon.science/blog/why-dont-machine-learning-research-agents-overfit",
-        "source": "Hacker News",
-        "date": "2026-09-14",
-        "summary": "",
-        "meta": [
-          "9 points",
-          "1 comments"
-        ],
-        "discussion": "https://news.ycombinator.com/item?id=49699648",
-        "flag": null
-      },
-      {
-        "id": "hn-49697094",
-        "title": "Adversarial Fashion Makes a Statement on AI Panopticon",
-        "url": "https://spectrum.ieee.org/adversarial-fashion",
-        "source": "Hacker News",
-        "date": "2026-09-14",
-        "summary": "",
-        "meta": [
-          "36 points",
-          "18 comments"
-        ],
-        "discussion": "https://news.ycombinator.com/item?id=49697094",
-        "flag": null
-      },
-      {
-        "id": "hn-49699590",
-        "title": "When LLM judges agree, should we believe them?",
-        "url": "https://www.amazon.science/blog/when-llm-judges-agree-should-we-believe-them",
-        "source": "Hacker News",
-        "date": "2026-09-14",
-        "summary": "",
-        "meta": [
-          "6 points",
+          "5 points",
           "0 comments"
         ],
-        "discussion": "https://news.ycombinator.com/item?id=49699590",
+        "discussion": "https://news.ycombinator.com/item?id=49712596",
         "flag": null
       },
       {
-        "id": "hn-49699696",
-        "title": "Fitting Neural Textures and PBR Material Maps with ES (No Backprop)",
-        "url": "http://richg42.blogspot.com/2026/09/fitting-neural-texture-and-pbr-material.html",
+        "id": "hn-49712416",
+        "title": "AI is breaking our proxies for expertise",
+        "url": "https://www.seangoedecke.com/ai-is-breaking-our-proxies-for-expertise/",
         "source": "Hacker News",
-        "date": "2026-09-14",
-        "summary": "",
-        "meta": [
-          "3 points",
-          "0 comments"
-        ],
-        "discussion": "https://news.ycombinator.com/item?id=49699696",
-        "flag": null
-      },
-      {
-        "id": "hn-49699384",
-        "title": "For AI leaders Doom is a form of hype",
-        "url": "https://erkansaka.net/2026/09/10/ai-doom-rhetoric-safety-hype/",
-        "source": "Hacker News",
-        "date": "2026-09-14",
-        "summary": "",
-        "meta": [
-          "98 points",
-          "66 comments"
-        ],
-        "discussion": "https://news.ycombinator.com/item?id=49699384",
-        "flag": null
-      },
-      {
-        "id": "hn-49695409",
-        "title": "Apple's Siri AI Can Be Swapped Out for Claude, ChatGPT, Code Shows",
-        "url": "https://www.macrumors.com/2026/09/14/siri-can-be-swapped-out-for-chatgpt-claude/",
-        "source": "Hacker News",
-        "date": "2026-09-14",
-        "summary": "",
-        "meta": [
-          "199 points",
-          "116 comments"
-        ],
-        "discussion": "https://news.ycombinator.com/item?id=49695409",
-        "flag": null
-      },
-      {
-        "id": "hn-49698664",
-        "title": "China's Regulators Take Aim at \"AI Boyfriends\"",
-        "url": "https://spectrum.ieee.org/china-ai-chatbot-regulation",
-        "source": "Hacker News",
-        "date": "2026-09-14",
-        "summary": "",
-        "meta": [
-          "33 points",
-          "13 comments"
-        ],
-        "discussion": "https://news.ycombinator.com/item?id=49698664",
-        "flag": null
-      },
-      {
-        "id": "hn-49695408",
-        "title": "Show HN: Kinesis – Control your Mac with the Meta Neural Band",
-        "url": "https://github.com/callbacked/kinesis",
-        "source": "Hacker News",
-        "date": "2026-09-14",
-        "summary": "",
-        "meta": [
-          "95 points",
-          "29 comments"
-        ],
-        "discussion": "https://news.ycombinator.com/item?id=49695408",
-        "flag": null
-      },
-      {
-        "id": "hn-49698443",
-        "title": "Transitions.dev: UI transitions for AI agents",
-        "url": "https://transitions.dev/",
-        "source": "Hacker News",
-        "date": "2026-09-14",
-        "summary": "",
-        "meta": [
-          "6 points",
-          "0 comments"
-        ],
-        "discussion": "https://news.ycombinator.com/item?id=49698443",
-        "flag": null
-      },
-      {
-        "id": "hn-49698952",
-        "title": "ProGantt: Gantt charts your AI agent can read and write via MCP",
-        "url": "https://progantt.com",
-        "source": "Hacker News",
-        "date": "2026-09-14",
-        "summary": "",
-        "meta": [
-          "4 points",
-          "5 comments"
-        ],
-        "discussion": "https://news.ycombinator.com/item?id=49698952",
-        "flag": null
-      },
-      {
-        "id": "hn-49693384",
-        "title": "OpenArch – PyTorch implementations of modern LLM architectures",
-        "url": "https://github.com/anuj0456/OpenArch",
-        "source": "Hacker News",
-        "date": "2026-09-14",
-        "summary": "",
-        "meta": [
-          "121 points",
-          "29 comments"
-        ],
-        "discussion": "https://news.ycombinator.com/item?id=49693384",
-        "flag": null
-      },
-      {
-        "id": "hn-49698936",
-        "title": "Anthropic tells investors it will be profitable for second straight quarter",
-        "url": "https://www.reuters.com/business/retail-consumer/anthropic-tells-investors-it-will-be-profitable-second-straight-quarter-ft-2026-09-13/",
-        "source": "Hacker News",
-        "date": "2026-09-14",
+        "date": "2026-09-15",
         "summary": "",
         "meta": [
           "41 points",
-          "49 comments"
+          "12 comments"
         ],
-        "discussion": "https://news.ycombinator.com/item?id=49698936",
+        "discussion": "https://news.ycombinator.com/item?id=49712416",
+        "flag": null
+      },
+      {
+        "id": "hn-49711240",
+        "title": "OpenAI buys smartphone camera maker Glass Imaging for $300M",
+        "url": "https://techcrunch.com/2026/09/14/openai-buys-smartphone-camera-maker-glass-imaging-for-300-million-report-says/",
+        "source": "Hacker News",
+        "date": "2026-09-15",
+        "summary": "",
+        "meta": [
+          "90 points",
+          "60 comments"
+        ],
+        "discussion": "https://news.ycombinator.com/item?id=49711240",
+        "flag": null
+      },
+      {
+        "id": "hn-49713671",
+        "title": "Building your first LLM API call in Python (step by step)",
+        "url": "https://heymeraki.substack.com/p/aie_10-building-it",
+        "source": "Hacker News",
+        "date": "2026-09-15",
+        "summary": "",
+        "meta": [
+          "5 points",
+          "1 comments"
+        ],
+        "discussion": "https://news.ycombinator.com/item?id=49713671",
+        "flag": null
+      },
+      {
+        "id": "hn-49712719",
+        "title": "German companies rely almost exclusively on AI models and services from the USA",
+        "url": "https://www.heise.de/en/news/US-AI-dominates-companies-China-models-hardly-used-EU-AI-plays-no-role-11446969.html",
+        "source": "Hacker News",
+        "date": "2026-09-15",
+        "summary": "",
+        "meta": [
+          "13 points",
+          "13 comments"
+        ],
+        "discussion": "https://news.ycombinator.com/item?id=49712719",
+        "flag": null
+      },
+      {
+        "id": "hn-49713132",
+        "title": "OpenAI Wants to Know If an AI Industry Slowdown Would Even Be Legal",
+        "url": "https://www.wired.com/story/openai-wants-to-know-if-an-ai-industry-slowdown-would-even-be-legal/",
+        "source": "Hacker News",
+        "date": "2026-09-15",
+        "summary": "",
+        "meta": [
+          "6 points",
+          "1 comments"
+        ],
+        "discussion": "https://news.ycombinator.com/item?id=49713132",
+        "flag": null
+      },
+      {
+        "id": "hn-49712120",
+        "title": "AI Regulation as Anthropic's Business Model",
+        "url": "https://twitter.com/kevinnbass/status/2099621874279817638",
+        "source": "Hacker News",
+        "date": "2026-09-15",
+        "summary": "",
+        "meta": [
+          "17 points",
+          "0 comments"
+        ],
+        "discussion": "https://news.ycombinator.com/item?id=49712120",
+        "flag": null
+      },
+      {
+        "id": "hn-49697477",
+        "title": "Dropping eBPF CPU Cost by About 90% with Memoization (Not AI Gen)",
+        "url": "https://nathannaveen.dev/posts/dropping-ebpf-cpu-cost-by-90/",
+        "source": "Hacker News",
+        "date": "2026-09-14",
+        "summary": "",
+        "meta": [
+          "146 points",
+          "29 comments"
+        ],
+        "discussion": "https://news.ycombinator.com/item?id=49697477",
         "flag": null
       }
     ],
     "dev": [
       {
-        "id": "hn-49699671",
-        "title": "Blizzard Revives 'StarCraft' Franchise with Open-World Sci-Fi Shooter",
-        "url": "https://hypebeast.com/2026/9/blizzard-open-world-starcraft-sci-fi-shooter-2030-release-info-teaser-revealed",
+        "id": "hn-49711544",
+        "title": "Show HN: An e-ink frame that hears birds and draws them as 1800s illustrations",
+        "url": "https://github.com/arnegiacomo/fugleramme",
         "source": "Hacker News",
-        "date": "2026-09-14",
+        "date": "2026-09-15",
         "summary": "",
         "meta": [
-          "30 points",
-          "29 comments"
+          "432 points",
+          "74 comments"
         ],
-        "discussion": "https://news.ycombinator.com/item?id=49699671",
+        "discussion": "https://news.ycombinator.com/item?id=49711544",
         "flag": null
       },
       {
-        "id": "hn-49699158",
-        "title": "Distributed Systems Classics",
-        "url": "https://nvartolomei.com/dist-sys-classics/",
+        "id": "hn-49712102",
+        "title": "Show HN: Hacking a $20 4G wireless hotspot into a texting device",
+        "url": "https://bkovac.github.io/modem-thing/",
         "source": "Hacker News",
-        "date": "2026-09-14",
+        "date": "2026-09-15",
         "summary": "",
         "meta": [
-          "30 points",
+          "70 points",
+          "5 comments"
+        ],
+        "discussion": "https://news.ycombinator.com/item?id=49712102",
+        "flag": null
+      },
+      {
+        "id": "hn-49712041",
+        "title": "Java 27 Released",
+        "url": "https://mail.openjdk.org/archives/list/announce@openjdk.org/thread/ORGGLMN75HFEWP7YL3ZLGHLYHVIBJDYT/",
+        "source": "Hacker News",
+        "date": "2026-09-15",
+        "summary": "",
+        "meta": [
+          "186 points",
+          "139 comments"
+        ],
+        "discussion": "https://news.ycombinator.com/item?id=49712041",
+        "flag": null
+      },
+      {
+        "id": "hn-49712278",
+        "title": "Show HN: Capsule – Single-file web apps that save their data into SQLite",
+        "url": "https://withcapsule.app/",
+        "source": "Hacker News",
+        "date": "2026-09-15",
+        "summary": "",
+        "meta": [
+          "80 points",
+          "34 comments"
+        ],
+        "discussion": "https://news.ycombinator.com/item?id=49712278",
+        "flag": null
+      },
+      {
+        "id": "hn-49708431",
+        "title": "I can't stop thinking about Papua New Guinea",
+        "url": "https://notnottalmud.substack.com/p/why-i-cant-stop-thinking-about-papua",
+        "source": "Hacker News",
+        "date": "2026-09-15",
+        "summary": "",
+        "meta": [
+          "643 points",
+          "273 comments"
+        ],
+        "discussion": "https://news.ycombinator.com/item?id=49708431",
+        "flag": null
+      },
+      {
+        "id": "hn-49712746",
+        "title": "Global bond yields hit 2008 highs, raising stakes for big borrowers",
+        "url": "https://www.reuters.com/world/asia-pacific/bond-selloff-drives-us-benchmark-beyond-5-stocks-rattled-2026-09-15/",
+        "source": "Hacker News",
+        "date": "2026-09-15",
+        "summary": "",
+        "meta": [
+          "73 points",
+          "49 comments"
+        ],
+        "discussion": "https://news.ycombinator.com/item?id=49712746",
+        "flag": null
+      },
+      {
+        "id": "hn-49712621",
+        "title": "Show HN: Panel – A research workspace where the agent can build its own panes",
+        "url": "https://github.com/greentfrapp/panel",
+        "source": "Hacker News",
+        "date": "2026-09-15",
+        "summary": "",
+        "meta": [
+          "19 points",
           "4 comments"
         ],
-        "discussion": "https://news.ycombinator.com/item?id=49699158",
+        "discussion": "https://news.ycombinator.com/item?id=49712621",
         "flag": null
       },
       {
-        "id": "hn-49697014",
-        "title": "Notes on gotchas while migrating 35kb preprompts from Opus to self-hosted Ollama",
-        "url": "https://patrickmccanna.net/notes-on-migrating-large-prompts-away-from-anthropic-openai-to-self-hosted-llms/",
+        "id": "hn-49710883",
+        "title": "25 Years of Mass Surveillance Is Enough",
+        "url": "https://www.schneier.com/blog/archives/2026/09/25-years-of-mass-surveillance-is-enough.html",
         "source": "Hacker News",
-        "date": "2026-09-14",
+        "date": "2026-09-15",
         "summary": "",
         "meta": [
-          "72 points",
-          "29 comments"
+          "381 points",
+          "104 comments"
         ],
-        "discussion": "https://news.ycombinator.com/item?id=49697014",
+        "discussion": "https://news.ycombinator.com/item?id=49710883",
         "flag": null
       },
       {
-        "id": "hn-49698603",
-        "title": "Foundation Model Engineering: From Theory to Production",
-        "url": "https://sungeuns.github.io/foundation-model-engineering/",
+        "id": "hn-49709381",
+        "title": "Alternatives to MinIO for single-node local S3",
+        "url": "https://rmoff.net/2026/01/14/alternatives-to-minio-for-single-node-local-s3/",
         "source": "Hacker News",
-        "date": "2026-09-14",
+        "date": "2026-09-15",
         "summary": "",
         "meta": [
-          "26 points",
-          "2 comments"
+          "150 points",
+          "71 comments"
         ],
-        "discussion": "https://news.ycombinator.com/item?id=49698603",
+        "discussion": "https://news.ycombinator.com/item?id=49709381",
         "flag": null
       },
       {
-        "id": "hn-49695876",
-        "title": "What a time to be alive",
-        "url": "https://tenderlovemaking.com/2026/09/11/what-a-time-to-be-alive/",
+        "id": "hn-49680428",
+        "title": "Sony's First Computer – The SMC-70 from 1982 [video]",
+        "url": "https://www.youtube.com/watch?v=cT2-7KkPkBc",
         "source": "Hacker News",
-        "date": "2026-09-14",
+        "date": "2026-09-13",
         "summary": "",
         "meta": [
-          "127 points",
-          "168 comments"
-        ],
-        "discussion": "https://news.ycombinator.com/item?id=49695876",
-        "flag": null
-      },
-      {
-        "id": "hn-49698607",
-        "title": "Principles for Fast Tokio Applications",
-        "url": "https://dial9-rs.github.io/blog/principles-for-fast-tokio-applications/",
-        "source": "Hacker News",
-        "date": "2026-09-14",
-        "summary": "",
-        "meta": [
-          "31 points",
-          "8 comments"
-        ],
-        "discussion": "https://news.ycombinator.com/item?id=49698607",
-        "flag": null
-      },
-      {
-        "id": "hn-49699075",
-        "title": "Show HN: Fly.exe – An EON systems like virtual fruit fly uploaded to computer",
-        "url": "https://github.com/Ibtisam-Mohammad/Fly.exe",
-        "source": "Hacker News",
-        "date": "2026-09-14",
-        "summary": "",
-        "meta": [
-          "7 points",
-          "0 comments"
-        ],
-        "discussion": "https://news.ycombinator.com/item?id=49699075",
-        "flag": null
-      },
-      {
-        "id": "hn-49699159",
-        "title": "Show HN: Neobrutalism.dev – just added Base UI support and added new color theme",
-        "url": "https://www.neobrutalism.dev/",
-        "source": "Hacker News",
-        "date": "2026-09-14",
-        "summary": "",
-        "meta": [
-          "13 points",
+          "27 points",
           "1 comments"
         ],
-        "discussion": "https://news.ycombinator.com/item?id=49699159",
+        "discussion": "https://news.ycombinator.com/item?id=49680428",
         "flag": null
       },
       {
-        "id": "hn-49670852",
-        "title": "An atlas of periodic solutions to the three-body problem",
-        "url": "https://www.threebodyorbits.com/",
+        "id": "hn-49708993",
+        "title": "CSS-Tricks in Limbo",
+        "url": "https://vale.rocks/micros/20260915-0135",
         "source": "Hacker News",
-        "date": "2026-09-12",
+        "date": "2026-09-15",
         "summary": "",
         "meta": [
-          "231 points",
-          "52 comments"
+          "172 points",
+          "67 comments"
         ],
-        "discussion": "https://news.ycombinator.com/item?id=49670852",
+        "discussion": "https://news.ycombinator.com/item?id=49708993",
         "flag": null
       },
       {
-        "id": "hn-49693610",
-        "title": "EuroBirdPortal – Live bird movements across Europe",
-        "url": "https://www.eurobirdportal.org/ebp/en/",
-        "source": "Hacker News",
-        "date": "2026-09-14",
-        "summary": "",
-        "meta": [
-          "190 points",
-          "52 comments"
-        ],
-        "discussion": "https://news.ycombinator.com/item?id=49693610",
-        "flag": null
-      },
-      {
-        "id": "hn-49696402",
-        "title": "Show HN: Pelican-bicycle alternatives (updated for 2026)",
-        "url": "https://gally.net/temp/20260914pelican-alternatives/index.html",
+        "id": "hn-49694382",
+        "title": "A Man Archiving Pirate Radio Station Kool FM",
+        "url": "https://londonist.com/london/music/kool-fm-archives",
         "source": "Hacker News",
         "date": "2026-09-14",
         "summary": "",
         "meta": [
-          "54 points",
-          "19 comments"
+          "15 points",
+          "2 comments"
         ],
-        "discussion": "https://news.ycombinator.com/item?id=49696402",
+        "discussion": "https://news.ycombinator.com/item?id=49694382",
         "flag": null
       },
       {
-        "id": "hn-49693613",
-        "title": "A 386 PC for Your RP2350",
-        "url": "https://github.com/rh1tech/frank-386",
+        "id": "hn-49710253",
+        "title": "Suspected sabotage causes major Netherlands rail disruption",
+        "url": "https://www.bbc.com/news/articles/c8ly49w9g1edo",
         "source": "Hacker News",
-        "date": "2026-09-14",
+        "date": "2026-09-15",
         "summary": "",
         "meta": [
-          "169 points",
-          "48 comments"
+          "324 points",
+          "303 comments"
         ],
-        "discussion": "https://news.ycombinator.com/item?id=49693613",
+        "discussion": "https://news.ycombinator.com/item?id=49710253",
         "flag": null
       },
       {
-        "id": "hn-49659557",
-        "title": "Devil's Arrows: Ancient builders hauled 55k-lb stones 11 miles for UK stone row",
-        "url": "https://www.sciencedaily.com/releases/2026/09/260909005152.htm",
+        "id": "hn-49684289",
+        "title": "OpenArm: An open-source 7DOF humanoid arm",
+        "url": "https://github.com/enactic/OpenArm",
         "source": "Hacker News",
-        "date": "2026-09-11",
+        "date": "2026-09-13",
         "summary": "",
         "meta": [
-          "39 points",
-          "27 comments"
+          "177 points",
+          "36 comments"
         ],
-        "discussion": "https://news.ycombinator.com/item?id=49659557",
-        "flag": null
-      },
-      {
-        "id": "hn-49694296",
-        "title": "XCancel service is suspended until further notice",
-        "url": "https://xcancel.com/#",
-        "source": "Hacker News",
-        "date": "2026-09-14",
-        "summary": "",
-        "meta": [
-          "103 points",
-          "354 comments"
-        ],
-        "discussion": "https://news.ycombinator.com/item?id=49694296",
+        "discussion": "https://news.ycombinator.com/item?id=49684289",
         "flag": null
       }
     ]
