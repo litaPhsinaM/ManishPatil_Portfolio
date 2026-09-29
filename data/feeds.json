@@ -1,289 +1,303 @@
 {
-  "generatedAt": "2026-09-28T18:36:07.391Z",
+  "generatedAt": "2026-09-29T16:53:58.324Z",
   "log": [
     {
-      "t": "2026-09-28T18:36:06.063Z",
+      "t": "2026-09-29T16:53:42.000Z",
       "level": "info",
       "msg": "signal refresh started"
     },
     {
-      "t": "2026-09-28T18:36:06.068Z",
+      "t": "2026-09-29T16:53:42.004Z",
       "level": "info",
       "msg": "GET hacker-news.firebaseio.com/v0/topstories.json"
     },
     {
-      "t": "2026-09-28T18:36:06.342Z",
+      "t": "2026-09-29T16:53:42.254Z",
       "level": "info",
       "msg": "HTTP 200 · resolving top 60 story ids in batches of 10"
     },
     {
-      "t": "2026-09-28T18:36:06.947Z",
+      "t": "2026-09-29T16:53:42.660Z",
       "level": "info",
-      "msg": "60 of 60 resolved to usable stories · 879ms"
+      "msg": "60 of 60 resolved to usable stories · 656ms"
     },
     {
-      "t": "2026-09-28T18:36:06.948Z",
+      "t": "2026-09-29T16:53:42.661Z",
       "level": "info",
       "msg": "GET cisa.gov/feeds/known_exploited_vulnerabilities.json"
     },
     {
-      "t": "2026-09-28T18:36:07.072Z",
+      "t": "2026-09-29T16:53:42.769Z",
       "level": "info",
-      "msg": "HTTP 200 · catalog holds 1728 CVEs · 124ms"
+      "msg": "HTTP 200 · catalog holds 1729 CVEs · 108ms"
     },
     {
-      "t": "2026-09-28T18:36:07.079Z",
+      "t": "2026-09-29T16:53:42.772Z",
       "level": "info",
-      "msg": "fleet filter: 1020 of 1728 touch managed platforms"
+      "msg": "fleet filter: 1021 of 1729 touch managed platforms"
     },
     {
-      "t": "2026-09-28T18:36:07.088Z",
+      "t": "2026-09-29T16:53:42.780Z",
       "level": "info",
       "msg": "GET export.arxiv.org/api/query cat:cs.AI OR cat:cs.LG"
     },
     {
-      "t": "2026-09-28T18:36:07.389Z",
+      "t": "2026-09-29T16:53:58.322Z",
       "level": "info",
-      "msg": "HTTP 200 · 26,870 bytes of Atom XML · 301ms"
+      "msg": "HTTP 200 · 33,685 bytes of Atom XML · 15542ms"
     },
     {
-      "t": "2026-09-28T18:36:07.390Z",
+      "t": "2026-09-29T16:53:58.323Z",
       "level": "info",
-      "msg": "topic split: 10 AI stories, 50 general dev"
+      "msg": "topic split: 7 AI stories, 53 general dev"
     },
     {
-      "t": "2026-09-28T18:36:07.390Z",
+      "t": "2026-09-29T16:53:58.323Z",
       "level": "info",
       "msg": "--- security feed: 14 items ---"
     },
     {
-      "t": "2026-09-28T18:36:07.390Z",
+      "t": "2026-09-29T16:53:58.323Z",
+      "level": "info",
+      "msg": "ingest CISA KEV · Apple Multiple Products Out-of-Bounds Write Vulnerability · 2026-09-29"
+    },
+    {
+      "t": "2026-09-29T16:53:58.323Z",
       "level": "info",
       "msg": "ingest CISA KEV · Citrix NetScaler Improper Restriction of Operations withi… · 2026-09-27"
     },
     {
-      "t": "2026-09-28T18:36:07.390Z",
+      "t": "2026-09-29T16:53:58.323Z",
       "level": "info",
       "msg": "ingest CISA KEV · Citrix NetScaler Improper Input Validation Vulnerability · 2026-09-27"
     },
     {
-      "t": "2026-09-28T18:36:07.390Z",
+      "t": "2026-09-29T16:53:58.323Z",
       "level": "info",
       "msg": "ingest CISA KEV · Microsoft SharePoint Code Injection Vulnerability · 2026-09-25"
     },
     {
-      "t": "2026-09-28T18:36:07.390Z",
+      "t": "2026-09-29T16:53:58.323Z",
       "level": "info",
       "msg": "ingest CISA KEV · WordPress Core Remote File Inclusion Vulnerability · 2026-09-25"
     },
     {
-      "t": "2026-09-28T18:36:07.390Z",
+      "t": "2026-09-29T16:53:58.323Z",
       "level": "info",
       "msg": "ingest CISA KEV · F5 BIG-IP APM Heap-based Buffer Overflow Vulnerability · 2026-09-22"
     },
     {
-      "t": "2026-09-28T18:36:07.390Z",
+      "t": "2026-09-29T16:53:58.323Z",
       "level": "info",
       "msg": "ingest CISA KEV · Zyxel GS1900 Series Switches Stack-Based Buffer Overflow… · 2026-09-21"
     },
     {
-      "t": "2026-09-28T18:36:07.390Z",
+      "t": "2026-09-29T16:53:58.323Z",
       "level": "info",
       "msg": "ingest CISA KEV · Linux Kernel Race Condition Vulnerability · 2026-09-18"
     },
     {
-      "t": "2026-09-28T18:36:07.390Z",
+      "t": "2026-09-29T16:53:58.323Z",
       "level": "info",
       "msg": "ingest CISA KEV · Linux Kernel Out-of-Bounds Write Vulnerability · 2026-09-18"
     },
     {
-      "t": "2026-09-28T18:36:07.390Z",
+      "t": "2026-09-29T16:53:58.323Z",
       "level": "info",
       "msg": "ingest CISA KEV · Linux Kernel Improper Check for Unusual or Exceptional Co… · 2026-09-18"
     },
     {
-      "t": "2026-09-28T18:36:07.390Z",
+      "t": "2026-09-29T16:53:58.323Z",
       "level": "info",
       "msg": "ingest CISA KEV · Google Pixel Improper Authorization Vulnerability · 2026-09-16"
     },
     {
-      "t": "2026-09-28T18:36:07.390Z",
+      "t": "2026-09-29T16:53:58.323Z",
       "level": "info",
       "msg": "ingest CISA KEV · Cisco Identity Services Engine Incorrect Use of Privilege… · 2026-09-16"
     },
     {
-      "t": "2026-09-28T18:36:07.390Z",
+      "t": "2026-09-29T16:53:58.323Z",
       "level": "info",
       "msg": "ingest CISA KEV · Cisco Secure Email Gateway SQL Injection Vulnerability · 2026-09-14"
     },
     {
-      "t": "2026-09-28T18:36:07.390Z",
+      "t": "2026-09-29T16:53:58.323Z",
       "level": "info",
       "msg": "ingest CISA KEV · Citrix NetScaler Authentication Bypass Using an Alternate… · 2026-09-09"
     },
     {
-      "t": "2026-09-28T18:36:07.390Z",
-      "level": "info",
-      "msg": "ingest CISA KEV · Fortinet Multiple Products Heap-based Buffer Overflow Vul… · 2026-09-09"
-    },
-    {
-      "t": "2026-09-28T18:36:07.390Z",
+      "t": "2026-09-29T16:53:58.323Z",
       "level": "info",
       "msg": "--- ai feed: 14 items ---"
     },
     {
-      "t": "2026-09-28T18:36:07.390Z",
+      "t": "2026-09-29T16:53:58.323Z",
       "level": "info",
-      "msg": "ingest Hacker News · Claude Sonnet 5.5 · 2026-09-28"
+      "msg": "ingest Hacker News · A Privacy Analysis of Web and Mobile Conversational AI Ag… · 2026-09-29"
     },
     {
-      "t": "2026-09-28T18:36:07.390Z",
+      "t": "2026-09-29T16:53:58.323Z",
       "level": "info",
-      "msg": "ingest Hacker News · OpenAI still doesn't seem to have a handle on all of its… · 2026-09-28"
+      "msg": "ingest Hacker News · DraftKings Is Using AI to Behaviorally Target Chronic Gam… · 2026-09-29"
     },
     {
-      "t": "2026-09-28T18:36:07.390Z",
+      "t": "2026-09-29T16:53:58.323Z",
       "level": "info",
-      "msg": "ingest Hacker News · I made a visual workspace for AI Automations · 2026-09-28"
+      "msg": "ingest Hacker News · Claude partial outage · 2026-09-29"
     },
     {
-      "t": "2026-09-28T18:36:07.390Z",
+      "t": "2026-09-29T16:53:58.323Z",
       "level": "info",
-      "msg": "ingest Hacker News · The problem is not AI code, but not knowing about system… · 2026-09-28"
+      "msg": "ingest Hacker News · Unsurprisingly, Meta's new Muse AI agent blatantly ignore… · 2026-09-29"
     },
     {
-      "t": "2026-09-28T18:36:07.390Z",
+      "t": "2026-09-29T16:53:58.323Z",
       "level": "info",
-      "msg": "ingest Hacker News · What Would a Serious AI Product Look Like? · 2026-09-28"
+      "msg": "ingest arXiv · FurE: Efficient Instance-Specific 3D Fur Reconstruction w… · 2026-09-28"
     },
     {
-      "t": "2026-09-28T18:36:07.390Z",
+      "t": "2026-09-29T16:53:58.323Z",
       "level": "info",
-      "msg": "ingest Hacker News · Thinking fast and slow in AI: The role of metacognition (… · 2026-09-28"
+      "msg": "ingest arXiv · Telescopic Language Models · 2026-09-28"
     },
     {
-      "t": "2026-09-28T18:36:07.390Z",
+      "t": "2026-09-29T16:53:58.323Z",
       "level": "info",
-      "msg": "ingest Hacker News · How Pew Research Center is – and is not – using AI in our… · 2026-09-28"
+      "msg": "ingest arXiv · PDMD: Projected Distribution Matching Distillation for Vi… · 2026-09-28"
     },
     {
-      "t": "2026-09-28T18:36:07.390Z",
+      "t": "2026-09-29T16:53:58.323Z",
       "level": "info",
-      "msg": "ingest Hacker News · 2026 in LLMs (So Far) · 2026-09-28"
+      "msg": "ingest arXiv · Learning Native Reflection in Unified Models with Interle… · 2026-09-28"
     },
     {
-      "t": "2026-09-28T18:36:07.390Z",
+      "t": "2026-09-29T16:53:58.323Z",
       "level": "info",
-      "msg": "ingest Hacker News · I built a native Apple app for 4 platforms in one afterno… · 2026-09-28"
+      "msg": "ingest arXiv · Unifying Distributional Training for One-Step Visual Gene… · 2026-09-28"
     },
     {
-      "t": "2026-09-28T18:36:07.390Z",
+      "t": "2026-09-29T16:53:58.323Z",
       "level": "info",
-      "msg": "ingest Hacker News · Calling the AI bluff: Adding \"Do not guess\" cut made-up c… · 2026-09-27"
+      "msg": "ingest arXiv · TokenCast: Forecasting Token Consumption During LLM Agent… · 2026-09-28"
     },
     {
-      "t": "2026-09-28T18:36:07.390Z",
+      "t": "2026-09-29T16:53:58.323Z",
       "level": "info",
-      "msg": "ingest arXiv · Learning to Stop without Learning to Stop: Self-Supervise… · 2026-09-25"
+      "msg": "ingest arXiv · Statistical Learning of Contractive Dynamical Representat… · 2026-09-28"
     },
     {
-      "t": "2026-09-28T18:36:07.390Z",
+      "t": "2026-09-29T16:53:58.323Z",
       "level": "info",
-      "msg": "ingest arXiv · Gap-free Differentially Private PCA for Gaussian Data · 2026-09-25"
+      "msg": "ingest arXiv · Neural Harmonic Measure Operator · 2026-09-28"
     },
     {
-      "t": "2026-09-28T18:36:07.390Z",
+      "t": "2026-09-29T16:53:58.323Z",
       "level": "info",
-      "msg": "ingest arXiv · First-Order Stationarity of Reverse Diffusions · 2026-09-25"
+      "msg": "ingest arXiv · How to Loop MoE: Flatten the Experts, Untie the Attention · 2026-09-28"
     },
     {
-      "t": "2026-09-28T18:36:07.390Z",
+      "t": "2026-09-29T16:53:58.323Z",
       "level": "info",
-      "msg": "ingest arXiv · Statistical attribute alignment for black-box generative… · 2026-09-25"
+      "msg": "ingest arXiv · KV-streams for Efficient Compaction in Agentic Reinforcem… · 2026-09-28"
     },
     {
-      "t": "2026-09-28T18:36:07.390Z",
+      "t": "2026-09-29T16:53:58.324Z",
       "level": "info",
       "msg": "--- dev feed: 14 items ---"
     },
     {
-      "t": "2026-09-28T18:36:07.390Z",
+      "t": "2026-09-29T16:53:58.324Z",
       "level": "info",
-      "msg": "ingest Hacker News · Definitely not Windows (Win 11 parody) · 2026-09-28"
+      "msg": "ingest Hacker News · How Delhi cut electricity loss from 50 to 5 percent · 2026-09-29"
     },
     {
-      "t": "2026-09-28T18:36:07.390Z",
+      "t": "2026-09-29T16:53:58.324Z",
       "level": "info",
-      "msg": "ingest Hacker News · Pirating the Pirates · 2026-09-28"
+      "msg": "ingest Hacker News · Jeeves. Reasoning improves Jev-like decision models · 2026-09-29"
     },
     {
-      "t": "2026-09-28T18:36:07.390Z",
+      "t": "2026-09-29T16:53:58.324Z",
       "level": "info",
-      "msg": "ingest Hacker News · So long Google, and thanks for all the nudes · 2026-09-28"
+      "msg": "ingest Hacker News · Without the Hot Air · 2026-09-29"
     },
     {
-      "t": "2026-09-28T18:36:07.390Z",
+      "t": "2026-09-29T16:53:58.324Z",
       "level": "info",
-      "msg": "ingest Hacker News · Hijacking the PS5's RTMP Stream · 2026-09-28"
+      "msg": "ingest Hacker News · Walking Men · 2026-09-28"
     },
     {
-      "t": "2026-09-28T18:36:07.390Z",
+      "t": "2026-09-29T16:53:58.324Z",
       "level": "info",
-      "msg": "ingest Hacker News · Show HN: HN.watch – Videos of all Hacker News posts · 2026-09-28"
+      "msg": "ingest Hacker News · You are no longer invited to dinner · 2026-09-29"
     },
     {
-      "t": "2026-09-28T18:36:07.390Z",
+      "t": "2026-09-29T16:53:58.324Z",
       "level": "info",
-      "msg": "ingest Hacker News · Parley: Federated, decentralised chat that speaks plain I… · 2026-09-28"
+      "msg": "ingest Hacker News · Using any C++ library in Godot · 2026-09-29"
     },
     {
-      "t": "2026-09-28T18:36:07.390Z",
+      "t": "2026-09-29T16:53:58.324Z",
       "level": "info",
-      "msg": "ingest Hacker News · The Teen Portraits That Captivated Sofia Coppola · 2026-09-28"
+      "msg": "ingest Hacker News · Phyllotaxis: An audio-reactive LED display · 2026-09-28"
     },
     {
-      "t": "2026-09-28T18:36:07.390Z",
+      "t": "2026-09-29T16:53:58.324Z",
       "level": "info",
-      "msg": "ingest Hacker News · When did Google get so weird? · 2026-09-27"
+      "msg": "ingest Hacker News · Digital Audio on the ZX Spectrum's 1-Bit Beeper · 2026-09-27"
     },
     {
-      "t": "2026-09-28T18:36:07.390Z",
+      "t": "2026-09-29T16:53:58.324Z",
       "level": "info",
-      "msg": "ingest Hacker News · Launch HN: Vespper (YC F24) – SOTA Docx MCP · 2026-09-28"
+      "msg": "ingest Hacker News · Virus Stole a Human Gene and Won't Let Go of It · 2026-09-28"
     },
     {
-      "t": "2026-09-28T18:36:07.391Z",
+      "t": "2026-09-29T16:53:58.324Z",
       "level": "info",
-      "msg": "ingest Hacker News · Who Wrote Elizabeth I's Most Scathing Letters? · 2026-09-28"
+      "msg": "ingest Hacker News · Google ending ChromeOS support two years early · 2026-09-29"
     },
     {
-      "t": "2026-09-28T18:36:07.391Z",
+      "t": "2026-09-29T16:53:58.324Z",
       "level": "info",
-      "msg": "ingest Hacker News · What Heraldry and Mon Can Teach Us About Building Visual-… · 2026-09-28"
+      "msg": "ingest Hacker News · Show HN: NSL – WSL for Linux · 2026-09-29"
     },
     {
-      "t": "2026-09-28T18:36:07.391Z",
+      "t": "2026-09-29T16:53:58.324Z",
       "level": "info",
-      "msg": "ingest Hacker News · MongoDB CEO resigns to join Meta · 2026-09-28"
+      "msg": "ingest Hacker News · 1 in 8 cancer cases worldwide are caused by infections, s… · 2026-09-29"
     },
     {
-      "t": "2026-09-28T18:36:07.391Z",
+      "t": "2026-09-29T16:53:58.324Z",
       "level": "info",
-      "msg": "ingest Hacker News · Cf: The Agentic CLI for the Cloudflare API · 2026-09-28"
+      "msg": "ingest Hacker News · Show HN: Jevstiller – Distill Jev into a local model, wit… · 2026-09-29"
     },
     {
-      "t": "2026-09-28T18:36:07.391Z",
+      "t": "2026-09-29T16:53:58.324Z",
       "level": "info",
-      "msg": "ingest Hacker News · 37,500 border drawings: a map of the world as people reme… · 2026-09-28"
+      "msg": "ingest Hacker News · macOS Golden Gate Is a Buggy Mess · 2026-09-29"
     },
     {
-      "t": "2026-09-28T18:36:07.391Z",
+      "t": "2026-09-29T16:53:58.324Z",
       "level": "info",
-      "msg": "publishing 42 items across 3 feeds · 1328ms"
+      "msg": "publishing 42 items across 3 feeds · 16324ms"
     }
   ],
   "feeds": {
     "security": [
+      {
+        "id": "CVE-2026-86950",
+        "title": "Apple Multiple Products Out-of-Bounds Write Vulnerability",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-86950",
+        "source": "CISA KEV",
+        "date": "2026-09-29",
+        "summary": "Apple iOS, macOS, and iPadOS contain an out-of-bounds write vulnerability in CoreGraphics that may lead to arbitrary code execution.",
+        "meta": [
+          "macOS / Apple",
+          "Apple",
+          "Patch by 2026-10-02"
+        ],
+        "flag": null
+      },
       {
         "id": "CVE-2026-88772",
         "title": "Citrix NetScaler Improper Restriction of Operations within the Bounds of a Memory Buffer Vulnerability",
@@ -465,411 +479,391 @@
           "Patch by 2026-09-12"
         ],
         "flag": null
-      },
-      {
-        "id": "CVE-2025-25249",
-        "title": "Fortinet Multiple Products Heap-based Buffer Overflow Vulnerability",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-25249",
-        "source": "CISA KEV",
-        "date": "2026-09-09",
-        "summary": "Fortinet FortiOS, FortiSwitchManager, and FortiSASE contain a heap-based buffer overflow vulnerability that allows an attacker to execute unauthorized code or commands via specially crafted packets.",
-        "meta": [
-          "Network edge / VPN",
-          "Fortinet",
-          "Patch by 2026-09-12"
-        ],
-        "flag": null
       }
     ],
     "ai": [
       {
-        "id": "hn-49881850",
-        "title": "Claude Sonnet 5.5",
-        "url": "https://www.anthropic.com/claude-sonnet-5-5",
+        "id": "hn-49890226",
+        "title": "A Privacy Analysis of Web and Mobile Conversational AI Agents [pdf]",
+        "url": "https://jorgegarciaherrero.com/wp-content/interactivos/20260916-Prompt-like-a-butterfly-sting-like-a-tracker-(clean).pdf",
         "source": "Hacker News",
-        "date": "2026-09-28",
+        "date": "2026-09-29",
         "summary": "",
         "meta": [
-          "125 points",
-          "90 comments"
+          "363 points",
+          "116 comments"
         ],
-        "discussion": "https://news.ycombinator.com/item?id=49881850",
+        "discussion": "https://news.ycombinator.com/item?id=49890226",
         "flag": null
       },
       {
-        "id": "hn-49881484",
-        "title": "OpenAI still doesn't seem to have a handle on all of its rogue AI activity",
-        "url": "https://techcrunch.com/2026/09/28/openai-still-doesnt-seem-to-have-a-handle-on-all-of-its-rogue-ai-activity/",
+        "id": "hn-49896050",
+        "title": "DraftKings Is Using AI to Behaviorally Target Chronic Gamblers",
+        "url": "https://www.eff.org/deeplinks/2026/09/draftkings-using-ai-supercharge-harms-online-behavioral-advertising",
         "source": "Hacker News",
-        "date": "2026-09-28",
+        "date": "2026-09-29",
         "summary": "",
         "meta": [
-          "42 points",
-          "35 comments"
+          "23 points",
+          "6 comments"
         ],
-        "discussion": "https://news.ycombinator.com/item?id=49881484",
+        "discussion": "https://news.ycombinator.com/item?id=49896050",
         "flag": null
       },
       {
-        "id": "hn-49881777",
-        "title": "I made a visual workspace for AI Automations",
-        "url": "https://www.biom.dev/",
+        "id": "hn-49893876",
+        "title": "Claude partial outage",
+        "url": "https://status.claude.com/incidents/4xvtc2gnq73l",
         "source": "Hacker News",
-        "date": "2026-09-28",
+        "date": "2026-09-29",
         "summary": "",
         "meta": [
-          "6 points",
-          "2 comments"
+          "163 points",
+          "136 comments"
         ],
-        "discussion": "https://news.ycombinator.com/item?id=49881777",
+        "discussion": "https://news.ycombinator.com/item?id=49893876",
         "flag": null
       },
       {
-        "id": "hn-49880312",
-        "title": "The problem is not AI code, but not knowing about system architecture or intent",
-        "url": "https://www.ssp.sh/brain/the-problem-is-not-the-ai-code-but-nobody-knows-anything-anymore/",
+        "id": "hn-49893709",
+        "title": "Unsurprisingly, Meta's new Muse AI agent blatantly ignores users permissions",
+        "url": "https://appleinsider.com/articles/26/09/28/metas-new-ai-agent-blatantly-ignores-users-permissions",
         "source": "Hacker News",
-        "date": "2026-09-28",
+        "date": "2026-09-29",
         "summary": "",
         "meta": [
-          "276 points",
-          "187 comments"
+          "140 points",
+          "32 comments"
         ],
-        "discussion": "https://news.ycombinator.com/item?id=49880312",
+        "discussion": "https://news.ycombinator.com/item?id=49893709",
         "flag": null
       },
       {
-        "id": "hn-49876148",
-        "title": "What Would a Serious AI Product Look Like?",
-        "url": "https://blog.glyph.im/2026/09/serious-ai-product.html",
-        "source": "Hacker News",
-        "date": "2026-09-28",
-        "summary": "",
-        "meta": [
-          "68 points",
-          "22 comments"
-        ],
-        "discussion": "https://news.ycombinator.com/item?id=49876148",
-        "flag": null
-      },
-      {
-        "id": "hn-49873241",
-        "title": "Thinking fast and slow in AI: The role of metacognition (2021)",
-        "url": "https://arxiv.org/abs/2110.01834",
-        "source": "Hacker News",
-        "date": "2026-09-28",
-        "summary": "",
-        "meta": [
-          "166 points",
-          "70 comments"
-        ],
-        "discussion": "https://news.ycombinator.com/item?id=49873241",
-        "flag": null
-      },
-      {
-        "id": "hn-49881135",
-        "title": "How Pew Research Center is – and is not – using AI in our work",
-        "url": "https://www.pewresearch.org/decoded/2026/09/28/how-pew-research-center-is-and-is-not-using-ai-in-our-work-2/",
-        "source": "Hacker News",
-        "date": "2026-09-28",
-        "summary": "",
-        "meta": [
-          "14 points",
-          "3 comments"
-        ],
-        "discussion": "https://news.ycombinator.com/item?id=49881135",
-        "flag": null
-      },
-      {
-        "id": "hn-49880838",
-        "title": "2026 in LLMs (So Far)",
-        "url": "https://simonw.substack.com/p/2026-in-llms-so-far",
-        "source": "Hacker News",
-        "date": "2026-09-28",
-        "summary": "",
-        "meta": [
-          "8 points",
-          "1 comments"
-        ],
-        "discussion": "https://news.ycombinator.com/item?id=49880838",
-        "flag": null
-      },
-      {
-        "id": "hn-49880706",
-        "title": "I built a native Apple app for 4 platforms in one afternoon with my AI workflow",
-        "url": "https://twitter.com/danielhayesmith/status/2103976394338271515",
-        "source": "Hacker News",
-        "date": "2026-09-28",
-        "summary": "",
-        "meta": [
-          "4 points",
-          "1 comments"
-        ],
-        "discussion": "https://news.ycombinator.com/item?id=49880706",
-        "flag": null
-      },
-      {
-        "id": "hn-49868753",
-        "title": "Calling the AI bluff: Adding \"Do not guess\" cut made-up claims from 71% to 20%",
-        "url": "https://earnanhonestdollar.com/bench",
-        "source": "Hacker News",
-        "date": "2026-09-27",
-        "summary": "",
-        "meta": [
-          "75 points",
-          "26 comments"
-        ],
-        "discussion": "https://news.ycombinator.com/item?id=49868753",
-        "flag": null
-      },
-      {
-        "id": "http://arxiv.org/abs/2609.31619v1",
-        "title": "Learning to Stop without Learning to Stop: Self-Supervised Confidence Training Improves Reasoning Efficiency",
-        "url": "http://arxiv.org/abs/2609.31619v1",
+        "id": "http://arxiv.org/abs/2609.35770v1",
+        "title": "FurE: Efficient Instance-Specific 3D Fur Reconstruction without Animal-Fur Datasets",
+        "url": "http://arxiv.org/abs/2609.35770v1",
         "source": "arXiv",
-        "date": "2026-09-25",
-        "summary": "Reasoning models often generate very long reasoning traces, making inference computationally expensive. Existing approaches typically improve efficiency either through inference-time early-stopping mechanisms or by explicitly encouraging shorter reasoning during training, for example through reinforcement learning wit…",
+        "date": "2026-09-28",
+        "summary": "Realistic and editable animal fur reconstruction from multi-view images is challenging due to fine-scale detail, self-occlusion and obfuscation, and, unlike human hair, the lack of animal-fur datasets. Fur usually covers most of an animal's body, with large inter-species and intra-species variability. We present FurE,…",
         "meta": [
           "Research",
-          "Parsa Hosseini +8"
+          "Srinjay Sarkar +3"
         ],
         "flag": null
       },
       {
-        "id": "http://arxiv.org/abs/2609.31614v1",
-        "title": "Gap-free Differentially Private PCA for Gaussian Data",
-        "url": "http://arxiv.org/abs/2609.31614v1",
+        "id": "http://arxiv.org/abs/2609.35769v1",
+        "title": "Telescopic Language Models",
+        "url": "http://arxiv.org/abs/2609.35769v1",
         "source": "arXiv",
-        "date": "2026-09-25",
-        "summary": "We give a gap-free differentially private algorithm for the principal component analysis (PCA) problem with Gaussian data.",
+        "date": "2026-09-28",
+        "summary": "One deployed language model must often serve many compute budgets, yet serving each budget still means a separate training or compression run per point. We train a Telescopic Language Model (TLM) to be that continuum: a nested-capacity Transformer supervised by stochastic prefix supervision with a full anchor. At ever…",
         "meta": [
           "Research",
-          "Alina Ene +1"
+          "Zhilin Guo +16"
         ],
         "flag": null
       },
       {
-        "id": "http://arxiv.org/abs/2609.31612v1",
-        "title": "First-Order Stationarity of Reverse Diffusions",
-        "url": "http://arxiv.org/abs/2609.31612v1",
+        "id": "http://arxiv.org/abs/2609.35768v1",
+        "title": "PDMD: Projected Distribution Matching Distillation for Video Diffusion Models",
+        "url": "http://arxiv.org/abs/2609.35768v1",
         "source": "arXiv",
-        "date": "2026-09-25",
-        "summary": "Recent literature has shown a strong connection between optimization and sampling. We develop the corresponding first-order theory for diffusion models. First, the SDE-based reverse-time flows of overdamped and underdamped Langevin diffusions contract relative Fisher divergences at explicit exponential rates whenever…",
+        "date": "2026-09-28",
+        "summary": "Modern video diffusion models require tens of denoising evaluations over long spatiotemporal token sequences. Distribution Matching Distillation (DMD) reduces the number of function evaluations (NFE) to just a few. However, DMD samples can degrade during training, exhibiting progressive oversaturation and artifacts. W…",
         "meta": [
           "Research",
-          "Zhifeng Chen +2"
+          "Zimo Wang +11"
         ],
         "flag": null
       },
       {
-        "id": "http://arxiv.org/abs/2609.31607v1",
-        "title": "Statistical attribute alignment for black-box generative AI via output post-processing",
-        "url": "http://arxiv.org/abs/2609.31607v1",
+        "id": "http://arxiv.org/abs/2609.35767v1",
+        "title": "Learning Native Reflection in Unified Models with Interleaved Reinforcement Learning",
+        "url": "http://arxiv.org/abs/2609.35767v1",
         "source": "arXiv",
-        "date": "2026-09-25",
-        "summary": "Generative AI systems are increasingly used, but aligning their outputs with user requirements poses a continuing challenge. Here, we aim to ensure that the distribution of an attribute of an AI-generated output aligns with a user-specified target. This is motivated by examples such as fairness, where we want to ensur…",
+        "date": "2026-09-28",
+        "summary": "Unified multimodal models can both look at and render images, so in principle they can repair their own generations: diagnose what an image gets wrong, revise it, observe the result, and diagnose again. Whether a revision helps is known only after it is rendered, so the reflection text and the image generation must be…",
         "meta": [
           "Research",
-          "Kevin Jiang +3"
+          "Yijia Fan +7"
+        ],
+        "flag": null
+      },
+      {
+        "id": "http://arxiv.org/abs/2609.35763v1",
+        "title": "Unifying Distributional Training for One-Step Visual Generation",
+        "url": "http://arxiv.org/abs/2609.35763v1",
+        "source": "arXiv",
+        "date": "2026-09-28",
+        "summary": "\\emph{Distributional training} provides collective supervision for one-step visual generation by matching real and generated features in frozen representation spaces. We introduce \\emph{a unified theoretical framework} that separates distribution modeling from matching discrepancy and connects global objectives to poi…",
+        "meta": [
+          "Research",
+          "Chi Zhang +11"
+        ],
+        "flag": null
+      },
+      {
+        "id": "http://arxiv.org/abs/2609.35760v1",
+        "title": "TokenCast: Forecasting Token Consumption During LLM Agent Execution",
+        "url": "http://arxiv.org/abs/2609.35760v1",
+        "source": "arXiv",
+        "date": "2026-09-28",
+        "summary": "When a large language model (LLM) agent executes the same task, token consumption can vary by over an order of magnitude across runs. The agent chooses its next steps based on tool feedback and intermediate results, while the growing context steadily inflates the input size of every subsequent call. The total consumpt…",
+        "meta": [
+          "Research",
+          "Chaoqian Ouyang +9"
+        ],
+        "flag": null
+      },
+      {
+        "id": "http://arxiv.org/abs/2609.35758v1",
+        "title": "Statistical Learning of Contractive Dynamical Representations for Composite Adaptive Control",
+        "url": "http://arxiv.org/abs/2609.35758v1",
+        "source": "arXiv",
+        "date": "2026-09-28",
+        "summary": "We present a representation-learning framework for composite adaptive tracking control under dynamically coupled disturbances. The framework connects classical disturbance-accommodating control (DAC) to recent last-layer adaptive disturbance-rejection methods. Specifically, we introduce a statistically principled hard…",
+        "meta": [
+          "Research",
+          "Min Kim +3"
+        ],
+        "flag": null
+      },
+      {
+        "id": "http://arxiv.org/abs/2609.35752v1",
+        "title": "Neural Harmonic Measure Operator",
+        "url": "http://arxiv.org/abs/2609.35752v1",
+        "source": "arXiv",
+        "date": "2026-09-28",
+        "summary": "We introduce Neural Harmonic Measure Operator (NHMO), a neural solver for elliptic PDE problems on variable-shape domains. The harmonic measure of a domain is the boundary probability distribution that, integrated against any boundary data, returns the Dirichlet Laplace solution. It depends only on the geometry, not o…",
+        "meta": [
+          "Research",
+          "Jinjin He +3"
+        ],
+        "flag": null
+      },
+      {
+        "id": "http://arxiv.org/abs/2609.35751v1",
+        "title": "How to Loop MoE: Flatten the Experts, Untie the Attention",
+        "url": "http://arxiv.org/abs/2609.35751v1",
+        "source": "arXiv",
+        "date": "2026-09-28",
+        "summary": "Looped Transformers reuse one block of layers several times: by spending extra computation they push a model of fixed size further, and so use its parameters more fully; while sparse mixture-of-experts (MoE) models activate only a few of many experts for each token. Looped MoE bridges these two design philosophies and…",
+        "meta": [
+          "Research",
+          "Shouren Wang +8"
+        ],
+        "flag": null
+      },
+      {
+        "id": "http://arxiv.org/abs/2609.35750v1",
+        "title": "KV-streams for Efficient Compaction in Agentic Reinforcement Learning",
+        "url": "http://arxiv.org/abs/2609.35750v1",
+        "source": "arXiv",
+        "date": "2026-09-28",
+        "summary": "Scaling the horizon of agentic LLMs is bottlenecked by the need to fit ever longer context traces in GPU memory. Context compaction has been the most popular mechanism to alleviate this issue, keeping GPU memory constant for a given trace. Unfortunately, most compaction strategies rely on prefilling the LLM context ma…",
+        "meta": [
+          "Research",
+          "Emiliano Penaloza +17"
         ],
         "flag": null
       }
     ],
     "dev": [
       {
-        "id": "hn-49881747",
-        "title": "Definitely not Windows (Win 11 parody)",
-        "url": "https://definitelynotwindows.com/",
+        "id": "hn-49892245",
+        "title": "How Delhi cut electricity loss from 50 to 5 percent",
+        "url": "https://spectrum.ieee.org/delhi-electricity-loss",
+        "source": "Hacker News",
+        "date": "2026-09-29",
+        "summary": "",
+        "meta": [
+          "281 points",
+          "162 comments"
+        ],
+        "discussion": "https://news.ycombinator.com/item?id=49892245",
+        "flag": null
+      },
+      {
+        "id": "hn-49891290",
+        "title": "Jeeves. Reasoning improves Jev-like decision models",
+        "url": "https://github.com/PostHog/jeeves",
+        "source": "Hacker News",
+        "date": "2026-09-29",
+        "summary": "",
+        "meta": [
+          "174 points",
+          "71 comments"
+        ],
+        "discussion": "https://news.ycombinator.com/item?id=49891290",
+        "flag": null
+      },
+      {
+        "id": "hn-49892175",
+        "title": "Without the Hot Air",
+        "url": "https://www.withouthotair.com/",
+        "source": "Hacker News",
+        "date": "2026-09-29",
+        "summary": "",
+        "meta": [
+          "81 points",
+          "45 comments"
+        ],
+        "discussion": "https://news.ycombinator.com/item?id=49892175",
+        "flag": null
+      },
+      {
+        "id": "hn-49878093",
+        "title": "Walking Men",
+        "url": "https://bookofjoe2.blogspot.com/2026/09/walking-men.html",
         "source": "Hacker News",
         "date": "2026-09-28",
         "summary": "",
         "meta": [
-          "66 points",
-          "22 comments"
+          "28 points",
+          "4 comments"
         ],
-        "discussion": "https://news.ycombinator.com/item?id=49881747",
+        "discussion": "https://news.ycombinator.com/item?id=49878093",
         "flag": null
       },
       {
-        "id": "hn-49880036",
-        "title": "Pirating the Pirates",
-        "url": "https://mubi.com/en/notebook/posts/pirating-the-pirates",
+        "id": "hn-49891295",
+        "title": "You are no longer invited to dinner",
+        "url": "https://www.derekthompson.org/p/the-death-of-the-american-host",
+        "source": "Hacker News",
+        "date": "2026-09-29",
+        "summary": "",
+        "meta": [
+          "512 points",
+          "457 comments"
+        ],
+        "discussion": "https://news.ycombinator.com/item?id=49891295",
+        "flag": null
+      },
+      {
+        "id": "hn-49890051",
+        "title": "Using any C++ library in Godot",
+        "url": "https://blog.conan.io/cpp/conan/gamedev/godot/cmake/2026/09/29/Using-Any-Cpp-Library-In-Godot.html",
+        "source": "Hacker News",
+        "date": "2026-09-29",
+        "summary": "",
+        "meta": [
+          "132 points",
+          "39 comments"
+        ],
+        "discussion": "https://news.ycombinator.com/item?id=49890051",
+        "flag": null
+      },
+      {
+        "id": "hn-49880411",
+        "title": "Phyllotaxis: An audio-reactive LED display",
+        "url": "https://jagi.studio/posts/phyllotaxis/",
         "source": "Hacker News",
         "date": "2026-09-28",
         "summary": "",
         "meta": [
-          "165 points",
-          "47 comments"
+          "214 points",
+          "32 comments"
         ],
-        "discussion": "https://news.ycombinator.com/item?id=49880036",
+        "discussion": "https://news.ycombinator.com/item?id=49880411",
         "flag": null
       },
       {
-        "id": "hn-49881951",
-        "title": "So long Google, and thanks for all the nudes",
-        "url": "https://lecaro.me/20260921-google-less.html",
-        "source": "Hacker News",
-        "date": "2026-09-28",
-        "summary": "",
-        "meta": [
-          "17 points",
-          "3 comments"
-        ],
-        "discussion": "https://news.ycombinator.com/item?id=49881951",
-        "flag": null
-      },
-      {
-        "id": "hn-49879702",
-        "title": "Hijacking the PS5's RTMP Stream",
-        "url": "https://yashgarg.dev/posts/hijacking-ps5-rtmp-stream/",
-        "source": "Hacker News",
-        "date": "2026-09-28",
-        "summary": "",
-        "meta": [
-          "83 points",
-          "10 comments"
-        ],
-        "discussion": "https://news.ycombinator.com/item?id=49879702",
-        "flag": null
-      },
-      {
-        "id": "hn-49879401",
-        "title": "Show HN: HN.watch – Videos of all Hacker News posts",
-        "url": "https://hn.watch/",
-        "source": "Hacker News",
-        "date": "2026-09-28",
-        "summary": "",
-        "meta": [
-          "54 points",
-          "14 comments"
-        ],
-        "discussion": "https://news.ycombinator.com/item?id=49879401",
-        "flag": null
-      },
-      {
-        "id": "hn-49875913",
-        "title": "Parley: Federated, decentralised chat that speaks plain IRC",
-        "url": "https://git.mills.io/prologic/parley",
-        "source": "Hacker News",
-        "date": "2026-09-28",
-        "summary": "",
-        "meta": [
-          "246 points",
-          "122 comments"
-        ],
-        "discussion": "https://news.ycombinator.com/item?id=49875913",
-        "flag": null
-      },
-      {
-        "id": "hn-49881606",
-        "title": "The Teen Portraits That Captivated Sofia Coppola",
-        "url": "https://www.newyorker.com/culture/photo-booth/the-teen-portraits-that-captivated-sofia-coppola",
-        "source": "Hacker News",
-        "date": "2026-09-28",
-        "summary": "",
-        "meta": [
-          "7 points",
-          "1 comments"
-        ],
-        "discussion": "https://news.ycombinator.com/item?id=49881606",
-        "flag": null
-      },
-      {
-        "id": "hn-49870367",
-        "title": "When did Google get so weird?",
-        "url": "https://sancho.bearblog.dev/google-weird/",
+        "id": "hn-49869441",
+        "title": "Digital Audio on the ZX Spectrum's 1-Bit Beeper",
+        "url": "https://bumbershootsoft.wordpress.com/2026/09/26/digital-audio-on-the-zx-spectrums-1-bit-beeper/",
         "source": "Hacker News",
         "date": "2026-09-27",
         "summary": "",
         "meta": [
-          "1695 points",
-          "931 comments"
+          "32 points",
+          "12 comments"
         ],
-        "discussion": "https://news.ycombinator.com/item?id=49870367",
+        "discussion": "https://news.ycombinator.com/item?id=49869441",
         "flag": null
       },
       {
-        "id": "hn-49881505",
-        "title": "Launch HN: Vespper (YC F24) – SOTA Docx MCP",
-        "url": "https://www.vespper.com/blog/launching-vespper-docx-mcp",
+        "id": "hn-49883635",
+        "title": "Virus Stole a Human Gene and Won't Let Go of It",
+        "url": "https://www.nytimes.com/2026/09/28/science/virus-molluscum-human-gene.html",
         "source": "Hacker News",
         "date": "2026-09-28",
         "summary": "",
         "meta": [
           "8 points",
-          "2 comments"
+          "1 comments"
         ],
-        "discussion": "https://news.ycombinator.com/item?id=49881505",
+        "discussion": "https://news.ycombinator.com/item?id=49883635",
         "flag": null
       },
       {
-        "id": "hn-49881692",
-        "title": "Who Wrote Elizabeth I's Most Scathing Letters?",
-        "url": "https://www.smithsonianmag.com/history/who-wrote-elizabeth-is-most-scathing-letters-new-research-suggests-the-tudor-queens-male-secretaries-revised-her-correspondence-to-emphasize-her-temper-180989565/",
+        "id": "hn-49893653",
+        "title": "Google ending ChromeOS support two years early",
+        "url": "https://www.theregister.com/os-platforms/2026/09/29/google-ending-chromeos-support-two-years-early/5299674",
         "source": "Hacker News",
-        "date": "2026-09-28",
+        "date": "2026-09-29",
         "summary": "",
         "meta": [
-          "5 points",
-          "0 comments"
+          "94 points",
+          "66 comments"
         ],
-        "discussion": "https://news.ycombinator.com/item?id=49881692",
+        "discussion": "https://news.ycombinator.com/item?id=49893653",
         "flag": null
       },
       {
-        "id": "hn-49878900",
-        "title": "What Heraldry and Mon Can Teach Us About Building Visual-Identity Generators",
-        "url": "https://benovermyer.com/blog/2026/09/japanese-vs-western-heraldry/",
+        "id": "hn-49894351",
+        "title": "Show HN: NSL – WSL for Linux",
+        "url": "https://frostyard.github.io/nsl/",
         "source": "Hacker News",
-        "date": "2026-09-28",
+        "date": "2026-09-29",
         "summary": "",
         "meta": [
-          "40 points",
-          "14 comments"
+          "15 points",
+          "10 comments"
         ],
-        "discussion": "https://news.ycombinator.com/item?id=49878900",
+        "discussion": "https://news.ycombinator.com/item?id=49894351",
         "flag": null
       },
       {
-        "id": "hn-49879000",
-        "title": "MongoDB CEO resigns to join Meta",
-        "url": "https://www.reuters.com/technology/mongodb-ceo-desai-steps-down-lead-metas-enterprise-platform-2026-09-28/",
+        "id": "hn-49892120",
+        "title": "1 in 8 cancer cases worldwide are caused by infections, study finds",
+        "url": "https://www.cbc.ca/lite/story/9.7361622",
         "source": "Hacker News",
-        "date": "2026-09-28",
+        "date": "2026-09-29",
         "summary": "",
         "meta": [
-          "182 points",
-          "167 comments"
+          "121 points",
+          "79 comments"
         ],
-        "discussion": "https://news.ycombinator.com/item?id=49879000",
+        "discussion": "https://news.ycombinator.com/item?id=49892120",
         "flag": null
       },
       {
-        "id": "hn-49879577",
-        "title": "Cf: The Agentic CLI for the Cloudflare API",
-        "url": "https://blog.cloudflare.com/cloudflare-cf-cli-launch/",
+        "id": "hn-49891769",
+        "title": "Show HN: Jevstiller – Distill Jev into a local model, with a disagreement bound",
+        "url": "https://jevstiller.pages.dev/posts/the-guarantee/",
         "source": "Hacker News",
-        "date": "2026-09-28",
+        "date": "2026-09-29",
         "summary": "",
         "meta": [
-          "35 points",
-          "12 comments"
+          "32 points",
+          "4 comments"
         ],
-        "discussion": "https://news.ycombinator.com/item?id=49879577",
+        "discussion": "https://news.ycombinator.com/item?id=49891769",
         "flag": null
       },
       {
-        "id": "hn-49875142",
-        "title": "37,500 border drawings: a map of the world as people remember it",
-        "url": "https://www.habibicode.org/thedrawnworld",
+        "id": "hn-49894005",
+        "title": "macOS Golden Gate Is a Buggy Mess",
+        "url": "https://www.squareorbits.com/blog/2026/09/macos-golden-gate-is-a-buggy-mess/",
         "source": "Hacker News",
-        "date": "2026-09-28",
+        "date": "2026-09-29",
         "summary": "",
         "meta": [
-          "144 points",
-          "31 comments"
+          "277 points",
+          "194 comments"
         ],
-        "discussion": "https://news.ycombinator.com/item?id=49875142",
+        "discussion": "https://news.ycombinator.com/item?id=49894005",
         "flag": null
       }
     ]
