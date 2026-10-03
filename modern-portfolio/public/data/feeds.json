@@ -1,285 +1,285 @@
 {
-  "generatedAt": "2026-10-02T16:38:25.608Z",
+  "generatedAt": "2026-10-03T15:09:41.826Z",
   "log": [
     {
-      "t": "2026-10-02T16:38:22.104Z",
+      "t": "2026-10-03T15:09:40.800Z",
       "level": "info",
       "msg": "signal refresh started"
     },
     {
-      "t": "2026-10-02T16:38:22.109Z",
+      "t": "2026-10-03T15:09:40.806Z",
       "level": "info",
       "msg": "GET hacker-news.firebaseio.com/v0/topstories.json"
     },
     {
-      "t": "2026-10-02T16:38:22.508Z",
+      "t": "2026-10-03T15:09:41.053Z",
       "level": "info",
       "msg": "HTTP 200 · resolving top 60 story ids in batches of 10"
     },
     {
-      "t": "2026-10-02T16:38:25.208Z",
+      "t": "2026-10-03T15:09:41.501Z",
       "level": "info",
-      "msg": "59 of 60 resolved to usable stories · 3099ms"
+      "msg": "59 of 60 resolved to usable stories · 695ms"
     },
     {
-      "t": "2026-10-02T16:38:25.209Z",
+      "t": "2026-10-03T15:09:41.502Z",
       "level": "info",
       "msg": "GET cisa.gov/feeds/known_exploited_vulnerabilities.json"
     },
     {
-      "t": "2026-10-02T16:38:25.284Z",
+      "t": "2026-10-03T15:09:41.603Z",
       "level": "info",
-      "msg": "HTTP 200 · catalog holds 1733 CVEs · 75ms"
+      "msg": "HTTP 200 · catalog holds 1733 CVEs · 101ms"
     },
     {
-      "t": "2026-10-02T16:38:25.288Z",
+      "t": "2026-10-03T15:09:41.607Z",
       "level": "info",
       "msg": "fleet filter: 1023 of 1733 touch managed platforms"
     },
     {
-      "t": "2026-10-02T16:38:25.297Z",
+      "t": "2026-10-03T15:09:41.618Z",
       "level": "info",
       "msg": "GET export.arxiv.org/api/query cat:cs.AI OR cat:cs.LG"
     },
     {
-      "t": "2026-10-02T16:38:25.605Z",
+      "t": "2026-10-03T15:09:41.823Z",
       "level": "info",
-      "msg": "HTTP 200 · 31,631 bytes of Atom XML · 308ms"
+      "msg": "HTTP 200 · 31,631 bytes of Atom XML · 205ms"
     },
     {
-      "t": "2026-10-02T16:38:25.607Z",
+      "t": "2026-10-03T15:09:41.825Z",
       "level": "info",
-      "msg": "topic split: 12 AI stories, 47 general dev"
+      "msg": "topic split: 6 AI stories, 53 general dev"
     },
     {
-      "t": "2026-10-02T16:38:25.607Z",
+      "t": "2026-10-03T15:09:41.825Z",
       "level": "info",
       "msg": "--- security feed: 14 items ---"
     },
     {
-      "t": "2026-10-02T16:38:25.607Z",
+      "t": "2026-10-03T15:09:41.825Z",
       "level": "info",
       "msg": "ingest CISA KEV · Fortinet FortiMail Path Traversal Vulnerability · 2026-10-01"
     },
     {
-      "t": "2026-10-02T16:38:25.607Z",
+      "t": "2026-10-03T15:09:41.825Z",
       "level": "info",
       "msg": "ingest CISA KEV · Cisco Catalyst SD-WAN Manager Hex Encoding Vulnerability · 2026-09-30"
     },
     {
-      "t": "2026-10-02T16:38:25.607Z",
+      "t": "2026-10-03T15:09:41.825Z",
       "level": "info",
       "msg": "ingest CISA KEV · Apple Multiple Products Out-of-Bounds Write Vulnerability · 2026-09-29"
     },
     {
-      "t": "2026-10-02T16:38:25.607Z",
+      "t": "2026-10-03T15:09:41.825Z",
       "level": "info",
       "msg": "ingest CISA KEV · Citrix NetScaler Improper Restriction of Operations withi… · 2026-09-27"
     },
     {
-      "t": "2026-10-02T16:38:25.607Z",
+      "t": "2026-10-03T15:09:41.825Z",
       "level": "info",
       "msg": "ingest CISA KEV · Citrix NetScaler Improper Input Validation Vulnerability · 2026-09-27"
     },
     {
-      "t": "2026-10-02T16:38:25.607Z",
+      "t": "2026-10-03T15:09:41.825Z",
       "level": "info",
       "msg": "ingest CISA KEV · Microsoft SharePoint Code Injection Vulnerability · 2026-09-25"
     },
     {
-      "t": "2026-10-02T16:38:25.607Z",
+      "t": "2026-10-03T15:09:41.825Z",
       "level": "info",
       "msg": "ingest CISA KEV · WordPress Core Remote File Inclusion Vulnerability · 2026-09-25"
     },
     {
-      "t": "2026-10-02T16:38:25.607Z",
+      "t": "2026-10-03T15:09:41.825Z",
       "level": "info",
       "msg": "ingest CISA KEV · F5 BIG-IP APM Heap-based Buffer Overflow Vulnerability · 2026-09-22"
     },
     {
-      "t": "2026-10-02T16:38:25.607Z",
+      "t": "2026-10-03T15:09:41.825Z",
       "level": "info",
       "msg": "ingest CISA KEV · Zyxel GS1900 Series Switches Stack-Based Buffer Overflow… · 2026-09-21"
     },
     {
-      "t": "2026-10-02T16:38:25.607Z",
+      "t": "2026-10-03T15:09:41.825Z",
       "level": "info",
       "msg": "ingest CISA KEV · Linux Kernel Race Condition Vulnerability · 2026-09-18"
     },
     {
-      "t": "2026-10-02T16:38:25.607Z",
+      "t": "2026-10-03T15:09:41.825Z",
       "level": "info",
       "msg": "ingest CISA KEV · Linux Kernel Out-of-Bounds Write Vulnerability · 2026-09-18"
     },
     {
-      "t": "2026-10-02T16:38:25.607Z",
+      "t": "2026-10-03T15:09:41.825Z",
       "level": "info",
       "msg": "ingest CISA KEV · Linux Kernel Improper Check for Unusual or Exceptional Co… · 2026-09-18"
     },
     {
-      "t": "2026-10-02T16:38:25.607Z",
+      "t": "2026-10-03T15:09:41.825Z",
       "level": "info",
       "msg": "ingest CISA KEV · Google Pixel Improper Authorization Vulnerability · 2026-09-16"
     },
     {
-      "t": "2026-10-02T16:38:25.607Z",
+      "t": "2026-10-03T15:09:41.825Z",
       "level": "info",
       "msg": "ingest CISA KEV · Cisco Identity Services Engine Incorrect Use of Privilege… · 2026-09-16"
     },
     {
-      "t": "2026-10-02T16:38:25.607Z",
+      "t": "2026-10-03T15:09:41.825Z",
       "level": "info",
       "msg": "--- ai feed: 14 items ---"
     },
     {
-      "t": "2026-10-02T16:38:25.607Z",
+      "t": "2026-10-03T15:09:41.825Z",
       "level": "info",
-      "msg": "ingest Hacker News · GPT-6 Astra plays World of Warcraft for the first time wi… · 2026-10-02"
+      "msg": "ingest Hacker News · Show HN: Germany's new sovereign AI model Kolibri · 2026-10-03"
     },
     {
-      "t": "2026-10-02T16:38:25.607Z",
+      "t": "2026-10-03T15:09:41.825Z",
       "level": "info",
-      "msg": "ingest Hacker News · Power approval set to delay Oracle's Wisconsin AI datacen… · 2026-10-02"
+      "msg": "ingest Hacker News · US killer's sentence quashed because of AI video of victi… · 2026-10-03"
     },
     {
-      "t": "2026-10-02T16:38:25.607Z",
+      "t": "2026-10-03T15:09:41.825Z",
       "level": "info",
-      "msg": "ingest Hacker News · Mozilla shutting down Solo AI website creator · 2026-10-02"
+      "msg": "ingest Hacker News · From the creator of Redis; run LLM locally with ds4 · 2026-10-02"
     },
     {
-      "t": "2026-10-02T16:38:25.607Z",
+      "t": "2026-10-03T15:09:41.825Z",
       "level": "info",
-      "msg": "ingest Hacker News · AI Makes Me Sad · 2026-10-02"
+      "msg": "ingest Hacker News · Greg Kroah-Hartman – Security in the LLM Age [video] · 2026-10-02"
     },
     {
-      "t": "2026-10-02T16:38:25.607Z",
+      "t": "2026-10-03T15:09:41.825Z",
+      "level": "info",
+      "msg": "ingest Hacker News · With most information hidden, the game Stratego had stump… · 2026-10-02"
+    },
+    {
+      "t": "2026-10-03T15:09:41.825Z",
+      "level": "info",
+      "msg": "ingest Hacker News · Show HN: Made an open-source Lego AI generator · 2026-10-02"
+    },
+    {
+      "t": "2026-10-03T15:09:41.825Z",
       "level": "info",
       "msg": "ingest arXiv · One Basis to Animate Them All: Gaussian Blendshape Distil… · 2026-10-01"
     },
     {
-      "t": "2026-10-02T16:38:25.607Z",
+      "t": "2026-10-03T15:09:41.825Z",
       "level": "info",
       "msg": "ingest arXiv · KaliBench: A Fine-Grained Benchmark for Cybersecurity Too… · 2026-10-01"
     },
     {
-      "t": "2026-10-02T16:38:25.607Z",
+      "t": "2026-10-03T15:09:41.825Z",
       "level": "info",
       "msg": "ingest arXiv · Reconstruct, Practice, Go Real: Guided Self-Improvement f… · 2026-10-01"
     },
     {
-      "t": "2026-10-02T16:38:25.607Z",
+      "t": "2026-10-03T15:09:41.825Z",
       "level": "info",
       "msg": "ingest arXiv · Embedding Prediction Helps Image Generation · 2026-10-01"
     },
     {
-      "t": "2026-10-02T16:38:25.607Z",
+      "t": "2026-10-03T15:09:41.825Z",
       "level": "info",
       "msg": "ingest arXiv · ScholarCatalyst: A Benchmark for Retrieving Papers That I… · 2026-10-01"
     },
     {
-      "t": "2026-10-02T16:38:25.607Z",
+      "t": "2026-10-03T15:09:41.826Z",
       "level": "info",
       "msg": "ingest arXiv · SILSA: Sliding-Window Slice Latents for Topology-Preservi… · 2026-10-01"
     },
     {
-      "t": "2026-10-02T16:38:25.607Z",
+      "t": "2026-10-03T15:09:41.826Z",
       "level": "info",
       "msg": "ingest arXiv · VISTA: A Visual Harness for Reasoning in an Interactive W… · 2026-10-01"
     },
     {
-      "t": "2026-10-02T16:38:25.607Z",
+      "t": "2026-10-03T15:09:41.826Z",
       "level": "info",
       "msg": "ingest arXiv · TACO: Ternary Absolute-max Column-wise One-sparse Optimiz… · 2026-10-01"
     },
     {
-      "t": "2026-10-02T16:38:25.607Z",
-      "level": "info",
-      "msg": "ingest arXiv · FERPO: Forward Entropy-Regularized Policy Optimization · 2026-10-01"
-    },
-    {
-      "t": "2026-10-02T16:38:25.607Z",
-      "level": "info",
-      "msg": "ingest arXiv · Cost-augmented Schrödinger bridges on graphs are exactly… · 2026-10-01"
-    },
-    {
-      "t": "2026-10-02T16:38:25.607Z",
+      "t": "2026-10-03T15:09:41.826Z",
       "level": "info",
       "msg": "--- dev feed: 14 items ---"
     },
     {
-      "t": "2026-10-02T16:38:25.607Z",
+      "t": "2026-10-03T15:09:41.826Z",
       "level": "info",
-      "msg": "ingest Hacker News · The Legend of von Neumann (1973) [pdf] · 2026-10-02"
+      "msg": "ingest Hacker News · Woking Electrical Control Room (2016) · 2026-10-02"
     },
     {
-      "t": "2026-10-02T16:38:25.607Z",
+      "t": "2026-10-03T15:09:41.826Z",
       "level": "info",
-      "msg": "ingest Hacker News · Supabase is acquiring Turso · 2026-10-02"
+      "msg": "ingest Hacker News · Kolibri Has Landed: A Sovereign Open-Weight Model · 2026-10-03"
     },
     {
-      "t": "2026-10-02T16:38:25.607Z",
+      "t": "2026-10-03T15:09:41.826Z",
       "level": "info",
-      "msg": "ingest Hacker News · Shimano Bicycle Museum Review · 2026-10-02"
+      "msg": "ingest Hacker News · C++ Insights – See your source code with the eyes of a Co… · 2026-10-01"
     },
     {
-      "t": "2026-10-02T16:38:25.607Z",
+      "t": "2026-10-03T15:09:41.826Z",
       "level": "info",
-      "msg": "ingest Hacker News · Giving friends custom text buzzes based on Morse code · 2026-10-01"
+      "msg": "ingest Hacker News · The Escalation of War in Ethiopia · 2026-10-03"
     },
     {
-      "t": "2026-10-02T16:38:25.607Z",
+      "t": "2026-10-03T15:09:41.826Z",
       "level": "info",
-      "msg": "ingest Hacker News · Several vulnerabilities have been discovered in the Linux… · 2026-10-01"
+      "msg": "ingest Hacker News · Newgrounds.com – A community of games, music, and art · 2026-10-03"
     },
     {
-      "t": "2026-10-02T16:38:25.607Z",
+      "t": "2026-10-03T15:09:41.826Z",
       "level": "info",
-      "msg": "ingest Hacker News · Fixing GRPO's credit assignment problem without evaluatin… · 2026-10-02"
+      "msg": "ingest Hacker News · Court agrees with EFF: Utah's VPN law demands a technical… · 2026-10-01"
     },
     {
-      "t": "2026-10-02T16:38:25.607Z",
+      "t": "2026-10-03T15:09:41.826Z",
       "level": "info",
-      "msg": "ingest Hacker News · Show HN: Audionaut – an open-source cross-platform multit… · 2026-10-02"
+      "msg": "ingest Hacker News · What is going on with ceiling fans · 2026-10-01"
     },
     {
-      "t": "2026-10-02T16:38:25.608Z",
+      "t": "2026-10-03T15:09:41.826Z",
       "level": "info",
-      "msg": "ingest Hacker News · Frog and Toad and the Increasingly Capable Machines · 2026-10-01"
+      "msg": "ingest Hacker News · Apple Pass Designer · 2026-10-02"
     },
     {
-      "t": "2026-10-02T16:38:25.608Z",
+      "t": "2026-10-03T15:09:41.826Z",
       "level": "info",
-      "msg": "ingest Hacker News · The Four Horsemen of Agentic Coding · 2026-10-02"
+      "msg": "ingest Hacker News · Show HN: Offrun – manage every coding agent from one work… · 2026-10-03"
     },
     {
-      "t": "2026-10-02T16:38:25.608Z",
+      "t": "2026-10-03T15:09:41.826Z",
       "level": "info",
-      "msg": "ingest Hacker News · SvelteKit 3 · 2026-10-01"
+      "msg": "ingest Hacker News · Mike Tomlin spent 12 years building a Minecraft city · 2026-10-01"
     },
     {
-      "t": "2026-10-02T16:38:25.608Z",
+      "t": "2026-10-03T15:09:41.826Z",
       "level": "info",
-      "msg": "ingest Hacker News · Git 3.0's upcoming SHA-256 default will be a costly mista… · 2026-10-01"
+      "msg": "ingest Hacker News · Cloudflare OHTTP gateway · 2026-10-03"
     },
     {
-      "t": "2026-10-02T16:38:25.608Z",
+      "t": "2026-10-03T15:09:41.826Z",
       "level": "info",
-      "msg": "ingest Hacker News · Pi 1.0 · 2026-10-01"
+      "msg": "ingest Hacker News · An Update on Orion for Linux and Windows · 2026-10-03"
     },
     {
-      "t": "2026-10-02T16:38:25.608Z",
+      "t": "2026-10-03T15:09:41.826Z",
       "level": "info",
-      "msg": "ingest Hacker News · DeepSeek Harness Desktop for macOS and Windows · 2026-10-02"
+      "msg": "ingest Hacker News · A 12-year sequence of telescope images of a star and four… · 2026-10-02"
     },
     {
-      "t": "2026-10-02T16:38:25.608Z",
+      "t": "2026-10-03T15:09:41.826Z",
       "level": "info",
-      "msg": "ingest Hacker News · Pi Durable · 2026-10-01"
+      "msg": "ingest Hacker News · Loss of cell identity drives human aging: Two new papers · 2026-10-01"
     },
     {
-      "t": "2026-10-02T16:38:25.608Z",
+      "t": "2026-10-03T15:09:41.826Z",
       "level": "info",
-      "msg": "publishing 42 items across 3 feeds · 3504ms"
+      "msg": "publishing 42 items across 3 feeds · 1026ms"
     }
   ],
   "feeds": {
@@ -483,59 +483,87 @@
     ],
     "ai": [
       {
-        "id": "hn-49933251",
-        "title": "GPT-6 Astra plays World of Warcraft for the first time with agent-wow",
-        "url": "https://agent-wow.sh/gpt-6-astra-plays-world-of-warcraft-for-the-first-time-with-agent-wow/",
+        "id": "hn-49943034",
+        "title": "Show HN: Germany's new sovereign AI model Kolibri",
+        "url": "https://tej.as/blog/aleph-alpha-kolibri",
         "source": "Hacker News",
-        "date": "2026-10-02",
+        "date": "2026-10-03",
         "summary": "",
         "meta": [
-          "24 points",
-          "10 comments"
+          "159 points",
+          "90 comments"
         ],
-        "discussion": "https://news.ycombinator.com/item?id=49933251",
+        "discussion": "https://news.ycombinator.com/item?id=49943034",
         "flag": null
       },
       {
-        "id": "hn-49934569",
-        "title": "Power approval set to delay Oracle's Wisconsin AI datacenter",
-        "url": "https://www.theregister.com/on-prem/2026/10/02/power-approval-set-to-delay-oracles-wisconsin-ai-datacenter/5300832",
+        "id": "hn-49944127",
+        "title": "US killer's sentence quashed because of AI video of victim shown in court",
+        "url": "https://www.bbc.com/news/articles/cwgkvygg5nzvo",
         "source": "Hacker News",
-        "date": "2026-10-02",
+        "date": "2026-10-03",
         "summary": "",
         "meta": [
-          "20 points",
-          "4 comments"
+          "6 points",
+          "0 comments"
         ],
-        "discussion": "https://news.ycombinator.com/item?id=49934569",
+        "discussion": "https://news.ycombinator.com/item?id=49944127",
         "flag": null
       },
       {
-        "id": "hn-49934502",
-        "title": "Mozilla shutting down Solo AI website creator",
-        "url": "https://support.soloist.ai/doc/solo-shutdown-faq",
+        "id": "hn-49936575",
+        "title": "From the creator of Redis; run LLM locally with ds4",
+        "url": "https://dwarfstar.sh/",
         "source": "Hacker News",
         "date": "2026-10-02",
         "summary": "",
         "meta": [
-          "27 points",
-          "49 comments"
+          "292 points",
+          "87 comments"
         ],
-        "discussion": "https://news.ycombinator.com/item?id=49934502",
+        "discussion": "https://news.ycombinator.com/item?id=49936575",
         "flag": null
       },
       {
-        "id": "hn-49934487",
-        "title": "AI Makes Me Sad",
-        "url": "https://mondobe.com/ai-makes-me-sad",
+        "id": "hn-49929391",
+        "title": "Greg Kroah-Hartman – Security in the LLM Age [video]",
+        "url": "https://www.youtube.com/watch?v=NnV_cWeoo5Q",
         "source": "Hacker News",
         "date": "2026-10-02",
         "summary": "",
         "meta": [
-          "139 points",
-          "144 comments"
+          "277 points",
+          "105 comments"
         ],
-        "discussion": "https://news.ycombinator.com/item?id=49934487",
+        "discussion": "https://news.ycombinator.com/item?id=49929391",
+        "flag": null
+      },
+      {
+        "id": "hn-49933740",
+        "title": "With most information hidden, the game Stratego had stumped AI until now",
+        "url": "https://arstechnica.com/science/2026/10/ai-finally-beat-the-best-stratego-player-in-history-and-did-it-on-a-budget/",
+        "source": "Hacker News",
+        "date": "2026-10-02",
+        "summary": "",
+        "meta": [
+          "253 points",
+          "119 comments"
+        ],
+        "discussion": "https://news.ycombinator.com/item?id=49933740",
+        "flag": null
+      },
+      {
+        "id": "hn-49937916",
+        "title": "Show HN: Made an open-source Lego AI generator",
+        "url": "https://github.com/anteloc/ldraw-nova",
+        "source": "Hacker News",
+        "date": "2026-10-02",
+        "summary": "",
+        "meta": [
+          "126 points",
+          "47 comments"
+        ],
+        "discussion": "https://news.ycombinator.com/item?id=49937916",
         "flag": null
       },
       {
@@ -641,229 +669,203 @@
           "Jichao Jiang +4"
         ],
         "flag": null
-      },
-      {
-        "id": "http://arxiv.org/abs/2610.02198v1",
-        "title": "FERPO: Forward Entropy-Regularized Policy Optimization",
-        "url": "http://arxiv.org/abs/2610.02198v1",
-        "source": "arXiv",
-        "date": "2026-10-01",
-        "summary": "Several state-of-the-art methods for online reinforcement learning in continuous control improve policies using action gradients of a learned critic. However, critics are typically trained to predict returns, and accurate value predictions do not necessarily yield accurate action derivatives, potentially leading to un…",
-        "meta": [
-          "Research",
-          "Sebastian Sanokowski +2"
-        ],
-        "flag": null
-      },
-      {
-        "id": "http://arxiv.org/abs/2610.02195v1",
-        "title": "Cost-augmented Schrödinger bridges on graphs are exactly solvable: a Feynman-Kac tilt replaces learned control",
-        "url": "http://arxiv.org/abs/2610.02195v1",
-        "source": "arXiv",
-        "date": "2026-10-01",
-        "summary": "The generalized Schrödinger bridge on a graph moves mass between two distributions while charging a cost for the states visited. It has been approached by learning the rates of a controlled continuous-time Markov chain, with a temporal-difference penalty that restores the cost. A state cost folds into the reference pr…",
-        "meta": [
-          "Research",
-          "Akshay Balsubramani"
-        ],
-        "flag": null
       }
     ],
     "dev": [
       {
-        "id": "hn-49933235",
-        "title": "The Legend of von Neumann (1973) [pdf]",
-        "url": "https://gwern.net/doc/math/1973-halmos.pdf",
+        "id": "hn-49938399",
+        "title": "Woking Electrical Control Room (2016)",
+        "url": "http://www.darbiansphotography.com/woking-electrical-control-room-urbex",
         "source": "Hacker News",
         "date": "2026-10-02",
         "summary": "",
         "meta": [
-          "117 points",
-          "63 comments"
+          "38 points",
+          "3 comments"
         ],
-        "discussion": "https://news.ycombinator.com/item?id=49933235",
+        "discussion": "https://news.ycombinator.com/item?id=49938399",
         "flag": null
       },
       {
-        "id": "hn-49934784",
-        "title": "Supabase is acquiring Turso",
-        "url": "https://supabase.com/blog/supabase-is-acquiring-turso",
+        "id": "hn-49942706",
+        "title": "Kolibri Has Landed: A Sovereign Open-Weight Model",
+        "url": "https://aleph-alpha.com/en/blog/kolibri-has-landed-a-sovereign-open-weight-model/",
         "source": "Hacker News",
-        "date": "2026-10-02",
+        "date": "2026-10-03",
         "summary": "",
         "meta": [
-          "63 points",
-          "14 comments"
+          "107 points",
+          "19 comments"
         ],
-        "discussion": "https://news.ycombinator.com/item?id=49934784",
+        "discussion": "https://news.ycombinator.com/item?id=49942706",
         "flag": null
       },
       {
-        "id": "hn-49930047",
-        "title": "Shimano Bicycle Museum Review",
-        "url": "https://inrng.com/2026/10/shimano-bicycle-museum/",
-        "source": "Hacker News",
-        "date": "2026-10-02",
-        "summary": "",
-        "meta": [
-          "253 points",
-          "56 comments"
-        ],
-        "discussion": "https://news.ycombinator.com/item?id=49930047",
-        "flag": null
-      },
-      {
-        "id": "hn-49925653",
-        "title": "Giving friends custom text buzzes based on Morse code",
-        "url": "https://liquidbrain.net/blog/giving-friends-custom-text-buzzes-based-on-morse-code/",
+        "id": "hn-49928361",
+        "title": "C++ Insights – See your source code with the eyes of a Compiler",
+        "url": "https://github.com/andreasfertig/cppinsights",
         "source": "Hacker News",
         "date": "2026-10-01",
         "summary": "",
         "meta": [
-          "24 points",
-          "5 comments"
+          "50 points",
+          "3 comments"
         ],
-        "discussion": "https://news.ycombinator.com/item?id=49925653",
+        "discussion": "https://news.ycombinator.com/item?id=49928361",
         "flag": null
       },
       {
-        "id": "hn-49928121",
-        "title": "Several vulnerabilities have been discovered in the Linux kernel",
-        "url": "https://lwn.net/Articles/1097401/",
+        "id": "hn-49943451",
+        "title": "The Escalation of War in Ethiopia",
+        "url": "https://www.africanistperspective.com/p/on-the-escalation-of-war-in-ethiopia",
+        "source": "Hacker News",
+        "date": "2026-10-03",
+        "summary": "",
+        "meta": [
+          "94 points",
+          "73 comments"
+        ],
+        "discussion": "https://news.ycombinator.com/item?id=49943451",
+        "flag": null
+      },
+      {
+        "id": "hn-49940394",
+        "title": "Newgrounds.com – A community of games, music, and art",
+        "url": "https://www.newgrounds.com/",
+        "source": "Hacker News",
+        "date": "2026-10-03",
+        "summary": "",
+        "meta": [
+          "341 points",
+          "96 comments"
+        ],
+        "discussion": "https://news.ycombinator.com/item?id=49940394",
+        "flag": null
+      },
+      {
+        "id": "hn-49927754",
+        "title": "Court agrees with EFF: Utah's VPN law demands a technical impossibility",
+        "url": "https://www.eff.org/deeplinks/2026/10/court-agrees-eff-utahs-vpn-law-demands-technical-impossibility",
         "source": "Hacker News",
         "date": "2026-10-01",
+        "summary": "",
+        "meta": [
+          "703 points",
+          "334 comments"
+        ],
+        "discussion": "https://news.ycombinator.com/item?id=49927754",
+        "flag": null
+      },
+      {
+        "id": "hn-49917536",
+        "title": "What is going on with ceiling fans",
+        "url": "https://mcmansionhell.com/post/829127919552151552/what-is-going-on-with-ceiling-fans",
+        "source": "Hacker News",
+        "date": "2026-10-01",
+        "summary": "",
+        "meta": [
+          "34 points",
+          "2 comments"
+        ],
+        "discussion": "https://news.ycombinator.com/item?id=49917536",
+        "flag": null
+      },
+      {
+        "id": "hn-49937276",
+        "title": "Apple Pass Designer",
+        "url": "https://developer.apple.com/pass-designer/",
+        "source": "Hacker News",
+        "date": "2026-10-02",
         "summary": "",
         "meta": [
           "486 points",
-          "347 comments"
+          "299 comments"
         ],
-        "discussion": "https://news.ycombinator.com/item?id=49928121",
+        "discussion": "https://news.ycombinator.com/item?id=49937276",
         "flag": null
       },
       {
-        "id": "hn-49934012",
-        "title": "Fixing GRPO's credit assignment problem without evaluating every step",
-        "url": "https://arxiv.org/abs/2609.36178",
+        "id": "hn-49942434",
+        "title": "Show HN: Offrun – manage every coding agent from one workspace",
+        "url": "https://offrun.dev/",
+        "source": "Hacker News",
+        "date": "2026-10-03",
+        "summary": "",
+        "meta": [
+          "36 points",
+          "13 comments"
+        ],
+        "discussion": "https://news.ycombinator.com/item?id=49942434",
+        "flag": null
+      },
+      {
+        "id": "hn-49925184",
+        "title": "Mike Tomlin spent 12 years building a Minecraft city",
+        "url": "https://www.nytimes.com/athletic/7648198/2026/10/01/mike-tomlin-minecraft-nfl-coach/",
+        "source": "Hacker News",
+        "date": "2026-10-01",
+        "summary": "",
+        "meta": [
+          "563 points",
+          "129 comments"
+        ],
+        "discussion": "https://news.ycombinator.com/item?id=49925184",
+        "flag": null
+      },
+      {
+        "id": "hn-49941091",
+        "title": "Cloudflare OHTTP gateway",
+        "url": "https://blog.cloudflare.com/announcing-cloudflare-ohttp-gateway/",
+        "source": "Hacker News",
+        "date": "2026-10-03",
+        "summary": "",
+        "meta": [
+          "133 points",
+          "56 comments"
+        ],
+        "discussion": "https://news.ycombinator.com/item?id=49941091",
+        "flag": null
+      },
+      {
+        "id": "hn-49941447",
+        "title": "An Update on Orion for Linux and Windows",
+        "url": "https://blog.kagi.com/update-orion-linux-windows",
+        "source": "Hacker News",
+        "date": "2026-10-03",
+        "summary": "",
+        "meta": [
+          "123 points",
+          "62 comments"
+        ],
+        "discussion": "https://news.ycombinator.com/item?id=49941447",
+        "flag": null
+      },
+      {
+        "id": "hn-49932147",
+        "title": "A 12-year sequence of telescope images of a star and four planets orbiting",
+        "url": "https://bsky.app/profile/theplanetaryguy.com/post/3mwucf5ert22f",
         "source": "Hacker News",
         "date": "2026-10-02",
         "summary": "",
         "meta": [
-          "11 points",
-          "0 comments"
+          "335 points",
+          "62 comments"
         ],
-        "discussion": "https://news.ycombinator.com/item?id=49934012",
+        "discussion": "https://news.ycombinator.com/item?id=49932147",
         "flag": null
       },
       {
-        "id": "hn-49931031",
-        "title": "Show HN: Audionaut – an open-source cross-platform multitrack audio editor",
-        "url": "https://github.com/kvoltmer/Audionaut",
-        "source": "Hacker News",
-        "date": "2026-10-02",
-        "summary": "",
-        "meta": [
-          "103 points",
-          "38 comments"
-        ],
-        "discussion": "https://news.ycombinator.com/item?id=49931031",
-        "flag": null
-      },
-      {
-        "id": "hn-49927760",
-        "title": "Frog and Toad and the Increasingly Capable Machines",
-        "url": "https://www.frogandtoad.ai/",
+        "id": "hn-49926411",
+        "title": "Loss of cell identity drives human aging: Two new papers",
+        "url": "https://erictopol.substack.com/p/loss-of-cell-identity-drives-human",
         "source": "Hacker News",
         "date": "2026-10-01",
         "summary": "",
         "meta": [
-          "456 points",
-          "102 comments"
+          "303 points",
+          "137 comments"
         ],
-        "discussion": "https://news.ycombinator.com/item?id=49927760",
-        "flag": null
-      },
-      {
-        "id": "hn-49934511",
-        "title": "The Four Horsemen of Agentic Coding",
-        "url": "https://distantprovince.substack.com/p/the-four-horsemen-of-agentic-coding",
-        "source": "Hacker News",
-        "date": "2026-10-02",
-        "summary": "",
-        "meta": [
-          "29 points",
-          "7 comments"
-        ],
-        "discussion": "https://news.ycombinator.com/item?id=49934511",
-        "flag": null
-      },
-      {
-        "id": "hn-49926536",
-        "title": "SvelteKit 3",
-        "url": "https://svelte.dev/blog/sveltekit-3-is-here",
-        "source": "Hacker News",
-        "date": "2026-10-01",
-        "summary": "",
-        "meta": [
-          "371 points",
-          "159 comments"
-        ],
-        "discussion": "https://news.ycombinator.com/item?id=49926536",
-        "flag": null
-      },
-      {
-        "id": "hn-49924179",
-        "title": "Git 3.0's upcoming SHA-256 default will be a costly mistake",
-        "url": "https://blog.gitbutler.com/git-3-sha-256",
-        "source": "Hacker News",
-        "date": "2026-10-01",
-        "summary": "",
-        "meta": [
-          "511 points",
-          "478 comments"
-        ],
-        "discussion": "https://news.ycombinator.com/item?id=49924179",
-        "flag": null
-      },
-      {
-        "id": "hn-49926069",
-        "title": "Pi 1.0",
-        "url": "https://earendil.com/posts/pi-1-0/",
-        "source": "Hacker News",
-        "date": "2026-10-01",
-        "summary": "",
-        "meta": [
-          "1591 points",
-          "546 comments"
-        ],
-        "discussion": "https://news.ycombinator.com/item?id=49926069",
-        "flag": null
-      },
-      {
-        "id": "hn-49929489",
-        "title": "DeepSeek Harness Desktop for macOS and Windows",
-        "url": "https://www.deepseek.com/en/harness/",
-        "source": "Hacker News",
-        "date": "2026-10-02",
-        "summary": "",
-        "meta": [
-          "359 points",
-          "183 comments"
-        ],
-        "discussion": "https://news.ycombinator.com/item?id=49929489",
-        "flag": null
-      },
-      {
-        "id": "hn-49925969",
-        "title": "Pi Durable",
-        "url": "https://earendil.com/posts/pi-durable/",
-        "source": "Hacker News",
-        "date": "2026-10-01",
-        "summary": "",
-        "meta": [
-          "460 points",
-          "64 comments"
-        ],
-        "discussion": "https://news.ycombinator.com/item?id=49925969",
+        "discussion": "https://news.ycombinator.com/item?id=49926411",
         "flag": null
       }
     ]
