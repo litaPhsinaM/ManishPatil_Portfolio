@@ -1,289 +1,303 @@
 {
-  "generatedAt": "2026-10-16T15:22:31.499Z",
+  "generatedAt": "2026-10-17T14:12:54.035Z",
   "log": [
     {
-      "t": "2026-10-16T15:22:30.560Z",
+      "t": "2026-10-17T14:12:53.074Z",
       "level": "info",
       "msg": "signal refresh started"
     },
     {
-      "t": "2026-10-16T15:22:30.565Z",
+      "t": "2026-10-17T14:12:53.077Z",
       "level": "info",
       "msg": "GET hacker-news.firebaseio.com/v0/topstories.json"
     },
     {
-      "t": "2026-10-16T15:22:30.753Z",
+      "t": "2026-10-17T14:12:53.237Z",
       "level": "info",
       "msg": "HTTP 200 · resolving top 60 story ids in batches of 10"
     },
     {
-      "t": "2026-10-16T15:22:31.100Z",
+      "t": "2026-10-17T14:12:53.629Z",
       "level": "info",
-      "msg": "60 of 60 resolved to usable stories · 535ms"
+      "msg": "59 of 60 resolved to usable stories · 552ms"
     },
     {
-      "t": "2026-10-16T15:22:31.101Z",
+      "t": "2026-10-17T14:12:53.629Z",
       "level": "info",
       "msg": "GET cisa.gov/feeds/known_exploited_vulnerabilities.json"
     },
     {
-      "t": "2026-10-16T15:22:31.220Z",
+      "t": "2026-10-17T14:12:53.840Z",
       "level": "info",
-      "msg": "HTTP 200 · catalog holds 1746 CVEs · 119ms"
+      "msg": "HTTP 200 · catalog holds 1748 CVEs · 211ms"
     },
     {
-      "t": "2026-10-16T15:22:31.224Z",
+      "t": "2026-10-17T14:12:53.842Z",
       "level": "info",
-      "msg": "fleet filter: 1029 of 1746 touch managed platforms"
+      "msg": "fleet filter: 1030 of 1748 touch managed platforms"
     },
     {
-      "t": "2026-10-16T15:22:31.233Z",
+      "t": "2026-10-17T14:12:53.849Z",
       "level": "info",
       "msg": "GET export.arxiv.org/api/query cat:cs.AI OR cat:cs.LG"
     },
     {
-      "t": "2026-10-16T15:22:31.497Z",
+      "t": "2026-10-17T14:12:54.034Z",
       "level": "info",
-      "msg": "HTTP 200 · 34,845 bytes of Atom XML · 264ms"
+      "msg": "HTTP 200 · 34,845 bytes of Atom XML · 185ms"
     },
     {
-      "t": "2026-10-16T15:22:31.498Z",
+      "t": "2026-10-17T14:12:54.035Z",
       "level": "info",
-      "msg": "topic split: 6 AI stories, 54 general dev"
+      "msg": "topic split: 8 AI stories, 51 general dev"
     },
     {
-      "t": "2026-10-16T15:22:31.498Z",
+      "t": "2026-10-17T14:12:54.035Z",
       "level": "info",
       "msg": "--- security feed: 14 items ---"
     },
     {
-      "t": "2026-10-16T15:22:31.499Z",
+      "t": "2026-10-17T14:12:54.035Z",
+      "level": "info",
+      "msg": "ingest CISA KEV · Fortinet Multiple Products Path Traversal Vulnerability · 2026-10-16"
+    },
+    {
+      "t": "2026-10-17T14:12:54.035Z",
       "level": "info",
       "msg": "ingest CISA KEV · Cisco Secure Email Gateway Relative Path Traversal Vulner… · 2026-10-14"
     },
     {
-      "t": "2026-10-16T15:22:31.499Z",
+      "t": "2026-10-17T14:12:54.035Z",
       "level": "info",
       "msg": "ingest CISA KEV · Palo Alto Networks PAN-OS Code Injection Vulnerability · 2026-10-14"
     },
     {
-      "t": "2026-10-16T15:22:31.499Z",
+      "t": "2026-10-17T14:12:54.035Z",
       "level": "info",
       "msg": "ingest CISA KEV · Ivanti Connect Secure Authentication Bypass by Spoofing V… · 2026-10-13"
     },
     {
-      "t": "2026-10-16T15:22:31.499Z",
+      "t": "2026-10-17T14:12:54.035Z",
       "level": "info",
       "msg": "ingest CISA KEV · Microsoft Windows Command Injection Vulnerability · 2026-10-13"
     },
     {
-      "t": "2026-10-16T15:22:31.499Z",
+      "t": "2026-10-17T14:12:54.035Z",
       "level": "info",
       "msg": "ingest CISA KEV · Apache Struts Command Injection Vulnerability · 2026-10-08"
     },
     {
-      "t": "2026-10-16T15:22:31.499Z",
+      "t": "2026-10-17T14:12:54.035Z",
       "level": "info",
       "msg": "ingest CISA KEV · Citrix NetScaler Improper Restriction of Operations withi… · 2026-10-04"
     },
     {
-      "t": "2026-10-16T15:22:31.499Z",
+      "t": "2026-10-17T14:12:54.035Z",
       "level": "info",
       "msg": "ingest CISA KEV · Fortinet FortiMail Path Traversal Vulnerability · 2026-10-01"
     },
     {
-      "t": "2026-10-16T15:22:31.499Z",
+      "t": "2026-10-17T14:12:54.035Z",
       "level": "info",
       "msg": "ingest CISA KEV · Cisco Catalyst SD-WAN Manager Hex Encoding Vulnerability · 2026-09-30"
     },
     {
-      "t": "2026-10-16T15:22:31.499Z",
+      "t": "2026-10-17T14:12:54.035Z",
       "level": "info",
       "msg": "ingest CISA KEV · Apple Multiple Products Out-of-Bounds Write Vulnerability · 2026-09-29"
     },
     {
-      "t": "2026-10-16T15:22:31.499Z",
+      "t": "2026-10-17T14:12:54.035Z",
       "level": "info",
       "msg": "ingest CISA KEV · Citrix NetScaler Improper Restriction of Operations withi… · 2026-09-27"
     },
     {
-      "t": "2026-10-16T15:22:31.499Z",
+      "t": "2026-10-17T14:12:54.035Z",
       "level": "info",
       "msg": "ingest CISA KEV · Citrix NetScaler Improper Input Validation Vulnerability · 2026-09-27"
     },
     {
-      "t": "2026-10-16T15:22:31.499Z",
+      "t": "2026-10-17T14:12:54.035Z",
       "level": "info",
       "msg": "ingest CISA KEV · Microsoft SharePoint Code Injection Vulnerability · 2026-09-25"
     },
     {
-      "t": "2026-10-16T15:22:31.499Z",
+      "t": "2026-10-17T14:12:54.035Z",
       "level": "info",
       "msg": "ingest CISA KEV · WordPress Core Remote File Inclusion Vulnerability · 2026-09-25"
     },
     {
-      "t": "2026-10-16T15:22:31.499Z",
-      "level": "info",
-      "msg": "ingest CISA KEV · F5 BIG-IP APM Heap-based Buffer Overflow Vulnerability · 2026-09-22"
-    },
-    {
-      "t": "2026-10-16T15:22:31.499Z",
+      "t": "2026-10-17T14:12:54.035Z",
       "level": "info",
       "msg": "--- ai feed: 14 items ---"
     },
     {
-      "t": "2026-10-16T15:22:31.499Z",
+      "t": "2026-10-17T14:12:54.035Z",
       "level": "info",
-      "msg": "ingest Hacker News · Redesigning Source Control at Anthropic · 2026-10-16"
+      "msg": "ingest Hacker News · Show HN: Llmspeed – feel how fast a local LLM runs before… · 2026-10-17"
     },
     {
-      "t": "2026-10-16T15:22:31.499Z",
+      "t": "2026-10-17T14:12:54.035Z",
+      "level": "info",
+      "msg": "ingest Hacker News · Claude reveals ECDSA curve origins · 2026-10-16"
+    },
+    {
+      "t": "2026-10-17T14:12:54.035Z",
+      "level": "info",
+      "msg": "ingest Hacker News · Designing more efficient quantum circuits with Claude · 2026-10-16"
+    },
+    {
+      "t": "2026-10-17T14:12:54.035Z",
+      "level": "info",
+      "msg": "ingest Hacker News · 90% of US working hours are spent on tasks not covered we… · 2026-10-16"
+    },
+    {
+      "t": "2026-10-17T14:12:54.035Z",
+      "level": "info",
+      "msg": "ingest Hacker News · How the Claude Code team does code review · 2026-10-16"
+    },
+    {
+      "t": "2026-10-17T14:12:54.035Z",
       "level": "info",
       "msg": "ingest Hacker News · Show HN: Gemini 4 Argon plays StarCraft · 2026-10-16"
     },
     {
-      "t": "2026-10-16T15:22:31.499Z",
+      "t": "2026-10-17T14:12:54.035Z",
       "level": "info",
-      "msg": "ingest Hacker News · How to make System 1 LLMs show System 2 competencies? · 2026-10-16"
+      "msg": "ingest Hacker News · Anthropic assigned highest junk credit rating in June · 2026-10-16"
     },
     {
-      "t": "2026-10-16T15:22:31.499Z",
+      "t": "2026-10-17T14:12:54.035Z",
       "level": "info",
       "msg": "ingest arXiv · LIBERO-PeRM: Benchmarking Personalized Robotic Manipulati… · 2026-10-15"
     },
     {
-      "t": "2026-10-16T15:22:31.499Z",
+      "t": "2026-10-17T14:12:54.035Z",
       "level": "info",
       "msg": "ingest arXiv · Discovering state-of-the-art quantum circuits with large… · 2026-10-15"
     },
     {
-      "t": "2026-10-16T15:22:31.499Z",
+      "t": "2026-10-17T14:12:54.035Z",
       "level": "info",
       "msg": "ingest arXiv · T2-z: Test-Time Optimization of Environment Latents for R… · 2026-10-15"
     },
     {
-      "t": "2026-10-16T15:22:31.499Z",
+      "t": "2026-10-17T14:12:54.035Z",
       "level": "info",
       "msg": "ingest arXiv · CoDA: Co-Evolution of Data Engines and Action Policies · 2026-10-15"
     },
     {
-      "t": "2026-10-16T15:22:31.499Z",
+      "t": "2026-10-17T14:12:54.035Z",
       "level": "info",
       "msg": "ingest arXiv · PathFM: Fast Generative Forecasting of Multivariate Traje… · 2026-10-15"
     },
     {
-      "t": "2026-10-16T15:22:31.499Z",
+      "t": "2026-10-17T14:12:54.035Z",
       "level": "info",
       "msg": "ingest arXiv · Rethinking Routing Exploration in Modern Mixture-of-Exper… · 2026-10-15"
     },
     {
-      "t": "2026-10-16T15:22:31.499Z",
+      "t": "2026-10-17T14:12:54.035Z",
       "level": "info",
       "msg": "ingest arXiv · FDE-Gym: The Last Mile of AI Delivery · 2026-10-15"
     },
     {
-      "t": "2026-10-16T15:22:31.499Z",
-      "level": "info",
-      "msg": "ingest arXiv · MLExpert: Towards a Generalist Agentic Model for Autonomo… · 2026-10-15"
-    },
-    {
-      "t": "2026-10-16T15:22:31.499Z",
-      "level": "info",
-      "msg": "ingest arXiv · GeoState: Learning View-Decoupled Geometry States for 3D… · 2026-10-15"
-    },
-    {
-      "t": "2026-10-16T15:22:31.499Z",
-      "level": "info",
-      "msg": "ingest arXiv · 3DCodeVerse: Exploring 3D Worlds as Code · 2026-10-15"
-    },
-    {
-      "t": "2026-10-16T15:22:31.499Z",
-      "level": "info",
-      "msg": "ingest arXiv · Dexterity from Supervised Play · 2026-10-15"
-    },
-    {
-      "t": "2026-10-16T15:22:31.499Z",
+      "t": "2026-10-17T14:12:54.035Z",
       "level": "info",
       "msg": "--- dev feed: 14 items ---"
     },
     {
-      "t": "2026-10-16T15:22:31.499Z",
+      "t": "2026-10-17T14:12:54.035Z",
       "level": "info",
-      "msg": "ingest Hacker News · I Love Software Rendering · 2026-10-16"
+      "msg": "ingest Hacker News · DeepSeek: DeepSeek v4.1 Flash 1017 · 2026-10-17"
     },
     {
-      "t": "2026-10-16T15:22:31.499Z",
+      "t": "2026-10-17T14:12:54.035Z",
       "level": "info",
-      "msg": "ingest Hacker News · Big Fish: Exploiting a 37-Year-Old Kernel Bug in OpenBSD · 2026-10-16"
+      "msg": "ingest Hacker News · Ultramarine 1 Flash · 2026-10-15"
     },
     {
-      "t": "2026-10-16T15:22:31.499Z",
+      "t": "2026-10-17T14:12:54.035Z",
+      "level": "info",
+      "msg": "ingest Hacker News · Tesla Roadster · 2026-10-16"
+    },
+    {
+      "t": "2026-10-17T14:12:54.035Z",
+      "level": "info",
+      "msg": "ingest Hacker News · DeepSeek-v4.1-Flash-1017 · 2026-10-17"
+    },
+    {
+      "t": "2026-10-17T14:12:54.035Z",
+      "level": "info",
+      "msg": "ingest Hacker News · The First Candid · 2026-10-16"
+    },
+    {
+      "t": "2026-10-17T14:12:54.035Z",
+      "level": "info",
+      "msg": "ingest Hacker News · Rendering pretty sky in Around The World game · 2026-10-16"
+    },
+    {
+      "t": "2026-10-17T14:12:54.035Z",
+      "level": "info",
+      "msg": "ingest Hacker News · Solar surpasses nuclear power globally for first time – p… · 2026-10-17"
+    },
+    {
+      "t": "2026-10-17T14:12:54.035Z",
+      "level": "info",
+      "msg": "ingest Hacker News · Llama.cpp on a jailbroken PS5: run any GGUF model nativel… · 2026-10-16"
+    },
+    {
+      "t": "2026-10-17T14:12:54.035Z",
+      "level": "info",
+      "msg": "ingest Hacker News · You could have invented transformers from memory · 2026-10-16"
+    },
+    {
+      "t": "2026-10-17T14:12:54.035Z",
+      "level": "info",
+      "msg": "ingest Hacker News · Intuitive concurrent programming in any language · 2026-10-15"
+    },
+    {
+      "t": "2026-10-17T14:12:54.035Z",
+      "level": "info",
+      "msg": "ingest Hacker News · Recipes Are Moving from Maven Central to the Code Genome… · 2026-10-15"
+    },
+    {
+      "t": "2026-10-17T14:12:54.035Z",
+      "level": "info",
+      "msg": "ingest Hacker News · Orbital Angular Momentum of Light · 2026-10-14"
+    },
+    {
+      "t": "2026-10-17T14:12:54.035Z",
       "level": "info",
       "msg": "ingest Hacker News · Apple ML Research: Muse Spark Open with MLX on Mac Studio · 2026-10-16"
     },
     {
-      "t": "2026-10-16T15:22:31.499Z",
+      "t": "2026-10-17T14:12:54.035Z",
       "level": "info",
-      "msg": "ingest Hacker News · Gyroscopes Got So Small [video] · 2026-10-15"
+      "msg": "ingest Hacker News · FLUX 3 Image Klein · 2026-10-16"
     },
     {
-      "t": "2026-10-16T15:22:31.499Z",
+      "t": "2026-10-17T14:12:54.035Z",
       "level": "info",
-      "msg": "ingest Hacker News · Is Liquid Metal Killing Our PCs? Scientific Analysis and… · 2026-10-15"
-    },
-    {
-      "t": "2026-10-16T15:22:31.499Z",
-      "level": "info",
-      "msg": "ingest Hacker News · Hello Toronto – Waymo Is En Route · 2026-10-16"
-    },
-    {
-      "t": "2026-10-16T15:22:31.499Z",
-      "level": "info",
-      "msg": "ingest Hacker News · RFC8950: Announce IPv4 with an IPv6 next-hop · 2026-10-16"
-    },
-    {
-      "t": "2026-10-16T15:22:31.499Z",
-      "level": "info",
-      "msg": "ingest Hacker News · How to Formalize All of Mathematics · 2026-10-16"
-    },
-    {
-      "t": "2026-10-16T15:22:31.499Z",
-      "level": "info",
-      "msg": "ingest Hacker News · Yet another way to invoke functions without parentheses · 2026-10-13"
-    },
-    {
-      "t": "2026-10-16T15:22:31.499Z",
-      "level": "info",
-      "msg": "ingest Hacker News · Woman who rescued injured crow keeps getting 'thank-you g… · 2026-10-13"
-    },
-    {
-      "t": "2026-10-16T15:22:31.499Z",
-      "level": "info",
-      "msg": "ingest Hacker News · Stolen Renoir paintings found hidden, and damaged, behind… · 2026-10-13"
-    },
-    {
-      "t": "2026-10-16T15:22:31.499Z",
-      "level": "info",
-      "msg": "ingest Hacker News · The Economic Complexity of the Western Roman Empire · 2026-10-14"
-    },
-    {
-      "t": "2026-10-16T15:22:31.499Z",
-      "level": "info",
-      "msg": "ingest Hacker News · Meta’s new commercial terms will allow the scraping of ne… · 2026-10-15"
-    },
-    {
-      "t": "2026-10-16T15:22:31.499Z",
-      "level": "info",
-      "msg": "ingest Hacker News · Muse Spark Open · 2026-10-15"
-    },
-    {
-      "t": "2026-10-16T15:22:31.499Z",
-      "level": "info",
-      "msg": "publishing 42 items across 3 feeds · 939ms"
+      "msg": "publishing 42 items across 3 feeds · 961ms"
     }
   ],
   "feeds": {
     "security": [
+      {
+        "id": "CVE-2025-61624",
+        "title": "Fortinet Multiple Products Path Traversal Vulnerability",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-61624",
+        "source": "CISA KEV",
+        "date": "2026-10-16",
+        "summary": "FortiOS, FortiPAM, FortiProxy, and FortiSwitchManager contain a path traversal vulnerability that may allow an authenticated attacker with admin profile and at least read-write permissions to write or delete arbitrary files via specific CLI commands.",
+        "meta": [
+          "Network edge / VPN",
+          "Fortinet",
+          "Patch by 2026-10-19"
+        ],
+        "flag": null
+      },
       {
         "id": "CVE-2026-76519",
         "title": "Cisco Secure Email Gateway Relative Path Traversal Vulnerability",
@@ -465,35 +479,77 @@
           "Patch by 2026-09-28"
         ],
         "flag": null
-      },
-      {
-        "id": "CVE-2026-94127",
-        "title": "F5 BIG-IP APM Heap-based Buffer Overflow Vulnerability",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-94127",
-        "source": "CISA KEV",
-        "date": "2026-09-22",
-        "summary": "F5 BIG-IP APM contains a heap-based buffer overflow vulnerability when access policy and an OAuth profile are configured on a virtual server. This vulnerability could allow an unauthenticated attacker to perform remote code execution.",
-        "meta": [
-          "Network edge / VPN",
-          "F5",
-          "Patch by 2026-09-25"
-        ],
-        "flag": null
       }
     ],
     "ai": [
       {
-        "id": "hn-50118863",
-        "title": "Redesigning Source Control at Anthropic",
-        "url": "https://simonwillison.net/2026/Oct/13/redesigning-source-control-at-anthropic/",
+        "id": "hn-50127979",
+        "title": "Show HN: Llmspeed – feel how fast a local LLM runs before you buy the hardware",
+        "url": "https://llmspeed.dev/",
+        "source": "Hacker News",
+        "date": "2026-10-17",
+        "summary": "",
+        "meta": [
+          "146 points",
+          "51 comments"
+        ],
+        "discussion": "https://news.ycombinator.com/item?id=50127979",
+        "flag": null
+      },
+      {
+        "id": "hn-50122800",
+        "title": "Claude reveals ECDSA curve origins",
+        "url": "https://www.anthropic.com/research/ecdsa-curve-origins",
         "source": "Hacker News",
         "date": "2026-10-16",
         "summary": "",
         "meta": [
-          "23 points",
-          "24 comments"
+          "935 points",
+          "340 comments"
         ],
-        "discussion": "https://news.ycombinator.com/item?id=50118863",
+        "discussion": "https://news.ycombinator.com/item?id=50122800",
+        "flag": null
+      },
+      {
+        "id": "hn-50121939",
+        "title": "Designing more efficient quantum circuits with Claude",
+        "url": "https://www.anthropic.com/research/designing-efficient-quantum-circuits",
+        "source": "Hacker News",
+        "date": "2026-10-16",
+        "summary": "",
+        "meta": [
+          "156 points",
+          "33 comments"
+        ],
+        "discussion": "https://news.ycombinator.com/item?id=50121939",
+        "flag": null
+      },
+      {
+        "id": "hn-50121179",
+        "title": "90% of US working hours are spent on tasks not covered well by AI benchmarks",
+        "url": "https://www.mercor.com/research/labor-index/benchmark-map/",
+        "source": "Hacker News",
+        "date": "2026-10-16",
+        "summary": "",
+        "meta": [
+          "550 points",
+          "482 comments"
+        ],
+        "discussion": "https://news.ycombinator.com/item?id=50121179",
+        "flag": null
+      },
+      {
+        "id": "hn-50122951",
+        "title": "How the Claude Code team does code review",
+        "url": "https://claude.dev/blog/solving-code-review-at-anthropic/",
+        "source": "Hacker News",
+        "date": "2026-10-16",
+        "summary": "",
+        "meta": [
+          "403 points",
+          "378 comments"
+        ],
+        "discussion": "https://news.ycombinator.com/item?id=50122951",
         "flag": null
       },
       {
@@ -504,24 +560,24 @@
         "date": "2026-10-16",
         "summary": "",
         "meta": [
-          "18 points",
-          "9 comments"
+          "231 points",
+          "103 comments"
         ],
         "discussion": "https://news.ycombinator.com/item?id=50118688",
         "flag": null
       },
       {
-        "id": "hn-50118662",
-        "title": "How to make System 1 LLMs show System 2 competencies?",
-        "url": "https://onlinelibrary.wiley.com/doi/epdf/10.1002/aaai.70113",
+        "id": "hn-50122112",
+        "title": "Anthropic assigned highest junk credit rating in June",
+        "url": "https://www.ft.com/content/5a310aee-f555-4266-874c-b1b4db20186d",
         "source": "Hacker News",
         "date": "2026-10-16",
         "summary": "",
         "meta": [
-          "5 points",
-          "1 comments"
+          "267 points",
+          "82 comments"
         ],
-        "discussion": "https://news.ycombinator.com/item?id=50118662",
+        "discussion": "https://news.ycombinator.com/item?id=50122112",
         "flag": null
       },
       {
@@ -614,87 +670,175 @@
           "Dongxu Yang +25"
         ],
         "flag": null
-      },
-      {
-        "id": "http://arxiv.org/abs/2610.22344v1",
-        "title": "MLExpert: Towards a Generalist Agentic Model for Autonomous Machine Learning Engineering",
-        "url": "http://arxiv.org/abs/2610.22344v1",
-        "source": "arXiv",
-        "date": "2026-10-15",
-        "summary": "Large language models (LLMs) are expanding from assisting scientific research and engineering to autonomously developing and improving AI systems, advancing AI for AI (AI4AI) as a pathway toward recursive self-improvement (RSI). Workflow-driven machine learning engineering (MLE) systems provide a practical path toward…",
-        "meta": [
-          "Research",
-          "Shangheng Du +9"
-        ],
-        "flag": null
-      },
-      {
-        "id": "http://arxiv.org/abs/2610.22343v1",
-        "title": "GeoState: Learning View-Decoupled Geometry States for 3D World Modeling",
-        "url": "http://arxiv.org/abs/2610.22343v1",
-        "source": "arXiv",
-        "date": "2026-10-15",
-        "summary": "Recent 3D world models increasingly use features from geometry foundation models (GFMs) as predictive world states, benefiting from their rich geometric priors. However, the view dependence of these features entangles scene dynamics with camera-induced variation, making the resulting state evolution harder to predict.…",
-        "meta": [
-          "Research",
-          "Hongchang Liu +7"
-        ],
-        "flag": null
-      },
-      {
-        "id": "http://arxiv.org/abs/2610.22341v1",
-        "title": "3DCodeVerse: Exploring 3D Worlds as Code",
-        "url": "http://arxiv.org/abs/2610.22341v1",
-        "source": "arXiv",
-        "date": "2026-10-15",
-        "summary": "We introduce 3DCodeVerse, a research ecosystem that enables coding agents to create editable and verifiable 3D content at scale. 3DCodeVerse comprises large-scale, high-quality datasets of executable 3D code, a coding harness for spatial reasoning and automated verification, and practical guidance for 3D coding. First…",
-        "meta": [
-          "Research",
-          "Yipeng Gao +18"
-        ],
-        "flag": null
-      },
-      {
-        "id": "http://arxiv.org/abs/2610.22340v1",
-        "title": "Dexterity from Supervised Play",
-        "url": "http://arxiv.org/abs/2610.22340v1",
-        "source": "arXiv",
-        "date": "2026-10-15",
-        "summary": "How can robots autonomously collect the contact-rich experience needed to learn dexterous manipulation? We present DSP: Dexterity from supervised play, a framework in which a robot learns a play policy from minutes of human play through behavior cloning, then deploys it autonomously to collect hours of interaction dat…",
-        "meta": [
-          "Research",
-          "Botao He +5"
-        ],
-        "flag": null
       }
     ],
     "dev": [
       {
-        "id": "hn-50117746",
-        "title": "I Love Software Rendering",
-        "url": "https://www.jamesfmackenzie.com/2026/10/13/i-love-software-rendering/",
+        "id": "hn-50129121",
+        "title": "DeepSeek: DeepSeek v4.1 Flash 1017",
+        "url": "https://openrouter.ai/deepseek/deepseek-v4.1-flash-1017",
         "source": "Hacker News",
-        "date": "2026-10-16",
+        "date": "2026-10-17",
         "summary": "",
         "meta": [
-          "147 points",
-          "98 comments"
+          "380 points",
+          "162 comments"
         ],
-        "discussion": "https://news.ycombinator.com/item?id=50117746",
+        "discussion": "https://news.ycombinator.com/item?id=50129121",
         "flag": null
       },
       {
-        "id": "hn-50118977",
-        "title": "Big Fish: Exploiting a 37-Year-Old Kernel Bug in OpenBSD",
-        "url": "https://calif.io/research/big-fish",
+        "id": "hn-50106747",
+        "title": "Ultramarine 1 Flash",
+        "url": "https://www.paperinstruments.com/ultramarine",
+        "source": "Hacker News",
+        "date": "2026-10-15",
+        "summary": "",
+        "meta": [
+          "300 points",
+          "98 comments"
+        ],
+        "discussion": "https://news.ycombinator.com/item?id=50106747",
+        "flag": null
+      },
+      {
+        "id": "hn-50112657",
+        "title": "Tesla Roadster",
+        "url": "https://www.tesla.com/roadster",
         "source": "Hacker News",
         "date": "2026-10-16",
         "summary": "",
         "meta": [
-          "28 points",
+          "1516 points",
+          "2741 comments"
+        ],
+        "discussion": "https://news.ycombinator.com/item?id=50112657",
+        "flag": null
+      },
+      {
+        "id": "hn-50129045",
+        "title": "DeepSeek-v4.1-Flash-1017",
+        "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017",
+        "source": "Hacker News",
+        "date": "2026-10-17",
+        "summary": "",
+        "meta": [
+          "288 points",
+          "109 comments"
+        ],
+        "discussion": "https://news.ycombinator.com/item?id=50129045",
+        "flag": null
+      },
+      {
+        "id": "hn-50121506",
+        "title": "The First Candid",
+        "url": "https://www.newyorker.com/magazine/2026/10/19/the-first-candid",
+        "source": "Hacker News",
+        "date": "2026-10-16",
+        "summary": "",
+        "meta": [
+          "4 points",
           "0 comments"
         ],
-        "discussion": "https://news.ycombinator.com/item?id=50118977",
+        "discussion": "https://news.ycombinator.com/item?id=50121506",
+        "flag": null
+      },
+      {
+        "id": "hn-50119315",
+        "title": "Rendering pretty sky in Around The World game",
+        "url": "https://frozenfractal.com/blog/2026/10/12/around-the-world-34-a-pretty-sky/",
+        "source": "Hacker News",
+        "date": "2026-10-16",
+        "summary": "",
+        "meta": [
+          "3 points",
+          "0 comments"
+        ],
+        "discussion": "https://news.ycombinator.com/item?id=50119315",
+        "flag": null
+      },
+      {
+        "id": "hn-50131256",
+        "title": "Solar surpasses nuclear power globally for first time – pv magazine Global",
+        "url": "https://www.pv-magazine.com/2026/09/29/solar-surpasses-nuclear-power-globally-for-first-time/",
+        "source": "Hacker News",
+        "date": "2026-10-17",
+        "summary": "",
+        "meta": [
+          "7 points",
+          "1 comments"
+        ],
+        "discussion": "https://news.ycombinator.com/item?id=50131256",
+        "flag": null
+      },
+      {
+        "id": "hn-50122431",
+        "title": "Llama.cpp on a jailbroken PS5: run any GGUF model natively on the console",
+        "url": "https://github.com/cobanov/PS5LM",
+        "source": "Hacker News",
+        "date": "2026-10-16",
+        "summary": "",
+        "meta": [
+          "315 points",
+          "77 comments"
+        ],
+        "discussion": "https://news.ycombinator.com/item?id=50122431",
+        "flag": null
+      },
+      {
+        "id": "hn-50122878",
+        "title": "You could have invented transformers from memory",
+        "url": "https://alexwang.ai/posts/associative-memory/",
+        "source": "Hacker News",
+        "date": "2026-10-16",
+        "summary": "",
+        "meta": [
+          "366 points",
+          "84 comments"
+        ],
+        "discussion": "https://news.ycombinator.com/item?id=50122878",
+        "flag": null
+      },
+      {
+        "id": "hn-50103255",
+        "title": "Intuitive concurrent programming in any language",
+        "url": "https://www.lf-lang.org/",
+        "source": "Hacker News",
+        "date": "2026-10-15",
+        "summary": "",
+        "meta": [
+          "82 points",
+          "21 comments"
+        ],
+        "discussion": "https://news.ycombinator.com/item?id=50103255",
+        "flag": null
+      },
+      {
+        "id": "hn-50104783",
+        "title": "Recipes Are Moving from Maven Central to the Code Genome Project",
+        "url": "https://docs.openrewrite.org/reference/latest-versions-of-every-openrewrite-module",
+        "source": "Hacker News",
+        "date": "2026-10-15",
+        "summary": "",
+        "meta": [
+          "25 points",
+          "5 comments"
+        ],
+        "discussion": "https://news.ycombinator.com/item?id=50104783",
+        "flag": null
+      },
+      {
+        "id": "hn-50095730",
+        "title": "Orbital Angular Momentum of Light",
+        "url": "https://en.wikipedia.org/wiki/Orbital_angular_momentum_of_light",
+        "source": "Hacker News",
+        "date": "2026-10-14",
+        "summary": "",
+        "meta": [
+          "17 points",
+          "4 comments"
+        ],
+        "discussion": "https://news.ycombinator.com/item?id=50095730",
         "flag": null
       },
       {
@@ -705,164 +849,24 @@
         "date": "2026-10-16",
         "summary": "",
         "meta": [
-          "30 points",
-          "4 comments"
+          "335 points",
+          "168 comments"
         ],
         "discussion": "https://news.ycombinator.com/item?id=50118320",
         "flag": null
       },
       {
-        "id": "hn-50104965",
-        "title": "Gyroscopes Got So Small [video]",
-        "url": "https://www.youtube.com/watch?v=0Zc_6xB5W3Y",
-        "source": "Hacker News",
-        "date": "2026-10-15",
-        "summary": "",
-        "meta": [
-          "32 points",
-          "5 comments"
-        ],
-        "discussion": "https://news.ycombinator.com/item?id=50104965",
-        "flag": null
-      },
-      {
-        "id": "hn-50111752",
-        "title": "Is Liquid Metal Killing Our PCs? Scientific Analysis and a 2-Year Test [video]",
-        "url": "https://www.youtube.com/watch?v=eF6bMSjPepM",
-        "source": "Hacker News",
-        "date": "2026-10-15",
-        "summary": "",
-        "meta": [
-          "32 points",
-          "9 comments"
-        ],
-        "discussion": "https://news.ycombinator.com/item?id=50111752",
-        "flag": null
-      },
-      {
-        "id": "hn-50118981",
-        "title": "Hello Toronto – Waymo Is En Route",
-        "url": "https://waymo.com/blog/2026/10/waymo-in-toronto/",
+        "id": "hn-50123580",
+        "title": "FLUX 3 Image Klein",
+        "url": "https://bfl.ai/blog/flux-3-image-klein",
         "source": "Hacker News",
         "date": "2026-10-16",
         "summary": "",
         "meta": [
-          "59 points",
-          "71 comments"
+          "181 points",
+          "52 comments"
         ],
-        "discussion": "https://news.ycombinator.com/item?id=50118981",
-        "flag": null
-      },
-      {
-        "id": "hn-50118267",
-        "title": "RFC8950: Announce IPv4 with an IPv6 next-hop",
-        "url": "https://anuragbhatia.com/post/2026/06/rfc8950-announce-ipv4-with-ipv6-next-hop/",
-        "source": "Hacker News",
-        "date": "2026-10-16",
-        "summary": "",
-        "meta": [
-          "16 points",
-          "1 comments"
-        ],
-        "discussion": "https://news.ycombinator.com/item?id=50118267",
-        "flag": null
-      },
-      {
-        "id": "hn-50118512",
-        "title": "How to Formalize All of Mathematics",
-        "url": "https://xenaproject.wordpress.com/2026/10/16/how-to-formalize-all-of-mathematics/",
-        "source": "Hacker News",
-        "date": "2026-10-16",
-        "summary": "",
-        "meta": [
-          "15 points",
-          "4 comments"
-        ],
-        "discussion": "https://news.ycombinator.com/item?id=50118512",
-        "flag": null
-      },
-      {
-        "id": "hn-50077225",
-        "title": "Yet another way to invoke functions without parentheses",
-        "url": "https://blog.ikaes.de/yet-another-way-to-invoke-functions-without-parentheses/",
-        "source": "Hacker News",
-        "date": "2026-10-13",
-        "summary": "",
-        "meta": [
-          "188 points",
-          "74 comments"
-        ],
-        "discussion": "https://news.ycombinator.com/item?id=50077225",
-        "flag": null
-      },
-      {
-        "id": "hn-50065859",
-        "title": "Woman who rescued injured crow keeps getting 'thank-you gifts' from birds [video]",
-        "url": "https://www.youtube.com/watch?v=sjNpfz4UzqU",
-        "source": "Hacker News",
-        "date": "2026-10-13",
-        "summary": "",
-        "meta": [
-          "635 points",
-          "204 comments"
-        ],
-        "discussion": "https://news.ycombinator.com/item?id=50065859",
-        "flag": null
-      },
-      {
-        "id": "hn-50074322",
-        "title": "Stolen Renoir paintings found hidden, and damaged, behind cinder block wall",
-        "url": "https://www.cbsnews.com/news/stolen-renoir-paintings-found-behind-wall-france/",
-        "source": "Hacker News",
-        "date": "2026-10-13",
-        "summary": "",
-        "meta": [
-          "7 points",
-          "0 comments"
-        ],
-        "discussion": "https://news.ycombinator.com/item?id=50074322",
-        "flag": null
-      },
-      {
-        "id": "hn-50084790",
-        "title": "The Economic Complexity of the Western Roman Empire",
-        "url": "https://www.michelecoscia.com/?p=2613",
-        "source": "Hacker News",
-        "date": "2026-10-14",
-        "summary": "",
-        "meta": [
-          "106 points",
-          "18 comments"
-        ],
-        "discussion": "https://news.ycombinator.com/item?id=50084790",
-        "flag": null
-      },
-      {
-        "id": "hn-50111852",
-        "title": "Meta’s new commercial terms will allow the scraping of news sites: experts",
-        "url": "https://www.niemanlab.org/2026/10/metas-new-commercial-terms-will-allow-the-scraping-of-news-sites-legal-experts-say/",
-        "source": "Hacker News",
-        "date": "2026-10-15",
-        "summary": "",
-        "meta": [
-          "418 points",
-          "151 comments"
-        ],
-        "discussion": "https://news.ycombinator.com/item?id=50111852",
-        "flag": null
-      },
-      {
-        "id": "hn-50107379",
-        "title": "Muse Spark Open",
-        "url": "https://research.meta.ai/blog/muse-spark-open",
-        "source": "Hacker News",
-        "date": "2026-10-15",
-        "summary": "",
-        "meta": [
-          "881 points",
-          "443 comments"
-        ],
-        "discussion": "https://news.ycombinator.com/item?id=50107379",
+        "discussion": "https://news.ycombinator.com/item?id=50123580",
         "flag": null
       }
     ]
