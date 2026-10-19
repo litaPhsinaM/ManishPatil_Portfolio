@@ -2,15 +2,15 @@ name: Supabase Keep-Alive
 
 # Free-tier Supabase projects are paused after 7 days without database activity,
 # which silently breaks analytics, the leaderboard and Interview.exe. A real REST
-# read every few days counts as activity and keeps the project awake.
+# read every day counts as activity and keeps the project awake.
 #
 # Uses the same publishable key the site ships with, so it is fenced by RLS and
 # only reads what any visitor can already read.
 
 on:
   schedule:
-    # 09:41 UTC every 3 days. Off-the-hour so it doesn't queue behind the rush.
-    - cron: '41 9 */3 * *'
+    # 09:41 UTC daily — wide margin under the 7-day pause, and a failure emails within a day.
+    - cron: '41 9 * * *'
   workflow_dispatch:
 
 jobs:
