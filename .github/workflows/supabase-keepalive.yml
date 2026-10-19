@@ -1,0 +1,32 @@
+name: Supabase Keep-Alive
+
+# Free-tier Supabase projects are paused after 7 days without database activity,
+# which silently breaks analytics, the leaderboard and Interview.exe. A real REST
+# read every few days counts as activity and keeps the project awake.
+#
+# Uses the same publishable key the site ships with, so it is fenced by RLS and
+# only reads what any visitor can already read.
+
+on:
+  schedule:
+    # 09:41 UTC every 3 days. Off-the-hour so it doesn't queue behind the rush.
+    - cron: '41 9 */3 * *'
+  workflow_dispatch:
+
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Query the database 🫀
+        env:
+          SUPABASE_URL: ${{ secrets.VITE_SUPABASE_URL }}
+          SUPABASE_KEY: ${{ secrets.VITE_SUPABASE_ANON_KEY }}
+        run: |
+          status=$(curl -s -o /dev/null -w '%{http_code}' --max-time 30 \
+            "$SUPABASE_URL/rest/v1/arcade_scores?select=score&limit=1" \
+            -H "apikey: $SUPABASE_KEY" \
+            -H "Authorization: Bearer $SUPABASE_KEY")
+          echo "Supabase responded $status"
+          # A failure here usually means the project is already paused; the red run
+          # is the early warning to restore it in the dashboard.
+          test "$status" = "200"
