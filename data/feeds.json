@@ -1,285 +1,285 @@
 {
-  "generatedAt": "2026-10-19T17:28:35.412Z",
+  "generatedAt": "2026-10-20T15:39:10.235Z",
   "log": [
     {
-      "t": "2026-10-19T17:28:34.320Z",
+      "t": "2026-10-20T15:39:09.149Z",
       "level": "info",
       "msg": "signal refresh started"
     },
     {
-      "t": "2026-10-19T17:28:34.325Z",
+      "t": "2026-10-20T15:39:09.154Z",
       "level": "info",
       "msg": "GET hacker-news.firebaseio.com/v0/topstories.json"
     },
     {
-      "t": "2026-10-19T17:28:34.573Z",
+      "t": "2026-10-20T15:39:09.359Z",
       "level": "info",
       "msg": "HTTP 200 · resolving top 60 story ids in batches of 10"
     },
     {
-      "t": "2026-10-19T17:28:35.087Z",
+      "t": "2026-10-20T15:39:09.698Z",
       "level": "info",
-      "msg": "59 of 60 resolved to usable stories · 762ms"
+      "msg": "59 of 60 resolved to usable stories · 544ms"
     },
     {
-      "t": "2026-10-19T17:28:35.088Z",
+      "t": "2026-10-20T15:39:09.699Z",
       "level": "info",
       "msg": "GET cisa.gov/feeds/known_exploited_vulnerabilities.json"
     },
     {
-      "t": "2026-10-19T17:28:35.211Z",
+      "t": "2026-10-20T15:39:09.994Z",
       "level": "info",
-      "msg": "HTTP 200 · catalog holds 1748 CVEs · 123ms"
+      "msg": "HTTP 200 · catalog holds 1748 CVEs · 295ms"
     },
     {
-      "t": "2026-10-19T17:28:35.214Z",
+      "t": "2026-10-20T15:39:09.999Z",
       "level": "info",
       "msg": "fleet filter: 1030 of 1748 touch managed platforms"
     },
     {
-      "t": "2026-10-19T17:28:35.225Z",
+      "t": "2026-10-20T15:39:10.006Z",
       "level": "info",
       "msg": "GET export.arxiv.org/api/query cat:cs.AI OR cat:cs.LG"
     },
     {
-      "t": "2026-10-19T17:28:35.409Z",
+      "t": "2026-10-20T15:39:10.233Z",
       "level": "info",
-      "msg": "HTTP 200 · 30,936 bytes of Atom XML · 184ms"
+      "msg": "HTTP 200 · 31,728 bytes of Atom XML · 227ms"
     },
     {
-      "t": "2026-10-19T17:28:35.411Z",
+      "t": "2026-10-20T15:39:10.234Z",
       "level": "info",
-      "msg": "topic split: 7 AI stories, 52 general dev"
+      "msg": "topic split: 9 AI stories, 50 general dev"
     },
     {
-      "t": "2026-10-19T17:28:35.411Z",
+      "t": "2026-10-20T15:39:10.235Z",
       "level": "info",
       "msg": "--- security feed: 14 items ---"
     },
     {
-      "t": "2026-10-19T17:28:35.411Z",
+      "t": "2026-10-20T15:39:10.235Z",
       "level": "info",
       "msg": "ingest CISA KEV · Fortinet Multiple Products Path Traversal Vulnerability · 2026-10-16"
     },
     {
-      "t": "2026-10-19T17:28:35.411Z",
+      "t": "2026-10-20T15:39:10.235Z",
       "level": "info",
       "msg": "ingest CISA KEV · Cisco Secure Email Gateway Relative Path Traversal Vulner… · 2026-10-14"
     },
     {
-      "t": "2026-10-19T17:28:35.411Z",
+      "t": "2026-10-20T15:39:10.235Z",
       "level": "info",
       "msg": "ingest CISA KEV · Palo Alto Networks PAN-OS Code Injection Vulnerability · 2026-10-14"
     },
     {
-      "t": "2026-10-19T17:28:35.411Z",
+      "t": "2026-10-20T15:39:10.235Z",
       "level": "info",
       "msg": "ingest CISA KEV · Ivanti Connect Secure Authentication Bypass by Spoofing V… · 2026-10-13"
     },
     {
-      "t": "2026-10-19T17:28:35.411Z",
+      "t": "2026-10-20T15:39:10.235Z",
       "level": "info",
       "msg": "ingest CISA KEV · Microsoft Windows Command Injection Vulnerability · 2026-10-13"
     },
     {
-      "t": "2026-10-19T17:28:35.411Z",
+      "t": "2026-10-20T15:39:10.235Z",
       "level": "info",
       "msg": "ingest CISA KEV · Apache Struts Command Injection Vulnerability · 2026-10-08"
     },
     {
-      "t": "2026-10-19T17:28:35.411Z",
+      "t": "2026-10-20T15:39:10.235Z",
       "level": "info",
       "msg": "ingest CISA KEV · Citrix NetScaler Improper Restriction of Operations withi… · 2026-10-04"
     },
     {
-      "t": "2026-10-19T17:28:35.412Z",
+      "t": "2026-10-20T15:39:10.235Z",
       "level": "info",
       "msg": "ingest CISA KEV · Fortinet FortiMail Path Traversal Vulnerability · 2026-10-01"
     },
     {
-      "t": "2026-10-19T17:28:35.412Z",
+      "t": "2026-10-20T15:39:10.235Z",
       "level": "info",
       "msg": "ingest CISA KEV · Cisco Catalyst SD-WAN Manager Hex Encoding Vulnerability · 2026-09-30"
     },
     {
-      "t": "2026-10-19T17:28:35.412Z",
+      "t": "2026-10-20T15:39:10.235Z",
       "level": "info",
       "msg": "ingest CISA KEV · Apple Multiple Products Out-of-Bounds Write Vulnerability · 2026-09-29"
     },
     {
-      "t": "2026-10-19T17:28:35.412Z",
+      "t": "2026-10-20T15:39:10.235Z",
       "level": "info",
       "msg": "ingest CISA KEV · Citrix NetScaler Improper Restriction of Operations withi… · 2026-09-27"
     },
     {
-      "t": "2026-10-19T17:28:35.412Z",
+      "t": "2026-10-20T15:39:10.235Z",
       "level": "info",
       "msg": "ingest CISA KEV · Citrix NetScaler Improper Input Validation Vulnerability · 2026-09-27"
     },
     {
-      "t": "2026-10-19T17:28:35.412Z",
+      "t": "2026-10-20T15:39:10.235Z",
       "level": "info",
       "msg": "ingest CISA KEV · Microsoft SharePoint Code Injection Vulnerability · 2026-09-25"
     },
     {
-      "t": "2026-10-19T17:28:35.412Z",
+      "t": "2026-10-20T15:39:10.235Z",
       "level": "info",
       "msg": "ingest CISA KEV · WordPress Core Remote File Inclusion Vulnerability · 2026-09-25"
     },
     {
-      "t": "2026-10-19T17:28:35.412Z",
+      "t": "2026-10-20T15:39:10.235Z",
       "level": "info",
       "msg": "--- ai feed: 14 items ---"
     },
     {
-      "t": "2026-10-19T17:28:35.412Z",
+      "t": "2026-10-20T15:39:10.235Z",
       "level": "info",
-      "msg": "ingest Hacker News · CERN and Mistral join forces to accelerate AI for science · 2026-10-19"
+      "msg": "ingest Hacker News · DeepSeek just open-sourced its inference engine · 2026-10-20"
     },
     {
-      "t": "2026-10-19T17:28:35.412Z",
+      "t": "2026-10-20T15:39:10.235Z",
       "level": "info",
-      "msg": "ingest Hacker News · Show HN: Qwen3-4B with the AI writing tics trained out · 2026-10-19"
+      "msg": "ingest Hacker News · Publish fake stats, get cited in LLMs · 2026-10-20"
     },
     {
-      "t": "2026-10-19T17:28:35.412Z",
+      "t": "2026-10-20T15:39:10.235Z",
       "level": "info",
-      "msg": "ingest Hacker News · Tmux and Claude Code: Sessions, Send-Keys, and the Ceiling · 2026-10-19"
+      "msg": "ingest Hacker News · Launch HN: Respan (YC W24) – Open-source Rust AI gateway… · 2026-10-20"
     },
     {
-      "t": "2026-10-19T17:28:35.412Z",
+      "t": "2026-10-20T15:39:10.235Z",
       "level": "info",
-      "msg": "ingest Hacker News · A hacker broke into John Deere and SharkNinja with an arm… · 2026-10-19"
+      "msg": "ingest Hacker News · Show HN: Penmentor – Claude marks up your handwritten mat… · 2026-10-20"
     },
     {
-      "t": "2026-10-19T17:28:35.412Z",
+      "t": "2026-10-20T15:39:10.235Z",
       "level": "info",
-      "msg": "ingest Hacker News · Hybrid Reasoning Agents: LLM agents that think in latent… · 2026-10-18"
+      "msg": "ingest Hacker News · Show HN: Run Claude Code unattended inside a fence, under… · 2026-10-20"
     },
     {
-      "t": "2026-10-19T17:28:35.412Z",
+      "t": "2026-10-20T15:39:10.235Z",
       "level": "info",
-      "msg": "ingest Hacker News · If you don't run your own LLM proxy, how do you know what… · 2026-10-18"
+      "msg": "ingest Hacker News · 'Reverse-Engineer Anything' Is the New Wild West of AI · 2026-10-20"
     },
     {
-      "t": "2026-10-19T17:28:35.412Z",
+      "t": "2026-10-20T15:39:10.235Z",
       "level": "info",
-      "msg": "ingest Hacker News · I built a programming language that LLMs can't use · 2026-10-17"
+      "msg": "ingest Hacker News · AI models self-replicating in smart ovens? \"These f[..]g… · 2026-10-20"
     },
     {
-      "t": "2026-10-19T17:28:35.412Z",
+      "t": "2026-10-20T15:39:10.235Z",
       "level": "info",
-      "msg": "ingest arXiv · Rethinking the design space of Vanilla Pixel Diffusion Tr… · 2026-10-16"
+      "msg": "ingest arXiv · Text-to-Image Generative Modeling Without Language Pretra… · 2026-10-19"
     },
     {
-      "t": "2026-10-19T17:28:35.412Z",
+      "t": "2026-10-20T15:39:10.235Z",
       "level": "info",
-      "msg": "ingest arXiv · Behavioral Couplings: From Formation to Behavioral Emerge… · 2026-10-16"
+      "msg": "ingest arXiv · OpenVLHarness: Real World Visual Agentic Tool-Use with Mu… · 2026-10-19"
     },
     {
-      "t": "2026-10-19T17:28:35.412Z",
+      "t": "2026-10-20T15:39:10.235Z",
       "level": "info",
-      "msg": "ingest arXiv · AI-Driven Reproducibility and Analytical Robustness in Sc… · 2026-10-16"
+      "msg": "ingest arXiv · Reinforcement Learning with Visually Attributable On-Poli… · 2026-10-19"
     },
     {
-      "t": "2026-10-19T17:28:35.412Z",
+      "t": "2026-10-20T15:39:10.235Z",
       "level": "info",
-      "msg": "ingest arXiv · Task-aligned spectral inductive biases in parameterized q… · 2026-10-16"
+      "msg": "ingest arXiv · CoopUQ: Robust Multi-Robot Social Navigation via Uncertai… · 2026-10-19"
     },
     {
-      "t": "2026-10-19T17:28:35.412Z",
+      "t": "2026-10-20T15:39:10.235Z",
       "level": "info",
-      "msg": "ingest arXiv · Beyond the Answer: Student-Conditioned Trace Construction… · 2026-10-16"
+      "msg": "ingest arXiv · Where is Physical RSI capability from? An Observational S… · 2026-10-19"
     },
     {
-      "t": "2026-10-19T17:28:35.412Z",
+      "t": "2026-10-20T15:39:10.235Z",
       "level": "info",
-      "msg": "ingest arXiv · Waiting Buys Exactly Two Moments: Endogenous Identificati… · 2026-10-16"
+      "msg": "ingest arXiv · WeAct: Dynamic Weight Switching as Agent Actions · 2026-10-19"
     },
     {
-      "t": "2026-10-19T17:28:35.412Z",
+      "t": "2026-10-20T15:39:10.235Z",
       "level": "info",
-      "msg": "ingest arXiv · Quality-of-Transmission Estimation in Quantum Networks: C… · 2026-10-16"
+      "msg": "ingest arXiv · Train An Imaginative Agent · 2026-10-19"
     },
     {
-      "t": "2026-10-19T17:28:35.412Z",
+      "t": "2026-10-20T15:39:10.235Z",
       "level": "info",
       "msg": "--- dev feed: 14 items ---"
     },
     {
-      "t": "2026-10-19T17:28:35.412Z",
+      "t": "2026-10-20T15:39:10.235Z",
       "level": "info",
-      "msg": "ingest Hacker News · Wine Ported to OpenBSD · 2026-10-19"
+      "msg": "ingest Hacker News · Facebook now charging to post more than 2 links a month · 2026-10-20"
     },
     {
-      "t": "2026-10-19T17:28:35.412Z",
+      "t": "2026-10-20T15:39:10.235Z",
       "level": "info",
-      "msg": "ingest Hacker News · Timestral: Mistral release time-series foundation models · 2026-10-19"
+      "msg": "ingest Hacker News · EMudhra Intermediate CA Compromise · 2026-10-20"
     },
     {
-      "t": "2026-10-19T17:28:35.412Z",
+      "t": "2026-10-20T15:39:10.235Z",
       "level": "info",
-      "msg": "ingest Hacker News · Ontology-Driven Observability: Building an End-to-End Kno… · 2026-10-19"
+      "msg": "ingest Hacker News · Apple broke an essential presentation feature of iPads · 2026-10-20"
     },
     {
-      "t": "2026-10-19T17:28:35.412Z",
+      "t": "2026-10-20T15:39:10.235Z",
       "level": "info",
-      "msg": "ingest Hacker News · Linux 7.3 · 2026-10-19"
+      "msg": "ingest Hacker News · Ofcom Concedes Defeat in the 4chan Case · 2026-10-20"
     },
     {
-      "t": "2026-10-19T17:28:35.412Z",
+      "t": "2026-10-20T15:39:10.235Z",
       "level": "info",
-      "msg": "ingest Hacker News · It's still OK to enjoy programming · 2026-10-17"
+      "msg": "ingest Hacker News · How I got over 300 Tor exit nodes removed · 2026-10-20"
     },
     {
-      "t": "2026-10-19T17:28:35.412Z",
+      "t": "2026-10-20T15:39:10.235Z",
       "level": "info",
-      "msg": "ingest Hacker News · Launch HN: Laminar (YC S24) – We trained a model to catch… · 2026-10-19"
+      "msg": "ingest Hacker News · My Friend Bob Cringely · 2026-10-20"
     },
     {
-      "t": "2026-10-19T17:28:35.412Z",
+      "t": "2026-10-20T15:39:10.235Z",
       "level": "info",
-      "msg": "ingest Hacker News · Alternatives to Animal Testing Are Finally Taking Off · 2026-10-19"
+      "msg": "ingest Hacker News · Why do we have so many meetings? · 2026-10-20"
     },
     {
-      "t": "2026-10-19T17:28:35.412Z",
+      "t": "2026-10-20T15:39:10.235Z",
       "level": "info",
-      "msg": "ingest Hacker News · Degraded availability for GitHub Actions, GitHub Pages an… · 2026-10-19"
+      "msg": "ingest Hacker News · 2026 is an exciting year for the Rust compiler (and me) · 2026-10-20"
     },
     {
-      "t": "2026-10-19T17:28:35.412Z",
+      "t": "2026-10-20T15:39:10.235Z",
       "level": "info",
-      "msg": "ingest Hacker News · Let's Encrypt is adding two additional remote perspective… · 2026-10-19"
+      "msg": "ingest Hacker News · MicroG: Free-libre re-implementation of Google's propriet… · 2026-10-20"
     },
     {
-      "t": "2026-10-19T17:28:35.412Z",
+      "t": "2026-10-20T15:39:10.235Z",
       "level": "info",
-      "msg": "ingest Hacker News · Galois Finite Fields and the Advanced Encryption Standard… · 2026-10-17"
+      "msg": "ingest Hacker News · How to Link Real-Time Live Streaming to Video-on-Demand · 2026-10-20"
     },
     {
-      "t": "2026-10-19T17:28:35.412Z",
+      "t": "2026-10-20T15:39:10.235Z",
       "level": "info",
-      "msg": "ingest Hacker News · Show HN: I built a task system to handle the drudgery so… · 2026-10-19"
+      "msg": "ingest Hacker News · Nordwand Mono – A monospace font for coders and adventure… · 2026-10-18"
     },
     {
-      "t": "2026-10-19T17:28:35.412Z",
+      "t": "2026-10-20T15:39:10.235Z",
       "level": "info",
-      "msg": "ingest Hacker News · Show HN: KiviDB, a faster Redis-compatible memory databas… · 2026-10-19"
+      "msg": "ingest Hacker News · Tsrs: A Port of TypeScript to Rust · 2026-10-20"
     },
     {
-      "t": "2026-10-19T17:28:35.412Z",
+      "t": "2026-10-20T15:39:10.235Z",
       "level": "info",
-      "msg": "ingest Hacker News · A death, a plagiarism scandal and a quest for revenge: th… · 2026-10-17"
+      "msg": "ingest Hacker News · OpenBSD 8.0 · 2026-10-20"
     },
     {
-      "t": "2026-10-19T17:28:35.412Z",
+      "t": "2026-10-20T15:39:10.235Z",
       "level": "info",
-      "msg": "ingest Hacker News · Plex vulnerabilities being exploited in the wild to drop… · 2026-10-19"
+      "msg": "ingest Hacker News · One Manhattan power room took down FAA air traffic contro… · 2026-10-19"
     },
     {
-      "t": "2026-10-19T17:28:35.412Z",
+      "t": "2026-10-20T15:39:10.235Z",
       "level": "info",
-      "msg": "publishing 42 items across 3 feeds · 1092ms"
+      "msg": "publishing 42 items across 3 feeds · 1086ms"
     }
   ],
   "feeds": {
@@ -483,390 +483,390 @@
     ],
     "ai": [
       {
-        "id": "hn-50153630",
-        "title": "CERN and Mistral join forces to accelerate AI for science",
-        "url": "https://home.cern/cern-and-mistral-join-forces-to-accelerate-ai-for-science/",
+        "id": "hn-50163277",
+        "title": "DeepSeek just open-sourced its inference engine",
+        "url": "https://github.com/deepseek-ai/DeepInfer",
         "source": "Hacker News",
+        "date": "2026-10-20",
+        "summary": "",
+        "meta": [
+          "1494 points",
+          "534 comments"
+        ],
+        "discussion": "https://news.ycombinator.com/item?id=50163277",
+        "flag": null
+      },
+      {
+        "id": "hn-50165801",
+        "title": "Publish fake stats, get cited in LLMs",
+        "url": "https://peec.ai/blog/publish-stats-get-cited-the-tactic-that-put-my-data-all-over-the-web",
+        "source": "Hacker News",
+        "date": "2026-10-20",
+        "summary": "",
+        "meta": [
+          "129 points",
+          "75 comments"
+        ],
+        "discussion": "https://news.ycombinator.com/item?id=50165801",
+        "flag": null
+      },
+      {
+        "id": "hn-50167583",
+        "title": "Launch HN: Respan (YC W24) – Open-source Rust AI gateway built around plugins",
+        "url": "https://news.ycombinator.com/item?id=50167583",
+        "source": "Hacker News",
+        "date": "2026-10-20",
+        "summary": "",
+        "meta": [
+          "7 points",
+          "0 comments"
+        ],
+        "discussion": "https://news.ycombinator.com/item?id=50167583",
+        "flag": null
+      },
+      {
+        "id": "hn-50167604",
+        "title": "Show HN: Penmentor – Claude marks up your handwritten math like a teacher",
+        "url": "https://github.com/AbdullahAlhariri/penmentor",
+        "source": "Hacker News",
+        "date": "2026-10-20",
+        "summary": "",
+        "meta": [
+          "4 points",
+          "0 comments"
+        ],
+        "discussion": "https://news.ycombinator.com/item?id=50167604",
+        "flag": null
+      },
+      {
+        "id": "hn-50167456",
+        "title": "Show HN: Run Claude Code unattended inside a fence, under a dollar budget",
+        "url": "https://github.com/metahumansworld/SIwithin",
+        "source": "Hacker News",
+        "date": "2026-10-20",
+        "summary": "",
+        "meta": [
+          "3 points",
+          "1 comments"
+        ],
+        "discussion": "https://news.ycombinator.com/item?id=50167456",
+        "flag": null
+      },
+      {
+        "id": "hn-50167587",
+        "title": "'Reverse-Engineer Anything' Is the New Wild West of AI",
+        "url": "https://www.404media.co/reverse-engineer-anything-is-the-new-wild-west-of-ai/",
+        "source": "Hacker News",
+        "date": "2026-10-20",
+        "summary": "",
+        "meta": [
+          "5 points",
+          "2 comments"
+        ],
+        "discussion": "https://news.ycombinator.com/item?id=50167587",
+        "flag": null
+      },
+      {
+        "id": "hn-50167564",
+        "title": "AI models self-replicating in smart ovens? \"These f[..]g clowns\"",
+        "url": "https://www.thestack.technology/these-f-clowns/",
+        "source": "Hacker News",
+        "date": "2026-10-20",
+        "summary": "",
+        "meta": [
+          "4 points",
+          "0 comments"
+        ],
+        "discussion": "https://news.ycombinator.com/item?id=50167564",
+        "flag": null
+      },
+      {
+        "id": "http://arxiv.org/abs/2610.26863v1",
+        "title": "Text-to-Image Generative Modeling Without Language Pretraining",
+        "url": "http://arxiv.org/abs/2610.26863v1",
+        "source": "arXiv",
         "date": "2026-10-19",
-        "summary": "",
+        "summary": "Modern text-to-image (T2I) systems use internet-scale language pretraining for text-conditioned image generation. We ask whether language pretraining is necessary for strong T2I generation. We introduce Halcyon, a family of early-fusion multimodal autoregressive models pretrained entirely from scratch on GPIC, a datas…",
         "meta": [
-          "123 points",
-          "18 comments"
+          "Research",
+          "Keshigeyan Chandrasegaran +7"
         ],
-        "discussion": "https://news.ycombinator.com/item?id=50153630",
         "flag": null
       },
       {
-        "id": "hn-50151928",
-        "title": "Show HN: Qwen3-4B with the AI writing tics trained out",
-        "url": "https://100toolkit.com/blog/deslop-model/",
-        "source": "Hacker News",
+        "id": "http://arxiv.org/abs/2610.26860v1",
+        "title": "OpenVLHarness: Real World Visual Agentic Tool-Use with Multimodal Memory",
+        "url": "http://arxiv.org/abs/2610.26860v1",
+        "source": "arXiv",
         "date": "2026-10-19",
-        "summary": "",
+        "summary": "Multimodal large language models (MLLMs) have made rapid progress on visual reasoning, yet many tasks require evidence that is difficult to obtain through internal reasoning alone: our controlled study on 22 benchmarks shows that simply increasing the inference budget of the base model yields only modest gains. Such t…",
         "meta": [
-          "120 points",
-          "92 comments"
+          "Research",
+          "Yu Zhou +10"
         ],
-        "discussion": "https://news.ycombinator.com/item?id=50151928",
         "flag": null
       },
       {
-        "id": "hn-50148855",
-        "title": "Tmux and Claude Code: Sessions, Send-Keys, and the Ceiling",
-        "url": "https://crystl.dev/guides/tmux-for-ai-agents/",
-        "source": "Hacker News",
+        "id": "http://arxiv.org/abs/2610.26856v1",
+        "title": "Reinforcement Learning with Visually Attributable On-Policy Self-Distillation",
+        "url": "http://arxiv.org/abs/2610.26856v1",
+        "source": "arXiv",
         "date": "2026-10-19",
-        "summary": "",
+        "summary": "Multimodal reinforcement learning with verifiable rewards (RLVR) provides reliable task-level supervision, yet offers limited guidance for localizing errors in visual reasoning. On-policy self-distillation (OPSD) complements this supervision with dense token-level corrections from a privileged teacher equipped with an…",
         "meta": [
-          "130 points",
-          "90 comments"
+          "Research",
+          "Shiao Xie +4"
         ],
-        "discussion": "https://news.ycombinator.com/item?id=50148855",
         "flag": null
       },
       {
-        "id": "hn-50152877",
-        "title": "A hacker broke into John Deere and SharkNinja with an army of AI agents",
-        "url": "https://www.theverge.com/ai-artificial-intelligence/1013643/ai-agents-hack-john-deere-shark-ninja-cummins",
-        "source": "Hacker News",
+        "id": "http://arxiv.org/abs/2610.26852v1",
+        "title": "CoopUQ: Robust Multi-Robot Social Navigation via Uncertainty-Aware Cooperative Forecasting",
+        "url": "http://arxiv.org/abs/2610.26852v1",
+        "source": "arXiv",
         "date": "2026-10-19",
-        "summary": "",
-        "meta": [
-          "45 points",
-          "3 comments"
-        ],
-        "discussion": "https://news.ycombinator.com/item?id=50152877",
-        "flag": null
-      },
-      {
-        "id": "hn-50145337",
-        "title": "Hybrid Reasoning Agents: LLM agents that think in latent space, act through text",
-        "url": "https://arxiv.org/abs/2610.18861",
-        "source": "Hacker News",
-        "date": "2026-10-18",
-        "summary": "",
-        "meta": [
-          "491 points",
-          "230 comments"
-        ],
-        "discussion": "https://news.ycombinator.com/item?id=50145337",
-        "flag": null
-      },
-      {
-        "id": "hn-50145507",
-        "title": "If you don't run your own LLM proxy, how do you know whats going on?",
-        "url": "https://jrdsgl.com/if-you-dont-run-your-own-llm-proxy-how-the-fuck-do-you-even-know-whats-going-on/",
-        "source": "Hacker News",
-        "date": "2026-10-18",
-        "summary": "",
-        "meta": [
-          "278 points",
-          "195 comments"
-        ],
-        "discussion": "https://news.ycombinator.com/item?id=50145507",
-        "flag": null
-      },
-      {
-        "id": "hn-50135762",
-        "title": "I built a programming language that LLMs can't use",
-        "url": "https://blog.picheta.me/post/killswitch-lang/",
-        "source": "Hacker News",
-        "date": "2026-10-17",
-        "summary": "",
-        "meta": [
-          "257 points",
-          "195 comments"
-        ],
-        "discussion": "https://news.ycombinator.com/item?id=50135762",
-        "flag": null
-      },
-      {
-        "id": "http://arxiv.org/abs/2610.23854v1",
-        "title": "Rethinking the design space of Vanilla Pixel Diffusion Transformers",
-        "url": "http://arxiv.org/abs/2610.23854v1",
-        "source": "arXiv",
-        "date": "2026-10-16",
-        "summary": "Pixel-space diffusion models have recently re-emerged as a compelling alternative to latent diffusion, avoiding the lossy latent bottleneck and separately trained autoencoder. JiT shows that a vanilla diffusion transformer can generate directly in pixel space by replacing the commonly used velocity prediction ($\\bolds…",
+        "summary": "Reinforcement learning enables mobile robots to make fast and scalable navigation decisions in constrained human-shared environments. However, directly extending single-robot approaches to multi-robot settings often fails to ensure safety and efficiency, especially under occlusions and out-of-distribution (OOD) scenar…",
         "meta": [
           "Research",
-          "Soumik Mukhopadhyay +3"
+          "Zehao Wang +11"
         ],
         "flag": null
       },
       {
-        "id": "http://arxiv.org/abs/2610.23847v1",
-        "title": "Behavioral Couplings: From Formation to Behavioral Emergence in Language Models",
-        "url": "http://arxiv.org/abs/2610.23847v1",
+        "id": "http://arxiv.org/abs/2610.26848v1",
+        "title": "Where is Physical RSI capability from? An Observational Scaling Law of LLM-as-policy",
+        "url": "http://arxiv.org/abs/2610.26848v1",
         "source": "arXiv",
-        "date": "2026-10-16",
-        "summary": "Fine-tuning large language models (LLMs) can induce behaviors beyond those explicitly targeted. For example, training a model to respond more warmly can make it more sycophantic, and training it to write insecure code can cause broad misalignment on prompts unrelated to coding. We refer to a relationship between behav…",
+        "date": "2026-10-19",
+        "summary": "In this paper, we systematically investigate the mechanisms, scaling behavior, and generalization of physical Recursive self-improvement. We introduce PhysRSI-eval to quantify physical RSI through a five-axis metric: First-Attempt Performance, Efficiency, Success, Budget and Improvement from failure. Different VLMs ar…",
         "meta": [
           "Research",
-          "Dongyoon Hahm +5"
+          "Zekai Li +10"
         ],
         "flag": null
       },
       {
-        "id": "http://arxiv.org/abs/2610.23845v1",
-        "title": "AI-Driven Reproducibility and Analytical Robustness in Scientific Discovery",
-        "url": "http://arxiv.org/abs/2610.23845v1",
+        "id": "http://arxiv.org/abs/2610.26847v1",
+        "title": "WeAct: Dynamic Weight Switching as Agent Actions",
+        "url": "http://arxiv.org/abs/2610.26847v1",
         "source": "arXiv",
-        "date": "2026-10-16",
-        "summary": "Reproducible and analytically robust research findings are essential to scientific progress, but evaluating these properties typically requires costly manual effort. We investigate whether LLM agents can help automate reproduction and robustness analysis, using a medical case study grounded in the Surveillance, Epidem…",
+        "date": "2026-10-19",
+        "summary": "Long-horizon agents must learn heterogeneous capabilities from interleaved trajectories. Updating shared parameters to learn new capabilities can degrade previously acquired ones, resulting in catastrophic forgetting. As a trajectory unfolds, different stages may require different capabilities, yet conventional joint…",
         "meta": [
           "Research",
-          "Shicheng Liu +8"
+          "Rui Shi +4"
         ],
         "flag": null
       },
       {
-        "id": "http://arxiv.org/abs/2610.23834v1",
-        "title": "Task-aligned spectral inductive biases in parameterized quantum circuits",
-        "url": "http://arxiv.org/abs/2610.23834v1",
+        "id": "http://arxiv.org/abs/2610.26845v1",
+        "title": "Train An Imaginative Agent",
+        "url": "http://arxiv.org/abs/2610.26845v1",
         "source": "arXiv",
-        "date": "2026-10-16",
-        "summary": "Parameterized quantum circuits are widely investigated in quantum machine learning, yet how their architecture can provide task-aligned inductive biases remains poorly understood. We study data reuploading quantum circuits with two distinct inputs: a signal that varies between samples and a fixed, task-defined spectra…",
+        "date": "2026-10-19",
+        "summary": "A seemingly reasonable push in Sokoban can make the puzzle unsolvable. To avoid such mistakes, an agent has to anticipate the consequences of its actions before execution, especially when feedback from the real environment is sparse or actions are irreversible. We introduce Agentic Imagination (Agima), a training fram…",
         "meta": [
           "Research",
-          "Felix Frohnert +5"
-        ],
-        "flag": null
-      },
-      {
-        "id": "http://arxiv.org/abs/2610.23831v1",
-        "title": "Beyond the Answer: Student-Conditioned Trace Construction for Reasoning Distillation",
-        "url": "http://arxiv.org/abs/2610.23831v1",
-        "source": "arXiv",
-        "date": "2026-10-16",
-        "summary": "A reasoning trace can accompany a correct answer without providing effective supervision for a particular student. We study how to construct traces that improve learning beyond answer-only supervision by considering both their intermediate content and their accessibility to the target learner. We introduce ReDiST, a s…",
-        "meta": [
-          "Research",
-          "Shaoang Li +8"
-        ],
-        "flag": null
-      },
-      {
-        "id": "http://arxiv.org/abs/2610.23830v1",
-        "title": "Waiting Buys Exactly Two Moments: Endogenous Identification in Prediction-Driven Allocation",
-        "url": "http://arxiv.org/abs/2610.23830v1",
-        "source": "arXiv",
-        "date": "2026-10-16",
-        "summary": "A planner with a fixed budget of preventive help must decide whom to help and when. Waiting reveals risk but removes intervention opportunities as higher-risk individuals leave first. We characterize this tradeoff under repeated noisy signals and risk-dependent attrition: in the canonical model, a length-$τ$ observati…",
-        "meta": [
-          "Research",
-          "Rama AlHamidi +3"
-        ],
-        "flag": null
-      },
-      {
-        "id": "http://arxiv.org/abs/2610.23827v1",
-        "title": "Quality-of-Transmission Estimation in Quantum Networks: Compute, Simulate, or Learn?",
-        "url": "http://arxiv.org/abs/2610.23827v1",
-        "source": "arXiv",
-        "date": "2026-10-16",
-        "summary": "Future quantum networks will rely on control-plane decisions such as routing, scheduling, entanglement provisioning, purification, and memory allocation. Each decision depends on a timely and reliable estimate of the quality of the entanglement that a candidate path can deliver, with end-to-end fidelity as a central m…",
-        "meta": [
-          "Research",
-          "Anis Bekri +4"
+          "Jiaxin Ge +11"
         ],
         "flag": null
       }
     ],
     "dev": [
       {
-        "id": "hn-50152307",
-        "title": "Wine Ported to OpenBSD",
-        "url": "https://marc.info/?l=openbsd-ports&m=179236125692175",
+        "id": "hn-50167536",
+        "title": "Facebook now charging to post more than 2 links a month",
+        "url": "https://mastodon.gamedev.place/@AshleyGullen/117473851565913919",
         "source": "Hacker News",
-        "date": "2026-10-19",
+        "date": "2026-10-20",
         "summary": "",
         "meta": [
-          "289 points",
-          "74 comments"
+          "51 points",
+          "21 comments"
         ],
-        "discussion": "https://news.ycombinator.com/item?id=50152307",
+        "discussion": "https://news.ycombinator.com/item?id=50167536",
         "flag": null
       },
       {
-        "id": "hn-50150434",
-        "title": "Timestral: Mistral release time-series foundation models",
-        "url": "https://mistral.ai/news/timestral/",
+        "id": "hn-50166579",
+        "title": "EMudhra Intermediate CA Compromise",
+        "url": "https://emudhra.we-have-a-problem.com/",
         "source": "Hacker News",
-        "date": "2026-10-19",
+        "date": "2026-10-20",
         "summary": "",
         "meta": [
-          "378 points",
-          "67 comments"
+          "104 points",
+          "29 comments"
         ],
-        "discussion": "https://news.ycombinator.com/item?id=50150434",
+        "discussion": "https://news.ycombinator.com/item?id=50166579",
         "flag": null
       },
       {
-        "id": "hn-50153431",
-        "title": "Ontology-Driven Observability: Building an End-to-End Knowledge Graph at Netflix",
-        "url": "https://netflixtechblog.com/ontology-driven-observability-building-an-end-to-end-knowledge-graph-at-netflix-scale-421392cf5adf",
+        "id": "hn-50165208",
+        "title": "Apple broke an essential presentation feature of iPads",
+        "url": "https://teddysvoronos.com/2026-10-19-apple-broke-an-essential-presentation-feature-of-ipads/",
         "source": "Hacker News",
-        "date": "2026-10-19",
+        "date": "2026-10-20",
         "summary": "",
         "meta": [
-          "68 points",
-          "14 comments"
+          "215 points",
+          "110 comments"
         ],
-        "discussion": "https://news.ycombinator.com/item?id=50153431",
+        "discussion": "https://news.ycombinator.com/item?id=50165208",
         "flag": null
       },
       {
-        "id": "hn-50149392",
-        "title": "Linux 7.3",
-        "url": "https://lwn.net/Articles/1101143/",
+        "id": "hn-50167028",
+        "title": "Ofcom Concedes Defeat in the 4chan Case",
+        "url": "https://prestonbyrne.com/2026/10/20/ofcom-concedes-defeat/",
         "source": "Hacker News",
-        "date": "2026-10-19",
+        "date": "2026-10-20",
         "summary": "",
         "meta": [
-          "537 points",
-          "241 comments"
+          "57 points",
+          "24 comments"
         ],
-        "discussion": "https://news.ycombinator.com/item?id=50149392",
+        "discussion": "https://news.ycombinator.com/item?id=50167028",
         "flag": null
       },
       {
-        "id": "hn-50134472",
-        "title": "It's still OK to enjoy programming",
-        "url": "https://chriskiehl.com/article/it-is-still-ok-to-enjoy-programming",
+        "id": "hn-50166257",
+        "title": "How I got over 300 Tor exit nodes removed",
+        "url": "https://kaba.cx/posts/20261020_Tor/",
         "source": "Hacker News",
-        "date": "2026-10-17",
+        "date": "2026-10-20",
         "summary": "",
         "meta": [
-          "111 points",
-          "117 comments"
+          "75 points",
+          "21 comments"
         ],
-        "discussion": "https://news.ycombinator.com/item?id=50134472",
+        "discussion": "https://news.ycombinator.com/item?id=50166257",
         "flag": null
       },
       {
-        "id": "hn-50154029",
-        "title": "Launch HN: Laminar (YC S24) – We trained a model to catch silent agent failures",
-        "url": "https://news.ycombinator.com/item?id=50154029",
+        "id": "hn-50166794",
+        "title": "My Friend Bob Cringely",
+        "url": "https://tyma.com/my-cringe-story/",
         "source": "Hacker News",
-        "date": "2026-10-19",
+        "date": "2026-10-20",
         "summary": "",
         "meta": [
-          "18 points",
-          "4 comments"
+          "51 points",
+          "15 comments"
         ],
-        "discussion": "https://news.ycombinator.com/item?id=50154029",
+        "discussion": "https://news.ycombinator.com/item?id=50166794",
         "flag": null
       },
       {
-        "id": "hn-50150927",
-        "title": "Alternatives to Animal Testing Are Finally Taking Off",
-        "url": "https://spectrum.ieee.org/alternatives-to-animal-testing",
+        "id": "hn-50167732",
+        "title": "Why do we have so many meetings?",
+        "url": "https://www.nber.org/papers/w35706",
         "source": "Hacker News",
-        "date": "2026-10-19",
+        "date": "2026-10-20",
         "summary": "",
         "meta": [
-          "192 points",
-          "49 comments"
-        ],
-        "discussion": "https://news.ycombinator.com/item?id=50150927",
-        "flag": null
-      },
-      {
-        "id": "hn-50153934",
-        "title": "Degraded availability for GitHub Actions, GitHub Pages and Webhooks",
-        "url": "https://www.githubstatus.com/incidents/8tzbpcnl75jp",
-        "source": "Hacker News",
-        "date": "2026-10-19",
-        "summary": "",
-        "meta": [
-          "107 points",
-          "78 comments"
-        ],
-        "discussion": "https://news.ycombinator.com/item?id=50153934",
-        "flag": null
-      },
-      {
-        "id": "hn-50150809",
-        "title": "Let's Encrypt is adding two additional remote perspectives for domain validation",
-        "url": "https://community.letsencrypt.org/t/lets-encrypt-is-adding-two-additional-remote-perspectives-for-domain-validation/252166",
-        "source": "Hacker News",
-        "date": "2026-10-19",
-        "summary": "",
-        "meta": [
-          "172 points",
-          "57 comments"
-        ],
-        "discussion": "https://news.ycombinator.com/item?id=50150809",
-        "flag": null
-      },
-      {
-        "id": "hn-50129102",
-        "title": "Galois Finite Fields and the Advanced Encryption Standard (AES)",
-        "url": "https://www.cs.uaf.edu/2015/spring/cs463/lecture/03_23_AES.html",
-        "source": "Hacker News",
-        "date": "2026-10-17",
-        "summary": "",
-        "meta": [
-          "15 points",
+          "12 points",
           "0 comments"
         ],
-        "discussion": "https://news.ycombinator.com/item?id=50129102",
+        "discussion": "https://news.ycombinator.com/item?id=50167732",
         "flag": null
       },
       {
-        "id": "hn-50151980",
-        "title": "Show HN: I built a task system to handle the drudgery so I could focus on tasks",
-        "url": "https://3anddoneapp.com/try",
+        "id": "hn-50166502",
+        "title": "2026 is an exciting year for the Rust compiler (and me)",
+        "url": "https://yoyo-code.com/2026-is-exciting-year-for-rust-compiler-and-me/",
         "source": "Hacker News",
-        "date": "2026-10-19",
+        "date": "2026-10-20",
         "summary": "",
         "meta": [
-          "10 points",
-          "8 comments"
-        ],
-        "discussion": "https://news.ycombinator.com/item?id=50151980",
-        "flag": null
-      },
-      {
-        "id": "hn-50152541",
-        "title": "Show HN: KiviDB, a faster Redis-compatible memory database and vector cache",
-        "url": "https://github.com/kividbio/kividb",
-        "source": "Hacker News",
-        "date": "2026-10-19",
-        "summary": "",
-        "meta": [
-          "47 points",
-          "20 comments"
-        ],
-        "discussion": "https://news.ycombinator.com/item?id=50152541",
-        "flag": null
-      },
-      {
-        "id": "hn-50131749",
-        "title": "A death, a plagiarism scandal and a quest for revenge: the tale of Otto Z",
-        "url": "https://www.theguardian.com/news/ng-interactive/2026/oct/08/a-death-a-plagiarism-scandal-and-a-quest-for-revenge-the-bizarre-tale-of-otto-z",
-        "source": "Hacker News",
-        "date": "2026-10-17",
-        "summary": "",
-        "meta": [
-          "38 points",
-          "10 comments"
-        ],
-        "discussion": "https://news.ycombinator.com/item?id=50131749",
-        "flag": null
-      },
-      {
-        "id": "hn-50152321",
-        "title": "Plex vulnerabilities being exploited in the wild to drop a cryptominer",
-        "url": "http://www.boredhackerblog.info/2026/10/plex-vulnerabilities-being-exploited-in.html",
-        "source": "Hacker News",
-        "date": "2026-10-19",
-        "summary": "",
-        "meta": [
-          "39 points",
+          "28 points",
           "5 comments"
         ],
-        "discussion": "https://news.ycombinator.com/item?id=50152321",
+        "discussion": "https://news.ycombinator.com/item?id=50166502",
+        "flag": null
+      },
+      {
+        "id": "hn-50162177",
+        "title": "MicroG: Free-libre re-implementation of Google's proprietary Android user space",
+        "url": "https://github.com/microg/GmsCore/wiki",
+        "source": "Hacker News",
+        "date": "2026-10-20",
+        "summary": "",
+        "meta": [
+          "258 points",
+          "21 comments"
+        ],
+        "discussion": "https://news.ycombinator.com/item?id=50162177",
+        "flag": null
+      },
+      {
+        "id": "hn-50167560",
+        "title": "How to Link Real-Time Live Streaming to Video-on-Demand",
+        "url": "https://www.red5.net/blog/how-to-link-real-time-live-streaming-to-video-on-demand/",
+        "source": "Hacker News",
+        "date": "2026-10-20",
+        "summary": "",
+        "meta": [
+          "5 points",
+          "1 comments"
+        ],
+        "discussion": "https://news.ycombinator.com/item?id=50167560",
+        "flag": null
+      },
+      {
+        "id": "hn-50141581",
+        "title": "Nordwand Mono – A monospace font for coders and adventurers",
+        "url": "https://github.com/tywr/Nordwand-Mono",
+        "source": "Hacker News",
+        "date": "2026-10-18",
+        "summary": "",
+        "meta": [
+          "454 points",
+          "126 comments"
+        ],
+        "discussion": "https://news.ycombinator.com/item?id=50141581",
+        "flag": null
+      },
+      {
+        "id": "hn-50165953",
+        "title": "Tsrs: A Port of TypeScript to Rust",
+        "url": "https://blog.cloudflare.com/typescript-rust-port/",
+        "source": "Hacker News",
+        "date": "2026-10-20",
+        "summary": "",
+        "meta": [
+          "86 points",
+          "50 comments"
+        ],
+        "discussion": "https://news.ycombinator.com/item?id=50165953",
+        "flag": null
+      },
+      {
+        "id": "hn-50160494",
+        "title": "OpenBSD 8.0",
+        "url": "https://www.openbsd.org/80.html",
+        "source": "Hacker News",
+        "date": "2026-10-20",
+        "summary": "",
+        "meta": [
+          "415 points",
+          "131 comments"
+        ],
+        "discussion": "https://news.ycombinator.com/item?id=50160494",
+        "flag": null
+      },
+      {
+        "id": "hn-50153229",
+        "title": "One Manhattan power room took down FAA air traffic control in 1991",
+        "url": "https://matthorn.io/posts/2026-10-18-33-thomas-street/",
+        "source": "Hacker News",
+        "date": "2026-10-19",
+        "summary": "",
+        "meta": [
+          "14 points",
+          "2 comments"
+        ],
+        "discussion": "https://news.ycombinator.com/item?id=50153229",
         "flag": null
       }
     ]
