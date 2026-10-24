@@ -1,285 +1,285 @@
 {
-  "generatedAt": "2026-10-23T15:44:51.882Z",
+  "generatedAt": "2026-10-24T14:33:23.127Z",
   "log": [
     {
-      "t": "2026-10-23T15:44:51.196Z",
+      "t": "2026-10-24T14:33:21.902Z",
       "level": "info",
       "msg": "signal refresh started"
     },
     {
-      "t": "2026-10-23T15:44:51.202Z",
+      "t": "2026-10-24T14:33:21.907Z",
       "level": "info",
       "msg": "GET hacker-news.firebaseio.com/v0/topstories.json"
     },
     {
-      "t": "2026-10-23T15:44:51.377Z",
+      "t": "2026-10-24T14:33:22.153Z",
       "level": "info",
       "msg": "HTTP 200 · resolving top 60 story ids in batches of 10"
     },
     {
-      "t": "2026-10-23T15:44:51.686Z",
+      "t": "2026-10-24T14:33:22.708Z",
       "level": "info",
-      "msg": "60 of 60 resolved to usable stories · 484ms"
+      "msg": "60 of 60 resolved to usable stories · 801ms"
     },
     {
-      "t": "2026-10-23T15:44:51.687Z",
+      "t": "2026-10-24T14:33:22.710Z",
       "level": "info",
       "msg": "GET cisa.gov/feeds/known_exploited_vulnerabilities.json"
     },
     {
-      "t": "2026-10-23T15:44:51.785Z",
+      "t": "2026-10-24T14:33:22.938Z",
       "level": "info",
-      "msg": "HTTP 200 · catalog holds 1754 CVEs · 98ms"
+      "msg": "HTTP 200 · catalog holds 1756 CVEs · 228ms"
     },
     {
-      "t": "2026-10-23T15:44:51.789Z",
+      "t": "2026-10-24T14:33:22.942Z",
       "level": "info",
-      "msg": "fleet filter: 1030 of 1754 touch managed platforms"
+      "msg": "fleet filter: 1030 of 1756 touch managed platforms"
     },
     {
-      "t": "2026-10-23T15:44:51.799Z",
+      "t": "2026-10-24T14:33:22.951Z",
       "level": "info",
       "msg": "GET export.arxiv.org/api/query cat:cs.AI OR cat:cs.LG"
     },
     {
-      "t": "2026-10-23T15:44:51.879Z",
+      "t": "2026-10-24T14:33:23.124Z",
       "level": "info",
-      "msg": "HTTP 200 · 30,382 bytes of Atom XML · 80ms"
+      "msg": "HTTP 200 · 30,382 bytes of Atom XML · 173ms"
     },
     {
-      "t": "2026-10-23T15:44:51.881Z",
+      "t": "2026-10-24T14:33:23.126Z",
       "level": "info",
-      "msg": "topic split: 7 AI stories, 53 general dev"
+      "msg": "topic split: 5 AI stories, 55 general dev"
     },
     {
-      "t": "2026-10-23T15:44:51.881Z",
+      "t": "2026-10-24T14:33:23.126Z",
       "level": "info",
       "msg": "--- security feed: 14 items ---"
     },
     {
-      "t": "2026-10-23T15:44:51.881Z",
+      "t": "2026-10-24T14:33:23.126Z",
       "level": "info",
       "msg": "ingest CISA KEV · Fortinet Multiple Products Path Traversal Vulnerability · 2026-10-16"
     },
     {
-      "t": "2026-10-23T15:44:51.881Z",
+      "t": "2026-10-24T14:33:23.126Z",
       "level": "info",
       "msg": "ingest CISA KEV · Cisco Secure Email Gateway Relative Path Traversal Vulner… · 2026-10-14"
     },
     {
-      "t": "2026-10-23T15:44:51.881Z",
+      "t": "2026-10-24T14:33:23.126Z",
       "level": "info",
       "msg": "ingest CISA KEV · Palo Alto Networks PAN-OS Code Injection Vulnerability · 2026-10-14"
     },
     {
-      "t": "2026-10-23T15:44:51.881Z",
+      "t": "2026-10-24T14:33:23.126Z",
       "level": "info",
       "msg": "ingest CISA KEV · Ivanti Connect Secure Authentication Bypass by Spoofing V… · 2026-10-13"
     },
     {
-      "t": "2026-10-23T15:44:51.881Z",
+      "t": "2026-10-24T14:33:23.126Z",
       "level": "info",
       "msg": "ingest CISA KEV · Microsoft Windows Command Injection Vulnerability · 2026-10-13"
     },
     {
-      "t": "2026-10-23T15:44:51.881Z",
+      "t": "2026-10-24T14:33:23.126Z",
       "level": "info",
       "msg": "ingest CISA KEV · Apache Struts Command Injection Vulnerability · 2026-10-08"
     },
     {
-      "t": "2026-10-23T15:44:51.881Z",
+      "t": "2026-10-24T14:33:23.126Z",
       "level": "info",
       "msg": "ingest CISA KEV · Citrix NetScaler Improper Restriction of Operations withi… · 2026-10-04"
     },
     {
-      "t": "2026-10-23T15:44:51.881Z",
+      "t": "2026-10-24T14:33:23.126Z",
       "level": "info",
       "msg": "ingest CISA KEV · Fortinet FortiMail Path Traversal Vulnerability · 2026-10-01"
     },
     {
-      "t": "2026-10-23T15:44:51.881Z",
+      "t": "2026-10-24T14:33:23.126Z",
       "level": "info",
       "msg": "ingest CISA KEV · Cisco Catalyst SD-WAN Manager Hex Encoding Vulnerability · 2026-09-30"
     },
     {
-      "t": "2026-10-23T15:44:51.881Z",
+      "t": "2026-10-24T14:33:23.126Z",
       "level": "info",
       "msg": "ingest CISA KEV · Apple Multiple Products Out-of-Bounds Write Vulnerability · 2026-09-29"
     },
     {
-      "t": "2026-10-23T15:44:51.881Z",
+      "t": "2026-10-24T14:33:23.126Z",
       "level": "info",
       "msg": "ingest CISA KEV · Citrix NetScaler Improper Restriction of Operations withi… · 2026-09-27"
     },
     {
-      "t": "2026-10-23T15:44:51.881Z",
+      "t": "2026-10-24T14:33:23.126Z",
       "level": "info",
       "msg": "ingest CISA KEV · Citrix NetScaler Improper Input Validation Vulnerability · 2026-09-27"
     },
     {
-      "t": "2026-10-23T15:44:51.881Z",
+      "t": "2026-10-24T14:33:23.126Z",
       "level": "info",
       "msg": "ingest CISA KEV · Microsoft SharePoint Code Injection Vulnerability · 2026-09-25"
     },
     {
-      "t": "2026-10-23T15:44:51.881Z",
+      "t": "2026-10-24T14:33:23.126Z",
       "level": "info",
       "msg": "ingest CISA KEV · WordPress Core Remote File Inclusion Vulnerability · 2026-09-25"
     },
     {
-      "t": "2026-10-23T15:44:51.881Z",
+      "t": "2026-10-24T14:33:23.126Z",
       "level": "info",
       "msg": "--- ai feed: 14 items ---"
     },
     {
-      "t": "2026-10-23T15:44:51.881Z",
+      "t": "2026-10-24T14:33:23.126Z",
       "level": "info",
-      "msg": "ingest Hacker News · Swedish government offices to ban ChatGPT and Claude · 2026-10-23"
+      "msg": "ingest Hacker News · AI-Assisted Paper on Z-Library Cites a TorrentFreak Artic… · 2026-10-24"
     },
     {
-      "t": "2026-10-23T15:44:51.881Z",
+      "t": "2026-10-24T14:33:23.126Z",
       "level": "info",
-      "msg": "ingest Hacker News · Show HN: We had AI write a wiki from 45k Enron emails, ev… · 2026-10-23"
+      "msg": "ingest Hacker News · Hacker reverses Samsung TV, finds on-board AI listening O… · 2026-10-24"
     },
     {
-      "t": "2026-10-23T15:44:51.881Z",
+      "t": "2026-10-24T14:33:23.126Z",
+      "level": "info",
+      "msg": "ingest Hacker News · That AI Temptation · 2026-10-24"
+    },
+    {
+      "t": "2026-10-24T14:33:23.126Z",
+      "level": "info",
+      "msg": "ingest Hacker News · What's Wrong with AI? · 2026-10-24"
+    },
+    {
+      "t": "2026-10-24T14:33:23.126Z",
       "level": "info",
       "msg": "ingest arXiv · Sensorimotor Alignment: A Platonic Proxy for Embodied Pol… · 2026-10-22"
     },
     {
-      "t": "2026-10-23T15:44:51.881Z",
+      "t": "2026-10-24T14:33:23.126Z",
       "level": "info",
       "msg": "ingest arXiv · Direct Pass@$k$ Optimization for Thought Pruning: Balanci… · 2026-10-22"
     },
     {
-      "t": "2026-10-23T15:44:51.881Z",
+      "t": "2026-10-24T14:33:23.126Z",
       "level": "info",
       "msg": "ingest arXiv · Phase Transition from Random Features to Fully Trainable… · 2026-10-22"
     },
     {
-      "t": "2026-10-23T15:44:51.881Z",
+      "t": "2026-10-24T14:33:23.126Z",
       "level": "info",
       "msg": "ingest arXiv · Reliable AI-Assisted Decisions via Selective Auditing · 2026-10-22"
     },
     {
-      "t": "2026-10-23T15:44:51.881Z",
+      "t": "2026-10-24T14:33:23.126Z",
       "level": "info",
       "msg": "ingest arXiv · SpectralCanary: Embarrassingly Simple Low-Frequency Trace… · 2026-10-22"
     },
     {
-      "t": "2026-10-23T15:44:51.881Z",
+      "t": "2026-10-24T14:33:23.126Z",
       "level": "info",
       "msg": "ingest arXiv · Cost-Aware Abstention for LLM-Based IT Ticket Classificat… · 2026-10-22"
     },
     {
-      "t": "2026-10-23T15:44:51.882Z",
+      "t": "2026-10-24T14:33:23.127Z",
       "level": "info",
       "msg": "ingest arXiv · METTA: Memory-Enhanced Test-Time Adaptation for Meta-Rein… · 2026-10-22"
     },
     {
-      "t": "2026-10-23T15:44:51.882Z",
+      "t": "2026-10-24T14:33:23.127Z",
       "level": "info",
       "msg": "ingest arXiv · EpiSEM-Bench: Evaluating Safety and Evidence Recovery in… · 2026-10-22"
     },
     {
-      "t": "2026-10-23T15:44:51.882Z",
+      "t": "2026-10-24T14:33:23.127Z",
       "level": "info",
       "msg": "ingest arXiv · Low-Bit N-Gram Embeddings for Language Models · 2026-10-22"
     },
     {
-      "t": "2026-10-23T15:44:51.882Z",
+      "t": "2026-10-24T14:33:23.127Z",
       "level": "info",
       "msg": "ingest arXiv · A Fix for Softmax and Cross-Entropy · 2026-10-22"
     },
     {
-      "t": "2026-10-23T15:44:51.882Z",
-      "level": "info",
-      "msg": "ingest arXiv · Causal Chain of Thought: Mitigating Attention Leakage via… · 2026-10-22"
-    },
-    {
-      "t": "2026-10-23T15:44:51.882Z",
-      "level": "info",
-      "msg": "ingest arXiv · BeNice! Closing Looping's Inference-Memory Gap via KV-Sha… · 2026-10-22"
-    },
-    {
-      "t": "2026-10-23T15:44:51.882Z",
+      "t": "2026-10-24T14:33:23.127Z",
       "level": "info",
       "msg": "--- dev feed: 14 items ---"
     },
     {
-      "t": "2026-10-23T15:44:51.882Z",
+      "t": "2026-10-24T14:33:23.127Z",
       "level": "info",
-      "msg": "ingest Hacker News · OpenSSL 4.1.0 · 2026-10-23"
+      "msg": "ingest Hacker News · One Must Fall 2097 Remastered · 2026-10-24"
     },
     {
-      "t": "2026-10-23T15:44:51.882Z",
+      "t": "2026-10-24T14:33:23.127Z",
+      "level": "info",
+      "msg": "ingest Hacker News · OBS Studio 33 · 2026-10-24"
+    },
+    {
+      "t": "2026-10-24T14:33:23.127Z",
+      "level": "info",
+      "msg": "ingest Hacker News · I Don't Understand Quantum Physics (2018) · 2026-10-24"
+    },
+    {
+      "t": "2026-10-24T14:33:23.127Z",
+      "level": "info",
+      "msg": "ingest Hacker News · Around a dozen banking apps began specifically permitting… · 2026-10-24"
+    },
+    {
+      "t": "2026-10-24T14:33:23.127Z",
+      "level": "info",
+      "msg": "ingest Hacker News · Node2Shell evolves to HTTP2Shell, blast radius affects ma… · 2026-10-24"
+    },
+    {
+      "t": "2026-10-24T14:33:23.127Z",
+      "level": "info",
+      "msg": "ingest Hacker News · Kimi K3.1 Pro and K3.1 Pro Highspeed · 2026-10-23"
+    },
+    {
+      "t": "2026-10-24T14:33:23.127Z",
+      "level": "info",
+      "msg": "ingest Hacker News · Physicists trap a single antimatter particle for a month · 2026-10-21"
+    },
+    {
+      "t": "2026-10-24T14:33:23.127Z",
+      "level": "info",
+      "msg": "ingest Hacker News · Today, we hacked what we'd set out to hack: the iPhone · 2026-10-23"
+    },
+    {
+      "t": "2026-10-24T14:33:23.127Z",
+      "level": "info",
+      "msg": "ingest Hacker News · Appreciating the beauty of all your body's scars and scra… · 2026-10-21"
+    },
+    {
+      "t": "2026-10-24T14:33:23.127Z",
+      "level": "info",
+      "msg": "ingest Hacker News · Twelve years of distributed SQLite · 2026-10-24"
+    },
+    {
+      "t": "2026-10-24T14:33:23.127Z",
+      "level": "info",
+      "msg": "ingest Hacker News · TornadoVM 7 Enables GPU-Native Workloads from Java Applic… · 2026-10-22"
+    },
+    {
+      "t": "2026-10-24T14:33:23.127Z",
+      "level": "info",
+      "msg": "ingest Hacker News · Apple Music 404 Not Found · 2026-10-23"
+    },
+    {
+      "t": "2026-10-24T14:33:23.127Z",
       "level": "info",
       "msg": "ingest Hacker News · Local Wikipedia: Wikipedia, but only for things a half ho… · 2026-10-22"
     },
     {
-      "t": "2026-10-23T15:44:51.882Z",
+      "t": "2026-10-24T14:33:23.127Z",
       "level": "info",
-      "msg": "ingest Hacker News · Disney Raising Prices Days After Confirming Ads Will Now… · 2026-10-23"
+      "msg": "ingest Hacker News · How to run a city builder on 16 MHz · 2026-10-22"
     },
     {
-      "t": "2026-10-23T15:44:51.882Z",
+      "t": "2026-10-24T14:33:23.127Z",
       "level": "info",
-      "msg": "ingest Hacker News · Docker is weird · 2026-10-22"
-    },
-    {
-      "t": "2026-10-23T15:44:51.882Z",
-      "level": "info",
-      "msg": "ingest Hacker News · Remove pgrust: the entry is cheating · 2026-10-23"
-    },
-    {
-      "t": "2026-10-23T15:44:51.882Z",
-      "level": "info",
-      "msg": "ingest Hacker News · Investor-owned utilities charge 23% more for electricity… · 2026-10-23"
-    },
-    {
-      "t": "2026-10-23T15:44:51.882Z",
-      "level": "info",
-      "msg": "ingest Hacker News · eMudhra ignored Mozilla Root investigation deadline; blam… · 2026-10-23"
-    },
-    {
-      "t": "2026-10-23T15:44:51.882Z",
-      "level": "info",
-      "msg": "ingest Hacker News · The foolishness of \"natural language programming\" (1978) · 2026-10-23"
-    },
-    {
-      "t": "2026-10-23T15:44:51.882Z",
-      "level": "info",
-      "msg": "ingest Hacker News · Job Loss and Cortisone Mania · 2026-10-23"
-    },
-    {
-      "t": "2026-10-23T15:44:51.882Z",
-      "level": "info",
-      "msg": "ingest Hacker News · The alien space of science: Coherent but cognitively unav… · 2026-10-22"
-    },
-    {
-      "t": "2026-10-23T15:44:51.882Z",
-      "level": "info",
-      "msg": "ingest Hacker News · Show HN: OnKey – I'm a bad singer, so I built an app to s… · 2026-10-22"
-    },
-    {
-      "t": "2026-10-23T15:44:51.882Z",
-      "level": "info",
-      "msg": "ingest Hacker News · How does Fable 5.1 hide messages in images? · 2026-10-22"
-    },
-    {
-      "t": "2026-10-23T15:44:51.882Z",
-      "level": "info",
-      "msg": "ingest Hacker News · Run full iOS 16.5 firmware on Android Devices · 2026-10-22"
-    },
-    {
-      "t": "2026-10-23T15:44:51.882Z",
-      "level": "info",
-      "msg": "ingest Hacker News · Shitter – A Nitter Fork · 2026-10-23"
-    },
-    {
-      "t": "2026-10-23T15:44:51.882Z",
-      "level": "info",
-      "msg": "publishing 42 items across 3 feeds · 686ms"
+      "msg": "publishing 42 items across 3 feeds · 1225ms"
     }
   ],
   "feeds": {
@@ -483,31 +483,59 @@
     ],
     "ai": [
       {
-        "id": "hn-50207405",
-        "title": "Swedish government offices to ban ChatGPT and Claude",
-        "url": "https://www.sverigesradio.se/artikel/chat-gpt-och-claude-forbjuder-regeringskansliet",
+        "id": "hn-50220204",
+        "title": "AI-Assisted Paper on Z-Library Cites a TorrentFreak Article That Doesn't Exist",
+        "url": "https://torrentfreak.com/ai-assisted-paper-on-z-library-cites-a-torrentfreak-article-that-doesnt-exist/",
         "source": "Hacker News",
-        "date": "2026-10-23",
+        "date": "2026-10-24",
         "summary": "",
         "meta": [
-          "288 points",
-          "98 comments"
+          "56 points",
+          "15 comments"
         ],
-        "discussion": "https://news.ycombinator.com/item?id=50207405",
+        "discussion": "https://news.ycombinator.com/item?id=50220204",
         "flag": null
       },
       {
-        "id": "hn-50207620",
-        "title": "Show HN: We had AI write a wiki from 45k Enron emails, every fact cited",
-        "url": "https://www.thisandthat.chat/enron/",
+        "id": "hn-50218633",
+        "title": "Hacker reverses Samsung TV, finds on-board AI listening OpenAI account suspended",
+        "url": "https://www.reddit.com/r/antiai/comments/1xdv3e5/hacker_reverse_engineers_his_samsung_tv_and_finds/",
         "source": "Hacker News",
-        "date": "2026-10-23",
+        "date": "2026-10-24",
         "summary": "",
         "meta": [
-          "12 points",
-          "5 comments"
+          "332 points",
+          "101 comments"
         ],
-        "discussion": "https://news.ycombinator.com/item?id=50207620",
+        "discussion": "https://news.ycombinator.com/item?id=50218633",
+        "flag": null
+      },
+      {
+        "id": "hn-50218743",
+        "title": "That AI Temptation",
+        "url": "https://www.tbray.org/ongoing/When/202x/2026/10/19/The-AI-Temptation",
+        "source": "Hacker News",
+        "date": "2026-10-24",
+        "summary": "",
+        "meta": [
+          "10 points",
+          "3 comments"
+        ],
+        "discussion": "https://news.ycombinator.com/item?id=50218743",
+        "flag": null
+      },
+      {
+        "id": "hn-50220640",
+        "title": "What's Wrong with AI?",
+        "url": "https://homepage.farm/ai.html",
+        "source": "Hacker News",
+        "date": "2026-10-24",
+        "summary": "",
+        "meta": [
+          "5 points",
+          "0 comments"
+        ],
+        "discussion": "https://news.ycombinator.com/item?id=50220640",
         "flag": null
       },
       {
@@ -639,47 +667,175 @@
           "Jonathan T. Barron +2"
         ],
         "flag": null
-      },
-      {
-        "id": "http://arxiv.org/abs/2610.31639v1",
-        "title": "Causal Chain of Thought: Mitigating Attention Leakage via Context Isolation",
-        "url": "http://arxiv.org/abs/2610.31639v1",
-        "source": "arXiv",
-        "date": "2026-10-22",
-        "summary": "Chain-of-thought (CoT) prompting elicits step-by-step rationales that appear to explain model predictions, but there is no guarantee these steps causally drive the final answer. In standard autoregressive generation, dense attention allows each reasoning step to attend to the full context, enabling the model to derive…",
-        "meta": [
-          "Research",
-          "Gabriele Dominici +4"
-        ],
-        "flag": null
-      },
-      {
-        "id": "http://arxiv.org/abs/2610.31633v1",
-        "title": "BeNice! Closing Looping's Inference-Memory Gap via KV-Sharing",
-        "url": "http://arxiv.org/abs/2610.31633v1",
-        "source": "arXiv",
-        "date": "2026-10-22",
-        "summary": "Looped architectures scale quality while keeping parameter count fixed by repeatedly passing activations through the same block of layers. During inference, each recurrence generates independent KV-caches, causing memory to grow linearly. To address this challenge, prior work has proposed KV-sharing (i.e., sharing KV-…",
-        "meta": [
-          "Research",
-          "Hayden Prairie +3"
-        ],
-        "flag": null
       }
     ],
     "dev": [
       {
-        "id": "hn-50208099",
-        "title": "OpenSSL 4.1.0",
-        "url": "https://github.com/openssl/openssl/releases/tag/openssl-4.1.0",
+        "id": "hn-50221179",
+        "title": "One Must Fall 2097 Remastered",
+        "url": "https://github.com/Jared-woodruff/OMF-2097-Remastered/",
+        "source": "Hacker News",
+        "date": "2026-10-24",
+        "summary": "",
+        "meta": [
+          "24 points",
+          "11 comments"
+        ],
+        "discussion": "https://news.ycombinator.com/item?id=50221179",
+        "flag": null
+      },
+      {
+        "id": "hn-50218430",
+        "title": "OBS Studio 33",
+        "url": "https://github.com/obsproject/obs-studio/releases/tag/33.0.0",
+        "source": "Hacker News",
+        "date": "2026-10-24",
+        "summary": "",
+        "meta": [
+          "287 points",
+          "83 comments"
+        ],
+        "discussion": "https://news.ycombinator.com/item?id=50218430",
+        "flag": null
+      },
+      {
+        "id": "hn-50219666",
+        "title": "I Don't Understand Quantum Physics (2018)",
+        "url": "https://www.southampton.ac.uk/~doug/quantum_physics/index.html",
+        "source": "Hacker News",
+        "date": "2026-10-24",
+        "summary": "",
+        "meta": [
+          "162 points",
+          "107 comments"
+        ],
+        "discussion": "https://news.ycombinator.com/item?id=50219666",
+        "flag": null
+      },
+      {
+        "id": "hn-50217495",
+        "title": "Around a dozen banking apps began specifically permitting GrapheneOS",
+        "url": "https://grapheneos.social/@GrapheneOS/117492375462459244",
+        "source": "Hacker News",
+        "date": "2026-10-24",
+        "summary": "",
+        "meta": [
+          "332 points",
+          "81 comments"
+        ],
+        "discussion": "https://news.ycombinator.com/item?id=50217495",
+        "flag": null
+      },
+      {
+        "id": "hn-50219177",
+        "title": "Node2Shell evolves to HTTP2Shell, blast radius affects many HTTP libs and apps",
+        "url": "https://www.aikido.dev/blog/python-packages-vulnerable-node2shell-brotli-cve-2026-111497",
+        "source": "Hacker News",
+        "date": "2026-10-24",
+        "summary": "",
+        "meta": [
+          "100 points",
+          "46 comments"
+        ],
+        "discussion": "https://news.ycombinator.com/item?id=50219177",
+        "flag": null
+      },
+      {
+        "id": "hn-50212065",
+        "title": "Kimi K3.1 Pro and K3.1 Pro Highspeed",
+        "url": "https://www.kimi.ai/blog/kimi-k3-1-pro",
         "source": "Hacker News",
         "date": "2026-10-23",
         "summary": "",
         "meta": [
-          "129 points",
-          "31 comments"
+          "989 points",
+          "586 comments"
         ],
-        "discussion": "https://news.ycombinator.com/item?id=50208099",
+        "discussion": "https://news.ycombinator.com/item?id=50212065",
+        "flag": null
+      },
+      {
+        "id": "hn-50186450",
+        "title": "Physicists trap a single antimatter particle for a month",
+        "url": "https://www.scientificamerican.com/article/physicists-trap-a-single-antimatter-particle-for-a-month/",
+        "source": "Hacker News",
+        "date": "2026-10-21",
+        "summary": "",
+        "meta": [
+          "140 points",
+          "54 comments"
+        ],
+        "discussion": "https://news.ycombinator.com/item?id=50186450",
+        "flag": null
+      },
+      {
+        "id": "hn-50211474",
+        "title": "Today, we hacked what we'd set out to hack: the iPhone",
+        "url": "https://blog.calif.io/p/iphone",
+        "source": "Hacker News",
+        "date": "2026-10-23",
+        "summary": "",
+        "meta": [
+          "973 points",
+          "622 comments"
+        ],
+        "discussion": "https://news.ycombinator.com/item?id=50211474",
+        "flag": null
+      },
+      {
+        "id": "hn-50181106",
+        "title": "Appreciating the beauty of all your body's scars and scratches",
+        "url": "https://1000awesomethings.com/2026/10/08/576-appreciating-the-beauty-of-all-your-bodys-scars-and-scratches-4/",
+        "source": "Hacker News",
+        "date": "2026-10-21",
+        "summary": "",
+        "meta": [
+          "36 points",
+          "23 comments"
+        ],
+        "discussion": "https://news.ycombinator.com/item?id=50181106",
+        "flag": null
+      },
+      {
+        "id": "hn-50217500",
+        "title": "Twelve years of distributed SQLite",
+        "url": "https://philipotoole.com/twelve-years-of-distributed-sqlite/",
+        "source": "Hacker News",
+        "date": "2026-10-24",
+        "summary": "",
+        "meta": [
+          "277 points",
+          "42 comments"
+        ],
+        "discussion": "https://news.ycombinator.com/item?id=50217500",
+        "flag": null
+      },
+      {
+        "id": "hn-50192975",
+        "title": "TornadoVM 7 Enables GPU-Native Workloads from Java Applications",
+        "url": "https://www.infoq.com/news/2026/10/tornadovm-7-gpu/",
+        "source": "Hacker News",
+        "date": "2026-10-22",
+        "summary": "",
+        "meta": [
+          "7 points",
+          "0 comments"
+        ],
+        "discussion": "https://news.ycombinator.com/item?id=50192975",
+        "flag": null
+      },
+      {
+        "id": "hn-50207910",
+        "title": "Apple Music 404 Not Found",
+        "url": "https://music.apple.com/this-url-doesnt-exist",
+        "source": "Hacker News",
+        "date": "2026-10-23",
+        "summary": "",
+        "meta": [
+          "828 points",
+          "246 comments"
+        ],
+        "discussion": "https://news.ycombinator.com/item?id=50207910",
         "flag": null
       },
       {
@@ -690,178 +846,24 @@
         "date": "2026-10-22",
         "summary": "",
         "meta": [
-          "831 points",
-          "162 comments"
+          "1444 points",
+          "238 comments"
         ],
         "discussion": "https://news.ycombinator.com/item?id=50202285",
         "flag": null
       },
       {
-        "id": "hn-50205934",
-        "title": "Disney Raising Prices Days After Confirming Ads Will Now Show Up on Every Tier",
-        "url": "https://www.tvfandomlounge.com/disney-plus-price-hike-ads-premium-tier-nielsen-emmys-2026/",
-        "source": "Hacker News",
-        "date": "2026-10-23",
-        "summary": "",
-        "meta": [
-          "258 points",
-          "232 comments"
-        ],
-        "discussion": "https://news.ycombinator.com/item?id=50205934",
-        "flag": null
-      },
-      {
-        "id": "hn-50202681",
-        "title": "Docker is weird",
-        "url": "https://codeandcake.dev/posts/2026-10-22-docker-is-weird",
+        "id": "hn-50194536",
+        "title": "How to run a city builder on 16 MHz",
+        "url": "https://larstofus.com/2025/11/16/how-to-run-a-city-builder-on-12-5-mhz/",
         "source": "Hacker News",
         "date": "2026-10-22",
         "summary": "",
         "meta": [
-          "699 points",
-          "284 comments"
+          "54 points",
+          "12 comments"
         ],
-        "discussion": "https://news.ycombinator.com/item?id=50202681",
-        "flag": null
-      },
-      {
-        "id": "hn-50205816",
-        "title": "Remove pgrust: the entry is cheating",
-        "url": "https://github.com/ClickHouse/ClickBench/pull/2165",
-        "source": "Hacker News",
-        "date": "2026-10-23",
-        "summary": "",
-        "meta": [
-          "141 points",
-          "75 comments"
-        ],
-        "discussion": "https://news.ycombinator.com/item?id=50205816",
-        "flag": null
-      },
-      {
-        "id": "hn-50208837",
-        "title": "Investor-owned utilities charge 23% more for electricity than public providers",
-        "url": "https://www.kadoa.com/energy-prices/insights/investor-owned-utilities",
-        "source": "Hacker News",
-        "date": "2026-10-23",
-        "summary": "",
-        "meta": [
-          "366 points",
-          "268 comments"
-        ],
-        "discussion": "https://news.ycombinator.com/item?id=50208837",
-        "flag": null
-      },
-      {
-        "id": "hn-50210067",
-        "title": "eMudhra ignored Mozilla Root investigation deadline; blames social media",
-        "url": "https://bugzilla.mozilla.org/show_bug.cgi?id=2083449",
-        "source": "Hacker News",
-        "date": "2026-10-23",
-        "summary": "",
-        "meta": [
-          "28 points",
-          "5 comments"
-        ],
-        "discussion": "https://news.ycombinator.com/item?id=50210067",
-        "flag": null
-      },
-      {
-        "id": "hn-50203161",
-        "title": "The foolishness of \"natural language programming\" (1978)",
-        "url": "https://www.cs.utexas.edu/~EWD/transcriptions/EWD06xx/EWD667.html",
-        "source": "Hacker News",
-        "date": "2026-10-23",
-        "summary": "",
-        "meta": [
-          "289 points",
-          "190 comments"
-        ],
-        "discussion": "https://news.ycombinator.com/item?id=50203161",
-        "flag": null
-      },
-      {
-        "id": "hn-50206840",
-        "title": "Job Loss and Cortisone Mania",
-        "url": "https://tilschuenemann.de/job-loss-cortisone-mania",
-        "source": "Hacker News",
-        "date": "2026-10-23",
-        "summary": "",
-        "meta": [
-          "81 points",
-          "19 comments"
-        ],
-        "discussion": "https://news.ycombinator.com/item?id=50206840",
-        "flag": null
-      },
-      {
-        "id": "hn-50195002",
-        "title": "The alien space of science: Coherent but cognitively unavailable directions",
-        "url": "https://arxiv.org/abs/2603.01092",
-        "source": "Hacker News",
-        "date": "2026-10-22",
-        "summary": "",
-        "meta": [
-          "147 points",
-          "53 comments"
-        ],
-        "discussion": "https://news.ycombinator.com/item?id=50195002",
-        "flag": null
-      },
-      {
-        "id": "hn-50195488",
-        "title": "Show HN: OnKey – I'm a bad singer, so I built an app to show where I'm off-key",
-        "url": "https://github.com/dsmurrell/onkey",
-        "source": "Hacker News",
-        "date": "2026-10-22",
-        "summary": "",
-        "meta": [
-          "128 points",
-          "57 comments"
-        ],
-        "discussion": "https://news.ycombinator.com/item?id=50195488",
-        "flag": null
-      },
-      {
-        "id": "hn-50201445",
-        "title": "How does Fable 5.1 hide messages in images?",
-        "url": "https://www.lesswrong.com/posts/WHEQps5PK8LrrcTAb/how-does-fable-5-1-hide-messages-in-images",
-        "source": "Hacker News",
-        "date": "2026-10-22",
-        "summary": "",
-        "meta": [
-          "167 points",
-          "49 comments"
-        ],
-        "discussion": "https://news.ycombinator.com/item?id=50201445",
-        "flag": null
-      },
-      {
-        "id": "hn-50196718",
-        "title": "Run full iOS 16.5 firmware on Android Devices",
-        "url": "https://github.com/oosexgang/hackios-xnu-kernel",
-        "source": "Hacker News",
-        "date": "2026-10-22",
-        "summary": "",
-        "meta": [
-          "488 points",
-          "179 comments"
-        ],
-        "discussion": "https://news.ycombinator.com/item?id=50196718",
-        "flag": null
-      },
-      {
-        "id": "hn-50208343",
-        "title": "Shitter – A Nitter Fork",
-        "url": "https://codeberg.org/shitter/shitter",
-        "source": "Hacker News",
-        "date": "2026-10-23",
-        "summary": "",
-        "meta": [
-          "118 points",
-          "69 comments"
-        ],
-        "discussion": "https://news.ycombinator.com/item?id=50208343",
+        "discussion": "https://news.ycombinator.com/item?id=50194536",
         "flag": null
       }
     ]
