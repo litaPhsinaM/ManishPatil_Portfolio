@@ -1,285 +1,285 @@
 {
-  "generatedAt": "2026-10-25T14:57:02.239Z",
+  "generatedAt": "2026-10-26T17:23:17.150Z",
   "log": [
     {
-      "t": "2026-10-25T14:57:01.333Z",
+      "t": "2026-10-26T17:23:16.111Z",
       "level": "info",
       "msg": "signal refresh started"
     },
     {
-      "t": "2026-10-25T14:57:01.337Z",
+      "t": "2026-10-26T17:23:16.114Z",
       "level": "info",
       "msg": "GET hacker-news.firebaseio.com/v0/topstories.json"
     },
     {
-      "t": "2026-10-25T14:57:01.566Z",
+      "t": "2026-10-26T17:23:16.275Z",
       "level": "info",
       "msg": "HTTP 200 · resolving top 60 story ids in batches of 10"
     },
     {
-      "t": "2026-10-25T14:57:01.921Z",
+      "t": "2026-10-26T17:23:16.767Z",
       "level": "info",
-      "msg": "60 of 60 resolved to usable stories · 584ms"
+      "msg": "60 of 60 resolved to usable stories · 653ms"
     },
     {
-      "t": "2026-10-25T14:57:01.922Z",
+      "t": "2026-10-26T17:23:16.768Z",
       "level": "info",
       "msg": "GET cisa.gov/feeds/known_exploited_vulnerabilities.json"
     },
     {
-      "t": "2026-10-25T14:57:02.037Z",
+      "t": "2026-10-26T17:23:16.944Z",
       "level": "info",
-      "msg": "HTTP 200 · catalog holds 1756 CVEs · 115ms"
+      "msg": "HTTP 200 · catalog holds 1756 CVEs · 176ms"
     },
     {
-      "t": "2026-10-25T14:57:02.040Z",
+      "t": "2026-10-26T17:23:16.946Z",
       "level": "info",
       "msg": "fleet filter: 1030 of 1756 touch managed platforms"
     },
     {
-      "t": "2026-10-25T14:57:02.048Z",
+      "t": "2026-10-26T17:23:16.953Z",
       "level": "info",
       "msg": "GET export.arxiv.org/api/query cat:cs.AI OR cat:cs.LG"
     },
     {
-      "t": "2026-10-25T14:57:02.235Z",
+      "t": "2026-10-26T17:23:17.149Z",
       "level": "info",
-      "msg": "HTTP 200 · 30,382 bytes of Atom XML · 187ms"
+      "msg": "HTTP 200 · 30,494 bytes of Atom XML · 196ms"
     },
     {
-      "t": "2026-10-25T14:57:02.238Z",
+      "t": "2026-10-26T17:23:17.150Z",
       "level": "info",
-      "msg": "topic split: 9 AI stories, 51 general dev"
+      "msg": "topic split: 8 AI stories, 52 general dev"
     },
     {
-      "t": "2026-10-25T14:57:02.238Z",
+      "t": "2026-10-26T17:23:17.150Z",
       "level": "info",
       "msg": "--- security feed: 14 items ---"
     },
     {
-      "t": "2026-10-25T14:57:02.238Z",
+      "t": "2026-10-26T17:23:17.150Z",
       "level": "info",
       "msg": "ingest CISA KEV · Fortinet Multiple Products Path Traversal Vulnerability · 2026-10-16"
     },
     {
-      "t": "2026-10-25T14:57:02.238Z",
+      "t": "2026-10-26T17:23:17.150Z",
       "level": "info",
       "msg": "ingest CISA KEV · Cisco Secure Email Gateway Relative Path Traversal Vulner… · 2026-10-14"
     },
     {
-      "t": "2026-10-25T14:57:02.238Z",
+      "t": "2026-10-26T17:23:17.150Z",
       "level": "info",
       "msg": "ingest CISA KEV · Palo Alto Networks PAN-OS Code Injection Vulnerability · 2026-10-14"
     },
     {
-      "t": "2026-10-25T14:57:02.238Z",
+      "t": "2026-10-26T17:23:17.150Z",
       "level": "info",
       "msg": "ingest CISA KEV · Ivanti Connect Secure Authentication Bypass by Spoofing V… · 2026-10-13"
     },
     {
-      "t": "2026-10-25T14:57:02.238Z",
+      "t": "2026-10-26T17:23:17.150Z",
       "level": "info",
       "msg": "ingest CISA KEV · Microsoft Windows Command Injection Vulnerability · 2026-10-13"
     },
     {
-      "t": "2026-10-25T14:57:02.238Z",
+      "t": "2026-10-26T17:23:17.150Z",
       "level": "info",
       "msg": "ingest CISA KEV · Apache Struts Command Injection Vulnerability · 2026-10-08"
     },
     {
-      "t": "2026-10-25T14:57:02.238Z",
+      "t": "2026-10-26T17:23:17.150Z",
       "level": "info",
       "msg": "ingest CISA KEV · Citrix NetScaler Improper Restriction of Operations withi… · 2026-10-04"
     },
     {
-      "t": "2026-10-25T14:57:02.238Z",
+      "t": "2026-10-26T17:23:17.150Z",
       "level": "info",
       "msg": "ingest CISA KEV · Fortinet FortiMail Path Traversal Vulnerability · 2026-10-01"
     },
     {
-      "t": "2026-10-25T14:57:02.238Z",
+      "t": "2026-10-26T17:23:17.150Z",
       "level": "info",
       "msg": "ingest CISA KEV · Cisco Catalyst SD-WAN Manager Hex Encoding Vulnerability · 2026-09-30"
     },
     {
-      "t": "2026-10-25T14:57:02.238Z",
+      "t": "2026-10-26T17:23:17.150Z",
       "level": "info",
       "msg": "ingest CISA KEV · Apple Multiple Products Out-of-Bounds Write Vulnerability · 2026-09-29"
     },
     {
-      "t": "2026-10-25T14:57:02.238Z",
+      "t": "2026-10-26T17:23:17.150Z",
       "level": "info",
       "msg": "ingest CISA KEV · Citrix NetScaler Improper Restriction of Operations withi… · 2026-09-27"
     },
     {
-      "t": "2026-10-25T14:57:02.238Z",
+      "t": "2026-10-26T17:23:17.150Z",
       "level": "info",
       "msg": "ingest CISA KEV · Citrix NetScaler Improper Input Validation Vulnerability · 2026-09-27"
     },
     {
-      "t": "2026-10-25T14:57:02.238Z",
+      "t": "2026-10-26T17:23:17.150Z",
       "level": "info",
       "msg": "ingest CISA KEV · Microsoft SharePoint Code Injection Vulnerability · 2026-09-25"
     },
     {
-      "t": "2026-10-25T14:57:02.238Z",
+      "t": "2026-10-26T17:23:17.150Z",
       "level": "info",
       "msg": "ingest CISA KEV · WordPress Core Remote File Inclusion Vulnerability · 2026-09-25"
     },
     {
-      "t": "2026-10-25T14:57:02.238Z",
+      "t": "2026-10-26T17:23:17.150Z",
       "level": "info",
       "msg": "--- ai feed: 14 items ---"
     },
     {
-      "t": "2026-10-25T14:57:02.238Z",
+      "t": "2026-10-26T17:23:17.150Z",
       "level": "info",
-      "msg": "ingest Hacker News · R/open source bans all solo projects and projects using L… · 2026-10-25"
+      "msg": "ingest Hacker News · Anthropic S-1 · 2026-10-26"
     },
     {
-      "t": "2026-10-25T14:57:02.238Z",
+      "t": "2026-10-26T17:23:17.150Z",
       "level": "info",
-      "msg": "ingest Hacker News · Cerebras Deploys Trillion-Parameter AI Models · 2026-10-25"
+      "msg": "ingest Hacker News · Concerning behavior from a popular open-weight AI model · 2026-10-26"
     },
     {
-      "t": "2026-10-25T14:57:02.238Z",
+      "t": "2026-10-26T17:23:17.150Z",
       "level": "info",
-      "msg": "ingest Hacker News · Nikon photography contest winner loses title after scient… · 2026-10-25"
+      "msg": "ingest Hacker News · Brown student maps the hidden global labor powering AI · 2026-10-26"
     },
     {
-      "t": "2026-10-25T14:57:02.238Z",
+      "t": "2026-10-26T17:23:17.150Z",
       "level": "info",
-      "msg": "ingest Hacker News · Imagine an AI future where being banned means you are now… · 2026-10-25"
+      "msg": "ingest Hacker News · R/opensource bans AI-made and AI-focused projects and non… · 2026-10-26"
     },
     {
-      "t": "2026-10-25T14:57:02.238Z",
+      "t": "2026-10-26T17:23:17.150Z",
       "level": "info",
-      "msg": "ingest Hacker News · America has lost 200k of jobs in media, film and the arts… · 2026-10-24"
+      "msg": "ingest Hacker News · A 10-year-old CNN outperforms frontier LLMs for skin canc… · 2026-10-25"
     },
     {
-      "t": "2026-10-25T14:57:02.238Z",
+      "t": "2026-10-26T17:23:17.150Z",
       "level": "info",
-      "msg": "ingest Hacker News · Neural chip decodes interactions between brain regions · 2026-10-24"
+      "msg": "ingest Hacker News · OpenAI and Anthropic cut their LLM prices by up to 80% wi… · 2026-10-25"
     },
     {
-      "t": "2026-10-25T14:57:02.238Z",
+      "t": "2026-10-26T17:23:17.150Z",
       "level": "info",
-      "msg": "ingest Hacker News · Why is AI generated language so hard to understand? · 2026-10-24"
+      "msg": "ingest Hacker News · AI didn't cause the tech jobs bust, but it explains why t… · 2026-10-25"
     },
     {
-      "t": "2026-10-25T14:57:02.238Z",
+      "t": "2026-10-26T17:23:17.150Z",
       "level": "info",
-      "msg": "ingest Hacker News · Oai-math-revised: a community hub for revising OpenAI's m… · 2026-10-24"
+      "msg": "ingest Hacker News · Show HN: ADRs for AI – Deliberation records for human–AI… · 2026-10-25"
     },
     {
-      "t": "2026-10-25T14:57:02.238Z",
+      "t": "2026-10-26T17:23:17.150Z",
       "level": "info",
-      "msg": "ingest Hacker News · Making My Blog Readable by AI Agents · 2026-10-24"
+      "msg": "ingest arXiv · SceneBloom: Agentic Indoor Environment Generation with Re… · 2026-10-23"
     },
     {
-      "t": "2026-10-25T14:57:02.238Z",
+      "t": "2026-10-26T17:23:17.150Z",
       "level": "info",
-      "msg": "ingest arXiv · Sensorimotor Alignment: A Platonic Proxy for Embodied Pol… · 2026-10-22"
+      "msg": "ingest arXiv · RobustRLlib: A Unified Library and Benchmark for Robust R… · 2026-10-23"
     },
     {
-      "t": "2026-10-25T14:57:02.238Z",
+      "t": "2026-10-26T17:23:17.150Z",
       "level": "info",
-      "msg": "ingest arXiv · Direct Pass@$k$ Optimization for Thought Pruning: Balanci… · 2026-10-22"
+      "msg": "ingest arXiv · DexPort: A Hand-Held Skill Interface for Dexterous Hand D… · 2026-10-23"
     },
     {
-      "t": "2026-10-25T14:57:02.238Z",
+      "t": "2026-10-26T17:23:17.150Z",
       "level": "info",
-      "msg": "ingest arXiv · Phase Transition from Random Features to Fully Trainable… · 2026-10-22"
+      "msg": "ingest arXiv · Flownomaly: Single-Step Conditional-Mean Recovery for Few… · 2026-10-23"
     },
     {
-      "t": "2026-10-25T14:57:02.238Z",
+      "t": "2026-10-26T17:23:17.150Z",
       "level": "info",
-      "msg": "ingest arXiv · Reliable AI-Assisted Decisions via Selective Auditing · 2026-10-22"
+      "msg": "ingest arXiv · Measure Before You Train: Typed Decision Models vs. a Cla… · 2026-10-23"
     },
     {
-      "t": "2026-10-25T14:57:02.238Z",
+      "t": "2026-10-26T17:23:17.150Z",
       "level": "info",
-      "msg": "ingest arXiv · SpectralCanary: Embarrassingly Simple Low-Frequency Trace… · 2026-10-22"
+      "msg": "ingest arXiv · Where Rounding Happens Matters: Rounding-Location Alignme… · 2026-10-23"
     },
     {
-      "t": "2026-10-25T14:57:02.238Z",
+      "t": "2026-10-26T17:23:17.150Z",
       "level": "info",
       "msg": "--- dev feed: 14 items ---"
     },
     {
-      "t": "2026-10-25T14:57:02.238Z",
+      "t": "2026-10-26T17:23:17.150Z",
       "level": "info",
-      "msg": "ingest Hacker News · Tool book of a Nuremberg knight from 1505 · 2026-10-25"
+      "msg": "ingest Hacker News · Sebastian Raschka's from-scratch video course on building… · 2026-10-26"
     },
     {
-      "t": "2026-10-25T14:57:02.238Z",
+      "t": "2026-10-26T17:23:17.150Z",
       "level": "info",
-      "msg": "ingest Hacker News · Show HN: Farol – a risk map of a pull request for the per… · 2026-10-25"
+      "msg": "ingest Hacker News · CSS-Tricks has a new owner · 2026-10-26"
     },
     {
-      "t": "2026-10-25T14:57:02.238Z",
+      "t": "2026-10-26T17:23:17.150Z",
       "level": "info",
-      "msg": "ingest Hacker News · fheroes2: A recreation of Heroes of Might and Magic II ga… · 2026-10-25"
+      "msg": "ingest Hacker News · SIMD-accelerated computer vision on a $2 microcontroller · 2026-10-25"
     },
     {
-      "t": "2026-10-25T14:57:02.238Z",
+      "t": "2026-10-26T17:23:17.150Z",
       "level": "info",
-      "msg": "ingest Hacker News · We should be more ambitious with the software we build · 2026-10-24"
+      "msg": "ingest Hacker News · Pharo 14 · 2026-10-26"
     },
     {
-      "t": "2026-10-25T14:57:02.238Z",
+      "t": "2026-10-26T17:23:17.150Z",
       "level": "info",
-      "msg": "ingest Hacker News · How Japanese Dried Bonito Is Made · 2026-10-22"
+      "msg": "ingest Hacker News · One of the Greatest Inventions in the History of Human Tr… · 2026-10-22"
     },
     {
-      "t": "2026-10-25T14:57:02.238Z",
+      "t": "2026-10-26T17:23:17.150Z",
       "level": "info",
-      "msg": "ingest Hacker News · The Goose Programming Language · 2026-10-24"
+      "msg": "ingest Hacker News · Birdwatching rewires the brain and slows cognitive decline · 2026-10-23"
     },
     {
-      "t": "2026-10-25T14:57:02.238Z",
+      "t": "2026-10-26T17:23:17.150Z",
       "level": "info",
-      "msg": "ingest Hacker News · Samsung running a TensorFlow lite model on 960x540 image… · 2026-10-25"
+      "msg": "ingest Hacker News · Fixing Tool-Call Accuracy in vLLM · 2026-10-26"
     },
     {
-      "t": "2026-10-25T14:57:02.238Z",
+      "t": "2026-10-26T17:23:17.150Z",
       "level": "info",
-      "msg": "ingest Hacker News · Reverse engineer of PC-98 Touhou games retires · 2026-10-22"
+      "msg": "ingest Hacker News · Diamond Transistor · 2026-10-23"
     },
     {
-      "t": "2026-10-25T14:57:02.238Z",
+      "t": "2026-10-26T17:23:17.150Z",
       "level": "info",
-      "msg": "ingest Hacker News · The Lego group reveals collaboration with Daft Punk · 2026-10-25"
+      "msg": "ingest Hacker News · Switzerland. Block by block. At 1:1 scale · 2026-10-26"
     },
     {
-      "t": "2026-10-25T14:57:02.238Z",
+      "t": "2026-10-26T17:23:17.150Z",
       "level": "info",
-      "msg": "ingest Hacker News · US inequality is getting worse in ways you might not expe… · 2026-10-25"
+      "msg": "ingest Hacker News · PhysicsForums and the Dead Internet Theory (2025) · 2026-10-24"
     },
     {
-      "t": "2026-10-25T14:57:02.238Z",
+      "t": "2026-10-26T17:23:17.150Z",
       "level": "info",
-      "msg": "ingest Hacker News · SpeedCrunch 1.1 · 2026-10-24"
+      "msg": "ingest Hacker News · Colorfigures · 2026-10-23"
     },
     {
-      "t": "2026-10-25T14:57:02.238Z",
+      "t": "2026-10-26T17:23:17.150Z",
       "level": "info",
-      "msg": "ingest Hacker News · Small Programs and Languages · 2026-10-24"
+      "msg": "ingest Hacker News · Microsoft offers mass buyouts for roughly a quarter of it… · 2026-10-26"
     },
     {
-      "t": "2026-10-25T14:57:02.239Z",
+      "t": "2026-10-26T17:23:17.150Z",
       "level": "info",
-      "msg": "ingest Hacker News · Did it just build.. a clock? · 2026-10-22"
+      "msg": "ingest Hacker News · Partyline: A group voice application for Reticulum, built… · 2026-10-26"
     },
     {
-      "t": "2026-10-25T14:57:02.239Z",
+      "t": "2026-10-26T17:23:17.150Z",
       "level": "info",
-      "msg": "ingest Hacker News · Local Wikipedia: Wikipedia, but only for things a half ho… · 2026-10-22"
+      "msg": "ingest Hacker News · Websites Should Be Printable · 2026-10-26"
     },
     {
-      "t": "2026-10-25T14:57:02.239Z",
+      "t": "2026-10-26T17:23:17.150Z",
       "level": "info",
-      "msg": "publishing 42 items across 3 feeds · 906ms"
+      "msg": "publishing 42 items across 3 feeds · 1039ms"
     }
   ],
   "feeds": {
@@ -483,392 +483,391 @@
     ],
     "ai": [
       {
-        "id": "hn-50231722",
-        "title": "R/open source bans all solo projects and projects using LLMs",
-        "url": "https://www.reddit.com/r/opensource/comments/1xelcuf/your_tokens_arent_valuable_no_more_ai",
+        "id": "hn-50242939",
+        "title": "Anthropic S-1",
+        "url": "https://www.sec.gov/Archives/edgar/data/2130357/000162828026067168/anthropicpbc-sx1.htm",
+        "source": "Hacker News",
+        "date": "2026-10-26",
+        "summary": "",
+        "meta": [
+          "994 points",
+          "897 comments"
+        ],
+        "discussion": "https://news.ycombinator.com/item?id=50242939",
+        "flag": null
+      },
+      {
+        "id": "hn-50246658",
+        "title": "Concerning behavior from a popular open-weight AI model",
+        "url": "https://cohere.com/blog/concerning-behaviour-popular-open-weight-ai-model",
+        "source": "Hacker News",
+        "date": "2026-10-26",
+        "summary": "",
+        "meta": [
+          "13 points",
+          "0 comments"
+        ],
+        "discussion": "https://news.ycombinator.com/item?id=50246658",
+        "flag": null
+      },
+      {
+        "id": "hn-50242843",
+        "title": "Brown student maps the hidden global labor powering AI",
+        "url": "https://www.brown.edu/news/2026-10-26/ai-data-workers",
+        "source": "Hacker News",
+        "date": "2026-10-26",
+        "summary": "",
+        "meta": [
+          "110 points",
+          "89 comments"
+        ],
+        "discussion": "https://news.ycombinator.com/item?id=50242843",
+        "flag": null
+      },
+      {
+        "id": "hn-50242884",
+        "title": "R/opensource bans AI-made and AI-focused projects and non-English speakers",
+        "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/reddits-r-opensource-bans-ai-made-and-ai-focused-projects-also-bans-non-english-speakers-sweeping-new-rules-spark-backlash-over-linux-kernel-contributions-and-solo-developers",
+        "source": "Hacker News",
+        "date": "2026-10-26",
+        "summary": "",
+        "meta": [
+          "16 points",
+          "22 comments"
+        ],
+        "discussion": "https://news.ycombinator.com/item?id=50242884",
+        "flag": null
+      },
+      {
+        "id": "hn-50233779",
+        "title": "A 10-year-old CNN outperforms frontier LLMs for skin cancer diagnosis",
+        "url": "https://lynchlab.net/llm-skin-cancer",
         "source": "Hacker News",
         "date": "2026-10-25",
         "summary": "",
         "meta": [
-          "33 points",
-          "11 comments"
+          "641 points",
+          "265 comments"
         ],
-        "discussion": "https://news.ycombinator.com/item?id=50231722",
+        "discussion": "https://news.ycombinator.com/item?id=50233779",
         "flag": null
       },
       {
-        "id": "hn-50227356",
-        "title": "Cerebras Deploys Trillion-Parameter AI Models",
-        "url": "https://www.cerebras.ai/blog/how-we-deploy-trillion-parameter-frontier-models-on-cerebras",
+        "id": "hn-50236102",
+        "title": "OpenAI and Anthropic cut their LLM prices by up to 80% within a few months. Why?",
+        "url": "https://minimaxir.com/2026/10/cheap-llms/",
         "source": "Hacker News",
         "date": "2026-10-25",
         "summary": "",
         "meta": [
-          "252 points",
-          "84 comments"
+          "395 points",
+          "405 comments"
         ],
-        "discussion": "https://news.ycombinator.com/item?id=50227356",
+        "discussion": "https://news.ycombinator.com/item?id=50236102",
         "flag": null
       },
       {
-        "id": "hn-50229827",
-        "title": "Nikon photography contest winner loses title after scientists spot signs of AI",
-        "url": "https://www.techspot.com/news/114171-nikon-photography-contest-winner-loses-title-after-scientists.html",
+        "id": "hn-50234699",
+        "title": "AI didn't cause the tech jobs bust, but it explains why there's no recovery",
+        "url": "https://vithushansylvester.com/writing/the-real-impact-of-ai-on-tech-jobs",
         "source": "Hacker News",
         "date": "2026-10-25",
         "summary": "",
         "meta": [
-          "65 points",
-          "13 comments"
+          "76 points",
+          "36 comments"
         ],
-        "discussion": "https://news.ycombinator.com/item?id=50229827",
+        "discussion": "https://news.ycombinator.com/item?id=50234699",
         "flag": null
       },
       {
-        "id": "hn-50230995",
-        "title": "Imagine an AI future where being banned means you are now economically useless",
-        "url": "https://twitter.com/boneGPT/status/2114035719853265264",
+        "id": "hn-50227041",
+        "title": "Show HN: ADRs for AI – Deliberation records for human–AI work, versioned in Git",
+        "url": "https://adrs.systems",
         "source": "Hacker News",
         "date": "2026-10-25",
         "summary": "",
         "meta": [
-          "11 points",
-          "2 comments"
+          "62 points",
+          "40 comments"
         ],
-        "discussion": "https://news.ycombinator.com/item?id=50230995",
+        "discussion": "https://news.ycombinator.com/item?id=50227041",
         "flag": null
       },
       {
-        "id": "hn-50226419",
-        "title": "America has lost 200k of jobs in media, film and the arts. How much is AI?",
-        "url": "https://www.apricitas.io/p/ai-and-the-fall-of-the-creative-class",
-        "source": "Hacker News",
-        "date": "2026-10-24",
-        "summary": "",
-        "meta": [
-          "421 points",
-          "452 comments"
-        ],
-        "discussion": "https://news.ycombinator.com/item?id=50226419",
-        "flag": null
-      },
-      {
-        "id": "hn-50222525",
-        "title": "Neural chip decodes interactions between brain regions",
-        "url": "https://actu.epfl.ch/news/neural-chip-decodes-interactions-between-brain-r-2/",
-        "source": "Hacker News",
-        "date": "2026-10-24",
-        "summary": "",
-        "meta": [
-          "122 points",
-          "45 comments"
-        ],
-        "discussion": "https://news.ycombinator.com/item?id=50222525",
-        "flag": null
-      },
-      {
-        "id": "hn-50223647",
-        "title": "Why is AI generated language so hard to understand?",
-        "url": "https://arxiv.org/abs/2610.29162",
-        "source": "Hacker News",
-        "date": "2026-10-24",
-        "summary": "",
-        "meta": [
-          "216 points",
-          "177 comments"
-        ],
-        "discussion": "https://news.ycombinator.com/item?id=50223647",
-        "flag": null
-      },
-      {
-        "id": "hn-50222283",
-        "title": "Oai-math-revised: a community hub for revising OpenAI's math write-ups",
-        "url": "https://terrytao.wordpress.com/2026/10/24/oai-math-revised-a-community-hub-for-revising-openais-math-write-ups/",
-        "source": "Hacker News",
-        "date": "2026-10-24",
-        "summary": "",
-        "meta": [
-          "48 points",
-          "38 comments"
-        ],
-        "discussion": "https://news.ycombinator.com/item?id=50222283",
-        "flag": null
-      },
-      {
-        "id": "hn-50225443",
-        "title": "Making My Blog Readable by AI Agents",
-        "url": "https://deallocatedobjects.com/posts/making-my-blog-readable-by-ai-agents",
-        "source": "Hacker News",
-        "date": "2026-10-24",
-        "summary": "",
-        "meta": [
-          "24 points",
-          "3 comments"
-        ],
-        "discussion": "https://news.ycombinator.com/item?id=50225443",
-        "flag": null
-      },
-      {
-        "id": "http://arxiv.org/abs/2610.31670v1",
-        "title": "Sensorimotor Alignment: A Platonic Proxy for Embodied Policy Success",
-        "url": "http://arxiv.org/abs/2610.31670v1",
+        "id": "http://arxiv.org/abs/2610.32978v1",
+        "title": "SceneBloom: Agentic Indoor Environment Generation with Realistic and Diverse Layouts for Embodied Learning",
+        "url": "http://arxiv.org/abs/2610.32978v1",
         "source": "arXiv",
-        "date": "2026-10-22",
-        "summary": "Robotic foundation models are typically evaluated through costly closed-loop rollouts, which motivates cheap offline proxies for model capability. The Platonic Representation Hypothesis (PRH) suggests that as representations improve, different modalities such as vision and language converge toward a shared statistical…",
+        "date": "2026-10-23",
+        "summary": "Training generalizable embodied agents requires realistic, varied, and simulation-ready indoor environments. Language-guided methods support semantic planning and object-level reasoning, but precise spatial grounding remains difficult. Visual generative models offer rich priors over plausible arrangements, yet their o…",
         "meta": [
           "Research",
-          "Yunfei Xie +4"
+          "Yuhan Liu +2"
         ],
         "flag": null
       },
       {
-        "id": "http://arxiv.org/abs/2610.31667v1",
-        "title": "Direct Pass@$k$ Optimization for Thought Pruning: Balancing Quality and Diversity in Test-Time Reasoning",
-        "url": "http://arxiv.org/abs/2610.31667v1",
+        "id": "http://arxiv.org/abs/2610.32971v1",
+        "title": "RobustRLlib: A Unified Library and Benchmark for Robust Reinforcement Learning Algorithms",
+        "url": "http://arxiv.org/abs/2610.32971v1",
         "source": "arXiv",
-        "date": "2026-10-22",
-        "summary": "Test-time scaling has emerged as a key inference strategy for reasoning models, where a model generates a large number of candidate solutions in the hope of finding at least one correct solution. Running all candidate solutions to completion can be computationally demanding, so recent work prunes the candidate pool af…",
+        "date": "2026-10-23",
+        "summary": "Robust reinforcement learning (RL) is critical for reliable real-world deployment, where policies may fail under diverse shifts and disruptions. Existing robust RL algorithms offer a rich set of mechanisms and principles, yet two major barriers limit their broader potential: limited algorithm reusability and an unclea…",
         "meta": [
           "Research",
-          "Mahdi Salmani +3"
+          "Xi Chen +7"
         ],
         "flag": null
       },
       {
-        "id": "http://arxiv.org/abs/2610.31663v1",
-        "title": "Phase Transition from Random Features to Fully Trainable Networks",
-        "url": "http://arxiv.org/abs/2610.31663v1",
+        "id": "http://arxiv.org/abs/2610.32969v1",
+        "title": "DexPort: A Hand-Held Skill Interface for Dexterous Hand Data Collection",
+        "url": "http://arxiv.org/abs/2610.32969v1",
         "source": "arXiv",
-        "date": "2026-10-22",
-        "summary": "Constructing accurate and computationally tractable approximation spaces is a fundamental task in scientific computing. Partially trainable neural networks bridge fixed random features and fully adaptive representations. This paper quantifies a phase transition pattern in approximation bounds and observes analogous be…",
+        "date": "2026-10-23",
+        "summary": "Collecting high-quality demonstrations remains a central bottleneck for learning dexterous manipulation. Teleoperation records executable robot actions, but it requires a complete robot setup and places the burden of coordinating many finger joints on the operator. Human demonstrations are easier to collect, but their…",
         "meta": [
           "Research",
-          "Xin He +3"
+          "Amber Xie +5"
         ],
         "flag": null
       },
       {
-        "id": "http://arxiv.org/abs/2610.31662v1",
-        "title": "Reliable AI-Assisted Decisions via Selective Auditing",
-        "url": "http://arxiv.org/abs/2610.31662v1",
+        "id": "http://arxiv.org/abs/2610.32964v1",
+        "title": "Flownomaly: Single-Step Conditional-Mean Recovery for Few-Shot Anomaly Detection",
+        "url": "http://arxiv.org/abs/2610.32964v1",
         "source": "arXiv",
-        "date": "2026-10-22",
-        "summary": "We consider online monitoring of an AI system that produces a sequence of decisions. At each round, the system outputs a proposed decision together with a confidence score estimating the trustworthiness of the decision. The decision and confidence score need not be produced by the same model: for example, one agent ma…",
+        "date": "2026-10-23",
+        "summary": "Few-shot industrial anomaly detection requires modeling category-specific normality from only a handful of defect-free images. Common approaches tie inference to stored exemplars, impose rigid linear structure, or risk reproducing anomalous content. Flownomaly instead casts the problem as normal-counterpart recovery i…",
         "meta": [
           "Research",
-          "Isaac Gibbs +3"
+          "Bernardo Perrone Ribeiro +2"
         ],
         "flag": null
       },
       {
-        "id": "http://arxiv.org/abs/2610.31659v1",
-        "title": "SpectralCanary: Embarrassingly Simple Low-Frequency Traces for T2I Dataset-Use Auditing",
-        "url": "http://arxiv.org/abs/2610.31659v1",
+        "id": "http://arxiv.org/abs/2610.32955v1",
+        "title": "Measure Before You Train: Typed Decision Models vs. a Classical Baseline vs. a Generative LLM for Routing a Personal Multilingual Inbox",
+        "url": "http://arxiv.org/abs/2610.32955v1",
         "source": "arXiv",
-        "date": "2026-10-22",
-        "summary": "Auditing whether a text-to-image (T2I) model was fine-tuned on a particular image collection is difficult: a model can absorb collection-level visual characteristics without reproducing training images. Proactive dataset-use auditing plants a shared signal in a dataset before release, then later checks whether that si…",
+        "date": "2026-10-23",
+        "summary": "Personal email agents decide, for every message, what it is, whether it is urgent, whether to draft a reply, create a task, or ignore it. Their error rate is rarely measured: the stored labels were written by the system itself. We present Foyer, a self-hosted personal inbox agent in daily use, and a measurement protoc…",
         "meta": [
           "Research",
-          "Sy-Tuyen Ho +6"
+          "Federico Lucca"
+        ],
+        "flag": null
+      },
+      {
+        "id": "http://arxiv.org/abs/2610.32951v1",
+        "title": "Where Rounding Happens Matters: Rounding-Location Alignment Stabilizes LLM Reinforcement Learning",
+        "url": "http://arxiv.org/abs/2610.32951v1",
+        "source": "arXiv",
+        "date": "2026-10-23",
+        "summary": "Reinforcement learning for large language models often uses separate systems for inference and training. Even with identical weights and BF16 tensors, implementation differences can make an intended on-policy update off-policy and destabilize training. Existing remedies align the entire inference and training stacks,…",
+        "meta": [
+          "Research",
+          "Yijing Ke +2"
         ],
         "flag": null
       }
     ],
     "dev": [
       {
-        "id": "hn-50230917",
-        "title": "Tool book of a Nuremberg knight from 1505",
-        "url": "https://loeffelholz-codex.org/en/",
+        "id": "hn-50245138",
+        "title": "Sebastian Raschka's from-scratch video course on building reasoning models",
+        "url": "https://magazine.sebastianraschka.com/p/building-reasoning-models",
         "source": "Hacker News",
-        "date": "2026-10-25",
+        "date": "2026-10-26",
         "summary": "",
         "meta": [
-          "71 points",
-          "26 comments"
-        ],
-        "discussion": "https://news.ycombinator.com/item?id=50230917",
-        "flag": null
-      },
-      {
-        "id": "hn-50231349",
-        "title": "Show HN: Farol – a risk map of a pull request for the person who approves it",
-        "url": "https://github.com/winnin/farol",
-        "source": "Hacker News",
-        "date": "2026-10-25",
-        "summary": "",
-        "meta": [
-          "23 points",
-          "13 comments"
-        ],
-        "discussion": "https://news.ycombinator.com/item?id=50231349",
-        "flag": null
-      },
-      {
-        "id": "hn-50230384",
-        "title": "fheroes2: A recreation of Heroes of Might and Magic II game engine",
-        "url": "https://github.com/ihhub/fheroes2",
-        "source": "Hacker News",
-        "date": "2026-10-25",
-        "summary": "",
-        "meta": [
-          "94 points",
-          "29 comments"
-        ],
-        "discussion": "https://news.ycombinator.com/item?id=50230384",
-        "flag": null
-      },
-      {
-        "id": "hn-50225695",
-        "title": "We should be more ambitious with the software we build",
-        "url": "https://danluu.com/ambitious/",
-        "source": "Hacker News",
-        "date": "2026-10-24",
-        "summary": "",
-        "meta": [
-          "556 points",
-          "509 comments"
-        ],
-        "discussion": "https://news.ycombinator.com/item?id=50225695",
-        "flag": null
-      },
-      {
-        "id": "hn-50193936",
-        "title": "How Japanese Dried Bonito Is Made",
-        "url": "https://kottke.org/26/10/how-japanese-dried-bonito-is-made",
-        "source": "Hacker News",
-        "date": "2026-10-22",
-        "summary": "",
-        "meta": [
-          "112 points",
-          "31 comments"
-        ],
-        "discussion": "https://news.ycombinator.com/item?id=50193936",
-        "flag": null
-      },
-      {
-        "id": "hn-50224100",
-        "title": "The Goose Programming Language",
-        "url": "https://aardappel.github.io/goose/",
-        "source": "Hacker News",
-        "date": "2026-10-24",
-        "summary": "",
-        "meta": [
-          "485 points",
-          "296 comments"
-        ],
-        "discussion": "https://news.ycombinator.com/item?id=50224100",
-        "flag": null
-      },
-      {
-        "id": "hn-50230181",
-        "title": "Samsung running a TensorFlow lite model on 960x540 image to track you",
-        "url": "https://twitter.com/mike64_t/status/2114150399406202896",
-        "source": "Hacker News",
-        "date": "2026-10-25",
-        "summary": "",
-        "meta": [
-          "177 points",
-          "116 comments"
-        ],
-        "discussion": "https://news.ycombinator.com/item?id=50230181",
-        "flag": null
-      },
-      {
-        "id": "hn-50197434",
-        "title": "Reverse engineer of PC-98 Touhou games retires",
-        "url": "https://rec98.nmlgc.net/blog/2026-10-05",
-        "source": "Hacker News",
-        "date": "2026-10-22",
-        "summary": "",
-        "meta": [
-          "34 points",
-          "27 comments"
-        ],
-        "discussion": "https://news.ycombinator.com/item?id=50197434",
-        "flag": null
-      },
-      {
-        "id": "hn-50231001",
-        "title": "The Lego group reveals collaboration with Daft Punk",
-        "url": "https://www.lego.com/en-us/categories/adults-welcome/article/daft-punk",
-        "source": "Hacker News",
-        "date": "2026-10-25",
-        "summary": "",
-        "meta": [
-          "34 points",
-          "27 comments"
-        ],
-        "discussion": "https://news.ycombinator.com/item?id=50231001",
-        "flag": null
-      },
-      {
-        "id": "hn-50231310",
-        "title": "US inequality is getting worse in ways you might not expect",
-        "url": "https://theconversation.com/us-inequality-is-getting-worse-in-ways-you-might-not-expect-294075",
-        "source": "Hacker News",
-        "date": "2026-10-25",
-        "summary": "",
-        "meta": [
-          "17 points",
-          "16 comments"
-        ],
-        "discussion": "https://news.ycombinator.com/item?id=50231310",
-        "flag": null
-      },
-      {
-        "id": "hn-50224210",
-        "title": "SpeedCrunch 1.1",
-        "url": "https://www.speedcrunch.org/",
-        "source": "Hacker News",
-        "date": "2026-10-24",
-        "summary": "",
-        "meta": [
-          "184 points",
-          "36 comments"
-        ],
-        "discussion": "https://news.ycombinator.com/item?id=50224210",
-        "flag": null
-      },
-      {
-        "id": "hn-50225674",
-        "title": "Small Programs and Languages",
-        "url": "https://ratfactor.com/cards/pl-small",
-        "source": "Hacker News",
-        "date": "2026-10-24",
-        "summary": "",
-        "meta": [
-          "145 points",
+          "215 points",
           "20 comments"
         ],
-        "discussion": "https://news.ycombinator.com/item?id=50225674",
+        "discussion": "https://news.ycombinator.com/item?id=50245138",
         "flag": null
       },
       {
-        "id": "hn-50194029",
-        "title": "Did it just build.. a clock?",
-        "url": "https://theclock.online/",
+        "id": "hn-50245831",
+        "title": "CSS-Tricks has a new owner",
+        "url": "https://css-tricks.com/css-tricks-has-a-new-owner/",
         "source": "Hacker News",
-        "date": "2026-10-22",
+        "date": "2026-10-26",
         "summary": "",
         "meta": [
-          "12 points",
+          "103 points",
+          "20 comments"
+        ],
+        "discussion": "https://news.ycombinator.com/item?id=50245831",
+        "flag": null
+      },
+      {
+        "id": "hn-50236681",
+        "title": "SIMD-accelerated computer vision on a $2 microcontroller",
+        "url": "https://shraiwi.com/blog/simd-fast-esp32s3/",
+        "source": "Hacker News",
+        "date": "2026-10-25",
+        "summary": "",
+        "meta": [
+          "61 points",
           "14 comments"
         ],
-        "discussion": "https://news.ycombinator.com/item?id=50194029",
+        "discussion": "https://news.ycombinator.com/item?id=50236681",
         "flag": null
       },
       {
-        "id": "hn-50202285",
-        "title": "Local Wikipedia: Wikipedia, but only for things a half hour walk from you",
-        "url": "https://edjefferson.com/localwiki/",
+        "id": "hn-50241925",
+        "title": "Pharo 14",
+        "url": "https://pharo.org/news/2026-10-26-Pharo14Release.html",
+        "source": "Hacker News",
+        "date": "2026-10-26",
+        "summary": "",
+        "meta": [
+          "143 points",
+          "33 comments"
+        ],
+        "discussion": "https://news.ycombinator.com/item?id=50241925",
+        "flag": null
+      },
+      {
+        "id": "hn-50200152",
+        "title": "One of the Greatest Inventions in the History of Human Transport",
+        "url": "https://humantransit.org/2024/12/one-of-the-greatest-inventions-in-the-history-of-human-transport.html",
         "source": "Hacker News",
         "date": "2026-10-22",
         "summary": "",
         "meta": [
-          "1626 points",
-          "251 comments"
+          "179 points",
+          "76 comments"
         ],
-        "discussion": "https://news.ycombinator.com/item?id=50202285",
+        "discussion": "https://news.ycombinator.com/item?id=50200152",
+        "flag": null
+      },
+      {
+        "id": "hn-50215997",
+        "title": "Birdwatching rewires the brain and slows cognitive decline",
+        "url": "https://www.bbc.com/future/article/20261019-birdwatching-rewires-the-brain-and-slows-cognitive-decline",
+        "source": "Hacker News",
+        "date": "2026-10-23",
+        "summary": "",
+        "meta": [
+          "375 points",
+          "152 comments"
+        ],
+        "discussion": "https://news.ycombinator.com/item?id=50215997",
+        "flag": null
+      },
+      {
+        "id": "hn-50242870",
+        "title": "Fixing Tool-Call Accuracy in vLLM",
+        "url": "https://www.ubicloud.com/blog/fixing-tool-call-accuracy-in-vllm",
+        "source": "Hacker News",
+        "date": "2026-10-26",
+        "summary": "",
+        "meta": [
+          "108 points",
+          "60 comments"
+        ],
+        "discussion": "https://news.ycombinator.com/item?id=50242870",
+        "flag": null
+      },
+      {
+        "id": "hn-50209525",
+        "title": "Diamond Transistor",
+        "url": "https://www.df.com/diamond-transistor",
+        "source": "Hacker News",
+        "date": "2026-10-23",
+        "summary": "",
+        "meta": [
+          "19 points",
+          "14 comments"
+        ],
+        "discussion": "https://news.ycombinator.com/item?id=50209525",
+        "flag": null
+      },
+      {
+        "id": "hn-50240922",
+        "title": "Switzerland. Block by block. At 1:1 scale",
+        "url": "https://blocks.manifold3d.ch/",
+        "source": "Hacker News",
+        "date": "2026-10-26",
+        "summary": "",
+        "meta": [
+          "390 points",
+          "181 comments"
+        ],
+        "discussion": "https://news.ycombinator.com/item?id=50240922",
+        "flag": null
+      },
+      {
+        "id": "hn-50220331",
+        "title": "PhysicsForums and the Dead Internet Theory (2025)",
+        "url": "https://hallofdreams.org/posts/physicsforums/",
+        "source": "Hacker News",
+        "date": "2026-10-24",
+        "summary": "",
+        "meta": [
+          "64 points",
+          "37 comments"
+        ],
+        "discussion": "https://news.ycombinator.com/item?id=50220331",
+        "flag": null
+      },
+      {
+        "id": "hn-50209573",
+        "title": "Colorfigures",
+        "url": "https://april-zhu.com/colorfigures",
+        "source": "Hacker News",
+        "date": "2026-10-23",
+        "summary": "",
+        "meta": [
+          "85 points",
+          "12 comments"
+        ],
+        "discussion": "https://news.ycombinator.com/item?id=50209573",
+        "flag": null
+      },
+      {
+        "id": "hn-50245524",
+        "title": "Microsoft offers mass buyouts for roughly a quarter of its workforce",
+        "url": "https://www.seattletimes.com/business/microsoft/microsoft-offers-mass-buyouts-for-roughly-a-quarter-of-its-workforce/",
+        "source": "Hacker News",
+        "date": "2026-10-26",
+        "summary": "",
+        "meta": [
+          "255 points",
+          "207 comments"
+        ],
+        "discussion": "https://news.ycombinator.com/item?id=50245524",
+        "flag": null
+      },
+      {
+        "id": "hn-50244583",
+        "title": "Partyline: A group voice application for Reticulum, built on LXST",
+        "url": "https://github.com/RFnexus/partyline",
+        "source": "Hacker News",
+        "date": "2026-10-26",
+        "summary": "",
+        "meta": [
+          "26 points",
+          "6 comments"
+        ],
+        "discussion": "https://news.ycombinator.com/item?id=50244583",
+        "flag": null
+      },
+      {
+        "id": "hn-50241664",
+        "title": "Websites Should Be Printable",
+        "url": "https://brennenputh.me/blog/printable-websites/",
+        "source": "Hacker News",
+        "date": "2026-10-26",
+        "summary": "",
+        "meta": [
+          "193 points",
+          "137 comments"
+        ],
+        "discussion": "https://news.ycombinator.com/item?id=50241664",
         "flag": null
       }
     ]
