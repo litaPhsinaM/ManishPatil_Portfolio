@@ -1,289 +1,303 @@
 {
-  "generatedAt": "2026-10-29T17:26:00.684Z",
+  "generatedAt": "2026-10-30T17:01:23.487Z",
   "log": [
     {
-      "t": "2026-10-29T17:25:59.377Z",
+      "t": "2026-10-30T17:01:21.317Z",
       "level": "info",
       "msg": "signal refresh started"
     },
     {
-      "t": "2026-10-29T17:25:59.382Z",
+      "t": "2026-10-30T17:01:21.322Z",
       "level": "info",
       "msg": "GET hacker-news.firebaseio.com/v0/topstories.json"
     },
     {
-      "t": "2026-10-29T17:25:59.642Z",
+      "t": "2026-10-30T17:01:21.608Z",
       "level": "info",
       "msg": "HTTP 200 · resolving top 60 story ids in batches of 10"
     },
     {
-      "t": "2026-10-29T17:26:00.177Z",
+      "t": "2026-10-30T17:01:23.096Z",
       "level": "info",
-      "msg": "59 of 60 resolved to usable stories · 795ms"
+      "msg": "59 of 60 resolved to usable stories · 1774ms"
     },
     {
-      "t": "2026-10-29T17:26:00.177Z",
+      "t": "2026-10-30T17:01:23.097Z",
       "level": "info",
       "msg": "GET cisa.gov/feeds/known_exploited_vulnerabilities.json"
     },
     {
-      "t": "2026-10-29T17:26:00.315Z",
+      "t": "2026-10-30T17:01:23.310Z",
       "level": "info",
-      "msg": "HTTP 200 · catalog holds 1762 CVEs · 138ms"
+      "msg": "HTTP 200 · catalog holds 1764 CVEs · 213ms"
     },
     {
-      "t": "2026-10-29T17:26:00.320Z",
+      "t": "2026-10-30T17:01:23.314Z",
       "level": "info",
-      "msg": "fleet filter: 1035 of 1762 touch managed platforms"
+      "msg": "fleet filter: 1036 of 1764 touch managed platforms"
     },
     {
-      "t": "2026-10-29T17:26:00.331Z",
+      "t": "2026-10-30T17:01:23.321Z",
       "level": "info",
       "msg": "GET export.arxiv.org/api/query cat:cs.AI OR cat:cs.LG"
     },
     {
-      "t": "2026-10-29T17:26:00.682Z",
+      "t": "2026-10-30T17:01:23.484Z",
       "level": "info",
-      "msg": "HTTP 200 · 31,634 bytes of Atom XML · 351ms"
+      "msg": "HTTP 200 · 29,411 bytes of Atom XML · 163ms"
     },
     {
-      "t": "2026-10-29T17:26:00.683Z",
+      "t": "2026-10-30T17:01:23.485Z",
       "level": "info",
       "msg": "topic split: 8 AI stories, 51 general dev"
     },
     {
-      "t": "2026-10-29T17:26:00.684Z",
+      "t": "2026-10-30T17:01:23.485Z",
       "level": "info",
       "msg": "--- security feed: 14 items ---"
     },
     {
-      "t": "2026-10-29T17:26:00.684Z",
+      "t": "2026-10-30T17:01:23.485Z",
+      "level": "info",
+      "msg": "ingest CISA KEV · Cisco Secure Firewall ASA Software and Cisco Secure FTD S… · 2026-10-29"
+    },
+    {
+      "t": "2026-10-30T17:01:23.486Z",
       "level": "info",
       "msg": "ingest CISA KEV · Broadcom VMWare ESX Insufficient Logging Vulnerability · 2026-10-28"
     },
     {
-      "t": "2026-10-29T17:26:00.684Z",
+      "t": "2026-10-30T17:01:23.486Z",
       "level": "info",
       "msg": "ingest CISA KEV · Linux Kernel Missing Initialization of a Variable Vulnera… · 2026-10-28"
     },
     {
-      "t": "2026-10-29T17:26:00.684Z",
+      "t": "2026-10-30T17:01:23.486Z",
       "level": "info",
       "msg": "ingest CISA KEV · Google Brotli Unchecked Return Value Vulnerability · 2026-10-27"
     },
     {
-      "t": "2026-10-29T17:26:00.684Z",
+      "t": "2026-10-30T17:01:23.486Z",
       "level": "info",
       "msg": "ingest CISA KEV · PHP Memory Corruption Vulnerability · 2026-10-26"
     },
     {
-      "t": "2026-10-29T17:26:00.684Z",
+      "t": "2026-10-30T17:01:23.486Z",
       "level": "info",
       "msg": "ingest CISA KEV · PHP Stale Internal Request-State Vulnerability · 2026-10-26"
     },
     {
-      "t": "2026-10-29T17:26:00.684Z",
+      "t": "2026-10-30T17:01:23.486Z",
       "level": "info",
       "msg": "ingest CISA KEV · Fortinet Multiple Products Path Traversal Vulnerability · 2026-10-16"
     },
     {
-      "t": "2026-10-29T17:26:00.684Z",
+      "t": "2026-10-30T17:01:23.486Z",
       "level": "info",
       "msg": "ingest CISA KEV · Cisco Secure Email Gateway Relative Path Traversal Vulner… · 2026-10-14"
     },
     {
-      "t": "2026-10-29T17:26:00.684Z",
+      "t": "2026-10-30T17:01:23.486Z",
       "level": "info",
       "msg": "ingest CISA KEV · Palo Alto Networks PAN-OS Code Injection Vulnerability · 2026-10-14"
     },
     {
-      "t": "2026-10-29T17:26:00.684Z",
+      "t": "2026-10-30T17:01:23.486Z",
       "level": "info",
       "msg": "ingest CISA KEV · Ivanti Connect Secure Authentication Bypass by Spoofing V… · 2026-10-13"
     },
     {
-      "t": "2026-10-29T17:26:00.684Z",
+      "t": "2026-10-30T17:01:23.486Z",
       "level": "info",
       "msg": "ingest CISA KEV · Microsoft Windows Command Injection Vulnerability · 2026-10-13"
     },
     {
-      "t": "2026-10-29T17:26:00.684Z",
+      "t": "2026-10-30T17:01:23.486Z",
       "level": "info",
       "msg": "ingest CISA KEV · Apache Struts Command Injection Vulnerability · 2026-10-08"
     },
     {
-      "t": "2026-10-29T17:26:00.684Z",
+      "t": "2026-10-30T17:01:23.486Z",
       "level": "info",
       "msg": "ingest CISA KEV · Citrix NetScaler Improper Restriction of Operations withi… · 2026-10-04"
     },
     {
-      "t": "2026-10-29T17:26:00.684Z",
+      "t": "2026-10-30T17:01:23.486Z",
       "level": "info",
       "msg": "ingest CISA KEV · Fortinet FortiMail Path Traversal Vulnerability · 2026-10-01"
     },
     {
-      "t": "2026-10-29T17:26:00.684Z",
-      "level": "info",
-      "msg": "ingest CISA KEV · Cisco Catalyst SD-WAN Manager Hex Encoding Vulnerability · 2026-09-30"
-    },
-    {
-      "t": "2026-10-29T17:26:00.684Z",
+      "t": "2026-10-30T17:01:23.486Z",
       "level": "info",
       "msg": "--- ai feed: 14 items ---"
     },
     {
-      "t": "2026-10-29T17:26:00.684Z",
+      "t": "2026-10-30T17:01:23.486Z",
       "level": "info",
-      "msg": "ingest Hacker News · Zombie stats: Where the numbers AI quotes come from · 2026-10-29"
+      "msg": "ingest Hacker News · AI Isn't Replacing SREs. It's Deskilling Them · 2026-10-30"
     },
     {
-      "t": "2026-10-29T17:26:00.684Z",
+      "t": "2026-10-30T17:01:23.486Z",
       "level": "info",
-      "msg": "ingest Hacker News · LLM Voice · 2026-10-29"
+      "msg": "ingest Hacker News · Backdoor in Claude Code for VS Code extension on the Curs… · 2026-10-30"
     },
     {
-      "t": "2026-10-29T17:26:00.684Z",
+      "t": "2026-10-30T17:01:23.486Z",
       "level": "info",
-      "msg": "ingest Hacker News · Launch HN: Simantic (YC F26) – Firmware Simulation for AI… · 2026-10-29"
+      "msg": "ingest Hacker News · US tech stocks see sharp falls over AI cost fears · 2026-10-30"
     },
     {
-      "t": "2026-10-29T17:26:00.684Z",
+      "t": "2026-10-30T17:01:23.486Z",
       "level": "info",
-      "msg": "ingest Hacker News · Gemini 4 Carbon is the new #1 on the Artificial Analysis… · 2026-10-29"
+      "msg": "ingest Hacker News · Neal Stephenson on AI and What Comes Next [video] · 2026-10-30"
     },
     {
-      "t": "2026-10-29T17:26:00.684Z",
+      "t": "2026-10-30T17:01:23.486Z",
       "level": "info",
-      "msg": "ingest Hacker News · MIT professor says AI is taking over your brain · 2026-10-29"
+      "msg": "ingest arXiv · Propose-Filter-Release: Scaling Noise to Typical Sensitiv… · 2026-10-29"
     },
     {
-      "t": "2026-10-29T17:26:00.684Z",
+      "t": "2026-10-30T17:01:23.486Z",
       "level": "info",
-      "msg": "ingest Hacker News · Claude Code regularly sends each background agent’s trans… · 2026-10-29"
+      "msg": "ingest arXiv · Rethinking Neural Thickets Without Weight Perturbations · 2026-10-29"
     },
     {
-      "t": "2026-10-29T17:26:00.684Z",
+      "t": "2026-10-30T17:01:23.486Z",
       "level": "info",
-      "msg": "ingest Hacker News · I Used AI to Fake a Scientific Paper. Here's What Happened · 2026-10-29"
+      "msg": "ingest arXiv · Read, Allocate, Route: Role-Coupled Tokenization for Pixe… · 2026-10-29"
     },
     {
-      "t": "2026-10-29T17:26:00.684Z",
+      "t": "2026-10-30T17:01:23.486Z",
       "level": "info",
-      "msg": "ingest Hacker News · Gemini 4 Carbon · 2026-10-28"
+      "msg": "ingest arXiv · Adaptive Scenario Generation for KL-DRO Around a Learned… · 2026-10-29"
     },
     {
-      "t": "2026-10-29T17:26:00.684Z",
+      "t": "2026-10-30T17:01:23.486Z",
       "level": "info",
-      "msg": "ingest arXiv · Honeycomb-Surfels: Compact Hexagonal Primitives for Effic… · 2026-10-27"
+      "msg": "ingest arXiv · Luggage re-identification: A study of strategies towards… · 2026-10-29"
     },
     {
-      "t": "2026-10-29T17:26:00.684Z",
+      "t": "2026-10-30T17:01:23.486Z",
       "level": "info",
-      "msg": "ingest arXiv · ThinkWorld: World Imagination Reinforces Chain-of-Dynamic… · 2026-10-27"
+      "msg": "ingest arXiv · From extreme weather to agricultural consequences with ag… · 2026-10-29"
     },
     {
-      "t": "2026-10-29T17:26:00.684Z",
+      "t": "2026-10-30T17:01:23.486Z",
       "level": "info",
-      "msg": "ingest arXiv · When Should We Intervene at Test Time? · 2026-10-27"
+      "msg": "ingest arXiv · world2vec: Mechanistic world models through latent dynami… · 2026-10-29"
     },
     {
-      "t": "2026-10-29T17:26:00.684Z",
+      "t": "2026-10-30T17:01:23.486Z",
       "level": "info",
-      "msg": "ingest arXiv · Heads of Security: Learned Attention Gates Improve Prompt… · 2026-10-27"
+      "msg": "ingest arXiv · Probing Spatial State Representations in Visual Foundatio… · 2026-10-29"
     },
     {
-      "t": "2026-10-29T17:26:00.684Z",
+      "t": "2026-10-30T17:01:23.486Z",
       "level": "info",
-      "msg": "ingest arXiv · Attention as Lattice Gauge Theory: Relations Interact Onl… · 2026-10-27"
+      "msg": "ingest arXiv · An ODE-based Sampler for Discrete Diffusion Models · 2026-10-29"
     },
     {
-      "t": "2026-10-29T17:26:00.684Z",
+      "t": "2026-10-30T17:01:23.486Z",
       "level": "info",
-      "msg": "ingest arXiv · KPPax: preprocess differentiable kinetic ODE for machine… · 2026-10-27"
+      "msg": "ingest arXiv · Difficulty Calibration Across Time for Membership Inferen… · 2026-10-29"
     },
     {
-      "t": "2026-10-29T17:26:00.684Z",
+      "t": "2026-10-30T17:01:23.486Z",
       "level": "info",
       "msg": "--- dev feed: 14 items ---"
     },
     {
-      "t": "2026-10-29T17:26:00.684Z",
+      "t": "2026-10-30T17:01:23.486Z",
       "level": "info",
-      "msg": "ingest Hacker News · We're releasing the weights of Mistral Large 4 · 2026-10-29"
+      "msg": "ingest Hacker News · Northflank Breached · 2026-10-30"
     },
     {
-      "t": "2026-10-29T17:26:00.684Z",
+      "t": "2026-10-30T17:01:23.486Z",
       "level": "info",
-      "msg": "ingest Hacker News · For the first time ever, Google Search is less than 50% o… · 2026-10-29"
+      "msg": "ingest Hacker News · A Working Nintendo in ~1GB of Qwen Weights · 2026-10-30"
     },
     {
-      "t": "2026-10-29T17:26:00.684Z",
+      "t": "2026-10-30T17:01:23.486Z",
       "level": "info",
-      "msg": "ingest Hacker News · H.264 Is Magic (2016) · 2026-10-29"
+      "msg": "ingest Hacker News · US Reps Lead Democratic Resolution Opposing A.I. Bubble B… · 2026-10-30"
     },
     {
-      "t": "2026-10-29T17:26:00.684Z",
+      "t": "2026-10-30T17:01:23.486Z",
       "level": "info",
-      "msg": "ingest Hacker News · Grace Blackwell needs a new scheduler: 27% more usable GP… · 2026-10-29"
+      "msg": "ingest Hacker News · Azure's Weakest Link – Five Full Cross-Tenant Compromises · 2026-10-30"
     },
     {
-      "t": "2026-10-29T17:26:00.684Z",
+      "t": "2026-10-30T17:01:23.486Z",
       "level": "info",
-      "msg": "ingest Hacker News · Tomas Mikolov (creator of Word2Vec) receives the Medal of… · 2026-10-29"
+      "msg": "ingest Hacker News · Medicare Will Pay $50k for Your Heart Attack. It Should P… · 2026-10-30"
     },
     {
-      "t": "2026-10-29T17:26:00.684Z",
+      "t": "2026-10-30T17:01:23.486Z",
       "level": "info",
-      "msg": "ingest Hacker News · DoorDash to acquire Instacart · 2026-10-29"
+      "msg": "ingest Hacker News · The Federated Code Forge · 2026-10-30"
     },
     {
-      "t": "2026-10-29T17:26:00.684Z",
+      "t": "2026-10-30T17:01:23.486Z",
       "level": "info",
-      "msg": "ingest Hacker News · Mexico is a showroom for electric vehicles you can't buy… · 2026-10-29"
+      "msg": "ingest Hacker News · Blockchain intelligence firms link North Korea to $6.3B h… · 2026-10-30"
     },
     {
-      "t": "2026-10-29T17:26:00.684Z",
+      "t": "2026-10-30T17:01:23.486Z",
       "level": "info",
-      "msg": "ingest Hacker News · Chained PHP2Shell Exploit Roots 25 Servers, Including US… · 2026-10-29"
+      "msg": "ingest Hacker News · Binance-hacker-1029 – $5.6B stolen from Binance · 2026-10-29"
     },
     {
-      "t": "2026-10-29T17:26:00.684Z",
+      "t": "2026-10-30T17:01:23.486Z",
       "level": "info",
-      "msg": "ingest Hacker News · If IPv4 were land · 2026-10-29"
+      "msg": "ingest Hacker News · Polymarket 1h halt after vendor compromise; affected user… · 2026-10-30"
     },
     {
-      "t": "2026-10-29T17:26:00.684Z",
+      "t": "2026-10-30T17:01:23.486Z",
       "level": "info",
-      "msg": "ingest Hacker News · Toxic Experts · 2026-10-29"
+      "msg": "ingest Hacker News · The $6.3B Binance Hack Was Pulled Off in Just 20 Minutes · 2026-10-30"
     },
     {
-      "t": "2026-10-29T17:26:00.684Z",
+      "t": "2026-10-30T17:01:23.486Z",
       "level": "info",
-      "msg": "ingest Hacker News · noalloc: Tooling and libraries to enforce zero heap alloc… · 2026-10-28"
+      "msg": "ingest Hacker News · Finding Panics with Call Graph Analyzer · 2026-10-28"
     },
     {
-      "t": "2026-10-29T17:26:00.684Z",
+      "t": "2026-10-30T17:01:23.486Z",
       "level": "info",
-      "msg": "ingest Hacker News · How Google determines the names for bodies of water in Go… · 2026-10-29"
+      "msg": "ingest Hacker News · Pell Puzzles Review · 2026-10-28"
     },
     {
-      "t": "2026-10-29T17:26:00.684Z",
+      "t": "2026-10-30T17:01:23.487Z",
       "level": "info",
-      "msg": "ingest Hacker News · Keplearn: Extract Equations from Data in Seconds · 2026-10-29"
+      "msg": "ingest Hacker News · Show HN: I built a multiplayer game where you're an aeria… · 2026-10-30"
     },
     {
-      "t": "2026-10-29T17:26:00.684Z",
+      "t": "2026-10-30T17:01:23.487Z",
       "level": "info",
-      "msg": "ingest Hacker News · What we know so far about Spain train crash · 2026-10-29"
+      "msg": "ingest Hacker News · Gilgamesh by Simon Armitage review – an ancient epic is b… · 2026-10-27"
     },
     {
-      "t": "2026-10-29T17:26:00.684Z",
+      "t": "2026-10-30T17:01:23.487Z",
       "level": "info",
-      "msg": "publishing 42 items across 3 feeds · 1307ms"
+      "msg": "publishing 42 items across 3 feeds · 2170ms"
     }
   ],
   "feeds": {
     "security": [
+      {
+        "id": "CVE-2026-76418",
+        "title": "Cisco Secure Firewall ASA Software and Cisco Secure FTD Software Unchecked Return Value to NULL Pointer Dereference Vulnerability",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-76418",
+        "source": "CISA KEV",
+        "date": "2026-10-29",
+        "summary": "Cisco Secure Firewall ASA Software and Cisco Secure FTD Software contains an unchecked return value to NULL pointer dereference vulnerability that could allow an unauthenticated, remote attacker to cause the device to reload unexpectedly, resulting in a denial of service (DoS) condition.",
+        "meta": [
+          "Network edge / VPN",
+          "Cisco",
+          "Patch by 2026-11-01"
+        ],
+        "flag": null
+      },
       {
         "id": "CVE-2026-41709",
         "title": "Broadcom VMWare ESX Insufficient Logging Vulnerability",
@@ -465,409 +479,391 @@
           "Patch by 2026-10-04"
         ],
         "flag": null
-      },
-      {
-        "id": "CVE-2026-76504",
-        "title": "Cisco Catalyst SD-WAN Manager Hex Encoding Vulnerability",
-        "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-76504",
-        "source": "CISA KEV",
-        "date": "2026-09-30",
-        "summary": "Cisco Catalyst SD-WAN Manager contains a hex encoding vulnerability that could allow an unauthenticated, remote attacker to access an affected system with privileges of the admin user due to improper handling of URI encoding in an HTTP request.",
-        "meta": [
-          "Network edge / VPN",
-          "Cisco",
-          "Patch by 2026-10-03"
-        ],
-        "flag": null
       }
     ],
     "ai": [
       {
-        "id": "hn-50290283",
-        "title": "Zombie stats: Where the numbers AI quotes come from",
-        "url": "https://trakkr.ai/trakkr-research/zombie-stats",
+        "id": "hn-50305693",
+        "title": "AI Isn't Replacing SREs. It's Deskilling Them",
+        "url": "https://newsletter.signoz.io/p/ai-isnt-replacing-sres-its-deskilling",
         "source": "Hacker News",
-        "date": "2026-10-29",
+        "date": "2026-10-30",
         "summary": "",
         "meta": [
-          "79 points",
-          "37 comments"
+          "150 points",
+          "118 comments"
         ],
-        "discussion": "https://news.ycombinator.com/item?id=50290283",
+        "discussion": "https://news.ycombinator.com/item?id=50305693",
         "flag": null
       },
       {
-        "id": "hn-50290177",
-        "title": "LLM Voice",
-        "url": "https://martinfowler.com/bliki/LLM-Voice.html",
+        "id": "hn-50300683",
+        "title": "Backdoor in Claude Code for VS Code extension on the Cursor Marketplace",
+        "url": "https://phorion.io/blog/offical-claude-code-vsx-compromise/",
         "source": "Hacker News",
-        "date": "2026-10-29",
+        "date": "2026-10-30",
         "summary": "",
         "meta": [
-          "49 points",
-          "13 comments"
+          "373 points",
+          "358 comments"
         ],
-        "discussion": "https://news.ycombinator.com/item?id=50290177",
+        "discussion": "https://news.ycombinator.com/item?id=50300683",
         "flag": null
       },
       {
-        "id": "hn-50291116",
-        "title": "Launch HN: Simantic (YC F26) – Firmware Simulation for AI Agents",
-        "url": "https://news.ycombinator.com/item?id=50291116",
+        "id": "hn-50306008",
+        "title": "US tech stocks see sharp falls over AI cost fears",
+        "url": "https://www.bbc.co.uk/news/articles/cvwy72e0n72yo",
         "source": "Hacker News",
-        "date": "2026-10-29",
+        "date": "2026-10-30",
         "summary": "",
         "meta": [
-          "15 points",
+          "21 points",
           "8 comments"
         ],
-        "discussion": "https://news.ycombinator.com/item?id=50291116",
+        "discussion": "https://news.ycombinator.com/item?id=50306008",
         "flag": null
       },
       {
-        "id": "hn-50288019",
-        "title": "Gemini 4 Carbon is the new #1 on the Artificial Analysis Intelligence Index v5",
-        "url": "https://artificialanalysis.ai/articles/gemini-4-carbon-new-number-1",
+        "id": "hn-50304280",
+        "title": "Neal Stephenson on AI and What Comes Next [video]",
+        "url": "https://www.youtube.com/watch?v=Ii-aeW5pHPQ",
         "source": "Hacker News",
+        "date": "2026-10-30",
+        "summary": "",
+        "meta": [
+          "36 points",
+          "12 comments"
+        ],
+        "discussion": "https://news.ycombinator.com/item?id=50304280",
+        "flag": null
+      },
+      {
+        "id": "http://arxiv.org/abs/2610.40654v1",
+        "title": "Propose-Filter-Release: Scaling Noise to Typical Sensitivity via Private Filtering",
+        "url": "http://arxiv.org/abs/2610.40654v1",
+        "source": "arXiv",
         "date": "2026-10-29",
-        "summary": "",
+        "summary": "An estimator can be accurate and stable on typical data, yet sensitive to a few possible records. Differentially private mechanisms commonly scale their noise to the worst-case influence of a single record, which lets these records dictate the noise even when the remaining data would allow far less. Removing them firs…",
         "meta": [
-          "303 points",
-          "224 comments"
+          "Research",
+          "Moshe Shenfeld +2"
         ],
-        "discussion": "https://news.ycombinator.com/item?id=50288019",
         "flag": null
       },
       {
-        "id": "hn-50290324",
-        "title": "MIT professor says AI is taking over your brain",
-        "url": "https://www.bostonglobe.com/2026/10/23/opinion/ai-impact-cognitive-ability-eric-so/",
-        "source": "Hacker News",
+        "id": "http://arxiv.org/abs/2610.40649v1",
+        "title": "Rethinking Neural Thickets Without Weight Perturbations",
+        "url": "http://arxiv.org/abs/2610.40649v1",
+        "source": "arXiv",
         "date": "2026-10-29",
-        "summary": "",
+        "summary": "The Neural Thickets hypothesis posits that pretrained language models lie in dense neighborhoods of task-specific experts in weight space, which random Gaussian perturbations can uncover. We reproduce the reported gains, but show that they do not require this geometric explanation. Perturbing a single decoder block al…",
         "meta": [
-          "23 points",
-          "13 comments"
+          "Research",
+          "Nicolas Dufour +4"
         ],
-        "discussion": "https://news.ycombinator.com/item?id=50290324",
         "flag": null
       },
       {
-        "id": "hn-50284255",
-        "title": "Claude Code regularly sends each background agent’s transcript to its model",
-        "url": "https://gist.github.com/flamerix-ai/c3905705cc4205e5de3011fa2e74efce",
-        "source": "Hacker News",
+        "id": "http://arxiv.org/abs/2610.40647v1",
+        "title": "Read, Allocate, Route: Role-Coupled Tokenization for Pixel-Space Generative Transformers",
+        "url": "http://arxiv.org/abs/2610.40647v1",
+        "source": "arXiv",
         "date": "2026-10-29",
-        "summary": "",
+        "summary": "Pixel-space generative Transformers typically use one token per image patch, so capturing finer detail requires more tokens and makes global attention increasingly expensive. We observe that finer detail does not necessarily require more global communication: low-frequency structure benefits from global exchange, whil…",
         "meta": [
-          "530 points",
-          "215 comments"
+          "Research",
+          "Jiongfan Yang +4"
         ],
-        "discussion": "https://news.ycombinator.com/item?id=50284255",
         "flag": null
       },
       {
-        "id": "hn-50286738",
-        "title": "I Used AI to Fake a Scientific Paper. Here's What Happened",
-        "url": "https://spectrum.ieee.org/ai-generated-scientific-papers",
-        "source": "Hacker News",
+        "id": "http://arxiv.org/abs/2610.40644v1",
+        "title": "Adaptive Scenario Generation for KL-DRO Around a Learned Density Model",
+        "url": "http://arxiv.org/abs/2610.40644v1",
+        "source": "arXiv",
         "date": "2026-10-29",
-        "summary": "",
-        "meta": [
-          "39 points",
-          "23 comments"
-        ],
-        "discussion": "https://news.ycombinator.com/item?id=50286738",
-        "flag": null
-      },
-      {
-        "id": "hn-50276792",
-        "title": "Gemini 4 Carbon",
-        "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/",
-        "source": "Hacker News",
-        "date": "2026-10-28",
-        "summary": "",
-        "meta": [
-          "989 points",
-          "790 comments"
-        ],
-        "discussion": "https://news.ycombinator.com/item?id=50276792",
-        "flag": null
-      },
-      {
-        "id": "http://arxiv.org/abs/2610.37668v1",
-        "title": "Honeycomb-Surfels: Compact Hexagonal Primitives for Efficient Scene Rendering and Reconstruction",
-        "url": "http://arxiv.org/abs/2610.37668v1",
-        "source": "arXiv",
-        "date": "2026-10-27",
-        "summary": "Novel view synthesis and 3D reconstruction have advanced rapidly with radiance fields and splatting, yet their memory and computational demands limit their use in resource-constrained settings. We introduce Hexels: novel planar hexagonal surface elements with a first-order spatial color field for efficient 3D scene an…",
+        "summary": "Distributionally robust optimization (DRO) hedges data-driven two-stage stochastic programs against error in the distribution estimated from a finite record, and standard ambiguity sets differ in how they treat realizations absent from that record. A divergence ball around the empirical distribution contains only rewe…",
         "meta": [
           "Research",
-          "Prakhar Kaushik +2"
+          "Aron Brenner +1"
         ],
         "flag": null
       },
       {
-        "id": "http://arxiv.org/abs/2610.37666v1",
-        "title": "ThinkWorld: World Imagination Reinforces Chain-of-Dynamics Reasoning",
-        "url": "http://arxiv.org/abs/2610.37666v1",
+        "id": "http://arxiv.org/abs/2610.40643v1",
+        "title": "Luggage re-identification: A study of strategies towards a real-world application",
+        "url": "http://arxiv.org/abs/2610.40643v1",
         "source": "arXiv",
-        "date": "2026-10-27",
-        "summary": "Vision-Language-Action (VLA) models have made substantial progress in robotic manipulation, but their generalization remains constrained by the diversity and coverage of action-labeled robot demonstrations. Human videos provide much broader behavioral and environmental experience, while learning from them faces a fund…",
+        "date": "2026-10-29",
+        "summary": "Luggage re-identification (ReID) is a critical task in video surveillance for forensics, security or border management (suspicious or abandoned luggage recognition), as well as luggage management (lost luggage recovery). It enables the association of observations of the same luggage across disjoint camera views in com…",
         "meta": [
           "Research",
-          "Chaehyun Kim +6"
+          "Quentin Dhôte +1"
         ],
         "flag": null
       },
       {
-        "id": "http://arxiv.org/abs/2610.37658v1",
-        "title": "When Should We Intervene at Test Time?",
-        "url": "http://arxiv.org/abs/2610.37658v1",
+        "id": "http://arxiv.org/abs/2610.40641v1",
+        "title": "From extreme weather to agricultural consequences with agentic AI",
+        "url": "http://arxiv.org/abs/2610.40641v1",
         "source": "arXiv",
-        "date": "2026-10-27",
-        "summary": "Test-time adaptation helps a deployed model respond to changing inputs, but the same intervention can rescue one batch and damage the next. Updating normalization statistics, for example, can improve corrupted images yet fail when a batch contains mostly one class. Average accuracy hides these failures and cannot tell…",
+        "date": "2026-10-29",
+        "summary": "Extreme weather is forecast days ahead, yet its consequences for agriculture remain hard to predict: a forecast says where a storm will strike, not which crops will suffer or how much is at risk, and the records that could tell span many sources. We present WxCrop, the first agent that judges agricultural hazards from…",
         "meta": [
           "Research",
-          "Jiahao Zhang +3"
+          "Minghan Yu +3"
         ],
         "flag": null
       },
       {
-        "id": "http://arxiv.org/abs/2610.37657v1",
-        "title": "Heads of Security: Learned Attention Gates Improve Prompt Injection Robustness",
-        "url": "http://arxiv.org/abs/2610.37657v1",
+        "id": "http://arxiv.org/abs/2610.40637v1",
+        "title": "world2vec: Mechanistic world models through latent dynamics learning",
+        "url": "http://arxiv.org/abs/2610.40637v1",
         "source": "arXiv",
-        "date": "2026-10-27",
-        "summary": "We introduce Heads of Security (HoS), a prompt injection defense that enforces instruction-data separation via a small set of learned per-head attention gates. HoS learns how each head should redistribute attention between trusted and untrusted tokens, enabling models to reason over untrusted content without following…",
+        "date": "2026-10-29",
+        "summary": "World models can achieve strong control performance without faithfully capturing the dynamics of their environment, limiting their potential for mechanistic interpretability and scientific discovery. Here, we introduce world2vec to learn mechanistic world models without reward information directly from observations an…",
         "meta": [
           "Research",
-          "Igor Shilov +8"
+          "Tobias Schmidt +3"
         ],
         "flag": null
       },
       {
-        "id": "http://arxiv.org/abs/2610.37656v1",
-        "title": "Attention as Lattice Gauge Theory: Relations Interact Only Through Wilson Loops",
-        "url": "http://arxiv.org/abs/2610.37656v1",
+        "id": "http://arxiv.org/abs/2610.40636v1",
+        "title": "Probing Spatial State Representations in Visual Foundation Models",
+        "url": "http://arxiv.org/abs/2610.40636v1",
         "source": "arXiv",
-        "date": "2026-10-27",
-        "summary": "Relations compose through the entity they share - Alice is Bob's mother and Bob is Carol's father, so Alice is Carol's grandmother - and the order matters, since a father's mother is not a mother's father; verifying a composed relation means closing the loop. We show that if each entity's coordinate frame may be rotat…",
+        "date": "2026-10-29",
+        "summary": "An observer sees only part of the surrounding world, yet must keep track of what lies beyond the current view. Spatial perception therefore involves more than recognizing individual images: it calls for a persistent spatial state that is updated under self-motion and used to guide action. Do visual foundation models p…",
         "meta": [
           "Research",
-          "Aakash Sarkar +2"
+          "Baiqiao Yin +5"
         ],
         "flag": null
       },
       {
-        "id": "http://arxiv.org/abs/2610.37655v1",
-        "title": "KPPax: preprocess differentiable kinetic ODE for machine learning in atmospheric chemistry",
-        "url": "http://arxiv.org/abs/2610.37655v1",
+        "id": "http://arxiv.org/abs/2610.40618v1",
+        "title": "An ODE-based Sampler for Discrete Diffusion Models",
+        "url": "http://arxiv.org/abs/2610.40618v1",
         "source": "arXiv",
-        "date": "2026-10-27",
-        "summary": "Atmospheric chemical mechanisms are commonly distributed in the language of the Kinetic PreProcessor (KPP), which generates efficient Fortran or C code but does not fit into the differentiable programming frameworks in which machine-learning models are developed. We present KPPax, a kinetic preprocessor that generates…",
+        "date": "2026-10-29",
+        "summary": "The marginals of a continuous diffusion model can be reproduced by a deterministic ordinary differential equation (ODE), known as the probability flow ODE, which provides a foundation for accelerated sampling and consistency distillation. In this paper we address the question whether an analogous formulation exists fo…",
         "meta": [
           "Research",
-          "Wenqing Peng +2"
+          "Samson Gourevitch +5"
+        ],
+        "flag": null
+      },
+      {
+        "id": "http://arxiv.org/abs/2610.40616v1",
+        "title": "Difficulty Calibration Across Time for Membership Inference in Diffusion Models",
+        "url": "http://arxiv.org/abs/2610.40616v1",
+        "source": "arXiv",
+        "date": "2026-10-29",
+        "summary": "Modern diffusion models are trained on massive datasets that often include copyrighted or private images. Membership inference attacks (MIAs) address this by testing whether a given image was in a model's training set. The standard approach scores an image by its reconstruction loss and flags low-loss images as member…",
+        "meta": [
+          "Research",
+          "Michael Joseph +1"
         ],
         "flag": null
       }
     ],
     "dev": [
       {
-        "id": "hn-50289418",
-        "title": "We're releasing the weights of Mistral Large 4",
-        "url": "https://mistral.ai/news/mistral-large-4-oss/",
+        "id": "hn-50305025",
+        "title": "Northflank Breached",
+        "url": "https://status.northflank.com",
         "source": "Hacker News",
-        "date": "2026-10-29",
+        "date": "2026-10-30",
         "summary": "",
         "meta": [
-          "639 points",
-          "163 comments"
+          "87 points",
+          "56 comments"
         ],
-        "discussion": "https://news.ycombinator.com/item?id=50289418",
+        "discussion": "https://news.ycombinator.com/item?id=50305025",
         "flag": null
       },
       {
-        "id": "hn-50291945",
-        "title": "For the first time ever, Google Search is less than 50% of Alphabet's revenue",
-        "url": "https://www.kadoa.com/companies/insights/google-search-below-half",
+        "id": "hn-50306442",
+        "title": "A Working Nintendo in ~1GB of Qwen Weights",
+        "url": "https://github.com/dbreunig/nesformer",
         "source": "Hacker News",
-        "date": "2026-10-29",
+        "date": "2026-10-30",
         "summary": "",
         "meta": [
-          "128 points",
-          "69 comments"
-        ],
-        "discussion": "https://news.ycombinator.com/item?id=50291945",
-        "flag": null
-      },
-      {
-        "id": "hn-50291054",
-        "title": "H.264 Is Magic (2016)",
-        "url": "https://sidbala.com/h-264-is-magic/",
-        "source": "Hacker News",
-        "date": "2026-10-29",
-        "summary": "",
-        "meta": [
-          "104 points",
-          "42 comments"
-        ],
-        "discussion": "https://news.ycombinator.com/item?id=50291054",
-        "flag": null
-      },
-      {
-        "id": "hn-50290912",
-        "title": "Grace Blackwell needs a new scheduler: 27% more usable GPUs from the same racks",
-        "url": "https://skypilot.ai/blog/grace-blackwell-needs-a-new-scheduler",
-        "source": "Hacker News",
-        "date": "2026-10-29",
-        "summary": "",
-        "meta": [
-          "49 points",
+          "6 points",
           "3 comments"
         ],
-        "discussion": "https://news.ycombinator.com/item?id=50290912",
+        "discussion": "https://news.ycombinator.com/item?id=50306442",
         "flag": null
       },
       {
-        "id": "hn-50292233",
-        "title": "Tomas Mikolov (creator of Word2Vec) receives the Medal of Merit",
-        "url": "https://www.vut.cz/en/but/news-f19528/two-but-graduates-received-state-honors-from-the-president-of-the-republic-d378468",
+        "id": "hn-50302814",
+        "title": "US Reps Lead Democratic Resolution Opposing A.I. Bubble Bailout for Big Tech",
+        "url": "https://progressives.house.gov/2026/10/reps-casar-waters-lead-democratic-resolution-opposing-a-i-bubble-bailout-for-big-tech-commit-to-protecting-american-people-instead",
+        "source": "Hacker News",
+        "date": "2026-10-30",
+        "summary": "",
+        "meta": [
+          "513 points",
+          "343 comments"
+        ],
+        "discussion": "https://news.ycombinator.com/item?id=50302814",
+        "flag": null
+      },
+      {
+        "id": "hn-50301854",
+        "title": "Azure's Weakest Link – Five Full Cross-Tenant Compromises",
+        "url": "https://www.binarysecurity.no/posts/2026/10/one-root-case",
+        "source": "Hacker News",
+        "date": "2026-10-30",
+        "summary": "",
+        "meta": [
+          "183 points",
+          "28 comments"
+        ],
+        "discussion": "https://news.ycombinator.com/item?id=50301854",
+        "flag": null
+      },
+      {
+        "id": "hn-50304419",
+        "title": "Medicare Will Pay $50k for Your Heart Attack. It Should Pay $100 to Prevent It",
+        "url": "https://www.medpagetoday.com/opinion/second-opinions/123553?trw=no",
+        "source": "Hacker News",
+        "date": "2026-10-30",
+        "summary": "",
+        "meta": [
+          "151 points",
+          "121 comments"
+        ],
+        "discussion": "https://news.ycombinator.com/item?id=50304419",
+        "flag": null
+      },
+      {
+        "id": "hn-50305573",
+        "title": "The Federated Code Forge",
+        "url": "https://tangled.org/blog/forge/",
+        "source": "Hacker News",
+        "date": "2026-10-30",
+        "summary": "",
+        "meta": [
+          "33 points",
+          "12 comments"
+        ],
+        "discussion": "https://news.ycombinator.com/item?id=50305573",
+        "flag": null
+      },
+      {
+        "id": "hn-50305480",
+        "title": "Blockchain intelligence firms link North Korea to $6.3B hack on Binance",
+        "url": "https://www.npr.org/2026/10/30/g-s1-150902/blockchain-intelligence-firms-link-north-korea-to-6-3b-hack-on-binance",
+        "source": "Hacker News",
+        "date": "2026-10-30",
+        "summary": "",
+        "meta": [
+          "47 points",
+          "7 comments"
+        ],
+        "discussion": "https://news.ycombinator.com/item?id=50305480",
+        "flag": null
+      },
+      {
+        "id": "hn-50296470",
+        "title": "Binance-hacker-1029 – $5.6B stolen from Binance",
+        "url": "https://arkm.com/explorer/entity/21a94755-f604-45e5-9501-6542e23005e8",
         "source": "Hacker News",
         "date": "2026-10-29",
         "summary": "",
         "meta": [
-          "13 points",
-          "1 comments"
+          "1685 points",
+          "1134 comments"
         ],
-        "discussion": "https://news.ycombinator.com/item?id=50292233",
+        "discussion": "https://news.ycombinator.com/item?id=50296470",
         "flag": null
       },
       {
-        "id": "hn-50287919",
-        "title": "DoorDash to acquire Instacart",
-        "url": "https://about.doordash.com/en-us/news/doordash-to-acquire-instacart",
+        "id": "hn-50305225",
+        "title": "Polymarket 1h halt after vendor compromise; affected users will be 'made whole'",
+        "url": "https://www.nbcnews.com/business/consumer/polymarket-trading-halt-hack-wallets-rcna606405",
         "source": "Hacker News",
-        "date": "2026-10-29",
+        "date": "2026-10-30",
         "summary": "",
         "meta": [
-          "225 points",
-          "410 comments"
+          "38 points",
+          "9 comments"
         ],
-        "discussion": "https://news.ycombinator.com/item?id=50287919",
+        "discussion": "https://news.ycombinator.com/item?id=50305225",
         "flag": null
       },
       {
-        "id": "hn-50290668",
-        "title": "Mexico is a showroom for electric vehicles you can't buy in the U.S.",
-        "url": "https://www.washingtonpost.com/climate-environment/2026/10/27/i-saw-future-driving-mexico-its-off-limits-americans/",
+        "id": "hn-50303172",
+        "title": "The $6.3B Binance Hack Was Pulled Off in Just 20 Minutes",
+        "url": "https://www.wired.com/story/the-dollar63-billion-binance-hack-was-pulled-off-in-just-20-minutes/",
         "source": "Hacker News",
-        "date": "2026-10-29",
+        "date": "2026-10-30",
         "summary": "",
         "meta": [
-          "146 points",
-          "123 comments"
+          "191 points",
+          "135 comments"
         ],
-        "discussion": "https://news.ycombinator.com/item?id=50290668",
+        "discussion": "https://news.ycombinator.com/item?id=50303172",
         "flag": null
       },
       {
-        "id": "hn-50286987",
-        "title": "Chained PHP2Shell Exploit Roots 25 Servers, Including US Government Servers",
-        "url": "https://dreamgroup.com/blog/chained-php2shell-exploit-roots-25-servers",
-        "source": "Hacker News",
-        "date": "2026-10-29",
-        "summary": "",
-        "meta": [
-          "167 points",
-          "76 comments"
-        ],
-        "discussion": "https://news.ycombinator.com/item?id=50286987",
-        "flag": null
-      },
-      {
-        "id": "hn-50287775",
-        "title": "If IPv4 were land",
-        "url": "https://iptrust.co/blog/if-ipv4-were-land",
-        "source": "Hacker News",
-        "date": "2026-10-29",
-        "summary": "",
-        "meta": [
-          "149 points",
-          "142 comments"
-        ],
-        "discussion": "https://news.ycombinator.com/item?id=50287775",
-        "flag": null
-      },
-      {
-        "id": "hn-50291927",
-        "title": "Toxic Experts",
-        "url": "https://nedbatchelder.com/blog/201711/toxic_experts",
-        "source": "Hacker News",
-        "date": "2026-10-29",
-        "summary": "",
-        "meta": [
-          "11 points",
-          "2 comments"
-        ],
-        "discussion": "https://news.ycombinator.com/item?id=50291927",
-        "flag": null
-      },
-      {
-        "id": "hn-50278645",
-        "title": "noalloc: Tooling and libraries to enforce zero heap allocations in Golang",
-        "url": "https://github.com/theconsensuslabs/noalloc",
+        "id": "hn-50273504",
+        "title": "Finding Panics with Call Graph Analyzer",
+        "url": "https://tweedegolf.nl/en/blog/242/finding-panics-with-call-graph-analyzer/",
         "source": "Hacker News",
         "date": "2026-10-28",
         "summary": "",
         "meta": [
-          "20 points",
+          "51 points",
+          "0 comments"
+        ],
+        "discussion": "https://news.ycombinator.com/item?id=50273504",
+        "flag": null
+      },
+      {
+        "id": "hn-50270284",
+        "title": "Pell Puzzles Review",
+        "url": "https://dles.gg/reviews/pell-puzzles",
+        "source": "Hacker News",
+        "date": "2026-10-28",
+        "summary": "",
+        "meta": [
+          "7 points",
           "1 comments"
         ],
-        "discussion": "https://news.ycombinator.com/item?id=50278645",
+        "discussion": "https://news.ycombinator.com/item?id=50270284",
         "flag": null
       },
       {
-        "id": "hn-50287448",
-        "title": "How Google determines the names for bodies of water in Google Earth",
-        "url": "https://publicpolicy.googleblog.com/2008/04/how-google-determines-names-for-bodies.html",
+        "id": "hn-50305320",
+        "title": "Show HN: I built a multiplayer game where you're an aerial fighter cat",
+        "url": "https://catcopter.com",
         "source": "Hacker News",
-        "date": "2026-10-29",
+        "date": "2026-10-30",
         "summary": "",
         "meta": [
-          "174 points",
-          "137 comments"
+          "14 points",
+          "3 comments"
         ],
-        "discussion": "https://news.ycombinator.com/item?id=50287448",
+        "discussion": "https://news.ycombinator.com/item?id=50305320",
         "flag": null
       },
       {
-        "id": "hn-50289590",
-        "title": "Keplearn: Extract Equations from Data in Seconds",
-        "url": "https://github.com/owls-on-wires/keplearn",
+        "id": "hn-50263127",
+        "title": "Gilgamesh by Simon Armitage review – an ancient epic is brilliantly translated",
+        "url": "https://www.theguardian.com/books/2026/oct/20/gilgamesh-by-simon-armitage-review-an-ancient-epic-is-brilliantly-translated-for-our-times",
         "source": "Hacker News",
-        "date": "2026-10-29",
+        "date": "2026-10-27",
         "summary": "",
         "meta": [
-          "42 points",
-          "1 comments"
+          "144 points",
+          "40 comments"
         ],
-        "discussion": "https://news.ycombinator.com/item?id=50289590",
-        "flag": null
-      },
-      {
-        "id": "hn-50286197",
-        "title": "What we know so far about Spain train crash",
-        "url": "https://www.bbc.com/news/articles/cm8xz7pkd0jjo",
-        "source": "Hacker News",
-        "date": "2026-10-29",
-        "summary": "",
-        "meta": [
-          "45 points",
-          "87 comments"
-        ],
-        "discussion": "https://news.ycombinator.com/item?id=50286197",
+        "discussion": "https://news.ycombinator.com/item?id=50263127",
         "flag": null
       }
     ]
