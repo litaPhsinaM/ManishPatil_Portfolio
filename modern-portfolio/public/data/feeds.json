@@ -1,285 +1,285 @@
 {
-  "generatedAt": "2026-11-05T18:45:08.722Z",
+  "generatedAt": "2026-11-06T17:57:35.580Z",
   "log": [
     {
-      "t": "2026-11-05T18:45:07.348Z",
+      "t": "2026-11-06T17:57:34.450Z",
       "level": "info",
       "msg": "signal refresh started"
     },
     {
-      "t": "2026-11-05T18:45:07.352Z",
+      "t": "2026-11-06T17:57:34.454Z",
       "level": "info",
       "msg": "GET hacker-news.firebaseio.com/v0/topstories.json"
     },
     {
-      "t": "2026-11-05T18:45:07.530Z",
+      "t": "2026-11-06T17:57:34.646Z",
       "level": "info",
       "msg": "HTTP 200 · resolving top 60 story ids in batches of 10"
     },
     {
-      "t": "2026-11-05T18:45:08.136Z",
+      "t": "2026-11-06T17:57:35.085Z",
       "level": "info",
-      "msg": "59 of 60 resolved to usable stories · 784ms"
+      "msg": "59 of 60 resolved to usable stories · 631ms"
     },
     {
-      "t": "2026-11-05T18:45:08.137Z",
+      "t": "2026-11-06T17:57:35.086Z",
       "level": "info",
       "msg": "GET cisa.gov/feeds/known_exploited_vulnerabilities.json"
     },
     {
-      "t": "2026-11-05T18:45:08.413Z",
+      "t": "2026-11-06T17:57:35.213Z",
       "level": "info",
-      "msg": "HTTP 200 · catalog holds 1768 CVEs · 276ms"
+      "msg": "HTTP 200 · catalog holds 1768 CVEs · 127ms"
     },
     {
-      "t": "2026-11-05T18:45:08.417Z",
+      "t": "2026-11-06T17:57:35.217Z",
       "level": "info",
       "msg": "fleet filter: 1040 of 1768 touch managed platforms"
     },
     {
-      "t": "2026-11-05T18:45:08.424Z",
+      "t": "2026-11-06T17:57:35.223Z",
       "level": "info",
       "msg": "GET export.arxiv.org/api/query cat:cs.AI OR cat:cs.LG"
     },
     {
-      "t": "2026-11-05T18:45:08.720Z",
+      "t": "2026-11-06T17:57:35.578Z",
       "level": "info",
-      "msg": "HTTP 200 · 34,904 bytes of Atom XML · 296ms"
+      "msg": "HTTP 200 · 31,106 bytes of Atom XML · 355ms"
     },
     {
-      "t": "2026-11-05T18:45:08.721Z",
+      "t": "2026-11-06T17:57:35.579Z",
       "level": "info",
-      "msg": "topic split: 9 AI stories, 50 general dev"
+      "msg": "topic split: 10 AI stories, 49 general dev"
     },
     {
-      "t": "2026-11-05T18:45:08.722Z",
+      "t": "2026-11-06T17:57:35.580Z",
       "level": "info",
       "msg": "--- security feed: 14 items ---"
     },
     {
-      "t": "2026-11-05T18:45:08.722Z",
+      "t": "2026-11-06T17:57:35.580Z",
       "level": "info",
       "msg": "ingest CISA KEV · Apple Multiple Products Improper Authentication Vulnerabi… · 2026-11-04"
     },
     {
-      "t": "2026-11-05T18:45:08.722Z",
+      "t": "2026-11-06T17:57:35.580Z",
       "level": "info",
       "msg": "ingest CISA KEV · WordPress WordPress Core Time-of-check Time-of-use (TOCTO… · 2026-11-03"
     },
     {
-      "t": "2026-11-05T18:45:08.722Z",
+      "t": "2026-11-06T17:57:35.580Z",
       "level": "info",
       "msg": "ingest CISA KEV · Ivanti Connect Secure Generation of Predictable Numbers o… · 2026-10-30"
     },
     {
-      "t": "2026-11-05T18:45:08.722Z",
+      "t": "2026-11-06T17:57:35.580Z",
       "level": "info",
       "msg": "ingest CISA KEV · Ivanti Connect Secure Missing Authentication for Critical… · 2026-10-30"
     },
     {
-      "t": "2026-11-05T18:45:08.722Z",
+      "t": "2026-11-06T17:57:35.580Z",
       "level": "info",
       "msg": "ingest CISA KEV · Cisco Secure Firewall ASA Software and Cisco Secure FTD S… · 2026-10-29"
     },
     {
-      "t": "2026-11-05T18:45:08.722Z",
+      "t": "2026-11-06T17:57:35.580Z",
       "level": "info",
       "msg": "ingest CISA KEV · Broadcom VMWare ESX Insufficient Logging Vulnerability · 2026-10-28"
     },
     {
-      "t": "2026-11-05T18:45:08.722Z",
+      "t": "2026-11-06T17:57:35.580Z",
       "level": "info",
       "msg": "ingest CISA KEV · Linux Kernel Missing Initialization of a Variable Vulnera… · 2026-10-28"
     },
     {
-      "t": "2026-11-05T18:45:08.722Z",
+      "t": "2026-11-06T17:57:35.580Z",
       "level": "info",
       "msg": "ingest CISA KEV · Google Brotli Unchecked Return Value Vulnerability · 2026-10-27"
     },
     {
-      "t": "2026-11-05T18:45:08.722Z",
+      "t": "2026-11-06T17:57:35.580Z",
       "level": "info",
       "msg": "ingest CISA KEV · PHP Memory Corruption Vulnerability · 2026-10-26"
     },
     {
-      "t": "2026-11-05T18:45:08.722Z",
+      "t": "2026-11-06T17:57:35.580Z",
       "level": "info",
       "msg": "ingest CISA KEV · PHP Stale Internal Request-State Vulnerability · 2026-10-26"
     },
     {
-      "t": "2026-11-05T18:45:08.722Z",
+      "t": "2026-11-06T17:57:35.580Z",
       "level": "info",
       "msg": "ingest CISA KEV · Fortinet Multiple Products Path Traversal Vulnerability · 2026-10-16"
     },
     {
-      "t": "2026-11-05T18:45:08.722Z",
+      "t": "2026-11-06T17:57:35.580Z",
       "level": "info",
       "msg": "ingest CISA KEV · Cisco Secure Email Gateway Relative Path Traversal Vulner… · 2026-10-14"
     },
     {
-      "t": "2026-11-05T18:45:08.722Z",
+      "t": "2026-11-06T17:57:35.580Z",
       "level": "info",
       "msg": "ingest CISA KEV · Palo Alto Networks PAN-OS Code Injection Vulnerability · 2026-10-14"
     },
     {
-      "t": "2026-11-05T18:45:08.722Z",
+      "t": "2026-11-06T17:57:35.580Z",
       "level": "info",
       "msg": "ingest CISA KEV · Ivanti Connect Secure Authentication Bypass by Spoofing V… · 2026-10-13"
     },
     {
-      "t": "2026-11-05T18:45:08.722Z",
+      "t": "2026-11-06T17:57:35.580Z",
       "level": "info",
       "msg": "--- ai feed: 14 items ---"
     },
     {
-      "t": "2026-11-05T18:45:08.722Z",
+      "t": "2026-11-06T17:57:35.580Z",
       "level": "info",
-      "msg": "ingest Hacker News · Nasdaq Sinks 5% as Investors Retreat from AI Trade After… · 2026-11-05"
+      "msg": "ingest Hacker News · Gemini Omni 1.2 Flash · 2026-11-06"
     },
     {
-      "t": "2026-11-05T18:45:08.722Z",
+      "t": "2026-11-06T17:57:35.580Z",
       "level": "info",
-      "msg": "ingest Hacker News · GPT-6 Astra covertly underperforms on safety research · 2026-11-05"
+      "msg": "ingest Hacker News · Anthropic IPO valuation talks drop to $1.3T · 2026-11-06"
     },
     {
-      "t": "2026-11-05T18:45:08.722Z",
+      "t": "2026-11-06T17:57:35.580Z",
       "level": "info",
-      "msg": "ingest Hacker News · An updated Model Spec for more capable and beneficial AI · 2026-11-05"
+      "msg": "ingest Hacker News · University libraries are being swarmed by AI bots, puttin… · 2026-11-06"
     },
     {
-      "t": "2026-11-05T18:45:08.722Z",
+      "t": "2026-11-06T17:57:35.580Z",
       "level": "info",
-      "msg": "ingest Hacker News · GPT‑6 Cyber: Advancing the frontier of aligned cybersecur… · 2026-11-05"
+      "msg": "ingest Hacker News · AI for scientific discovery: How researchers use Claude · 2026-11-06"
     },
     {
-      "t": "2026-11-05T18:45:08.722Z",
+      "t": "2026-11-06T17:57:35.580Z",
       "level": "info",
-      "msg": "ingest Hacker News · GPT-6 Cyber · 2026-11-05"
+      "msg": "ingest Hacker News · Show HN: Agentic Identity Broker, OAuth Delegation for AI… · 2026-11-06"
     },
     {
-      "t": "2026-11-05T18:45:08.722Z",
+      "t": "2026-11-06T17:57:35.580Z",
       "level": "info",
-      "msg": "ingest Hacker News · Offline survival assistant – local LLM and Kiwix, runs fr… · 2026-11-05"
+      "msg": "ingest Hacker News · Anthropic IPO Buyers See Valuation as Low as $1.1T · 2026-11-06"
     },
     {
-      "t": "2026-11-05T18:45:08.722Z",
+      "t": "2026-11-06T17:57:35.580Z",
       "level": "info",
-      "msg": "ingest Hacker News · The architecture of open-weight LLMs: MoE, hybrid layers,… · 2026-11-05"
+      "msg": "ingest Hacker News · Stop running everything through LLMs: How I fixed my rese… · 2026-11-06"
     },
     {
-      "t": "2026-11-05T18:45:08.722Z",
+      "t": "2026-11-06T17:57:35.580Z",
       "level": "info",
-      "msg": "ingest arXiv · A Framework for Context Enrichment and Selective Robustne… · 2026-11-04"
+      "msg": "ingest arXiv · User Embeddings are Superpositions of Interpretable Behav… · 2026-11-05"
     },
     {
-      "t": "2026-11-05T18:45:08.722Z",
+      "t": "2026-11-06T17:57:35.580Z",
       "level": "info",
-      "msg": "ingest arXiv · FlowReconBench: Accuracy, calibration and cost of learned… · 2026-11-04"
+      "msg": "ingest arXiv · SwarmEvolve: Latent Agent Swarms for Evolutionary Discove… · 2026-11-05"
     },
     {
-      "t": "2026-11-05T18:45:08.722Z",
+      "t": "2026-11-06T17:57:35.580Z",
       "level": "info",
-      "msg": "ingest arXiv · BEAKER: An Expert-Curated Benchmark for Embodied Brains i… · 2026-11-04"
+      "msg": "ingest arXiv · Scientist World: Grow a Research World for AI-Scientists · 2026-11-05"
     },
     {
-      "t": "2026-11-05T18:45:08.722Z",
+      "t": "2026-11-06T17:57:35.580Z",
       "level": "info",
-      "msg": "ingest arXiv · FrontierPhysics: Evaluating Agents for End-to-End Physics… · 2026-11-04"
+      "msg": "ingest arXiv · XStack: A Benchmark for ML Repo Migration · 2026-11-05"
     },
     {
-      "t": "2026-11-05T18:45:08.722Z",
+      "t": "2026-11-06T17:57:35.580Z",
       "level": "info",
-      "msg": "ingest arXiv · Perceptive Humanoid Motion from Simulation · 2026-11-04"
+      "msg": "ingest arXiv · Same Behavior, Different Mechanism: What Finite Experimen… · 2026-11-05"
     },
     {
-      "t": "2026-11-05T18:45:08.722Z",
+      "t": "2026-11-06T17:57:35.580Z",
       "level": "info",
-      "msg": "ingest arXiv · Reinforcement Learning Enables Scaling Generalist Robot P… · 2026-11-04"
+      "msg": "ingest arXiv · Towards interpreting any residual stream direction by sca… · 2026-11-05"
     },
     {
-      "t": "2026-11-05T18:45:08.722Z",
+      "t": "2026-11-06T17:57:35.580Z",
       "level": "info",
-      "msg": "ingest arXiv · Occlusion for Free: Detecting Occlusion from the Disagree… · 2026-11-04"
+      "msg": "ingest arXiv · Adversarial Training with Large Step Sizes: Implicit Bias… · 2026-11-05"
     },
     {
-      "t": "2026-11-05T18:45:08.722Z",
+      "t": "2026-11-06T17:57:35.580Z",
       "level": "info",
       "msg": "--- dev feed: 14 items ---"
     },
     {
-      "t": "2026-11-05T18:45:08.722Z",
+      "t": "2026-11-06T17:57:35.580Z",
       "level": "info",
-      "msg": "ingest Hacker News · sshole · 2026-11-05"
+      "msg": "ingest Hacker News · US FAA says it will phase out floppy disks from air traff… · 2026-11-06"
     },
     {
-      "t": "2026-11-05T18:45:08.722Z",
+      "t": "2026-11-06T17:57:35.580Z",
       "level": "info",
-      "msg": "ingest Hacker News · Alpine Linux Security Advisory: OpenSSH-server password a… · 2026-11-05"
+      "msg": "ingest Hacker News · Tesla to wind down Cybertruck production · 2026-11-06"
     },
     {
-      "t": "2026-11-05T18:45:08.722Z",
+      "t": "2026-11-06T17:57:35.580Z",
       "level": "info",
-      "msg": "ingest Hacker News · Motorola Signature 27 with GrapheneOS support · 2026-11-05"
+      "msg": "ingest Hacker News · First steps in bare-metal programming using UEFI · 2026-11-06"
     },
     {
-      "t": "2026-11-05T18:45:08.722Z",
+      "t": "2026-11-06T17:57:35.580Z",
       "level": "info",
-      "msg": "ingest Hacker News · Launch HN: Rivet (YC W23) – Scale and Orchestrate Agents… · 2026-11-05"
+      "msg": "ingest Hacker News · Blender's UI and Runtime: Much Faster Than GPUI · 2026-11-06"
     },
     {
-      "t": "2026-11-05T18:45:08.722Z",
+      "t": "2026-11-06T17:57:35.580Z",
       "level": "info",
-      "msg": "ingest Hacker News · September in Servo: <progress>, rounded rectangles, and m… · 2026-11-05"
+      "msg": "ingest Hacker News · Deus Ex · 2026-11-06"
     },
     {
-      "t": "2026-11-05T18:45:08.722Z",
+      "t": "2026-11-06T17:57:35.580Z",
       "level": "info",
-      "msg": "ingest Hacker News · Window Sweaters · 2026-11-05"
+      "msg": "ingest Hacker News · Rune: A native GPU-rendered Rust UI framework for macOS,… · 2026-11-06"
     },
     {
-      "t": "2026-11-05T18:45:08.722Z",
+      "t": "2026-11-06T17:57:35.580Z",
       "level": "info",
-      "msg": "ingest Hacker News · My psychophysics as a bilateral cochlear implant user · 2026-11-05"
+      "msg": "ingest Hacker News · Lippitt-Knoster in Practice (Field Notes for Managing Com… · 2026-11-06"
     },
     {
-      "t": "2026-11-05T18:45:08.722Z",
+      "t": "2026-11-06T17:57:35.580Z",
       "level": "info",
-      "msg": "ingest Hacker News · The Lisp curse, now coming to your ecosystem · 2026-11-03"
+      "msg": "ingest Hacker News · Zero Hour: Telling time was a matter of survival and stra… · 2026-11-05"
     },
     {
-      "t": "2026-11-05T18:45:08.722Z",
+      "t": "2026-11-06T17:57:35.580Z",
       "level": "info",
-      "msg": "ingest Hacker News · Download your favourite YouTube videos · 2026-11-05"
+      "msg": "ingest Hacker News · Scriptable GeoDNS: Leaving AWS for Bunny · 2026-11-06"
     },
     {
-      "t": "2026-11-05T18:45:08.722Z",
+      "t": "2026-11-06T17:57:35.580Z",
       "level": "info",
-      "msg": "ingest Hacker News · I wish tech companies knew more about me · 2026-11-05"
+      "msg": "ingest Hacker News · Living beyond the limits of survival: wood ants trapped i… · 2026-11-06"
     },
     {
-      "t": "2026-11-05T18:45:08.722Z",
+      "t": "2026-11-06T17:57:35.580Z",
       "level": "info",
-      "msg": "ingest Hacker News · The Stacks Project, Formalized in Lean · 2026-11-05"
+      "msg": "ingest Hacker News · Dutch 'idealist' bank ASN blocks non-Google Android, incl… · 2026-11-06"
     },
     {
-      "t": "2026-11-05T18:45:08.722Z",
+      "t": "2026-11-06T17:57:35.580Z",
       "level": "info",
-      "msg": "ingest Hacker News · OpenSSH 10.6p2 Critical workaround for alpine without PAM · 2026-11-05"
+      "msg": "ingest Hacker News · MTG-I2 First Images · 2026-11-06"
     },
     {
-      "t": "2026-11-05T18:45:08.722Z",
+      "t": "2026-11-06T17:57:35.580Z",
       "level": "info",
-      "msg": "ingest Hacker News · Building a Multi-Agent System from Scratch: Architecture… · 2026-11-05"
+      "msg": "ingest Hacker News · Kugelblitz – Mac-Native Google Earth Alternative · 2026-11-06"
     },
     {
-      "t": "2026-11-05T18:45:08.722Z",
+      "t": "2026-11-06T17:57:35.580Z",
       "level": "info",
-      "msg": "ingest Hacker News · MCP Explained · 2026-11-05"
+      "msg": "ingest Hacker News · MS Paint Remote Code Execution Vulnerability · 2026-11-05"
     },
     {
-      "t": "2026-11-05T18:45:08.722Z",
+      "t": "2026-11-06T17:57:35.580Z",
       "level": "info",
-      "msg": "publishing 42 items across 3 feeds · 1374ms"
+      "msg": "publishing 42 items across 3 feeds · 1131ms"
     }
   ],
   "feeds": {
@@ -483,390 +483,390 @@
     ],
     "ai": [
       {
-        "id": "hn-50382179",
-        "title": "Nasdaq Sinks 5% as Investors Retreat from AI Trade After Election",
-        "url": "https://www.wsj.com/livecoverage/stock-market-today-dow-sp-500-nasdaq-11-05-2026",
+        "id": "hn-50392118",
+        "title": "Gemini Omni 1.2 Flash",
+        "url": "https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemini-omni-1-2-flash/",
         "source": "Hacker News",
-        "date": "2026-11-05",
+        "date": "2026-11-06",
         "summary": "",
         "meta": [
-          "52 points",
-          "30 comments"
+          "213 points",
+          "164 comments"
         ],
-        "discussion": "https://news.ycombinator.com/item?id=50382179",
+        "discussion": "https://news.ycombinator.com/item?id=50392118",
         "flag": null
       },
       {
-        "id": "hn-50376313",
-        "title": "GPT-6 Astra covertly underperforms on safety research",
-        "url": "https://alignment.openai.com/misalignment-reports/covert-underperformance-on-safety-research-tasks/",
+        "id": "hn-50395318",
+        "title": "Anthropic IPO valuation talks drop to $1.3T",
+        "url": "https://epyhia.com/anthropic-ipo-valuation-talks-drop-to-1-3-trillion-as-major-investors",
         "source": "Hacker News",
-        "date": "2026-11-05",
+        "date": "2026-11-06",
         "summary": "",
         "meta": [
-          "200 points",
-          "94 comments"
+          "28 points",
+          "9 comments"
         ],
-        "discussion": "https://news.ycombinator.com/item?id=50376313",
+        "discussion": "https://news.ycombinator.com/item?id=50395318",
         "flag": null
       },
       {
-        "id": "hn-50380365",
-        "title": "An updated Model Spec for more capable and beneficial AI",
-        "url": "https://openai.com/index/updated-model-spec/",
+        "id": "hn-50392499",
+        "title": "University libraries are being swarmed by AI bots, putting public access at risk",
+        "url": "https://www.cbc.ca/news/world/university-libraries-ai-data-scraping-bots-9.7408287",
         "source": "Hacker News",
-        "date": "2026-11-05",
+        "date": "2026-11-06",
         "summary": "",
         "meta": [
-          "9 points",
-          "2 comments"
+          "95 points",
+          "46 comments"
         ],
-        "discussion": "https://news.ycombinator.com/item?id=50380365",
+        "discussion": "https://news.ycombinator.com/item?id=50392499",
         "flag": null
       },
       {
-        "id": "hn-50381590",
-        "title": "GPT‑6 Cyber: Advancing the frontier of aligned cybersecurity agents",
-        "url": "https://openai.com/index/introducing-gpt-6-cyber/",
+        "id": "hn-50389990",
+        "title": "AI for scientific discovery: How researchers use Claude",
+        "url": "https://www.anthropic.com/research/how-researchers-use-claude",
         "source": "Hacker News",
-        "date": "2026-11-05",
+        "date": "2026-11-06",
         "summary": "",
         "meta": [
-          "24 points",
-          "4 comments"
+          "64 points",
+          "25 comments"
         ],
-        "discussion": "https://news.ycombinator.com/item?id=50381590",
+        "discussion": "https://news.ycombinator.com/item?id=50389990",
         "flag": null
       },
       {
-        "id": "hn-50381914",
-        "title": "GPT-6 Cyber",
-        "url": "https://twitter.com/OpenAI/status/2118390190246879554",
+        "id": "hn-50393235",
+        "title": "Show HN: Agentic Identity Broker, OAuth Delegation for AI Agents",
+        "url": "https://github.com/zalando-incubator/agentic-identity-broker",
         "source": "Hacker News",
-        "date": "2026-11-05",
-        "summary": "",
-        "meta": [
-          "13 points",
-          "0 comments"
-        ],
-        "discussion": "https://news.ycombinator.com/item?id=50381914",
-        "flag": null
-      },
-      {
-        "id": "hn-50380273",
-        "title": "Offline survival assistant – local LLM and Kiwix, runs from a USB stick",
-        "url": "https://github.com/sdalberto/ia-da-sobrevivencia/blob/main/README.en.md",
-        "source": "Hacker News",
-        "date": "2026-11-05",
+        "date": "2026-11-06",
         "summary": "",
         "meta": [
           "13 points",
-          "13 comments"
+          "3 comments"
         ],
-        "discussion": "https://news.ycombinator.com/item?id=50380273",
+        "discussion": "https://news.ycombinator.com/item?id=50393235",
         "flag": null
       },
       {
-        "id": "hn-50379331",
-        "title": "The architecture of open-weight LLMs: MoE, hybrid layers, ternary weights",
-        "url": "https://www.silasdata.com/llm-playground-inside-architectures/",
+        "id": "hn-50394906",
+        "title": "Anthropic IPO Buyers See Valuation as Low as $1.1T",
+        "url": "https://www.bloomberg.com/news/articles/2026-11-06/anthropic-ipo-valuation-expectations-pressured-after-ai-rout",
         "source": "Hacker News",
-        "date": "2026-11-05",
+        "date": "2026-11-06",
         "summary": "",
         "meta": [
-          "5 points",
+          "26 points",
+          "15 comments"
+        ],
+        "discussion": "https://news.ycombinator.com/item?id=50394906",
+        "flag": null
+      },
+      {
+        "id": "hn-50389479",
+        "title": "Stop running everything through LLMs: How I fixed my research agent",
+        "url": "https://www.tinyfish.ai/blog/inside-tinyresearch",
+        "source": "Hacker News",
+        "date": "2026-11-06",
+        "summary": "",
+        "meta": [
+          "16 points",
           "0 comments"
         ],
-        "discussion": "https://news.ycombinator.com/item?id=50379331",
+        "discussion": "https://news.ycombinator.com/item?id=50389479",
         "flag": null
       },
       {
-        "id": "http://arxiv.org/abs/2611.06914v1",
-        "title": "A Framework for Context Enrichment and Selective Robustness in LLM Social Agents",
-        "url": "http://arxiv.org/abs/2611.06914v1",
+        "id": "http://arxiv.org/abs/2611.08487v1",
+        "title": "User Embeddings are Superpositions of Interpretable Behavioral Modes",
+        "url": "http://arxiv.org/abs/2611.08487v1",
         "source": "arXiv",
-        "date": "2026-11-04",
-        "summary": "Researchers use large language models as agents in social simulations, where agents are prompted with observations and background information intended to shape their actions. Yet LLM agents have been shown to substantially change their behavior under meaning-preserving prompt variations, creating a validation problem…",
+        "date": "2026-11-05",
+        "summary": "User embeddings are central components of modern recommendation, personalization, and behavioral modeling systems. Though these embeddings can compactly encode rich behavioral information, they are inherently dense and opaque, limiting interpretability. To address this gap, we argue that user embeddings can be underst…",
         "meta": [
           "Research",
-          "Mattia Greiche +2"
+          "Jonathan Kozaczuk +9"
         ],
         "flag": null
       },
       {
-        "id": "http://arxiv.org/abs/2611.06912v1",
-        "title": "FlowReconBench: Accuracy, calibration and cost of learned and classical flow reconstruction from sparse sensors",
-        "url": "http://arxiv.org/abs/2611.06912v1",
+        "id": "http://arxiv.org/abs/2611.08483v1",
+        "title": "SwarmEvolve: Latent Agent Swarms for Evolutionary Discovery and Optimization",
+        "url": "http://arxiv.org/abs/2611.08483v1",
         "source": "arXiv",
-        "date": "2026-11-04",
-        "summary": "Reconstructing full flow fields from sparse sensors requires prior assumptions about unmeasured regions and physical variables. Yet it remains unclear when learned models outperform classical estimators and which aspects of their predictions can be trusted. FlowReconBench evaluates ten learned and five classical metho…",
+        "date": "2026-11-05",
+        "summary": "LLM-guided evolutionary search uses AI agents to improve programs for mathematical and computational problems by iteratively refining solutions and combining high-scoring methods. However, the process is often slow because the LLM generates a long textual chain of thought for each round and must repeat this generation…",
         "meta": [
           "Research",
-          "Nicolas Tricard +3"
+          "Qile Jiang +1"
         ],
         "flag": null
       },
       {
-        "id": "http://arxiv.org/abs/2611.06911v1",
-        "title": "BEAKER: An Expert-Curated Benchmark for Embodied Brains in Self-Driving Chemical Laboratories",
-        "url": "http://arxiv.org/abs/2611.06911v1",
+        "id": "http://arxiv.org/abs/2611.08478v1",
+        "title": "Scientist World: Grow a Research World for AI-Scientists",
+        "url": "http://arxiv.org/abs/2611.08478v1",
         "source": "arXiv",
-        "date": "2026-11-04",
-        "summary": "Self-Driving Chemical Laboratories (SDCLs) are moving chemical experimentation toward embodied automation, where machines must perceive laboratory scenes, reason about experimental states, and act under physical, procedural, and safety constraints. Although Multimodal Large Language Models (MLLMs) are increasingly con…",
+        "date": "2026-11-05",
+        "summary": "AI-Scientists arrived, but a world for them to grow in did not. Human scientists take theirs for granted $-$ centuries of open problems and shared ideas, waiting in the scientific literature. To AI-Scientists, that world is readable but not runnable, so we build Scientist World for them: every research paper becomes a…",
         "meta": [
           "Research",
-          "Fei Lin +17"
+          "Taiming Lu +2"
         ],
         "flag": null
       },
       {
-        "id": "http://arxiv.org/abs/2611.06910v1",
-        "title": "FrontierPhysics: Evaluating Agents for End-to-End Physics Research",
-        "url": "http://arxiv.org/abs/2611.06910v1",
+        "id": "http://arxiv.org/abs/2611.08472v1",
+        "title": "XStack: A Benchmark for ML Repo Migration",
+        "url": "http://arxiv.org/abs/2611.08472v1",
         "source": "arXiv",
-        "date": "2026-11-04",
-        "summary": "AI agents are playing an increasingly important role in physics research. However, existing physics benchmarks only evaluate fixed questions, isolated sub-tasks, or paper reproduction with given solutions, and rarely check research quality alongside correctness. We introduce FrontierPhysics, an end-to-end benchmark wi…",
+        "date": "2026-11-05",
+        "summary": "ML code should run where researchers choose, not where it was first written. Today, machine learning code mainly lives in two ecosystems, PyTorch on NVIDIA GPUs and JAX on Google TPUs. Migrating repositories between them means building and testing across frameworks and hardware. This migration is (1) a practical need,…",
         "meta": [
           "Research",
-          "Bingran You +71"
+          "Linrong Cai +3"
         ],
         "flag": null
       },
       {
-        "id": "http://arxiv.org/abs/2611.06908v1",
-        "title": "Perceptive Humanoid Motion from Simulation",
-        "url": "http://arxiv.org/abs/2611.06908v1",
+        "id": "http://arxiv.org/abs/2611.08469v1",
+        "title": "Same Behavior, Different Mechanism: What Finite Experiments Can Certify About Integrated Information",
+        "url": "http://arxiv.org/abs/2611.08469v1",
         "source": "arXiv",
-        "date": "2026-11-04",
-        "summary": "Humanoid robots have the potential to automate a wide range of physical tasks. Progress toward generalist humanoid autonomy, however, remains constrained by a data bottleneck: mapping pixels and free-form language to low-level joint commands requires paired supervision, and no corpus of such data exists at sufficientl…",
+        "date": "2026-11-05",
+        "summary": "Interpretability, AI auditing and assessments of machine consciousness increasingly rest on mechanism-level quantities: functionals of a system's causal transition law that describe how it computes, not what it outputs. Experiments see that law only through finite, partial and noisy interventions. We ask when such a q…",
         "meta": [
           "Research",
-          "Siyuan Hu +7"
+          "Linqian Wu +1"
         ],
         "flag": null
       },
       {
-        "id": "http://arxiv.org/abs/2611.06905v1",
-        "title": "Reinforcement Learning Enables Scaling Generalist Robot Policy Improvement",
-        "url": "http://arxiv.org/abs/2611.06905v1",
+        "id": "http://arxiv.org/abs/2611.08465v1",
+        "title": "Towards interpreting any residual stream direction by scaling activation inversion",
+        "url": "http://arxiv.org/abs/2611.08465v1",
         "source": "arXiv",
-        "date": "2026-11-04",
-        "summary": "The introduction of generalist robot policies has enabled a single, large model to learn to perform a variety of tasks from a vast pre-training corpus. While these models often exhibit powerful zero-shot generalization capabilities, they typically require an adaptation phase to achieve sufficient performance in deploy…",
+        "date": "2026-11-05",
+        "summary": "To interpret a direction in a language model's residual stream, we can look for text that strongly activates it. But when such text is found by scanning a corpus, it is limited to what that corpus contains. We develop Maximally-Activating Example Metamodels (MAEMs), language models which map residual stream directions…",
         "meta": [
           "Research",
-          "Michal Korniak +23"
+          "Celeste De Schamphelaere +6"
         ],
         "flag": null
       },
       {
-        "id": "http://arxiv.org/abs/2611.06899v1",
-        "title": "Occlusion for Free: Detecting Occlusion from the Disagreement Between Two Monocular Distance Cues",
-        "url": "http://arxiv.org/abs/2611.06899v1",
+        "id": "http://arxiv.org/abs/2611.08457v1",
+        "title": "Adversarial Training with Large Step Sizes: Implicit Bias, Optimization, and Sharpness",
+        "url": "http://arxiv.org/abs/2611.08457v1",
         "source": "arXiv",
-        "date": "2026-11-04",
-        "summary": "Knowing that a pedestrian is occluded is useful to a robot even when the detector cannot recover the hidden pixels, but occlusion estimators are normally trained on occlusion annotations that deployment settings rarely have. We show that occlusion can be read off two distance estimates a camera-only pipeline already c…",
+        "date": "2026-11-05",
+        "summary": "Adversarial Training (AT) is an important method for improving model robustness. We study the dynamics of deterministic Gradient Descent (GD) in AT. Most existing works in this direction focus on the small or vanishing step sizes regime, where GD resembles a continuous-time flow. However, such step sizes can make trai…",
         "meta": [
           "Research",
-          "Chibueze Praise Onyenweaku +3"
+          "Yi Feng +1"
         ],
         "flag": null
       }
     ],
     "dev": [
       {
-        "id": "hn-50378228",
-        "title": "sshole",
-        "url": "https://sshhole.com",
+        "id": "hn-50388001",
+        "title": "US FAA says it will phase out floppy disks from air traffic control by 2028",
+        "url": "https://www.reuters.com/world/us/us-faa-says-it-will-phase-out-floppy-disks-air-traffic-control-by-2028-2026-11-05/",
         "source": "Hacker News",
-        "date": "2026-11-05",
+        "date": "2026-11-06",
         "summary": "",
         "meta": [
-          "1613 points",
-          "437 comments"
+          "44 points",
+          "64 comments"
         ],
-        "discussion": "https://news.ycombinator.com/item?id=50378228",
+        "discussion": "https://news.ycombinator.com/item?id=50388001",
         "flag": null
       },
       {
-        "id": "hn-50379704",
-        "title": "Alpine Linux Security Advisory: OpenSSH-server password authentication bypass",
-        "url": "https://alpinelinux.org/posts/2026-11-05-openssh-password-authentication-bypass/",
+        "id": "hn-50391456",
+        "title": "Tesla to wind down Cybertruck production",
+        "url": "https://www.nbcnews.com/tech/tech-news/tesla-wind-cybertruck-production-years-poor-sales-markets-rcna607817",
         "source": "Hacker News",
-        "date": "2026-11-05",
+        "date": "2026-11-06",
         "summary": "",
         "meta": [
-          "345 points",
-          "48 comments"
+          "305 points",
+          "903 comments"
         ],
-        "discussion": "https://news.ycombinator.com/item?id=50379704",
+        "discussion": "https://news.ycombinator.com/item?id=50391456",
         "flag": null
       },
       {
-        "id": "hn-50380810",
-        "title": "Motorola Signature 27 with GrapheneOS support",
-        "url": "https://motorolanews.com/motorola-signature-27-2/",
+        "id": "hn-50394855",
+        "title": "First steps in bare-metal programming using UEFI",
+        "url": "https://kevinboone.me/efitest_index.html",
         "source": "Hacker News",
-        "date": "2026-11-05",
+        "date": "2026-11-06",
         "summary": "",
         "meta": [
-          "196 points",
-          "108 comments"
+          "36 points",
+          "1 comments"
         ],
-        "discussion": "https://news.ycombinator.com/item?id=50380810",
+        "discussion": "https://news.ycombinator.com/item?id=50394855",
         "flag": null
       },
       {
-        "id": "hn-50381687",
-        "title": "Launch HN: Rivet (YC W23) – Scale and Orchestrate Agents on S3",
-        "url": "https://github.com/rivet-dev/rivet",
+        "id": "hn-50389333",
+        "title": "Blender's UI and Runtime: Much Faster Than GPUI",
+        "url": "https://github.com/ppmpreetham/BUI",
         "source": "Hacker News",
-        "date": "2026-11-05",
+        "date": "2026-11-06",
         "summary": "",
         "meta": [
-          "22 points",
-          "16 comments"
+          "547 points",
+          "216 comments"
         ],
-        "discussion": "https://news.ycombinator.com/item?id=50381687",
+        "discussion": "https://news.ycombinator.com/item?id=50389333",
         "flag": null
       },
       {
-        "id": "hn-50379576",
-        "title": "September in Servo: <progress>, rounded rectangles, and more",
-        "url": "https://servo.org/blog/2026/11/05/september-in-servo/",
+        "id": "hn-50393758",
+        "title": "Deus Ex",
+        "url": "https://www.filfre.net/2026/11/deus-ex/",
         "source": "Hacker News",
-        "date": "2026-11-05",
+        "date": "2026-11-06",
         "summary": "",
         "meta": [
-          "115 points",
-          "27 comments"
+          "207 points",
+          "94 comments"
         ],
-        "discussion": "https://news.ycombinator.com/item?id=50379576",
+        "discussion": "https://news.ycombinator.com/item?id=50393758",
         "flag": null
       },
       {
-        "id": "hn-50381383",
-        "title": "Window Sweaters",
-        "url": "https://github.com/saragordic/window-sweaters",
+        "id": "hn-50394569",
+        "title": "Rune: A native GPU-rendered Rust UI framework for macOS, Windows, Linux and web",
+        "url": "https://github.com/anomalyco/rune",
         "source": "Hacker News",
-        "date": "2026-11-05",
+        "date": "2026-11-06",
         "summary": "",
         "meta": [
-          "40 points",
-          "14 comments"
-        ],
-        "discussion": "https://news.ycombinator.com/item?id=50381383",
-        "flag": null
-      },
-      {
-        "id": "hn-50381033",
-        "title": "My psychophysics as a bilateral cochlear implant user",
-        "url": "https://claude.ai/artifact/L8qsMc3SorytGW3LA81nYf",
-        "source": "Hacker News",
-        "date": "2026-11-05",
-        "summary": "",
-        "meta": [
-          "82 points",
-          "18 comments"
-        ],
-        "discussion": "https://news.ycombinator.com/item?id=50381033",
-        "flag": null
-      },
-      {
-        "id": "hn-50349667",
-        "title": "The Lisp curse, now coming to your ecosystem",
-        "url": "https://javahippie.net/programming/llm/2026/03/05/the-lisp-curse-coming-to-your-ecosystem.html",
-        "source": "Hacker News",
-        "date": "2026-11-03",
-        "summary": "",
-        "meta": [
-          "95 points",
-          "65 comments"
-        ],
-        "discussion": "https://news.ycombinator.com/item?id=50349667",
-        "flag": null
-      },
-      {
-        "id": "hn-50378571",
-        "title": "Download your favourite YouTube videos",
-        "url": "https://criminallyvulgar.dev/you-should-absolutely-download-your-favourite-youtube-videos/",
-        "source": "Hacker News",
-        "date": "2026-11-05",
-        "summary": "",
-        "meta": [
-          "172 points",
-          "71 comments"
-        ],
-        "discussion": "https://news.ycombinator.com/item?id=50378571",
-        "flag": null
-      },
-      {
-        "id": "hn-50378942",
-        "title": "I wish tech companies knew more about me",
-        "url": "https://rakhim.exotext.com/i-wish-tech-companies-knew-more-about-me",
-        "source": "Hacker News",
-        "date": "2026-11-05",
-        "summary": "",
-        "meta": [
-          "125 points",
-          "106 comments"
-        ],
-        "discussion": "https://news.ycombinator.com/item?id=50378942",
-        "flag": null
-      },
-      {
-        "id": "hn-50380979",
-        "title": "The Stacks Project, Formalized in Lean",
-        "url": "https://axiommath.ai/research/the-stacks-project-formalized/",
-        "source": "Hacker News",
-        "date": "2026-11-05",
-        "summary": "",
-        "meta": [
-          "35 points",
-          "6 comments"
-        ],
-        "discussion": "https://news.ycombinator.com/item?id=50380979",
-        "flag": null
-      },
-      {
-        "id": "hn-50377976",
-        "title": "OpenSSH 10.6p2 Critical workaround for alpine without PAM",
-        "url": "https://www.openssh.org/releasenotes.html#10.6p2",
-        "source": "Hacker News",
-        "date": "2026-11-05",
-        "summary": "",
-        "meta": [
-          "183 points",
+          "28 points",
           "9 comments"
         ],
-        "discussion": "https://news.ycombinator.com/item?id=50377976",
+        "discussion": "https://news.ycombinator.com/item?id=50394569",
         "flag": null
       },
       {
-        "id": "hn-50380658",
-        "title": "Building a Multi-Agent System from Scratch: Architecture Patterns",
-        "url": "https://kadhar.dev/blog/multi-agent-systems-from-scratch",
+        "id": "hn-50393089",
+        "title": "Lippitt-Knoster in Practice (Field Notes for Managing Complex Projects)",
+        "url": "https://sharedphysics.com/lippitt-knoster-in-practice-field-notes-for-managing-complex-projects/",
+        "source": "Hacker News",
+        "date": "2026-11-06",
+        "summary": "",
+        "meta": [
+          "29 points",
+          "1 comments"
+        ],
+        "discussion": "https://news.ycombinator.com/item?id=50393089",
+        "flag": null
+      },
+      {
+        "id": "hn-50382958",
+        "title": "Zero Hour: Telling time was a matter of survival and strategy during WWI (2014)",
+        "url": "https://www.laphamsquarterly.org/roundtable/zero-hour",
         "source": "Hacker News",
         "date": "2026-11-05",
+        "summary": "",
+        "meta": [
+          "53 points",
+          "1 comments"
+        ],
+        "discussion": "https://news.ycombinator.com/item?id=50382958",
+        "flag": null
+      },
+      {
+        "id": "hn-50394292",
+        "title": "Scriptable GeoDNS: Leaving AWS for Bunny",
+        "url": "https://vincent.bernat.ch/en/blog/2026-bunny-geodns",
+        "source": "Hacker News",
+        "date": "2026-11-06",
+        "summary": "",
+        "meta": [
+          "17 points",
+          "7 comments"
+        ],
+        "discussion": "https://news.ycombinator.com/item?id=50394292",
+        "flag": null
+      },
+      {
+        "id": "hn-50390525",
+        "title": "Living beyond the limits of survival: wood ants trapped in a gigantic pitfall (2016)",
+        "url": "https://jhr.pensoft.net/articles.php?id=9096",
+        "source": "Hacker News",
+        "date": "2026-11-06",
+        "summary": "",
+        "meta": [
+          "130 points",
+          "42 comments"
+        ],
+        "discussion": "https://news.ycombinator.com/item?id=50390525",
+        "flag": null
+      },
+      {
+        "id": "hn-50390124",
+        "title": "Dutch 'idealist' bank ASN blocks non-Google Android, including GrapheneOS",
+        "url": "https://github.com/PrivSec-dev/banking-apps-compat-report/issues/105",
+        "source": "Hacker News",
+        "date": "2026-11-06",
+        "summary": "",
+        "meta": [
+          "554 points",
+          "346 comments"
+        ],
+        "discussion": "https://news.ycombinator.com/item?id=50390124",
+        "flag": null
+      },
+      {
+        "id": "hn-50392787",
+        "title": "MTG-I2 First Images",
+        "url": "https://www.eumetsat.int/mtg-i2-first-images",
+        "source": "Hacker News",
+        "date": "2026-11-06",
         "summary": "",
         "meta": [
           "33 points",
-          "11 comments"
+          "6 comments"
         ],
-        "discussion": "https://news.ycombinator.com/item?id=50380658",
+        "discussion": "https://news.ycombinator.com/item?id=50392787",
         "flag": null
       },
       {
-        "id": "hn-50379249",
-        "title": "MCP Explained",
-        "url": "https://mcp-explained.com/",
+        "id": "hn-50389370",
+        "title": "Kugelblitz – Mac-Native Google Earth Alternative",
+        "url": "https://apps.metaebene.me/en/kugelblitz",
+        "source": "Hacker News",
+        "date": "2026-11-06",
+        "summary": "",
+        "meta": [
+          "218 points",
+          "55 comments"
+        ],
+        "discussion": "https://news.ycombinator.com/item?id=50389370",
+        "flag": null
+      },
+      {
+        "id": "hn-50384233",
+        "title": "MS Paint Remote Code Execution Vulnerability",
+        "url": "https://www.cve.org/CVERecord?id=CVE-2026-83844",
         "source": "Hacker News",
         "date": "2026-11-05",
         "summary": "",
         "meta": [
-          "165 points",
-          "87 comments"
+          "684 points",
+          "254 comments"
         ],
-        "discussion": "https://news.ycombinator.com/item?id=50379249",
+        "discussion": "https://news.ycombinator.com/item?id=50384233",
         "flag": null
       }
     ]
