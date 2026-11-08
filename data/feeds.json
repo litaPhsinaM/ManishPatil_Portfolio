@@ -1,285 +1,285 @@
 {
-  "generatedAt": "2026-11-07T16:50:25.543Z",
+  "generatedAt": "2026-11-08T17:03:49.928Z",
   "log": [
     {
-      "t": "2026-11-07T16:50:24.490Z",
+      "t": "2026-11-08T17:03:48.836Z",
       "level": "info",
       "msg": "signal refresh started"
     },
     {
-      "t": "2026-11-07T16:50:24.495Z",
+      "t": "2026-11-08T17:03:48.841Z",
       "level": "info",
       "msg": "GET hacker-news.firebaseio.com/v0/topstories.json"
     },
     {
-      "t": "2026-11-07T16:50:24.714Z",
+      "t": "2026-11-08T17:03:49.029Z",
       "level": "info",
       "msg": "HTTP 200 · resolving top 60 story ids in batches of 10"
     },
     {
-      "t": "2026-11-07T16:50:25.048Z",
+      "t": "2026-11-08T17:03:49.471Z",
       "level": "info",
-      "msg": "59 of 60 resolved to usable stories · 553ms"
+      "msg": "60 of 60 resolved to usable stories · 630ms"
     },
     {
-      "t": "2026-11-07T16:50:25.049Z",
+      "t": "2026-11-08T17:03:49.472Z",
       "level": "info",
       "msg": "GET cisa.gov/feeds/known_exploited_vulnerabilities.json"
     },
     {
-      "t": "2026-11-07T16:50:25.240Z",
+      "t": "2026-11-08T17:03:49.742Z",
       "level": "info",
-      "msg": "HTTP 200 · catalog holds 1769 CVEs · 191ms"
+      "msg": "HTTP 200 · catalog holds 1769 CVEs · 270ms"
     },
     {
-      "t": "2026-11-07T16:50:25.244Z",
+      "t": "2026-11-08T17:03:49.745Z",
       "level": "info",
       "msg": "fleet filter: 1041 of 1769 touch managed platforms"
     },
     {
-      "t": "2026-11-07T16:50:25.252Z",
+      "t": "2026-11-08T17:03:49.751Z",
       "level": "info",
       "msg": "GET export.arxiv.org/api/query cat:cs.AI OR cat:cs.LG"
     },
     {
-      "t": "2026-11-07T16:50:25.540Z",
+      "t": "2026-11-08T17:03:49.926Z",
       "level": "info",
-      "msg": "HTTP 200 · 31,106 bytes of Atom XML · 288ms"
+      "msg": "HTTP 200 · 31,106 bytes of Atom XML · 175ms"
     },
     {
-      "t": "2026-11-07T16:50:25.542Z",
+      "t": "2026-11-08T17:03:49.928Z",
       "level": "info",
-      "msg": "topic split: 5 AI stories, 54 general dev"
+      "msg": "topic split: 5 AI stories, 55 general dev"
     },
     {
-      "t": "2026-11-07T16:50:25.542Z",
+      "t": "2026-11-08T17:03:49.928Z",
       "level": "info",
       "msg": "--- security feed: 14 items ---"
     },
     {
-      "t": "2026-11-07T16:50:25.542Z",
+      "t": "2026-11-08T17:03:49.928Z",
       "level": "info",
       "msg": "ingest CISA KEV · SonicWall SonicOS SSLVPN Use of Single-factor Authenticat… · 2026-11-06"
     },
     {
-      "t": "2026-11-07T16:50:25.542Z",
+      "t": "2026-11-08T17:03:49.928Z",
       "level": "info",
       "msg": "ingest CISA KEV · Apple Multiple Products Improper Authentication Vulnerabi… · 2026-11-04"
     },
     {
-      "t": "2026-11-07T16:50:25.542Z",
+      "t": "2026-11-08T17:03:49.928Z",
       "level": "info",
       "msg": "ingest CISA KEV · WordPress WordPress Core Time-of-check Time-of-use (TOCTO… · 2026-11-03"
     },
     {
-      "t": "2026-11-07T16:50:25.542Z",
+      "t": "2026-11-08T17:03:49.928Z",
       "level": "info",
       "msg": "ingest CISA KEV · Ivanti Connect Secure Generation of Predictable Numbers o… · 2026-10-30"
     },
     {
-      "t": "2026-11-07T16:50:25.542Z",
+      "t": "2026-11-08T17:03:49.928Z",
       "level": "info",
       "msg": "ingest CISA KEV · Ivanti Connect Secure Missing Authentication for Critical… · 2026-10-30"
     },
     {
-      "t": "2026-11-07T16:50:25.543Z",
+      "t": "2026-11-08T17:03:49.928Z",
       "level": "info",
       "msg": "ingest CISA KEV · Cisco Secure Firewall ASA Software and Cisco Secure FTD S… · 2026-10-29"
     },
     {
-      "t": "2026-11-07T16:50:25.543Z",
+      "t": "2026-11-08T17:03:49.928Z",
       "level": "info",
       "msg": "ingest CISA KEV · Broadcom VMWare ESX Insufficient Logging Vulnerability · 2026-10-28"
     },
     {
-      "t": "2026-11-07T16:50:25.543Z",
+      "t": "2026-11-08T17:03:49.928Z",
       "level": "info",
       "msg": "ingest CISA KEV · Linux Kernel Missing Initialization of a Variable Vulnera… · 2026-10-28"
     },
     {
-      "t": "2026-11-07T16:50:25.543Z",
+      "t": "2026-11-08T17:03:49.928Z",
       "level": "info",
       "msg": "ingest CISA KEV · Google Brotli Unchecked Return Value Vulnerability · 2026-10-27"
     },
     {
-      "t": "2026-11-07T16:50:25.543Z",
+      "t": "2026-11-08T17:03:49.928Z",
       "level": "info",
       "msg": "ingest CISA KEV · PHP Memory Corruption Vulnerability · 2026-10-26"
     },
     {
-      "t": "2026-11-07T16:50:25.543Z",
+      "t": "2026-11-08T17:03:49.928Z",
       "level": "info",
       "msg": "ingest CISA KEV · PHP Stale Internal Request-State Vulnerability · 2026-10-26"
     },
     {
-      "t": "2026-11-07T16:50:25.543Z",
+      "t": "2026-11-08T17:03:49.928Z",
       "level": "info",
       "msg": "ingest CISA KEV · Fortinet Multiple Products Path Traversal Vulnerability · 2026-10-16"
     },
     {
-      "t": "2026-11-07T16:50:25.543Z",
+      "t": "2026-11-08T17:03:49.928Z",
       "level": "info",
       "msg": "ingest CISA KEV · Cisco Secure Email Gateway Relative Path Traversal Vulner… · 2026-10-14"
     },
     {
-      "t": "2026-11-07T16:50:25.543Z",
+      "t": "2026-11-08T17:03:49.928Z",
       "level": "info",
       "msg": "ingest CISA KEV · Palo Alto Networks PAN-OS Code Injection Vulnerability · 2026-10-14"
     },
     {
-      "t": "2026-11-07T16:50:25.543Z",
+      "t": "2026-11-08T17:03:49.928Z",
       "level": "info",
       "msg": "--- ai feed: 14 items ---"
     },
     {
-      "t": "2026-11-07T16:50:25.543Z",
+      "t": "2026-11-08T17:03:49.928Z",
       "level": "info",
-      "msg": "ingest Hacker News · Gemini Omni 1.2 Flash · 2026-11-06"
+      "msg": "ingest Hacker News · Goodbye Claude, hello Pi · 2026-11-08"
     },
     {
-      "t": "2026-11-07T16:50:25.543Z",
+      "t": "2026-11-08T17:03:49.928Z",
       "level": "info",
-      "msg": "ingest Hacker News · AI is dramatically accelerating AI research · 2026-11-06"
+      "msg": "ingest Hacker News · OpenAI raises $11B at a $1.25T valuation · 2026-11-08"
     },
     {
-      "t": "2026-11-07T16:50:25.543Z",
+      "t": "2026-11-08T17:03:49.928Z",
       "level": "info",
-      "msg": "ingest Hacker News · Memorilla: Latent Semantic Memory for LLMs · 2026-11-06"
+      "msg": "ingest Hacker News · Anthropic strikes $3.4B deal to generate gas-fired power… · 2026-11-08"
     },
     {
-      "t": "2026-11-07T16:50:25.543Z",
+      "t": "2026-11-08T17:03:49.928Z",
       "level": "info",
-      "msg": "ingest Hacker News · Anthropic IPO buyers see valuation as low as $1.1T · 2026-11-06"
+      "msg": "ingest Hacker News · Claude Code's \"Don't Ask Again\" exposes passwords in 1,12… · 2026-11-07"
     },
     {
-      "t": "2026-11-07T16:50:25.543Z",
+      "t": "2026-11-08T17:03:49.928Z",
+      "level": "info",
+      "msg": "ingest Hacker News · The end of Microsoft Research's AI Frontiers group · 2026-11-07"
+    },
+    {
+      "t": "2026-11-08T17:03:49.928Z",
       "level": "info",
       "msg": "ingest arXiv · User Embeddings are Superpositions of Interpretable Behav… · 2026-11-05"
     },
     {
-      "t": "2026-11-07T16:50:25.543Z",
+      "t": "2026-11-08T17:03:49.928Z",
       "level": "info",
       "msg": "ingest arXiv · SwarmEvolve: Latent Agent Swarms for Evolutionary Discove… · 2026-11-05"
     },
     {
-      "t": "2026-11-07T16:50:25.543Z",
+      "t": "2026-11-08T17:03:49.928Z",
       "level": "info",
       "msg": "ingest arXiv · Scientist World: Grow a Research World for AI-Scientists · 2026-11-05"
     },
     {
-      "t": "2026-11-07T16:50:25.543Z",
+      "t": "2026-11-08T17:03:49.928Z",
       "level": "info",
       "msg": "ingest arXiv · XStack: A Benchmark for ML Repo Migration · 2026-11-05"
     },
     {
-      "t": "2026-11-07T16:50:25.543Z",
+      "t": "2026-11-08T17:03:49.928Z",
       "level": "info",
       "msg": "ingest arXiv · Same Behavior, Different Mechanism: What Finite Experimen… · 2026-11-05"
     },
     {
-      "t": "2026-11-07T16:50:25.543Z",
+      "t": "2026-11-08T17:03:49.928Z",
       "level": "info",
       "msg": "ingest arXiv · Towards interpreting any residual stream direction by sca… · 2026-11-05"
     },
     {
-      "t": "2026-11-07T16:50:25.543Z",
+      "t": "2026-11-08T17:03:49.928Z",
       "level": "info",
       "msg": "ingest arXiv · Adversarial Training with Large Step Sizes: Implicit Bias… · 2026-11-05"
     },
     {
-      "t": "2026-11-07T16:50:25.543Z",
+      "t": "2026-11-08T17:03:49.928Z",
       "level": "info",
       "msg": "ingest arXiv · Unpacking the Compute Efficiency of Strong-to-Weak OPD ag… · 2026-11-05"
     },
     {
-      "t": "2026-11-07T16:50:25.543Z",
+      "t": "2026-11-08T17:03:49.928Z",
       "level": "info",
       "msg": "ingest arXiv · ReproBridge: Building Reproducibility into ML Research Ar… · 2026-11-05"
     },
     {
-      "t": "2026-11-07T16:50:25.543Z",
-      "level": "info",
-      "msg": "ingest arXiv · A Hidden Markov Preference Model for Online Prediction of… · 2026-11-05"
-    },
-    {
-      "t": "2026-11-07T16:50:25.543Z",
+      "t": "2026-11-08T17:03:49.928Z",
       "level": "info",
       "msg": "--- dev feed: 14 items ---"
     },
     {
-      "t": "2026-11-07T16:50:25.543Z",
+      "t": "2026-11-08T17:03:49.928Z",
       "level": "info",
-      "msg": "ingest Hacker News · The $8 Linux Computer (2022) · 2026-11-07"
+      "msg": "ingest Hacker News · \"RAM Altman\"= Linux script emailing Altman daily on how m… · 2026-11-08"
     },
     {
-      "t": "2026-11-07T16:50:25.543Z",
+      "t": "2026-11-08T17:03:49.928Z",
       "level": "info",
-      "msg": "ingest Hacker News · Need for Speed Underground 2 online in the browser · 2026-11-07"
+      "msg": "ingest Hacker News · Llama-modchip: 284B DeepSeek on 64GB RAM, no GPU · 2026-11-08"
     },
     {
-      "t": "2026-11-07T16:50:25.543Z",
+      "t": "2026-11-08T17:03:49.928Z",
       "level": "info",
-      "msg": "ingest Hacker News · They don't make 'em like that any more: Borland Turbo Pas… · 2026-11-07"
+      "msg": "ingest Hacker News · The Reconstruction of Torn Documents · 2026-11-06"
     },
     {
-      "t": "2026-11-07T16:50:25.543Z",
+      "t": "2026-11-08T17:03:49.928Z",
       "level": "info",
-      "msg": "ingest Hacker News · Libghostty 1.0 · 2026-11-06"
+      "msg": "ingest Hacker News · I'm not a fan of Deno's security model (2024) · 2026-11-08"
     },
     {
-      "t": "2026-11-07T16:50:25.543Z",
+      "t": "2026-11-08T17:03:49.928Z",
       "level": "info",
-      "msg": "ingest Hacker News · Running a law firm on Free software · 2026-11-07"
+      "msg": "ingest Hacker News · Porting Android 16 to my blind mother's keypad phone · 2026-11-04"
     },
     {
-      "t": "2026-11-07T16:50:25.543Z",
+      "t": "2026-11-08T17:03:49.928Z",
       "level": "info",
-      "msg": "ingest Hacker News · British Library Legal deposit and web archiving · 2026-11-03"
+      "msg": "ingest Hacker News · Writing as a thinking tool · 2026-11-08"
     },
     {
-      "t": "2026-11-07T16:50:25.543Z",
+      "t": "2026-11-08T17:03:49.928Z",
       "level": "info",
-      "msg": "ingest Hacker News · How Long Can Life Wait? · 2026-11-07"
+      "msg": "ingest Hacker News · Tesla Hasn't Had a Successful New Product Launch Since JB… · 2026-11-08"
     },
     {
-      "t": "2026-11-07T16:50:25.543Z",
+      "t": "2026-11-08T17:03:49.928Z",
       "level": "info",
-      "msg": "ingest Hacker News · Every Mac comes with an (undocumented) family member clas… · 2026-11-07"
+      "msg": "ingest Hacker News · JIT bitmap text rendering for microcontrollers · 2026-11-08"
     },
     {
-      "t": "2026-11-07T16:50:25.543Z",
+      "t": "2026-11-08T17:03:49.928Z",
       "level": "info",
-      "msg": "ingest Hacker News · Text.js: Build full-stack React apps that render inside c… · 2026-11-04"
+      "msg": "ingest Hacker News · What I run on my $10 USD OpenStick homelab · 2026-11-07"
     },
     {
-      "t": "2026-11-07T16:50:25.543Z",
+      "t": "2026-11-08T17:03:49.928Z",
       "level": "info",
-      "msg": "ingest Hacker News · Building the NBC News Big Board · 2026-11-04"
+      "msg": "ingest Hacker News · Agent memory needs its OpenTelemetry moment · 2026-11-08"
     },
     {
-      "t": "2026-11-07T16:50:25.543Z",
+      "t": "2026-11-08T17:03:49.928Z",
       "level": "info",
-      "msg": "ingest Hacker News · ToothPaste · 2026-11-03"
+      "msg": "ingest Hacker News · Show HN: Vegetable Gardening for Engineers · 2026-11-04"
     },
     {
-      "t": "2026-11-07T16:50:25.543Z",
+      "t": "2026-11-08T17:03:49.928Z",
       "level": "info",
-      "msg": "ingest Hacker News · Tesla to wind down Cybertruck production · 2026-11-06"
+      "msg": "ingest Hacker News · Clj.rs – a Clojure dialect implemented in Rust · 2026-11-04"
     },
     {
-      "t": "2026-11-07T16:50:25.543Z",
+      "t": "2026-11-08T17:03:49.928Z",
       "level": "info",
-      "msg": "ingest Hacker News · Tasfer: a text editor drawn on a 2D canvas · 2026-11-03"
+      "msg": "ingest Hacker News · Person of Interest · 2026-11-08"
     },
     {
-      "t": "2026-11-07T16:50:25.543Z",
+      "t": "2026-11-08T17:03:49.928Z",
       "level": "info",
-      "msg": "ingest Hacker News · A Jev that can ask Opus for help gives Opus accuracy at 4… · 2026-11-06"
+      "msg": "ingest Hacker News · Petered · 2026-11-08"
     },
     {
-      "t": "2026-11-07T16:50:25.543Z",
+      "t": "2026-11-08T17:03:49.928Z",
       "level": "info",
-      "msg": "publishing 42 items across 3 feeds · 1053ms"
+      "msg": "publishing 42 items across 3 feeds · 1092ms"
     }
   ],
   "feeds": {
@@ -483,59 +483,73 @@
     ],
     "ai": [
       {
-        "id": "hn-50392118",
-        "title": "Gemini Omni 1.2 Flash",
-        "url": "https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemini-omni-1-2-flash/",
+        "id": "hn-50410107",
+        "title": "Goodbye Claude, hello Pi",
+        "url": "https://caleb.software/posts/claude-to-pi.html",
         "source": "Hacker News",
-        "date": "2026-11-06",
+        "date": "2026-11-08",
         "summary": "",
         "meta": [
-          "353 points",
-          "243 comments"
+          "545 points",
+          "346 comments"
         ],
-        "discussion": "https://news.ycombinator.com/item?id=50392118",
+        "discussion": "https://news.ycombinator.com/item?id=50410107",
         "flag": null
       },
       {
-        "id": "hn-50397994",
-        "title": "AI is dramatically accelerating AI research",
-        "url": "https://www.planned-obsolescence.org/p/ai-is-dramatically-accelerating-ai",
+        "id": "hn-50413822",
+        "title": "OpenAI raises $11B at a $1.25T valuation",
+        "url": "https://247wallst.com/investing/2026/11/07/openai-just-raised-11-billion-at-a-1-25-trillion-valuation-below-the-1-4-trillion-it-first-sought/",
         "source": "Hacker News",
-        "date": "2026-11-06",
+        "date": "2026-11-08",
         "summary": "",
         "meta": [
-          "342 points",
-          "322 comments"
+          "105 points",
+          "91 comments"
         ],
-        "discussion": "https://news.ycombinator.com/item?id=50397994",
+        "discussion": "https://news.ycombinator.com/item?id=50413822",
         "flag": null
       },
       {
-        "id": "hn-50395919",
-        "title": "Memorilla: Latent Semantic Memory for LLMs",
-        "url": "https://arxiv.org/abs/2610.21375",
+        "id": "hn-50412760",
+        "title": "Anthropic strikes $3.4B deal to generate gas-fired power for data centres",
+        "url": "https://www.ft.com/content/41bf5c6a-9735-4f1a-a8e3-2bcccad58ba0",
         "source": "Hacker News",
-        "date": "2026-11-06",
+        "date": "2026-11-08",
         "summary": "",
         "meta": [
-          "112 points",
-          "13 comments"
+          "27 points",
+          "19 comments"
         ],
-        "discussion": "https://news.ycombinator.com/item?id=50395919",
+        "discussion": "https://news.ycombinator.com/item?id=50412760",
         "flag": null
       },
       {
-        "id": "hn-50394906",
-        "title": "Anthropic IPO buyers see valuation as low as $1.1T",
-        "url": "https://www.bloomberg.com/news/articles/2026-11-06/anthropic-ipo-valuation-expectations-pressured-after-ai-rout",
+        "id": "hn-50407882",
+        "title": "Claude Code's \"Don't Ask Again\" exposes passwords in 1,122 public GitHub files",
+        "url": "https://apiiro.com/blog/coding-agents-leaking-secrets-github-dont-ask-again",
         "source": "Hacker News",
-        "date": "2026-11-06",
+        "date": "2026-11-07",
         "summary": "",
         "meta": [
-          "295 points",
-          "591 comments"
+          "500 points",
+          "358 comments"
         ],
-        "discussion": "https://news.ycombinator.com/item?id=50394906",
+        "discussion": "https://news.ycombinator.com/item?id=50407882",
+        "flag": null
+      },
+      {
+        "id": "hn-50406563",
+        "title": "The end of Microsoft Research's AI Frontiers group",
+        "url": "https://hunch.net/?p=13764006",
+        "source": "Hacker News",
+        "date": "2026-11-07",
+        "summary": "",
+        "meta": [
+          "481 points",
+          "294 comments"
+        ],
+        "discussion": "https://news.ycombinator.com/item?id=50406563",
         "flag": null
       },
       {
@@ -654,216 +668,203 @@
           "Yubo Wang +4"
         ],
         "flag": null
-      },
-      {
-        "id": "http://arxiv.org/abs/2611.08445v1",
-        "title": "A Hidden Markov Preference Model for Online Prediction of Adversary Actions",
-        "url": "http://arxiv.org/abs/2611.08445v1",
-        "source": "arXiv",
-        "date": "2026-11-05",
-        "summary": "A defender anticipating an attacker needs a probability distribution over the attacker's next action from information available before that action occurs. Two structures complicate this: the attacker's behavioral regime persists and can switch within an episode, and each action combines an operation with state-depende…",
-        "meta": [
-          "Research",
-          "Angel Daruna +5"
-        ],
-        "flag": null
       }
     ],
     "dev": [
       {
-        "id": "hn-50404599",
-        "title": "The $8 Linux Computer (2022)",
-        "url": "http://thelittleengineerthatcould.blogspot.com/2022/12/the-8-linux-computer.html",
+        "id": "hn-50414839",
+        "title": "\"RAM Altman\"= Linux script emailing Altman daily on how much RAM left on your PC",
+        "url": "https://respawnfirst.com/linux-script-emails-sam-altman-unused-ram-ram-altman/",
         "source": "Hacker News",
-        "date": "2026-11-07",
-        "summary": "",
-        "meta": [
-          "85 points",
-          "37 comments"
-        ],
-        "discussion": "https://news.ycombinator.com/item?id=50404599",
-        "flag": null
-      },
-      {
-        "id": "hn-50403052",
-        "title": "Need for Speed Underground 2 online in the browser",
-        "url": "https://nfsu2.xyz/",
-        "source": "Hacker News",
-        "date": "2026-11-07",
-        "summary": "",
-        "meta": [
-          "449 points",
-          "142 comments"
-        ],
-        "discussion": "https://news.ycombinator.com/item?id=50403052",
-        "flag": null
-      },
-      {
-        "id": "hn-50405678",
-        "title": "They don't make 'em like that any more: Borland Turbo Pascal 7",
-        "url": "https://kevinboone.me/tpwin.html",
-        "source": "Hacker News",
-        "date": "2026-11-07",
-        "summary": "",
-        "meta": [
-          "11 points",
-          "1 comments"
-        ],
-        "discussion": "https://news.ycombinator.com/item?id=50405678",
-        "flag": null
-      },
-      {
-        "id": "hn-50399933",
-        "title": "Libghostty 1.0",
-        "url": "https://mitchellh.com/writing/libghostty-1-0",
-        "source": "Hacker News",
-        "date": "2026-11-06",
-        "summary": "",
-        "meta": [
-          "888 points",
-          "148 comments"
-        ],
-        "discussion": "https://news.ycombinator.com/item?id=50399933",
-        "flag": null
-      },
-      {
-        "id": "hn-50403066",
-        "title": "Running a law firm on Free software",
-        "url": "https://decoded.legal/blog/2026/11/running-a-law-firm-on-free-software-2026-edition/",
-        "source": "Hacker News",
-        "date": "2026-11-07",
-        "summary": "",
-        "meta": [
-          "117 points",
-          "54 comments"
-        ],
-        "discussion": "https://news.ycombinator.com/item?id=50403066",
-        "flag": null
-      },
-      {
-        "id": "hn-50352791",
-        "title": "British Library Legal deposit and web archiving",
-        "url": "https://www.bl.uk/services/legal-deposit/web-archiving",
-        "source": "Hacker News",
-        "date": "2026-11-03",
-        "summary": "",
-        "meta": [
-          "30 points",
-          "8 comments"
-        ],
-        "discussion": "https://news.ycombinator.com/item?id=50352791",
-        "flag": null
-      },
-      {
-        "id": "hn-50405789",
-        "title": "How Long Can Life Wait?",
-        "url": "https://mceglowski.substack.com/p/how-long-can-life-wait",
-        "source": "Hacker News",
-        "date": "2026-11-07",
-        "summary": "",
-        "meta": [
-          "5 points",
-          "1 comments"
-        ],
-        "discussion": "https://news.ycombinator.com/item?id=50405789",
-        "flag": null
-      },
-      {
-        "id": "hn-50403097",
-        "title": "Every Mac comes with an (undocumented) family member classifier",
-        "url": "https://8rank.ai/game/apple-intelligence-personal-knowledge-graph",
-        "source": "Hacker News",
-        "date": "2026-11-07",
-        "summary": "",
-        "meta": [
-          "387 points",
-          "222 comments"
-        ],
-        "discussion": "https://news.ycombinator.com/item?id=50403097",
-        "flag": null
-      },
-      {
-        "id": "hn-50361657",
-        "title": "Text.js: Build full-stack React apps that render inside console.log",
-        "url": "https://textjs.org/",
-        "source": "Hacker News",
-        "date": "2026-11-04",
-        "summary": "",
-        "meta": [
-          "10 points",
-          "2 comments"
-        ],
-        "discussion": "https://news.ycombinator.com/item?id=50361657",
-        "flag": null
-      },
-      {
-        "id": "hn-50361417",
-        "title": "Building the NBC News Big Board",
-        "url": "https://ejfox.com/projects/nbc-big-board",
-        "source": "Hacker News",
-        "date": "2026-11-04",
-        "summary": "",
-        "meta": [
-          "37 points",
-          "11 comments"
-        ],
-        "discussion": "https://news.ycombinator.com/item?id=50361417",
-        "flag": null
-      },
-      {
-        "id": "hn-50356037",
-        "title": "ToothPaste",
-        "url": "https://brisk4t.github.io/blog/toothpaste/",
-        "source": "Hacker News",
-        "date": "2026-11-03",
-        "summary": "",
-        "meta": [
-          "65 points",
-          "11 comments"
-        ],
-        "discussion": "https://news.ycombinator.com/item?id=50356037",
-        "flag": null
-      },
-      {
-        "id": "hn-50391456",
-        "title": "Tesla to wind down Cybertruck production",
-        "url": "https://www.nbcnews.com/tech/tech-news/tesla-wind-cybertruck-production-years-poor-sales-markets-rcna607817",
-        "source": "Hacker News",
-        "date": "2026-11-06",
-        "summary": "",
-        "meta": [
-          "1101 points",
-          "1961 comments"
-        ],
-        "discussion": "https://news.ycombinator.com/item?id=50391456",
-        "flag": null
-      },
-      {
-        "id": "hn-50358094",
-        "title": "Tasfer: a text editor drawn on a 2D canvas",
-        "url": "https://www.hamza.se/blog/tasfer",
-        "source": "Hacker News",
-        "date": "2026-11-03",
+        "date": "2026-11-08",
         "summary": "",
         "meta": [
           "19 points",
-          "8 comments"
+          "0 comments"
         ],
-        "discussion": "https://news.ycombinator.com/item?id=50358094",
+        "discussion": "https://news.ycombinator.com/item?id=50414839",
         "flag": null
       },
       {
-        "id": "hn-50397429",
-        "title": "A Jev that can ask Opus for help gives Opus accuracy at 4x lower cost",
-        "url": "https://hightouch.com/blog/llm-judges-identity-resolution",
+        "id": "hn-50411961",
+        "title": "Llama-modchip: 284B DeepSeek on 64GB RAM, no GPU",
+        "url": "https://github.com/synchopate/llama-modchip",
+        "source": "Hacker News",
+        "date": "2026-11-08",
+        "summary": "",
+        "meta": [
+          "180 points",
+          "57 comments"
+        ],
+        "discussion": "https://news.ycombinator.com/item?id=50411961",
+        "flag": null
+      },
+      {
+        "id": "hn-50389923",
+        "title": "The Reconstruction of Torn Documents",
+        "url": "https://www.bundesarchiv.de/en/stasi-records-archive/the-reconstruction-of-torn-documents/",
         "source": "Hacker News",
         "date": "2026-11-06",
         "summary": "",
         "meta": [
-          "538 points",
-          "134 comments"
+          "26 points",
+          "3 comments"
         ],
-        "discussion": "https://news.ycombinator.com/item?id=50397429",
+        "discussion": "https://news.ycombinator.com/item?id=50389923",
+        "flag": null
+      },
+      {
+        "id": "hn-50413769",
+        "title": "I'm not a fan of Deno's security model (2024)",
+        "url": "https://goldstein.lol/posts/deno-security/",
+        "source": "Hacker News",
+        "date": "2026-11-08",
+        "summary": "",
+        "meta": [
+          "25 points",
+          "7 comments"
+        ],
+        "discussion": "https://news.ycombinator.com/item?id=50413769",
+        "flag": null
+      },
+      {
+        "id": "hn-50366821",
+        "title": "Porting Android 16 to my blind mother's keypad phone",
+        "url": "https://z1x.us/blog/four-hundred-bucks-of-e-waste",
+        "source": "Hacker News",
+        "date": "2026-11-04",
+        "summary": "",
+        "meta": [
+          "83 points",
+          "28 comments"
+        ],
+        "discussion": "https://news.ycombinator.com/item?id=50366821",
+        "flag": null
+      },
+      {
+        "id": "hn-50412067",
+        "title": "Writing as a thinking tool",
+        "url": "http://muratbuffalo.blogspot.com/2026/11/writing-as-thinking-tool.html",
+        "source": "Hacker News",
+        "date": "2026-11-08",
+        "summary": "",
+        "meta": [
+          "95 points",
+          "19 comments"
+        ],
+        "discussion": "https://news.ycombinator.com/item?id=50412067",
+        "flag": null
+      },
+      {
+        "id": "hn-50414427",
+        "title": "Tesla Hasn't Had a Successful New Product Launch Since JB Straubel Stepped Down",
+        "url": "https://cleantechnica.com/2026/11/07/tesla-hasnt-had-a-successful-new-product-launch-since-jb-straubel-stepped-down-as-cto/",
+        "source": "Hacker News",
+        "date": "2026-11-08",
+        "summary": "",
+        "meta": [
+          "148 points",
+          "98 comments"
+        ],
+        "discussion": "https://news.ycombinator.com/item?id=50414427",
+        "flag": null
+      },
+      {
+        "id": "hn-50412072",
+        "title": "JIT bitmap text rendering for microcontrollers",
+        "url": "https://linebender.org/blog/jit-bitmap-text/",
+        "source": "Hacker News",
+        "date": "2026-11-08",
+        "summary": "",
+        "meta": [
+          "62 points",
+          "11 comments"
+        ],
+        "discussion": "https://news.ycombinator.com/item?id=50412072",
+        "flag": null
+      },
+      {
+        "id": "hn-50406670",
+        "title": "What I run on my $10 USD OpenStick homelab",
+        "url": "https://blog.bosscher.ch/posts/openstick/",
+        "source": "Hacker News",
+        "date": "2026-11-07",
+        "summary": "",
+        "meta": [
+          "690 points",
+          "125 comments"
+        ],
+        "discussion": "https://news.ycombinator.com/item?id=50406670",
+        "flag": null
+      },
+      {
+        "id": "hn-50411467",
+        "title": "Agent memory needs its OpenTelemetry moment",
+        "url": "https://www.lorekit.io/blog/open-agent-memory-format",
+        "source": "Hacker News",
+        "date": "2026-11-08",
+        "summary": "",
+        "meta": [
+          "123 points",
+          "88 comments"
+        ],
+        "discussion": "https://news.ycombinator.com/item?id=50411467",
+        "flag": null
+      },
+      {
+        "id": "hn-50362963",
+        "title": "Show HN: Vegetable Gardening for Engineers",
+        "url": "https://jrcpl.us/contrib/2020/gardening-for-engineers/",
+        "source": "Hacker News",
+        "date": "2026-11-04",
+        "summary": "",
+        "meta": [
+          "17 points",
+          "0 comments"
+        ],
+        "discussion": "https://news.ycombinator.com/item?id=50362963",
+        "flag": null
+      },
+      {
+        "id": "hn-50366902",
+        "title": "Clj.rs – a Clojure dialect implemented in Rust",
+        "url": "https://clj.rs/",
+        "source": "Hacker News",
+        "date": "2026-11-04",
+        "summary": "",
+        "meta": [
+          "119 points",
+          "47 comments"
+        ],
+        "discussion": "https://news.ycombinator.com/item?id=50366902",
+        "flag": null
+      },
+      {
+        "id": "hn-50412318",
+        "title": "Person of Interest",
+        "url": "https://krthr.co/person-of-interest/",
+        "source": "Hacker News",
+        "date": "2026-11-08",
+        "summary": "",
+        "meta": [
+          "227 points",
+          "153 comments"
+        ],
+        "discussion": "https://news.ycombinator.com/item?id=50412318",
+        "flag": null
+      },
+      {
+        "id": "hn-50412152",
+        "title": "Petered",
+        "url": "https://aworkinglibrary.com/writing/petered",
+        "source": "Hacker News",
+        "date": "2026-11-08",
+        "summary": "",
+        "meta": [
+          "113 points",
+          "71 comments"
+        ],
+        "discussion": "https://news.ycombinator.com/item?id=50412152",
         "flag": null
       }
     ]
