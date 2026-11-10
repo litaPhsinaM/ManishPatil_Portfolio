@@ -1,285 +1,285 @@
 {
-  "generatedAt": "2026-11-09T21:26:12.993Z",
+  "generatedAt": "2026-11-10T18:40:26.622Z",
   "log": [
     {
-      "t": "2026-11-09T21:26:11.763Z",
+      "t": "2026-11-10T18:40:25.088Z",
       "level": "info",
       "msg": "signal refresh started"
     },
     {
-      "t": "2026-11-09T21:26:11.767Z",
+      "t": "2026-11-10T18:40:25.091Z",
       "level": "info",
       "msg": "GET hacker-news.firebaseio.com/v0/topstories.json"
     },
     {
-      "t": "2026-11-09T21:26:11.969Z",
+      "t": "2026-11-10T18:40:25.406Z",
       "level": "info",
       "msg": "HTTP 200 · resolving top 60 story ids in batches of 10"
     },
     {
-      "t": "2026-11-09T21:26:12.488Z",
+      "t": "2026-11-10T18:40:25.965Z",
       "level": "info",
-      "msg": "59 of 60 resolved to usable stories · 721ms"
+      "msg": "59 of 60 resolved to usable stories · 874ms"
     },
     {
-      "t": "2026-11-09T21:26:12.489Z",
+      "t": "2026-11-10T18:40:25.966Z",
       "level": "info",
       "msg": "GET cisa.gov/feeds/known_exploited_vulnerabilities.json"
     },
     {
-      "t": "2026-11-09T21:26:12.790Z",
+      "t": "2026-11-10T18:40:26.110Z",
       "level": "info",
-      "msg": "HTTP 200 · catalog holds 1773 CVEs · 301ms"
+      "msg": "HTTP 200 · catalog holds 1773 CVEs · 144ms"
     },
     {
-      "t": "2026-11-09T21:26:12.793Z",
+      "t": "2026-11-10T18:40:26.113Z",
       "level": "info",
       "msg": "fleet filter: 1041 of 1773 touch managed platforms"
     },
     {
-      "t": "2026-11-09T21:26:12.799Z",
+      "t": "2026-11-10T18:40:26.118Z",
       "level": "info",
       "msg": "GET export.arxiv.org/api/query cat:cs.AI OR cat:cs.LG"
     },
     {
-      "t": "2026-11-09T21:26:12.991Z",
+      "t": "2026-11-10T18:40:26.621Z",
       "level": "info",
-      "msg": "HTTP 200 · 27,456 bytes of Atom XML · 192ms"
+      "msg": "HTTP 200 · 28,489 bytes of Atom XML · 503ms"
     },
     {
-      "t": "2026-11-09T21:26:12.993Z",
+      "t": "2026-11-10T18:40:26.622Z",
       "level": "info",
-      "msg": "topic split: 9 AI stories, 50 general dev"
+      "msg": "topic split: 7 AI stories, 52 general dev"
     },
     {
-      "t": "2026-11-09T21:26:12.993Z",
+      "t": "2026-11-10T18:40:26.622Z",
       "level": "info",
       "msg": "--- security feed: 14 items ---"
     },
     {
-      "t": "2026-11-09T21:26:12.993Z",
+      "t": "2026-11-10T18:40:26.622Z",
       "level": "info",
       "msg": "ingest CISA KEV · SonicWall SonicOS SSLVPN Use of Single-factor Authenticat… · 2026-11-06"
     },
     {
-      "t": "2026-11-09T21:26:12.993Z",
+      "t": "2026-11-10T18:40:26.622Z",
       "level": "info",
       "msg": "ingest CISA KEV · Apple Multiple Products Improper Authentication Vulnerabi… · 2026-11-04"
     },
     {
-      "t": "2026-11-09T21:26:12.993Z",
+      "t": "2026-11-10T18:40:26.622Z",
       "level": "info",
       "msg": "ingest CISA KEV · WordPress WordPress Core Time-of-check Time-of-use (TOCTO… · 2026-11-03"
     },
     {
-      "t": "2026-11-09T21:26:12.993Z",
+      "t": "2026-11-10T18:40:26.622Z",
       "level": "info",
       "msg": "ingest CISA KEV · Ivanti Connect Secure Generation of Predictable Numbers o… · 2026-10-30"
     },
     {
-      "t": "2026-11-09T21:26:12.993Z",
+      "t": "2026-11-10T18:40:26.622Z",
       "level": "info",
       "msg": "ingest CISA KEV · Ivanti Connect Secure Missing Authentication for Critical… · 2026-10-30"
     },
     {
-      "t": "2026-11-09T21:26:12.993Z",
+      "t": "2026-11-10T18:40:26.622Z",
       "level": "info",
       "msg": "ingest CISA KEV · Cisco Secure Firewall ASA Software and Cisco Secure FTD S… · 2026-10-29"
     },
     {
-      "t": "2026-11-09T21:26:12.993Z",
+      "t": "2026-11-10T18:40:26.622Z",
       "level": "info",
       "msg": "ingest CISA KEV · Broadcom VMWare ESX Insufficient Logging Vulnerability · 2026-10-28"
     },
     {
-      "t": "2026-11-09T21:26:12.993Z",
+      "t": "2026-11-10T18:40:26.622Z",
       "level": "info",
       "msg": "ingest CISA KEV · Linux Kernel Missing Initialization of a Variable Vulnera… · 2026-10-28"
     },
     {
-      "t": "2026-11-09T21:26:12.993Z",
+      "t": "2026-11-10T18:40:26.622Z",
       "level": "info",
       "msg": "ingest CISA KEV · Google Brotli Unchecked Return Value Vulnerability · 2026-10-27"
     },
     {
-      "t": "2026-11-09T21:26:12.993Z",
+      "t": "2026-11-10T18:40:26.622Z",
       "level": "info",
       "msg": "ingest CISA KEV · PHP Memory Corruption Vulnerability · 2026-10-26"
     },
     {
-      "t": "2026-11-09T21:26:12.993Z",
+      "t": "2026-11-10T18:40:26.622Z",
       "level": "info",
       "msg": "ingest CISA KEV · PHP Stale Internal Request-State Vulnerability · 2026-10-26"
     },
     {
-      "t": "2026-11-09T21:26:12.993Z",
+      "t": "2026-11-10T18:40:26.622Z",
       "level": "info",
       "msg": "ingest CISA KEV · Fortinet Multiple Products Path Traversal Vulnerability · 2026-10-16"
     },
     {
-      "t": "2026-11-09T21:26:12.993Z",
+      "t": "2026-11-10T18:40:26.622Z",
       "level": "info",
       "msg": "ingest CISA KEV · Cisco Secure Email Gateway Relative Path Traversal Vulner… · 2026-10-14"
     },
     {
-      "t": "2026-11-09T21:26:12.993Z",
+      "t": "2026-11-10T18:40:26.622Z",
       "level": "info",
       "msg": "ingest CISA KEV · Palo Alto Networks PAN-OS Code Injection Vulnerability · 2026-10-14"
     },
     {
-      "t": "2026-11-09T21:26:12.993Z",
+      "t": "2026-11-10T18:40:26.622Z",
       "level": "info",
       "msg": "--- ai feed: 14 items ---"
     },
     {
-      "t": "2026-11-09T21:26:12.993Z",
+      "t": "2026-11-10T18:40:26.622Z",
       "level": "info",
-      "msg": "ingest Hacker News · Claude Fable 5.2 Scores 65 on Artificial Analysis, Highes… · 2026-11-09"
+      "msg": "ingest Hacker News · Work at the Frontier: AI's effect on freelance work · 2026-11-10"
     },
     {
-      "t": "2026-11-09T21:26:12.993Z",
+      "t": "2026-11-10T18:40:26.622Z",
       "level": "info",
-      "msg": "ingest Hacker News · Claude Fable 5.2 and Mythos 5.2 · 2026-11-09"
+      "msg": "ingest Hacker News · AI usage generates a fragile codebase · 2026-11-10"
     },
     {
-      "t": "2026-11-09T21:26:12.993Z",
+      "t": "2026-11-10T18:40:26.622Z",
       "level": "info",
-      "msg": "ingest Hacker News · Google Gemini routes personal Drive files and emails to h… · 2026-11-09"
+      "msg": "ingest Hacker News · Fireworks AI security breach impacts Notion and their cus… · 2026-11-10"
     },
     {
-      "t": "2026-11-09T21:26:12.993Z",
+      "t": "2026-11-10T18:40:26.622Z",
       "level": "info",
-      "msg": "ingest Hacker News · DeepX claims inference up to 100B parameters at less than… · 2026-11-09"
+      "msg": "ingest Hacker News · Gemini 4 Carbon is now available · 2026-11-10"
     },
     {
-      "t": "2026-11-09T21:26:12.993Z",
+      "t": "2026-11-10T18:40:26.622Z",
       "level": "info",
-      "msg": "ingest Hacker News · Claude Fable 5.2 launch offers · 2026-11-09"
+      "msg": "ingest Hacker News · Git considers voting to determine its LLM policy · 2026-11-10"
     },
     {
-      "t": "2026-11-09T21:26:12.993Z",
+      "t": "2026-11-10T18:40:26.622Z",
       "level": "info",
-      "msg": "ingest Hacker News · Show HN: STE80 Humanizer – de-AI text by writing 80% of t… · 2026-11-09"
+      "msg": "ingest arXiv · Guiding Data Allocation for Robust Subpopulation Generali… · 2026-11-09"
     },
     {
-      "t": "2026-11-09T21:26:12.993Z",
+      "t": "2026-11-10T18:40:26.622Z",
       "level": "info",
-      "msg": "ingest Hacker News · Testing Claude on real-world electronics design · 2026-11-09"
+      "msg": "ingest arXiv · Kolmogorov-Chapman Maps: Trajectory-Free Learning for Sim… · 2026-11-09"
     },
     {
-      "t": "2026-11-09T21:26:12.993Z",
+      "t": "2026-11-10T18:40:26.622Z",
       "level": "info",
-      "msg": "ingest Hacker News · Claude Fable 5.2 · 2026-11-09"
+      "msg": "ingest arXiv · Adaptive Quantization Preserves Fast Rates for TD Learnin… · 2026-11-09"
     },
     {
-      "t": "2026-11-09T21:26:12.993Z",
+      "t": "2026-11-10T18:40:26.622Z",
       "level": "info",
-      "msg": "ingest Hacker News · Show HN: Recalc – Spreadsheet where cells can be Claude C… · 2026-11-08"
+      "msg": "ingest arXiv · HiVe-Mem: Interleaving Horizontal Memory Expansion and Ve… · 2026-11-09"
     },
     {
-      "t": "2026-11-09T21:26:12.993Z",
+      "t": "2026-11-10T18:40:26.622Z",
       "level": "info",
-      "msg": "ingest arXiv · On Agentic Manipulation Policies · 2026-11-06"
+      "msg": "ingest arXiv · Vendi Anomaly Scores for Efficient and Accurate Anomaly D… · 2026-11-09"
     },
     {
-      "t": "2026-11-09T21:26:12.993Z",
+      "t": "2026-11-10T18:40:26.622Z",
       "level": "info",
-      "msg": "ingest arXiv · CPU-ARC: Agentic Reasoning Caching for on-CPU Reasoning R… · 2026-11-06"
+      "msg": "ingest arXiv · Where Does Alignment Emerge and What Does It Mean? A Clos… · 2026-11-09"
     },
     {
-      "t": "2026-11-09T21:26:12.993Z",
+      "t": "2026-11-10T18:40:26.622Z",
       "level": "info",
-      "msg": "ingest arXiv · On the (non-)closedness of the set of ReLU networks · 2026-11-06"
+      "msg": "ingest arXiv · Shortcuts and Boundaries: Verifiable RL Misalignment and… · 2026-11-09"
     },
     {
-      "t": "2026-11-09T21:26:12.993Z",
+      "t": "2026-11-10T18:40:26.622Z",
       "level": "info",
-      "msg": "ingest arXiv · FlowMoP: Stochastic Multi-Person Motion Prediction · 2026-11-06"
+      "msg": "ingest arXiv · Is Persona Generalization Predictable? · 2026-11-09"
     },
     {
-      "t": "2026-11-09T21:26:12.993Z",
+      "t": "2026-11-10T18:40:26.622Z",
       "level": "info",
-      "msg": "ingest arXiv · Graded convolutional networks: scale invariance without t… · 2026-11-06"
+      "msg": "ingest arXiv · What kills $v$-prediction? A Patch-wise PCA Perspective o… · 2026-11-09"
     },
     {
-      "t": "2026-11-09T21:26:12.993Z",
+      "t": "2026-11-10T18:40:26.622Z",
       "level": "info",
       "msg": "--- dev feed: 14 items ---"
     },
     {
-      "t": "2026-11-09T21:26:12.993Z",
+      "t": "2026-11-10T18:40:26.622Z",
       "level": "info",
-      "msg": "ingest Hacker News · USPS now offers official ZIP Code boundary polygons · 2026-11-09"
+      "msg": "ingest Hacker News · .name Grandfathered · 2026-11-10"
     },
     {
-      "t": "2026-11-09T21:26:12.993Z",
+      "t": "2026-11-10T18:40:26.622Z",
       "level": "info",
-      "msg": "ingest Hacker News · Payments Canada announces launch of Canada's Real-Time Ra… · 2026-11-09"
+      "msg": "ingest Hacker News · Smart home devices should work without the internet · 2026-11-10"
     },
     {
-      "t": "2026-11-09T21:26:12.993Z",
+      "t": "2026-11-10T18:40:26.622Z",
       "level": "info",
-      "msg": "ingest Hacker News · E-means: 10x faster k-means at equal loss · 2026-11-09"
+      "msg": "ingest Hacker News · AlphaProof Code · 2026-11-10"
     },
     {
-      "t": "2026-11-09T21:26:12.993Z",
+      "t": "2026-11-10T18:40:26.622Z",
       "level": "info",
-      "msg": "ingest Hacker News · Our Smallest, Most Efficient Model: Muse Ember · 2026-11-09"
+      "msg": "ingest Hacker News · Val Town is winding down · 2026-11-10"
     },
     {
-      "t": "2026-11-09T21:26:12.993Z",
+      "t": "2026-11-10T18:40:26.622Z",
       "level": "info",
-      "msg": "ingest Hacker News · CUI – Native UI components for C · 2026-11-09"
+      "msg": "ingest Hacker News · Blender 5.3 released with Gaussian Splat support · 2026-11-10"
     },
     {
-      "t": "2026-11-09T21:26:12.993Z",
+      "t": "2026-11-10T18:40:26.622Z",
       "level": "info",
-      "msg": "ingest Hacker News · Infineon marks innovation milestone with 300mm power sili… · 2026-11-09"
+      "msg": "ingest Hacker News · AMD's Zen 6 Family: Feeding the Beast · 2026-11-10"
     },
     {
-      "t": "2026-11-09T21:26:12.993Z",
+      "t": "2026-11-10T18:40:26.622Z",
       "level": "info",
-      "msg": "ingest Hacker News · Fold Epic Paper Airplanes · 2026-11-09"
+      "msg": "ingest Hacker News · Synaptics patent claims stop work on DisplayLink drivers · 2026-11-10"
     },
     {
-      "t": "2026-11-09T21:26:12.993Z",
+      "t": "2026-11-10T18:40:26.622Z",
       "level": "info",
-      "msg": "ingest Hacker News · Magenta solar panels may be agrivoltaics' cleverest trick… · 2026-11-09"
+      "msg": "ingest Hacker News · Ableton Live 13 · 2026-11-10"
     },
     {
-      "t": "2026-11-09T21:26:12.993Z",
+      "t": "2026-11-10T18:40:26.622Z",
       "level": "info",
-      "msg": "ingest Hacker News · Show HN: Every satellite that passed over any place this… · 2026-11-09"
+      "msg": "ingest Hacker News · The Hardest Tarball? · 2026-11-10"
     },
     {
-      "t": "2026-11-09T21:26:12.993Z",
+      "t": "2026-11-10T18:40:26.622Z",
       "level": "info",
-      "msg": "ingest Hacker News · A primer on GPUs and kernel optimization · 2026-11-05"
+      "msg": "ingest Hacker News · Show HN: Get your coding agent off ~2019 JavaScript, onto… · 2026-11-10"
     },
     {
-      "t": "2026-11-09T21:26:12.993Z",
+      "t": "2026-11-10T18:40:26.622Z",
       "level": "info",
-      "msg": "ingest Hacker News · Show HN: MeowDisplay Is iPhone Mirroring, but in Reverse · 2026-11-09"
+      "msg": "ingest Hacker News · I deleted all my SSH keys · 2026-11-05"
     },
     {
-      "t": "2026-11-09T21:26:12.993Z",
+      "t": "2026-11-10T18:40:26.622Z",
       "level": "info",
-      "msg": "ingest Hacker News · Is Opus 5.5 nerfed? Thinking patterns changed on November… · 2026-11-09"
+      "msg": "ingest Hacker News · Process Explorer for macOS · 2026-11-09"
     },
     {
-      "t": "2026-11-09T21:26:12.993Z",
+      "t": "2026-11-10T18:40:26.622Z",
       "level": "info",
-      "msg": "ingest Hacker News · What is malloc doing, anyway? · 2026-11-09"
+      "msg": "ingest Hacker News · Show HN: Valencia, Spain in Sim City/Isometric View · 2026-11-10"
     },
     {
-      "t": "2026-11-09T21:26:12.993Z",
+      "t": "2026-11-10T18:40:26.622Z",
       "level": "info",
-      "msg": "ingest Hacker News · Show HN: DBDelve – Open-Source DB Client Made with Rust a… · 2026-11-09"
+      "msg": "ingest Hacker News · Amazon saves millions by replacing Sonnet 4.6 with Strand… · 2026-11-10"
     },
     {
-      "t": "2026-11-09T21:26:12.993Z",
+      "t": "2026-11-10T18:40:26.622Z",
       "level": "info",
-      "msg": "publishing 42 items across 3 feeds · 1230ms"
+      "msg": "publishing 42 items across 3 feeds · 1534ms"
     }
   ],
   "feeds": {
@@ -483,392 +483,388 @@
     ],
     "ai": [
       {
-        "id": "hn-50431144",
-        "title": "Claude Fable 5.2 Scores 65 on Artificial Analysis, Highest So Far",
-        "url": "https://artificialanalysis.ai/models/claude-fable-5-2",
+        "id": "hn-50443838",
+        "title": "Work at the Frontier: AI's effect on freelance work",
+        "url": "https://openai.com/index/ai-effect-on-freelance-work",
         "source": "Hacker News",
-        "date": "2026-11-09",
+        "date": "2026-11-10",
         "summary": "",
         "meta": [
-          "61 points",
-          "16 comments"
+          "10 points",
+          "5 comments"
         ],
-        "discussion": "https://news.ycombinator.com/item?id=50431144",
+        "discussion": "https://news.ycombinator.com/item?id=50443838",
         "flag": null
       },
       {
-        "id": "hn-50429906",
-        "title": "Claude Fable 5.2 and Mythos 5.2",
-        "url": "https://www.anthropic.com/claude-fable-and-mythos-5-2",
+        "id": "hn-50438318",
+        "title": "AI usage generates a fragile codebase",
+        "url": "https://evanxmerz.com/post/ai-usage-generates-a-fragile-codebase/",
         "source": "Hacker News",
-        "date": "2026-11-09",
+        "date": "2026-11-10",
         "summary": "",
         "meta": [
-          "695 points",
-          "375 comments"
+          "165 points",
+          "207 comments"
         ],
-        "discussion": "https://news.ycombinator.com/item?id=50429906",
+        "discussion": "https://news.ycombinator.com/item?id=50438318",
         "flag": null
       },
       {
-        "id": "hn-50429426",
-        "title": "Google Gemini routes personal Drive files and emails to human annotators",
-        "url": "https://github.com/thisisme6598/gemini_files/",
+        "id": "hn-50437106",
+        "title": "Fireworks AI security breach impacts Notion and their customers",
+        "url": "https://www.notion.com/help/security-incident-involving-a-third-party-ai-vendor",
         "source": "Hacker News",
-        "date": "2026-11-09",
+        "date": "2026-11-10",
         "summary": "",
         "meta": [
-          "88 points",
-          "17 comments"
+          "147 points",
+          "53 comments"
         ],
-        "discussion": "https://news.ycombinator.com/item?id=50429426",
+        "discussion": "https://news.ycombinator.com/item?id=50437106",
         "flag": null
       },
       {
-        "id": "hn-50429545",
-        "title": "DeepX claims inference up to 100B parameters at less than 5 W",
-        "url": "https://www.eetimes.com/deepx-tapes-out-second-gen-chip-projects-6-7x-performance-gain-with-lpddr5x-pim/",
+        "id": "hn-50442303",
+        "title": "Gemini 4 Carbon is now available",
+        "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-carbon-now-available/",
         "source": "Hacker News",
-        "date": "2026-11-09",
+        "date": "2026-11-10",
         "summary": "",
         "meta": [
-          "99 points",
-          "12 comments"
+          "227 points",
+          "122 comments"
         ],
-        "discussion": "https://news.ycombinator.com/item?id=50429545",
+        "discussion": "https://news.ycombinator.com/item?id=50442303",
         "flag": null
       },
       {
-        "id": "hn-50430176",
-        "title": "Claude Fable 5.2 launch offers",
-        "url": "https://support.claude.com/en/articles/17506494-claude-fable-5-2-launch-offers",
+        "id": "hn-50442964",
+        "title": "Git considers voting to determine its LLM policy",
+        "url": "https://lwn.net/SubscriberLink/1104195/1193ea577aaef643/",
         "source": "Hacker News",
-        "date": "2026-11-09",
-        "summary": "",
-        "meta": [
-          "5 points",
-          "1 comments"
-        ],
-        "discussion": "https://news.ycombinator.com/item?id=50430176",
-        "flag": null
-      },
-      {
-        "id": "hn-50429144",
-        "title": "Show HN: STE80 Humanizer – de-AI text by writing 80% of the way to ASD-STE100",
-        "url": "https://github.com/Dodaios/ste80-humanizer",
-        "source": "Hacker News",
-        "date": "2026-11-09",
-        "summary": "",
-        "meta": [
-          "13 points",
-          "1 comments"
-        ],
-        "discussion": "https://news.ycombinator.com/item?id=50429144",
-        "flag": null
-      },
-      {
-        "id": "hn-50429952",
-        "title": "Testing Claude on real-world electronics design",
-        "url": "https://www.anthropic.com/research/claude-electronics-design",
-        "source": "Hacker News",
-        "date": "2026-11-09",
+        "date": "2026-11-10",
         "summary": "",
         "meta": [
           "8 points",
           "0 comments"
         ],
-        "discussion": "https://news.ycombinator.com/item?id=50429952",
+        "discussion": "https://news.ycombinator.com/item?id=50442964",
         "flag": null
       },
       {
-        "id": "hn-50429947",
-        "title": "Claude Fable 5.2",
-        "url": "https://twitter.com/claudeai/status/2119867114450268322",
-        "source": "Hacker News",
+        "id": "http://arxiv.org/abs/2611.12884v1",
+        "title": "Guiding Data Allocation for Robust Subpopulation Generalization",
+        "url": "http://arxiv.org/abs/2611.12884v1",
+        "source": "arXiv",
         "date": "2026-11-09",
-        "summary": "",
-        "meta": [
-          "25 points",
-          "6 comments"
-        ],
-        "discussion": "https://news.ycombinator.com/item?id=50429947",
-        "flag": null
-      },
-      {
-        "id": "hn-50413970",
-        "title": "Show HN: Recalc – Spreadsheet where cells can be Claude Code or Codex terminals",
-        "url": "https://github.com/sshah03/recalc",
-        "source": "Hacker News",
-        "date": "2026-11-08",
-        "summary": "",
-        "meta": [
-          "17 points",
-          "1 comments"
-        ],
-        "discussion": "https://news.ycombinator.com/item?id=50413970",
-        "flag": null
-      },
-      {
-        "id": "http://arxiv.org/abs/2611.09892v1",
-        "title": "On Agentic Manipulation Policies",
-        "url": "http://arxiv.org/abs/2611.09892v1",
-        "source": "arXiv",
-        "date": "2026-11-06",
-        "summary": "Recent work on robot manipulation has focused on specialist policies trained on demonstrations. We show that generalist AI models can control manipulators more reliably than specialist policies such as vision-language-action models (VLAs) and world-action models (WAMs). We systematically analyze agentic manipulation p…",
+        "summary": "Machine learning models often achieve high average accuracy in the training data while performing poorly on test data due to subpopulation shift. A common data-centric solution is to enforce balanced subgroup proportions, but full balance can be costly, infeasible, and not always necessary. In this work, we study whet…",
         "meta": [
           "Research",
-          "Chen Chen +12"
+          "Zhaoying Pan +3"
         ],
         "flag": null
       },
       {
-        "id": "http://arxiv.org/abs/2611.09891v1",
-        "title": "CPU-ARC: Agentic Reasoning Caching for on-CPU Reasoning Reuse",
-        "url": "http://arxiv.org/abs/2611.09891v1",
+        "id": "http://arxiv.org/abs/2611.12880v1",
+        "title": "Kolmogorov-Chapman Maps: Trajectory-Free Learning for Simulating Molecular Dynamics",
+        "url": "http://arxiv.org/abs/2611.12880v1",
         "source": "arXiv",
-        "date": "2026-11-06",
-        "summary": "Large language models reinvent the wheel all the time. They conflate task-solving with the execution of the solutions, which forces them to solve every problem from scratch. We show that once a task has been reasoned through, the application of its solution to a new problem instance can be done very efficiently and wi…",
+        "date": "2026-11-09",
+        "summary": "Stochastic differential equations (SDEs) describe stochastic processes across a wide range of scientific domains, including physics, biology, and finance. Although individual numerical integration steps are inexpensive, observing meaningful events or transitions can require millions of sequential steps, resulting in s…",
         "meta": [
           "Research",
-          "Peter Belcak +4"
+          "Majdi Hassan +3"
         ],
         "flag": null
       },
       {
-        "id": "http://arxiv.org/abs/2611.09887v1",
-        "title": "On the (non-)closedness of the set of ReLU networks",
-        "url": "http://arxiv.org/abs/2611.09887v1",
+        "id": "http://arxiv.org/abs/2611.12878v1",
+        "title": "Adaptive Quantization Preserves Fast Rates for TD Learning over Rate-Limited Channels",
+        "url": "http://arxiv.org/abs/2611.12878v1",
         "source": "arXiv",
-        "date": "2026-11-06",
-        "summary": "We prove that the set $\\mathcal{N}_N$ of ReLU networks with one hidden layer and at most $N\\in\\mathbb N$ neurons is weakly closed in $W^{1,p}(Ω)$, for a bounded connected open set $Ω\\subset\\mathbb R^d$. Consequently, every coercive, weakly lower semicontinuous energy on this space attains its minimum over $\\mathcal{N}…",
+        "date": "2026-11-09",
+        "summary": "Motivated by reinforcement learning subject to communication constraints, we study a policy evaluation problem with linear function approximation over a rate-limited channel. In our setup, an agent interacting with an unknown environment (modeled as a Markov Decision Process) transmits quantized estimates of a tempora…",
         "meta": [
           "Research",
-          "Eloi Martinet +1"
+          "Sreejeet Maity +1"
         ],
         "flag": null
       },
       {
-        "id": "http://arxiv.org/abs/2611.09882v1",
-        "title": "FlowMoP: Stochastic Multi-Person Motion Prediction",
-        "url": "http://arxiv.org/abs/2611.09882v1",
+        "id": "http://arxiv.org/abs/2611.12872v1",
+        "title": "HiVe-Mem: Interleaving Horizontal Memory Expansion and Vertical Evidence Composition for Multimodal Agents",
+        "url": "http://arxiv.org/abs/2611.12872v1",
         "source": "arXiv",
-        "date": "2026-11-06",
-        "summary": "Predicting the future motion of multiple people is inherently stochastic: the same observed history admits many plausible continuations depending on intent, coordination, and social context. Yet the dominant paradigm in multi-person 3D motion prediction remains deterministic, with existing methods producing a fixed nu…",
+        "date": "2026-11-09",
+        "summary": "As multimodal agents accumulate increasingly long interaction histories, effectively retrieving and utilizing past information becomes critical for long-term interaction. Existing memory systems typically rely on semantic retrieval over compressed memories and expose predefined representations, which may miss relevant…",
         "meta": [
           "Research",
-          "Aadya Agrawal +2"
+          "Haozhen Zhang +7"
         ],
         "flag": null
       },
       {
-        "id": "http://arxiv.org/abs/2611.09878v1",
-        "title": "Graded convolutional networks: scale invariance without the scale and robustness to unknown blur",
-        "url": "http://arxiv.org/abs/2611.09878v1",
+        "id": "http://arxiv.org/abs/2611.12871v1",
+        "title": "Vendi Anomaly Scores for Efficient and Accurate Anomaly Detection",
+        "url": "http://arxiv.org/abs/2611.12871v1",
         "source": "arXiv",
-        "date": "2026-11-06",
-        "summary": "The Gaussian jet of an image is a graded vector space: a dilation by $λ$ multiplies derivatives of order $k$ by $λ^{-k}$. Local graded convolutions are exactly homogeneous differential operators, and a local feature is dilation-invariant if and only if it factors through the scale-normalized jet or, without the scale,…",
+        "date": "2026-11-09",
+        "summary": "Anomaly detection (AD) is a critical for trustworthy machine learning and scientific discovery. Existing methods typically define anomalies through local density, isolation heuristics, or distance from a fitted distribution, making them sensitive to neighborhood scale, partitioning choices, or restrictive distribution…",
         "meta": [
           "Research",
-          "Tanush Shaska"
+          "Amey Pasarkar +1"
+        ],
+        "flag": null
+      },
+      {
+        "id": "http://arxiv.org/abs/2611.12869v1",
+        "title": "Where Does Alignment Emerge and What Does It Mean? A Closer Look at the Platonic Representation Hypothesis",
+        "url": "http://arxiv.org/abs/2611.12869v1",
+        "source": "arXiv",
+        "date": "2026-11-09",
+        "summary": "The Platonic Representation Hypothesis (PRH) suggests that neural networks are converging toward similar representation spaces. As language models become more capable, their representations are aligning with those of vision models. However, recent work has questioned whether this trend continues to hold for newer lang…",
+        "meta": [
+          "Research",
+          "Julia Herbst +3"
+        ],
+        "flag": null
+      },
+      {
+        "id": "http://arxiv.org/abs/2611.12865v1",
+        "title": "Shortcuts and Boundaries: Verifiable RL Misalignment and Contextual Safety Learning",
+        "url": "http://arxiv.org/abs/2611.12865v1",
+        "source": "arXiv",
+        "date": "2026-11-09",
+        "summary": "Reinforcement learning (RL) can improve an agent's task capability while reinforcing behavior that violates contextual execution requirements. We study this reward-driven misalignment, including reward hacking, through verifiable reward--context conflicts, where compliant task completion remains feasible while some ex…",
+        "meta": [
+          "Research",
+          "Xinjie Shen"
+        ],
+        "flag": null
+      },
+      {
+        "id": "http://arxiv.org/abs/2611.12864v1",
+        "title": "Is Persona Generalization Predictable?",
+        "url": "http://arxiv.org/abs/2611.12864v1",
+        "source": "arXiv",
+        "date": "2026-11-09",
+        "summary": "Persona generalization occurs when fine-tuning a language model in one domain induces behavioral changes in others -- for example, the broadly unsafe behavior observed in emergent misalignment. We discover a surprising \"on-the-line\" phenomenon in persona generalization: in-domain and out-of-domain persona rates across…",
+        "meta": [
+          "Research",
+          "Olina Mukherjee +3"
+        ],
+        "flag": null
+      },
+      {
+        "id": "http://arxiv.org/abs/2611.12852v1",
+        "title": "What kills $v$-prediction? A Patch-wise PCA Perspective on Pixel-Space Flow Matching",
+        "url": "http://arxiv.org/abs/2611.12852v1",
+        "source": "arXiv",
+        "date": "2026-11-09",
+        "summary": "Latent Diffusion Models dominate generative modeling but face two-stage training complexity and the inherent reconstruction limits of pre-trained autoencoders. Pixel-space Flow Matching offers a simplified end-to-end alternative yet often encounters training difficulties when using the standard $v$-prediction objectiv…",
+        "meta": [
+          "Research",
+          "Tianze Luo +2"
         ],
         "flag": null
       }
     ],
     "dev": [
       {
-        "id": "hn-50431058",
-        "title": "USPS now offers official ZIP Code boundary polygons",
-        "url": "https://postalpro.usps.com/zcb",
+        "id": "hn-50442736",
+        "title": ".name Grandfathered",
+        "url": "https://neil.fraser.name/news/2026/11/10/",
         "source": "Hacker News",
-        "date": "2026-11-09",
+        "date": "2026-11-10",
         "summary": "",
         "meta": [
-          "161 points",
-          "66 comments"
+          "302 points",
+          "53 comments"
         ],
-        "discussion": "https://news.ycombinator.com/item?id=50431058",
+        "discussion": "https://news.ycombinator.com/item?id=50442736",
         "flag": null
       },
       {
-        "id": "hn-50427362",
-        "title": "Payments Canada announces launch of Canada's Real-Time Rail (RTR) payment system",
-        "url": "https://www.payments.ca/canada-launches-real-time-rail-bringing-247-payment-infrastructure-national-economy",
+        "id": "hn-50441707",
+        "title": "Smart home devices should work without the internet",
+        "url": "https://docodethatmatters.com/home-automation-overnight-success/",
         "source": "Hacker News",
-        "date": "2026-11-09",
+        "date": "2026-11-10",
         "summary": "",
         "meta": [
-          "403 points",
-          "218 comments"
+          "200 points",
+          "95 comments"
         ],
-        "discussion": "https://news.ycombinator.com/item?id=50427362",
+        "discussion": "https://news.ycombinator.com/item?id=50441707",
         "flag": null
       },
       {
-        "id": "hn-50429734",
-        "title": "E-means: 10x faster k-means at equal loss",
-        "url": "https://e-means.github.io/",
+        "id": "hn-50439193",
+        "title": "AlphaProof Code",
+        "url": "https://deepmind.google/blog/introducing-alphaproof-code/",
         "source": "Hacker News",
-        "date": "2026-11-09",
+        "date": "2026-11-10",
         "summary": "",
         "meta": [
-          "128 points",
-          "7 comments"
+          "475 points",
+          "154 comments"
         ],
-        "discussion": "https://news.ycombinator.com/item?id=50429734",
+        "discussion": "https://news.ycombinator.com/item?id=50439193",
         "flag": null
       },
       {
-        "id": "hn-50429024",
-        "title": "Our Smallest, Most Efficient Model: Muse Ember",
-        "url": "https://research.meta.ai/blog/muse-ember",
+        "id": "hn-50443427",
+        "title": "Val Town is winding down",
+        "url": "https://blog.val.town/winding-down",
         "source": "Hacker News",
-        "date": "2026-11-09",
-        "summary": "",
-        "meta": [
-          "167 points",
-          "70 comments"
-        ],
-        "discussion": "https://news.ycombinator.com/item?id=50429024",
-        "flag": null
-      },
-      {
-        "id": "hn-50430621",
-        "title": "CUI – Native UI components for C",
-        "url": "https://yappologistic.github.io/CUI/",
-        "source": "Hacker News",
-        "date": "2026-11-09",
-        "summary": "",
-        "meta": [
-          "72 points",
-          "40 comments"
-        ],
-        "discussion": "https://news.ycombinator.com/item?id=50430621",
-        "flag": null
-      },
-      {
-        "id": "hn-50429430",
-        "title": "Infineon marks innovation milestone with 300mm power silicon carbide wafer",
-        "url": "https://www.infineon.com/press-release/2026/infpr202611-028",
-        "source": "Hacker News",
-        "date": "2026-11-09",
+        "date": "2026-11-10",
         "summary": "",
         "meta": [
           "63 points",
-          "26 comments"
+          "15 comments"
         ],
-        "discussion": "https://news.ycombinator.com/item?id=50429430",
+        "discussion": "https://news.ycombinator.com/item?id=50443427",
         "flag": null
       },
       {
-        "id": "hn-50424581",
-        "title": "Fold Epic Paper Airplanes",
-        "url": "https://www.foldableflight.com",
+        "id": "hn-50442426",
+        "title": "Blender 5.3 released with Gaussian Splat support",
+        "url": "https://www.blender.org/download/releases/5-3/",
         "source": "Hacker News",
-        "date": "2026-11-09",
+        "date": "2026-11-10",
         "summary": "",
         "meta": [
-          "722 points",
-          "125 comments"
+          "264 points",
+          "35 comments"
         ],
-        "discussion": "https://news.ycombinator.com/item?id=50424581",
+        "discussion": "https://news.ycombinator.com/item?id=50442426",
         "flag": null
       },
       {
-        "id": "hn-50426175",
-        "title": "Magenta solar panels may be agrivoltaics' cleverest trick yet",
-        "url": "https://www.anthropocenemagazine.org/2026/10/magenta-solar-panels-may-be-agrivoltaics-cleverest-trick-yet/",
+        "id": "hn-50443090",
+        "title": "AMD's Zen 6 Family: Feeding the Beast",
+        "url": "https://chipsandcheese.com/p/amds-zen-6-family-feeding-the-beast",
         "source": "Hacker News",
-        "date": "2026-11-09",
+        "date": "2026-11-10",
         "summary": "",
         "meta": [
-          "208 points",
-          "115 comments"
+          "54 points",
+          "16 comments"
         ],
-        "discussion": "https://news.ycombinator.com/item?id=50426175",
+        "discussion": "https://news.ycombinator.com/item?id=50443090",
         "flag": null
       },
       {
-        "id": "hn-50428907",
-        "title": "Show HN: Every satellite that passed over any place this week, and its photos",
-        "url": "https://www.watched.earth",
+        "id": "hn-50443824",
+        "title": "Synaptics patent claims stop work on DisplayLink drivers",
+        "url": "https://lwn.net/SubscriberLink/1102549/acbc92e00cee3a3f/",
         "source": "Hacker News",
-        "date": "2026-11-09",
+        "date": "2026-11-10",
         "summary": "",
         "meta": [
-          "119 points",
-          "27 comments"
+          "19 points",
+          "4 comments"
         ],
-        "discussion": "https://news.ycombinator.com/item?id=50428907",
+        "discussion": "https://news.ycombinator.com/item?id=50443824",
         "flag": null
       },
       {
-        "id": "hn-50386246",
-        "title": "A primer on GPUs and kernel optimization",
-        "url": "https://www.nabo.dev/blogs/kernel-primer",
+        "id": "hn-50439695",
+        "title": "Ableton Live 13",
+        "url": "https://www.ableton.com/en/live/",
+        "source": "Hacker News",
+        "date": "2026-11-10",
+        "summary": "",
+        "meta": [
+          "178 points",
+          "213 comments"
+        ],
+        "discussion": "https://news.ycombinator.com/item?id=50439695",
+        "flag": null
+      },
+      {
+        "id": "hn-50441338",
+        "title": "The Hardest Tarball?",
+        "url": "https://stoppels.ch/2026/11/07/the-hardest-tarball.html",
+        "source": "Hacker News",
+        "date": "2026-11-10",
+        "summary": "",
+        "meta": [
+          "121 points",
+          "15 comments"
+        ],
+        "discussion": "https://news.ycombinator.com/item?id=50441338",
+        "flag": null
+      },
+      {
+        "id": "hn-50443812",
+        "title": "Show HN: Get your coding agent off ~2019 JavaScript, onto modern web primitives",
+        "url": "https://github.com/GoogleChrome/modern-web-guidance",
+        "source": "Hacker News",
+        "date": "2026-11-10",
+        "summary": "",
+        "meta": [
+          "17 points",
+          "2 comments"
+        ],
+        "discussion": "https://news.ycombinator.com/item?id=50443812",
+        "flag": null
+      },
+      {
+        "id": "hn-50382401",
+        "title": "I deleted all my SSH keys",
+        "url": "https://blog.infected.systems/posts/2026-11-03-i-deleted-all-my-ssh-keys/",
         "source": "Hacker News",
         "date": "2026-11-05",
         "summary": "",
         "meta": [
-          "40 points",
-          "0 comments"
+          "89 points",
+          "25 comments"
         ],
-        "discussion": "https://news.ycombinator.com/item?id=50386246",
+        "discussion": "https://news.ycombinator.com/item?id=50382401",
         "flag": null
       },
       {
-        "id": "hn-50429636",
-        "title": "Show HN: MeowDisplay Is iPhone Mirroring, but in Reverse",
-        "url": "https://meowdisplay.app/",
+        "id": "hn-50433216",
+        "title": "Process Explorer for macOS",
+        "url": "https://github.com/microsoft/Procexp-Mac",
         "source": "Hacker News",
         "date": "2026-11-09",
         "summary": "",
         "meta": [
-          "49 points",
-          "18 comments"
+          "21 points",
+          "9 comments"
         ],
-        "discussion": "https://news.ycombinator.com/item?id=50429636",
+        "discussion": "https://news.ycombinator.com/item?id=50433216",
         "flag": null
       },
       {
-        "id": "hn-50422069",
-        "title": "Is Opus 5.5 nerfed? Thinking patterns changed on November 3",
-        "url": "https://twitter.com/shanemelaugh/status/2119192075505893695",
+        "id": "hn-50441518",
+        "title": "Show HN: Valencia, Spain in Sim City/Isometric View",
+        "url": "https://tinyvalencia.com/",
         "source": "Hacker News",
-        "date": "2026-11-09",
+        "date": "2026-11-10",
         "summary": "",
         "meta": [
-          "623 points",
-          "423 comments"
-        ],
-        "discussion": "https://news.ycombinator.com/item?id=50422069",
-        "flag": null
-      },
-      {
-        "id": "hn-50424157",
-        "title": "What is malloc doing, anyway?",
-        "url": "https://benmandrew.com/articles/what-is-malloc-doing-anyway",
-        "source": "Hacker News",
-        "date": "2026-11-09",
-        "summary": "",
-        "meta": [
-          "187 points",
-          "47 comments"
-        ],
-        "discussion": "https://news.ycombinator.com/item?id=50424157",
-        "flag": null
-      },
-      {
-        "id": "hn-50427934",
-        "title": "Show HN: DBDelve – Open-Source DB Client Made with Rust and GPUI",
-        "url": "https://news.ycombinator.com/item?id=50427934",
-        "source": "Hacker News",
-        "date": "2026-11-09",
-        "summary": "",
-        "meta": [
-          "74 points",
+          "73 points",
           "24 comments"
         ],
-        "discussion": "https://news.ycombinator.com/item?id=50427934",
+        "discussion": "https://news.ycombinator.com/item?id=50441518",
+        "flag": null
+      },
+      {
+        "id": "hn-50436640",
+        "title": "Amazon saves millions by replacing Sonnet 4.6 with Strands Decider",
+        "url": "https://strandsagents.com/blog/amazon-saves-millions-replacing-sonnet-with-strands-decider/",
+        "source": "Hacker News",
+        "date": "2026-11-10",
+        "summary": "",
+        "meta": [
+          "625 points",
+          "218 comments"
+        ],
+        "discussion": "https://news.ycombinator.com/item?id=50436640",
         "flag": null
       }
     ]
