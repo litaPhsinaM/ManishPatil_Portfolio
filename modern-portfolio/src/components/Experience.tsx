@@ -21,8 +21,8 @@ const experiences: ExperienceEntry[] = [
         icon: '🖥️',
         body: `● Manage the lifecycle and inventory of approximately 3,500 devices, including asset tracking, workstation deployment, equipment recovery, and preparation for reuse across CISE programs and partner school sites.
         \n● Administer macOS and iOS endpoints through Jamf and Apple School Manager by troubleshooting devices, creating policies and configuration profiles, provisioning accounts, and preparing deployments for different educational programs.
-        \n● Support Windows, macOS, WiFi, DNS, and VPN issues while coordinating with the campus security team on network access and wireless scheduling requirements.
         \n● Pursuing three Jamf certifications focused on iOS, covering how to configure, secure, and manage Apple devices in enterprise environments with Jamf Pro.
+        \n● Support Windows, macOS, WiFi, DNS, and VPN issues while coordinating with the campus security team on network access and wireless scheduling requirements.
         \n● Manage Google Workspace onboarding and offboarding, including account creation, access removal, file ownership transfers, workstation setup, and returning assigned equipment to inventory.
         \n● Developed a React and Node.js technology checkout platform with REST APIs, JWT authentication, and role based access control. The guided workflow recommends equipment and simplifies requests across five to six programs and departments.
         \n● Building a staff scheduling app for the Fabrication Lab (FastAPI, Next.js, Google sign-in) that generates fair weekly schedules for 40+ technicians around class times, travel time and hour limits, covers events, and emails each technician their shifts. It is used by the lab's scheduling manager.

@@ -50,7 +50,7 @@ export const projects: Project[] = [
   // --- Software Engineering ---
   {
     title: "Market Digest: AI Finance Learning App",
-    description: "A free app that turns 15 finance podcasts and 12 newsrooms into a 5-minute daily lesson for beginner investors, and runs itself. Every morning a scheduler inside the database (Supabase pg_cron) starts a GitHub Actions job: Google Gemini transcribes and summarizes new episodes (Whisper + Qwen 14B run locally as a fallback), and deterministic checks reject any number, ticker or quote that isn't in the transcript. It adds an AI audio briefing, quizzes and 24 lessons, plus paper trading on real prices refreshed every 15 minutes, with game logic settled in Postgres behind row-level security: Brier-scored predictions, a daily 90% range game, and alpha versus the S&P 500. Web, Android (Capacitor) and iPhone from one codebase, $0 to run.",
+    description: "A free app that turns 15 finance podcasts into a 5-minute daily lesson for beginner investors, and runs itself. A scheduler in the database (Supabase pg_cron) starts a daily GitHub Actions job where Google Gemini summarizes new episodes, and automatic checks reject any number or quote not in the transcript. Includes an AI audio briefing, quizzes and lessons, plus paper trading on real prices with game logic in Postgres. Web, Android and iPhone, $0 to run.",
     image: "market_digest.jpg",
     link: "https://litaphsinam.github.io/market-digest/",
     tags: ["Python", "Gemini", "Supabase", "PostgreSQL", "GitHub Actions", "JavaScript", "Capacitor", "pg_cron"],
