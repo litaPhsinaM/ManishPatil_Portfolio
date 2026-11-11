@@ -42,3 +42,11 @@
         width: auto;
     }
 }
+
+/* Phones: a slim banner at the top, so it never covers the project cards it's celebrating. */
+@media (max-width: 640px) {
+    .achievement-toast { top: 10px; bottom: auto; right: 10px; left: 10px; width: auto; }
+    .achievement-toast .title-bar { display: none; }
+    .achievement-toast-body { padding: 8px 10px; gap: 10px; }
+    .achievement-toast-icon { font-size: 22px; }
+}

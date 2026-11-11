@@ -327,3 +327,13 @@
 }
 
 .exp-more-btn { display: block; margin: 8px 0 0 auto; min-width: 150px; }
+
+/* Phones: keep each job's status bar to one line (the long university name gets an ellipsis). */
+@media (max-width: 640px) {
+    .exp-panel .win98-statusbar .win98-panel {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        min-width: 0;
+    }
+}

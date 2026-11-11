@@ -330,3 +330,33 @@
     }
     .project-desc:not(.open)::after { content: ''; }
 }
+
+/* Phones: projects become a swipeable row of cards that snap into place, with a "2 / 7" counter. */
+.projects-swipe-hint { display: none; }
+@media (max-width: 640px) {
+    .projects-grid {
+        display: flex;
+        gap: 12px;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        overscroll-behavior-x: contain;
+        -webkit-overflow-scrolling: touch;
+        padding: 2px 2px 10px;
+        scrollbar-width: none;
+    }
+    .projects-grid::-webkit-scrollbar { display: none; }
+    .projects-grid > .project-card-win {
+        flex: 0 0 88%;
+        scroll-snap-align: center;
+    }
+    .projects-swipe-hint {
+        display: block;
+        text-align: center;
+        font-size: 12px;
+        color: #222;
+        padding-top: 2px;
+    }
+}
+@media (max-width: 640px) {
+    .project-desc:not(.open) { flex: 0 0 auto; max-height: 6.4em; }
+}

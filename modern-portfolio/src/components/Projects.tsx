@@ -1,4 +1,4 @@
-import React, { useMemo, useState } from 'react';
+import React, { useMemo, useRef, useState } from 'react';
 import { motion, type Variants } from 'framer-motion';
 import { BarChart3, Code2, Github } from 'lucide-react';
 import { projects, type Project } from '../data/portfolio';
@@ -43,6 +43,15 @@ const winVariant: Variants = {
 const Projects: React.FC = () => {
     const [activeTabId, setActiveTabId] = useState<ProjectTab['id']>('software');
     const [openDesc, setOpenDesc] = useState<Record<string, boolean>>({});
+    // Phones show the projects as a swipeable row; this tracks which card is in view for the "2 / 7" counter.
+    const gridRef = useRef<HTMLDivElement>(null);
+    const [slide, setSlide] = useState(0);
+    const onGridScroll = () => {
+        const g = gridRef.current;
+        const first = g?.firstElementChild as HTMLElement | null;
+        if (!g || !first) return;
+        setSlide(Math.round(g.scrollLeft / (first.offsetWidth + 12)));
+    };
     const activeTab = projectTabs.find(tab => tab.id === activeTabId) ?? projectTabs[0];
     const activeProjects = useMemo(
         () => projects.filter(activeTab.filter),
@@ -138,7 +147,7 @@ const Projects: React.FC = () => {
                                     role="tab"
                                     aria-selected={isActive}
                                     aria-controls="project-tab-panel"
-                                    onClick={() => setActiveTabId(tab.id)}
+                                    onClick={() => { setActiveTabId(tab.id); setSlide(0); gridRef.current?.scrollTo({ left: 0 }); }}
                                 >
                                     <TabIcon size={14} />
                                     <span>{tab.label}</span>
@@ -162,7 +171,7 @@ const Projects: React.FC = () => {
                         role="tabpanel"
                         aria-labelledby={`project-tab-${activeTab.id}`}
                     >
-                        <div className="projects-grid">
+                        <div className="projects-grid" ref={gridRef} onScroll={onGridScroll}>
                             {activeProjects.map((project, idx) => (
                                 <motion.article
                                     key={`${activeTab.id}-${project.title}`}
@@ -227,6 +236,9 @@ const Projects: React.FC = () => {
                                     </div>
                                 </motion.article>
                             ))}
+                        </div>
+                        <div className="projects-swipe-hint" aria-hidden="true">
+                            {Math.min(slide + 1, activeProjects.length)} / {activeProjects.length} · swipe for more ›
                         </div>
                     </div>
 
