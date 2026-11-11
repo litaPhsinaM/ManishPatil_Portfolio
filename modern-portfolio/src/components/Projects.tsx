@@ -15,20 +15,20 @@ type ProjectTab = {
 
 const projectTabs: ProjectTab[] = [
     {
-        id: 'data',
-        label: 'Data',
-        title: 'Data Projects',
-        path: 'Data',
-        icon: BarChart3,
-        filter: (project) => project.category !== 'Software Engineering',
-    },
-    {
         id: 'software',
         label: 'Software',
         title: 'Software Projects',
         path: 'Software',
         icon: Code2,
         filter: (project) => project.category === 'Software Engineering',
+    },
+    {
+        id: 'data',
+        label: 'Data',
+        title: 'Data Projects',
+        path: 'Data',
+        icon: BarChart3,
+        filter: (project) => project.category !== 'Software Engineering',
     },
 ];
 
@@ -41,7 +41,8 @@ const winVariant: Variants = {
 };
 
 const Projects: React.FC = () => {
-    const [activeTabId, setActiveTabId] = useState<ProjectTab['id']>('data');
+    const [activeTabId, setActiveTabId] = useState<ProjectTab['id']>('software');
+    const [openDesc, setOpenDesc] = useState<Record<string, boolean>>({});
     const activeTab = projectTabs.find(tab => tab.id === activeTabId) ?? projectTabs[0];
     const activeProjects = useMemo(
         () => projects.filter(activeTab.filter),
@@ -192,7 +193,12 @@ const Projects: React.FC = () => {
                                                 }}
                                             />
                                         </div>
-                                        <p className="project-desc">{project.description}</p>
+                                        <p
+                                            className={`project-desc ${openDesc[project.title] ? 'open' : ''}`}
+                                            onClick={() => setOpenDesc(o => ({ ...o, [project.title]: !o[project.title] }))}
+                                        >
+                                            {project.description}
+                                        </p>
                                         <div className="project-tags">
                                             {project.tags.map(tag => (
                                                 <span key={tag} className="tag">{tag}</span>

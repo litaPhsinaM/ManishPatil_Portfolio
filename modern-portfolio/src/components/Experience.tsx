@@ -1,5 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
 import '../styles/Experience.css';
+import { useIsNarrow } from '../hooks/useIsNarrow';
 
 interface ExperienceEntry {
     number: string;
@@ -21,11 +22,13 @@ const experiences: ExperienceEntry[] = [
         body: `● Manage the lifecycle and inventory of approximately 3,500 devices, including asset tracking, workstation deployment, equipment recovery, and preparation for reuse across CISE programs and partner school sites.
         \n● Administer macOS and iOS endpoints through Jamf and Apple School Manager by troubleshooting devices, creating policies and configuration profiles, provisioning accounts, and preparing deployments for different educational programs.
         \n● Support Windows, macOS, WiFi, DNS, and VPN issues while coordinating with the campus security team on network access and wireless scheduling requirements.
+        \n● Pursuing three Jamf certifications focused on iOS, covering how to configure, secure, and manage Apple devices in enterprise environments with Jamf Pro.
         \n● Manage Google Workspace onboarding and offboarding, including account creation, access removal, file ownership transfers, workstation setup, and returning assigned equipment to inventory.
         \n● Developed a React and Node.js technology checkout platform with REST APIs, JWT authentication, and role based access control. The guided workflow recommends equipment and simplifies requests across five to six programs and departments.
-        \n● Rebuilt the CISE website in CM1 to meet campus accessibility and compliance requirements, created pages for individual programs, and maintain five to six Fabrication Lab pages in WordPress.
+        \n● Building a staff scheduling app for the Fabrication Lab (FastAPI, Next.js, Google sign-in) that generates fair weekly schedules for 40+ technicians around class times, travel time and hour limits, covers events, and emails each technician their shifts. It is used by the lab's scheduling manager.
+        \n● Rebuilt the CISE website in CM1 to meet campus accessibility and compliance requirements, created pages for individual programs, and maintain five to six Fabrication Lab pages in WordPress. Continue to develop the site with program updates, form integrations, and plugins that add functionality.
         \n● Produce and edit photography and video content for CISE and partner school districts using Adobe creative tools. Mentored an undergraduate intern and supported three IT student assistants with technical projects and daily troubleshooting.`,
-        skills: ['Jamf', 'Mobile Device Management', 'Apple School Manager', 'Google Workspace Admin', 'macOS', 'Windows', 'DNS', 'VPN', 'WiFi', 'React', 'Node.js', 'REST APIs', 'JWT', 'RBAC', 'WordPress', 'CM1', 'ADA Compliance', 'Asset Management', 'Adobe Premiere Pro', 'Adobe Illustrator'],
+        skills: ['Jamf Pro', 'Mobile Device Management', 'Apple School Manager', 'Google Workspace Admin', 'macOS', 'Windows', 'DNS', 'VPN', 'WiFi', 'React', 'Node.js', 'FastAPI', 'Next.js', 'REST APIs', 'JWT', 'RBAC', 'WordPress', 'CM1', 'ADA Compliance', 'Asset Management', 'Adobe Premiere Pro', 'Adobe Illustrator'],
     },
     {
         number: '02',
@@ -77,6 +80,8 @@ const Experience: React.FC = () => {
     const [activeIndex, setActiveIndex] = useState(0);
     const [isNarrow, setIsNarrow] = useState(false);
     const [reduceMotion, setReduceMotion] = useState(false);
+    const [expanded, setExpanded] = useState<Record<string, boolean>>({});
+    const isPhone = useIsNarrow();
 
     useEffect(() => {
         const widthQuery = window.matchMedia('(max-width: 900px)');
@@ -194,12 +199,34 @@ const Experience: React.FC = () => {
                                     <div className="exp-number-badge">{exp.number}</div>
                                     <h2 className="exp-title">{exp.title}</h2>
                                     <p className="exp-company">{exp.company}</p>
-                                    <p className="exp-body-text">{exp.body}</p>
-                                    <div className="exp-skills">
-                                        {exp.skills.map(s => (
-                                            <span key={s} className="tag">{s}</span>
-                                        ))}
-                                    </div>
+                                    {(() => {
+                                        // Phones: first 3 bullets and 8 skills, the rest behind one button per job.
+                                        const bullets = exp.body.split('●').map(b => b.trim()).filter(Boolean);
+                                        const open = !isPhone || expanded[exp.number];
+                                        const shownBullets = open ? bullets : bullets.slice(0, 3);
+                                        const shownSkills = open ? exp.skills : exp.skills.slice(0, 8);
+                                        const hidden = bullets.length - shownBullets.length + exp.skills.length - shownSkills.length;
+                                        return (
+                                            <>
+                                                <p className="exp-body-text">{shownBullets.map(b => `● ${b}`).join('\n\n')}</p>
+                                                <div className="exp-skills">
+                                                    {shownSkills.map(s => (
+                                                        <span key={s} className="tag">{s}</span>
+                                                    ))}
+                                                </div>
+                                                {isPhone && (hidden > 0 || expanded[exp.number]) && (
+                                                    <button
+                                                        type="button"
+                                                        className="exp-more-btn"
+                                                        aria-expanded={!!expanded[exp.number]}
+                                                        onClick={() => setExpanded(e => ({ ...e, [exp.number]: !e[exp.number] }))}
+                                                    >
+                                                        {expanded[exp.number] ? 'Show less ▴' : `Show all ${bullets.length} points ▾`}
+                                                    </button>
+                                                )}
+                                            </>
+                                        );
+                                    })()}
                                 </div>
 
                                 <div className="win98-statusbar">

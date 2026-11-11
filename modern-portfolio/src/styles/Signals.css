@@ -444,3 +444,5 @@
         font-size: 11px;
     }
 }
+
+.signal-more-btn { display: block; margin: 10px auto 2px; min-width: 160px; }

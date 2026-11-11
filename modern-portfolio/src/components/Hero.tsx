@@ -24,6 +24,7 @@ const Hero: React.FC<HeroProps> = ({ onOpenGame }) => {
     const shouldReduceMotion = useReducedMotion();
 
     const [isNarrow, setIsNarrow] = useState(false);
+    const [aboutOpen, setAboutOpen] = useState(false);
     useEffect(() => {
         const mq = window.matchMedia('(max-width: 900px)');
         const update = () => setIsNarrow(mq.matches);
@@ -215,7 +216,7 @@ const Hero: React.FC<HeroProps> = ({ onOpenGame }) => {
                                     <span>Professional Profile</span>
                                     <span className="hero-panel-badge">Properties</span>
                                 </div>
-                                <div className="hero-panel-body">
+                                <div className={`hero-panel-body about-body ${aboutOpen ? 'open' : ''}`}>
                                     <p className="hero-panel-lead">
                                         IT Specialist &amp; Software Engineer | M.S. in Computer Science
                                     </p>
@@ -262,6 +263,14 @@ const Hero: React.FC<HeroProps> = ({ onOpenGame }) => {
                                         parts myself.
                                     </p>
                                 </div>
+                                <button
+                                    type="button"
+                                    className="about-more-btn"
+                                    aria-expanded={aboutOpen}
+                                    onClick={() => setAboutOpen(o => !o)}
+                                >
+                                    {aboutOpen ? 'Show less ▴' : 'Read more ▾'}
+                                </button>
                             </div>
 
                             <div className="hero-panel-window">

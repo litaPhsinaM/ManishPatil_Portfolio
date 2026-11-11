@@ -526,3 +526,12 @@
         padding: 12px 10px;
     }
 }
+
+/* Phones: the profile reads in normal case, starts with one paragraph, and expands on request. */
+.about-more-btn { display: none; }
+@media (max-width: 640px) {
+    .about-body p { text-transform: none; letter-spacing: 0; font-size: 13px; line-height: 1.55; }
+    .about-body .hero-panel-lead { text-transform: uppercase; }
+    .about-body:not(.open) > p:nth-of-type(n + 3) { display: none; }
+    .about-more-btn { display: block; margin: 6px 0 0 auto; min-width: 120px; }
+}

@@ -49,6 +49,14 @@ export const projects: Project[] = [
 
   // --- Software Engineering ---
   {
+    title: "Market Digest: AI Finance Learning App",
+    description: "A free app that turns 15 finance podcasts and 12 newsrooms into a 5-minute daily lesson for beginner investors, and runs itself. Every morning a scheduler inside the database (Supabase pg_cron) starts a GitHub Actions job: Google Gemini transcribes and summarizes new episodes (Whisper + Qwen 14B run locally as a fallback), and deterministic checks reject any number, ticker or quote that isn't in the transcript. It adds an AI audio briefing, quizzes and 24 lessons, plus paper trading on real prices refreshed every 15 minutes, with game logic settled in Postgres behind row-level security: Brier-scored predictions, a daily 90% range game, and alpha versus the S&P 500. Web, Android (Capacitor) and iPhone from one codebase, $0 to run.",
+    image: "market_digest.jpg",
+    link: "https://litaphsinam.github.io/market-digest/",
+    tags: ["Python", "Gemini", "Supabase", "PostgreSQL", "GitHub Actions", "JavaScript", "Capacitor", "pg_cron"],
+    category: "Software Engineering"
+  },
+  {
     title: "IT Ticketing & Asset Management System",
     description: "A full-stack internal operations platform built to modernize IT support workflows for device checkout, ticket tracking, asset inventory, audit history, and reporting. The system is designed around secure APIs, role-based access, automated lifecycle tracking, and faster support resolution for thousands of managed devices.",
     image: "it_ticketing_inventory_system.png",

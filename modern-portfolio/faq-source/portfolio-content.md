@@ -115,7 +115,15 @@ Carson, CA · February 2024 – Present
   platform is backed by PostgreSQL.
 - Rebuilt the CISE website in CM1 to meet campus accessibility and compliance
   requirements, created pages for individual programs, and maintain five to six
-  Fabrication Lab pages in WordPress.
+  Fabrication Lab pages in WordPress. Continues to develop the site with program updates,
+  form integrations, and plugins.
+- Building a staff scheduling app for the Fabrication Lab (FastAPI + SQLite backend,
+  Next.js frontend, Google sign-in for admins). It generates fair weekly schedules for
+  40+ lab technicians around class times, travel time between sites and weekly hour
+  limits, covers events, emails each technician their shifts, and keeps automatic
+  backups. Used by the lab's scheduling manager. Repo is private (CISE).
+- Pursuing three Jamf certifications focused on iOS: configuring, securing, and
+  managing Apple devices in enterprise environments with Jamf Pro. (Not held yet.)
 - Produce and edit photography and video content for CISE and partner school districts
   using Adobe creative tools. Mentored an undergraduate intern and supported three IT
   student assistants with technical projects and daily troubleshooting.
@@ -215,6 +223,23 @@ Tech: EDA, Python, Seaborn, Data Analytics
 Repo: https://github.com/litaPhsinaM/Exploratory-Data-Analysis-of-World-Population
 
 ### Software Engineering
+
+**Market Digest: AI Finance Learning App** (November 2026, live)
+Free app that turns 15 finance podcasts and 12 newsrooms into a 5-minute daily lesson for
+beginner investors, and runs itself. A scheduler inside the database (Supabase pg_cron)
+starts a GitHub Actions job every weekday morning: Google Gemini transcribes and summarizes
+new episodes (open-source Whisper + Qwen 14B on a Mac as the offline fallback), and
+deterministic checks reject any number, ticker or quote not found in the transcript. Daily
+brief, top stories, a 3-minute AI audio briefing (Kokoro TTS), daily quiz, 24 lessons and
+90 practice questions. Paper trading with $10,000 of play money on real prices refreshed
+every 15 minutes in market hours, with all game logic in Postgres behind row-level
+security: Brier-scored predictions, a daily 90% range game (interval scoring), alpha versus
+the S&P 500, Sharpe ratio and max drawdown, a pundit Scorecard that checks experts'
+forecasts, friends and leaderboards. Web, Android app (Capacitor) and iPhone web app from
+one codebase; $0 to run. Built with AI coding assistance.
+Tech: Python, Gemini, Supabase, PostgreSQL, pg_cron, GitHub Actions, JavaScript, Capacitor
+Live: https://litaphsinam.github.io/market-digest/
+Repo: https://github.com/litaPhsinaM/market-digest
 
 **IT Ticketing & Asset Management System**
 Full-stack internal operations platform for device checkout, ticket tracking, asset

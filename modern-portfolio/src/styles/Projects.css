@@ -318,3 +318,15 @@
         padding: 4px 10px;
     }
 }
+
+/* Phones: four lines per project, tap the text for the rest. */
+@media (max-width: 640px) {
+    .project-desc:not(.open) {
+        display: -webkit-box;
+        -webkit-line-clamp: 4;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        cursor: pointer;
+    }
+    .project-desc:not(.open)::after { content: ''; }
+}

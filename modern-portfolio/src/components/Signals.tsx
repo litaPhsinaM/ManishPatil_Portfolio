@@ -1,4 +1,5 @@
 import React, { useMemo, useState } from 'react';
+import { useIsNarrow } from '../hooks/useIsNarrow';
 import { motion } from 'framer-motion';
 import { ShieldAlert, BrainCircuit, Radio, ExternalLink } from 'lucide-react';
 import { signalNotes } from '../data/signalNotes';
@@ -87,6 +88,9 @@ const formatTimestamp = (iso: string) => {
 
 const Signals: React.FC = () => {
     const [activeTabId, setActiveTabId] = useState<SignalTabId>('security');
+    const isPhone = useIsNarrow();
+    const [showAll, setShowAll] = useState(false);
+    const PHONE_ITEMS = 4;
     const { payload, status, isStale } = useSignalFeed();
 
     const activeTab = signalTabs.find(tab => tab.id === activeTabId) ?? signalTabs[0];
@@ -180,7 +184,7 @@ const Signals: React.FC = () => {
                                     role="tab"
                                     aria-selected={isActive}
                                     aria-controls="signal-tab-panel"
-                                    onClick={() => setActiveTabId(tab.id)}
+                                    onClick={() => { setActiveTabId(tab.id); setShowAll(false); }}
                                 >
                                     <TabIcon size={14} />
                                     <span>{tab.label}</span>
@@ -227,7 +231,7 @@ const Signals: React.FC = () => {
 
                         {status === 'ready' && items.length > 0 && (
                             <ul className="signal-list">
-                                {items.map((item) => {
+                                {(isPhone && !showAll ? items.slice(0, PHONE_ITEMS) : items).map((item) => {
                                     const note = signalNotes[item.id];
 
                                     return (
@@ -280,6 +284,12 @@ const Signals: React.FC = () => {
                                     );
                                 })}
                             </ul>
+                        )}
+
+                        {status === 'ready' && isPhone && items.length > PHONE_ITEMS && (
+                            <button type="button" className="signal-more-btn" aria-expanded={showAll} onClick={() => setShowAll(v => !v)}>
+                                {showAll ? 'Show less ▴' : `Show ${items.length - PHONE_ITEMS} more ▾`}
+                            </button>
                         )}
                     </div>
 
