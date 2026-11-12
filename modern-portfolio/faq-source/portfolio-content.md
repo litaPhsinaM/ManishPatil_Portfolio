@@ -224,7 +224,7 @@ Repo: https://github.com/litaPhsinaM/Exploratory-Data-Analysis-of-World-Populati
 
 ### Software Engineering
 
-**Market Digest: AI Finance Learning App** (November 2026, live)
+**Stocksplain (formerly Market Digest): AI Finance Learning App** (November 2026, live)
 Free app that turns 15 finance podcasts and 12 newsrooms into a 5-minute daily lesson for
 beginner investors, and runs itself. A scheduler inside the database (Supabase pg_cron)
 starts a GitHub Actions job every weekday morning: Google Gemini transcribes and summarizes
@@ -238,7 +238,7 @@ the S&P 500, Sharpe ratio and max drawdown, a pundit Scorecard that checks exper
 forecasts, friends and leaderboards. Web, Android app (Capacitor) and iPhone web app from
 one codebase; $0 to run. Built with AI coding assistance.
 Tech: Python, Gemini, Supabase, PostgreSQL, pg_cron, GitHub Actions, JavaScript, Capacitor
-Live: https://litaphsinam.github.io/market-digest/
+Live: https://stocksplain.app/
 Repo: https://github.com/litaPhsinaM/market-digest
 
 **IT Ticketing & Asset Management System**

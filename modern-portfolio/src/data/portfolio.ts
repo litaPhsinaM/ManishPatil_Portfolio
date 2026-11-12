@@ -49,10 +49,10 @@ export const projects: Project[] = [
 
   // --- Software Engineering ---
   {
-    title: "Market Digest: AI Finance Learning App",
+    title: "Stocksplain: AI Finance Learning App",
     description: "A free app that turns 15 finance podcasts into a 5-minute daily lesson for beginner investors, and runs itself. A scheduler in the database (Supabase pg_cron) starts a daily GitHub Actions job where Google Gemini summarizes new episodes, and automatic checks reject any number or quote not in the transcript. Includes an AI audio briefing, quizzes and 29 lessons, paper trading on real prices with game logic in Postgres, and TrendBot, a robot player running an open-source trading checklist in public. Web, Android and iPhone, $0 to run.",
     image: "market_digest.jpg",
-    link: "https://litaphsinam.github.io/market-digest/",
+    link: "https://stocksplain.app/",
     tags: ["Python", "Gemini", "Supabase", "PostgreSQL", "GitHub Actions", "JavaScript", "Capacitor", "pg_cron"],
     category: "Software Engineering"
   },
