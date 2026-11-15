@@ -1,285 +1,285 @@
 {
-  "generatedAt": "2026-11-14T17:08:55.072Z",
+  "generatedAt": "2026-11-15T17:42:36.523Z",
   "log": [
     {
-      "t": "2026-11-14T17:08:38.569Z",
+      "t": "2026-11-15T17:42:35.546Z",
       "level": "info",
       "msg": "signal refresh started"
     },
     {
-      "t": "2026-11-14T17:08:38.574Z",
+      "t": "2026-11-15T17:42:35.550Z",
       "level": "info",
       "msg": "GET hacker-news.firebaseio.com/v0/topstories.json"
     },
     {
-      "t": "2026-11-14T17:08:38.853Z",
+      "t": "2026-11-15T17:42:35.728Z",
       "level": "info",
       "msg": "HTTP 200 · resolving top 60 story ids in batches of 10"
     },
     {
-      "t": "2026-11-14T17:08:39.208Z",
+      "t": "2026-11-15T17:42:36.029Z",
       "level": "info",
-      "msg": "59 of 60 resolved to usable stories · 634ms"
+      "msg": "59 of 60 resolved to usable stories · 479ms"
     },
     {
-      "t": "2026-11-14T17:08:39.209Z",
+      "t": "2026-11-15T17:42:36.030Z",
       "level": "info",
       "msg": "GET cisa.gov/feeds/known_exploited_vulnerabilities.json"
     },
     {
-      "t": "2026-11-14T17:08:39.464Z",
+      "t": "2026-11-15T17:42:36.265Z",
       "level": "info",
-      "msg": "HTTP 200 · catalog holds 1781 CVEs · 255ms"
+      "msg": "HTTP 200 · catalog holds 1781 CVEs · 235ms"
     },
     {
-      "t": "2026-11-14T17:08:39.468Z",
+      "t": "2026-11-15T17:42:36.269Z",
       "level": "info",
       "msg": "fleet filter: 1044 of 1781 touch managed platforms"
     },
     {
-      "t": "2026-11-14T17:08:39.476Z",
+      "t": "2026-11-15T17:42:36.276Z",
       "level": "info",
       "msg": "GET export.arxiv.org/api/query cat:cs.AI OR cat:cs.LG"
     },
     {
-      "t": "2026-11-14T17:08:55.069Z",
+      "t": "2026-11-15T17:42:36.520Z",
       "level": "info",
-      "msg": "HTTP 200 · 30,801 bytes of Atom XML · 15593ms"
+      "msg": "HTTP 200 · 30,801 bytes of Atom XML · 244ms"
     },
     {
-      "t": "2026-11-14T17:08:55.071Z",
+      "t": "2026-11-15T17:42:36.522Z",
       "level": "info",
       "msg": "topic split: 7 AI stories, 52 general dev"
     },
     {
-      "t": "2026-11-14T17:08:55.071Z",
+      "t": "2026-11-15T17:42:36.522Z",
       "level": "info",
       "msg": "--- security feed: 14 items ---"
     },
     {
-      "t": "2026-11-14T17:08:55.071Z",
+      "t": "2026-11-15T17:42:36.522Z",
       "level": "info",
       "msg": "ingest CISA KEV · Microsoft Office Outlook Missing User Interaction for Pot… · 2026-11-10"
     },
     {
-      "t": "2026-11-14T17:08:55.071Z",
+      "t": "2026-11-15T17:42:36.522Z",
       "level": "info",
       "msg": "ingest CISA KEV · Cisco BroadWorks Improper Restriction of XML External Ent… · 2026-11-10"
     },
     {
-      "t": "2026-11-14T17:08:55.071Z",
+      "t": "2026-11-15T17:42:36.522Z",
       "level": "info",
       "msg": "ingest CISA KEV · Google Chromium Use-After-Free Vulnerability · 2026-11-10"
     },
     {
-      "t": "2026-11-14T17:08:55.071Z",
+      "t": "2026-11-15T17:42:36.522Z",
       "level": "info",
       "msg": "ingest CISA KEV · SonicWall SonicOS SSLVPN Use of Single-factor Authenticat… · 2026-11-06"
     },
     {
-      "t": "2026-11-14T17:08:55.071Z",
+      "t": "2026-11-15T17:42:36.522Z",
       "level": "info",
       "msg": "ingest CISA KEV · Apple Multiple Products Improper Authentication Vulnerabi… · 2026-11-04"
     },
     {
-      "t": "2026-11-14T17:08:55.071Z",
+      "t": "2026-11-15T17:42:36.522Z",
       "level": "info",
       "msg": "ingest CISA KEV · WordPress WordPress Core Time-of-check Time-of-use (TOCTO… · 2026-11-03"
     },
     {
-      "t": "2026-11-14T17:08:55.071Z",
+      "t": "2026-11-15T17:42:36.522Z",
       "level": "info",
       "msg": "ingest CISA KEV · Ivanti Connect Secure Generation of Predictable Numbers o… · 2026-10-30"
     },
     {
-      "t": "2026-11-14T17:08:55.071Z",
+      "t": "2026-11-15T17:42:36.522Z",
       "level": "info",
       "msg": "ingest CISA KEV · Ivanti Connect Secure Missing Authentication for Critical… · 2026-10-30"
     },
     {
-      "t": "2026-11-14T17:08:55.071Z",
+      "t": "2026-11-15T17:42:36.522Z",
       "level": "info",
       "msg": "ingest CISA KEV · Cisco Secure Firewall ASA Software and Cisco Secure FTD S… · 2026-10-29"
     },
     {
-      "t": "2026-11-14T17:08:55.071Z",
+      "t": "2026-11-15T17:42:36.522Z",
       "level": "info",
       "msg": "ingest CISA KEV · Broadcom VMWare ESX Insufficient Logging Vulnerability · 2026-10-28"
     },
     {
-      "t": "2026-11-14T17:08:55.071Z",
+      "t": "2026-11-15T17:42:36.522Z",
       "level": "info",
       "msg": "ingest CISA KEV · Linux Kernel Missing Initialization of a Variable Vulnera… · 2026-10-28"
     },
     {
-      "t": "2026-11-14T17:08:55.071Z",
+      "t": "2026-11-15T17:42:36.522Z",
       "level": "info",
       "msg": "ingest CISA KEV · Google Brotli Unchecked Return Value Vulnerability · 2026-10-27"
     },
     {
-      "t": "2026-11-14T17:08:55.071Z",
+      "t": "2026-11-15T17:42:36.522Z",
       "level": "info",
       "msg": "ingest CISA KEV · PHP Memory Corruption Vulnerability · 2026-10-26"
     },
     {
-      "t": "2026-11-14T17:08:55.071Z",
+      "t": "2026-11-15T17:42:36.522Z",
       "level": "info",
       "msg": "ingest CISA KEV · PHP Stale Internal Request-State Vulnerability · 2026-10-26"
     },
     {
-      "t": "2026-11-14T17:08:55.071Z",
+      "t": "2026-11-15T17:42:36.522Z",
       "level": "info",
       "msg": "--- ai feed: 14 items ---"
     },
     {
-      "t": "2026-11-14T17:08:55.071Z",
+      "t": "2026-11-15T17:42:36.522Z",
       "level": "info",
-      "msg": "ingest Hacker News · Nvidia allegedly engineered scarcity by funding AI startu… · 2026-11-14"
+      "msg": "ingest Hacker News · All AI-generated code should be Open Source · 2026-11-15"
     },
     {
-      "t": "2026-11-14T17:08:55.071Z",
+      "t": "2026-11-15T17:42:36.522Z",
       "level": "info",
-      "msg": "ingest Hacker News · Smuggling of 1.5M AI GPUs could be the cause of Huang's d… · 2026-11-14"
+      "msg": "ingest Hacker News · Understanding Positional Embeddings in Modern LLMs · 2026-11-15"
     },
     {
-      "t": "2026-11-14T17:08:55.071Z",
+      "t": "2026-11-15T17:42:36.522Z",
       "level": "info",
-      "msg": "ingest Hacker News · Show HN: Shotoku – Local-first action governance and budg… · 2026-11-14"
+      "msg": "ingest Hacker News · What Picasso taught me about building AI Agents · 2026-11-15"
     },
     {
-      "t": "2026-11-14T17:08:55.071Z",
+      "t": "2026-11-15T17:42:36.522Z",
       "level": "info",
-      "msg": "ingest Hacker News · Show HN: Cyberviber – a $15 touch screen to show which Cl… · 2026-11-14"
+      "msg": "ingest Hacker News · Show HN: db-branch – database branches in seconds for AI… · 2026-11-15"
     },
     {
-      "t": "2026-11-14T17:08:55.072Z",
+      "t": "2026-11-15T17:42:36.522Z",
       "level": "info",
-      "msg": "ingest Hacker News · Why platform teams fail (and AI makes it worse) · 2026-11-14"
+      "msg": "ingest Hacker News · A Human Reads the Anthropic IPO Filing · 2026-11-15"
     },
     {
-      "t": "2026-11-14T17:08:55.072Z",
-      "level": "info",
-      "msg": "ingest Hacker News · Jonathan Blow – If AI solved coding, why is my software s… · 2026-11-13"
-    },
-    {
-      "t": "2026-11-14T17:08:55.072Z",
+      "t": "2026-11-15T17:42:36.522Z",
       "level": "info",
       "msg": "ingest arXiv · Unbundling Multimodal Vision Encoding · 2026-11-12"
     },
     {
-      "t": "2026-11-14T17:08:55.072Z",
+      "t": "2026-11-15T17:42:36.523Z",
       "level": "info",
       "msg": "ingest arXiv · ArchSpace: Recording, Reviewing, and Referencing LLM Arch… · 2026-11-12"
     },
     {
-      "t": "2026-11-14T17:08:55.072Z",
+      "t": "2026-11-15T17:42:36.523Z",
       "level": "info",
       "msg": "ingest arXiv · Internalizing Investment Mandates: A Neurosymbolic RL App… · 2026-11-12"
     },
     {
-      "t": "2026-11-14T17:08:55.072Z",
+      "t": "2026-11-15T17:42:36.523Z",
       "level": "info",
       "msg": "ingest arXiv · AgentSSL: Can MLE Agents Leverage Unlabeled Data? · 2026-11-12"
     },
     {
-      "t": "2026-11-14T17:08:55.072Z",
+      "t": "2026-11-15T17:42:36.523Z",
       "level": "info",
       "msg": "ingest arXiv · CoReMem: Cost-Internalizing Memory for Successive Coding… · 2026-11-12"
     },
     {
-      "t": "2026-11-14T17:08:55.072Z",
+      "t": "2026-11-15T17:42:36.523Z",
       "level": "info",
       "msg": "ingest arXiv · Linking Rapid Learning to Compositional Structure in Neur… · 2026-11-12"
     },
     {
-      "t": "2026-11-14T17:08:55.072Z",
+      "t": "2026-11-15T17:42:36.523Z",
       "level": "info",
       "msg": "ingest arXiv · Sketching Language Models for Context Attribution · 2026-11-12"
     },
     {
-      "t": "2026-11-14T17:08:55.072Z",
+      "t": "2026-11-15T17:42:36.523Z",
       "level": "info",
       "msg": "ingest arXiv · Classical Energies Learn to Reason 1,000x Faster than Loo… · 2026-11-12"
     },
     {
-      "t": "2026-11-14T17:08:55.072Z",
+      "t": "2026-11-15T17:42:36.523Z",
+      "level": "info",
+      "msg": "ingest arXiv · Quantifying structural stability of transparent models fo… · 2026-11-12"
+    },
+    {
+      "t": "2026-11-15T17:42:36.523Z",
       "level": "info",
       "msg": "--- dev feed: 14 items ---"
     },
     {
-      "t": "2026-11-14T17:08:55.072Z",
+      "t": "2026-11-15T17:42:36.523Z",
       "level": "info",
-      "msg": "ingest Hacker News · PyPI's redesigned project pages with clearer security sig… · 2026-11-14"
+      "msg": "ingest Hacker News · The MacBook Pro's OLED PWM Problem: When a 'Better' Displ… · 2026-11-15"
     },
     {
-      "t": "2026-11-14T17:08:55.072Z",
+      "t": "2026-11-15T17:42:36.523Z",
       "level": "info",
-      "msg": "ingest Hacker News · KDE: The Documentary on Free Software [video] · 2026-11-14"
+      "msg": "ingest Hacker News · Emacs Is My Browser · 2026-11-15"
     },
     {
-      "t": "2026-11-14T17:08:55.072Z",
+      "t": "2026-11-15T17:42:36.523Z",
       "level": "info",
-      "msg": "ingest Hacker News · Italy fines Meta €805M over photo privacy · 2026-11-14"
+      "msg": "ingest Hacker News · Things That Turbo Pascal Is Smaller Than (2011) · 2026-11-15"
     },
     {
-      "t": "2026-11-14T17:08:55.072Z",
+      "t": "2026-11-15T17:42:36.523Z",
       "level": "info",
-      "msg": "ingest Hacker News · The Cloud Is Just Someone Else's Computer – They Let It B… · 2026-11-14"
+      "msg": "ingest Hacker News · SpaceX catches the Starship to end Flight 15 · 2026-11-14"
     },
     {
-      "t": "2026-11-14T17:08:55.072Z",
+      "t": "2026-11-15T17:42:36.523Z",
       "level": "info",
-      "msg": "ingest Hacker News · Why get an expensive Pi when I have an old phone? · 2026-11-10"
+      "msg": "ingest Hacker News · Court denies motion to dismiss DRAM price fixing case · 2026-11-15"
     },
     {
-      "t": "2026-11-14T17:08:55.072Z",
+      "t": "2026-11-15T17:42:36.523Z",
       "level": "info",
-      "msg": "ingest Hacker News · Advancing science and engineering with Antigravity's /tea… · 2026-11-14"
+      "msg": "ingest Hacker News · A NES emulator written in Odin · 2026-11-15"
     },
     {
-      "t": "2026-11-14T17:08:55.072Z",
+      "t": "2026-11-15T17:42:36.523Z",
       "level": "info",
-      "msg": "ingest Hacker News · Show HN: A terminal-native idle factory game, written in… · 2026-11-14"
+      "msg": "ingest Hacker News · 20 Years of Pyrolog · 2026-11-12"
     },
     {
-      "t": "2026-11-14T17:08:55.072Z",
+      "t": "2026-11-15T17:42:36.523Z",
       "level": "info",
-      "msg": "ingest Hacker News · Show HN: Fursoy – Out-of-order RV64IMAFDV core in SystemV… · 2026-11-14"
+      "msg": "ingest Hacker News · Why did some Apollo missions carry a grenade launcher? · 2026-11-15"
     },
     {
-      "t": "2026-11-14T17:08:55.072Z",
+      "t": "2026-11-15T17:42:36.523Z",
       "level": "info",
-      "msg": "ingest Hacker News · Show HN: Agweb – a browser for agents that stays out of y… · 2026-11-14"
+      "msg": "ingest Hacker News · What thousands of conversations look like inside a langua… · 2026-11-13"
     },
     {
-      "t": "2026-11-14T17:08:55.072Z",
+      "t": "2026-11-15T17:42:36.523Z",
       "level": "info",
-      "msg": "ingest Hacker News · Tech Companies Are Trying to Shift the Concept of Privacy… · 2026-11-14"
+      "msg": "ingest Hacker News · The Hypertext Transfer Protocol Status Code 483 (I'm Not… · 2026-11-15"
     },
     {
-      "t": "2026-11-14T17:08:55.072Z",
+      "t": "2026-11-15T17:42:36.523Z",
       "level": "info",
-      "msg": "ingest Hacker News · Ggml v1.0.0 · 2026-11-14"
+      "msg": "ingest Hacker News · The Telephone Changed the World · 2026-11-14"
     },
     {
-      "t": "2026-11-14T17:08:55.072Z",
+      "t": "2026-11-15T17:42:36.523Z",
       "level": "info",
-      "msg": "ingest Hacker News · Testing a Trash Can Faraday Cage · 2026-11-12"
+      "msg": "ingest Hacker News · The Atheist Bible · 2026-11-15"
     },
     {
-      "t": "2026-11-14T17:08:55.072Z",
+      "t": "2026-11-15T17:42:36.523Z",
       "level": "info",
-      "msg": "ingest Hacker News · Monkey Island: all 13 versions side by side · 2026-11-14"
+      "msg": "ingest Hacker News · Lutnick Pushed to Weaken Chip Rules That Overlap with His… · 2026-11-15"
     },
     {
-      "t": "2026-11-14T17:08:55.072Z",
+      "t": "2026-11-15T17:42:36.523Z",
       "level": "info",
-      "msg": "ingest Hacker News · Italy fines Meta $887M over Android users' data access · 2026-11-14"
+      "msg": "ingest Hacker News · Chasing an audio artifact on power loss · 2026-11-12"
     },
     {
-      "t": "2026-11-14T17:08:55.072Z",
+      "t": "2026-11-15T17:42:36.523Z",
       "level": "info",
-      "msg": "publishing 42 items across 3 feeds · 16503ms"
+      "msg": "publishing 42 items across 3 feeds · 977ms"
     }
   ],
   "feeds": {
@@ -483,87 +483,73 @@
     ],
     "ai": [
       {
-        "id": "hn-50493251",
-        "title": "Nvidia allegedly engineered scarcity by funding AI startups to buy its GPUs",
-        "url": "https://www.techpowerup.com/354814/nvidia-allegedly-engineered-scarcity-by-funding-ai-startups-to-buy-its-gpus",
+        "id": "hn-50507303",
+        "title": "All AI-generated code should be Open Source",
+        "url": "https://jakub.jankiewicz.org/blog/ai-code-open-source/",
         "source": "Hacker News",
-        "date": "2026-11-14",
+        "date": "2026-11-15",
         "summary": "",
         "meta": [
-          "924 points",
-          "557 comments"
+          "481 points",
+          "289 comments"
         ],
-        "discussion": "https://news.ycombinator.com/item?id=50493251",
+        "discussion": "https://news.ycombinator.com/item?id=50507303",
         "flag": null
       },
       {
-        "id": "hn-50498051",
-        "title": "Smuggling of 1.5M AI GPUs could be the cause of Huang's departure",
-        "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/mass-smuggling-of-nvidia-ai-gpus-could-be-the-underlying-cause-of-jensen-huangs-departure-analysts-claim-more-than-1-5-gigawatts-of-banned-chips-tracked-to-china-despite-export-controls",
+        "id": "hn-50506376",
+        "title": "Understanding Positional Embeddings in Modern LLMs",
+        "url": "https://magazine.sebastianraschka.com/p/understanding-positional-embeddings",
         "source": "Hacker News",
-        "date": "2026-11-14",
+        "date": "2026-11-15",
         "summary": "",
         "meta": [
-          "6 points",
+          "120 points",
+          "3 comments"
+        ],
+        "discussion": "https://news.ycombinator.com/item?id=50506376",
+        "flag": null
+      },
+      {
+        "id": "hn-50508076",
+        "title": "What Picasso taught me about building AI Agents",
+        "url": "https://claramap.com/blog/what-picasso-taught-me-about-building-ai-agents/",
+        "source": "Hacker News",
+        "date": "2026-11-15",
+        "summary": "",
+        "meta": [
+          "7 points",
           "1 comments"
         ],
-        "discussion": "https://news.ycombinator.com/item?id=50498051",
+        "discussion": "https://news.ycombinator.com/item?id=50508076",
         "flag": null
       },
       {
-        "id": "hn-50496705",
-        "title": "Show HN: Shotoku – Local-first action governance and budget caps for AI agents",
-        "url": "https://www.shotoku.dev/",
+        "id": "hn-50506940",
+        "title": "Show HN: db-branch – database branches in seconds for AI agents and CI, via ZFS",
+        "url": "https://github.com/db-branch/db-branch",
         "source": "Hacker News",
-        "date": "2026-11-14",
+        "date": "2026-11-15",
         "summary": "",
         "meta": [
-          "4 points",
-          "0 comments"
-        ],
-        "discussion": "https://news.ycombinator.com/item?id=50496705",
-        "flag": null
-      },
-      {
-        "id": "hn-50496642",
-        "title": "Show HN: Cyberviber – a $15 touch screen to show which Claude session needs you",
-        "url": "https://cyberviber.de/",
-        "source": "Hacker News",
-        "date": "2026-11-14",
-        "summary": "",
-        "meta": [
-          "8 points",
-          "0 comments"
-        ],
-        "discussion": "https://news.ycombinator.com/item?id=50496642",
-        "flag": null
-      },
-      {
-        "id": "hn-50496525",
-        "title": "Why platform teams fail (and AI makes it worse)",
-        "url": "https://willdady.com/why-platform-teams-fail",
-        "source": "Hacker News",
-        "date": "2026-11-14",
-        "summary": "",
-        "meta": [
-          "6 points",
+          "5 points",
           "2 comments"
         ],
-        "discussion": "https://news.ycombinator.com/item?id=50496525",
+        "discussion": "https://news.ycombinator.com/item?id=50506940",
         "flag": null
       },
       {
-        "id": "hn-50484658",
-        "title": "Jonathan Blow – If AI solved coding, why is my software still the same? [video]",
-        "url": "https://www.youtube.com/watch?v=IRK8h67ol7Q",
+        "id": "hn-50507517",
+        "title": "A Human Reads the Anthropic IPO Filing",
+        "url": "https://www.nytimes.com/2026/11/15/business/anthropic-ipo-filing-prospectus.html",
         "source": "Hacker News",
-        "date": "2026-11-13",
+        "date": "2026-11-15",
         "summary": "",
         "meta": [
-          "432 points",
-          "605 comments"
+          "12 points",
+          "8 comments"
         ],
-        "discussion": "https://news.ycombinator.com/item?id=50484658",
+        "discussion": "https://news.ycombinator.com/item?id=50507517",
         "flag": null
       },
       {
@@ -669,203 +655,216 @@
           "Benjamin Hoover +2"
         ],
         "flag": null
+      },
+      {
+        "id": "http://arxiv.org/abs/2611.17308v1",
+        "title": "Quantifying structural stability of transparent models for general insurance pricing",
+        "url": "http://arxiv.org/abs/2611.17308v1",
+        "source": "arXiv",
+        "date": "2026-11-12",
+        "summary": "The short duration of general insurance contracts leads to rapid distributional shifts in the data, warranting regular model updates. This process may yield a post-update model that differs considerably from the pre-update model in both predictions and structure. Structural stability is upstream of predictive stabilit…",
+        "meta": [
+          "Research",
+          "Félix Côté +1"
+        ],
+        "flag": null
       }
     ],
     "dev": [
       {
-        "id": "hn-50497892",
-        "title": "PyPI's redesigned project pages with clearer security signals are now live",
-        "url": "https://blog.pypi.org/posts/2026-11-06-ui-updates-complete/",
+        "id": "hn-50506719",
+        "title": "The MacBook Pro's OLED PWM Problem: When a 'Better' Display Becomes Worse to Use",
+        "url": "https://macanorak.com/the-macbook-pros-oled-pwm-problem-when-a-better-display-becomes-worse-to-use/",
+        "source": "Hacker News",
+        "date": "2026-11-15",
+        "summary": "",
+        "meta": [
+          "224 points",
+          "127 comments"
+        ],
+        "discussion": "https://news.ycombinator.com/item?id=50506719",
+        "flag": null
+      },
+      {
+        "id": "hn-50507553",
+        "title": "Emacs Is My Browser",
+        "url": "https://joshblais.com/blog/emacs-as-my-browser/",
+        "source": "Hacker News",
+        "date": "2026-11-15",
+        "summary": "",
+        "meta": [
+          "55 points",
+          "20 comments"
+        ],
+        "discussion": "https://news.ycombinator.com/item?id=50507553",
+        "flag": null
+      },
+      {
+        "id": "hn-50506894",
+        "title": "Things That Turbo Pascal Is Smaller Than (2011)",
+        "url": "https://prog21.dadgum.com/116.html",
+        "source": "Hacker News",
+        "date": "2026-11-15",
+        "summary": "",
+        "meta": [
+          "97 points",
+          "37 comments"
+        ],
+        "discussion": "https://news.ycombinator.com/item?id=50506894",
+        "flag": null
+      },
+      {
+        "id": "hn-50500963",
+        "title": "SpaceX catches the Starship to end Flight 15",
+        "url": "https://www.spacex.com/launches/starship-flight-15",
         "source": "Hacker News",
         "date": "2026-11-14",
         "summary": "",
         "meta": [
-          "65 points",
-          "11 comments"
+          "1499 points",
+          "1041 comments"
         ],
-        "discussion": "https://news.ycombinator.com/item?id=50497892",
+        "discussion": "https://news.ycombinator.com/item?id=50500963",
         "flag": null
       },
       {
-        "id": "hn-50496976",
-        "title": "KDE: The Documentary on Free Software [video]",
-        "url": "https://tube.kockatoo.org/w/fFinNHfanLT7aBEb2B8y4c",
+        "id": "hn-50502988",
+        "title": "Court denies motion to dismiss DRAM price fixing case",
+        "url": "https://litnews.ai/articles/garciaguirre-samsung-sk-hynix-micron-dram-conspiracy-suit-survives-dismissal",
         "source": "Hacker News",
-        "date": "2026-11-14",
+        "date": "2026-11-15",
         "summary": "",
         "meta": [
-          "129 points",
-          "10 comments"
+          "392 points",
+          "172 comments"
         ],
-        "discussion": "https://news.ycombinator.com/item?id=50496976",
+        "discussion": "https://news.ycombinator.com/item?id=50502988",
         "flag": null
       },
       {
-        "id": "hn-50498063",
-        "title": "Italy fines Meta €805M over photo privacy",
-        "url": "https://www.rapporteur.com/news/italy-fines-meta-880mn-over-photo-privacy-authority/",
+        "id": "hn-50506588",
+        "title": "A NES emulator written in Odin",
+        "url": "https://lucypero.com/lucynes.html",
         "source": "Hacker News",
-        "date": "2026-11-14",
+        "date": "2026-11-15",
         "summary": "",
         "meta": [
-          "32 points",
-          "5 comments"
+          "61 points",
+          "12 comments"
         ],
-        "discussion": "https://news.ycombinator.com/item?id=50498063",
+        "discussion": "https://news.ycombinator.com/item?id=50506588",
         "flag": null
       },
       {
-        "id": "hn-50498151",
-        "title": "The Cloud Is Just Someone Else's Computer – They Let It Burn",
-        "url": "https://soargram.io/content/369523282",
-        "source": "Hacker News",
-        "date": "2026-11-14",
-        "summary": "",
-        "meta": [
-          "16 points",
-          "10 comments"
-        ],
-        "discussion": "https://news.ycombinator.com/item?id=50498151",
-        "flag": null
-      },
-      {
-        "id": "hn-50440709",
-        "title": "Why get an expensive Pi when I have an old phone?",
-        "url": "https://so.long.thanks.fish/why-pi-when-i-have-an-old-phone/",
-        "source": "Hacker News",
-        "date": "2026-11-10",
-        "summary": "",
-        "meta": [
-          "356 points",
-          "218 comments"
-        ],
-        "discussion": "https://news.ycombinator.com/item?id=50440709",
-        "flag": null
-      },
-      {
-        "id": "hn-50496811",
-        "title": "Advancing science and engineering with Antigravity's /teamwork",
-        "url": "https://research.google/blog/advancing-science-engineering-with-antigravitys-teamwork-feature/",
-        "source": "Hacker News",
-        "date": "2026-11-14",
-        "summary": "",
-        "meta": [
-          "56 points",
-          "15 comments"
-        ],
-        "discussion": "https://news.ycombinator.com/item?id=50496811",
-        "flag": null
-      },
-      {
-        "id": "hn-50497132",
-        "title": "Show HN: A terminal-native idle factory game, written in Rust with ratatui",
-        "url": "https://gitlab.com/snipedbywifi/terminactory",
-        "source": "Hacker News",
-        "date": "2026-11-14",
-        "summary": "",
-        "meta": [
-          "66 points",
-          "11 comments"
-        ],
-        "discussion": "https://news.ycombinator.com/item?id=50497132",
-        "flag": null
-      },
-      {
-        "id": "hn-50497137",
-        "title": "Show HN: Fursoy – Out-of-order RV64IMAFDV core in SystemVerilog (Linux 6.6)",
-        "url": "https://github.com/FURSOY/fursoy-cpu",
-        "source": "Hacker News",
-        "date": "2026-11-14",
-        "summary": "",
-        "meta": [
-          "26 points",
-          "5 comments"
-        ],
-        "discussion": "https://news.ycombinator.com/item?id=50497137",
-        "flag": null
-      },
-      {
-        "id": "hn-50497147",
-        "title": "Show HN: Agweb – a browser for agents that stays out of your way",
-        "url": "https://github.com/paul-nameless/agweb",
-        "source": "Hacker News",
-        "date": "2026-11-14",
-        "summary": "",
-        "meta": [
-          "40 points",
-          "9 comments"
-        ],
-        "discussion": "https://news.ycombinator.com/item?id=50497147",
-        "flag": null
-      },
-      {
-        "id": "hn-50496602",
-        "title": "Tech Companies Are Trying to Shift the Concept of Privacy (Again)",
-        "url": "https://www.eff.org/deeplinks/2026/11/tech-companies-are-trying-shift-entire-concept-privacy-again",
-        "source": "Hacker News",
-        "date": "2026-11-14",
-        "summary": "",
-        "meta": [
-          "218 points",
-          "82 comments"
-        ],
-        "discussion": "https://news.ycombinator.com/item?id=50496602",
-        "flag": null
-      },
-      {
-        "id": "hn-50493062",
-        "title": "Ggml v1.0.0",
-        "url": "https://github.com/ggml-org/ggml/releases/tag/v1.0.0",
-        "source": "Hacker News",
-        "date": "2026-11-14",
-        "summary": "",
-        "meta": [
-          "371 points",
-          "58 comments"
-        ],
-        "discussion": "https://news.ycombinator.com/item?id=50493062",
-        "flag": null
-      },
-      {
-        "id": "hn-50467278",
-        "title": "Testing a Trash Can Faraday Cage",
-        "url": "https://www.jefftk.com/p/testing-a-trash-can-faraday-cage",
+        "id": "hn-50467539",
+        "title": "20 Years of Pyrolog",
+        "url": "https://pypy.org/posts/2026/11/20-years-of-pyrolog.html",
         "source": "Hacker News",
         "date": "2026-11-12",
         "summary": "",
         "meta": [
           "33 points",
-          "16 comments"
+          "1 comments"
         ],
-        "discussion": "https://news.ycombinator.com/item?id=50467278",
+        "discussion": "https://news.ycombinator.com/item?id=50467539",
         "flag": null
       },
       {
-        "id": "hn-50493904",
-        "title": "Monkey Island: all 13 versions side by side",
-        "url": "https://monkeyisland.pages.dev/",
+        "id": "hn-50505271",
+        "title": "Why did some Apollo missions carry a grenade launcher?",
+        "url": "https://space.stackexchange.com/questions/37775",
+        "source": "Hacker News",
+        "date": "2026-11-15",
+        "summary": "",
+        "meta": [
+          "154 points",
+          "110 comments"
+        ],
+        "discussion": "https://news.ycombinator.com/item?id=50505271",
+        "flag": null
+      },
+      {
+        "id": "hn-50481321",
+        "title": "What thousands of conversations look like inside a language model",
+        "url": "https://operator0x.com/field-notes/qwen-conversation-state-space/",
+        "source": "Hacker News",
+        "date": "2026-11-13",
+        "summary": "",
+        "meta": [
+          "67 points",
+          "22 comments"
+        ],
+        "discussion": "https://news.ycombinator.com/item?id=50481321",
+        "flag": null
+      },
+      {
+        "id": "hn-50507206",
+        "title": "The Hypertext Transfer Protocol Status Code 483 (I'm Not a Freezer)",
+        "url": "https://datatracker.ietf.org/doc/draft-banffy-httpbis-not-a-freezer/",
+        "source": "Hacker News",
+        "date": "2026-11-15",
+        "summary": "",
+        "meta": [
+          "63 points",
+          "27 comments"
+        ],
+        "discussion": "https://news.ycombinator.com/item?id=50507206",
+        "flag": null
+      },
+      {
+        "id": "hn-50501887",
+        "title": "The Telephone Changed the World",
+        "url": "https://lithub.com/how-the-telephone-changed-the-world/",
         "source": "Hacker News",
         "date": "2026-11-14",
         "summary": "",
         "meta": [
-          "341 points",
-          "112 comments"
+          "34 points",
+          "10 comments"
         ],
-        "discussion": "https://news.ycombinator.com/item?id=50493904",
+        "discussion": "https://news.ycombinator.com/item?id=50501887",
         "flag": null
       },
       {
-        "id": "hn-50497009",
-        "title": "Italy fines Meta $887M over Android users' data access",
-        "url": "https://www.reuters.com/world/italy-fines-meta-887-million-over-android-users-data-access-2026-11-14/",
+        "id": "hn-50507989",
+        "title": "The Atheist Bible",
+        "url": "https://suchanek.name/texts/atheism/",
         "source": "Hacker News",
-        "date": "2026-11-14",
+        "date": "2026-11-15",
         "summary": "",
         "meta": [
-          "133 points",
-          "55 comments"
+          "7 points",
+          "6 comments"
         ],
-        "discussion": "https://news.ycombinator.com/item?id=50497009",
+        "discussion": "https://news.ycombinator.com/item?id=50507989",
+        "flag": null
+      },
+      {
+        "id": "hn-50506180",
+        "title": "Lutnick Pushed to Weaken Chip Rules That Overlap with His Family Business",
+        "url": "https://www.nytimes.com/2026/11/15/us/politics/lutnick-pushed-to-weaken-chip-rules-that-overlap-with-his-family-business.html",
+        "source": "Hacker News",
+        "date": "2026-11-15",
+        "summary": "",
+        "meta": [
+          "237 points",
+          "102 comments"
+        ],
+        "discussion": "https://news.ycombinator.com/item?id=50506180",
+        "flag": null
+      },
+      {
+        "id": "hn-50475759",
+        "title": "Chasing an audio artifact on power loss",
+        "url": "https://subalpinecircuits.com/chasing-an-audio-artifact-on-power-loss/",
+        "source": "Hacker News",
+        "date": "2026-11-12",
+        "summary": "",
+        "meta": [
+          "37 points",
+          "3 comments"
+        ],
+        "discussion": "https://news.ycombinator.com/item?id=50475759",
         "flag": null
       }
     ]
