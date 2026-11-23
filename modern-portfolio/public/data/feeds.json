@@ -1,285 +1,285 @@
 {
-  "generatedAt": "2026-11-22T18:30:40.898Z",
+  "generatedAt": "2026-11-23T22:39:02.947Z",
   "log": [
     {
-      "t": "2026-11-22T18:30:39.765Z",
+      "t": "2026-11-23T22:39:02.057Z",
       "level": "info",
       "msg": "signal refresh started"
     },
     {
-      "t": "2026-11-22T18:30:39.771Z",
+      "t": "2026-11-23T22:39:02.061Z",
       "level": "info",
       "msg": "GET hacker-news.firebaseio.com/v0/topstories.json"
     },
     {
-      "t": "2026-11-22T18:30:39.937Z",
+      "t": "2026-11-23T22:39:02.274Z",
       "level": "info",
       "msg": "HTTP 200 · resolving top 60 story ids in batches of 10"
     },
     {
-      "t": "2026-11-22T18:30:40.379Z",
+      "t": "2026-11-23T22:39:02.660Z",
       "level": "info",
-      "msg": "59 of 60 resolved to usable stories · 608ms"
+      "msg": "59 of 60 resolved to usable stories · 599ms"
     },
     {
-      "t": "2026-11-22T18:30:40.380Z",
+      "t": "2026-11-23T22:39:02.660Z",
       "level": "info",
       "msg": "GET cisa.gov/feeds/known_exploited_vulnerabilities.json"
     },
     {
-      "t": "2026-11-22T18:30:40.485Z",
+      "t": "2026-11-23T22:39:02.827Z",
       "level": "info",
-      "msg": "HTTP 200 · catalog holds 1790 CVEs · 105ms"
+      "msg": "HTTP 200 · catalog holds 1792 CVEs · 167ms"
     },
     {
-      "t": "2026-11-22T18:30:40.492Z",
+      "t": "2026-11-23T22:39:02.830Z",
       "level": "info",
-      "msg": "fleet filter: 1048 of 1790 touch managed platforms"
+      "msg": "fleet filter: 1048 of 1792 touch managed platforms"
     },
     {
-      "t": "2026-11-22T18:30:40.502Z",
+      "t": "2026-11-23T22:39:02.838Z",
       "level": "info",
       "msg": "GET export.arxiv.org/api/query cat:cs.AI OR cat:cs.LG"
     },
     {
-      "t": "2026-11-22T18:30:40.895Z",
+      "t": "2026-11-23T22:39:02.945Z",
       "level": "info",
-      "msg": "HTTP 200 · 29,389 bytes of Atom XML · 393ms"
+      "msg": "HTTP 200 · 31,298 bytes of Atom XML · 107ms"
     },
     {
-      "t": "2026-11-22T18:30:40.897Z",
+      "t": "2026-11-23T22:39:02.947Z",
       "level": "info",
-      "msg": "topic split: 11 AI stories, 48 general dev"
+      "msg": "topic split: 6 AI stories, 53 general dev"
     },
     {
-      "t": "2026-11-22T18:30:40.897Z",
+      "t": "2026-11-23T22:39:02.947Z",
       "level": "info",
       "msg": "--- security feed: 14 items ---"
     },
     {
-      "t": "2026-11-22T18:30:40.897Z",
+      "t": "2026-11-23T22:39:02.947Z",
       "level": "info",
       "msg": "ingest CISA KEV · Apache Roller Deserialization of Untrusted Data Vulnerabi… · 2026-11-20"
     },
     {
-      "t": "2026-11-22T18:30:40.897Z",
+      "t": "2026-11-23T22:39:02.947Z",
       "level": "info",
       "msg": "ingest CISA KEV · VMWare vCenter Authentication Bypass Using an Alternate P… · 2026-11-20"
     },
     {
-      "t": "2026-11-22T18:30:40.897Z",
+      "t": "2026-11-23T22:39:02.947Z",
       "level": "info",
       "msg": "ingest CISA KEV · Cisco Expressway Series Use of Hard-coded Credentials Vul… · 2026-11-20"
     },
     {
-      "t": "2026-11-22T18:30:40.897Z",
+      "t": "2026-11-23T22:39:02.947Z",
       "level": "info",
       "msg": "ingest CISA KEV · Apache Axis Unsafe Reflection Vulnerability · 2026-11-18"
     },
     {
-      "t": "2026-11-22T18:30:40.897Z",
+      "t": "2026-11-23T22:39:02.947Z",
       "level": "info",
       "msg": "ingest CISA KEV · Microsoft Office Outlook Missing User Interaction for Pot… · 2026-11-10"
     },
     {
-      "t": "2026-11-22T18:30:40.897Z",
+      "t": "2026-11-23T22:39:02.947Z",
       "level": "info",
       "msg": "ingest CISA KEV · Cisco BroadWorks Improper Restriction of XML External Ent… · 2026-11-10"
     },
     {
-      "t": "2026-11-22T18:30:40.897Z",
+      "t": "2026-11-23T22:39:02.947Z",
       "level": "info",
       "msg": "ingest CISA KEV · Google Chromium Use-After-Free Vulnerability · 2026-11-10"
     },
     {
-      "t": "2026-11-22T18:30:40.897Z",
+      "t": "2026-11-23T22:39:02.947Z",
       "level": "info",
       "msg": "ingest CISA KEV · SonicWall SonicOS SSLVPN Use of Single-factor Authenticat… · 2026-11-06"
     },
     {
-      "t": "2026-11-22T18:30:40.897Z",
+      "t": "2026-11-23T22:39:02.947Z",
       "level": "info",
       "msg": "ingest CISA KEV · Apple Multiple Products Improper Authentication Vulnerabi… · 2026-11-04"
     },
     {
-      "t": "2026-11-22T18:30:40.898Z",
+      "t": "2026-11-23T22:39:02.947Z",
       "level": "info",
       "msg": "ingest CISA KEV · WordPress WordPress Core Time-of-check Time-of-use (TOCTO… · 2026-11-03"
     },
     {
-      "t": "2026-11-22T18:30:40.898Z",
+      "t": "2026-11-23T22:39:02.947Z",
       "level": "info",
       "msg": "ingest CISA KEV · Ivanti Connect Secure Generation of Predictable Numbers o… · 2026-10-30"
     },
     {
-      "t": "2026-11-22T18:30:40.898Z",
+      "t": "2026-11-23T22:39:02.947Z",
       "level": "info",
       "msg": "ingest CISA KEV · Ivanti Connect Secure Missing Authentication for Critical… · 2026-10-30"
     },
     {
-      "t": "2026-11-22T18:30:40.898Z",
+      "t": "2026-11-23T22:39:02.947Z",
       "level": "info",
       "msg": "ingest CISA KEV · Cisco Secure Firewall ASA Software and Cisco Secure FTD S… · 2026-10-29"
     },
     {
-      "t": "2026-11-22T18:30:40.898Z",
+      "t": "2026-11-23T22:39:02.947Z",
       "level": "info",
       "msg": "ingest CISA KEV · Broadcom VMWare ESX Insufficient Logging Vulnerability · 2026-10-28"
     },
     {
-      "t": "2026-11-22T18:30:40.898Z",
+      "t": "2026-11-23T22:39:02.947Z",
       "level": "info",
       "msg": "--- ai feed: 14 items ---"
     },
     {
-      "t": "2026-11-22T18:30:40.898Z",
+      "t": "2026-11-23T22:39:02.947Z",
       "level": "info",
-      "msg": "ingest Hacker News · Show HN: I built a game where you are an LLM's subagent · 2026-11-22"
+      "msg": "ingest Hacker News · GLM-5.4: Toward generalized coding with our first loop tr… · 2026-11-23"
     },
     {
-      "t": "2026-11-22T18:30:40.898Z",
+      "t": "2026-11-23T22:39:02.947Z",
       "level": "info",
-      "msg": "ingest Hacker News · 87% of the Anthropic power will come from gas and 11% fro… · 2026-11-22"
+      "msg": "ingest Hacker News · How should an LLM see a computer? · 2026-11-23"
     },
     {
-      "t": "2026-11-22T18:30:40.898Z",
+      "t": "2026-11-23T22:39:02.947Z",
       "level": "info",
-      "msg": "ingest Hacker News · Muru – AI-assisted Rust server for Python apps by mod_WSG… · 2026-11-22"
+      "msg": "ingest Hacker News · Shirudo: OpenAI and Cisco's open-source runtime for shiel… · 2026-11-23"
     },
     {
-      "t": "2026-11-22T18:30:40.898Z",
+      "t": "2026-11-23T22:39:02.947Z",
       "level": "info",
-      "msg": "ingest Hacker News · Data Processing Incidents on Inference Providers · 2026-11-22"
+      "msg": "ingest Hacker News · Jensen Huang's Apology May Be the Only Correct Use of AI · 2026-11-23"
     },
     {
-      "t": "2026-11-22T18:30:40.898Z",
+      "t": "2026-11-23T22:39:02.947Z",
       "level": "info",
-      "msg": "ingest Hacker News · The Mythology of Conscious AI · 2026-11-22"
+      "msg": "ingest Hacker News · 16-Year-Old Founded an AI Missile Startup. He's Targeting… · 2026-11-23"
     },
     {
-      "t": "2026-11-22T18:30:40.898Z",
+      "t": "2026-11-23T22:39:02.947Z",
       "level": "info",
-      "msg": "ingest Hacker News · AI is becoming a disaster for the climate · 2026-11-22"
+      "msg": "ingest Hacker News · A Beginner's Guide to Local AI with Inkling, Qwen, and Un… · 2026-11-22"
     },
     {
-      "t": "2026-11-22T18:30:40.898Z",
+      "t": "2026-11-23T22:39:02.947Z",
       "level": "info",
-      "msg": "ingest Hacker News · Current Efforts Aren't Enough to Slow the AI Cyber Virus · 2026-11-22"
+      "msg": "ingest arXiv · Optimal Linear Regression Without a Variance · 2026-11-20"
     },
     {
-      "t": "2026-11-22T18:30:40.898Z",
+      "t": "2026-11-23T22:39:02.947Z",
       "level": "info",
-      "msg": "ingest Hacker News · Together.ai: Prompt Leakage for Requests · 2026-11-22"
+      "msg": "ingest arXiv · A Methodologically Rigorous Benchmark of Linear Regressio… · 2026-11-20"
     },
     {
-      "t": "2026-11-22T18:30:40.898Z",
+      "t": "2026-11-23T22:39:02.947Z",
       "level": "info",
-      "msg": "ingest Hacker News · Pandex – Official European Law for AI Agents, over MCP · 2026-11-21"
+      "msg": "ingest arXiv · On the Complete Feature Set for ADHD Classification in Ch… · 2026-11-20"
     },
     {
-      "t": "2026-11-22T18:30:40.898Z",
+      "t": "2026-11-23T22:39:02.947Z",
       "level": "info",
-      "msg": "ingest Hacker News · ClawDOS – An AI coding agent for DOS · 2026-11-21"
+      "msg": "ingest arXiv · Non-penetrating World Models · 2026-11-20"
     },
     {
-      "t": "2026-11-22T18:30:40.898Z",
+      "t": "2026-11-23T22:39:02.947Z",
       "level": "info",
-      "msg": "ingest arXiv · RL Post-Training in Diffusion Transformers Is Activation… · 2026-11-19"
+      "msg": "ingest arXiv · Model Carving: Training Transformers That Optimize Their… · 2026-11-20"
     },
     {
-      "t": "2026-11-22T18:30:40.898Z",
+      "t": "2026-11-23T22:39:02.947Z",
       "level": "info",
-      "msg": "ingest arXiv · PlayCraft: Designing Engaging Games from Agent Play Exper… · 2026-11-19"
+      "msg": "ingest arXiv · Ranking-Preserving Coreset Selection for Efficient Evolut… · 2026-11-20"
     },
     {
-      "t": "2026-11-22T18:30:40.898Z",
+      "t": "2026-11-23T22:39:02.947Z",
       "level": "info",
-      "msg": "ingest arXiv · TideCache: Efficient Hybrid LLM Serving with Transparent… · 2026-11-19"
+      "msg": "ingest arXiv · Topology Hub Optimal Transport: Eliminating Long Context… · 2026-11-20"
     },
     {
-      "t": "2026-11-22T18:30:40.898Z",
+      "t": "2026-11-23T22:39:02.947Z",
       "level": "info",
-      "msg": "ingest arXiv · One Prior, Two Dynamics: Repurposing Video Diffusion Tran… · 2026-11-19"
+      "msg": "ingest arXiv · The Optimal Sample Complexity of Agnostic PAC Learning fo… · 2026-11-20"
     },
     {
-      "t": "2026-11-22T18:30:40.898Z",
+      "t": "2026-11-23T22:39:02.947Z",
       "level": "info",
       "msg": "--- dev feed: 14 items ---"
     },
     {
-      "t": "2026-11-22T18:30:40.898Z",
+      "t": "2026-11-23T22:39:02.947Z",
       "level": "info",
-      "msg": "ingest Hacker News · Perplexity and Intelligence · 2026-11-22"
+      "msg": "ingest Hacker News · Nvidia Reinstates Jensen Huang as CEO · 2026-11-23"
     },
     {
-      "t": "2026-11-22T18:30:40.898Z",
+      "t": "2026-11-23T22:39:02.947Z",
       "level": "info",
-      "msg": "ingest Hacker News · Open Social Web Alliance · 2026-11-22"
+      "msg": "ingest Hacker News · Ladybird is now in alpha · 2026-11-23"
     },
     {
-      "t": "2026-11-22T18:30:40.898Z",
+      "t": "2026-11-23T22:39:02.947Z",
       "level": "info",
-      "msg": "ingest Hacker News · Toyota, Nissan, and Honda to standardize parts to lower c… · 2026-11-22"
+      "msg": "ingest Hacker News · VP ≠ VNP over Every Field · 2026-11-23"
     },
     {
-      "t": "2026-11-22T18:30:40.898Z",
+      "t": "2026-11-23T22:39:02.947Z",
       "level": "info",
-      "msg": "ingest Hacker News · Pill to treat pancreatic cancer hailed as 'biggest breakt… · 2026-11-20"
+      "msg": "ingest Hacker News · Per Arm's request, this site will be discontinued on 4 De… · 2026-11-23"
     },
     {
-      "t": "2026-11-22T18:30:40.898Z",
+      "t": "2026-11-23T22:39:02.947Z",
       "level": "info",
-      "msg": "ingest Hacker News · I joined the NTP Pool, but not with my Stratum 1 Pi · 2026-11-22"
+      "msg": "ingest Hacker News · The horse made the state · 2026-11-23"
     },
     {
-      "t": "2026-11-22T18:30:40.898Z",
+      "t": "2026-11-23T22:39:02.947Z",
       "level": "info",
-      "msg": "ingest Hacker News · A Better Vocabulary for Testing · 2026-11-21"
+      "msg": "ingest Hacker News · Bored.com: Fun, interesting and cool websites to explore… · 2026-11-23"
     },
     {
-      "t": "2026-11-22T18:30:40.898Z",
+      "t": "2026-11-23T22:39:02.947Z",
       "level": "info",
-      "msg": "ingest Hacker News · Inside PyPy: First Contact with RPython · 2026-11-19"
+      "msg": "ingest Hacker News · Dario is hyping the dangers so OSS models are illegal and… · 2026-11-23"
     },
     {
-      "t": "2026-11-22T18:30:40.898Z",
+      "t": "2026-11-23T22:39:02.947Z",
       "level": "info",
-      "msg": "ingest Hacker News · Ask HN: Tips for transitioning from web development to em… · 2026-11-19"
+      "msg": "ingest Hacker News · GPUI is getting its own repository · 2026-11-23"
     },
     {
-      "t": "2026-11-22T18:30:40.898Z",
+      "t": "2026-11-23T22:39:02.947Z",
       "level": "info",
-      "msg": "ingest Hacker News · Lean verification of the Riemann Hypothesis · 2026-11-21"
+      "msg": "ingest Hacker News · VP != VNP over Every Field [pdf] · 2026-11-23"
     },
     {
-      "t": "2026-11-22T18:30:40.898Z",
+      "t": "2026-11-23T22:39:02.947Z",
       "level": "info",
-      "msg": "ingest Hacker News · Sandwich Simulator · 2026-11-22"
+      "msg": "ingest Hacker News · NariQ: BF16-level Qwen3.8-27B in a 10 GB file · 2026-11-23"
     },
     {
-      "t": "2026-11-22T18:30:40.898Z",
+      "t": "2026-11-23T22:39:02.947Z",
       "level": "info",
-      "msg": "ingest Hacker News · Self-hosted library branch over public web OPDS · 2026-11-19"
+      "msg": "ingest Hacker News · Derivative Flipping · 2026-11-22"
     },
     {
-      "t": "2026-11-22T18:30:40.898Z",
+      "t": "2026-11-23T22:39:02.947Z",
       "level": "info",
-      "msg": "ingest Hacker News · Europe weakens chemical rules as science links them to 'l… · 2026-11-22"
+      "msg": "ingest Hacker News · Spacecraft reaches Mercury on second-ever mission to ente… · 2026-11-21"
     },
     {
-      "t": "2026-11-22T18:30:40.898Z",
+      "t": "2026-11-23T22:39:02.947Z",
       "level": "info",
-      "msg": "ingest Hacker News · Inkling-2-Mini in 5.4 GB Memory · 2026-11-21"
+      "msg": "ingest Hacker News · Kagi Mail (public beta) · 2026-11-23"
     },
     {
-      "t": "2026-11-22T18:30:40.898Z",
+      "t": "2026-11-23T22:39:02.947Z",
       "level": "info",
-      "msg": "ingest Hacker News · What Makes UltraSMR Different? · 2026-11-19"
+      "msg": "ingest Hacker News · Apple removed my open-source app from EU App Stores after… · 2026-11-23"
     },
     {
-      "t": "2026-11-22T18:30:40.898Z",
+      "t": "2026-11-23T22:39:02.947Z",
       "level": "info",
-      "msg": "publishing 42 items across 3 feeds · 1133ms"
+      "msg": "publishing 42 items across 3 feeds · 890ms"
     }
   ],
   "feeds": {
@@ -483,393 +483,389 @@
     ],
     "ai": [
       {
-        "id": "hn-50599762",
-        "title": "Show HN: I built a game where you are an LLM's subagent",
-        "url": "https://github.com/gulivan/worker755",
+        "id": "hn-50609685",
+        "title": "GLM-5.4: Toward generalized coding with our first loop transformer",
+        "url": "https://z.ai/blog/glm-5.4",
+        "source": "Hacker News",
+        "date": "2026-11-23",
+        "summary": "",
+        "meta": [
+          "993 points",
+          "327 comments"
+        ],
+        "discussion": "https://news.ycombinator.com/item?id=50609685",
+        "flag": null
+      },
+      {
+        "id": "hn-50615520",
+        "title": "How should an LLM see a computer?",
+        "url": "https://www.greptile.com/blog/trex-computer-use",
+        "source": "Hacker News",
+        "date": "2026-11-23",
+        "summary": "",
+        "meta": [
+          "35 points",
+          "20 comments"
+        ],
+        "discussion": "https://news.ycombinator.com/item?id=50615520",
+        "flag": null
+      },
+      {
+        "id": "hn-50619630",
+        "title": "Shirudo: OpenAI and Cisco's open-source runtime for shielding unpatched Linux",
+        "url": "https://openai.com/index/introducing-shirudo/",
+        "source": "Hacker News",
+        "date": "2026-11-23",
+        "summary": "",
+        "meta": [
+          "8 points",
+          "0 comments"
+        ],
+        "discussion": "https://news.ycombinator.com/item?id=50619630",
+        "flag": null
+      },
+      {
+        "id": "hn-50618834",
+        "title": "Jensen Huang's Apology May Be the Only Correct Use of AI",
+        "url": "https://www.theatlantic.com/newsletters/2026/11/jensen-huang-ai-apology-nvidia/689366/",
+        "source": "Hacker News",
+        "date": "2026-11-23",
+        "summary": "",
+        "meta": [
+          "14 points",
+          "1 comments"
+        ],
+        "discussion": "https://news.ycombinator.com/item?id=50618834",
+        "flag": null
+      },
+      {
+        "id": "hn-50619973",
+        "title": "16-Year-Old Founded an AI Missile Startup. He's Targeting 'Cost per Kill'",
+        "url": "https://www.wired.com/story/henrijs-dandzbergs-polemos-missiles-ai-warfare/",
+        "source": "Hacker News",
+        "date": "2026-11-23",
+        "summary": "",
+        "meta": [
+          "4 points",
+          "0 comments"
+        ],
+        "discussion": "https://news.ycombinator.com/item?id=50619973",
+        "flag": null
+      },
+      {
+        "id": "hn-50603845",
+        "title": "A Beginner's Guide to Local AI with Inkling, Qwen, and Unsloth",
+        "url": "https://www.gpupartner.com/blog/beginners-guide-local-ai-inkling-qwen-unsloth",
         "source": "Hacker News",
         "date": "2026-11-22",
         "summary": "",
         "meta": [
-          "158 points",
-          "39 comments"
+          "735 points",
+          "295 comments"
         ],
-        "discussion": "https://news.ycombinator.com/item?id=50599762",
+        "discussion": "https://news.ycombinator.com/item?id=50603845",
         "flag": null
       },
       {
-        "id": "hn-50597612",
-        "title": "87% of the Anthropic power will come from gas and 11% from coal in 2028",
-        "url": "https://betterdatacenterproject.com/2026/11/16/how-ai-is-powered-a-breakdown-of-byop-and-grid-power/",
-        "source": "Hacker News",
-        "date": "2026-11-22",
-        "summary": "",
-        "meta": [
-          "580 points",
-          "648 comments"
-        ],
-        "discussion": "https://news.ycombinator.com/item?id=50597612",
-        "flag": null
-      },
-      {
-        "id": "hn-50597959",
-        "title": "Muru – AI-assisted Rust server for Python apps by mod_WSGI's creator",
-        "url": "https://simonwillison.net/2026/Nov/21/muru/",
-        "source": "Hacker News",
-        "date": "2026-11-22",
-        "summary": "",
-        "meta": [
-          "53 points",
-          "8 comments"
-        ],
-        "discussion": "https://news.ycombinator.com/item?id=50597959",
-        "flag": null
-      },
-      {
-        "id": "hn-50595554",
-        "title": "Data Processing Incidents on Inference Providers",
-        "url": "https://openrouter.ai/blog/announcements/data-processing-incidents-on-inference-providers/",
-        "source": "Hacker News",
-        "date": "2026-11-22",
-        "summary": "",
-        "meta": [
-          "251 points",
-          "88 comments"
-        ],
-        "discussion": "https://news.ycombinator.com/item?id=50595554",
-        "flag": null
-      },
-      {
-        "id": "hn-50595537",
-        "title": "The Mythology of Conscious AI",
-        "url": "https://www.noemamag.com/the-mythology-of-conscious-ai/",
-        "source": "Hacker News",
-        "date": "2026-11-22",
-        "summary": "",
-        "meta": [
-          "134 points",
-          "377 comments"
-        ],
-        "discussion": "https://news.ycombinator.com/item?id=50595537",
-        "flag": null
-      },
-      {
-        "id": "hn-50598961",
-        "title": "AI is becoming a disaster for the climate",
-        "url": "https://www.bloodinthemachine.com/p/ai-is-becoming-a-disaster-for-the",
-        "source": "Hacker News",
-        "date": "2026-11-22",
-        "summary": "",
-        "meta": [
-          "60 points",
-          "17 comments"
-        ],
-        "discussion": "https://news.ycombinator.com/item?id=50598961",
-        "flag": null
-      },
-      {
-        "id": "hn-50595940",
-        "title": "Current Efforts Aren't Enough to Slow the AI Cyber Virus",
-        "url": "https://www.bridgewater.com/research-and-insights/current-efforts-arent-enough-to-slow-the-ai-cyber-virus",
-        "source": "Hacker News",
-        "date": "2026-11-22",
-        "summary": "",
-        "meta": [
-          "20 points",
-          "7 comments"
-        ],
-        "discussion": "https://news.ycombinator.com/item?id=50595940",
-        "flag": null
-      },
-      {
-        "id": "hn-50595816",
-        "title": "Together.ai: Prompt Leakage for Requests",
-        "url": "https://www.together.ai/blog/security-event-prompt-leakage-for-requests-in-june-and-july-of-2026",
-        "source": "Hacker News",
-        "date": "2026-11-22",
-        "summary": "",
-        "meta": [
-          "43 points",
-          "10 comments"
-        ],
-        "discussion": "https://news.ycombinator.com/item?id=50595816",
-        "flag": null
-      },
-      {
-        "id": "hn-50593481",
-        "title": "Pandex – Official European Law for AI Agents, over MCP",
-        "url": "https://www.pandex.io",
-        "source": "Hacker News",
-        "date": "2026-11-21",
-        "summary": "",
-        "meta": [
-          "132 points",
-          "31 comments"
-        ],
-        "discussion": "https://news.ycombinator.com/item?id=50593481",
-        "flag": null
-      },
-      {
-        "id": "hn-50586292",
-        "title": "ClawDOS – An AI coding agent for DOS",
-        "url": "http://ricapar.net/ClawDOS/",
-        "source": "Hacker News",
-        "date": "2026-11-21",
-        "summary": "",
-        "meta": [
-          "167 points",
-          "52 comments"
-        ],
-        "discussion": "https://news.ycombinator.com/item?id=50586292",
-        "flag": null
-      },
-      {
-        "id": "http://arxiv.org/abs/2611.26627v1",
-        "title": "RL Post-Training in Diffusion Transformers Is Activation Steering",
-        "url": "http://arxiv.org/abs/2611.26627v1",
+        "id": "http://arxiv.org/abs/2611.27983v1",
+        "title": "Optimal Linear Regression Without a Variance",
+        "url": "http://arxiv.org/abs/2611.27983v1",
         "source": "arXiv",
-        "date": "2026-11-19",
-        "summary": "Reinforcement learning (RL) post-training substantially improves the visual quality, text rendering, and compositional accuracy of diffusion transformers. Because capabilities such as rendering requested text or composing multiple objects are inherently prompt-dependent, a natural hypothesis is that improving them req…",
+        "date": "2026-11-20",
+        "summary": "We study high-probability linear regression in the infinite variance regime, wherecthe regression noise has only a finite conditional $α$-moment $ν$ for some unknown $α\\in(1,2)$, and the covariates may only have finite moments up to a given order (e.g., 4th moment). We give a black-box reduction that converts finite-v…",
         "meta": [
           "Research",
-          "Tuna Han Salih Meral +5"
+          "Artin Tajdini +3"
         ],
         "flag": null
       },
       {
-        "id": "http://arxiv.org/abs/2611.26624v1",
-        "title": "PlayCraft: Designing Engaging Games from Agent Play Experience",
-        "url": "http://arxiv.org/abs/2611.26624v1",
+        "id": "http://arxiv.org/abs/2611.27978v1",
+        "title": "A Methodologically Rigorous Benchmark of Linear Regression,RNN, and LSTM for S&P 500 Forecasting:Identifying Sources of Performance Inflation in Fina…",
+        "url": "http://arxiv.org/abs/2611.27978v1",
         "source": "arXiv",
-        "date": "2026-11-19",
-        "summary": "Recent AI agents can generate playable games, but these games are not necessarily engaging. Mastery is a key source of engagement, yet designing for it requires extensive human play and tuning. We propose PlayCraft, an automated framework that uses a vision-based agent to play games and draws on its detailed play expe…",
+        "date": "2026-11-20",
+        "summary": "This study examines one-day-ahead forecasting of the S&P 500 closing level using a 2006-2025 dataset that includes fundamental price data, macroeconomic indicators, and engineered technical features. We benchmark three model families, namely linear regression, vanilla recurrent neural networks (RNN), and long short-te…",
         "meta": [
           "Research",
-          "Weihao Cheng"
+          "Hari Sitaula +1"
         ],
         "flag": null
       },
       {
-        "id": "http://arxiv.org/abs/2611.26619v1",
-        "title": "TideCache: Efficient Hybrid LLM Serving with Transparent Cache Management and Layer-Wise Streaming",
-        "url": "http://arxiv.org/abs/2611.26619v1",
+        "id": "http://arxiv.org/abs/2611.27970v1",
+        "title": "On the Complete Feature Set for ADHD Classification in Children and Adolescents Based on EEG Signals",
+        "url": "http://arxiv.org/abs/2611.27970v1",
         "source": "arXiv",
-        "date": "2026-11-19",
-        "summary": "Hybrid architectures have become mainstream among open-weight language models. Their global-attention and bounded-state layers maintain heterogeneous caches whose demands vary with context length and concurrency. We present TideCache, a serving system on CPU--GPU superchips with three components for allocating GPU mem…",
+        "date": "2026-11-20",
+        "summary": "Attention-deficit/hyperactivity disorder is a neurodevelopmental condition that can affect attention, activity and impulse control. Electroencephalography (EEG) records brain activity as children and adolescents perform cognitive tasks. However, comparing features derived from these recordings requires consistent sign…",
         "meta": [
           "Research",
-          "Jinbin Luo +5"
+          "Javier Sanchis +4"
         ],
         "flag": null
       },
       {
-        "id": "http://arxiv.org/abs/2611.26617v1",
-        "title": "One Prior, Two Dynamics: Repurposing Video Diffusion Transformers for Self-Supervised Latent Action Learning",
-        "url": "http://arxiv.org/abs/2611.26617v1",
+        "id": "http://arxiv.org/abs/2611.27963v1",
+        "title": "Non-penetrating World Models",
+        "url": "http://arxiv.org/abs/2611.27963v1",
         "source": "arXiv",
-        "date": "2026-11-19",
-        "summary": "Videos reveal how the world changes, but rarely the actions that cause those changes. Latent action learning recovers such supervision from visual transitions, yet often learns the underlying dynamics largely from scratch. We ask whether a pretrained video generator can instead provide the prior for both inverse and f…",
+        "date": "2026-11-20",
+        "summary": "We study a new problem of preventing object penetration in interactive video world models. To understand how existing models handle this, we introduce NoPeBench, a benchmark that evaluates how world models respond to physical obstacles. Our evaluation reveals that none of the open-source models can reliably prevent su…",
         "meta": [
           "Research",
-          "Yuxin Jiang +6"
+          "Yuhang Dai +4"
+        ],
+        "flag": null
+      },
+      {
+        "id": "http://arxiv.org/abs/2611.27962v1",
+        "title": "Model Carving: Training Transformers That Optimize Their Own Topology",
+        "url": "http://arxiv.org/abs/2611.27962v1",
+        "source": "arXiv",
+        "date": "2026-11-20",
+        "summary": "Machine learning has largely kept separate the choice of architecture and the process of training. A classic Transformer, for instance, trains a fixed set of attention and MLP sublayers at every layer, in the same order, and optimizes the weights within. This uniformity is a convention rather than a principled design…",
+        "meta": [
+          "Research",
+          "Kaden Zheng +1"
+        ],
+        "flag": null
+      },
+      {
+        "id": "http://arxiv.org/abs/2611.27959v1",
+        "title": "Ranking-Preserving Coreset Selection for Efficient Evolutionary Hyperparameter Optimization",
+        "url": "http://arxiv.org/abs/2611.27959v1",
+        "source": "arXiv",
+        "date": "2026-11-20",
+        "summary": "Hyperparameter optimization (HPO) is essential for high predictive performance, but its computational cost becomes prohibitive when candidate configurations require repeated training on large datasets. This paper proposes a ranking-preserving coreset (RPC) selection framework for accelerating evolutionary HPO. The met…",
+        "meta": [
+          "Research",
+          "Mamoona Tasadduq +1"
+        ],
+        "flag": null
+      },
+      {
+        "id": "http://arxiv.org/abs/2611.27951v1",
+        "title": "Topology Hub Optimal Transport: Eliminating Long Context Dilution at Flash Speed",
+        "url": "http://arxiv.org/abs/2611.27951v1",
+        "source": "arXiv",
+        "date": "2026-11-20",
+        "summary": "Long-context models use sparse or structured attention to avoid quadratic cost, yet retrieving a small set of relevant facts embedded among hundreds of thousands of distractors degrades as normalization mass disperses with length. Hub-and-spoke optimal transport (OT) replaces the dense $L \\times L$ matrix with a linea…",
+        "meta": [
+          "Research",
+          "Dylan Forde"
+        ],
+        "flag": null
+      },
+      {
+        "id": "http://arxiv.org/abs/2611.27946v1",
+        "title": "The Optimal Sample Complexity of Agnostic PAC Learning for Partial Concept Classes",
+        "url": "http://arxiv.org/abs/2611.27946v1",
+        "source": "arXiv",
+        "date": "2026-11-20",
+        "summary": "Let $\\mathcal H\\subseteq\\{-1,+1,\\star\\}^{\\mathcal X}$ be a partial concept class of finite VC dimension $d$. We construct a deterministic agnostic PAC learner that, for every $\\varepsilon,δ\\in(0,1)$, uses $O((d+\\log(1/δ))/\\varepsilon^2)$ i.i.d. examples from an arbitrary distribution $\\mathcal D$ over $\\mathcal X\\time…",
+        "meta": [
+          "Research",
+          "Liang-Yu Zou"
         ],
         "flag": null
       }
     ],
     "dev": [
       {
-        "id": "hn-50601525",
-        "title": "Perplexity and Intelligence",
-        "url": "https://openai.com/index/perplexity-and-intelligence/",
+        "id": "hn-50611576",
+        "title": "Nvidia Reinstates Jensen Huang as CEO",
+        "url": "https://www.cnbc.com/2026/11/23/nvidia-jensen-huang-ceo.html",
         "source": "Hacker News",
-        "date": "2026-11-22",
+        "date": "2026-11-23",
         "summary": "",
         "meta": [
-          "127 points",
-          "63 comments"
+          "1793 points",
+          "2888 comments"
         ],
-        "discussion": "https://news.ycombinator.com/item?id=50601525",
+        "discussion": "https://news.ycombinator.com/item?id=50611576",
         "flag": null
       },
       {
-        "id": "hn-50600511",
-        "title": "Open Social Web Alliance",
-        "url": "https://osw-alliance.net/en/",
+        "id": "hn-50614249",
+        "title": "Ladybird is now in alpha",
+        "url": "https://ladybird.org/posts/alpha/",
         "source": "Hacker News",
-        "date": "2026-11-22",
+        "date": "2026-11-23",
         "summary": "",
         "meta": [
-          "139 points",
-          "132 comments"
+          "1165 points",
+          "288 comments"
         ],
-        "discussion": "https://news.ycombinator.com/item?id=50600511",
+        "discussion": "https://news.ycombinator.com/item?id=50614249",
         "flag": null
       },
       {
-        "id": "hn-50596133",
-        "title": "Toyota, Nissan, and Honda to standardize parts to lower costs",
-        "url": "https://www.caranddriver.com/news/a74490092/toyota-nissan-honda-standardize-parts-lower-costs/",
+        "id": "hn-50620102",
+        "title": "VP ≠ VNP over Every Field",
+        "url": "https://github.com/anthropics/formal-math/tree/main/vp-vnp",
         "source": "Hacker News",
-        "date": "2026-11-22",
+        "date": "2026-11-23",
         "summary": "",
         "meta": [
-          "991 points",
-          "594 comments"
+          "29 points",
+          "5 comments"
         ],
-        "discussion": "https://news.ycombinator.com/item?id=50596133",
+        "discussion": "https://news.ycombinator.com/item?id=50620102",
         "flag": null
       },
       {
-        "id": "hn-50582069",
-        "title": "Pill to treat pancreatic cancer hailed as 'biggest breakthrough in decades'",
-        "url": "https://www.theguardian.com/society/2026/nov/20/pill-pancreatic-cancer-breakthrough-daraxonrasib",
+        "id": "hn-50617499",
+        "title": "Per Arm's request, this site will be discontinued on 4 December 2026 :(",
+        "url": "https://arm.jonpalmisc.com/",
         "source": "Hacker News",
-        "date": "2026-11-20",
+        "date": "2026-11-23",
         "summary": "",
         "meta": [
-          "1271 points",
-          "273 comments"
+          "680 points",
+          "137 comments"
         ],
-        "discussion": "https://news.ycombinator.com/item?id=50582069",
+        "discussion": "https://news.ycombinator.com/item?id=50617499",
         "flag": null
       },
       {
-        "id": "hn-50600622",
-        "title": "I joined the NTP Pool, but not with my Stratum 1 Pi",
-        "url": "https://www.jeffgeerling.com/blog/2026/i-joined-the-ntp-pool/",
+        "id": "hn-50619186",
+        "title": "The horse made the state",
+        "url": "https://aeon.co/essays/the-origins-of-the-state-are-not-agrarian-but-pastoralist",
         "source": "Hacker News",
-        "date": "2026-11-22",
+        "date": "2026-11-23",
         "summary": "",
         "meta": [
           "42 points",
-          "8 comments"
+          "34 comments"
         ],
-        "discussion": "https://news.ycombinator.com/item?id=50600622",
+        "discussion": "https://news.ycombinator.com/item?id=50619186",
         "flag": null
       },
       {
-        "id": "hn-50594182",
-        "title": "A Better Vocabulary for Testing",
-        "url": "https://alperenkeles.com/posts/vocab-for-testing/",
+        "id": "hn-50619207",
+        "title": "Bored.com: Fun, interesting and cool websites to explore when bored",
+        "url": "https://www.bored.com/",
         "source": "Hacker News",
-        "date": "2026-11-21",
+        "date": "2026-11-23",
         "summary": "",
         "meta": [
-          "50 points",
-          "15 comments"
+          "32 points",
+          "10 comments"
         ],
-        "discussion": "https://news.ycombinator.com/item?id=50594182",
+        "discussion": "https://news.ycombinator.com/item?id=50619207",
         "flag": null
       },
       {
-        "id": "hn-50562207",
-        "title": "Inside PyPy: First Contact with RPython",
-        "url": "https://bernsteinbear.com/blog/inside-pypy-first-contact-with-rpython/",
+        "id": "hn-50615308",
+        "title": "Dario is hyping the dangers so OSS models are illegal and he stays in control",
+        "url": "https://twitter.com/ylecun/status/2124550037912920090",
         "source": "Hacker News",
-        "date": "2026-11-19",
+        "date": "2026-11-23",
         "summary": "",
         "meta": [
-          "12 points",
+          "823 points",
+          "484 comments"
+        ],
+        "discussion": "https://news.ycombinator.com/item?id=50615308",
+        "flag": null
+      },
+      {
+        "id": "hn-50619103",
+        "title": "GPUI is getting its own repository",
+        "url": "https://github.com/zed-industries/gpui",
+        "source": "Hacker News",
+        "date": "2026-11-23",
+        "summary": "",
+        "meta": [
+          "22 points",
+          "4 comments"
+        ],
+        "discussion": "https://news.ycombinator.com/item?id=50619103",
+        "flag": null
+      },
+      {
+        "id": "hn-50620252",
+        "title": "VP != VNP over Every Field [pdf]",
+        "url": "https://github.com/anthropics/formal-math/blob/11b6c7e3c927df2658f513b6b68ea7f8929c62c5/vp-vnp/paper.pdf",
+        "source": "Hacker News",
+        "date": "2026-11-23",
+        "summary": "",
+        "meta": [
+          "9 points",
           "2 comments"
         ],
-        "discussion": "https://news.ycombinator.com/item?id=50562207",
+        "discussion": "https://news.ycombinator.com/item?id=50620252",
         "flag": null
       },
       {
-        "id": "hn-50555002",
-        "title": "Ask HN: Tips for transitioning from web development to embedded/firmware?",
-        "url": "https://news.ycombinator.com/item?id=50555002",
+        "id": "hn-50611402",
+        "title": "NariQ: BF16-level Qwen3.8-27B in a 10 GB file",
+        "url": "https://huggingface.co/nari-labs/Qwen3.8-27B-NariQ-GGUF",
         "source": "Hacker News",
-        "date": "2026-11-19",
+        "date": "2026-11-23",
         "summary": "",
         "meta": [
-          "51 points",
-          "37 comments"
+          "96 points",
+          "14 comments"
         ],
-        "discussion": "https://news.ycombinator.com/item?id=50555002",
+        "discussion": "https://news.ycombinator.com/item?id=50611402",
         "flag": null
       },
       {
-        "id": "hn-50589618",
-        "title": "Lean verification of the Riemann Hypothesis",
-        "url": "https://leanprover-community.github.io/blog/posts/riemann-hypothesis/",
-        "source": "Hacker News",
-        "date": "2026-11-21",
-        "summary": "",
-        "meta": [
-          "1181 points",
-          "972 comments"
-        ],
-        "discussion": "https://news.ycombinator.com/item?id=50589618",
-        "flag": null
-      },
-      {
-        "id": "hn-50594911",
-        "title": "Sandwich Simulator",
-        "url": "https://stulle.app/",
+        "id": "hn-50594935",
+        "title": "Derivative Flipping",
+        "url": "http://blog.sigfpe.com/2026/11/derivative-flipping.html",
         "source": "Hacker News",
         "date": "2026-11-22",
         "summary": "",
         "meta": [
-          "468 points",
-          "162 comments"
+          "52 points",
+          "3 comments"
         ],
-        "discussion": "https://news.ycombinator.com/item?id=50594911",
+        "discussion": "https://news.ycombinator.com/item?id=50594935",
         "flag": null
       },
       {
-        "id": "hn-50566495",
-        "title": "Self-hosted library branch over public web OPDS",
-        "url": "https://joinmayberry.com/",
-        "source": "Hacker News",
-        "date": "2026-11-19",
-        "summary": "",
-        "meta": [
-          "88 points",
-          "27 comments"
-        ],
-        "discussion": "https://news.ycombinator.com/item?id=50566495",
-        "flag": null
-      },
-      {
-        "id": "hn-50600677",
-        "title": "Europe weakens chemical rules as science links them to 'lifestyle diseases'",
-        "url": "https://www.lemonde.fr/en/opinion/article/2026/11/22/as-science-increasingly-shows-the-role-chemical-substances-play-in-lifestyle-diseases-europe-weakens-its-regulations_6786595_23.html",
-        "source": "Hacker News",
-        "date": "2026-11-22",
-        "summary": "",
-        "meta": [
-          "89 points",
-          "69 comments"
-        ],
-        "discussion": "https://news.ycombinator.com/item?id=50600677",
-        "flag": null
-      },
-      {
-        "id": "hn-50591853",
-        "title": "Inkling-2-Mini in 5.4 GB Memory",
-        "url": "https://github.com/ShinMegamiBoson/lookatmyquant",
+        "id": "hn-50587439",
+        "title": "Spacecraft reaches Mercury on second-ever mission to enter its orbit",
+        "url": "https://www.theguardian.com/science/2026/nov/20/spacecraft-mercury-second-ever-mission-orbit-bepicolombo",
         "source": "Hacker News",
         "date": "2026-11-21",
         "summary": "",
         "meta": [
-          "545 points",
-          "131 comments"
+          "263 points",
+          "83 comments"
         ],
-        "discussion": "https://news.ycombinator.com/item?id=50591853",
+        "discussion": "https://news.ycombinator.com/item?id=50587439",
         "flag": null
       },
       {
-        "id": "hn-50566886",
-        "title": "What Makes UltraSMR Different?",
-        "url": "https://blog.westerndigital.com/what-is-ultrasmr-technology/",
+        "id": "hn-50615481",
+        "title": "Kagi Mail (public beta)",
+        "url": "https://blog.kagi.com/kagi-mail-public-beta",
         "source": "Hacker News",
-        "date": "2026-11-19",
+        "date": "2026-11-23",
         "summary": "",
         "meta": [
-          "13 points",
-          "11 comments"
+          "296 points",
+          "223 comments"
         ],
-        "discussion": "https://news.ycombinator.com/item?id=50566886",
+        "discussion": "https://news.ycombinator.com/item?id=50615481",
+        "flag": null
+      },
+      {
+        "id": "hn-50616933",
+        "title": "Apple removed my open-source app from EU App Stores after 9 years",
+        "url": "https://github.com/glushchenko/fsnotes/discussions/2056",
+        "source": "Hacker News",
+        "date": "2026-11-23",
+        "summary": "",
+        "meta": [
+          "411 points",
+          "83 comments"
+        ],
+        "discussion": "https://news.ycombinator.com/item?id=50616933",
         "flag": null
       }
     ]
