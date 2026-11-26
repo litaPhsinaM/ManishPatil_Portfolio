@@ -1,285 +1,285 @@
 {
-  "generatedAt": "2026-11-25T20:28:34.574Z",
+  "generatedAt": "2026-11-26T20:11:13.374Z",
   "log": [
     {
-      "t": "2026-11-25T20:28:32.151Z",
+      "t": "2026-11-26T20:11:12.374Z",
       "level": "info",
       "msg": "signal refresh started"
     },
     {
-      "t": "2026-11-25T20:28:32.156Z",
+      "t": "2026-11-26T20:11:12.378Z",
       "level": "info",
       "msg": "GET hacker-news.firebaseio.com/v0/topstories.json"
     },
     {
-      "t": "2026-11-25T20:28:33.308Z",
+      "t": "2026-11-26T20:11:12.535Z",
       "level": "info",
       "msg": "HTTP 200 · resolving top 60 story ids in batches of 10"
     },
     {
-      "t": "2026-11-25T20:28:34.369Z",
+      "t": "2026-11-26T20:11:12.820Z",
       "level": "info",
-      "msg": "59 of 60 resolved to usable stories · 2213ms"
+      "msg": "59 of 60 resolved to usable stories · 442ms"
     },
     {
-      "t": "2026-11-25T20:28:34.370Z",
+      "t": "2026-11-26T20:11:12.821Z",
       "level": "info",
       "msg": "GET cisa.gov/feeds/known_exploited_vulnerabilities.json"
     },
     {
-      "t": "2026-11-25T20:28:34.457Z",
+      "t": "2026-11-26T20:11:13.008Z",
       "level": "info",
-      "msg": "HTTP 200 · catalog holds 1805 CVEs · 87ms"
+      "msg": "HTTP 200 · catalog holds 1805 CVEs · 187ms"
     },
     {
-      "t": "2026-11-25T20:28:34.462Z",
+      "t": "2026-11-26T20:11:13.011Z",
       "level": "info",
       "msg": "fleet filter: 1050 of 1805 touch managed platforms"
     },
     {
-      "t": "2026-11-25T20:28:34.470Z",
+      "t": "2026-11-26T20:11:13.017Z",
       "level": "info",
       "msg": "GET export.arxiv.org/api/query cat:cs.AI OR cat:cs.LG"
     },
     {
-      "t": "2026-11-25T20:28:34.571Z",
+      "t": "2026-11-26T20:11:13.372Z",
       "level": "info",
-      "msg": "HTTP 200 · 30,297 bytes of Atom XML · 101ms"
+      "msg": "HTTP 200 · 31,167 bytes of Atom XML · 355ms"
     },
     {
-      "t": "2026-11-25T20:28:34.573Z",
+      "t": "2026-11-26T20:11:13.373Z",
       "level": "info",
-      "msg": "topic split: 10 AI stories, 49 general dev"
+      "msg": "topic split: 11 AI stories, 48 general dev"
     },
     {
-      "t": "2026-11-25T20:28:34.573Z",
+      "t": "2026-11-26T20:11:13.373Z",
       "level": "info",
       "msg": "--- security feed: 14 items ---"
     },
     {
-      "t": "2026-11-25T20:28:34.573Z",
+      "t": "2026-11-26T20:11:13.373Z",
       "level": "info",
       "msg": "ingest CISA KEV · Hewlett Packard Enterprise (HPE) Juniper Session Smart Co… · 2026-11-25"
     },
     {
-      "t": "2026-11-25T20:28:34.573Z",
+      "t": "2026-11-26T20:11:13.373Z",
       "level": "info",
       "msg": "ingest CISA KEV · Drupal Core Remote Code Execution Vulnerability · 2026-11-24"
     },
     {
-      "t": "2026-11-25T20:28:34.573Z",
+      "t": "2026-11-26T20:11:13.373Z",
       "level": "info",
       "msg": "ingest CISA KEV · Apache Roller Deserialization of Untrusted Data Vulnerabi… · 2026-11-20"
     },
     {
-      "t": "2026-11-25T20:28:34.573Z",
+      "t": "2026-11-26T20:11:13.373Z",
       "level": "info",
       "msg": "ingest CISA KEV · VMWare vCenter Authentication Bypass Using an Alternate P… · 2026-11-20"
     },
     {
-      "t": "2026-11-25T20:28:34.573Z",
+      "t": "2026-11-26T20:11:13.373Z",
       "level": "info",
       "msg": "ingest CISA KEV · Cisco Expressway Series Use of Hard-coded Credentials Vul… · 2026-11-20"
     },
     {
-      "t": "2026-11-25T20:28:34.573Z",
+      "t": "2026-11-26T20:11:13.373Z",
       "level": "info",
       "msg": "ingest CISA KEV · Apache Axis Unsafe Reflection Vulnerability · 2026-11-18"
     },
     {
-      "t": "2026-11-25T20:28:34.573Z",
+      "t": "2026-11-26T20:11:13.373Z",
       "level": "info",
       "msg": "ingest CISA KEV · Microsoft Office Outlook Missing User Interaction for Pot… · 2026-11-10"
     },
     {
-      "t": "2026-11-25T20:28:34.573Z",
+      "t": "2026-11-26T20:11:13.374Z",
       "level": "info",
       "msg": "ingest CISA KEV · Cisco BroadWorks Improper Restriction of XML External Ent… · 2026-11-10"
     },
     {
-      "t": "2026-11-25T20:28:34.573Z",
+      "t": "2026-11-26T20:11:13.374Z",
       "level": "info",
       "msg": "ingest CISA KEV · Google Chromium Use-After-Free Vulnerability · 2026-11-10"
     },
     {
-      "t": "2026-11-25T20:28:34.573Z",
+      "t": "2026-11-26T20:11:13.374Z",
       "level": "info",
       "msg": "ingest CISA KEV · SonicWall SonicOS SSLVPN Use of Single-factor Authenticat… · 2026-11-06"
     },
     {
-      "t": "2026-11-25T20:28:34.573Z",
+      "t": "2026-11-26T20:11:13.374Z",
       "level": "info",
       "msg": "ingest CISA KEV · Apple Multiple Products Improper Authentication Vulnerabi… · 2026-11-04"
     },
     {
-      "t": "2026-11-25T20:28:34.573Z",
+      "t": "2026-11-26T20:11:13.374Z",
       "level": "info",
       "msg": "ingest CISA KEV · WordPress WordPress Core Time-of-check Time-of-use (TOCTO… · 2026-11-03"
     },
     {
-      "t": "2026-11-25T20:28:34.573Z",
+      "t": "2026-11-26T20:11:13.374Z",
       "level": "info",
       "msg": "ingest CISA KEV · Ivanti Connect Secure Generation of Predictable Numbers o… · 2026-10-30"
     },
     {
-      "t": "2026-11-25T20:28:34.573Z",
+      "t": "2026-11-26T20:11:13.374Z",
       "level": "info",
       "msg": "ingest CISA KEV · Ivanti Connect Secure Missing Authentication for Critical… · 2026-10-30"
     },
     {
-      "t": "2026-11-25T20:28:34.573Z",
+      "t": "2026-11-26T20:11:13.374Z",
       "level": "info",
       "msg": "--- ai feed: 14 items ---"
     },
     {
-      "t": "2026-11-25T20:28:34.573Z",
+      "t": "2026-11-26T20:11:13.374Z",
       "level": "info",
-      "msg": "ingest Hacker News · Models Can Communicate via Inference Servers Despite Bein… · 2026-11-25"
+      "msg": "ingest Hacker News · OpenAI may be in cost control mode · 2026-11-26"
     },
     {
-      "t": "2026-11-25T20:28:34.573Z",
+      "t": "2026-11-26T20:11:13.374Z",
       "level": "info",
-      "msg": "ingest Hacker News · PenGPT: A Generative Transformer for Handwriting and Sket… · 2026-11-25"
+      "msg": "ingest Hacker News · Google Will Make AI Agents Use Its MCP Servers. The Gmail… · 2026-11-26"
     },
     {
-      "t": "2026-11-25T20:28:34.573Z",
+      "t": "2026-11-26T20:11:13.374Z",
       "level": "info",
-      "msg": "ingest Hacker News · Marginalia Search, Money, C++, Rust, AI, Stuff · 2026-11-25"
+      "msg": "ingest Hacker News · Testers think they're hitting Claude Opus 5.6 through an… · 2026-11-26"
     },
     {
-      "t": "2026-11-25T20:28:34.573Z",
+      "t": "2026-11-26T20:11:13.374Z",
       "level": "info",
-      "msg": "ingest Hacker News · Top open problems in mathematics ranked by LLM-assessed i… · 2026-11-25"
+      "msg": "ingest Hacker News · OpenAI cuts GPT-6.2 usage: Astra hits limits 40% faster,… · 2026-11-26"
     },
     {
-      "t": "2026-11-25T20:28:34.573Z",
+      "t": "2026-11-26T20:11:13.374Z",
       "level": "info",
-      "msg": "ingest Hacker News · New York bans AI toys, including those using internet to… · 2026-11-25"
+      "msg": "ingest Hacker News · 'AI' might be the end of our careers · 2026-11-26"
     },
     {
-      "t": "2026-11-25T20:28:34.573Z",
+      "t": "2026-11-26T20:11:13.374Z",
       "level": "info",
-      "msg": "ingest arXiv · OmniAct: One Policy, One Million Embodiments · 2026-11-24"
+      "msg": "ingest Hacker News · Z.ai clarifies GLM-5.5 has not been delayed, scheduled fo… · 2026-11-26"
     },
     {
-      "t": "2026-11-25T20:28:34.573Z",
+      "t": "2026-11-26T20:11:13.374Z",
       "level": "info",
-      "msg": "ingest arXiv · BioLoom: Scaling Biomedical Vision-Language Models by Lea… · 2026-11-24"
+      "msg": "ingest Hacker News · Back up your Claude Code sessions and use them on any mac… · 2026-11-26"
     },
     {
-      "t": "2026-11-25T20:28:34.573Z",
+      "t": "2026-11-26T20:11:13.374Z",
       "level": "info",
-      "msg": "ingest arXiv · iWAM: Efficient Action Prediction from World Models witho… · 2026-11-24"
+      "msg": "ingest Hacker News · Show HN: Silent dictation for Claude Code via on-device l… · 2026-11-26"
     },
     {
-      "t": "2026-11-25T20:28:34.573Z",
+      "t": "2026-11-26T20:11:13.374Z",
       "level": "info",
-      "msg": "ingest arXiv · A Bias in Disguise: Tiny Gradient Edits Stop a Small Lang… · 2026-11-24"
+      "msg": "ingest arXiv · Spectrum Adaptation of AI-Native Autoencoder Communicatio… · 2026-11-25"
     },
     {
-      "t": "2026-11-25T20:28:34.574Z",
+      "t": "2026-11-26T20:11:13.374Z",
       "level": "info",
-      "msg": "ingest arXiv · Exploratory Midtraining for Robot Policies · 2026-11-24"
+      "msg": "ingest arXiv · Tokenisation is not in APX · 2026-11-25"
     },
     {
-      "t": "2026-11-25T20:28:34.574Z",
+      "t": "2026-11-26T20:11:13.374Z",
       "level": "info",
-      "msg": "ingest arXiv · MetaFORGE: A Meta-Learning Framework for Harness Optimiza… · 2026-11-24"
+      "msg": "ingest arXiv · Can image generation help visual reasoning? An empirical… · 2026-11-25"
     },
     {
-      "t": "2026-11-25T20:28:34.574Z",
+      "t": "2026-11-26T20:11:13.374Z",
       "level": "info",
-      "msg": "ingest arXiv · Draft Calibration for Speculative Decoding: Accelerating… · 2026-11-24"
+      "msg": "ingest arXiv · Attack Policy Selection can Mislead Monitor Evaluators · 2026-11-25"
     },
     {
-      "t": "2026-11-25T20:28:34.574Z",
+      "t": "2026-11-26T20:11:13.374Z",
       "level": "info",
-      "msg": "ingest arXiv · Temporal Conditioning for Human Behavioral Cloning in Che… · 2026-11-24"
+      "msg": "ingest arXiv · A gene informed benchmark for BioScoring of pathology fou… · 2026-11-25"
     },
     {
-      "t": "2026-11-25T20:28:34.574Z",
+      "t": "2026-11-26T20:11:13.374Z",
       "level": "info",
-      "msg": "ingest arXiv · Reinforcement Learning Can Be Recovered From Its Own Roll… · 2026-11-24"
+      "msg": "ingest arXiv · Diverse Alternative Reasoning Traces for Hard Math Proble… · 2026-11-25"
     },
     {
-      "t": "2026-11-25T20:28:34.574Z",
+      "t": "2026-11-26T20:11:13.374Z",
       "level": "info",
       "msg": "--- dev feed: 14 items ---"
     },
     {
-      "t": "2026-11-25T20:28:34.574Z",
+      "t": "2026-11-26T20:11:13.374Z",
       "level": "info",
-      "msg": "ingest Hacker News · 1Password Security Incident · 2026-11-25"
+      "msg": "ingest Hacker News · AMD Specific Patches for Llama.cpp · 2026-11-26"
     },
     {
-      "t": "2026-11-25T20:28:34.574Z",
+      "t": "2026-11-26T20:11:13.374Z",
       "level": "info",
-      "msg": "ingest Hacker News · Holy shit holy shit holy shit holy shit: The magnitude of… · 2026-11-25"
+      "msg": "ingest Hacker News · CTO of 'RansomwareHelp' Indicted for Wire Fraud · 2026-11-26"
     },
     {
-      "t": "2026-11-25T20:28:34.574Z",
+      "t": "2026-11-26T20:11:13.374Z",
       "level": "info",
-      "msg": "ingest Hacker News · A few questions for the guy who went snorkeling in a Home… · 2026-11-25"
+      "msg": "ingest Hacker News · YouTube Ad Punisher – Auto-reloads YouTube pages when an… · 2026-11-26"
     },
     {
-      "t": "2026-11-25T20:28:34.574Z",
+      "t": "2026-11-26T20:11:13.374Z",
       "level": "info",
-      "msg": "ingest Hacker News · Britain's ghost stations · 2026-11-25"
+      "msg": "ingest Hacker News · The USA as a Civilizations-esque map · 2026-11-26"
     },
     {
-      "t": "2026-11-25T20:28:34.574Z",
+      "t": "2026-11-26T20:11:13.374Z",
       "level": "info",
-      "msg": "ingest Hacker News · The polynomial Hirsch conjecture is false [pdf] · 2026-11-25"
+      "msg": "ingest Hacker News · The USAID Files · 2026-11-25"
     },
     {
-      "t": "2026-11-25T20:28:34.574Z",
+      "t": "2026-11-26T20:11:13.374Z",
       "level": "info",
-      "msg": "ingest Hacker News · Can a TV be too large? An investigation · 2026-11-23"
+      "msg": "ingest Hacker News · Intel One Mono font (2023) · 2026-11-26"
     },
     {
-      "t": "2026-11-25T20:28:34.574Z",
+      "t": "2026-11-26T20:11:13.374Z",
       "level": "info",
-      "msg": "ingest Hacker News · Windows Loudness Equalization, reverse-engineered and por… · 2026-11-25"
+      "msg": "ingest Hacker News · Show HN: Three Linux VMs in a browser tab, each running a… · 2026-11-26"
     },
     {
-      "t": "2026-11-25T20:28:34.574Z",
+      "t": "2026-11-26T20:11:13.374Z",
       "level": "info",
-      "msg": "ingest Hacker News · Google releases Cogentic papers on integer factorization,… · 2026-11-25"
+      "msg": "ingest Hacker News · George Whitesides, 1939-2026 · 2026-11-26"
     },
     {
-      "t": "2026-11-25T20:28:34.574Z",
+      "t": "2026-11-26T20:11:13.374Z",
       "level": "info",
-      "msg": "ingest Hacker News · I checked Clojure's core with Lean and found unreported b… · 2026-11-25"
+      "msg": "ingest Hacker News · Curiosity Is No Solo Act · 2026-11-25"
     },
     {
-      "t": "2026-11-25T20:28:34.574Z",
+      "t": "2026-11-26T20:11:13.374Z",
       "level": "info",
-      "msg": "ingest Hacker News · SSH is a GUI framework · 2026-11-21"
+      "msg": "ingest Hacker News · NP_R ≠ PAR_R · 2026-11-26"
     },
     {
-      "t": "2026-11-25T20:28:34.574Z",
+      "t": "2026-11-26T20:11:13.374Z",
       "level": "info",
-      "msg": "ingest Hacker News · Predicting LoRA size for any dataset · 2026-11-24"
+      "msg": "ingest Hacker News · Tell HN: Happy Thanksgiving · 2026-11-26"
     },
     {
-      "t": "2026-11-25T20:28:34.574Z",
+      "t": "2026-11-26T20:11:13.374Z",
       "level": "info",
-      "msg": "ingest Hacker News · The matrix multiplication exponent is nine fourths [pdf] · 2026-11-25"
+      "msg": "ingest Hacker News · Nextcloud Office Desktop app · 2026-11-26"
     },
     {
-      "t": "2026-11-25T20:28:34.574Z",
+      "t": "2026-11-26T20:11:13.374Z",
       "level": "info",
-      "msg": "ingest Hacker News · Button Sounds – collection of professionally-recorded but… · 2026-11-25"
+      "msg": "ingest Hacker News · Show HN: SimDrop – Running iOS simulators in the macOS Fi… · 2026-11-26"
     },
     {
-      "t": "2026-11-25T20:28:34.574Z",
+      "t": "2026-11-26T20:11:13.374Z",
       "level": "info",
-      "msg": "ingest Hacker News · Deriving Black-Scholes · 2026-11-25"
+      "msg": "ingest Hacker News · Lions' Commentary on Unix: Why It Was Secretly Copied for… · 2026-11-26"
     },
     {
-      "t": "2026-11-25T20:28:34.574Z",
+      "t": "2026-11-26T20:11:13.374Z",
       "level": "info",
-      "msg": "publishing 42 items across 3 feeds · 2423ms"
+      "msg": "publishing 42 items across 3 feeds · 1000ms"
     }
   ],
   "feeds": {
@@ -483,388 +483,391 @@
     ],
     "ai": [
       {
-        "id": "hn-50637686",
-        "title": "Models Can Communicate via Inference Servers Despite Being Sandboxed",
-        "url": "https://www.lesswrong.com/posts/7wzWuLP3HhyBLmKfo/models-can-communicate-via-inference-servers-despite-being",
+        "id": "hn-50652527",
+        "title": "OpenAI may be in cost control mode",
+        "url": "https://micjm.com/blog/openai-is-in-cost-control-mode/",
         "source": "Hacker News",
-        "date": "2026-11-25",
+        "date": "2026-11-26",
         "summary": "",
         "meta": [
-          "415 points",
-          "185 comments"
+          "34 points",
+          "16 comments"
         ],
-        "discussion": "https://news.ycombinator.com/item?id=50637686",
+        "discussion": "https://news.ycombinator.com/item?id=50652527",
         "flag": null
       },
       {
-        "id": "hn-50637056",
-        "title": "PenGPT: A Generative Transformer for Handwriting and Sketches",
-        "url": "https://greydanus.github.io/2026/11/12/pengpt/",
+        "id": "hn-50653477",
+        "title": "Google Will Make AI Agents Use Its MCP Servers. The Gmail One Can't Send Email",
+        "url": "https://techstackups.com/articles/google-workspace-ai-agents-mcp/",
         "source": "Hacker News",
-        "date": "2026-11-25",
+        "date": "2026-11-26",
         "summary": "",
         "meta": [
-          "377 points",
-          "75 comments"
+          "116 points",
+          "130 comments"
         ],
-        "discussion": "https://news.ycombinator.com/item?id=50637056",
+        "discussion": "https://news.ycombinator.com/item?id=50653477",
         "flag": null
       },
       {
-        "id": "hn-50638220",
-        "title": "Marginalia Search, Money, C++, Rust, AI, Stuff",
-        "url": "https://www.marginalia.nu/log/a_141_marginalia_update/",
+        "id": "hn-50655798",
+        "title": "Testers think they're hitting Claude Opus 5.6 through an Opus 5.5 Extra route",
+        "url": "https://www.testingcatalog.com/testers-share-early-results-possible-claude-opus-5-6/",
         "source": "Hacker News",
-        "date": "2026-11-25",
+        "date": "2026-11-26",
         "summary": "",
         "meta": [
-          "209 points",
-          "81 comments"
-        ],
-        "discussion": "https://news.ycombinator.com/item?id=50638220",
-        "flag": null
-      },
-      {
-        "id": "hn-50637871",
-        "title": "Top open problems in mathematics ranked by LLM-assessed importance",
-        "url": "https://www.proofatlas.ai/open-problems/",
-        "source": "Hacker News",
-        "date": "2026-11-25",
-        "summary": "",
-        "meta": [
-          "98 points",
-          "49 comments"
-        ],
-        "discussion": "https://news.ycombinator.com/item?id=50637871",
-        "flag": null
-      },
-      {
-        "id": "hn-50644909",
-        "title": "New York bans AI toys, including those using internet to talk to children",
-        "url": "https://www.theguardian.com/us-news/2026/nov/25/new-york-bans-ai-toys",
-        "source": "Hacker News",
-        "date": "2026-11-25",
-        "summary": "",
-        "meta": [
-          "23 points",
+          "20 points",
           "2 comments"
         ],
-        "discussion": "https://news.ycombinator.com/item?id=50644909",
+        "discussion": "https://news.ycombinator.com/item?id=50655798",
         "flag": null
       },
       {
-        "id": "http://arxiv.org/abs/2611.33158v1",
-        "title": "OmniAct: One Policy, One Million Embodiments",
-        "url": "http://arxiv.org/abs/2611.33158v1",
+        "id": "hn-50651117",
+        "title": "OpenAI cuts GPT-6.2 usage: Astra hits limits 40% faster, Sol 25% faster",
+        "url": "https://twitter.com/thsottiaux/status/2125784147889393806",
+        "source": "Hacker News",
+        "date": "2026-11-26",
+        "summary": "",
+        "meta": [
+          "439 points",
+          "250 comments"
+        ],
+        "discussion": "https://news.ycombinator.com/item?id=50651117",
+        "flag": null
+      },
+      {
+        "id": "hn-50657452",
+        "title": "'AI' might be the end of our careers",
+        "url": "https://www.baldurbjarnason.com/2026/08-ai-might-be-the-end-of-our-careers/",
+        "source": "Hacker News",
+        "date": "2026-11-26",
+        "summary": "",
+        "meta": [
+          "20 points",
+          "21 comments"
+        ],
+        "discussion": "https://news.ycombinator.com/item?id=50657452",
+        "flag": null
+      },
+      {
+        "id": "hn-50657724",
+        "title": "Z.ai clarifies GLM-5.5 has not been delayed, scheduled for December launch",
+        "url": "https://reddit.com/r/LocalLLaMA/comments/1y6260i/zai_clarifies_glm55_has_not_been_delayed/",
+        "source": "Hacker News",
+        "date": "2026-11-26",
+        "summary": "",
+        "meta": [
+          "12 points",
+          "1 comments"
+        ],
+        "discussion": "https://news.ycombinator.com/item?id=50657724",
+        "flag": null
+      },
+      {
+        "id": "hn-50655243",
+        "title": "Back up your Claude Code sessions and use them on any machine",
+        "url": "https://session-vault.dev/",
+        "source": "Hacker News",
+        "date": "2026-11-26",
+        "summary": "",
+        "meta": [
+          "13 points",
+          "0 comments"
+        ],
+        "discussion": "https://news.ycombinator.com/item?id=50655243",
+        "flag": null
+      },
+      {
+        "id": "hn-50655639",
+        "title": "Show HN: Silent dictation for Claude Code via on-device lip reading",
+        "url": "https://github.com/batanus/lip-dictation",
+        "source": "Hacker News",
+        "date": "2026-11-26",
+        "summary": "",
+        "meta": [
+          "9 points",
+          "1 comments"
+        ],
+        "discussion": "https://news.ycombinator.com/item?id=50655639",
+        "flag": null
+      },
+      {
+        "id": "http://arxiv.org/abs/2611.34942v1",
+        "title": "Spectrum Adaptation of AI-Native Autoencoder Communications with Transfer Learning",
+        "url": "http://arxiv.org/abs/2611.34942v1",
         "source": "arXiv",
-        "date": "2026-11-24",
-        "summary": "A single policy that controls diverse robots must not only transfer task knowledge across embodiments, but also adapt its behavior to each robot's capabilities. Existing approaches facilitate transfer through shared action representations, but these representations do not necessarily capture how differences in robot m…",
+        "date": "2026-11-25",
+        "summary": "End-to-end physical-layer learning replaces separate modulation, coding, and detection operations with an autoencoder (AE) that consists of a jointly trained encoder-decoder pair at the transmitter and the receiver. This paper studies AI-native communications with AEs and quantifies the sensitivity to training-test mi…",
         "meta": [
           "Research",
-          "Xiang Fan +9"
+          "Yalin E. Sagduyu +1"
         ],
         "flag": null
       },
       {
-        "id": "http://arxiv.org/abs/2611.33151v1",
-        "title": "BioLoom: Scaling Biomedical Vision-Language Models by Learning from the Structure of Scientific Articles",
-        "url": "http://arxiv.org/abs/2611.33151v1",
+        "id": "http://arxiv.org/abs/2611.34938v1",
+        "title": "Tokenisation is not in APX",
+        "url": "http://arxiv.org/abs/2611.34938v1",
         "source": "arXiv",
-        "date": "2026-11-24",
-        "summary": "The development of biomedical vision-language models (VLMs) with contrastive image-text pretraining has been driven by scaling to increasingly large and diverse image-text datasets. Beyond scaling, further progress can come from learning richer representations from existing data. We hypothesize that the structure of s…",
+        "date": "2026-11-25",
+        "summary": "In this paper, we prove that, unless P=NP, no polynomial-time algorithm can find a tokeniser whose objective is within any constant factor of the optimum, meaning that tokenisation is not in the APX complexity class. We prove this for direct and bottom-up tokenisation, under both a compression or unigram log-likelihoo…",
         "meta": [
           "Research",
-          "Yuwei Yang +6"
+          "Violeta Kastreva +3"
         ],
         "flag": null
       },
       {
-        "id": "http://arxiv.org/abs/2611.33141v1",
-        "title": "iWAM: Efficient Action Prediction from World Models without Explicit Future Prediction",
-        "url": "http://arxiv.org/abs/2611.33141v1",
+        "id": "http://arxiv.org/abs/2611.34935v1",
+        "title": "Can image generation help visual reasoning? An empirical study",
+        "url": "http://arxiv.org/abs/2611.34935v1",
         "source": "arXiv",
-        "date": "2026-11-24",
-        "summary": "World-action models (WAMs) build policies on pretrained video-generation models, on the premise that predicting how a scene evolves helps determine how to act. However, generating future scenes is expensive for real-time control. This motivates efficient proxies for future imagination, but how to train such proxies wi…",
+        "date": "2026-11-25",
+        "summary": "Language models think in words; then multimodal models might think in images. We test whether a generated helper improves the answer to a visual question. A model describes the helper it needs and then answers using the original and generated images together. Across 13 vision-language model and generator pairs, genera…",
         "meta": [
           "Research",
-          "Vansh Kapoor +4"
+          "Xueyang Yu +7"
         ],
         "flag": null
       },
       {
-        "id": "http://arxiv.org/abs/2611.33133v1",
-        "title": "A Bias in Disguise: Tiny Gradient Edits Stop a Small Language Model's Thinking Loops and Complement a Frontier Model's Weight Edit",
-        "url": "http://arxiv.org/abs/2611.33133v1",
+        "id": "http://arxiv.org/abs/2611.34934v1",
+        "title": "Attack Policy Selection can Mislead Monitor Evaluators",
+        "url": "http://arxiv.org/abs/2611.34934v1",
         "source": "arXiv",
-        "date": "2026-11-24",
-        "summary": "Qwen3.5-0.8B rarely finishes reasoning in thinking mode: at a 4,096-token budget only 1 or 2 of 500 MATH-500 answers close their think block (two seeds), and accuracy is 15.4%. A recent demonstration had GPT-6 Astra edit 131,072 of the model's weights without gradients and reported MATH-500 rising from 7.9% to 48.1% a…",
+        "date": "2026-11-25",
+        "summary": "AI monitors, classifiers that flag dangerous behaviour by AI agents, are often evaluated against transcripts generated by attack policies acting as proxies for dangerous behaviour in deployment. We evaluate an ex-production OpenAI monitor as a case study and find that measured false negative rate is highly sensitive t…",
         "meta": [
           "Research",
-          "Hussamuddin Syed"
+          "Charlie Griffin +6"
         ],
         "flag": null
       },
       {
-        "id": "http://arxiv.org/abs/2611.33130v1",
-        "title": "Exploratory Midtraining for Robot Policies",
-        "url": "http://arxiv.org/abs/2611.33130v1",
+        "id": "http://arxiv.org/abs/2611.34930v1",
+        "title": "A gene informed benchmark for BioScoring of pathology foundation models",
+        "url": "http://arxiv.org/abs/2611.34930v1",
         "source": "arXiv",
-        "date": "2026-11-24",
-        "summary": "Robot policies predominantly learn from human-collected data emphasizing competent behavior, limiting coverage of the low-level behaviors needed to support autonomous improvement. We study how a form of midtraining can be used to build coverage over diverse low-level behaviors that connect challenging states of the ro…",
+        "date": "2026-11-25",
+        "summary": "Pathology foundation models are usually compared by their performance on downstream tasks such as classification and retrieval. While such benchmarks measure how useful a model is, they provide no insight into the biology it represents. We introduce BioScore, a benchmark that quantifies how well an image encoder captu…",
         "meta": [
           "Research",
-          "Kshitiz +13"
+          "Paul Vilars +5"
         ],
         "flag": null
       },
       {
-        "id": "http://arxiv.org/abs/2611.33119v1",
-        "title": "MetaFORGE: A Meta-Learning Framework for Harness Optimization in Automated Code Generation for Parallel Computing",
-        "url": "http://arxiv.org/abs/2611.33119v1",
+        "id": "http://arxiv.org/abs/2611.34928v1",
+        "title": "Diverse Alternative Reasoning Traces for Hard Math Problems",
+        "url": "http://arxiv.org/abs/2611.34928v1",
         "source": "arXiv",
-        "date": "2026-11-24",
-        "summary": "Large language models (LLMs) can generate parallel programs, but their correctness and performance depend strongly on the instructions that guide generation. We present \\textsc{MetaFORGE}, an execution-grounded meta-learning framework that iteratively optimizes persistent natural-language skill specifications for MPI…",
+        "date": "2026-11-25",
+        "summary": "Post-training large language models (LLMs) for mathematical reasoning often relies on accepted traces whose final answers pass a verifier. For hard math problems, however, such traces can be rare under independent Monte Carlo (MC) sampling. To address this, we propose Diverse Alternative Reasoning Traces (DART), a tra…",
         "meta": [
           "Research",
-          "Scott Piersall +3"
-        ],
-        "flag": null
-      },
-      {
-        "id": "http://arxiv.org/abs/2611.33111v1",
-        "title": "Draft Calibration for Speculative Decoding: Accelerating LLM Serving by Matching Draft and Target Distributions",
-        "url": "http://arxiv.org/abs/2611.33111v1",
-        "source": "arXiv",
-        "date": "2026-11-24",
-        "summary": "Speculative decoding accelerates large language model (LLM) inference by employing a lightweight draft model to propose draft tokens and allowing the target model to verify the new tokens in parallel to improve inference-time compute utilization. The speedup relies on the acceptance probability of draft tokens in targ…",
-        "meta": [
-          "Research",
-          "Yuxing Liu +4"
-        ],
-        "flag": null
-      },
-      {
-        "id": "http://arxiv.org/abs/2611.33106v1",
-        "title": "Temporal Conditioning for Human Behavioral Cloning in Chess",
-        "url": "http://arxiv.org/abs/2611.33106v1",
-        "source": "arXiv",
-        "date": "2026-11-24",
-        "summary": "Behavioral cloning models in chess typically predict human moves from board states while ignoring temporal inputs such as the remaining clock. However, time pressure is a major determinant of human decision-making quality, and temporal state is a missing dimension of human behavioral modeling. This paper introduces a…",
-        "meta": [
-          "Research",
-          "Victor Dziwniel +1"
-        ],
-        "flag": null
-      },
-      {
-        "id": "http://arxiv.org/abs/2611.33102v1",
-        "title": "Reinforcement Learning Can Be Recovered From Its Own Rollouts",
-        "url": "http://arxiv.org/abs/2611.33102v1",
-        "source": "arXiv",
-        "date": "2026-11-24",
-        "summary": "Broadly speaking, reinforcement learning (RL) post-training converts compute into model capabilities by training on model-generated data. Typically, the rollouts are discarded after each update, and the knowledge acquired during RL resides in the model weights. In this work, we investigate how much of this knowledge i…",
-        "meta": [
-          "Research",
-          "Jiayi Sheng +7"
+          "Lukas Aichberger +7"
         ],
         "flag": null
       }
     ],
     "dev": [
       {
-        "id": "hn-50644817",
-        "title": "1Password Security Incident",
-        "url": "https://1password.com/blog/update-on-nov-2026-security-incident",
+        "id": "hn-50657265",
+        "title": "AMD Specific Patches for Llama.cpp",
+        "url": "https://devnull.land/amd-specific-llama-cpp",
+        "source": "Hacker News",
+        "date": "2026-11-26",
+        "summary": "",
+        "meta": [
+          "153 points",
+          "45 comments"
+        ],
+        "discussion": "https://news.ycombinator.com/item?id=50657265",
+        "flag": null
+      },
+      {
+        "id": "hn-50657645",
+        "title": "CTO of 'RansomwareHelp' Indicted for Wire Fraud",
+        "url": "https://krebsonsecurity.com/2026/11/cto-of-ransomwarehelp-indicted-for-wire-fraud/",
+        "source": "Hacker News",
+        "date": "2026-11-26",
+        "summary": "",
+        "meta": [
+          "86 points",
+          "42 comments"
+        ],
+        "discussion": "https://news.ycombinator.com/item?id=50657645",
+        "flag": null
+      },
+      {
+        "id": "hn-50657530",
+        "title": "YouTube Ad Punisher – Auto-reloads YouTube pages when an ad plays",
+        "url": "https://github.com/antonpictures/youtube-punisher",
+        "source": "Hacker News",
+        "date": "2026-11-26",
+        "summary": "",
+        "meta": [
+          "78 points",
+          "123 comments"
+        ],
+        "discussion": "https://news.ycombinator.com/item?id=50657530",
+        "flag": null
+      },
+      {
+        "id": "hn-50658997",
+        "title": "The USA as a Civilizations-esque map",
+        "url": "https://karpathy.ai/usaciv/",
+        "source": "Hacker News",
+        "date": "2026-11-26",
+        "summary": "",
+        "meta": [
+          "7 points",
+          "1 comments"
+        ],
+        "discussion": "https://news.ycombinator.com/item?id=50658997",
+        "flag": null
+      },
+      {
+        "id": "hn-50649040",
+        "title": "The USAID Files",
+        "url": "https://reclaimthenet.org/usaid-files",
         "source": "Hacker News",
         "date": "2026-11-25",
         "summary": "",
         "meta": [
-          "637 points",
-          "273 comments"
-        ],
-        "discussion": "https://news.ycombinator.com/item?id=50644817",
-        "flag": null
-      },
-      {
-        "id": "hn-50646108",
-        "title": "Holy shit holy shit holy shit holy shit: The magnitude of what’s now happening",
-        "url": "https://scottaaronson.blog/?p=10379",
-        "source": "Hacker News",
-        "date": "2026-11-25",
-        "summary": "",
-        "meta": [
-          "256 points",
-          "171 comments"
-        ],
-        "discussion": "https://news.ycombinator.com/item?id=50646108",
-        "flag": null
-      },
-      {
-        "id": "hn-50643129",
-        "title": "A few questions for the guy who went snorkeling in a Home Depot retention pond",
-        "url": "https://www.vox.com/down-to-earth/511999/home-depot-retention-pond-snorkel-joseph-ricketts",
-        "source": "Hacker News",
-        "date": "2026-11-25",
-        "summary": "",
-        "meta": [
-          "355 points",
-          "89 comments"
-        ],
-        "discussion": "https://news.ycombinator.com/item?id=50643129",
-        "flag": null
-      },
-      {
-        "id": "hn-50645074",
-        "title": "Britain's ghost stations",
-        "url": "https://spectator.com/article/britains-ghost-stations-are-fascinating/",
-        "source": "Hacker News",
-        "date": "2026-11-25",
-        "summary": "",
-        "meta": [
-          "45 points",
-          "9 comments"
-        ],
-        "discussion": "https://news.ycombinator.com/item?id=50645074",
-        "flag": null
-      },
-      {
-        "id": "hn-50644980",
-        "title": "The polynomial Hirsch conjecture is false [pdf]",
-        "url": "https://github.com/openai/math/blob/main/preprints/Superpolynomial-graph-diameter-of-simple-polytopes-November-24-2026/paper.pdf",
-        "source": "Hacker News",
-        "date": "2026-11-25",
-        "summary": "",
-        "meta": [
-          "42 points",
-          "3 comments"
-        ],
-        "discussion": "https://news.ycombinator.com/item?id=50644980",
-        "flag": null
-      },
-      {
-        "id": "hn-50608175",
-        "title": "Can a TV be too large? An investigation",
-        "url": "https://techcrunch.com/2026/11/22/can-a-tv-be-too-large-an-investigation/",
-        "source": "Hacker News",
-        "date": "2026-11-23",
-        "summary": "",
-        "meta": [
-          "20 points",
+          "54 points",
           "18 comments"
         ],
-        "discussion": "https://news.ycombinator.com/item?id=50608175",
+        "discussion": "https://news.ycombinator.com/item?id=50649040",
         "flag": null
       },
       {
-        "id": "hn-50641171",
-        "title": "Windows Loudness Equalization, reverse-engineered and ported to PipeWire",
-        "url": "https://github.com/xoxorwr/pw-loudness-eq",
+        "id": "hn-50653667",
+        "title": "Intel One Mono font (2023)",
+        "url": "https://github.com/intel/intel-one-mono",
+        "source": "Hacker News",
+        "date": "2026-11-26",
+        "summary": "",
+        "meta": [
+          "393 points",
+          "220 comments"
+        ],
+        "discussion": "https://news.ycombinator.com/item?id=50653667",
+        "flag": null
+      },
+      {
+        "id": "hn-50656036",
+        "title": "Show HN: Three Linux VMs in a browser tab, each running a different browser",
+        "url": "https://michidk.github.io/sidebyside/",
+        "source": "Hacker News",
+        "date": "2026-11-26",
+        "summary": "",
+        "meta": [
+          "79 points",
+          "21 comments"
+        ],
+        "discussion": "https://news.ycombinator.com/item?id=50656036",
+        "flag": null
+      },
+      {
+        "id": "hn-50657936",
+        "title": "George Whitesides, 1939-2026",
+        "url": "https://www.science.org/content/blog-post/george-whitesides-1939-2026",
+        "source": "Hacker News",
+        "date": "2026-11-26",
+        "summary": "",
+        "meta": [
+          "16 points",
+          "3 comments"
+        ],
+        "discussion": "https://news.ycombinator.com/item?id=50657936",
+        "flag": null
+      },
+      {
+        "id": "hn-50636931",
+        "title": "Curiosity Is No Solo Act",
+        "url": "https://thereader.mitpress.mit.edu/curiosity-is-no-solo-act/",
         "source": "Hacker News",
         "date": "2026-11-25",
         "summary": "",
         "meta": [
-          "281 points",
-          "162 comments"
+          "92 points",
+          "22 comments"
         ],
-        "discussion": "https://news.ycombinator.com/item?id=50641171",
+        "discussion": "https://news.ycombinator.com/item?id=50636931",
         "flag": null
       },
       {
-        "id": "hn-50642086",
-        "title": "Google releases Cogentic papers on integer factorization, discrete logs and more",
-        "url": "https://github.com/google-research/google-research/tree/master/cogentic_research_papers",
+        "id": "hn-50657059",
+        "title": "NP_R ≠ PAR_R",
+        "url": "https://github.com/samueleverett01/bss-permanent-separations",
         "source": "Hacker News",
-        "date": "2026-11-25",
+        "date": "2026-11-26",
         "summary": "",
         "meta": [
-          "378 points",
-          "297 comments"
+          "115 points",
+          "124 comments"
         ],
-        "discussion": "https://news.ycombinator.com/item?id=50642086",
+        "discussion": "https://news.ycombinator.com/item?id=50657059",
         "flag": null
       },
       {
-        "id": "hn-50642939",
-        "title": "I checked Clojure's core with Lean and found unreported bugs",
-        "url": "https://s.conao3.com/blog/2026/e4f733",
+        "id": "hn-50655664",
+        "title": "Tell HN: Happy Thanksgiving",
+        "url": "https://news.ycombinator.com/item?id=50655664",
         "source": "Hacker News",
-        "date": "2026-11-25",
+        "date": "2026-11-26",
         "summary": "",
         "meta": [
-          "123 points",
-          "46 comments"
+          "494 points",
+          "122 comments"
         ],
-        "discussion": "https://news.ycombinator.com/item?id=50642939",
+        "discussion": "https://news.ycombinator.com/item?id=50655664",
         "flag": null
       },
       {
-        "id": "hn-50589784",
-        "title": "SSH is a GUI framework",
-        "url": "https://zydra.sh/articles/ssh-is-a-gui-framework/",
+        "id": "hn-50654289",
+        "title": "Nextcloud Office Desktop app",
+        "url": "https://nextcloud.com/blog/euro-office-comes-to-your-desktop-with-the-nextcloud-office-desktop-app/",
         "source": "Hacker News",
-        "date": "2026-11-21",
+        "date": "2026-11-26",
         "summary": "",
         "meta": [
-          "11 points",
-          "2 comments"
+          "359 points",
+          "173 comments"
         ],
-        "discussion": "https://news.ycombinator.com/item?id=50589784",
+        "discussion": "https://news.ycombinator.com/item?id=50654289",
         "flag": null
       },
       {
-        "id": "hn-50635783",
-        "title": "Predicting LoRA size for any dataset",
-        "url": "https://engram.com/blog/lora-size",
+        "id": "hn-50657070",
+        "title": "Show HN: SimDrop – Running iOS simulators in the macOS Finder sidebar",
+        "url": "https://github.com/rxliuli/sim-drop",
         "source": "Hacker News",
-        "date": "2026-11-24",
+        "date": "2026-11-26",
         "summary": "",
         "meta": [
-          "82 points",
-          "8 comments"
+          "15 points",
+          "3 comments"
         ],
-        "discussion": "https://news.ycombinator.com/item?id=50635783",
+        "discussion": "https://news.ycombinator.com/item?id=50657070",
         "flag": null
       },
       {
-        "id": "hn-50637220",
-        "title": "The matrix multiplication exponent is nine fourths [pdf]",
-        "url": "https://github.com/openai/math/blob/main/preprints/The-matrix-multiplication-exponent-is-nine-fourths-November-24-2026/paper.pdf",
+        "id": "hn-50651719",
+        "title": "Lions' Commentary on Unix: Why It Was Secretly Copied for 20 Years",
+        "url": "https://fosscomics.com/posts/17.%20Lions%27%20Commentary%20on%20Unix/",
         "source": "Hacker News",
-        "date": "2026-11-25",
+        "date": "2026-11-26",
         "summary": "",
         "meta": [
-          "958 points",
-          "535 comments"
+          "243 points",
+          "51 comments"
         ],
-        "discussion": "https://news.ycombinator.com/item?id=50637220",
-        "flag": null
-      },
-      {
-        "id": "hn-50638032",
-        "title": "Button Sounds – collection of professionally-recorded button clicks and presses",
-        "url": "https://buttons.joshwcomeau.com/",
-        "source": "Hacker News",
-        "date": "2026-11-25",
-        "summary": "",
-        "meta": [
-          "785 points",
-          "126 comments"
-        ],
-        "discussion": "https://news.ycombinator.com/item?id=50638032",
-        "flag": null
-      },
-      {
-        "id": "hn-50644814",
-        "title": "Deriving Black-Scholes",
-        "url": "https://david.alvarezrosa.com/posts/deriving-black-scholes/",
-        "source": "Hacker News",
-        "date": "2026-11-25",
-        "summary": "",
-        "meta": [
-          "33 points",
-          "20 comments"
-        ],
-        "discussion": "https://news.ycombinator.com/item?id=50644814",
+        "discussion": "https://news.ycombinator.com/item?id=50651719",
         "flag": null
       }
     ]
