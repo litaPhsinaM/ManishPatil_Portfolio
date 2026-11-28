@@ -1,285 +1,285 @@
 {
-  "generatedAt": "2026-11-27T19:57:01.930Z",
+  "generatedAt": "2026-11-28T18:57:53.355Z",
   "log": [
     {
-      "t": "2026-11-27T19:57:00.365Z",
+      "t": "2026-11-28T18:57:52.586Z",
       "level": "info",
       "msg": "signal refresh started"
     },
     {
-      "t": "2026-11-27T19:57:00.370Z",
+      "t": "2026-11-28T18:57:52.591Z",
       "level": "info",
       "msg": "GET hacker-news.firebaseio.com/v0/topstories.json"
     },
     {
-      "t": "2026-11-27T19:57:00.548Z",
+      "t": "2026-11-28T18:57:52.761Z",
       "level": "info",
       "msg": "HTTP 200 · resolving top 60 story ids in batches of 10"
     },
     {
-      "t": "2026-11-27T19:57:01.018Z",
+      "t": "2026-11-28T18:57:53.109Z",
       "level": "info",
-      "msg": "59 of 60 resolved to usable stories · 648ms"
+      "msg": "60 of 60 resolved to usable stories · 518ms"
     },
     {
-      "t": "2026-11-27T19:57:01.019Z",
+      "t": "2026-11-28T18:57:53.110Z",
       "level": "info",
       "msg": "GET cisa.gov/feeds/known_exploited_vulnerabilities.json"
     },
     {
-      "t": "2026-11-27T19:57:01.390Z",
+      "t": "2026-11-28T18:57:53.236Z",
       "level": "info",
-      "msg": "HTTP 200 · catalog holds 1808 CVEs · 371ms"
+      "msg": "HTTP 200 · catalog holds 1808 CVEs · 126ms"
     },
     {
-      "t": "2026-11-27T19:57:01.394Z",
+      "t": "2026-11-28T18:57:53.241Z",
       "level": "info",
       "msg": "fleet filter: 1051 of 1808 touch managed platforms"
     },
     {
-      "t": "2026-11-27T19:57:01.402Z",
+      "t": "2026-11-28T18:57:53.249Z",
       "level": "info",
       "msg": "GET export.arxiv.org/api/query cat:cs.AI OR cat:cs.LG"
     },
     {
-      "t": "2026-11-27T19:57:01.927Z",
+      "t": "2026-11-28T18:57:53.352Z",
       "level": "info",
-      "msg": "HTTP 200 · 31,167 bytes of Atom XML · 525ms"
+      "msg": "HTTP 200 · 31,167 bytes of Atom XML · 103ms"
     },
     {
-      "t": "2026-11-27T19:57:01.929Z",
+      "t": "2026-11-28T18:57:53.354Z",
       "level": "info",
-      "msg": "topic split: 11 AI stories, 48 general dev"
+      "msg": "topic split: 10 AI stories, 50 general dev"
     },
     {
-      "t": "2026-11-27T19:57:01.929Z",
+      "t": "2026-11-28T18:57:53.354Z",
       "level": "info",
       "msg": "--- security feed: 14 items ---"
     },
     {
-      "t": "2026-11-27T19:57:01.929Z",
+      "t": "2026-11-28T18:57:53.354Z",
       "level": "info",
       "msg": "ingest CISA KEV · Drupal Core Improper Check for Unusual or Exceptional Con… · 2026-11-27"
     },
     {
-      "t": "2026-11-27T19:57:01.929Z",
+      "t": "2026-11-28T18:57:53.354Z",
       "level": "info",
       "msg": "ingest CISA KEV · Hewlett Packard Enterprise (HPE) Juniper Session Smart Co… · 2026-11-25"
     },
     {
-      "t": "2026-11-27T19:57:01.929Z",
+      "t": "2026-11-28T18:57:53.354Z",
       "level": "info",
       "msg": "ingest CISA KEV · Drupal Core Remote Code Execution Vulnerability · 2026-11-24"
     },
     {
-      "t": "2026-11-27T19:57:01.929Z",
+      "t": "2026-11-28T18:57:53.354Z",
       "level": "info",
       "msg": "ingest CISA KEV · Apache Roller Deserialization of Untrusted Data Vulnerabi… · 2026-11-20"
     },
     {
-      "t": "2026-11-27T19:57:01.929Z",
+      "t": "2026-11-28T18:57:53.354Z",
       "level": "info",
       "msg": "ingest CISA KEV · VMWare vCenter Authentication Bypass Using an Alternate P… · 2026-11-20"
     },
     {
-      "t": "2026-11-27T19:57:01.929Z",
+      "t": "2026-11-28T18:57:53.354Z",
       "level": "info",
       "msg": "ingest CISA KEV · Cisco Expressway Series Use of Hard-coded Credentials Vul… · 2026-11-20"
     },
     {
-      "t": "2026-11-27T19:57:01.929Z",
+      "t": "2026-11-28T18:57:53.354Z",
       "level": "info",
       "msg": "ingest CISA KEV · Apache Axis Unsafe Reflection Vulnerability · 2026-11-18"
     },
     {
-      "t": "2026-11-27T19:57:01.929Z",
+      "t": "2026-11-28T18:57:53.354Z",
       "level": "info",
       "msg": "ingest CISA KEV · Microsoft Office Outlook Missing User Interaction for Pot… · 2026-11-10"
     },
     {
-      "t": "2026-11-27T19:57:01.929Z",
+      "t": "2026-11-28T18:57:53.354Z",
       "level": "info",
       "msg": "ingest CISA KEV · Cisco BroadWorks Improper Restriction of XML External Ent… · 2026-11-10"
     },
     {
-      "t": "2026-11-27T19:57:01.929Z",
+      "t": "2026-11-28T18:57:53.354Z",
       "level": "info",
       "msg": "ingest CISA KEV · Google Chromium Use-After-Free Vulnerability · 2026-11-10"
     },
     {
-      "t": "2026-11-27T19:57:01.929Z",
+      "t": "2026-11-28T18:57:53.354Z",
       "level": "info",
       "msg": "ingest CISA KEV · SonicWall SonicOS SSLVPN Use of Single-factor Authenticat… · 2026-11-06"
     },
     {
-      "t": "2026-11-27T19:57:01.929Z",
+      "t": "2026-11-28T18:57:53.354Z",
       "level": "info",
       "msg": "ingest CISA KEV · Apple Multiple Products Improper Authentication Vulnerabi… · 2026-11-04"
     },
     {
-      "t": "2026-11-27T19:57:01.929Z",
+      "t": "2026-11-28T18:57:53.354Z",
       "level": "info",
       "msg": "ingest CISA KEV · WordPress WordPress Core Time-of-check Time-of-use (TOCTO… · 2026-11-03"
     },
     {
-      "t": "2026-11-27T19:57:01.929Z",
+      "t": "2026-11-28T18:57:53.354Z",
       "level": "info",
       "msg": "ingest CISA KEV · Ivanti Connect Secure Generation of Predictable Numbers o… · 2026-10-30"
     },
     {
-      "t": "2026-11-27T19:57:01.929Z",
+      "t": "2026-11-28T18:57:53.354Z",
       "level": "info",
       "msg": "--- ai feed: 14 items ---"
     },
     {
-      "t": "2026-11-27T19:57:01.929Z",
+      "t": "2026-11-28T18:57:53.354Z",
+      "level": "info",
+      "msg": "ingest Hacker News · Donald Knuth suspends error bounties due to an influx of… · 2026-11-28"
+    },
+    {
+      "t": "2026-11-28T18:57:53.355Z",
+      "level": "info",
+      "msg": "ingest Hacker News · Claude Code sabotage: preliminary benchmarking · 2026-11-28"
+    },
+    {
+      "t": "2026-11-28T18:57:53.355Z",
+      "level": "info",
+      "msg": "ingest Hacker News · GGUF LLM Models with Hidden Malware on Hugging Face Reach… · 2026-11-28"
+    },
+    {
+      "t": "2026-11-28T18:57:53.355Z",
+      "level": "info",
+      "msg": "ingest Hacker News · Why stop at Emacs? Native apps you or an AI reprogram in… · 2026-11-28"
+    },
+    {
+      "t": "2026-11-28T18:57:53.355Z",
+      "level": "info",
+      "msg": "ingest Hacker News · Show HN: Fleetlayer – Framework for running many AI agent… · 2026-11-28"
+    },
+    {
+      "t": "2026-11-28T18:57:53.355Z",
       "level": "info",
       "msg": "ingest Hacker News · Michael Nielsen took down his book on neural nets · 2026-11-27"
     },
     {
-      "t": "2026-11-27T19:57:01.929Z",
-      "level": "info",
-      "msg": "ingest Hacker News · Group chat where your AI talks behind your back · 2026-11-27"
-    },
-    {
-      "t": "2026-11-27T19:57:01.929Z",
+      "t": "2026-11-28T18:57:53.355Z",
       "level": "info",
       "msg": "ingest Hacker News · Claude sabotaging ML research tasks? · 2026-11-27"
     },
     {
-      "t": "2026-11-27T19:57:01.929Z",
-      "level": "info",
-      "msg": "ingest Hacker News · GPT 6.2 Astra solves a historical mystery · 2026-11-27"
-    },
-    {
-      "t": "2026-11-27T19:57:01.930Z",
+      "t": "2026-11-28T18:57:53.355Z",
       "level": "info",
       "msg": "ingest Hacker News · \"What's Claude's fursona?\" and other questions · 2026-11-27"
     },
     {
-      "t": "2026-11-27T19:57:01.930Z",
+      "t": "2026-11-28T18:57:53.355Z",
       "level": "info",
-      "msg": "ingest Hacker News · Dungeons and Dragons maker will pass AI settlement money… · 2026-11-27"
+      "msg": "ingest Hacker News · The Comprehensive Guide to Encrypted Inference with Tees · 2026-11-26"
     },
     {
-      "t": "2026-11-27T19:57:01.930Z",
-      "level": "info",
-      "msg": "ingest Hacker News · AI on brink of making online security useless, mathematic… · 2026-11-27"
-    },
-    {
-      "t": "2026-11-27T19:57:01.930Z",
-      "level": "info",
-      "msg": "ingest Hacker News · AI made self-hosting fun again · 2026-11-26"
-    },
-    {
-      "t": "2026-11-27T19:57:01.930Z",
-      "level": "info",
-      "msg": "ingest Hacker News · Google Will Make AI Agents Use Its MCP Servers. The Gmail… · 2026-11-26"
-    },
-    {
-      "t": "2026-11-27T19:57:01.930Z",
-      "level": "info",
-      "msg": "ingest Hacker News · An introduction to uncertainty in machine learning · 2026-11-26"
-    },
-    {
-      "t": "2026-11-27T19:57:01.930Z",
+      "t": "2026-11-28T18:57:53.355Z",
       "level": "info",
       "msg": "ingest arXiv · Spectrum Adaptation of AI-Native Autoencoder Communicatio… · 2026-11-25"
     },
     {
-      "t": "2026-11-27T19:57:01.930Z",
+      "t": "2026-11-28T18:57:53.355Z",
       "level": "info",
       "msg": "ingest arXiv · Tokenisation is not in APX · 2026-11-25"
     },
     {
-      "t": "2026-11-27T19:57:01.930Z",
+      "t": "2026-11-28T18:57:53.355Z",
       "level": "info",
       "msg": "ingest arXiv · Can image generation help visual reasoning? An empirical… · 2026-11-25"
     },
     {
-      "t": "2026-11-27T19:57:01.930Z",
+      "t": "2026-11-28T18:57:53.355Z",
       "level": "info",
       "msg": "ingest arXiv · Attack Policy Selection can Mislead Monitor Evaluators · 2026-11-25"
     },
     {
-      "t": "2026-11-27T19:57:01.930Z",
+      "t": "2026-11-28T18:57:53.355Z",
+      "level": "info",
+      "msg": "ingest arXiv · A gene informed benchmark for BioScoring of pathology fou… · 2026-11-25"
+    },
+    {
+      "t": "2026-11-28T18:57:53.355Z",
       "level": "info",
       "msg": "--- dev feed: 14 items ---"
     },
     {
-      "t": "2026-11-27T19:57:01.930Z",
+      "t": "2026-11-28T18:57:53.355Z",
       "level": "info",
-      "msg": "ingest Hacker News · Credit card skimming scripts using WebRTC found on popula… · 2026-11-27"
+      "msg": "ingest Hacker News · Audible removes download option for purchased audiobooks · 2026-11-28"
     },
     {
-      "t": "2026-11-27T19:57:01.930Z",
+      "t": "2026-11-28T18:57:53.355Z",
       "level": "info",
-      "msg": "ingest Hacker News · Convex skills send the user's app idea to a remote server… · 2026-11-27"
+      "msg": "ingest Hacker News · Computer Disease · 2026-11-28"
     },
     {
-      "t": "2026-11-27T19:57:01.930Z",
+      "t": "2026-11-28T18:57:53.355Z",
       "level": "info",
-      "msg": "ingest Hacker News · Show HN: bouncemarket – a live prediction market game for… · 2026-11-27"
+      "msg": "ingest Hacker News · The race is not inevitable · 2026-11-28"
     },
     {
-      "t": "2026-11-27T19:57:01.930Z",
+      "t": "2026-11-28T18:57:53.355Z",
       "level": "info",
-      "msg": "ingest Hacker News · First images of the impact of DART asteroid deflection ex… · 2026-11-26"
+      "msg": "ingest Hacker News · Patrick Collison you are WRONG about street furniture!!! · 2026-11-28"
     },
     {
-      "t": "2026-11-27T19:57:01.930Z",
+      "t": "2026-11-28T18:57:53.355Z",
       "level": "info",
-      "msg": "ingest Hacker News · False computer-checked proofs · 2026-11-27"
+      "msg": "ingest Hacker News · Silently degrading the model's capabilities IS sabotage · 2026-11-28"
     },
     {
-      "t": "2026-11-27T19:57:01.930Z",
+      "t": "2026-11-28T18:57:53.355Z",
       "level": "info",
-      "msg": "ingest Hacker News · Citroën Hydraulic System · 2026-11-27"
+      "msg": "ingest Hacker News · Physics Breakthrough Simulator · 2026-11-28"
     },
     {
-      "t": "2026-11-27T19:57:01.930Z",
+      "t": "2026-11-28T18:57:53.355Z",
       "level": "info",
-      "msg": "ingest Hacker News · Show HN: DragDropMath – Learn math by feel · 2026-11-27"
+      "msg": "ingest Hacker News · Farewell · 2026-11-28"
     },
     {
-      "t": "2026-11-27T19:57:01.930Z",
+      "t": "2026-11-28T18:57:53.355Z",
       "level": "info",
-      "msg": "ingest Hacker News · Rayshader 1.0: Exit the Matrix · 2026-11-27"
+      "msg": "ingest Hacker News · ML compiler eng, your job is NP-hard · 2026-11-25"
     },
     {
-      "t": "2026-11-27T19:57:01.930Z",
+      "t": "2026-11-28T18:57:53.355Z",
       "level": "info",
-      "msg": "ingest Hacker News · Making a 3D fantasy map like a 16th-Century atlas · 2026-11-27"
+      "msg": "ingest Hacker News · Show HN: Luciole Mono – terminal font designed for legibi… · 2026-11-28"
     },
     {
-      "t": "2026-11-27T19:57:01.930Z",
+      "t": "2026-11-28T18:57:53.355Z",
       "level": "info",
-      "msg": "ingest Hacker News · I'm a watchmaker and I accidentally made a software facto… · 2026-11-27"
+      "msg": "ingest Hacker News · How Old Electromechanical Pinball Machines Work · 2026-11-25"
     },
     {
-      "t": "2026-11-27T19:57:01.930Z",
+      "t": "2026-11-28T18:57:53.355Z",
       "level": "info",
-      "msg": "ingest Hacker News · The need for a formally verifiable mainstream programming… · 2026-11-27"
+      "msg": "ingest Hacker News · Essential Reading in the Age of Math 2.0 · 2026-11-25"
     },
     {
-      "t": "2026-11-27T19:57:01.930Z",
+      "t": "2026-11-28T18:57:53.355Z",
       "level": "info",
-      "msg": "ingest Hacker News · US Air Force's cloud computing platform hacked · 2026-11-27"
+      "msg": "ingest Hacker News · The Last Thing They Said · 2026-11-28"
     },
     {
-      "t": "2026-11-27T19:57:01.930Z",
+      "t": "2026-11-28T18:57:53.355Z",
       "level": "info",
-      "msg": "ingest Hacker News · A Deterministic Subexponential-Time Algorithm for the Dis… · 2026-11-27"
+      "msg": "ingest Hacker News · Knuth: Moratorium on Error Reports · 2026-11-28"
     },
     {
-      "t": "2026-11-27T19:57:01.930Z",
+      "t": "2026-11-28T18:57:53.355Z",
       "level": "info",
-      "msg": "ingest Hacker News · Kimi for Science: More scientific ideas, made possible · 2026-11-27"
+      "msg": "ingest Hacker News · Unkernel: Real Linux kernel, compiled to WebAssembly · 2026-11-28"
     },
     {
-      "t": "2026-11-27T19:57:01.930Z",
+      "t": "2026-11-28T18:57:53.355Z",
       "level": "info",
-      "msg": "publishing 42 items across 3 feeds · 1565ms"
+      "msg": "publishing 42 items across 3 feeds · 769ms"
     }
   ],
   "feeds": {
@@ -483,31 +483,87 @@
     ],
     "ai": [
       {
-        "id": "hn-50670757",
-        "title": "Michael Nielsen took down his book on neural nets",
-        "url": "https://twitter.com/michael_nielsen/status/2126359767362748777",
+        "id": "hn-50680168",
+        "title": "Donald Knuth suspends error bounties due to an influx of AI-generated reports",
+        "url": "https://cs.stanford.edu/~knuth/moratorium.html",
         "source": "Hacker News",
-        "date": "2026-11-27",
+        "date": "2026-11-28",
         "summary": "",
         "meta": [
-          "42 points",
-          "21 comments"
+          "150 points",
+          "20 comments"
         ],
-        "discussion": "https://news.ycombinator.com/item?id=50670757",
+        "discussion": "https://news.ycombinator.com/item?id=50680168",
         "flag": null
       },
       {
-        "id": "hn-50663595",
-        "title": "Group chat where your AI talks behind your back",
-        "url": "https://construct22.com/",
+        "id": "hn-50676390",
+        "title": "Claude Code sabotage: preliminary benchmarking",
+        "url": "https://xinyadu.github.io/blog/claude-code-sabotage.html",
+        "source": "Hacker News",
+        "date": "2026-11-28",
+        "summary": "",
+        "meta": [
+          "654 points",
+          "222 comments"
+        ],
+        "discussion": "https://news.ycombinator.com/item?id=50676390",
+        "flag": null
+      },
+      {
+        "id": "hn-50676752",
+        "title": "GGUF LLM Models with Hidden Malware on Hugging Face Reached 2400 Victims",
+        "url": "https://malspark.com/blog/malicious-gguf-models-hugging-face/",
+        "source": "Hacker News",
+        "date": "2026-11-28",
+        "summary": "",
+        "meta": [
+          "167 points",
+          "58 comments"
+        ],
+        "discussion": "https://news.ycombinator.com/item?id=50676752",
+        "flag": null
+      },
+      {
+        "id": "hn-50677861",
+        "title": "Why stop at Emacs? Native apps you or an AI reprogram in Clojure while they run",
+        "url": "https://github.com/RiccardoSottini/AffrescoUI",
+        "source": "Hacker News",
+        "date": "2026-11-28",
+        "summary": "",
+        "meta": [
+          "57 points",
+          "50 comments"
+        ],
+        "discussion": "https://news.ycombinator.com/item?id=50677861",
+        "flag": null
+      },
+      {
+        "id": "hn-50675831",
+        "title": "Show HN: Fleetlayer – Framework for running many AI agents on multiple machines",
+        "url": "https://fleetlayer.ai/",
+        "source": "Hacker News",
+        "date": "2026-11-28",
+        "summary": "",
+        "meta": [
+          "24 points",
+          "15 comments"
+        ],
+        "discussion": "https://news.ycombinator.com/item?id=50675831",
+        "flag": null
+      },
+      {
+        "id": "hn-50670757",
+        "title": "Michael Nielsen took down his book on neural nets",
+        "url": "https://neuralnetworksanddeeplearning.com/",
         "source": "Hacker News",
         "date": "2026-11-27",
         "summary": "",
         "meta": [
-          "621 points",
-          "262 comments"
+          "634 points",
+          "467 comments"
         ],
-        "discussion": "https://news.ycombinator.com/item?id=50663595",
+        "discussion": "https://news.ycombinator.com/item?id=50670757",
         "flag": null
       },
       {
@@ -518,24 +574,10 @@
         "date": "2026-11-27",
         "summary": "",
         "meta": [
-          "429 points",
-          "218 comments"
+          "764 points",
+          "334 comments"
         ],
         "discussion": "https://news.ycombinator.com/item?id=50664325",
-        "flag": null
-      },
-      {
-        "id": "hn-50667744",
-        "title": "GPT 6.2 Astra solves a historical mystery",
-        "url": "https://generativehistory.substack.com/p/gpt-62-astra-solves-a-historical",
-        "source": "Hacker News",
-        "date": "2026-11-27",
-        "summary": "",
-        "meta": [
-          "161 points",
-          "65 comments"
-        ],
-        "discussion": "https://news.ycombinator.com/item?id=50667744",
         "flag": null
       },
       {
@@ -546,80 +588,24 @@
         "date": "2026-11-27",
         "summary": "",
         "meta": [
-          "149 points",
-          "117 comments"
+          "207 points",
+          "205 comments"
         ],
         "discussion": "https://news.ycombinator.com/item?id=50662933",
         "flag": null
       },
       {
-        "id": "hn-50669073",
-        "title": "Dungeons and Dragons maker will pass AI settlement money to authors",
-        "url": "https://www.seattletimes.com/business/dungeons-dragons-maker-will-pass-ai-settlement-money-to-authors/",
-        "source": "Hacker News",
-        "date": "2026-11-27",
-        "summary": "",
-        "meta": [
-          "14 points",
-          "2 comments"
-        ],
-        "discussion": "https://news.ycombinator.com/item?id=50669073",
-        "flag": null
-      },
-      {
-        "id": "hn-50665488",
-        "title": "AI on brink of making online security useless, mathematicians fear",
-        "url": "https://www.thetimes.com/uk/technology-uk/article/ai-making-online-security-useless-smr73d3n8",
-        "source": "Hacker News",
-        "date": "2026-11-27",
-        "summary": "",
-        "meta": [
-          "108 points",
-          "140 comments"
-        ],
-        "discussion": "https://news.ycombinator.com/item?id=50665488",
-        "flag": null
-      },
-      {
-        "id": "hn-50660180",
-        "title": "AI made self-hosting fun again",
-        "url": "https://janlukas.blog/posts/ai-self-hosting",
+        "id": "hn-50650217",
+        "title": "The Comprehensive Guide to Encrypted Inference with Tees",
+        "url": "https://trynito.ai/blog/encrypted-inference-tees",
         "source": "Hacker News",
         "date": "2026-11-26",
         "summary": "",
         "meta": [
-          "1028 points",
-          "488 comments"
+          "21 points",
+          "6 comments"
         ],
-        "discussion": "https://news.ycombinator.com/item?id=50660180",
-        "flag": null
-      },
-      {
-        "id": "hn-50653477",
-        "title": "Google Will Make AI Agents Use Its MCP Servers. The Gmail One Can't Send Email",
-        "url": "https://techstackups.com/articles/google-workspace-ai-agents-mcp/",
-        "source": "Hacker News",
-        "date": "2026-11-26",
-        "summary": "",
-        "meta": [
-          "415 points",
-          "329 comments"
-        ],
-        "discussion": "https://news.ycombinator.com/item?id=50653477",
-        "flag": null
-      },
-      {
-        "id": "hn-50658498",
-        "title": "An introduction to uncertainty in machine learning",
-        "url": "https://chrhenning.com/blog/2026/introduction-to-uncertainty/",
-        "source": "Hacker News",
-        "date": "2026-11-26",
-        "summary": "",
-        "meta": [
-          "138 points",
-          "13 comments"
-        ],
-        "discussion": "https://news.ycombinator.com/item?id=50658498",
+        "discussion": "https://news.ycombinator.com/item?id=50650217",
         "flag": null
       },
       {
@@ -673,203 +659,216 @@
           "Charlie Griffin +6"
         ],
         "flag": null
+      },
+      {
+        "id": "http://arxiv.org/abs/2611.34930v1",
+        "title": "A gene informed benchmark for BioScoring of pathology foundation models",
+        "url": "http://arxiv.org/abs/2611.34930v1",
+        "source": "arXiv",
+        "date": "2026-11-25",
+        "summary": "Pathology foundation models are usually compared by their performance on downstream tasks such as classification and retrieval. While such benchmarks measure how useful a model is, they provide no insight into the biology it represents. We introduce BioScore, a benchmark that quantifies how well an image encoder captu…",
+        "meta": [
+          "Research",
+          "Paul Vilars +5"
+        ],
+        "flag": null
       }
     ],
     "dev": [
       {
-        "id": "hn-50668145",
-        "title": "Credit card skimming scripts using WebRTC found on popular shopping sites",
-        "url": "https://www.infohawk.com/news/2026-11-27-black-friday-webrtc-skimmer",
+        "id": "hn-50676723",
+        "title": "Audible removes download option for purchased audiobooks",
+        "url": "https://consumerrights.wiki/w/Audible_removes_download_option_for_purchased_audiobooks",
         "source": "Hacker News",
-        "date": "2026-11-27",
+        "date": "2026-11-28",
         "summary": "",
         "meta": [
-          "235 points",
-          "130 comments"
+          "658 points",
+          "269 comments"
         ],
-        "discussion": "https://news.ycombinator.com/item?id=50668145",
+        "discussion": "https://news.ycombinator.com/item?id=50676723",
         "flag": null
       },
       {
-        "id": "hn-50669765",
-        "title": "Convex skills send the user's app idea to a remote server without telling them",
-        "url": "https://github.com/convex/convex-backend-skill/issues/64",
+        "id": "hn-50679708",
+        "title": "Computer Disease",
+        "url": "https://blog.adafruit.com/2020/01/13/richard-feynman-on-computer-disease/",
         "source": "Hacker News",
-        "date": "2026-11-27",
+        "date": "2026-11-28",
         "summary": "",
         "meta": [
-          "76 points",
+          "66 points",
+          "28 comments"
+        ],
+        "discussion": "https://news.ycombinator.com/item?id=50679708",
+        "flag": null
+      },
+      {
+        "id": "hn-50680085",
+        "title": "The race is not inevitable",
+        "url": "https://ryo.lu/journal/the-race-is-not-inevitable",
+        "source": "Hacker News",
+        "date": "2026-11-28",
+        "summary": "",
+        "meta": [
+          "59 points",
+          "16 comments"
+        ],
+        "discussion": "https://news.ycombinator.com/item?id=50680085",
+        "flag": null
+      },
+      {
+        "id": "hn-50680129",
+        "title": "Patrick Collison you are WRONG about street furniture!!!",
+        "url": "https://www.lesswrong.com/posts/Lf49dFMfhWqj33zAJ/patrick-collison-you-are-wrong-about-street-furniture",
+        "source": "Hacker News",
+        "date": "2026-11-28",
+        "summary": "",
+        "meta": [
+          "37 points",
           "21 comments"
         ],
-        "discussion": "https://news.ycombinator.com/item?id=50669765",
+        "discussion": "https://news.ycombinator.com/item?id=50680129",
         "flag": null
       },
       {
-        "id": "hn-50667726",
-        "title": "Show HN: bouncemarket – a live prediction market game for a bouncing ball",
-        "url": "https://bouncemarket.minhanhday.com/",
+        "id": "hn-50678901",
+        "title": "Silently degrading the model's capabilities IS sabotage",
+        "url": "https://twitter.com/TimSweeneyEpic/status/2126682647862862063",
         "source": "Hacker News",
-        "date": "2026-11-27",
+        "date": "2026-11-28",
         "summary": "",
         "meta": [
-          "266 points",
-          "82 comments"
+          "249 points",
+          "88 comments"
         ],
-        "discussion": "https://news.ycombinator.com/item?id=50667726",
+        "discussion": "https://news.ycombinator.com/item?id=50678901",
         "flag": null
       },
       {
-        "id": "hn-50657392",
-        "title": "First images of the impact of DART asteroid deflection experiment",
-        "url": "https://arstechnica.com/space/2026/11/europes-hera-mission-returns-to-the-chaotic-scene-of-a-cosmic-smashup/",
+        "id": "hn-50678273",
+        "title": "Physics Breakthrough Simulator",
+        "url": "https://pages.ethanmdavidson.com/ai-physics-breakthrough",
         "source": "Hacker News",
-        "date": "2026-11-26",
+        "date": "2026-11-28",
         "summary": "",
         "meta": [
-          "141 points",
-          "51 comments"
+          "106 points",
+          "32 comments"
         ],
-        "discussion": "https://news.ycombinator.com/item?id=50657392",
+        "discussion": "https://news.ycombinator.com/item?id=50678273",
         "flag": null
       },
       {
-        "id": "hn-50667989",
-        "title": "False computer-checked proofs",
-        "url": "https://cr.yp.to/proofs/falseccp.html",
+        "id": "hn-50676672",
+        "title": "Farewell",
+        "url": "https://github.com/p-e-w/heretic/issues/601",
         "source": "Hacker News",
-        "date": "2026-11-27",
+        "date": "2026-11-28",
         "summary": "",
         "meta": [
-          "117 points",
-          "51 comments"
+          "851 points",
+          "361 comments"
         ],
-        "discussion": "https://news.ycombinator.com/item?id=50667989",
+        "discussion": "https://news.ycombinator.com/item?id=50676672",
         "flag": null
       },
       {
-        "id": "hn-50662313",
-        "title": "Citroën Hydraulic System",
-        "url": "https://www.citroenet.org.uk/miscellaneous/hydraulics/hydraulics-1.html",
+        "id": "hn-50648253",
+        "title": "ML compiler eng, your job is NP-hard",
+        "url": "https://ianbarber.blog/2026/11/24/ml-compiler-eng-your-job-is-np-hard/",
         "source": "Hacker News",
-        "date": "2026-11-27",
+        "date": "2026-11-25",
         "summary": "",
         "meta": [
           "8 points",
           "0 comments"
         ],
-        "discussion": "https://news.ycombinator.com/item?id=50662313",
+        "discussion": "https://news.ycombinator.com/item?id=50648253",
         "flag": null
       },
       {
-        "id": "hn-50669673",
-        "title": "Show HN: DragDropMath – Learn math by feel",
-        "url": "https://dragdropmath.com/",
+        "id": "hn-50677091",
+        "title": "Show HN: Luciole Mono – terminal font designed for legibility",
+        "url": "https://scriptor-pro.github.io/luciole-mono/",
         "source": "Hacker News",
-        "date": "2026-11-27",
+        "date": "2026-11-28",
         "summary": "",
         "meta": [
-          "12 points",
-          "1 comments"
+          "115 points",
+          "43 comments"
         ],
-        "discussion": "https://news.ycombinator.com/item?id=50669673",
+        "discussion": "https://news.ycombinator.com/item?id=50677091",
         "flag": null
       },
       {
-        "id": "hn-50667371",
-        "title": "Rayshader 1.0: Exit the Matrix",
-        "url": "https://www.tylermw.com/posts/rayverse/rayshader-1-0-exit-the-matrix.html",
+        "id": "hn-50644301",
+        "title": "How Old Electromechanical Pinball Machines Work",
+        "url": "https://how-old-pinball-machines-work.mattmakai.com/",
         "source": "Hacker News",
-        "date": "2026-11-27",
+        "date": "2026-11-25",
         "summary": "",
         "meta": [
-          "8 points",
+          "20 points",
+          "6 comments"
+        ],
+        "discussion": "https://news.ycombinator.com/item?id=50644301",
+        "flag": null
+      },
+      {
+        "id": "hn-50642354",
+        "title": "Essential Reading in the Age of Math 2.0",
+        "url": "https://www.quantabooks.org/essential-reading-in-the-age-of-math-2-0/",
+        "source": "Hacker News",
+        "date": "2026-11-25",
+        "summary": "",
+        "meta": [
+          "28 points",
+          "11 comments"
+        ],
+        "discussion": "https://news.ycombinator.com/item?id=50642354",
+        "flag": null
+      },
+      {
+        "id": "hn-50679130",
+        "title": "The Last Thing They Said",
+        "url": "https://socialhome.network/content/31594834",
+        "source": "Hacker News",
+        "date": "2026-11-28",
+        "summary": "",
+        "meta": [
+          "26 points",
           "2 comments"
         ],
-        "discussion": "https://news.ycombinator.com/item?id=50667371",
+        "discussion": "https://news.ycombinator.com/item?id=50679130",
         "flag": null
       },
       {
-        "id": "hn-50667062",
-        "title": "Making a 3D fantasy map like a 16th-Century atlas",
-        "url": "https://www.spritefusion.com/blog/making-a-fantasy-map-like-a-16th-century-atlas",
+        "id": "hn-50674452",
+        "title": "Knuth: Moratorium on Error Reports",
+        "url": "https://www-cs-faculty.stanford.edu/~knuth/moratorium.html",
         "source": "Hacker News",
-        "date": "2026-11-27",
+        "date": "2026-11-28",
         "summary": "",
         "meta": [
-          "60 points",
-          "8 comments"
+          "446 points",
+          "213 comments"
         ],
-        "discussion": "https://news.ycombinator.com/item?id=50667062",
+        "discussion": "https://news.ycombinator.com/item?id=50674452",
         "flag": null
       },
       {
-        "id": "hn-50670517",
-        "title": "I'm a watchmaker and I accidentally made a software factory",
-        "url": "https://opentimegrapher.org/blog/2026-11-27-coordinators-chair-1/",
+        "id": "hn-50674218",
+        "title": "Unkernel: Real Linux kernel, compiled to WebAssembly",
+        "url": "https://unkernel.dev",
         "source": "Hacker News",
-        "date": "2026-11-27",
+        "date": "2026-11-28",
         "summary": "",
         "meta": [
-          "4 points",
-          "2 comments"
+          "523 points",
+          "135 comments"
         ],
-        "discussion": "https://news.ycombinator.com/item?id=50670517",
-        "flag": null
-      },
-      {
-        "id": "hn-50663089",
-        "title": "The need for a formally verifiable mainstream programming language",
-        "url": "https://blainehansen.me/post/mainstream-verifiable-language/",
-        "source": "Hacker News",
-        "date": "2026-11-27",
-        "summary": "",
-        "meta": [
-          "271 points",
-          "275 comments"
-        ],
-        "discussion": "https://news.ycombinator.com/item?id=50663089",
-        "flag": null
-      },
-      {
-        "id": "hn-50666375",
-        "title": "US Air Force's cloud computing platform hacked",
-        "url": "https://news.sky.com/story/us-air-forces-cloud-computing-platform-hacked-13617163",
-        "source": "Hacker News",
-        "date": "2026-11-27",
-        "summary": "",
-        "meta": [
-          "264 points",
-          "160 comments"
-        ],
-        "discussion": "https://news.ycombinator.com/item?id=50666375",
-        "flag": null
-      },
-      {
-        "id": "hn-50665968",
-        "title": "A Deterministic Subexponential-Time Algorithm for the Discrete Logarithm Problem [pdf]",
-        "url": "https://eprint.iacr.org/2026/3020.pdf",
-        "source": "Hacker News",
-        "date": "2026-11-27",
-        "summary": "",
-        "meta": [
-          "190 points",
-          "85 comments"
-        ],
-        "discussion": "https://news.ycombinator.com/item?id=50665968",
-        "flag": null
-      },
-      {
-        "id": "hn-50665920",
-        "title": "Kimi for Science: More scientific ideas, made possible",
-        "url": "https://www.kimi.ai/news/kimi-for-science-program",
-        "source": "Hacker News",
-        "date": "2026-11-27",
-        "summary": "",
-        "meta": [
-          "173 points",
-          "140 comments"
-        ],
-        "discussion": "https://news.ycombinator.com/item?id=50665920",
+        "discussion": "https://news.ycombinator.com/item?id=50674218",
         "flag": null
       }
     ]
